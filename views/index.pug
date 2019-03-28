@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div
+    h2 What we do
+    p 
+    |
+    span "Hack" 
+    | in hackathon is used to describe how technology can be used in raw and innovative ways.
+
+    div
+      h3 TAMUhack
+      p One of the largest annual hackathons in Texas, hosted at Texas A&amp;M University
+      a(href="https://tamuhack.com") TAMUhack
+    
+    div
+      h3 HowdyHack
+      p Our themed hackathon in the fall semester created for Aggies, by Aggies
+      a(href="https://tamuhack.com") HowdyHack
+
+    div
+      h3 Workshops
+      p In addition to hackathons, we host workshops each semester to help you learn new stuff!
+      a(href="https://tamuhack.com") Workshops
+    
+    div
+      h3 Past Iterations
+    
+    div
+      h3 The TAMUhack Team
+      p Our team consists of 16 members, all dedicated to helping you turn your ideas into reality. We're a diverse group of computer science, electrical, and mechanical engineering majors who brought our passions together to bring you a space for creative expression!
+    
+    div
+      h3 The TAMUhack Community
+      p Get connected! Sign up for our mailing list for events, updates, and more.
+
+      form(action="/registerEmail", method="POST")
+        input(type="email", name="email")
+        button(type="submit", text) Submit
