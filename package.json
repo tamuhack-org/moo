@@ -27,10 +27,10 @@
     "@types/nodemailer": "^4.6.7",
     "@types/redis": "^2.8.10",
     "@types/request-promise": "^4.1.42",
-    "@types/sequelize": "^4.27.44",
+    "@types/sequelize": "^4.27.47",
     "@types/sqlite3": "^3.1.5",
     "gts": "^0.9.0",
-    "nodemailer": "^6.0.0",
+    "nodemailer": "^6.1.0",
     "typescript": "~3.1.0"
   },
   "dependencies": {
@@ -40,7 +40,7 @@
     "redis": "^2.8.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "sequelize": "^5.2.1",
+    "sequelize": "^5.5.0",
     "sqlite3": "^4.0.6",
     "winston": "^3.2.1"
   }

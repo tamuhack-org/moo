@@ -27,17 +27,15 @@ export const registerEmail = async (req: Request, res: Response) => {
   await sequelize.sync();
   const { email } = req.body;
   if (emailIsValid(email)) {
-    Email.count({ where: { email } }).then((count: number) => {
-      if (count < 1) {
-        Email.create({ email: req.body.email }).then(() => {
-          emailController.sendEmail(mailOptions).then(() => {
-            res.sendStatus(200);
-          });
-        });
-      } else {
-        respondWithError(res, "You've already joined our mailing list!");
-      }
-    });
+    const count = await Email.count({ where: { email } });
+    if (count < 1) {
+      await Email.create({ email });
+      mailOptions.to = email;
+      await emailController.sendEmail(mailOptions);
+      res.sendStatus(200);
+    } else {
+      respondWithError(res, "You've already joined our mailing list!");
+    }
   } else {
     respondWithError(res, "We only accept tamu.edu domains.");
   }
