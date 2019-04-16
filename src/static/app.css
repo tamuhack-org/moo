@@ -37,9 +37,10 @@
   line-height: 52px;
   margin-top: 50px;
   margin-left: 20px;
-  text-align: center;
+  text-align: left;
 }
 .sub-header {
+  text-align: left;
   margin-bottom: 20px;
   font-size: 56px;
   font-weight: bolder;
