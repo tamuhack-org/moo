@@ -1,12 +1,12 @@
 version: "3.1"
 services:
-  redis:
-    image: redis:latest
+  # redis:
+  #   image: redis:latest
 
   app:
     build: .
-    links:
-      - redis
+    # links:
+    #   - redis
     command: ["npm", "start"]
     ports: ["3000:3000"]
     environment:

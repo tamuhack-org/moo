@@ -3,13 +3,15 @@ import { homeRoute } from "./routes/home";
 import { registerEmail } from "./routes/email";
 import * as bodyParser from "body-parser";
 import { join } from "path";
+import * as ejs from "ejs";
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.set("views", join(__dirname, "../../views"));
-app.set("view engine", "pug");
+app.set("views", join(__dirname, "views"));
+app.use("/static", express.static(join(__dirname, "/static")));
+app.engine("html", ejs.renderFile);
 
 app.get("/", homeRoute);
 app.post("/registerEmail", registerEmail);
