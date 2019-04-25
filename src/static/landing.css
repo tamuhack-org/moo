@@ -25,11 +25,10 @@ span {
 }
 
 #acadbuild {
-  display: flex;
-  align-self: center;
   position: absolute;
-  width: 100%;
-  bottom: -7%;
+  bottom: -3px;
+  width: 60%;
+  align-self: center;
   z-index: -1;
 }
 
@@ -181,81 +180,4 @@ span {
     bottom: 110%;
     transform: scale(0);
   }
-}
-
-
-.communitytext{
-  font-size: 45px;
-  line-height: 15px;
-  font-weight: 630;
-  letter-spacing: 0.01em;
-}
-
-.connectinfo{
-  font-size: 20px;
-  line-height: 15px;
-  min-width: 100px;
-}
-
-.smicon{
-  font-size: 20px;
-}
-
-.footertab{
-  display: flex; height: 100%; margin: 0px; align-items: center;
-}
-
-.linkedin {
-  color: #999999;
-}
-
-.github {
-  color: #999999;
-}
-
-#communitybox{
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-}
-
-#emailinput{
-  display: flex;
-  box-sizing: border-box;
-  border: 1px solid #DFDFDF;
-  border-radius: 3px;
-  width: 20vw;
-  min-width: 150px;
-  height: 40px;
-  padding: 10px;
-  text-decoration: none;
-}
-
-/*#emailinput:focus{
-  outline: none;
-}*/
-
-#emailsubmit{
-  background: #FF7C93;
-  border-radius: 3px;
-  color: white;
-  width: 5.3vw;
-  height: auto;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: .5px;
-}
-
-#footer{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  bottom: 0px;
-  width: 90vw;
-  height: 65px;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 5vw;
-  padding-left: 70px;
-  padding-right: 70px;
 }
