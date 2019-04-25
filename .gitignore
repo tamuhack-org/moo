@@ -1,6 +1,9 @@
 # Built files
 build/**/*
 
+# Config Folder
+config
+
 # Logs
 logs
 *.log
