@@ -37,6 +37,7 @@ span {
   height: 10%;
   right: 25.6%;
   top: 20%;
+  animation: rotateSun 4s linear infinite;
 }
 
 #tamuhacklogo {
@@ -125,6 +126,16 @@ span {
 
   to {
     left: -10%;
+  }
+}
+
+@keyframes rotateSun{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
   }
 }
 
