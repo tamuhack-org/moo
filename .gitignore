@@ -1,6 +1,9 @@
 # Built files
 build/**/*
 
+# GCloud instance YAML
+app.yaml
+
 # Config Folder
 config
 

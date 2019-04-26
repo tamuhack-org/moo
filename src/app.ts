@@ -1,9 +1,11 @@
-import * as express from "express";
-import { homeRoute } from "./routes/home";
-import { registerEmail } from "./routes/email";
 import * as bodyParser from "body-parser";
-import { join } from "path";
 import * as ejs from "ejs";
+import * as express from "express";
+import { join } from "path";
+
+import { homeRoute } from "./routes/home";
+import { emailRoute } from "./routes/email";
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,6 +16,8 @@ app.use("/static", express.static(join(__dirname, "/static")));
 app.engine("html", ejs.renderFile);
 
 app.get("/", homeRoute);
-app.post("/registerEmail", registerEmail);
+app.post("/email", emailRoute);
 
-export { app };
+app.listen(PORT, () => {
+  console.log(`Listening on ${PORT}`);
+});

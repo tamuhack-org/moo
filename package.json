@@ -10,35 +10,27 @@
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
-    "check": "gts check",
-    "clean": "gts clean",
     "compile": "tsc -p .",
     "fix": "gts fix",
-    "serve": "node build/src/server.js",
-    "start": "npm run copyfiles && npm run serve",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "posttest": "npm run check",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "copyfiles": "cp -r src/static build/src/static && cp -r src/views build/src/views"
+    "start": "node build/src/app.js",
+    "copyfiles": "cp -r src/static build/src/static && cp -r src/views build/src/views",
+    "gcp-build": "tsc -p . && npm run copyfiles",
+    "deploy": "gcloud app deploy"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
     "@types/ejs": "^2.6.3",
     "@types/express": "^4.16.1",
-    "@types/redis": "^2.8.10",
-    "@types/request-promise": "^4.1.43",
+    "@types/node": "^11.13.7",
     "gts": "^0.9.0",
     "typescript": "~3.1.0"
   },
   "dependencies": {
-    "chai": "^4.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "knex": "^0.16.5",
+    "mysql": "^2.17.1",
+    "prompt": "^1.0.0",
     "pug": "^2.0.3",
-    "redis": "^2.8.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "winston": "^3.2.1"
+    "redis": "^2.8.0"
   }
 }
