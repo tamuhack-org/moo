@@ -533,8 +533,11 @@
 				<p class="communitytext">COMMUNITY</p>
 				<p class="connectinfo">Get connected! Sign up for our mailing list for</p>
 				<p class="connectinfo">events, updates, and more.</p>
-				<div style="display: flex; flex-direction: row; padding-top: 40px;">
-					<input id="emailinput" placeholder="Email Address"></input> <button id="emailsubmit">Submit</button>
+            <div style="display: flex; flex-direction: row; padding-top: 40px;">
+               <form action="/email" method="POST">
+                  <input id="emailinput" type="email" name="email" placeholder="Email Address">
+                  <input type="submit" id="emailsubmit" value="Submit">
+               </form>
 				</div>
 			</div>
 		</div>
