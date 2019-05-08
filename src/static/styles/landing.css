@@ -1,5 +1,5 @@
-span {
-  font-family: "Questrial" !important;
+body {
+  font-family: "Avenir Next" !important;
 }
 
 #swoosh {
@@ -25,10 +25,11 @@ span {
 }
 
 #acadbuild {
-  position: absolute;
-  bottom: -3px;
-  width: 60%;
+  display: flex;
   align-self: center;
+  position: absolute;
+  width: 100%;
+  bottom: -7%;
   z-index: -1;
 }
 
@@ -89,9 +90,10 @@ span {
 
 #navbar {
   display: flex;
+  position: fixed;
   height: 7%;
   align-items: center;
-  border: 0;
+  background-color: white;
 }
 
 #navitems {
@@ -107,6 +109,99 @@ span {
 
 #help {
   margin-left: 20px;
+}
+
+#communitybox {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+#emailinput {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  width: 20vw;
+  min-width: 150px;
+  height: 40px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*#emailinput:focus{
+	outline: none;
+}*/
+
+#emailsubmit {
+  background: #ff7c93;
+  border-radius: 3px;
+  color: white;
+  width: 5.3vw;
+  height: auto;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 0px;
+  width: 90vw;
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+#sun {
+  animation: rotateSun 4s linear infinite;
+}
+
+.communitytext {
+  font-size: 45px;
+  line-height: 15px;
+  font-weight: 630;
+  letter-spacing: 0.01em;
+}
+
+.connectinfo {
+  font-size: 20px;
+  line-height: 15px;
+  min-width: 100px;
+}
+
+.smicon {
+  font-size: 20px;
+}
+
+.footertab {
+  display: flex;
+  height: 100%;
+  margin: 0px;
+  align-items: center;
+}
+
+.linkedin {
+  color: #999999;
+}
+
+.github {
+  color: #999999;
+}
+
+@keyframes rotateSun {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes translateCloud1 {
@@ -126,16 +221,6 @@ span {
 
   to {
     left: -10%;
-  }
-}
-
-@keyframes rotateSun{
-  from{
-    transform: rotate(0deg);
-  }
-
-  to{
-    transform: rotate(360deg);
   }
 }
 
