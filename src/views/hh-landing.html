@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HowdyHack 2019</title>
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="../static/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/styles/hh-styles.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="../static/assets/hh-assets/hh-favicon.png"/>
+</head>
+
+<body id="page-top" style="background-color: white;">
+    <header class="row" style="margin: 0px;">
+        <div class="col-md-10 offset-md-1">
+            <img src="../static/assets/hh-assets/TH.svg" class="th-logo" style="margin-right: 15px!important;">
+            <img src="../static/assets/hh-assets/tamuhack_2.svg" class="tamuhack-logo">
+        </div>
+    </header>
+
+        <div class="row h-100" style="margin: 0px;">
+           <!--  left content -->
+            <div class="col-md-3 offset-md-1 hhlogo-column" style="margin-top: 30px;">
+                <center>
+                    <img src="../static/assets/hh-assets/hhinfo.svg" class="hh-logo">
+                    <h1 class="hh-title">HowdyHack</h1>
+                    <h3 class="hh-subtitle">7th&#8211;8th September 2019</h3>
+                </center>
+            </div>
+           
+           <!--  right content -->
+            <div class="col-md-7 offset-md-1" style="margin-top: 20px; padding: 0">
+                    <img src="../static/assets/hh-assets/rectangle.png" alt="" id="rect">
+                    <img src="../static/assets/hh-assets/Rectangle-sm.svg" alt="" id="rect2">
+
+                    <div class="my-container">
+                        <div class="my-wrapper">
+                            <h1 class="content-txt">
+                                "Hack" in HowdyHack is used to describe how technology can be used in a new and
+                                innovative
+                                way.
+                            </h1>
+
+                            <h2>Sign up for the latest updates!</h2>
+                            
+                            <form class="form" action="/" id="main">
+                                <div class="input-group" id="before">
+                                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="email">
+                                   
+                                   <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit">Sign Up</button>
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger" role="alert" id="u_failed">
+                                    Invalid email. Please try again!
+                                </div>
+                                <div class="alert alert-success" role="alert" id="after">
+                                    Awesome! Expect to hear back from us soon!
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#after').hide()
+        $('#u_failed').hide()
+        $(document).ready(function () {
+            // Listen to submit event on the <form> itself!
+            $('#main').submit(function (e) {
+
+                e.preventDefault();
+                var email = $("#email").val();
+                console.log('Running')
+
+                if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
+                    $.post("/", {
+                        "email": email
+                    })
+                    $('#u_failed').hide()
+                    $('#before').remove();
+                    $('#after').show()
+                } else {
+                    console.log('invalid email')
+                    $('#u_failed').show()
+                }
+
+
+            });
+        });
+
+
+
+        $('#after_2').hide()
+        $('#u_failed_2').hide()
+        $(document).ready(function () {
+            // Listen to submit event on the <form> itself!
+            $('#main_2').submit(function (e) {
+
+                e.preventDefault();
+                var email = $("#email_2").val();
+                console.log('Running')
+
+                if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
+                    $.post("/", {
+                        "email": email
+                    })
+                    $('#u_failed_2').hide()
+                    $('#before_2').remove();
+                    $('#after_2').show()
+                } else {
+                    console.log('invalid email')
+                    $('#u_failed_2').show()
+                }
+
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>

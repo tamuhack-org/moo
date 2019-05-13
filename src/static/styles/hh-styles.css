@@ -1,0 +1,184 @@
+* {
+    /* padding: 0px!important; */
+    margin: 0px;
+    font-family: "Questrial", "sans-serif";
+    font-weight: 400!important;
+}
+
+/****** NAV ******/
+
+header {
+    margin-top: 25px !important;
+    margin-bottom: 14vh !important;
+}
+
+.th-logo, .tamuhack-logo {
+    height: 25px;
+}
+
+/****** TYPOGRAPHY ******/
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/****** LEFT CONTAINER ******/
+
+.hh-title {
+    text-transform: uppercase;
+    font-family: Questrial;
+    font-size: 3.5vw;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/****** RIGHT CONTAINER ******/
+
+.my-container {
+    margin: 0 0 0 15vw;
+    max-width: 55%;
+}
+
+#rect2 {
+    display: none;
+    width: 100%;
+}
+
+.hh-logo {
+    max-width: 280px;
+    margin-bottom: 40px;
+}
+
+.content-txt {
+    margin-bottom: 40px; 
+    color: white; 
+    position:relative; 
+    z-index: 10; 
+    margin-top: 8%; 
+    line-height: 44px; 
+    font-family: Questrial, sans-serif;
+}
+
+#rect {
+    position: absolute; 
+    right: 0; 
+    top: -180px; 
+    z-index: -10;
+    width: 100%; 
+    height: 700px;
+}
+
+/****** FORM ******/
+.btn {
+    background-color: #69A2CC; 
+    border-color: #69A2CC; 
+    color: white; 
+    font-weight: bolder!important; 
+    border-radius: 0px 5px 5px 0px; 
+    padding: 0px 20px 0px 20px; 
+    font-size: 18px; 
+    width: 100%;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #2F84C3;
+    border-color: #2F84C3;
+    transition: 0.3s;
+}
+.form-control {
+    font-size: 18px; 
+    border-radius: 5px 0 0 5px; 
+    max-width: 300px;
+    width: 60%;
+}
+
+.input-group {
+    padding: 0;
+}
+
+/****** RESPONSIVENESS ******/
+
+@media (max-width: 1101px) {
+    h1 {
+        font-size: 24px; /* Looking for best font ratio */
+        line-height: 30px !important;
+    }
+} 
+
+@media (max-width: 767px) {
+    .col-md-10 {
+        padding: 0 8vw;
+    }
+
+    /****** NAV ******/
+    header {
+        margin-bottom: 8vh !important;
+    }
+    .th-logo, .tamuhack-logo {
+        height: 20px;
+    }
+
+    /****** TYPOGRAPHY ******/
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+
+/****** LEFT CONTAINER ******/
+    .hhlogo-column {
+        padding-left: 15vw!important;
+        padding-right: 15vw;
+        margin-top: 0px!important;
+    }
+    .hh-logo {
+        max-width: 190px;
+        margin-bottom: 40px;
+    }
+    .hh-title {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+    .hh-subtitle {
+        font-size: 20px;
+    }
+/****** RIGHT CONTAINER ******/
+    .my-container {
+        margin: 0 !important;
+        max-width: 100%;
+        padding-bottom: 60px;
+        background-color: #354965;
+    }
+    .my-wrapper {
+        margin: 0 16vw;
+    }
+    .content-txt {
+        padding-top: 0;
+        margin: -1px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    #rect {
+        display: none;
+    }
+    #rect2 {
+        display: block !important;
+    }
+
+/****** FORM ******/
+    .form-control, .btn {
+        font-size: 16px !important;
+    }
+}
