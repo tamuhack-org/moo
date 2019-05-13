@@ -54,10 +54,10 @@
 
                             <h2>Sign up for the latest updates!</h2>
                             
-                            <form class="form" action="/" id="main">
+                            <form class="form" action="/email" id="main" method="POST">
                                 <div class="input-group" id="before">
                                     <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="email">
-                                   
+                                    <input type="hidden" name="howdyHackInterest" value="true">
                                    <div class="input-group-append">
                                         <button class="btn btn-outline-secondary" type="submit">Sign Up</button>
                                     </div>
@@ -92,8 +92,9 @@
                 console.log('Running')
 
                 if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
-                    $.post("/", {
-                        "email": email
+                    $.post("/email", {
+                        "email": email,
+                        "howdyHackInterest": true
                     })
                     $('#u_failed').hide()
                     $('#before').remove();
