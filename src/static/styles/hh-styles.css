@@ -81,14 +81,20 @@ h3 {
 
 /****** FORM ******/
 .btn {
-    background-color: #8DBFEC; 
-    border-color: #8DBFEC; 
+    background-color: #69A2CC; 
+    border-color: #69A2CC; 
     color: white; 
     font-weight: bolder!important; 
     border-radius: 0px 5px 5px 0px; 
     padding: 0px 20px 0px 20px; 
     font-size: 18px; 
     width: 100%;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #2F84C3;
+    border-color: #2F84C3;
+    transition: 0.3s;
 }
 .form-control {
     font-size: 18px; 
