@@ -283,7 +283,6 @@ html {
 	position: absolute;
 	flex-direction: row;
 	right: 0;
-	max-width:
 }
 
 #navlogo{
@@ -295,15 +294,32 @@ html {
 }
 
 .custom-p-text {
-	color: black;
-	font-size: 22px;
+  color: black;
+	/* font-size: 22px; */
+	font-size: 18px;
 	font-weight: 400;
+
+	//
+	margin-bottom: 2rem!important;
+}
+
+input.form-control {
+	padding: 22px 18px;
+	// padding: 2px 3px;
 }
 
 .light-pink-content {
   padding-top: 25px;
 	margin-top: -2px;
 	padding-bottom: 25px;
+}
+
+.light-pink-content .rowcontainer {
+  padding: 40px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80%;
+  margin: auto;
 }
 
 .mid-pink-content {
@@ -316,6 +332,19 @@ html {
   padding-top: 40px;
   padding-bottom: 10px;
 }
+
+.end-pink-content{
+  background-color: #FFEAEE;
+}
+
+.end-pink-content .endcontainer {
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
 
 #three-cols {
   min-width: 1000px;
