@@ -3,6 +3,7 @@
 
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="/static/styles/landing.css">
 	<link rel="stylesheet" href="/static/styles/app.css">
 	<link rel="stylesheet" type="text/css" href="/static/styles/semantic/dist/semantic.css">
@@ -26,9 +27,11 @@
 		</div>
 		<object id="plane" data="/static/assets/plane.svg" type="image/svg+xml"></object>
 		<object id="swoosh" data="/static/assets/swoosh.svg" type="image/svg+xml"></object>
-		<object id="acadbuild" data="/static/assets/buildings-bg-crop.svg" type="image/svg+xml"></object>
+		<!-- <object id="acadbuild" data="/static/assets/buildings-bg-crop.svg" type="image/svg+xml"></object> -->
 		<object id="blimp" data="/static/assets/blimp.svg" type="image/svg+xml"></object>
-		<object id="tamuhacklogo" data="/static/assets/tamuhack_logo.svg" type="image/svg+xml"></object>
+		<img src="/static/assets/tamuhacfull_k.svg" class="custom-responsive-backdrop-header" >
+		<img src="/static/assets/builldings.svg" id="acadbuild">
+		<!-- <object id="tamuhacklogo" data="/static/assets/tamuhack_logo.svg" type="image/svg+xml"></object> -->
 		<!-- <object id="tower" data="assets/tower.svg" type="image/svg+xml"></object> -->
 		<object id="sun" data="/static/assets/sun.svg" type="image/svg+xml"></object>
 		<object id="cloud1" data="/static/assets/cloud1.svg" type="image/svg+xml"></object>
@@ -38,73 +41,68 @@
 	</div>
 
 	<div class="one-screen-size-wrapper" style="background-color: white;">
-		<div style="padding-top: 50px;">
-			<div class="smaller-container" style="display: flex; align-items: flex-start;">
-				<div class="word-wrapper-v1" style="max-width: 750px;">
-					<h2 class="sub-header" style="display: flex; justify-content: flex-start;">WHAT WE DO</h2>
-					<span><strong  style="color: #FF7C93;">"Hack"</strong> in hackathon is used to describe how technology can</span>
-					 <span style="display: flex; margin-left: 10px;">be used in new and innovative ways.</span>
-				</div>
+
+		<div class="light-pink-content" style="background-color: #FFF6F8;">
+      <img src="/static/assets/fancy-squiggle.svg" alt="" class="fancy-squiggle">
+      <a name="what_we_do" ></a>
+			<div class="container">
+			    <div class="row">
+			        <div class="col-md-6">
+			            <h1 class="">
+			                WHAT WE DO
+			            </h1>
+			            <p class="lead custom-p-text"><span style="color: #FF7C93">"Hack"</span> in hackathon is used to describe how technology can be used in new and innovative ways.</p>
+			            <br>
+			            <p class="lead custom-p-text">
+										At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship. We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!
+			            </p>
+			        </div>
+			        <div class="col-md-1 .d-none .d-sm-block">
+			        </div>
+			        <div class="col-md-5 .d-none .d-sm-block">
+			            <center class="d-none d-md-block d-print-block">
+			                <img src="/static/assets/Layer_1.3.svg" alt="" class="img-fluid"
+			                style="width: 75%; height: auto;">
+			            </center>
+			        </div>
+			    </div>
+			    <br>
 			</div>
-		</div>
+    </div>
 
-
-		<div class="text-hero" style="padding-top: 100px;">
-			<h2 class="sub-header">TAMUhack 2019</h2>
-			<div class="word-wrapper-v1" style="max-width: 750px">
-				One of the largest annual hackathons in Texas, hosted at Texas A&amp;M University
-			</div>
-			<center>
-				<button class="hero-button" style="background-color: #639ACB;">
-					Visit TAMUhack 2019
-				</button>
-			</center>
-		</div>
-
-
-		<div class="three-fourth-screen-size-wrapper" style="background-color: #FFEAEE">
-			<center>
-				<img src="/static/assets/triangle_2.svg" class="custom-triangle-thing">
-			</center>
-
-			<div class="text-hero" style="padding-top: 100px;">
-				<h2 class="sub-header">HowdyHack 2019</h2>
-				<div class="word-wrapper-v1" style="max-width: 750px">
-					Our themed hackathon in the fall semester created for Aggies by Aggies
-				</div>
-				<center>
-					<button class="hero-button" style="background-color: #3E678C;">
-						Visit HowdyHack 2019
-					</button>
-				</center>
-			</div>
-		</div>
-
-
-		<div class="three-fourth-screen-size-wrapper" style="background-color: #FFDCE4">
-			<center>
-				<img src="/static/assets/triangle.svg" class="custom-triangle-thing">
-			</center>
-
-
-			<div class="text-hero" style="padding-top: 100px;">
-				<h2 class="sub-header">Workshops</h2>
-				<div class="word-wrapper-v1" style="max-width: 750px">
-					In addition to hackathons, we host workshops each semester to help you learn new stuff!
-				</div>
-				<center>
-					<button class="hero-button" style="background-color: #273954;">
-						See our workshops
-					</button>
-				</center>
-			</div>
-		</div>
+		<div class="mid-pink-content">
+        <center>
+            <img src="/static/assets/triangle_2.svg" class="custom-triangle-thing">
+        </center>
+        <div class="colcontainer">
+					<div class="row" id="three-cols">
+							<div class="col-lg-4">
+									<img src="/static/assets/howdyhack_official_logo.svg">
+									<h1>HowdyHack</h1>
+									<p class="custom-p-text">Our themed hackathon in the fall semester, created for Aggies by Aggies</p>
+									<p><a class="btn btn-primary" href="/hh" role="button">Visit HowdyHack 2019</a></p>
+							</div>
+							<div class="col-lg-4">
+									<img src="/static/assets/tbbb.svg">
+									<h1>TAMUhack</h1>
+									<p class="custom-p-text">One of the largest annual hackathons in Texas, hosted at Texas A&M University</p>
+									<p><a class="btn btn-primary" href="https://tamuhack.com" role="button">Visit TAMUhack 2019</a></p>
+							</div>
+							<div class="col-lg-4">
+									<img src="/static/assets/_.svg">
+									<h1>Workshops</h1>
+									<p class="custom-p-text">In addition to hackathons, we host workshops each semester to help you learn new stuff!</p>
+									<p><a class="btn btn-primary disabled" href="#" role="button">See our workshops</a></p>
+							</div>
+					</div>
+        </div>
+    </div>
 
 		<img src="/static/assets/fancy-squiggle-two.svg" style="width: 100vw;" alt="">
 
 		<h2 class="sub-header" style="text-align: center;">PAST ITERATIONS</h2>
 
-		<div class="timeline">
+		<!-- <div class="timeline">
 			<div class="container left">
 				<div class="content">
 					<h2>HowdyHack 2018</h2>
@@ -135,7 +133,7 @@
 					<p>Started from the bottom now we’re here</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div style="display: flex; position: relative; flex-direction: column; align-items: center; width: 100vw; height: 20vw; padding-bottom: 0px; margin-bottom: 20px; margin-top: 150px;">
 				<h2 style="font-size: 42px; margin-bottom: 40px;">THE TAMUHACK TEAM</h2>
@@ -483,7 +481,7 @@
 						</div>
 					</div>
             </div>
-            
+
             <div class="column">
 					<div class="ui fluid card">
 						<div class="image">
@@ -503,7 +501,7 @@
 						</div>
 					</div>
             </div>
-            
+
             <div class="column">
 					<div class="ui fluid card">
 						<div class="image">

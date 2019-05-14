@@ -102,19 +102,7 @@
   background-color: inherit;
   width: 50%;
 }
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -14px;
-  background-color: #212121;
-  border: 4px solid #212121;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
+
 /* Place the container to the left */
 .left {
   left: 0;
@@ -256,7 +244,7 @@ html {
 	height: 4%;
 	left: 3%;
 	top: 43.86%;
-	animation: translateCloud1 30s linear infinite;
+	/* animation: translateCloud1 30s linear infinite; */
 }
 
 #cloud2{
@@ -264,7 +252,7 @@ html {
 	height: 3%;
 	left: 25%;
 	top: 15%;
-	animation: translateCloud2 10s linear infinite;
+	/* animation: translateCloud2 10s linear infinite; */
 }
 
 #cloud3{
@@ -272,7 +260,7 @@ html {
 	height: 4%;
 	left: 81%;
 	top: 14%;
-	animation: translateCloud3 10s linear infinite;
+	/* animation: translateCloud3 10s linear infinite; */
 }
 
 #cloud4{
@@ -280,7 +268,7 @@ html {
 	height: 2.4%;
 	left: 94%;
 	top: 34%;
-	animation: translateCloud4 10s linear infinite;
+	/* animation: translateCloud4 10s linear infinite; */
 }
 
 #navbar{
@@ -305,4 +293,50 @@ html {
 #help{
 	margin-left: 20px;
 }
-*/
+
+.custom-p-text {
+	color: black;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.light-pink-content {
+  padding-top: 25px;
+	margin-top: -2px;
+	padding-bottom: 25px;
+}
+
+.mid-pink-content {
+  background-color: #FEF0F3;
+}
+
+.mid-pink-content .colcontainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#three-cols {
+  min-width: 1000px;
+  width: 80vw;
+}
+
+#three-cols div {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#three-cols div img{
+  height: 80px;
+  width: auto;
+  margin-bottom: 17px;
+}
+
+#three-cols div p a{
+  color: white;
+  font-size: 17px;
+  border-radius: 8px;
+  font-weight: 600;
+  background: #639ACB;
+}

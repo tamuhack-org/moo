@@ -15,14 +15,14 @@ body {
   animation: translateplane 5s linear infinite;
   z-index: -1;
 }
-
+/*
 #blimp {
   position: relative;
   left: 73.7%;
   top: 51.71%;
   width: 3%;
-  animation: translateblimp 20s linear infinite;
-}
+  /* animation: translateblimp 20s linear infinite; */
+} */
 
 #acadbuild {
   display: flex;
@@ -38,7 +38,7 @@ body {
   height: 10%;
   right: 25.6%;
   top: 20%;
-  animation: rotateSun 4s linear infinite;
+  /* animation: rotateSun 4s linear infinite; */
 }
 
 #tamuhacklogo {
@@ -61,7 +61,7 @@ body {
   height: 4%;
   left: 3%;
   top: 43.86%;
-  animation: translateCloud1 30s linear infinite;
+  /* animation: translateCloud1 30s linear infinite; */
 }
 
 #cloud2 {
@@ -69,7 +69,7 @@ body {
   height: 3%;
   left: 25%;
   top: 15%;
-  animation: translateCloud2 10s linear infinite;
+  /* animation: translateCloud2 10s linear infinite; */
 }
 
 #cloud3 {
@@ -77,7 +77,7 @@ body {
   height: 4%;
   left: 81%;
   top: 14%;
-  animation: translateCloud3 10s linear infinite;
+  /* animation: translateCloud3 10s linear infinite; */
 }
 
 #cloud4 {
@@ -85,7 +85,7 @@ body {
   height: 2.4%;
   left: 94%;
   top: 34%;
-  animation: translateCloud4 10s linear infinite;
+  /* animation: translateCloud4 10s linear infinite; */
 }
 
 #navbar {
