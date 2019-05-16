@@ -369,3 +369,32 @@ input.form-control {
   font-weight: 600;
   background: #639ACB;
 }
+
+#img-grid > div{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#img-grid img {
+  border-radius: 0px!important;
+}
+
+#teamcontainer {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-body {
+	padding-top: ~"calc(1.25rem - 5px)";
+}
+
+.card-title {
+	margin-bottom: 3px!important;
+}
+
+.card-text {
+	margin-bottom: 10px!important;
+	font-size: 14px!important;
+	color: #999999!important;
+}
