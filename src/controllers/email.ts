@@ -17,9 +17,9 @@ class EmailController {
     this.datastore = new Datastore();
   }
 
-  async insert(email: string, howdyHackInterest = false) {
+  async upsert(email: string, howdyHackInterest = false) {
     if (emailIsValid(email)) {
-      await this.datastore.insert({
+      await this.datastore.upsert({
         key: this.datastore.key(["Email", email]),
         data: { email, howdyHackInterest }
       });

@@ -4,7 +4,7 @@ import { emailController } from "../controllers/email";
 export const emailRoute = async (req: Request, res: Response) => {
   const { email, howdyHackInterest } = req.body;
   emailController
-    .insert(email, howdyHackInterest ? howdyHackInterest : false)
+    .upsert(email, howdyHackInterest ? howdyHackInterest : false)
     .then(() => {
       res.sendStatus(200);
     })
