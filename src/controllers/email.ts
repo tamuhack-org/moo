@@ -11,11 +11,7 @@ function emailIsValid(email: string): boolean {
 }
 
 class EmailController {
-  datastore: Datastore;
-
-  constructor() {
-    this.datastore = new Datastore();
-  }
+  constructor(private datastore: Datastore) {}
 
   async upsert(email: string, howdyHackInterest = false) {
     if (emailIsValid(email)) {
@@ -29,6 +25,8 @@ class EmailController {
   }
 }
 
-const emailController = new EmailController();
+const ds = new Datastore();
+
+const emailController = new EmailController(ds);
 
 export { emailController };
