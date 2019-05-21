@@ -30,6 +30,7 @@ html {
   position: relative;
   left: calc(50% - 160px);
   top: 20vh;
+  max-width: 400px;
 }
 .custom-responsive-backdrop {
   position: absolute;
@@ -49,6 +50,10 @@ html {
   .asds45f {
     top: calc(100vh - 63px -  385px);
     height: 385px;
+  }
+  .custom-responsive-backdrop-header {
+    left: calc(50% - 140px);
+    max-width: 300px;
   }
 }
 .fancy-squiggle {
