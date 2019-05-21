@@ -30,7 +30,7 @@ html {
   position: relative;
   left: calc(50% - 160px);
   top: 20vh;
-  max-width: 400px;
+  max-width: 345px;
 }
 .custom-responsive-backdrop {
   position: absolute;
@@ -54,6 +54,10 @@ html {
   .custom-responsive-backdrop-header {
     left: calc(50% - 140px);
     max-width: 300px;
+  }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .fancy-squiggle {
@@ -517,3 +521,5 @@ h5 a i:hover {
  box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
  color: #232323 !important;
 }
+
+ 
