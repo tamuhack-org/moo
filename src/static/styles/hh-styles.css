@@ -41,6 +41,11 @@ h3 {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    color: #354965;
+}
+
+.hh-subtitle {
+    color: #354965;
 }
 
 /****** RIGHT CONTAINER ******/
@@ -105,6 +110,7 @@ h3 {
 
 .input-group {
     padding: 0;
+    margin-bottom: 20px;
 }
 
 /****** RESPONSIVENESS ******/

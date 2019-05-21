@@ -23,8 +23,8 @@ html {
   color: black!important;
 }
 #top-nav-bar div .main-nav-ui li > a:hover {
-  transition: all 0.5s ease-out;
-  box-shadow: 0 -1px 0 0 #F27B93 inset, 0 -8px 0 0 #F27B93 inset;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 #F27B93 inset, 0 -6px 0 0 #F27B93 inset;
 }
 .custom-responsive-backdrop-header {
   position: relative;
@@ -66,7 +66,7 @@ html {
 }
 .main-content .mid-pink-content .container {
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 .main-content .end-pink-content {
   background-color: #FFEAEE;
@@ -94,7 +94,8 @@ html {
 #three-cols div p a {
   color: white;
   font-size: 17px;
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: .5rem 1rem;
   font-weight: 600;
   background: #639ACB;
 }
@@ -104,6 +105,9 @@ html {
 }
 .btn.btn-primary {
   border: none;
+}
+.col-lg-4 {
+  padding: 40px 25px 20px 25px;
 }
 .col-lg-4 > img {
   opacity: 0.8;
@@ -141,6 +145,9 @@ h5 a i {
 h5 a i:hover {
   opacity: 1;
 }
+#bottom-nav-bar {
+  margin-top: 60px;
+}
 #bottom-nav-bar > a {
   padding-top: 0px!important;
 }
@@ -158,7 +165,7 @@ h5 a i:hover {
   color: #999999 !important;
 }
 #bottom-nav-bar div .main-nav-ui li > a:hover {
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
   color: #232323 !important;
 }
@@ -267,7 +274,7 @@ h5 a i:hover {
   border-bottom: 25px solid transparent;
   border-left: 25px solid transparent;
   border-color: transparent transparent transparent white;
-  filter: drop-shadow(1px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
   margin-right: 7px;
   margin-left: -2px;
 }
@@ -279,16 +286,16 @@ h5 a i:hover {
   border-bottom: 25px solid transparent;
   border-right: 25px solid transparent;
   border-color: transparent white transparent transparent;
-  filter: drop-shadow(-1px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
   margin-left: 7px;
   margin-right: -2px;
 }
 #aaaaa .timeline-content {
   width: 95%;
-  padding: 22px;
-  border: .5px solid #cccccc;
+  padding: 30px;
+  border: .0px solid #cccccc;
   border-radius: 5px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 #aaaaa .timeline-content h3 {
   margin-top: 5px;
@@ -375,7 +382,7 @@ h5 a i:hover {
   border-bottom: 30px solid transparent;
   border-left: 30px solid transparent;
   border-color: transparent transparent transparent white;
-  filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.2));
   margin-right: 7px;
   margin-left: -3px;
 }
@@ -387,14 +394,14 @@ h5 a i:hover {
   border-bottom: 30px solid transparent;
   border-right: 30px solid transparent;
   border-color: transparent white transparent transparent;
-  filter: drop-shadow(-5px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(-5px 0px 0px rgba(0, 0, 0, 0.2));
   margin-left: 7px;
   margin-right: -6px;
 }
 #aaaaa-2 .timeline-content {
   width: 95%;
   padding: 11px;
-  border: 3px solid rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(0, 0, 0, 0.2);
 }
 #aaaaa-2 .timeline-content h3 {
   margin-top: 5px;
@@ -467,7 +474,7 @@ h5 a i:hover {
  color: #999999 !important;
 }
 .nice-text > a:hover {
- transition: all 0.5s ease-out;
+ transition: all 0.3s ease-out;
  box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
  color: #232323 !important;
 }
@@ -477,7 +484,7 @@ h5 a i:hover {
  padding: 5px;
 }
 .nav a > span:hover {
- transition: all 0.5s ease-out;
+ transition: all 0.3s ease-out;
  box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
  color: #232323 !important;
 }
@@ -501,7 +508,7 @@ h5 a i:hover {
  color: #999999 !important;
 }
 #bottom-nav-bar div .main-nav-ui li > a:hover {
- transition: all 0.5s ease-out;
+ transition: all 0.3s ease-out;
  box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
  color: #232323 !important;
 }
