@@ -461,3 +461,47 @@ h5 a i:hover {
     transform: rotate(360deg);
   }
 }
+
+.nice-text > a {
+ text-transform: uppercase;
+ color: #999999 !important;
+}
+.nice-text > a:hover {
+ transition: all 0.5s ease-out;
+ box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
+ color: #232323 !important;
+}
+.nav a > span {
+ text-transform: uppercase;
+ color: #999999 !important;
+ padding: 5px;
+}
+.nav a > span:hover {
+ transition: all 0.5s ease-out;
+ box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
+ color: #232323 !important;
+}
+
+#bottom-nav-bar > a {
+ padding-top: 0px!important;
+}
+#bottom-nav-bar img {
+ margin-top: 0px!important;
+}
+#bottom-nav-bar div ul li {
+ padding: 0px 10px;
+}
+#bottom-nav-bar div a {
+ color: #999999 !important;
+}
+#bottom-nav-bar div .main-nav-ui li > a {
+ padding: 8px 4px!important;
+ margin: 0px 4px!important;
+ text-transform: uppercase;
+ color: #999999 !important;
+}
+#bottom-nav-bar div .main-nav-ui li > a:hover {
+ transition: all 0.5s ease-out;
+ box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
+ color: #232323 !important;
+}
