@@ -9,7 +9,7 @@ html {
   border-color: transparent!important;
 }
 #top-nav-bar {
-  z-index: 100;
+  z-index: 10000;
   padding-top: 16px;
   padding-bottom: 16px;
   margin-left: 10vw;
@@ -75,7 +75,7 @@ html {
 .fancy-squiggle {
   width: 100%;
   position: absolute;
-  top: calc(100vh - (100vw * .126736) + 63px + 16px);
+  top: calc(100vh - (100vw * .126736) + 63px + 20px);
 }
 .main-content .light-pink-content {
   padding-top: 25px;
