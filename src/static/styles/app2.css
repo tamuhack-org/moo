@@ -3,19 +3,25 @@ html {
   font-family: 'Questrial', sans-serif;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 #top-nav-bar {
+  z-index: 100;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  min-width: 78vw;
 }
 #top-nav-bar .navbar-brand {
   margin-top: -16px;
+  margin-left: 30px;
 }
 #top-nav-bar div ul li {
   padding: 0px 10px;
 }
 #top-nav-bar div a {
-  border-bottom: 7px solid white;
+  border-bottom: 7px solid transparent;
   color: black!important;
 }
 #top-nav-bar div .main-nav-ui li > a {
@@ -89,7 +95,6 @@ html {
   font-size: 18px;
   font-weight: 400;
   font-weight: 300;
-  margin-bottom: 2rem!important;
 }
 #three-cols div {
   text-align: center;
@@ -296,8 +301,8 @@ h5 a i:hover {
   border-right: 25px solid transparent;
   border-color: transparent white transparent transparent;
   filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
-  margin-left: 7px;
-  margin-right: -2px;
+  margin-left: 6px;
+  margin-right: 0px;
 }
 #aaaaa .timeline-content {
   width: 95%;
@@ -387,30 +392,34 @@ h5 a i:hover {
   width: 0;
   height: 0;
   margin: auto 0px;
-  border-top: 15px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-left: 30px solid transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid transparent;
   border-color: transparent transparent transparent white;
-  filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
   margin-right: 7px;
-  margin-left: -3px;
+  margin-left: -1px;
+  z-index: 0;
 }
 #aaaaa-2 .arrow-left {
   width: 0;
   height: 0;
   margin: auto 0px;
-  border-top: 15px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-right: 30px solid transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid transparent;
   border-color: transparent white transparent transparent;
-  filter: drop-shadow(-5px 0px 0px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
   margin-left: 7px;
-  margin-right: -6px;
+  margin-right: 0px;
+  z-index: 0;
 }
 #aaaaa-2 .timeline-content {
   width: 95%;
   padding: 11px;
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border: .0px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 #aaaaa-2 .timeline-content h3 {
   margin-top: 5px;
@@ -434,7 +443,7 @@ h5 a i:hover {
   height: 10%;
   right: 25.6%;
   top: 20%;
-  animation: rotateSun 4s linear infinite;
+  animation: rotateSun 8s linear infinite;
 }
 
 @keyframes translateplane {
@@ -522,4 +531,28 @@ h5 a i:hover {
  color: #232323 !important;
 }
 
- 
+.test::before{
+  display: block;
+  content: " ";
+  /* // Use the browser inspector to find out the correct value here. */
+  margin-top: -40px;
+  height: 40;
+  visibility: hidden;
+}
+
+.team::before{
+  display: block;
+  content: " ";
+  /* // Use the browser inspector to find out the correct value here. */
+  margin-top: -20px;
+  height: 20;
+  visibility: hidden;
+}
+
+#hamburger{
+  z-index: 99;
+}
+
+#hamburger:focus{
+  outline: none !important;
+}

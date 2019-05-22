@@ -20,19 +20,19 @@
     <title>TAMUhack</title>
   </head>
   <body>
-    <div class="container" style="padding-right: 0px!important;">
-      <nav class="navbar navbar-expand-lg navbar-light" id="top-nav-bar">
+    <div class="container" style="padding-right: 0px!important; margin-bottom: 79px;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="top-nav-bar">
         <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
         <a class="navbar-brand" href="#">
           <img
-            src="https://tamuhack.com/static/media/th.2cc775d5.svg"
+            src="./static/assets/th_logo.svg"
             width="30"
             height="30"
             alt=""
           />
           <img
             src="./static/assets/tamuhack.svg"
-            style="margin-left: 15px; margin-top: 6px; min-width: 90px"
+            style="margin-left: 30px; margin-top: 6px; min-width: 90px"
           />
         </a>
 
@@ -44,6 +44,7 @@
           aria-controls="navbarText"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="hamburger"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,13 +55,13 @@
               <a class="nav-link" href="#what_we_do">what we do</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#past_iterations">past iterations</a>
+              <a class="nav-link" href="#our_community">our community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#our_team">our team</a>
+              <a class="nav-link" href="#past_iterations">past iterations</a>
             </li>
             <li class="nav-item" style="padding-right: 0px;">
-              <a class="nav-link" href="#our_community">our community</a>
+              <a class="nav-link" href="#our_team">our team</a>
             </li>
           </ul>
         </div>
@@ -94,11 +95,11 @@ style="margin-left: 20px; margin-top: 6px;"> -->
         data="./static/assets/plane.svg"
         type="image/svg+xml"
       ></object>
-      <object
+      <!-- <object
         id="swoosh"
         data="./static/assets/swoosh.svg"
         type="image/svg+xml"
-      ></object>
+      ></object> -->
       <!-- <object id="acadbuild" data="/static/assets/buildings-bg-crop.svg" type="image/svg+xml"></object> -->
       <!-- <object id="blimp" data="./blimp.svg" type="image/svg+xml"></object> -->
 
@@ -114,7 +115,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
       <!-- <object id="cloud3" data="assets/cloud3.svg" type="image/svg+xml"></object> -->
       <!-- <object id="cloud4" data="./cloud4.svg" type="image/svg+xml"></object> -->
     </div>
-
+    <a name="what_we_do"></a>
     <div class="main-content">
       <div class="light-pink-content" style="background-color: #FFF6F8;">
         <img
@@ -122,7 +123,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           alt=""
           class="fancy-squiggle"
         />
-        <a name="what_we_do"></a>
+
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -234,7 +235,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           />
         </center>
         <div class="container">
-          <a name="our_community"></a>
+          <a class="test" name="our_community"></a>
           <div class="container">
             <h1>THE TAMUHACK COMMUNITY</h1>
             <div style="max-width: 460px;">
@@ -291,9 +292,9 @@ style="margin-left: 20px; margin-top: 6px;"> -->
         style="width: 100%;"
       />
     </div>
+    <a class="test" name="past_iterations" style="height: 40px;"></a>
     <br /><br /><br />
     <!-- <div class="container"> -->
-    <a name="past_iterations"></a>
     <div class="container">
       <h1>PAST ITERATIONS</h1>
       <br />
@@ -409,16 +410,16 @@ style="margin-left: 20px; margin-top: 6px;"> -->
         </div>
       </div>
     </div>
+
+    <a class="test" name="our_team"></a>
     <div class="container">
-      <a name="our_team"></a>
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
         crossorigin="anonymous"
       />
-
-      <h1 style="margin-top: 250px;">THE TAMUHACK TEAM</h1>
+      <h1 style="margin-top: 100px;">THE TAMUHACK TEAM</h1>
       <p class="custom-p-text" style="padding: 20px 0px; max-width: 600px;">
         Our team consists of 19 members all dedicated to helping you turn your
         ideas into reality. We're a diverse group of computer science,
@@ -427,9 +428,8 @@ style="margin-left: 20px; margin-top: 6px;"> -->
       </p>
       <br />
       <br />
-
       <div class="row" id="img-grid">
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/sophia.jpg"
@@ -460,7 +460,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/suvedh.jpg"
@@ -489,7 +489,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/grace.jpg"
@@ -518,7 +518,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/aman.jpg"
@@ -547,7 +547,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/derek.jpg"
@@ -576,7 +576,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/addison.jpg"
@@ -598,7 +598,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/anthony.jpg"
@@ -627,7 +627,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/gabriel.jpg"
@@ -656,7 +656,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/reuben.jpg"
@@ -685,7 +685,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/ledet.jpg"
@@ -714,7 +714,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/jonathan.jpg"
@@ -743,7 +743,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/cameron.jpg"
@@ -772,7 +772,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/marissa.jpg"
@@ -801,7 +801,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/humza.jpg"
@@ -830,7 +830,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/maggieV.jpg"
@@ -859,7 +859,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/nathan.jpg"
@@ -888,7 +888,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/maggieP.jpg"
@@ -910,7 +910,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/roesha.jpg"
@@ -939,7 +939,7 @@ style="margin-left: 20px; margin-top: 6px;"> -->
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <img
             class="card-img-top"
             src="./static/assets/headshots/aryan.jpg"
