@@ -5,6 +5,9 @@ html {
   padding: 0px;
   scroll-behavior: smooth;
 }
+.navbar-toggler {
+  border-color: transparent!important;
+}
 #top-nav-bar {
   z-index: 100;
   padding-top: 16px;
@@ -65,6 +68,9 @@ html {
     padding-left: 30px;
     padding-right: 30px;
   }
+  #top-nav-bar div ul li {
+    padding: 0px 30px;
+  }
 }
 .fancy-squiggle {
   width: 100%;
@@ -114,8 +120,10 @@ html {
   background: #639ACB;
 }
 .navbar {
-  padding-left: 0px!important;
-  padding-right: 0px!important;
+  background-color: white; 
+  margin: 0!important; 
+  padding-left: 10vw!important; 
+  padding-right: 10vw!important;
 }
 .btn.btn-primary {
   border: none;
@@ -267,7 +275,7 @@ h5 a i:hover {
   background: black;
   margin: auto 0px;
   margin-left: -21px;
-  z-index: 9999;
+ 
 }
 #aaaaa .marker-2 {
   max-width: 60px!important;
@@ -278,7 +286,7 @@ h5 a i:hover {
   background: black;
   margin: auto 0px;
   margin-right: -21px;
-  z-index: 9999;
+
 }
 #aaaaa .arrow-right {
   width: 0;
