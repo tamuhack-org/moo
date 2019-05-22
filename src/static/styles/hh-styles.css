@@ -8,12 +8,20 @@
 /****** NAV ******/
 
 header {
-    margin-top: 25px !important;
+    margin-top: 16px !important;
     margin-bottom: 14vh !important;
 }
 
-.th-logo, .tamuhack-logo {
-    height: 25px;
+.th-logo {
+    height: 30px;
+    width: 30px;
+}
+
+.tamuhack-logo {
+    margin-top: 6px!important;
+    min-width: 90px;
+    width: 124px;
+    height: 23px;
 }
 
 /****** TYPOGRAPHY ******/
@@ -78,10 +86,10 @@ h3 {
 #rect {
     position: absolute; 
     right: 0; 
-    top: -180px; 
+    top: -240px; 
     z-index: -10;
     width: 100%; 
-    height: 700px;
+    height: 740px;
 }
 
 /****** FORM ******/
@@ -131,9 +139,9 @@ h3 {
     header {
         margin-bottom: 8vh !important;
     }
-    .th-logo, .tamuhack-logo {
+    /* .th-logo, .tamuhack-logo {
         height: 20px;
-    }
+    } */
 
     /****** TYPOGRAPHY ******/
     h1 {
