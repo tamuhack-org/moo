@@ -20,7 +20,7 @@ class EmailController {
         data: { email, howdyHackInterest }
       });
     } else {
-      throw Error("The email provided was not valid.");
+      throw Error(`The email provided was not valid.`);
     }
   }
 }

@@ -1,731 +1,982 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./static/styles/app2.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./static/styles/app2.css" />
     <title>TAMUhack</title>
-</head>
-<body>
-
-  <div class="container" style="padding-right: 0px!important;">
+  </head>
+  <body>
+    <div class="container" style="padding-right: 0px!important;">
       <nav class="navbar navbar-expand-lg navbar-light" id="top-nav-bar">
-          <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
-          <a class="navbar-brand" href="#">
-              <img src="https://tamuhack.com/static/media/th.2cc775d5.svg" width="30" height="30" alt="">
-              <img src="./static/assets/tamuhack.svg" style="margin-left: 15px; margin-top: 6px; min-width: 90px">
-          </a>
+        <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://tamuhack.com/static/media/th.2cc775d5.svg"
+            width="30"
+            height="30"
+            alt=""
+          />
+          <img
+            src="./static/assets/tamuhack.svg"
+            style="margin-left: 15px; margin-top: 6px; min-width: 90px"
+          />
+        </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-              </ul>
-              <ul class="navbar-nav main-nav-ui">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#what_we_do">what we do</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#past_iterations">past iterations</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#our_team">our team</a>
-                  </li>
-                  <li class="nav-item" style="padding-right: 0px;">
-                      <a class="nav-link" href="#our_community">our community</a>
-                  </li>
-              </ul>
-          </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="navbar-nav main-nav-ui">
+            <li class="nav-item">
+              <a class="nav-link" href="#what_we_do">what we do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#past_iterations">past iterations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our_team">our team</a>
+            </li>
+            <li class="nav-item" style="padding-right: 0px;">
+              <a class="nav-link" href="#our_community">our community</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </div>
-<!-- <div class="nice-crop-effects">
+    </div>
+    <!-- <div class="nice-crop-effects">
     <img src="/builldings.svg" class="backdrop-background img-fluid"
     style="margin-left: 20px; margin-top: 6px;">
 </div> -->
 
-<!-- <img src="/builldings.svg" class="backdrop-background img-fluid"
+    <!-- <img src="/builldings.svg" class="backdrop-background img-fluid"
 style="margin-left: 20px; margin-top: 6px;"> -->
 
-
-<div style="min-height: 100vh; background: linear-gradient(to bottom, white 70%, #FFF6F8 70% 100%);">
-      <img src="./static/assets/tamuhacfull_k.svg" class="custom-responsive-backdrop-header" style="z-index: 1;" >
+    <div
+      style="min-height: 100vh; background: linear-gradient(to bottom, white 70%, #FFF6F8 70% 100%);"
+    >
+      <img
+        src="./static/assets/tamuhacfull_k.svg"
+        class="custom-responsive-backdrop-header"
+        style="z-index: 1;"
+      />
       <div class="asds45f" style="background-color: white;">
-          <img src="./static/assets/buildings-filled.svg" class="custom-responsive-backdrop" >
+        <img
+          src="./static/assets/buildings-filled.svg"
+          class="custom-responsive-backdrop"
+        />
       </div>
 
-    <object id="plane" data="./static/assets/plane.svg" type="image/svg+xml"></object>
-    <object id="swoosh" data="./static/assets/swoosh.svg" type="image/svg+xml"></object>
-    <!-- <object id="acadbuild" data="/static/assets/buildings-bg-crop.svg" type="image/svg+xml"></object> -->
-    <!-- <object id="blimp" data="./blimp.svg" type="image/svg+xml"></object> -->
+      <object
+        id="plane"
+        data="./static/assets/plane.svg"
+        type="image/svg+xml"
+      ></object>
+      <object
+        id="swoosh"
+        data="./static/assets/swoosh.svg"
+        type="image/svg+xml"
+      ></object>
+      <!-- <object id="acadbuild" data="/static/assets/buildings-bg-crop.svg" type="image/svg+xml"></object> -->
+      <!-- <object id="blimp" data="./blimp.svg" type="image/svg+xml"></object> -->
 
-    <!-- <object id="tamuhacklogo" data="/static/assets/tamuhack_logo.svg" type="image/svg+xml"></object> -->
-    <!-- <object id="tower" data="assets/tower.svg" type="image/svg+xml"></object> -->
-    <object id="sun" data="./static/assets/sun.svg" type="image/svg+xml"></object>
-    <!-- <object id="cloud1" data="./cloud1.svg" type="image/svg+xml"></object> -->
-    <!-- <object id="cloud2" data="./cloud2.svg" type="image/svg+xml"></object> -->
-    <!-- <object id="cloud3" data="assets/cloud3.svg" type="image/svg+xml"></object> -->
-    <!-- <object id="cloud4" data="./cloud4.svg" type="image/svg+xml"></object> -->
-</div>
+      <!-- <object id="tamuhacklogo" data="/static/assets/tamuhack_logo.svg" type="image/svg+xml"></object> -->
+      <!-- <object id="tower" data="assets/tower.svg" type="image/svg+xml"></object> -->
+      <object
+        id="sun"
+        data="./static/assets/sun.svg"
+        type="image/svg+xml"
+      ></object>
+      <!-- <object id="cloud1" data="./cloud1.svg" type="image/svg+xml"></object> -->
+      <!-- <object id="cloud2" data="./cloud2.svg" type="image/svg+xml"></object> -->
+      <!-- <object id="cloud3" data="assets/cloud3.svg" type="image/svg+xml"></object> -->
+      <!-- <object id="cloud4" data="./cloud4.svg" type="image/svg+xml"></object> -->
+    </div>
 
-<div class="main-content">
-    <div class="light-pink-content" style="background-color: #FFF6F8;">
-        <img src="./static/assets/fancy-squiggle.svg" alt="" class="fancy-squiggle">
-        <a name="what_we_do" ></a>
+    <div class="main-content">
+      <div class="light-pink-content" style="background-color: #FFF6F8;">
+        <img
+          src="./static/assets/fancy-squiggle.svg"
+          alt=""
+          class="fancy-squiggle"
+        />
+        <a name="what_we_do"></a>
         <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h1 class="" style="margin-bottom: 20px!important;">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="" style="margin-bottom: 20px!important;">
                 WHAT WE DO
-            </h1>
-            <p class="lead custom-p-text" style="font-size: 22px!important; margin-bottom: 0px!important;"
-            ><span style="font-weight: 500!important; color: #FF7C93">"Hack"</span>
-                in hackathon is used to describe
-                how technology can be used in new and innovative ways.
-        </p>
-            <br>
-            <p class="lead custom-p-text">
-                At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world
-                problems in a community full of mentorship.
-            </p>
-            <p class="lead custom-p-text">
-
-                We’ll provide you with all the resources and mentors you need to work on something cool. You’ll have the
-                freedom to create a product, learn new skills or just have fun working on a project with friends. We’ll
-                also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the
-                awesome sponsors and mentors you’ll meet! </p>
+              </h1>
+              <p
+                class="lead custom-p-text"
+                style="font-size: 22px!important; margin-bottom: 0px!important;"
+              >
+                <span style="font-weight: 500!important; color: #FF7C93"
+                  >"Hack"</span
+                >
+                in hackathon is used to describe how technology can be used in
+                new and innovative ways.
+              </p>
+              <br />
+              <p class="lead custom-p-text">
+                At TAMUhack, teams spend the weekend working on innovative
+                software and hardware solutions to real-world problems in a
+                community full of mentorship.
+              </p>
+              <p class="lead custom-p-text">
+                We’ll provide you with all the resources and mentors you need to
+                work on something cool. You’ll have the freedom to create a
+                product, learn new skills or just have fun working on a project
+                with friends. We’ll also provide all the free food and free
+                swag—just be sure to bring plenty of resumes for all of the
+                awesome sponsors and mentors you’ll meet!
+              </p>
+            </div>
+            <div class="col-md-1 .d-none .d-sm-block"></div>
+            <div class="col-md-5 .d-none .d-sm-block">
+              <center class="d-none d-md-block d-print-block img-container2">
+                <img
+                  src="./static/assets/Layer_1.3.svg"
+                  alt=""
+                  class="img-fluid special-image"
+                  style="width: 75%; height: auto;"
+                />
+              </center>
+            </div>
+          </div>
+          <br />
         </div>
-        <div class="col-md-1 .d-none .d-sm-block">
-        </div>
-        <div class="col-md-5 .d-none .d-sm-block">
-            <center class="d-none d-md-block d-print-block img-container2">
-                <img src="./static/assets/Layer_1.3.svg" alt="" class="img-fluid special-image" style="width: 75%; height: auto;">
-            </center>
-        </div>
-    </div>
-    <br>
-</div>
-    </div>
-    <div class="mid-pink-content">
+      </div>
+      <div class="mid-pink-content">
         <center>
-            <img src="./static/assets/triangle_2.svg" class="custom-triangle-thing">
+          <img
+            src="./static/assets/triangle_2.svg"
+            class="custom-triangle-thing"
+          />
         </center>
         <div class="container">
-            <div class="row" id="three-cols">
-    <div class="col-lg-4">
-        <img src="./static/assets/howdyhack_official_logo.svg">
-        <h1>HowdyHack</h1>
-        <p class="custom-p-text">Our themed hackathon in the fall semester, created for Aggies by Aggies</p>
-        <p><a class="btn btn-primary hh-button" href="/hh"
-         role="button">Visit HowdyHack 2019</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-        <img src="./static/assets/tbbb.svg">
-        <h1>TAMUhack</h1>
-        <p class="custom-p-text">One of the largest annual hackathons in Texas, hosted at Texas A&M University</p>
-        <p><a class="btn btn-primary tamu-button" href="https://tamuhack.com"
-            role="button">Visit TAMUhack 2019</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-        <img src="./static/assets/_.svg">
-        <h1>Workshops</h1>
-        <p class="custom-p-text">We also host workshops each semester to help you learn the latest tech</p>
-        <p><a class="btn btn-primary disabled" href="#" role="button">See our workshops</a></p>
-    </div><!-- /.col-lg-4 -->
-</div>
+          <div class="row" id="three-cols">
+            <div class="col-lg-4">
+              <img src="./static/assets/howdyhack_official_logo.svg" />
+              <h1>HowdyHack</h1>
+              <p class="custom-p-text">
+                Our themed hackathon in the fall semester, created for Aggies by
+                Aggies
+              </p>
+              <p>
+                <a class="btn btn-primary hh-button" href="/hh" role="button"
+                  >Visit HowdyHack 2019</a
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="./static/assets/tbbb.svg" />
+              <h1>TAMUhack</h1>
+              <p class="custom-p-text">
+                One of the largest annual hackathons in Texas, hosted at Texas
+                A&M University
+              </p>
+              <p>
+                <a
+                  class="btn btn-primary tamu-button"
+                  href="https://tamuhack.com"
+                  role="button"
+                  >Visit TAMUhack 2019</a
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="./static/assets/_.svg" />
+              <h1>Workshops</h1>
+              <p class="custom-p-text">
+                We also host workshops each semester to help you learn the
+                latest tech
+              </p>
+              <p>
+                <a class="btn btn-primary disabled" href="#" role="button"
+                  >See our workshops</a
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
         </div>
-    </div>
-    <div class="end-pink-content">
+      </div>
+      <div class="end-pink-content">
         <center>
-            <img src="./static/assets/Vector 2.7.svg" class="custom-triangle-thing">
+          <img
+            src="./static/assets/Vector 2.7.svg"
+            class="custom-triangle-thing"
+          />
         </center>
         <div class="container">
-                <a name="our_community" ></a>
-                <div class="container">
-    <h1>THE TAMUHACK COMMUNITY</h1>
-    <div style="max-width: 460px;">
-        <p class="custom-p-text" style="padding: 20px 0px;">
-            Stay connected! Sign up for our mailing list for events, updates, and more.</p>
-        <form class="form" action="/" id="main">
-            <div class="input-group mb-3" id="before">
-
-                <input type="text" class="form-control" placeholder="Enter your email here..."
-                    aria-label="Recipient's username" aria-describedby="basic-addon2" id="email">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" style="background-color: #FF7C93; border-color: #FF7C93;
-                    color: white; font-weight: bolder;" type="submit">Sign Up</button>
-
+          <a name="our_community"></a>
+          <div class="container">
+            <h1>THE TAMUHACK COMMUNITY</h1>
+            <div style="max-width: 460px;">
+              <p class="custom-p-text" style="padding: 20px 0px;">
+                Stay connected! Sign up for our mailing list for events,
+                updates, and more.
+              </p>
+              <form class="form" action="/" id="email-form">
+                <div class="input-group mb-3" id="before">
+                  <input
+                    name="email"
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your email here..."
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                    id="email"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      style="background-color: #FF7C93; border-color: #FF7C93;
+                    color: white; font-weight: bolder;"
+                      type="submit"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
                 </div>
+                <div
+                  class="alert alert-danger"
+                  role="alert"
+                  id="u_failed"
+                  style="display: none;"
+                >
+                  Email was not accepted. Try again!
+                </div>
+                <div
+                  class="alert alert-success"
+                  role="alert"
+                  id="after"
+                  style="display: none;"
+                >
+                  All good! Expect to hear back from us soon!
+                </div>
+              </form>
             </div>
-            <div class="alert alert-danger" role="alert" id="u_failed" style="display: none;">
-                Email was not accepeted. Try again!
-            </div>
-            <div class="alert alert-success" role="alert" id="after" style="display: none;">
-                All good! Expect to hear back from us soon!
-            </div>
-
-        </form>
-
-    </div>
-</div>
+          </div>
         </div>
+      </div>
+      <img
+        src="./static/assets/fancy-squiggle-two.svg"
+        alt=""
+        style="width: 100%;"
+      />
     </div>
-    <img src="./static/assets/fancy-squiggle-two.svg" alt="" style="width: 100%;">
-</div>
-<br><br><br>
-<!-- <div class="container"> -->
-<a name="past_iterations" ></a>
-<div class="container">
-    <h1>PAST ITERATIONS</h1>
-    <br>
-<div id="aaaaa" class="d-none d-md-block d-print-block">
+    <br /><br /><br />
+    <!-- <div class="container"> -->
+    <a name="past_iterations"></a>
     <div class="container">
-
-        <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="arrow-left"></div>
-            <div class="timeline-content">
-                <h2>HowdyHack 2018</h2>
-                <p class="custom-p-text">The first iteration of HowdyHack.</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-left">
-            <div class="marker-2"></div>
-            <div class="arrow-right"></div>
-            <div class="timeline-content">
-                <h2>TAMUhack 2018</h2>
-                <p class="custom-p-text">Switching from a Fall hackathon to a Spring hackathon</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="arrow-left"></div>
-                <div class="timeline-content">
-                <h2>TAMUhack 2016</h2>
-                <p class="custom-p-text">Polka dots and pastels make their first appearance.</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-left">
-            <div class="marker-2"></div>
-            <div class="arrow-right"></div>
-            <div class="timeline-content">
-                <h2>TAMUhack 2015</h2>
-                <p class="custom-p-text">New location, new design, we’re making things bigger</p>
-            </div>
-        </div>
-
-        <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="arrow-left"></div>
-            <div class="timeline-content">
-                <h2>TAMUhack 2014</h2>
-                <p class="custom-p-text">Started from the bottom now we’re here.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<div id="aaaaa-2" class="d-block d-none d-sm-block d-md-none ">
-
+      <h1>PAST ITERATIONS</h1>
+      <br />
+      <div id="aaaaa" class="d-none d-md-block d-print-block">
         <div class="container">
-
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="arrow-left"></div>
-                <div class="timeline-content">
-                    <h2>HowdyHack 2018</h2>
-                    <p class="custom-p-text">The first iteration of HowdyHack.</p>
-                </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="arrow-left"></div>
+            <div class="timeline-content">
+              <h2>HowdyHack 2018</h2>
+              <p class="custom-p-text">The first iteration of HowdyHack.</p>
             </div>
+          </div>
 
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="arrow-left"></div>
-                <div class="timeline-content">
-                    <h2>TAMUhack 2018</h2>
-                    <p class="custom-p-text">Switching from a Fall hackathon to a Spring hackathon</p>
-                </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker-2"></div>
+            <div class="arrow-right"></div>
+            <div class="timeline-content">
+              <h2>TAMUhack 2018</h2>
+              <p class="custom-p-text">
+                Switching from a Fall hackathon to a Spring hackathon
+              </p>
             </div>
+          </div>
 
-            <div class="timeline-block timeline-block-right">
-                    <div class="marker"></div>
-                    <div class="arrow-left"></div>
-                    <div class="timeline-content">
-                    <h2>TAMUhack 2016</h2>
-                    <p class="custom-p-text">Polka dots and pastels make their first appearance.</p>
-                </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="arrow-left"></div>
+            <div class="timeline-content">
+              <h2>TAMUhack 2016</h2>
+              <p class="custom-p-text">
+                Polka dots and pastels make their first appearance.
+              </p>
             </div>
+          </div>
 
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="arrow-left"></div>
-                <div class="timeline-content">
-                    <h2>TAMUhack 2015</h2>
-                    <p class="custom-p-text">New location, new design, we’re making things bigger</p>
-                </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker-2"></div>
+            <div class="arrow-right"></div>
+            <div class="timeline-content">
+              <h2>TAMUhack 2015</h2>
+              <p class="custom-p-text">
+                New location, new design, we’re making things bigger
+              </p>
             </div>
+          </div>
 
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="arrow-left"></div>
-                <div class="timeline-content">
-                    <h2>TAMUhack 2014</h2>
-                    <p class="custom-p-text">Started from the bottom now we’re here.</p>
-                </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="arrow-left"></div>
+            <div class="timeline-content">
+              <h2>TAMUhack 2014</h2>
+              <p class="custom-p-text">
+                Started from the bottom now we’re here.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-<div class="container">
-    <a name="our_team" ></a>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-<h1 style="margin-top: 250px;">THE TAMUHACK TEAM</h1>
-<p class="custom-p-text" style="padding: 20px 0px; max-width: 600px;">
-  Our team consists of 19 members all dedicated to helping you turn your ideas into reality. We're a diverse group of
-  computer science, electrical, and mechanical engineering majors who brought our passions together to bring you a
-  space for creative expression!
-</p>
-<br>
-<br>
+    <div id="aaaaa-2" class="d-block d-none d-sm-block d-md-none ">
+      <div class="container">
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="arrow-left"></div>
+          <div class="timeline-content">
+            <h2>HowdyHack 2018</h2>
+            <p class="custom-p-text">The first iteration of HowdyHack.</p>
+          </div>
+        </div>
 
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="arrow-left"></div>
+          <div class="timeline-content">
+            <h2>TAMUhack 2018</h2>
+            <p class="custom-p-text">
+              Switching from a Fall hackathon to a Spring hackathon
+            </p>
+          </div>
+        </div>
 
-<div class="row" id="img-grid">
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="arrow-left"></div>
+          <div class="timeline-content">
+            <h2>TAMUhack 2016</h2>
+            <p class="custom-p-text">
+              Polka dots and pastels make their first appearance.
+            </p>
+          </div>
+        </div>
 
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="arrow-left"></div>
+          <div class="timeline-content">
+            <h2>TAMUhack 2015</h2>
+            <p class="custom-p-text">
+              New location, new design, we’re making things bigger
+            </p>
+          </div>
+        </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/sophia.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Sophia Lee</h5>
-      <p class="card-text" style="margin: 0px;">President/Logistics Director</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://www.github.com/sophialee0416" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/sophialee0417" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="arrow-left"></div>
+          <div class="timeline-content">
+            <h2>TAMUhack 2014</h2>
+            <p class="custom-p-text">Started from the bottom now we’re here.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="container">
+      <a name="our_team"></a>
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+      />
 
+      <h1 style="margin-top: 250px;">THE TAMUHACK TEAM</h1>
+      <p class="custom-p-text" style="padding: 20px 0px; max-width: 600px;">
+        Our team consists of 19 members all dedicated to helping you turn your
+        ideas into reality. We're a diverse group of computer science,
+        electrical, and mechanical engineering majors who brought our passions
+        together to bring you a space for creative expression!
+      </p>
+      <br />
+      <br />
 
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/suvedh.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Suvedh Srikanth</h5>
-      <p class="card-text" style="margin: 0px;">Finance Director</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
+      <div class="row" id="img-grid">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/sophia.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Sophia Lee</h5>
+            <p class="card-text" style="margin: 0px;">
+              President/Logistics Director
+            </p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://www.github.com/sophialee0416"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
 
-        <a href="https://www.github.com/suvedhs/" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
+              &nbsp;
 
-        &nbsp;
+              <a
+                href="https://www.linkedin.com/in/sophialee0417"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
 
-        <a href="https://www.linkedin.com/in/suvedh-srikanth/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/suvedh.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Suvedh Srikanth</h5>
+            <p class="card-text" style="margin: 0px;">Finance Director</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://www.github.com/suvedhs/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
 
-      </h5>
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/suvedh-srikanth/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/grace.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Grace Fan</h5>
+            <p class="card-text" style="margin: 0px;">Creative Director</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/gracekfan"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/gracekfan"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/aman.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Aman Gottumukkala</h5>
+            <p class="card-text" style="margin: 0px;">Tech Mentor</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/amangotchu"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/amangotchu/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/derek.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Derek Li</h5>
+            <p class="card-text" style="margin: 0px;">Hardware Mentor</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/derektli97"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://linkedin.com/in/derek-li-4910/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/addison.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Addison Maupin</h5>
+            <p class="card-text" style="margin: 0px;">Finance Mentor</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/addison-maupin-73a394131/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/anthony.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Anthony Teo</h5>
+            <p class="card-text" style="margin: 0px;">Design</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/eightants"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/anthonyteo/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/gabriel.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Gabriel Britain</h5>
+            <p class="card-text" style="margin: 0px;">Tech</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/SaltyQuetzals"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/gabriel-britain-57523214b"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/reuben.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Reuben Tadpatri</h5>
+            <p class="card-text" style="margin: 0px;">Logistics</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/rstadpatri"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/reuben-tadpatri-9baab214b/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/ledet.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Ledet Awano</h5>
+            <p class="card-text" style="margin: 0px;">Finance</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/ledet2020"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/ledet-awano/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/jonathan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Jonathan Innis</h5>
+            <p class="card-text" style="margin: 0px;">Design &amp; Tech</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/jonathan-innis"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/jonathan-innis-87581312a/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/cameron.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Cameron Coffey</h5>
+            <p class="card-text" style="margin: 0px;">Tech</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/cameron3301"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/cameron-coffey-0018b614a"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/marissa.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Marissa Soria</h5>
+            <p class="card-text" style="margin: 0px;">Logistics</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/soriamarissa"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/marissa-soria-233b8914b/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/humza.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Humza Jaffri</h5>
+            <p class="card-text" style="margin: 0px;">Finance</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/HumzaJaffri"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/humza-jaffri-b5089299/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/maggieV.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Maggie von Ebers</h5>
+            <p class="card-text" style="margin: 0px;">Finance</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/mx60s"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/maggie-v"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/nathan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Nathan Reddy</h5>
+            <p class="card-text" style="margin: 0px;">Tech</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/onewebdev"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/nathan-r-profile/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/maggieP.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Meghana Pothugunta</h5>
+            <p class="card-text" style="margin: 0px;">Logistics</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/meghana-pothugunta-7161a8183/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/roesha.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Roesha Nigos</h5>
+            <p class="card-text" style="margin: 0px;">Finance</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/roeshanigos"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/roeshanigos/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <img
+            class="card-img-top"
+            src="./static/assets/headshots/aryan.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="text-align: center!important;">
+            <h5 class="card-title">Aryan Shetty</h5>
+            <p class="card-text" style="margin: 0px;">Tech &amp; Logistics</p>
+            <h5 class="card-text" style="margin: 5px 0px;">
+              <a
+                href="https://github.com/aryanshetty711"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              &nbsp;
+
+              <a
+                href="https://www.linkedin.com/in/aryan-shetty-860717148/"
+                style="text-decoration: none; color: black;"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <!-- </div> -->
 
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/grace.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Grace Fan</h5>
-      <p class="card-text" style="margin: 0px;">Creative Director</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
+    <br />
+    <br />
 
-        <a href="https://github.com/gracekfan" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/gracekfan" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/aman.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Aman Gottumukkala</h5>
-      <p class="card-text" style="margin: 0px;">Tech Mentor</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/amangotchu" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/amangotchu/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/derek.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Derek Li</h5>
-      <p class="card-text" style="margin: 0px;">Hardware Mentor</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/derektli97" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://linkedin.com/in/derek-li-4910/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/addison.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Addison Maupin</h5>
-      <p class="card-text" style="margin: 0px;">Finance Mentor</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/addison-maupin-73a394131/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/anthony.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Anthony Teo</h5>
-      <p class="card-text" style="margin: 0px;">Design</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/eightants" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/anthonyteo/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/gabriel.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Gabriel Britain</h5>
-      <p class="card-text" style="margin: 0px;">Tech</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/SaltyQuetzals" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/gabriel-britain-57523214b" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/reuben.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Reuben Tadpatri</h5>
-      <p class="card-text" style="margin: 0px;">Logistics</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/rstadpatri" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/reuben-tadpatri-9baab214b/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/ledet.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Ledet Awano</h5>
-      <p class="card-text" style="margin: 0px;">Finance</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/ledet2020" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/ledet-awano/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/jonathan.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Jonathan Innis</h5>
-      <p class="card-text" style="margin: 0px;">Design &amp; Tech</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/jonathan-innis" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/jonathan-innis-87581312a/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/cameron.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Cameron Coffey</h5>
-      <p class="card-text" style="margin: 0px;">Tech</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/cameron3301" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/cameron-coffey-0018b614a" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/marissa.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Marissa Soria</h5>
-      <p class="card-text" style="margin: 0px;">Logistics</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/soriamarissa" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/marissa-soria-233b8914b/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/humza.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Humza Jaffri</h5>
-      <p class="card-text" style="margin: 0px;">Finance</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/HumzaJaffri" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/humza-jaffri-b5089299/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/maggieV.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Maggie von Ebers</h5>
-      <p class="card-text" style="margin: 0px;">Finance</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/mx60s" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/maggie-v" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/nathan.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Nathan Reddy</h5>
-      <p class="card-text" style="margin: 0px;">Tech</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/onewebdev" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/nathan-r-profile/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/maggieP.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Meghana Pothugunta</h5>
-      <p class="card-text" style="margin: 0px;">Logistics</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/meghana-pothugunta-7161a8183/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/roesha.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Roesha Nigos</h5>
-      <p class="card-text" style="margin: 0px;">Finance</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/roeshanigos" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/roeshanigos/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <img class="card-img-top" src="./static/assets/headshots/aryan.jpg" alt="Card image cap">
-    <div class="card-body" style="text-align: center!important;">
-      <h5 class="card-title">Aryan Shetty</h5>
-      <p class="card-text" style="margin: 0px;">Tech &amp; Logistics</p>
-      <h5 class="card-text" style="margin: 5px 0px;">
-
-        <a href="https://github.com/aryanshetty711" style="text-decoration: none; color: black;">
-          <i class="fab fa-github"></i>
-        </a>
-
-        &nbsp;
-
-        <a href="https://www.linkedin.com/in/aryan-shetty-860717148/" style="text-decoration: none; color: black;">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </h5>
-    </div>
-  </div>
-
-
-</div>
-</div>
-
-<!-- </div> -->
-
-
-<br>
-<br>
-
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
         <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
         <!-- <a class="navbar-brand" href="#" style="float: left;">
             <img src="/tamuhack_official_logo.svg" style="margin-left: 20px; margin-top: 6px;">
@@ -736,77 +987,162 @@ style="margin-left: 20px; margin-top: 6px;"> -->
             <span class="navbar-toggler-icon"></span>
         </button> -->
         <div class="collapse navbar-collapse" id="navbarText">
-            <!-- <ul class="navbar-nav mr-auto">
+          <!-- <ul class="navbar-nav mr-auto">
             </ul> -->
-            <ul class="navbar-nav main-nav-ui mr-auto" style="margin-right: 0px!important; margin-left: 0px!important; width: 148px!important;">
-                <li class="nav-item">
-                    <div class="navbar-brand" href="#" style="float: left;">
-                        <img src="./static/assets/tamuhack_official_logo.svg" style="margin-left: 20px; margin-top: 6px;">
-                    </div>
-                            </li>
-            </ul>
-            <ul class="navbar-nav main-nav-ui mr-auto" style="margin: 0px auto!important;">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">collaborate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">sponsor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">email</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav main-nav-ui mr-auto" style="margin-right: 0px!important;">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="custom-nav d-lg-none d-xl-none">
-        <img src="./static/assets/tamuhack_official_logo.svg" style="width: auto; height: 20px!important; float: left;">
-        <div style="display: inline-block; width: 150px; float: right;" class="nice-text">
-            <a class="nav-link" href="#" style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;">
+          <ul
+            class="navbar-nav main-nav-ui mr-auto"
+            style="margin-right: 0px!important; margin-left: 0px!important; width: 148px!important;"
+          >
+            <li class="nav-item">
+              <div class="navbar-brand" href="#" style="float: left;">
+                <img
+                  src="./static/assets/tamuhack_official_logo.svg"
+                  style="margin-left: 20px; margin-top: 6px;"
+                />
+              </div>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav main-nav-ui mr-auto"
+            style="margin: 0px auto!important;"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">collaborate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">sponsor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">email</a>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav main-nav-ui mr-auto"
+            style="margin-right: 0px!important;"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/tamuhack/">
                 <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="nav-link" href="#" style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/tamuhack/">
                 <i class="fab fa-instagram"></i>
-            </a>
-            <a class="nav-link" href="#" style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/tamuhack">
                 <i class="fab fa-twitter"></i>
-            </a>
+              </a>
+            </li>
+          </ul>
         </div>
-        <br>
-
+      </nav>
+      <div class="custom-nav d-lg-none d-xl-none">
+        <img
+          src="./static/assets/tamuhack_official_logo.svg"
+          style="width: auto; height: 20px!important; float: left;"
+        />
+        <div
+          style="display: inline-block; width: 150px; float: right;"
+          class="nice-text"
+        >
+          <a
+            class="nav-link"
+            href="#"
+            style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            class="nav-link"
+            href="#"
+            style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            class="nav-link"
+            href="#"
+            style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <br />
+      </div>
+      <center>
+        <nav
+          class="nav nav-pills nav-justified d-lg-none d-xl-none"
+          style="width: 100%!important;"
+        >
+          <a
+            class="nav-item nav-link"
+            href="https://github.com/tamuhack-org"
+            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
+            ><span>COLLABORATE</span></a
+          >
+          <a
+            class="nav-item nav-link"
+            href="mailto:sponsor@tamuhack.com"
+            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
+            ><span>SPONSOR</span></a
+          >
+          <a
+            class="nav-item nav-link"
+            href="mailto:hello@tamuhack.com"
+            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
+            ><span>EMAIL</span></a
+          >
+        </nav>
+      </center>
     </div>
-<center>
-    <nav class="nav nav-pills nav-justified d-lg-none d-xl-none" style="width: 100%!important;">
-        <a class="nav-item nav-link" href="#"
-         style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"><span>COLLABORATE</span></a>
-        <a class="nav-item nav-link" href="#"
-         style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"><span>SPONSOR</span></a>
-        <a class="nav-item nav-link" href="#"
-         style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"><span>EMAIL</span></a>
-    </nav>
+    <br />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#after").hide();
+      $("#u_failed").hide();
+      $(document).ready(function() {
+        // Listen to submit event on the <form> itself!
+        $("#email-form").submit(function(e) {
+          e.preventDefault();
+          var email = $("#email").val();
 
-</center>
-</div>
-<br>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+          if (
+            /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+              email
+            )
+          ) {
+            fetch("/email", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({ email: email })
+            });
+            $("#u_failed").hide();
+            $("#before").remove();
+            $("#after").show();
+          } else {
+            console.log("invalid email");
+            $("#u_failed").show();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
