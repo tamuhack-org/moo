@@ -1,5 +1,5 @@
 runtime: nodejs10
 handlers:
 - url: /.*
-  script: build/src/app.js
+  script: auto
   secure: always
