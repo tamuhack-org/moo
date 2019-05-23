@@ -55,7 +55,16 @@ html {
   height: calc(100vw * .45833333333);
   overflow: hidden;
 }
+.navbar {
+  background-color: white; 
+  margin: 0!important; 
+  padding-left: 10vw!important; 
+  padding-right: 10vw!important;
+}
 @media all and (max-width: 840px) {
+  .navbar {
+    padding-left: 10px!important; 
+  }
   .asds45f {
     top: calc(100vh - 63px -  385px);
     height: 385px;
@@ -71,6 +80,10 @@ html {
   #top-nav-bar div ul li {
     padding: 0px 30px;
   }
+}
+#inner-contain {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
 }
 .fancy-squiggle {
   width: 100%;
@@ -118,12 +131,6 @@ html {
   padding: .5rem 1rem;
   font-weight: 600;
   background: #639ACB;
-}
-.navbar {
-  background-color: white; 
-  margin: 0!important; 
-  padding-left: 10vw!important; 
-  padding-right: 10vw!important;
 }
 .btn.btn-primary {
   border: none;
