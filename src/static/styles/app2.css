@@ -61,7 +61,25 @@ html {
   padding-left: 10vw!important; 
   padding-right: 10vw!important;
 }
+.custom-p-text {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: 300;
+}
+.th-text-logo {
+  margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
+}
 @media all and (max-width: 840px) {
+  .th-text-logo {
+    opacity: 0;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .custom-p-text {
+    font-size: 16px;
+  }
   .navbar {
     padding-left: 10px!important; 
   }
@@ -108,12 +126,6 @@ html {
 .main-content .end-pink-content .container {
   padding-top: 40px;
   padding-bottom: 40px;
-}
-.custom-p-text {
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  font-weight: 300;
 }
 #three-cols div {
   text-align: center;
