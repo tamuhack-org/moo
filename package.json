@@ -14,7 +14,7 @@
     "fix": "gts fix",
     "start": "node build/src/app.js",
     "copyfiles": "cp -r src/static build/src/static && cp -r src/views build/src/views",
-    "gcp-build": "tsc -p . && npm run copyfiles",
+    "build": "rm build/ -r && tsc -p . && npm run copyfiles",
     "deploy": "gcloud app deploy"
   },
   "devDependencies": {
