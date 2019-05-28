@@ -5,6 +5,74 @@ html {
   padding: 0px;
   scroll-behavior: smooth;
 }
+
+.custom-p-text {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: 300;
+}
+
+.fancy-squiggle {
+  width: 100%;
+  position: absolute;
+  top: calc(100vh - (100vw * .126736) + 63px + 20px);
+}
+
+/* Logo Styling */
+.th-logo{
+  width: 30px;
+  height: 30px;
+}
+.th-text-logo {
+  margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
+}
+.th-faded{
+  width: 75%;
+  height: auto;
+}
+/*--------------------------------------*/
+
+/* Header Section */
+header{
+  min-height: 100vh;
+  background: linear-gradient(to bottom, white 50%, #FFF6F8 50% 100%);
+}
+.tamuhack-title {
+  position: relative;
+  left: calc(50% - 160px);
+  top: 20vh;
+  max-width: 345px;
+  z-index: 1;
+}
+.backdrop {
+  position: absolute;
+  left: 50%;
+  width: 100vw;
+  min-width: 840px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.backdrop-container {
+  top: calc(100vh - 63px - (100vw * .45833333333));
+  position: relative;
+  height: calc(100vw * .45833333333);
+  overflow: hidden;
+  background-color: white;
+}
+/*--------------------------------------*/
+
+/* Navigation Section */
+.navbar {
+  background-color: white; 
+  margin: 0!important; 
+  padding-left: 10vw!important; 
+  padding-right: 10vw!important;
+}
+.nav-container{
+  padding-right: 0px !important;
+  margin-bottom: 79px;
+}
 .navbar-toggler {
   border-color: transparent!important;
 }
@@ -35,98 +103,70 @@ html {
   transition: all 0.3s ease-out;
   box-shadow: 0 -1px 0 0 #F27B93 inset, 0 -6px 0 0 #F27B93 inset;
 }
-.custom-responsive-backdrop-header {
-  position: relative;
-  left: calc(50% - 160px);
-  top: 20vh;
-  max-width: 345px;
+/*--------------------------------------*/
+
+/* What We Do Section */
+#what-we-do .emphasize{
+  font-size: 22px !important;
+  margin-bottom: 0px !important;
 }
-.custom-responsive-backdrop {
-  position: absolute;
-  left: 50%;
-  width: 100vw;
-  min-width: 840px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+#what-we-do .emphasize span{
+  font-weight: 500 !important;
+  color: #FF7C93;
 }
-.asds45f {
-  top: calc(100vh - 63px - (100vw * .45833333333));
-  position: relative;
-  height: calc(100vw * .45833333333);
-  overflow: hidden;
-}
-.navbar {
-  background-color: white; 
-  margin: 0!important; 
-  padding-left: 10vw!important; 
-  padding-right: 10vw!important;
-}
-.custom-p-text {
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  font-weight: 300;
-}
-.th-text-logo {
-  margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
-}
-@media all and (max-width: 840px) {
-  .th-text-logo {
-    opacity: 0;
-  }
-  h2 {
-    font-size: 1.4rem;
-  }
-  .custom-p-text {
-    font-size: 16px;
-  }
-  .navbar {
-    padding-left: 10px!important; 
-  }
-  .asds45f {
-    top: calc(100vh - 63px -  385px);
-    height: 385px;
-  }
-  .custom-responsive-backdrop-header {
-    left: calc(50% - 140px);
-    max-width: 300px;
-  }
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  #top-nav-bar div ul li {
-    padding: 0px 30px;
-  }
-}
-#inner-contain {
-  padding-left: 0px!important;
-  padding-right: 0px!important;
-}
-.fancy-squiggle {
-  width: 100%;
-  position: absolute;
-  top: calc(100vh - (100vw * .126736) + 63px + 20px);
-}
-.main-content .light-pink-content {
+#what-we-do {
+  background-color: #FFF6F8;
   padding-top: 25px;
   margin-top: -2px;
   padding-bottom: 25px;
 }
-.main-content .mid-pink-content {
-  background-color: #FEF0F3;
+#what-we-do h1{
+  margin-bottom: 20px !important;
 }
-.main-content .mid-pink-content .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.main-content .end-pink-content {
+/*--------------------------------------*/
+
+/* Our Community Section */
+#our-community {
   background-color: #FFEAEE;
 }
-.main-content .end-pink-content .container {
+#our-community .container {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+#our-community .inner-container{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+#our-community .content-container{
+  max-width: 460px;
+}
+#our-community .content-container p{
+  padding: 20px 0px;
+}
+.signup-button{
+  background-color: #FF7C93;
+  border-color: #FF7C93;
+  color: white;
+  font-weight: bolder;
+}
+.form-message{
+  display: none;
+}
+/*--------------------------------------*/
+
+/* Events Overview Section */
+#events-overview {
+  background-color: #FEF0F3;
+}
+#events-overview .triangle-container{
+  text-align: center;
+}
+#events-overview .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*--------------------------------------*/
+
 #three-cols div {
   text-align: center;
   margin-bottom: 40px;
@@ -230,6 +270,7 @@ h5 a i:hover {
 }
 .img-container2 {
   height: 100%;
+  text-align: center;
 }
 #img-grid > div {
   padding-left: 8px;
@@ -582,4 +623,35 @@ h5 a i:hover {
 
 #hamburger:focus{
   outline: none !important;
+}
+
+/* Responsive Design */
+@media all and (max-width: 840px) {
+  .th-text-logo {
+    opacity: 0;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .custom-p-text {
+    font-size: 16px;
+  }
+  .navbar {
+    padding-left: 10px!important; 
+  }
+  .backdrop-container {
+    top: calc(100vh - 63px -  385px);
+    height: 385px;
+  }
+  .tamuhack-title {
+    left: calc(50% - 140px);
+    max-width: 300px;
+  }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #top-nav-bar div ul li {
+    padding: 0px 30px;
+  }
 }
