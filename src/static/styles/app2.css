@@ -18,6 +18,9 @@ html {
   position: absolute;
   top: calc(100vh - (100vw * .126736) + 63px + 20px);
 }
+.fancy-squiggle-2{
+  width: 100%;
+}
 
 /* Logo Styling */
 .th-logo{
@@ -279,21 +282,21 @@ h5 a i:hover {
 #img-grid img {
   border-radius: 2px!important;
 }
-#aaaaa h1 {
+#timeline-full h1 {
   text-align: center;
   font-weight: 300;
   color: #777;
 }
-#aaaaa h1 span {
+#timeline-full h1 span {
   font-weight: 600;
 }
-#aaaaa .container {
+#timeline-full .container {
   margin: 50px auto;
   position: relative;
   overflow: hidden;
   padding: 10px;
 }
-#aaaaa .container:before {
+#timeline-full .container:before {
   content: '';
   position: absolute;
   top: 0;
@@ -305,7 +308,7 @@ h5 a i:hover {
   background: black;
   z-index: -1;
 }
-#aaaaa .timeline-block {
+#timeline-full .timeline-block {
   width: -webkit-calc(58%);
   width: -moz-calc(58%);
   width: calc(50% + 8px);
@@ -319,14 +322,14 @@ h5 a i:hover {
   justify-content: space-between;
   clear: both;
 }
-#aaaaa .timeline-block-right {
+#timeline-full .timeline-block-right {
   float: right;
 }
-#aaaaa .timeline-block-left {
+#timeline-full .timeline-block-left {
   float: left;
   direction: rtl;
 }
-#aaaaa .marker {
+#timeline-full .marker {
   max-width: 60px!important;
   max-height: 60px!important;
   min-width: 60px!important;
@@ -337,7 +340,7 @@ h5 a i:hover {
   margin-left: -21px;
  
 }
-#aaaaa .marker-2 {
+#timeline-full .marker-2 {
   max-width: 60px!important;
   max-height: 60px!important;
   min-width: 60px!important;
@@ -348,7 +351,7 @@ h5 a i:hover {
   margin-right: -21px;
 
 }
-#aaaaa .arrow-right {
+#timeline-full .arrow-right {
   width: 0;
   height: 0;
   margin: auto 0px;
@@ -360,7 +363,7 @@ h5 a i:hover {
   margin-right: 7px;
   margin-left: -2px;
 }
-#aaaaa .arrow-left {
+#timeline-full .arrow-left {
   width: 0;
   height: 0;
   margin: auto 0px;
@@ -372,37 +375,37 @@ h5 a i:hover {
   margin-left: 6px;
   margin-right: 0px;
 }
-#aaaaa .timeline-content {
+#timeline-full .timeline-content {
   width: 95%;
   padding: 30px;
   border: .0px solid #cccccc;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-#aaaaa .timeline-content h3 {
+#timeline-full .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 25px;
   font-weight: 500;
 }
-#aaaaa .timeline-content span {
+#timeline-full .timeline-content span {
   font-size: 15px;
   color: #a4a4a4;
 }
-#aaaaa-2 h1 {
+#timeline-small h1 {
   text-align: center;
   font-weight: 300;
   color: #777;
 }
-#aaaaa-2 h1 span {
+#timeline-small h1 span {
   font-weight: 600;
 }
-#aaaaa-2 .container {
+#timeline-small .container {
   position: relative;
   overflow: hidden;
   padding: 10px;
 }
-#aaaaa-2 .container:before {
+#timeline-small .container:before {
   content: '';
   position: absolute;
   top: 0;
@@ -414,7 +417,7 @@ h5 a i:hover {
   background: black;
   z-index: 1;
 }
-#aaaaa-2 .timeline-block {
+#timeline-small .timeline-block {
   width: -webkit-calc(88%);
   width: -moz-calc(88%);
   width: calc(100% - 12px);
@@ -429,10 +432,10 @@ h5 a i:hover {
   clear: both;
   margin-top: 25px;
 }
-#aaaaa-2 .timeline-block-right {
+#timeline-small .timeline-block-right {
   float: right;
 }
-#aaaaa-2 .marker {
+#timeline-small .marker {
   max-width: 60px!important;
   max-height: 60px!important;
   min-width: 60px!important;
@@ -444,7 +447,7 @@ h5 a i:hover {
   margin-left: -21px !important;
   z-index: 9999;
 }
-#aaaaa-2 .marker-2 {
+#timeline-small .marker-2 {
   max-width: 60px!important;
   max-height: 60px!important;
   min-width: 60px!important;
@@ -456,7 +459,7 @@ h5 a i:hover {
   margin-right: -21px;
   z-index: 9999;
 }
-#aaaaa-2 .arrow-right {
+#timeline-small .arrow-right {
   width: 0;
   height: 0;
   margin: auto 0px;
@@ -469,7 +472,7 @@ h5 a i:hover {
   margin-left: -1px;
   z-index: 0;
 }
-#aaaaa-2 .arrow-left {
+#timeline-small .arrow-left {
   width: 0;
   height: 0;
   margin: auto 0px;
@@ -482,20 +485,20 @@ h5 a i:hover {
   margin-right: 0px;
   z-index: 0;
 }
-#aaaaa-2 .timeline-content {
+#timeline-small .timeline-content {
   width: 95%;
   padding: 11px;
   border: .0px solid #cccccc;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-#aaaaa-2 .timeline-content h3 {
+#timeline-small .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 25px;
   font-weight: 500;
 }
-#aaaaa-2 .timeline-content span {
+#timeline-small .timeline-content span {
   font-size: 15px;
   color: #a4a4a4;
 }
