@@ -29,7 +29,7 @@
         });
 
         // Dynamically changing where the page scrolls based on the height of the nav
-        for (const element of $('section span')){
+        for (const element of $('section .goto')){
           const navbarHeight = $("#top-nav-bar").outerHeight();
           console.log(element);
           $(element).css("padding-bottom", navbarHeight);

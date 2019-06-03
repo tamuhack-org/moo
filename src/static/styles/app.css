@@ -60,7 +60,7 @@ h5 a i:hover {
 }
 
 /*For the scrolling href elements */
-section > span { 
+section .goto { 
   display: block; 
 }
 
@@ -279,8 +279,9 @@ header{
 /*--------------------------------------*/
 
 /* Our Team Section */
-#our-team-container > h1{
-  margin-top: 100px;
+#our-team-container .extra-margin{
+  display: block;
+  height: 100px;
 }
 #our-team-container > p{
   padding: 20px 0px;
