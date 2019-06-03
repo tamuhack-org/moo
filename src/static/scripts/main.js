@@ -1,6 +1,7 @@
-$("#after").hide();
-      $("#u_failed").hide();
+
       $(document).ready(function() {
+        $("#after").hide();
+        $("#u_failed").hide();
         // Listen to submit event on the <form> itself!
         $("#email-form").submit(function(e) {
           e.preventDefault();
@@ -26,4 +27,12 @@ $("#after").hide();
             $("#u_failed").show();
           }
         });
+
+        // Dynamically changing where the page scrolls based on the height of the nav
+        for (const element of $('section span')){
+          const navbarHeight = $("#top-nav-bar").outerHeight();
+          console.log(element);
+          $(element).css("padding-bottom", navbarHeight);
+          $(element).css("margin-top", -navbarHeight);
+        }
       });
