@@ -59,6 +59,11 @@ h5 a i:hover {
   visibility: hidden;
 }
 
+/*For the scrolling href elements */
+section > span { 
+  display: block; 
+}
+
 
 /* Objects */
 .fancy-squiggle {
@@ -177,21 +182,21 @@ header{
 /*--------------------------------------*/
 
 /* What We Do Section */
-#what-we-do .emphasize{
+#what-we-do-container .emphasize{
   font-size: 22px !important;
   margin-bottom: 0px !important;
 }
-#what-we-do .emphasize span{
+#what-we-do-container .emphasize span{
   font-weight: 500 !important;
   color: #FF7C93;
 }
-#what-we-do {
+#what-we-do-container {
   background-color: #FFF6F8;
   padding-top: 25px;
   margin-top: -2px;
   padding-bottom: 25px;
 }
-#what-we-do h1{
+#what-we-do-container h1{
   margin-bottom: 20px !important;
 }
 .special-image {
@@ -205,21 +210,21 @@ header{
 /*--------------------------------------*/
 
 /* Our Community Section */
-#our-community {
+#our-community-container {
   background-color: #FFEAEE;
 }
-#our-community .container {
+#our-community-container .container {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-#our-community .inner-container{
+#our-community-container .inner-container{
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-#our-community .content-container{
+#our-community-container .content-container{
   max-width: 460px;
 }
-#our-community .content-container p{
+#our-community-container .content-container p{
   padding: 20px 0px;
 }
 .signup-button{
@@ -274,10 +279,10 @@ header{
 /*--------------------------------------*/
 
 /* Our Team Section */
-#our-team > h1{
+#our-team-container > h1{
   margin-top: 100px;
 }
-#our-team > p{
+#our-team-container > p{
   padding: 20px 0px;
   max-width: 600px;
 }
