@@ -91,7 +91,7 @@ section .goto {
 #clouds {
   position: absolute;
   overflow: hidden;
-  height: 40%;
+  height: 45%;
   top: 10%;
   width: 100vw;
 }
@@ -100,7 +100,7 @@ section .goto {
   left: -10vh;
   animation: sidewaysCloudLeft 18s linear infinite;
   animation-delay: 3s;
-  height: 12.5%;
+  height: 10%;
   top: 75%;
   overflow: visible;
 }
@@ -109,8 +109,17 @@ section .goto {
   right: 0px;
   top: 0px;
   animation: sidewaysCloudRight 15s linear infinite;
-  height: 12.5%;
+  height: 10%;
   overflow: visible;
+}
+#blimp-right{
+  position: absolute;
+  right: 0px;
+  top: 90%;
+  animation: sidewaysCloudRight 30s linear infinite;
+  height: 5%;
+  overflow: visible;
+  animation-delay: 3s;
 }
 #hamburger{
   z-index: 99;
