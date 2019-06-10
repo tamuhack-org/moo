@@ -4,6 +4,7 @@ html {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .custom-p-text {
   color: black;
@@ -70,6 +71,7 @@ section .goto {
   width: 100%;
   position: absolute;
   top: calc(100vh - (100vw * .126736) + 63px + 20px);
+  z-index: 6;
 }
 .fancy-squiggle-2{
   width: 100%;
@@ -77,15 +79,38 @@ section .goto {
 #plane {
   position: absolute;
   width: 7%;
-  animation: translateplane 5s linear infinite;
-  z-index: -1;
+  animation: translateplane 7s linear infinite;
 }
 #sun {
   position: absolute;
   height: 10%;
   right: 25.6%;
   top: 20%;
-  animation: rotateSun 8s linear infinite;
+  animation: rotateSun 10s linear infinite;
+}
+#clouds {
+  position: absolute;
+  overflow: hidden;
+  height: 40%;
+  top: 10%;
+  width: 100vw;
+}
+#cloud-left {
+  position: relative;
+  left: -10vh;
+  animation: sidewaysCloudLeft 18s linear infinite;
+  animation-delay: 3s;
+  height: 12.5%;
+  top: 75%;
+  overflow: visible;
+}
+#cloud-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  animation: sidewaysCloudRight 15s linear infinite;
+  height: 12.5%;
+  overflow: visible;
 }
 #hamburger{
   z-index: 99;
@@ -112,7 +137,6 @@ section .goto {
 /* Header Section */
 header{
   min-height: 100vh;
-  background: linear-gradient(to bottom, white 50%, #FFF6F8 50% 100%);
 }
 .tamuhack-title {
   position: relative;
@@ -128,6 +152,7 @@ header{
   min-width: 840px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  z-index: 5;
 }
 .backdrop-container {
   top: calc(100vh - 63px - (100vw * .45833333333));
@@ -146,6 +171,7 @@ header{
   padding-right: 10vw!important;
 }
 .nav-container{
+  position: relative;
   padding-right: 0px !important;
   margin-bottom: 79px;
 }
@@ -667,24 +693,29 @@ input.form-control {
     bottom: -10%;
   }
 
-  25% {
+  20% {
     left: 37.5%;
     bottom: 20%;
     transform: scale(0.75);
   }
 
-  50% {
+  40% {
     left: 50%;
     bottom: 50%;
     transform: scale(0.5);
   }
 
-  75% {
+  60% {
     left: 62.5%;
     bottom: 80%;
     transform: scale(0.25);
   }
 
+  80% {
+    left: 75%;
+    bottom: 110%;
+    transform: scale(0);
+  }
   100% {
     left: 75%;
     bottom: 110%;
@@ -699,6 +730,30 @@ input.form-control {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes sidewaysCloudLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(calc(100vw + 20vh));
+  }
+  100% {
+    transform: translateX(calc(100vw + 20vh));
+  }
+}
+
+@keyframes sidewaysCloudRight {
+  0% {
+    transform: translateX(10vh);
+  }
+  80% {
+    transform: translateX(calc(-100vw - 10vh));
+  }
+  100% {
+    transform: translateX(calc(-100vw - 10vh));
   }
 }
 
