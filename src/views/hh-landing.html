@@ -16,6 +16,13 @@
     <!-- CSS -->
     <link href="/static/styles/bootstrap.min.css" rel="stylesheet">
     <link href="/static/styles/hh-styles.css" rel="stylesheet">
+    <!--Stylesheet for social icons-->
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+      />
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/static/assets/hh-assets/hh-favicon.png"/>
@@ -23,7 +30,7 @@
 
 <body id="page-top" style="background-color: white;">
     <header class="row" style="margin: 0px; margin-top: 16px!important;">
-        <div class="col-md-10 offset-md-1" style="margin-left: 10vw; max-width: 79vw; padding-left: 30px;">
+        <div class="col-md-10 offset-md-1" id="top-bar-icons">
             <a href="./">
                 <img src="/static/assets/hh-assets/TH.svg" class="th-logo" style="margin-right: 15px!important;">
                 <img src="/static/assets/hh-assets/tamuhack_2.svg" class="tamuhack-logo">
@@ -72,9 +79,216 @@
                             </form>
                         </div>
                     </div>
+                    <img src="/static/assets/hh-assets/bottom-rect-sm.svg" alt="" id="rect2">
                 </div>
             </div>
         </div>
+    <!--Sections for text and descriptions-->
+    <div class="section" id="first-section">
+        <div class = "section-right"><img src="/static/assets/hh-assets/hhpeople2.png" alt="" class="section-graphic"></div>
+        <div class="section-text-left">
+            <h4>Howdy!</h4>
+            <p>HowdyHack is Texas A&M’s 24-hour, software-oriented, Aggie-only hackathon. Hackers at 
+              HowdyHack will brainstorm, build, and break, before they’ll finally bring a product to a panel of judges for 
+              evaluation and hopefully win some cool prizes. </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-left"><img src="./static/assets/hh-assets/hhpeople1.png" alt="" class="section-graphic"></div>
+        <div class = "section-text-right">
+            <h4>Goal</h4>
+            <p>Beyond hacking, HowdyHack is about connecting creative and talented 
+                Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an 
+                audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops 
+                and activities to help you learn new skills!</p>
+        </div>
+    </div>
+    <!--faq section-->
+    <div class="section" style="margin-bottom: 30px;">
+        <h4 style="padding-top: 40px;">FAQ</h4>
+    </div>
+    <div class="section" id="faq-sec">
+        <div class="container" id="faq-con">
+          <div class="row" id="three-cols">
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">What is HowdyHack?</p>
+              <p class="faq-ans">
+                HowdyHack is Texas A&M’s software-oriented Aggie-only hackathon. Originally created by a group of ambitious, hacker-loving students from Aggie Coding Club, TAMUhack has now joined efforts into making this hackathon a bigger and better iteration for this year and many more to come!
+
+              </p>
+              </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">Is there a theme for HowdyHack?</p>
+              <p class="faq-ans">
+                Yes! This year, the theme is For Aggies, By Aggies. This is an opportunity for you to come up with the coolest, most technologically-savvy hacks to benefit the university and Aggies!
+              </p>
+              </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">Will there be companies at the hackathon, like TAMUhack?</p>
+              <p class="faq-ans">
+                While there will not be companies present at the hackathon, we will have all kinds of workshops throughout the entire event and even the week before to help you get ready. We got your back!
+              </p>
+              </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">I'm not from A&M, can I still attend?</p>
+              <p class="faq-ans">
+                Unfortunately, HowdyHack is only open to students from Texas A&M - College Station. However, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!
+              </p>
+              </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">I can't wait! When does registration open?</p>
+              <p class="faq-ans">
+                Shhh... it's a secret. But if you sign up on the mailing list, you'll find out sometime in August ;)
+              </p>
+              </div>
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!--footer-->
+    <div id="footer-bg">
+    <div class="container" id="foot-container">
+      <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
+        <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+        <!-- <a class="navbar-brand" href="#" style="float: left;">
+            <img src="/tamuhack_official_logo.svg" style="margin-left: 20px; margin-top: 6px;">
+        </a> -->
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <!-- <ul class="navbar-nav mr-auto">
+            </ul> -->
+          <ul
+            class="navbar-nav main-nav-ui mr-auto"
+            style="margin-right: 0px!important; margin-left: 0px!important; width: 148px!important;"
+          >
+            <li class="nav-item">
+              <div class="navbar-brand" href="#" style="float: left;">
+                <img
+                  src="/static/assets/tamuhack_official_logo_white.png"
+                  style="margin-left: 20px; margin-top: 6px; width: 100%; height: 100%; opacity: 0.9"
+                />
+              </div>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav main-nav-ui mr-auto"
+            style="margin: 0px auto!important;"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/tamuhack-org/">collaborate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:sponsor@tamuhack.com">sponsor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:hello@tamuhack.com">email</a>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav main-nav-ui mr-auto"
+            style="margin-right: 0px!important;"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/tamuhack/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/tamuhack/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/tamuhack">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="custom-nav d-lg-none d-xl-none">
+        <img
+          src="/static/assets/tamuhack_official_logo_white.svg"
+          style="width: auto; height: 20px!important; float: left;"
+        />
+        <div
+          style="display: inline-block; width: 150px; float: right;"
+          class="nice-text"
+        >
+          <a
+            class="nav-link"
+            href="#"
+            style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            class="nav-link"
+            href="#"
+            style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            class="nav-link"
+            href="#"
+            style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <br />
+      </div>
+      <center>
+        <nav
+          class="nav nav-pills nav-justified d-lg-none d-xl-none"
+          style="width: 100%!important;"
+        >
+          <a
+            class="nav-item nav-link"
+            href="https://github.com/tamuhack-org"
+            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
+            ><span>COLLABORATE</span></a
+          >
+          <a
+            class="nav-item nav-link"
+            href="mailto:sponsor@tamuhack.com"
+            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
+            ><span>SPONSOR</span></a
+          >
+          <a
+            class="nav-item nav-link"
+            href="mailto:hello@tamuhack.com"
+            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
+            ><span>EMAIL</span></a
+          >
+        </nav>
+      </center>
+    </div>
+    <br>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"

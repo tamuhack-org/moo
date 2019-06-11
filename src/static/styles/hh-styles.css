@@ -92,6 +92,17 @@ h3 {
     height: 740px;
 }
 
+#foot-container {
+    padding-top: 250px;
+}
+
+#footer-bg {
+    background-image:url(/static/assets/hh-assets/bottom-rectangle.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /****** FORM ******/
 .btn {
     background-color: #69A2CC; 
@@ -121,6 +132,169 @@ h3 {
     margin-bottom: 20px;
 }
 
+
+/***** SECTIONS *****/
+h4 {
+    font-family: "Roboto", "sans-serif";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold!important;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+
+    color: #212121;
+}
+
+p {
+    font-family: "Questrial", "sans-serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+
+    color: #000000;
+}
+
+.section {
+    overflow: hidden;
+    margin: 20px 10vw 60px 10vw;
+}
+
+.section-left {
+    width: 50%;
+    padding-right: 5px;
+    float: left;
+}
+
+.section-right {
+    width: 50%;
+    padding-left: 5px;
+    float: right;
+}
+
+.section-text-left {
+    width: 50%;
+    padding-top: 40px;
+    padding-right: 10%;
+    float: left;
+}
+
+.section-text-right {
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 10%;
+    float: right;
+}
+
+.section-graphic {
+    max-width: 100%;
+}
+
+/*** FAQ ***/
+#first-section {
+    margin-top: 200px;
+}
+
+#faq-con {
+    margin: 0px;
+    max-width: 100%!important;
+}
+
+.col-lg-6 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.faq-card {
+  background-color: #354965;
+  border-radius: 15px;
+  padding: 5px 30px 10px 30px;
+}
+
+.faq-ques {
+  font-family: "Roboto", "san-serif";
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.faq-ans {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/** bottom footer **/ 
+#bottom-nav-bar {
+  margin-top: 60px;
+}
+#bottom-nav-bar > a {
+  padding-top: 0px!important;
+}
+#bottom-nav-bar img {
+  margin-top: 0px!important;
+}
+#bottom-nav-bar div ul li {
+  padding: 0px 10px;
+}
+
+.nice-text > a {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8) !important;
+   }
+   .nice-text > a:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
+    color: rgba(255, 255, 255, 1) !important;
+   }
+.nav a > span {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 5px;
+   }
+   .nav a > span:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
+    color: rgba(255, 255, 255, 1) !important;
+   }
+
+#bottom-nav-bar div a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+#bottom-nav-bar div .main-nav-ui li > a {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+#bottom-nav-bar div .main-nav-ui li > a:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
+  color: rgba(255, 255, 255, 1) !important;
+}
+#top-nav-bar .navbar-brand {
+  margin-top: -16px;
+  margin-left: 30px;
+}
+
+.navbar {
+  background-color: none; 
+  margin: 0!important; 
+  padding-left: 10vw!important; 
+  padding-right: 10vw!important;
+}
+
+.navbar-toggler {
+  border-color: transparent!important;
+}
+
+#top-bar-icons {
+    margin-left: 10vw; max-width: 79vw; padding-left: 30px;
+}
+
+
 /****** RESPONSIVENESS ******/
 
 @media (max-width: 1101px) {
@@ -128,9 +302,71 @@ h3 {
         font-size: 24px; /* Looking for best font ratio */
         line-height: 30px !important;
     }
+    #bottom-nav-bar div a {
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+      #bottom-nav-bar div .main-nav-ui li > a {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+    .section-left {
+        width: 100%;
+        max-width: 500px;
+        padding-right: 0px;
+        padding-top: 10px;
+        float: none;
+        margin: auto;
+    }
+    
+    .section-right {
+        width: 100%;
+        max-width: 500px;
+        padding-left: 0px;
+        padding-top: 10px;
+        float: none;
+        margin: auto;
+    }
+    
+    .section-text-left {
+        width: 100%;
+        padding-right: 0px;
+        float: left;
+    }
+    
+    .section-text-right {
+        width: 100%;
+        padding-left: 0px;
+        float: right;
+    }
 } 
 
 @media (max-width: 767px) {
+    #top-bar-icons {
+        margin-left: 10px; max-width: 79vw; padding-left: 30px;
+    }
+    #first-section {
+        margin-top: 40px;
+    }
+
+    #foot-container {
+        padding-top: 40px;
+    }
+
+    #footer-bg {
+        background-image: none;
+        background-color: #354965;
+    }
+
+    .section {
+        overflow: hidden;
+        margin: 20px 30px 60px 30px;
+    }
+
+    #faq-sec {
+        margin: 20px 20px 60px 20px;
+    }
+
+
     .col-md-10 {
         padding: 0 8vw;
     }
@@ -172,11 +408,11 @@ h3 {
     .my-container {
         margin: 0 !important;
         max-width: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 10px;
         background-color: #354965;
     }
     .my-wrapper {
-        margin: 0 16vw;
+        margin: 0 10vw;
     }
     .content-txt {
         padding-top: 0;
@@ -196,7 +432,6 @@ h3 {
         font-size: 16px !important;
     }
 }
-
 
 /****** Fix scaling ******/
 @media (-webkit-min-device-pixel-ratio: 2.5) { 
@@ -231,3 +466,5 @@ h3 {
         height: 600px;
     }
 }
+
+
