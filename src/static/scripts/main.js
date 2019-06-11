@@ -35,6 +35,4 @@
           $(element).css("padding-bottom", navbarHeight);
           $(element).css("margin-top", -navbarHeight);
         }
-        $("#clouds").css("top", navbarHeight)
-        
       });

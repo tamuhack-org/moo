@@ -88,7 +88,7 @@ section .goto {
   top: 20%;
   animation: rotateSun 10s linear infinite;
 }
-#clouds {
+#side-to-side {
   position: absolute;
   overflow: hidden;
   height: 45%;
@@ -114,7 +114,7 @@ section .goto {
 }
 #blimp-right{
   position: absolute;
-  right: 0px;
+  right: -10vh;
   top: 90%;
   animation: sidewaysCloudRight 30s linear infinite;
   height: 5%;
@@ -766,6 +766,18 @@ input.form-control {
   }
 }
 
+@keyframes sidewaysBlimpRight {
+  0% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(calc(-100vw - 20vh));
+  }
+  100% {
+    transform: translateX(calc(-100vw - 20vh));
+  }
+}
+
 /* Responsive Design */
 @media all and (max-width: 840px) {
   .th-text-logo {
@@ -794,5 +806,14 @@ input.form-control {
   }
   #top-nav-bar div ul li {
     padding: 0px 30px;
+  }
+  #cloud-left{
+    animation-duration: 10s;
+  }
+  #cloud-right{
+    animation-duration: 8s;
+  }
+  #blimp-right{
+    animation-duration: 15s;
   }
 }
