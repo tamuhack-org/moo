@@ -79,7 +79,7 @@ section .goto {
 #plane {
   position: absolute;
   width: 7%;
-  animation: translateplane 7s linear infinite;
+  animation: translateplane 20s linear infinite;
 }
 #sun {
   position: absolute;
@@ -98,7 +98,7 @@ section .goto {
 #cloud-left {
   position: relative;
   left: -10vh;
-  animation: sidewaysCloudLeft 18s linear infinite;
+  animation: sidewaysCloudLeft 40s linear infinite;
   animation-delay: 3s;
   height: 10%;
   top: 75%;
@@ -108,7 +108,7 @@ section .goto {
   position: absolute;
   right: 0px;
   top: 0px;
-  animation: sidewaysCloudRight 15s linear infinite;
+  animation: sidewaysCloudRight 35s linear infinite;
   height: 10%;
   overflow: visible;
 }
@@ -116,7 +116,7 @@ section .goto {
   position: absolute;
   right: -10vh;
   top: 90%;
-  animation: sidewaysCloudRight 30s linear infinite;
+  animation: sidewaysCloudRight 40s linear infinite;
   height: 5%;
   overflow: visible;
   animation-delay: 3s;
@@ -698,35 +698,35 @@ input.form-control {
 
 @keyframes translateplane {
   0% {
-    left: 25%;
+    left: 0%;
     bottom: -10%;
   }
 
-  20% {
-    left: 37.5%;
+  10% {
+    left: 12.5%;
     bottom: 20%;
     transform: scale(0.75);
   }
 
-  40% {
-    left: 50%;
+  20% {
+    left: 25%;
     bottom: 50%;
     transform: scale(0.5);
   }
 
-  60% {
-    left: 62.5%;
+  30% {
+    left: 37.5%;
     bottom: 80%;
     transform: scale(0.25);
   }
 
-  80% {
-    left: 75%;
+  40% {
+    left: 50%;
     bottom: 110%;
     transform: scale(0);
   }
   100% {
-    left: 75%;
+    left: 50%;
     bottom: 110%;
     transform: scale(0);
   }
@@ -746,7 +746,7 @@ input.form-control {
   0% {
     transform: translateX(0px);
   }
-  80% {
+  40% {
     transform: translateX(calc(100vw + 20vh));
   }
   100% {
@@ -758,7 +758,7 @@ input.form-control {
   0% {
     transform: translateX(10vh);
   }
-  80% {
+  40% {
     transform: translateX(calc(-100vw - 10vh));
   }
   100% {
@@ -770,7 +770,7 @@ input.form-control {
   0% {
     transform: translateX(0px);
   }
-  80% {
+  40% {
     transform: translateX(calc(-100vw - 20vh));
   }
   100% {
@@ -808,12 +808,12 @@ input.form-control {
     padding: 0px 30px;
   }
   #cloud-left{
-    animation-duration: 10s;
+    animation-duration: 20s;
   }
   #cloud-right{
-    animation-duration: 8s;
+    animation-duration: 16s;
   }
   #blimp-right{
-    animation-duration: 15s;
+    animation-duration: 20s;
   }
 }
