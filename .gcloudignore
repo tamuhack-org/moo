@@ -11,10 +11,11 @@
 # from your .gitignore file, remove the corresponding line
 # below:
 
-# Exclude compiled .js files
-*.js
 .git
 .gitignore
+
+# Ignore build directory
+build/
 
 # Node.js dependencies:
 node_modules/
