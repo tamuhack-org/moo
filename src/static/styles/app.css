@@ -79,7 +79,7 @@ section .goto {
 #plane {
   position: absolute;
   width: 7%;
-  animation: translateplane 20s linear infinite;
+  animation: translateplane 30s linear infinite;
 }
 #sun {
   position: absolute;
@@ -98,17 +98,18 @@ section .goto {
 #cloud-left {
   position: relative;
   left: -10vh;
-  animation: sidewaysCloudLeft 40s linear infinite;
-  animation-delay: 3s;
+  animation: sidewaysCloudLeft 45s linear infinite;
+  animation-delay: 7s;
   height: 10%;
   top: 75%;
   overflow: visible;
 }
 #cloud-right {
   position: absolute;
-  right: 0px;
+  right: -10vh;
   top: 0px;
-  animation: sidewaysCloudRight 35s linear infinite;
+  animation: sidewaysCloudRight 40s linear infinite;
+  animation-delay: 10s;
   height: 10%;
   overflow: visible;
 }
@@ -116,7 +117,7 @@ section .goto {
   position: absolute;
   right: -10vh;
   top: 90%;
-  animation: sidewaysCloudRight 40s linear infinite;
+  animation: sidewaysCloudRight 50s linear infinite;
   height: 5%;
   overflow: visible;
   animation-delay: 3s;
@@ -149,7 +150,8 @@ header{
 }
 .tamuhack-title {
   position: relative;
-  left: calc(50% - 160px);
+  left: 50%;
+  transform: translateX(-50%);
   top: 20vh;
   max-width: 345px;
   z-index: 1;
@@ -702,25 +704,25 @@ input.form-control {
     bottom: -10%;
   }
 
-  10% {
+  5% {
     left: 12.5%;
     bottom: 20%;
     transform: scale(0.75);
   }
 
-  20% {
+  10% {
     left: 25%;
     bottom: 50%;
     transform: scale(0.5);
   }
 
-  30% {
+  15% {
     left: 37.5%;
     bottom: 80%;
     transform: scale(0.25);
   }
 
-  40% {
+  20% {
     left: 50%;
     bottom: 110%;
     transform: scale(0);
@@ -756,13 +758,13 @@ input.form-control {
 
 @keyframes sidewaysCloudRight {
   0% {
-    transform: translateX(10vh);
+    transform: translateX(0px);
   }
   40% {
-    transform: translateX(calc(-100vw - 10vh));
+    transform: translateX(calc(-100vw - 20vh));
   }
   100% {
-    transform: translateX(calc(-100vw - 10vh));
+    transform: translateX(calc(-100vw - 20vh));
   }
 }
 
@@ -797,8 +799,9 @@ input.form-control {
     height: 385px;
   }
   .tamuhack-title {
-    left: calc(50% - 140px);
     max-width: 300px;
+    top: 30vh;
+    transform: translate(-50%, -50%);
   }
   .container {
     padding-left: 30px;
@@ -815,5 +818,14 @@ input.form-control {
   }
   #blimp-right{
     animation-duration: 20s;
+  }
+  #sun{
+    animation-duration: 15s;
+  }
+  #plane{
+    width: 20%;
+  }
+  #side-to-side{
+    height: 50vh;
   }
 }

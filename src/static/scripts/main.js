@@ -30,8 +30,7 @@
 
         // Dynamically changing where the page scrolls based on the height of the nav
         const navbarHeight = $("#top-nav-bar").outerHeight();
-        for (const element of $('section .goto')){
-          console.log(element);
+        for (const element of $('.goto')){
           $(element).css("padding-bottom", navbarHeight);
           $(element).css("margin-top", -navbarHeight);
         }
