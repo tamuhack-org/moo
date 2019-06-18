@@ -7,6 +7,10 @@
 
 /****** NAV ******/
 
+#th-header-link:hover {
+    text-decoration: none;
+}
+
 header {
     margin-top: 16px !important;
     margin-bottom: 14vh !important;
@@ -341,6 +345,10 @@ p {
 } 
 
 @media (max-width: 767px) {
+    .tamuhack-logo {
+        display: none;
+    }
+
     #top-bar-icons {
         margin-left: 10px; max-width: 79vw; padding-left: 30px;
     }
