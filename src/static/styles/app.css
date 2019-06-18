@@ -4,6 +4,7 @@ html {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .custom-p-text {
   color: black;
@@ -69,6 +70,7 @@ section .goto {
   width: 100%;
   position: absolute;
   top: calc(100vh - (100vw * .126736) + 63px + 20px);
+  z-index: 6;
 }
 .fancy-squiggle-2{
   width: 100%;
@@ -76,15 +78,48 @@ section .goto {
 #plane {
   position: absolute;
   width: 7%;
-  animation: translateplane 5s linear infinite;
-  z-index: -1;
+  animation: translateplane 30s linear infinite;
 }
 #sun {
   position: absolute;
   height: 10%;
   right: 25.6%;
   top: 20%;
-  animation: rotateSun 8s linear infinite;
+  animation: rotateSun 10s linear infinite;
+}
+#side-to-side {
+  position: absolute;
+  overflow: hidden;
+  height: 45%;
+  top: 10%;
+  width: 100vw;
+}
+#cloud-left {
+  position: relative;
+  left: -10vh;
+  animation: sidewaysCloudLeft 45s linear infinite;
+  animation-delay: 7s;
+  height: 10%;
+  top: 75%;
+  overflow: visible;
+}
+#cloud-right {
+  position: absolute;
+  right: -10vh;
+  top: 0px;
+  animation: sidewaysCloudRight 40s linear infinite;
+  animation-delay: 10s;
+  height: 10%;
+  overflow: visible;
+}
+#blimp-right{
+  position: absolute;
+  right: -10vh;
+  top: 90%;
+  animation: sidewaysCloudRight 50s linear infinite;
+  height: 5%;
+  overflow: visible;
+  animation-delay: 3s;
 }
 #hamburger{
   z-index: 99;
@@ -111,11 +146,11 @@ section .goto {
 /* Header Section */
 header{
   min-height: 100vh;
-  background: linear-gradient(to bottom, white 50%, #FFF6F8 50% 100%);
 }
 .tamuhack-title {
   position: relative;
-  left: calc(50% - 160px);
+  left: 50%;
+  transform: translateX(-50%);
   top: 20vh;
   max-width: 345px;
   z-index: 1;
@@ -127,6 +162,7 @@ header{
   min-width: 840px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  z-index: 5;
 }
 .backdrop-container {
   top: calc(100vh - 63px - (100vw * .45833333333));
@@ -145,6 +181,7 @@ header{
   padding-right: 10vw!important;
 }
 .nav-container{
+  position: relative;
   padding-right: 0px !important;
   margin-bottom: 79px;
 }
@@ -662,30 +699,35 @@ input.form-control {
 
 @keyframes translateplane {
   0% {
-    left: 25%;
+    left: 0%;
     bottom: -10%;
   }
 
-  25% {
-    left: 37.5%;
+  5% {
+    left: 12.5%;
     bottom: 20%;
     transform: scale(0.75);
   }
 
-  50% {
-    left: 50%;
+  10% {
+    left: 25%;
     bottom: 50%;
     transform: scale(0.5);
   }
 
-  75% {
-    left: 62.5%;
+  15% {
+    left: 37.5%;
     bottom: 80%;
     transform: scale(0.25);
   }
 
+  20% {
+    left: 50%;
+    bottom: 110%;
+    transform: scale(0);
+  }
   100% {
-    left: 75%;
+    left: 50%;
     bottom: 110%;
     transform: scale(0);
   }
@@ -698,6 +740,42 @@ input.form-control {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes sidewaysCloudLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(calc(100vw + 20vh));
+  }
+  100% {
+    transform: translateX(calc(100vw + 20vh));
+  }
+}
+
+@keyframes sidewaysCloudRight {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(calc(-100vw - 20vh));
+  }
+  100% {
+    transform: translateX(calc(-100vw - 20vh));
+  }
+}
+
+@keyframes sidewaysBlimpRight {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(calc(-100vw - 20vh));
+  }
+  100% {
+    transform: translateX(calc(-100vw - 20vh));
   }
 }
 
@@ -728,8 +806,9 @@ input.form-control {
     height: 385px;
   }
   .tamuhack-title {
-    left: calc(50% - 140px);
     max-width: 300px;
+    top: 30vh;
+    transform: translate(-50%, -50%);
   }
   .container {
     padding-left: 30px;
@@ -737,5 +816,23 @@ input.form-control {
   }
   #top-nav-bar div ul li {
     padding: 0px 30px;
+  }
+  #cloud-left{
+    animation-duration: 20s;
+  }
+  #cloud-right{
+    animation-duration: 16s;
+  }
+  #blimp-right{
+    animation-duration: 20s;
+  }
+  #sun{
+    animation-duration: 15s;
+  }
+  #plane{
+    width: 20%;
+  }
+  #side-to-side{
+    height: 50vh;
   }
 }
