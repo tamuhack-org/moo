@@ -146,6 +146,7 @@ section .goto {
 /* Header Section */
 header{
   min-height: 100vh;
+  background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
 }
 .tamuhack-title {
   position: relative;
