@@ -420,6 +420,10 @@ header{
   box-shadow: 0 -1px 0 0 #232323 inset, 0 -2px 0 0 #232323 inset;
   color: #232323 !important;
  }
+ .small-links-container{
+   position: relative;
+   width: 90vw;
+ }
 .small-links-container > img{
   width: auto;
   height: 20px !important;
@@ -428,7 +432,10 @@ header{
 .small-links-container .small-links-wrapper{
   display: inline-block;
   width: 150px;
-  float: right;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .small-links-container .small-link{
   margin: 0px 10px !important;
@@ -442,9 +449,10 @@ header{
   width: 100% !important;
 }
 .small-nav-container a{
-  padding: 0px 5px !important;
+  padding: 10px 5px !important;
   margin: 5px 10px;
   border-radius: 0px !important;
+  font-size: 11px;
 }
 /*--------------------------------------*/
 
