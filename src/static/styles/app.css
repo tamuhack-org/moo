@@ -6,11 +6,11 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.custom-p-text {
+p {
   color: black;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
   font-weight: 300;
+  line-height: 30px;
 }
 h1 {
   font-weight: 600!important;
@@ -221,10 +221,11 @@ header{
 /* What We Do Section */
 #what-we-do-container .emphasize{
   font-size: 22px !important;
+  margin-top: 10px;
   margin-bottom: 0px !important;
+  font-weight: 500 !important;
 }
 #what-we-do-container .emphasize span{
-  font-weight: 500 !important;
   color: #FF7C93;
 }
 #what-we-do-container {
@@ -503,17 +504,15 @@ input.form-control {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -9px;
-  width: 18px;
+  transform: translateX(-50%);
+  width: 12px;
   margin-top: 90px;
   height: calc(100% - 180px);
   background: black;
   z-index: -1;
 }
 #timeline-full .timeline-block {
-  width: -webkit-calc(58%);
-  width: -moz-calc(58%);
-  width: calc(50% + 8px);
+  width: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -532,26 +531,25 @@ input.form-control {
   direction: rtl;
 }
 #timeline-full .marker {
-  max-width: 60px!important;
-  max-height: 60px!important;
-  min-width: 60px!important;
-  min-height: 60px!important;
+  max-width: 42px!important;
+  max-height: 42px!important;
+  min-width: 42px!important;
+  min-height: 42px!important;
   border-radius: 50%;
   background: black;
-  margin: auto 0px;
-  margin-left: -21px;
- 
+  margin: auto 0px; 
+  text-align: center;
+  transform: translateX(-50%);
 }
 #timeline-full .marker-2 {
-  max-width: 60px!important;
-  max-height: 60px!important;
-  min-width: 60px!important;
-  min-height: 60px!important;
+  max-width: 42px!important;
+  max-height: 42px!important;
+  min-width: 42px!important;
+  min-height: 42px!important;
   border-radius: 50%;
   background: black;
   margin: auto 0px;
-  margin-right: -21px;
-
+  transform: translateX(50%);
 }
 #timeline-full .arrow-right {
   width: 0;
@@ -561,9 +559,20 @@ input.form-control {
   border-bottom: 25px solid transparent;
   border-left: 25px solid transparent;
   border-color: transparent transparent transparent white;
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   margin-right: 7px;
   margin-left: -2px;
+}
+#timeline-full .arrow-right::after{
+  content: " ";
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid white;
 }
 #timeline-full .arrow-left {
   width: 0;
@@ -573,7 +582,7 @@ input.form-control {
   border-bottom: 25px solid transparent;
   border-right: 25px solid transparent;
   border-color: transparent white transparent transparent;
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   margin-left: 6px;
   margin-right: 0px;
 }
@@ -612,17 +621,15 @@ input.form-control {
   position: absolute;
   top: 0;
   left: 31px;
-  margin-left: -9px;
-  width: 18px;
+  margin-left: -15px;
+  width: 12px;
   margin-top: 100px;
   height: calc(100% - 180px);
   background: black;
   z-index: 1;
 }
 #timeline-small .timeline-block {
-  width: -webkit-calc(88%);
-  width: -moz-calc(88%);
-  width: calc(100% - 12px);
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -638,15 +645,15 @@ input.form-control {
   float: right;
 }
 #timeline-small .marker {
-  max-width: 60px!important;
-  max-height: 60px!important;
-  min-width: 60px!important;
-  min-height: 60px!important;
+  max-width: 42px!important;
+  max-height: 42px!important;
+  min-width: 42px!important;
+  min-height: 42px!important;
   border-radius: 50%!important;
   border: 2px solid black;
   background: black;
   margin: auto 0px;
-  margin-left: -21px !important;
+  margin-left: -10px !important;
   z-index: 9999;
 }
 #timeline-small .marker-2 {
@@ -669,7 +676,7 @@ input.form-control {
   border-bottom: 25px solid transparent;
   border-left: 25px solid transparent;
   border-color: transparent transparent transparent white;
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 4px 10px 2px rgba(0, 0, 0, 0.1));
   margin-right: 7px;
   margin-left: -1px;
   z-index: 0;
@@ -682,7 +689,7 @@ input.form-control {
   border-bottom: 25px solid transparent;
   border-right: 25px solid transparent;
   border-color: transparent white transparent transparent;
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 4px 10px 2px rgba(0, 0, 0, 0.1));
   margin-left: 7px;
   margin-right: 0px;
   z-index: 0;
@@ -804,8 +811,8 @@ input.form-control {
   h2 {
     font-size: 1.4rem;
   }
-  .custom-p-text {
-    font-size: 16px;
+  p {
+    font-size: 14px;
   }
   .navbar {
     padding-left: 10px!important; 
@@ -843,5 +850,8 @@ input.form-control {
   }
   #side-to-side{
     height: 50vh;
+  }
+  #three-cols div{
+    margin-bottom: 0px;
   }
 }
