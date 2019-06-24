@@ -843,4 +843,7 @@ input.form-control {
   #three-cols div{
     margin-bottom: 0px;
   }
+  .nav-link{
+    display: inline-block;
+  }
 }
