@@ -563,17 +563,6 @@ input.form-control {
   margin-right: 7px;
   margin-left: -2px;
 }
-#timeline-full .arrow-right::after{
-  content: " ";
-  position: absolute;
-  top: -15px;
-  right: 20px;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid white;
-}
 #timeline-full .arrow-left {
   width: 0;
   height: 0;
