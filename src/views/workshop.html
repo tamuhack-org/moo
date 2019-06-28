@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./static/styles/app.css" />
 
-    <link rel="stylesheet" media="screen and (min-width: 900px)" href="./static/styles/workshop.css">
+    <link rel="stylesheet" href="./static/styles/workshop.css">
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="./static/styles/workshopmobile.css">
 
     <title>TAMUhack</title>
@@ -76,21 +76,10 @@
 
       <!-- Left side div -->
       <div class="titlediv">
-        <h1 style="position: absolute; left: 20%; top: 60px; width: 90%;">WORKSHOPS</h1>
-        <p style="position: absolute;
-                  width: 60%;
-                  height: 60px;
-                  left: 20%;
-                  top: 130px;
-                  font-size: 22px !important;
-                  font-weight: 500 !important;
-                  ">
+        <h1 class="ws-page-title">WORKSHOPS</h1>
+        <p class="ws-page-desc">
         Subscribe below to be the first to know about new workshops!</p>
-        <form class="form" action="/" id="email-form" style="position: absolute;
-width: 60%;
-height: 37px;
-left: 20%;
-top: 240px;">
+        <form class="form ws-page-form" action="/" id="email-form">
           <div class="input-group mb-3" id="before">
             <input
               name="email"

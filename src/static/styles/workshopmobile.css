@@ -1,13 +1,14 @@
 .card{
-  display: flex; min-width: 60%; min-height: 250px; width: 60%; height: auto; border: 0.5px solid #ECECEC;
+  display: flex; min-width: 300px; min-height: 250px; width: 60%; height: auto; border: 0px solid #ECECEC;
   box-sizing: border-box;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-bottom: 30px;
+  padding: 15px;
 }
 
 .toprow{
-display: flex; flex-direction: row; height: 40%; width: auto; padding-top: 20px; margin-right: 20px; margin-left: 20px;
+display: flex; flex-direction: row; height: 40%; width: auto; padding-bottom: 10px; margin-right: 0px; margin-left: 0px;
 }
 
 .largedate{
@@ -27,7 +28,7 @@ color: rgba(112, 112, 112, 0.9);
 }
 
 .bottomrow{
-display: flex; flex-direction: row; height: auto; width: auto; padding-top: 40px; justify-content: center; margin-right: 20px; margin-left: 20px;
+display: flex; flex-direction: row; height: auto; width: auto; padding: 0px; justify-content: center; margin-right: 0px; margin-left: 0px;
 }
 
 .rsvp{
@@ -39,17 +40,44 @@ display: flex; flex-direction: row; height: auto; width: auto; padding-top: 40px
 }
 
 .workshopdiv{
-  display: flex; flex-direction: column; width: 100%; min-width: 100%; height: 70%; background-color: white; align-items: center; padding-top: 60px;
+  width: 100%; min-width: 100%; background-color: white; align-items: center; padding-top: 60px;
   margin-bottom: 0px; padding-bottom: 10px;
 }
 
 .titlediv{
-  position: relative; width: 100%; min-height: 30%; height: 30%; background-color: #FFF7F8; padding-left: 30px;
+  position: relative; width: 100%; background-color: white; padding: 30px; padding-left: 40px; overflow: hidden; height: auto;
+}
+
+.overflow-auto {
+  overflow: hidden !important;
+}
+
+.ws-page-title {
+  position: relative;
+  top: auto;
+  left: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.ws-page-desc {
+  position: relative;
+  top: auto;
+  left: auto;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.ws-page-form {
+  position: relative;
+  top: auto;
+  left: auto;
+  padding-bottom: 40px;
 }
 
 .overallcontainer{
-  display: flex; position: relative; flex-direction: column; width: 100vw; height: 100vh; margin: 0px; padding-bottom: 0px;
-  overflow-x: hidden;
+  display: inline-block; position: relative; width: 100vw; margin: 0px; padding-bottom: 0px;
+  overflow: hidden; height: auto;
 }
 
 .ws-graphic {
