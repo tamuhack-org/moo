@@ -51,3 +51,7 @@ display: flex; flex-direction: row; height: auto; width: auto; padding-top: 40px
   display: flex; position: relative; flex-direction: column; width: 100vw; height: 100vh; margin: 0px; padding-bottom: 0px;
   overflow-x: hidden;
 }
+
+.ws-graphic {
+  display: none;
+}
