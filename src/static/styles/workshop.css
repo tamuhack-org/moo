@@ -8,6 +8,10 @@
   /* background-color: #FFF7F8; */
 }
 
+.nav-container {
+  margin-bottom: 60px;
+}
+
 .toprow{
 display: flex; flex-direction: row; min-height: 30%; width: auto; padding-top: 20px; margin-right: 20px; margin-left: 20px;
 padding-bottom: 20px;
@@ -62,6 +66,28 @@ display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 15
   left: 30%;
   top: calc(20% + 220px);
   max-width: 160px;
+}
+
+.ws-page-title {
+  position: absolute; left: 20%; top: 60px; width: 90%;
+}
+
+.ws-page-desc {
+  position: absolute;
+  width: 60%;
+  height: 60px;
+  left: 20%;
+  top: 130px;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+}
+
+.ws-page-form {
+  position: absolute;
+  width: 60%;
+  height: 37px;
+  left: 20%;
+  top: 240px;
 }
 
 @media only screen and (max-width: 600px) {
