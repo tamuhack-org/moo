@@ -16,7 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./static/styles/app2.css" />
+    <link rel="stylesheet" href="./static/styles/app.css" />
 
     <link rel="stylesheet" media="screen and (min-width: 900px)" href="./static/styles/workshop.css">
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="./static/styles/workshopmobile.css">
@@ -24,19 +24,18 @@
     <title>TAMUhack</title>
   </head>
   <body>
-    <div class="container" style="padding-right: 0px!important; margin-bottom: 79px;">
+    <div class="nav-container container">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="top-nav-bar">
         <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
         <a class="navbar-brand" href="#">
           <img
             src="./static/assets/th_logo.svg"
-            width="30"
-            height="30"
+            class="th-logo"
             alt=""
           />
           <img
             src="./static/assets/tamuhack.svg"
-            style="margin-left: 30px; margin-top: 6px; min-width: 90px"
+            class="th-text-logo"
           />
         </a>
 
@@ -77,21 +76,21 @@
 
       <!-- Left side div -->
       <div class="titlediv">
-        <h2 style="position: absolute; font-size: 50px; font-weight: 800; left: 102px; top: 40px; width: 92%;">WORKSHOPS</h2>
+        <h1 style="position: absolute; left: 20%; top: 60px; width: 90%;">WORKSHOPS</h1>
         <p style="position: absolute;
-                  width: 58%;
+                  width: 60%;
                   height: 60px;
-                  left: 105px;
+                  left: 20%;
                   top: 130px;
-                  font-size: 22px;
-                  line-height: 25px;
+                  font-size: 22px !important;
+                  font-weight: 500 !important;
                   ">
         Subscribe below to be the first to know about new workshops!</p>
         <form class="form" action="/" id="email-form" style="position: absolute;
-width: 54%;
+width: 60%;
 height: 37px;
-left: 105px;
-top: 220px;">
+left: 20%;
+top: 240px;">
           <div class="input-group mb-3" id="before">
             <input
               name="email"
@@ -130,6 +129,9 @@ top: 220px;">
             All good! Expect to hear back from us soon!
           </div>
         </form>
+        <div>
+          <img class="ws-graphic" src="./static/assets/workshop-people.svg">
+        </div>
       </div>
 
       <!-- Right side -->
