@@ -28,7 +28,7 @@ spec:
   type: NodePort
   ports:
   - protocol: TCP
-    port: 3001
+    port: 9001
     targetPort: 3000
   selector:
     app: ouroboros
