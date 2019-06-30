@@ -6,14 +6,16 @@ This app runs on Google Cloud Platform, specifically using:
 - [Cloud Build](https://cloud.google.com/cloud-build/) for continuous deployment
 - [Cloud Datastore](https://cloud.google.com/datastore/) for data storage
 
-To run the application locally (with the exception of storing data), you'll need to compile the TypeScript into JavaScript. The application runs using Node v10. The command to do this is:
-
+## Running the app locally:
+The application runs using Node v10; install the dependencies with:
+```
+npm i
+```
+To run the application locally (with the exception of storing data), you'll need to compile the TypeScript into JavaScript.  The command to do this is:
 ```
 npm run gcp-build
 ```
-
 Then, to run the server:
-
 ```
 npm start
 ```
