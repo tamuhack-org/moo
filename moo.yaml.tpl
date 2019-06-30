@@ -17,7 +17,14 @@ spec:
         image: gcr.io/GOOGLE_CLOUD_PROJECT/moo:COMMIT_SHA
         ports:
         - containerPort: 3000
-
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
 ---
 
 apiVersion: v1
