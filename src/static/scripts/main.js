@@ -36,13 +36,12 @@
         }
 
         // Very important feature.
-        
         var trigger = document.getElementById('good-morning-trigger');
-        var newSun = document.getElementById('good-morning')
-        var oldSun = document.getElementById('sun');
-
+        var morning = document.getElementById('good-morning')
+        var sun = document.getElementById('sun');
+        sun.style.visibility = "visible"
+        morning.style.visibility = "hidden"
         trigger.onclick = function() {
-            oldSun.style.visibility = "hidden"
-            newSun.style.visibility = "visible"
+          [sun.style.visibility, morning.style.visibility] = [morning.style.visibility, sun.style.visibility]
         }
       });
