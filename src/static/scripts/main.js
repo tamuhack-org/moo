@@ -34,4 +34,15 @@
           $(element).css("padding-bottom", navbarHeight);
           $(element).css("margin-top", -navbarHeight);
         }
+
+        // Very important feature.
+        
+        var trigger = document.getElementById('good-morning-trigger');
+        var newSun = document.getElementById('good-morning')
+        var oldSun = document.getElementById('sun');
+
+        trigger.onclick = function() {
+            oldSun.style.visibility = "hidden"
+            newSun.style.visibility = "visible"
+        }
       });

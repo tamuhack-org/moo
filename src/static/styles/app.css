@@ -80,7 +80,7 @@ section .goto {
   width: 7%;
   animation: translateplane 30s linear infinite;
 }
-#sun {
+.spinning-element {
   position: absolute;
   height: 10%;
   right: 25.6%;
@@ -94,11 +94,18 @@ section .goto {
   top: 10%;
   width: 100vw;
 }
+.good-morning {
+  position: relative;
+  left: -10vh;
+  animation: sidewaysCloudLeft 45s linear infinite;
+  height: 30%;
+  top: 75%;
+  overflow: visible;
+}
 #cloud-left {
   position: relative;
   left: -10vh;
   animation: sidewaysCloudLeft 45s linear infinite;
-  animation-delay: 7s;
   height: 10%;
   top: 75%;
   overflow: visible;
@@ -748,6 +755,18 @@ input.form-control {
   }
 }
 
+@keyframes sidewaysGoodMorningLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(calc(100vw + 20vh));
+  }
+  100% {
+    transform: translateX(calc(100vw + 20vh));
+  }
+}
+
 @keyframes sidewaysCloudLeft {
   0% {
     transform: translateX(0px);
@@ -831,7 +850,7 @@ input.form-control {
   #blimp-right{
     animation-duration: 20s;
   }
-  #sun{
+  .spinning-element{
     animation-duration: 15s;
   }
   #plane{
