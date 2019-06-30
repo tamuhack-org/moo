@@ -32,10 +32,10 @@ kind: Service
 metadata:
   name: moo-nodeport-service
 spec:
+  selector:
+    app: moo
   type: NodePort
   ports:
   - protocol: TCP
     port: 9001
     targetPort: 3000
-  selector:
-    app: ouroboros
