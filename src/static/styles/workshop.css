@@ -69,14 +69,14 @@ display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 15
 }
 
 .ws-page-title {
-  position: absolute; left: 20%; top: 60px; width: 90%;
+  position: absolute; left: 30%; top: 60px; width: 90%;
 }
 
 .ws-page-desc {
   position: absolute;
   width: 60%;
   height: 60px;
-  left: 20%;
+  left: 30%;
   top: 130px;
   font-size: 22px !important;
   font-weight: 500 !important;
@@ -86,7 +86,7 @@ display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 15
   position: absolute;
   width: 60%;
   height: 37px;
-  left: 20%;
+  left: 30%;
   top: 240px;
 }
 
