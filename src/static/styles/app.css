@@ -80,7 +80,7 @@ section .goto {
   width: 7%;
   animation: translateplane 30s linear infinite;
 }
-#sun {
+.spinning-element {
   position: absolute;
   height: 10%;
   right: 25.6%;
@@ -98,7 +98,6 @@ section .goto {
   position: relative;
   left: -10vh;
   animation: sidewaysCloudLeft 45s linear infinite;
-  animation-delay: 7s;
   height: 10%;
   top: 75%;
   overflow: visible;
@@ -831,7 +830,7 @@ input.form-control {
   #blimp-right{
     animation-duration: 20s;
   }
-  #sun{
+  .spinning-element{
     animation-duration: 15s;
   }
   #plane{
