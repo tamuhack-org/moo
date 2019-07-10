@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="alert alert-danger" role="alert" id="u_failed">
-                                    Invalid email. Please try again!
+                                    Invalid email. Please try again! Hint: Remember to use your .tamu email.
                                 </div>
                                 <div class="alert alert-success" role="alert" id="after">
                                     Awesome! Expect to hear back from us soon!
@@ -305,7 +305,9 @@
                 var email = $("#email").val();
                 console.log('Running')
 
-                if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
+                if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
+                    && email.indexOf('@tamu.edu') !== -1)
+                  {
                     $.post("/email", {
                         "email": email,
                         "howdyHackInterest": true
@@ -317,39 +319,8 @@
                     console.log('invalid email')
                     $('#u_failed').show()
                 }
-
-
             });
         });
-
-
-
-        $('#after_2').hide()
-        $('#u_failed_2').hide()
-        $(document).ready(function () {
-            // Listen to submit event on the <form> itself!
-            $('#main_2').submit(function (e) {
-
-                e.preventDefault();
-                var email = $("#email_2").val();
-                console.log('Running')
-
-                if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
-                    $.post("/", {
-                        "email": email
-                    })
-                    $('#u_failed_2').hide()
-                    $('#before_2').remove();
-                    $('#after_2').show()
-                } else {
-                    console.log('invalid email')
-                    $('#u_failed_2').show()
-                }
-
-
-            });
-        });
-
     </script>
 </body>
 
