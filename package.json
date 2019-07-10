@@ -14,7 +14,7 @@
     "fix": "gts fix",
     "start": "node build/src/app.js",
     "copyfiles": "ts-node copyStaticAssets.ts",
-    "gcp-build": "rm -rf build && tsc -p . && npm run copyfiles",
+    "gcp-build": "rm -rf build/ && tsc -p . && npm run copyfiles",
     "deploy": "gcloud app deploy"
   },
   "devDependencies": {

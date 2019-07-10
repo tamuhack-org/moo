@@ -76,6 +76,8 @@
       <img
         src="/static/assets/tamuhacfull_k.svg"
         class="tamuhack-title"
+        id="good-morning-trigger"
+        style="cursor: pointer; z-index: 10"
       />
       <div class="backdrop-container">
         <img
@@ -83,7 +85,6 @@
           class="backdrop"
         />
       </div>
-
       <object
         id="plane"
         data="/static/assets/plane.svg"
@@ -91,13 +92,16 @@
       ></object>
       <object
         id="sun"
+        class="spinning-element"
         data="/static/assets/sun.svg"
         type="image/svg+xml"
       ></object>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6f69f0fd7f2ac3331b4f77bdd1ff3d06a44fabb6
+      <object
+        id="good-morning"
+        class="spinning-element"
+        data="/static/assets/hh-assets/goodmorning.svg"
+        type="image/svg+xml"
+      ></object>
       <div id="side-to-side">
         <object
           id="cloud-left"
@@ -116,11 +120,6 @@
         ></object>
       </div>
     </header>
-<<<<<<< HEAD
-    </div>
-=======
-      </header>
->>>>>>> Fixed pink bar and other ui issues
     <!--END Header-->
 
     <!--BEGIN Main-->
@@ -212,80 +211,6 @@
                 href="https://tamuhack.com"
                 role="button"
                 >Visit TAMUhack 2019</a
-=======
-    <!--END Header-->
-
-    <!--BEGIN Main-->
-    <!--BEGIN What We Do Section-->
-    <section id="what-we-do-container">
-      <img
-        src="/static/assets/fancy-squiggle.svg"
-        alt=""
-        class="fancy-squiggle"
-      />
-      <span id="what-we-do" class="goto"> &nbsp; </span>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>WHAT WE DO</h1>
-            <p class="emphasize">
-              <span>"Hack"</span>
-              in hackathon is used to describe how technology can be used in
-              new and innovative ways.
-            </p>
-            <br />
-            <p>
-              At TAMUhack, teams spend the weekend working on innovative
-              software and hardware solutions to real-world problems in a
-              community full of mentorship.
-            </p>
-            <p>
-              We’ll provide you with all the resources and mentors you need to
-              work on something cool. You’ll have the freedom to create a
-              product, learn new skills or just have fun working on a project
-              with friends. We’ll also provide all the free food and free
-              swag—just be sure to bring plenty of resumes for all of the
-              awesome sponsors and mentors you’ll meet!
-            </p>
-          </div>
-          <div class="col-md-1 .d-none .d-sm-block"></div>
-          <div class="col-md-5 .d-none .d-sm-block">
-            <div class="d-none d-md-block d-print-block img-container2">
-              <img
-                src="/static/assets/th_faded.svg"
-                class="img-fluid special-image th-faded"
-              />
-            </div>
-          </div>
-        </div>
-        <br/>
-      </div>
-    </section>
-    <!--END What We Do Section-->
-
-    <!--BEGIN Overview Section-->
-    <section id="events-overview">
-      <div class="triangle-container">
-        <img
-          src="/static/assets/triangle_2.svg"
-        />
-      </div>
-      <div class="container">
-        <div class="row" id="three-cols">
-
-          <!--BEGIN Column-->
-          <div class="col-lg-4">
-            <img src="/static/assets/howdyhack_official_logo.svg" />
-            <h1>HowdyHack</h1>
-            <p class="custom-p-text">
-              Our themed hackathon in the fall semester, created for Aggies by
-              Aggies
-            </p>
-            <br/>
-            <p>
-              <a class="btn btn-primary hh-button" href="/hh" role="button"
-                >Visit HowdyHack 2019</a
->>>>>>> 6f69f0fd7f2ac3331b4f77bdd1ff3d06a44fabb6
               >
             </p>
           </div>
@@ -293,28 +218,6 @@
 
           <!--BEGIN Column-->
           <div class="col-lg-4">
-<<<<<<< HEAD
-=======
-            <img src="/static/assets/tbbb.svg" />
-            <h1>TAMUhack</h1>
-            <p class="custom-p-text">
-              One of the largest annual hackathons in Texas, hosted at Texas
-              A&M University
-            </p><br>
-            <p>
-              <a
-                class="btn btn-primary tamu-button"
-                href="https://tamuhack.com"
-                role="button"
-                >Visit TAMUhack 2019</a
-              >
-            </p>
-          </div>
-          <!--End Column-->
-
-          <!--BEGIN Column-->
-          <div class="col-lg-4">
->>>>>>> 6f69f0fd7f2ac3331b4f77bdd1ff3d06a44fabb6
             <img src="/static/assets/_.svg" />
             <h1>Workshops</h1>
             <p class="custom-p-text">
@@ -476,13 +379,6 @@
       </div>
       <!--END Fullsize Timeline-->
 
-<<<<<<< HEAD
-
-
-=======
-
-
->>>>>>> 6f69f0fd7f2ac3331b4f77bdd1ff3d06a44fabb6
     <!--BEGIN Small Timeline-->
     <div id="timeline-small" class="d-block d-none d-sm-block d-md-none ">
       <div class="container">
@@ -1092,24 +988,24 @@
 
   </footer>
     <!--BEGIN Scripts-->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-      async
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-      async
-    ></script>
-    <script src="/static/scripts/main.js"></script>
-    <!--END Scripts-->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+    async
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+    async
+  ></script>
+  <script src="/static/scripts/main.js"></script>
+  <!--END Scripts-->
   </body>
 </html>
