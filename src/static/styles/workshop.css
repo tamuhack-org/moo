@@ -5,7 +5,7 @@
   border-radius: 5px;
   margin: auto;
   margin-bottom: 30px;
-  /* background-color: #FFF7F8; */
+  background-color: #FFF6F8; 
 }
 
 .nav-container {
@@ -56,7 +56,7 @@ display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 20
 }
 
 .overallcontainer{
-  display: flex; flex-direction: row; width: 100vw; height: calc(100vh - 80px); background-color: black;
+  display: flex; flex-direction: row; width: 100vw; height: calc(100vh - 60px); background-color: black;
 }
 
 .ws-graphic {
