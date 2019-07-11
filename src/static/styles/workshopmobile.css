@@ -1,8 +1,10 @@
 .card{
-  display: flex; min-width: 300px; min-height: 250px; width: calc(100%-30px); height: auto; border: 0px solid #ECECEC;
+  display: flex; min-width: 300px; min-height: 250px; width: calc(100% - 100px); height: auto; border: 0px solid #ECECEC;
   box-sizing: border-box;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  margin-left: 40px;
+  margin-right: 60px;
   margin-bottom: 30px;
   padding: 15px;
 }
@@ -41,7 +43,7 @@ display: flex; flex-direction: row; height: auto; width: auto; padding: 0px; jus
 
 .workshopdiv{
   width: 100%; min-width: 100%; background-color: white; align-items: center; padding-top: 60px;
-  margin-bottom: 0px; padding-bottom: 10px;
+  margin-bottom: 0px; padding-bottom: 10px; padding-right: 0px; padding-left: 0px;
 }
 
 .titlediv{

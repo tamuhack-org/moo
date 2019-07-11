@@ -34,7 +34,7 @@ color: rgba(112, 112, 112, 0.9);
 }
 
 .bottomrow{
-display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 15px; justify-content: center; margin-right: 20px; margin-left: 20px;
+display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 20px; justify-content: center; margin-right: 20px; margin-left: 20px;
 }
 
 .rsvp{
