@@ -1,7 +1,6 @@
 import * as rp from "request-promise";
 import { start } from "repl";
 const EVENTBRITEAPI_URL = "https://www.eventbriteapi.com/v3";
-const TOKEN = "LEJRQSQVIQNZ7Q4BM67C";
 
 export interface EventbriteDatetimeDetails {
   time: string;
@@ -84,7 +83,10 @@ class EventbriteController {
     return individualEventVenueData.name as string;
   }
 }
+if (!process.env.EVENTBRITE_TOKEN) {
+  throw new Error("The EventBrite API token was not provided. Please set the EVENTBRITE_TOKEN environment variable.");
+}
 
-const eventbriteController = new EventbriteController(TOKEN);
+const eventbriteController = new EventbriteController(process.env.EVENTBRITE_TOKEN);
 
 export { eventbriteController };
