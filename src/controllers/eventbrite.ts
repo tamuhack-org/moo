@@ -23,7 +23,7 @@ const MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "
 const constructDateData = (date: Date): EventbriteDatetimeDetails => {
   return {
     time: date.toLocaleTimeString("en-US", { timeZone: "America/Chicago", hour: '2-digit', minute: '2-digit' }),
-    day: date.getDay(),
+    day: date.getDate(),
     month: MONTHS[date.getMonth()],
   }
 }
