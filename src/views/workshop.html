@@ -124,17 +124,17 @@
         </div>
       </div>
       <!--templating starts-->
-      <script id="handlebars" type="">
+      <script id="entry-template" type="text/x-handlebars-template">
         <!-- Right side -->
         <div class="workshopdiv col-7 overflow-auto" style="">
-          {{#each events}}
+          {{ #each }}
           <!-- Individual card -->
           <div class="card" style="">
             <div class="toprow" style="">
               <!-- Left Date -->
               <div class="largedate" style="">
-                <p style="font-size: 36px; padding-bottom: 0px; margin-bottom: 5px;">{{start.day}}</p>
-                <p>{{start.month}}</p>
+                <p style="font-size: 36px; padding-bottom: 0px; margin-bottom: 5px;">{{start}}</p>
+                <p>{{start}}</p>
               </div>
               <!-- Meta Information -->
               <div class="smallinfo" style="">
@@ -142,7 +142,7 @@
                   {{name}}
                 </div>
                 <div class="location" style="">
-                  {{start.time}} – {{end.time}}
+                  {{start}} – {{end}}
                   <br />
                   {{venue}}
                 </div>
@@ -215,6 +215,6 @@
       });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/static/scripts/workshop.js"></script>
+    <!--<script src="/static/scripts/workshop.js"></script>-->
   </body>
 </html>
