@@ -18,7 +18,7 @@ export interface EventbriteEvent {
   end: string | EventbriteDatetimeDetails;
 }
 
-const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
 const constructDateData = (date: Date): EventbriteDatetimeDetails => {
   return {
@@ -32,7 +32,7 @@ class EventbriteController {
   constructor(private token: string) { }
 
   async fetchEvents(): Promise<Array<EventbriteEvent>> {
-    const tamuhackEventsUrl = `${EVENTBRITEAPI_URL}/users/me/events/?time_filter=current_future&token=${this.token}`;
+    const tamuhackEventsUrl = `${EVENTBRITEAPI_URL}/users/me/events/?time_filter=all&token=${this.token}`; // need to change back to current_future
     const response = await rp.get(tamuhackEventsUrl);
     const parsedEvents = JSON.parse(response).events;
     let allEvents: Array<EventbriteEvent> = [];
