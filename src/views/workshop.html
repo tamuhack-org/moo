@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="./static/styles/workshop.css">
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="./static/styles/workshopmobile.css">
+    <script src="/static/scripts/handlebars-v4.1.2.js"></script>
 
     <title>TAMUhack</title>
   </head>
@@ -122,50 +123,51 @@
           <img class="ws-graphic" src="./static/assets/workshop-people.svg">
         </div>
       </div>
-
-      <!-- Right side -->
-      <div class="workshopdiv col-7 overflow-auto" style="">
-
-        <!-- Individual card -->
-        <div class="card" style="">
-          <div class="toprow" style="">
-            <!-- Left Date -->
-            <div class="largedate" style="">
-              <p style="font-size: 36px; padding-bottom: 0px; margin-bottom: 5px;">5</p>
-              <p>MAY</p>
-            </div>
-            <!-- Meta Information -->
-            <div class="smallinfo" style="">
-              <div class="workshoptitle" style="">
-                Bug-Free Coding with SPARK Ada
+      <!--templating starts-->
+      <script id="handlebars" type="">
+        <!-- Right side -->
+        <div class="workshopdiv col-7 overflow-auto" style="">
+          {{#each events}}
+          <!-- Individual card -->
+          <div class="card" style="">
+            <div class="toprow" style="">
+              <!-- Left Date -->
+              <div class="largedate" style="">
+                <p style="font-size: 36px; padding-bottom: 0px; margin-bottom: 5px;">{{start.day}}</p>
+                <p>{{start.month}}</p>
               </div>
-              <div class="location" style="">
-                Thurs, 8:00pm – 9:00pm
-                <br />
-                Zachry Engineering Education Complex, Rm 240
+              <!-- Meta Information -->
+              <div class="smallinfo" style="">
+                <div class="workshoptitle" style="">
+                  {{name}}
+                </div>
+                <div class="location" style="">
+                  {{start.time}} – {{end.time}}
+                  <br />
+                  {{venue}}
+                </div>
+              </div>
+            </div>
+            <div class="bottomrow" style="">
+              <div class="rsvp" style="">
+                <a href="{{url}}"><img
+                  src="./static/assets/rsvp.svg"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+                <div style="margin-top: 16px; color: #3782F2;">
+                RSVP
+                </div></a>
+              </div>
+              <div class="workshopdesc" style="">
+                {{summary}}
               </div>
             </div>
           </div>
-          <div class="bottomrow" style="">
-            <div class="rsvp" style="">
-              <img
-                src="./static/assets/rsvp.svg"
-                width="30"
-                height="30"
-                alt=""
-              />
-              <div style="margin-top: 16px; color: #3782F2;">
-              RSVP
-              </div>
-            </div>
-            <div class="workshopdesc" style="">
-              Learn to write bug-free code with Ada’s incredible developer tools. In this workshop,
-              you’ll use SPARK – a program verification tool – to write errorless code.
-            </div>
-          </div>
+          {{/each}}
         </div>
-
-      </div>
+      </script>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
