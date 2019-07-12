@@ -1,6 +1,7 @@
 import * as bodyParser from "body-parser";
 import * as ejs from "ejs";
 import * as express from "express";
+import * as hbs from "hbs";
 import { join } from "path";
 
 import { hubRoute } from "./routes/home";
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 
 app.set("views", join(__dirname, "views"));
 app.use("/static", express.static(join(__dirname, "/static")));
+app.set('view engine', 'hbs');
 app.engine("html", ejs.renderFile);
 
 app.get("/", hubRoute);

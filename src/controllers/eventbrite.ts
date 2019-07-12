@@ -1,6 +1,13 @@
 import * as rp from "request-promise";
+import { start } from "repl";
 const EVENTBRITEAPI_URL = "https://www.eventbriteapi.com/v3";
 const TOKEN = "LEJRQSQVIQNZ7Q4BM67C";
+
+export interface EventbriteDatetimeDetails {
+  time: string;
+  day: number;
+  month: string;
+}
 
 export interface EventbriteEvent {
   summary: string;
@@ -8,8 +15,18 @@ export interface EventbriteEvent {
   url: string;
   venue: string;
   description: string;
-  start: string;
-  end: string;
+  start: string | EventbriteDatetimeDetails;
+  end: string | EventbriteDatetimeDetails;
+}
+
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const constructDateData = (date: Date): EventbriteDatetimeDetails => {
+  return {
+    time: date.toLocaleTimeString("en-US", { timeZone: "America/Chicago", hour: '2-digit', minute: '2-digit' }),
+    day: date.getDay(),
+    month: MONTHS[date.getMonth()],
+  }
 }
 
 class EventbriteController {
@@ -24,16 +41,15 @@ class EventbriteController {
       allEvents.push(await this.fetchEventData(event.id));
     }
 
-    allEvents = allEvents.sort((first, second) => {
-      const firstStartTimeMillis = Date.parse(first.start);
-      const secondStartTimeMillis = Date.parse(second.start);
+    return allEvents.sort((first, second) => {
+      const firstStartTimeMillis = Date.parse(first.start as string);
+      const secondStartTimeMillis = Date.parse(second.start as string);
       return firstStartTimeMillis - secondStartTimeMillis;
-    });
-    return allEvents.map((event) => {
-      event.start = new Date(event.start).toLocaleString("en-US", { timeZone: "America/Chicago" });
-      event.end = new Date(event.end).toLocaleString("en-US", { timeZone: "America/Chicago" });
+    }).map((event) => {
+      event.start = constructDateData(new Date(event.start as string));
+      event.end = constructDateData(new Date(event.end as string));
       return event;
-    })
+    });
   }
 
   private async fetchEventData(eventId: string): Promise<EventbriteEvent> {
