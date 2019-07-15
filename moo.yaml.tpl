@@ -25,6 +25,12 @@ spec:
           httpGet:
             path: /
             port: 3000
+        env:
+          - name: EVENTBRITE_KEY
+            valueFrom:
+              secretKeyRef:
+                name: eventbrite
+                key: key
 ---
 
 apiVersion: v1

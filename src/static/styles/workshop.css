@@ -1,0 +1,98 @@
+.card{
+  display: flex; min-width: 60%; min-height: 33%; width: 60%; height: auto; border: 0px solid #ECECEC;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: #FFEAEE; 
+}
+
+.nav-container {
+  margin-bottom: 60px;
+}
+
+.toprow{
+display: flex; flex-direction: row; min-height: 30%; width: auto; padding-top: 20px; margin-right: 20px; margin-left: 20px;
+padding-bottom: 20px;
+}
+
+.largedate{
+  display: flex; flex-direction: column; min-width: 20%; width: 20%; height: auto; align-items: center; padding-top: 10px;
+}
+
+.smallinfo{
+display: flex; flex-direction: column; min-width: 80%; width: 80%; height: auto; margin-left: 10px; padding-right: 15px;
+}
+
+.workshoptitle{
+font-weight: 600; font-size: 22px; margin-bottom: 5px;
+}
+
+.location{
+color: rgba(112, 112, 112, 0.9);
+}
+
+.bottomrow{
+display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 20px; justify-content: center; margin-right: 20px; margin-left: 20px;
+}
+
+.rsvp{
+  display: flex; flex-direction: column; width: 20%; height: 100%; align-items: center; margin-top: 5px; text-align: center;
+}
+
+.workshopdesc{
+  display: flex; flex-direction: column; width: 80%; height: 100%; margin-left: 10px; margin-bottom: 10px; padding-right: 15px;
+}
+
+.workshopdiv{
+  background-color: white; align-items: center; padding-top: 60px;
+  width: calc(100% * 7/12);
+}
+
+.titlediv{
+  position: relative; height: 100%; background-color: white; padding-left: 30px;
+  width: calc(100% * 5/12);
+}
+
+.overallcontainer{
+  display: flex; flex-direction: row; width: 100vw; height: calc(100vh - 60px); background-color: black;
+}
+
+.ws-graphic {
+  margin: 20px;
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: calc(20% + 220px);
+  max-width: 200px;
+}
+
+.ws-page-title {
+  position: absolute; left: 30%; top: 60px; width: 90%;
+}
+
+.ws-page-desc {
+  position: absolute;
+  width: 70%;
+  height: 60px;
+  left: 30%;
+  top: 130px;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+}
+
+.ws-page-form {
+  position: absolute;
+  width: 70%;
+  height: 37px;
+  left: 30%;
+  top: 240px;
+}
+
+@media only screen and (max-width: 600px) {
+  .overallcontainer{
+    height: 100vh;
+    flex-direction: column;
+  }
+}
