@@ -26,7 +26,7 @@ spec:
             path: /
             port: 3000
         env:
-          - name: EVENTBRITE_KEY
+          - name: EVENTBRITE_TOKEN
             valueFrom:
               secretKeyRef:
                 name: eventbrite
