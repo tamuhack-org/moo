@@ -93,22 +93,23 @@ display: flex; flex-direction: row; height: 70%; width: auto; padding-bottom: 20
 #empty-state {
   text-align: center;
   margin-top: 10%;
+  color: #ffc6d0;
 }
 
 #empty-state img {
   width: 40%;
-  max-width: 250px;
-  margin-bottom: 30px;
+  max-width: 200px;
+  margin-bottom: 40px;
+  opacity: 0.8;
 }
 
 .empty-state-title {
-  color: rgba(0, 0, 0, 0.61);
   font-size: 20px;
 }
 
 .empty-state-p {
-  color: rgba(0, 0, 0, 0.61);
   font-size: 16px;
+  color: #ffc6d0;
 }
 
 @media only screen and (max-width: 600px) {
