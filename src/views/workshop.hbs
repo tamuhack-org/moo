@@ -84,6 +84,11 @@
 
     {{!-- Right side --}}
     <div class="workshopdiv col-7 overflow-auto" style="">
+      <div id="empty-state">
+        <img src="./static/assets/ws-emptystates.svg">
+        <div class="empty-state-title">NO UPCOMING WORKSHOPS</div>
+        <p class="empty-state-p">Please check back in a bit!</p>
+      </div>
       {{#each events}}
       {{!-- Individual card --}}
       <div class="card" style="">
@@ -134,6 +139,13 @@
     $("#after").hide();
     $("#u_failed").hide();
     $(document).ready(function () {
+      // checks that there are events to be shown, then hide empty state
+      var checkEvents = setInterval(function() {
+        if ($(".card").length > 0) {
+          clearInterval(checkEvents);
+          $("#empty-state").hide();
+        }
+      }, 100);
       // Listen to submit event on the <form> itself!
       $("#email-form").submit(function (e) {
         e.preventDefault();
