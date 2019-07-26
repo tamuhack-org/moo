@@ -5,6 +5,7 @@ steps:
     args: ["run", "gcp-build"]
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
+    env: ["EVENTBRITE_TOKEN=$$EVENTBRITE_TOKEN"]
     secretEnv: ["EVENTBRITE_TOKEN"]
     
 timeout: "1600s"
