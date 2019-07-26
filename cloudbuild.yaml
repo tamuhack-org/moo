@@ -5,5 +5,12 @@ steps:
     args: ["run", "gcp-build"]
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
+    secretEnv:
+      - EVENTBRITE_TOKEN
     
 timeout: "1600s"
+
+secrets:
+  - kmsKeyName: projects/tamuhack-prod/locations/global/keyRings/evtbrite/cryptoKeys/apikey
+    secretEnv:
+      EVENTBRITE_TOKEN: CiQApx8kWxcqooeKJjFms4XVSoL8oYAZFiPwSEYHk0T70tE1DoESPQAKXgmY0KfrjyLI/L6C7e+sBJ5YKODWSJVtKtXF6Ns+f4FApUcfwpVYdCKqEgqlUsFx0sEppnZfZHSSVnM=
