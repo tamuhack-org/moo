@@ -17,15 +17,15 @@ spec:
         image: gcr.io/GOOGLE_CLOUD_PROJECT/moo:COMMIT_SHA
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
         livenessProbe:
           httpGet:
-            path: /healthy/
-            port: 8080
+            path: /
+            port: 3000
         readinessProbe:
           httpGet:
-            path: /healthy/
-            port: 8080
+            path: /
+            port: 3000
         env:
           - name: EVENTBRITE_TOKEN
             valueFrom:
@@ -44,6 +44,6 @@ spec:
   ports:
   - protocol: TCP
     port: 9001
-    targetPort: 8080
+    targetPort: 3000
   type: NodePort
  
