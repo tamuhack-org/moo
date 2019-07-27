@@ -87,7 +87,7 @@ steps:
     git commit -m "Deploying image gcr.io/${PROJECT_ID}/moo:${SHORT_SHA}
     Built from commit ${COMMIT_SHA} of repository moo
     Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
-    git push origin candidate
+    git push origin jay-khatri-testing-deploys
   volumes:
   - name: 'ssh'
     path: /root/.ssh
