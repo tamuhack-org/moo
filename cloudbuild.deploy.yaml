@@ -1,5 +1,6 @@
 steps:
 # This step builds the container image.
+# placeholder (1)
 - name: 'gcr.io/cloud-builders/docker'
   id: Build
   args:
