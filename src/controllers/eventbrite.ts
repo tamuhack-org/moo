@@ -84,7 +84,7 @@ class EventbriteController {
   }
 }
 if (!process.env.EVENTBRITE_TOKEN) {
-	console.log("EVENTBRITE_TOKEN not present.");
+	throw new Error("EVENTBRITE_TOKEN environment variable not present.");
 }
 
 const eventbriteController = new EventbriteController(process.env.EVENTBRITE_TOKEN);
