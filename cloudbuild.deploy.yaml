@@ -85,7 +85,7 @@ steps:
     set -x && \
     cd snakeskin && \
     git add moo.yaml && \
-    git commit -m "Deploying image gcr.io/${PROJECT_ID}/moo:${SHORT_SHA}
+    git commit --allow-empty -m "Deploying image gcr.io/${PROJECT_ID}/moo:${SHORT_SHA}
     Built from commit ${COMMIT_SHA} of repository moo
     Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
     git push origin jay-khatri-testing-deploys
