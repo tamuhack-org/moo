@@ -43,7 +43,7 @@ spec:
     app: moo
   ports:
   - protocol: TCP
-    port: 9000
+    port: 9001
     targetPort: 8080
   type: NodePort
  
