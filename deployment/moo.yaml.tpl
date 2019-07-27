@@ -26,7 +26,12 @@ spec:
           httpGet:
             path: /healthy/
             port: 8080
-
+        env:
+          - name: EVENTBRITE_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: evtbrite
+                key: apikey
 ---
 
 apiVersion: v1
