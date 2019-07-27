@@ -58,7 +58,7 @@ steps:
   - |
     git clone git@github.com:tamuhack-org/snakeskin && \
     cd snakeskin && \
-    git checkout candidate && \
+    git checkout jay-khatri-testing-deploys && \
     git config user.email khatri.florida@gmail.com
   volumes:
   - name: 'ssh'
