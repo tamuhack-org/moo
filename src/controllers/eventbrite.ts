@@ -29,9 +29,12 @@ const constructDateData = (date: Date): EventbriteDatetimeDetails => {
 }
 
 class EventbriteController {
-  constructor(private token: string) { }
+  constructor(private token: string | undefined) { }
 
   async fetchEvents(): Promise<Array<EventbriteEvent>> {
+    if (!this.token) {
+      throw new Error("The EVENTBRITE_TOKEN environment variable is not set. Please set it.");
+    }
     const tamuhackEventsUrl = `${EVENTBRITEAPI_URL}/users/me/events/?time_filter=current_future&token=${this.token}`; // need to change back to current_future
     const response = await rp.get(tamuhackEventsUrl);
     const parsedEvents = JSON.parse(response).events;
@@ -82,9 +85,6 @@ class EventbriteController {
     const individualEventVenueData = JSON.parse(individualEventVenueResponse);
     return individualEventVenueData.name as string;
   }
-}
-if (!process.env.EVENTBRITE_TOKEN) {
-	throw new Error("EVENTBRITE_TOKEN environment variable not present.");
 }
 
 const eventbriteController = new EventbriteController(process.env.EVENTBRITE_TOKEN);
