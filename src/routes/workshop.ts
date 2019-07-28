@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { eventbriteController, EventbriteEvent } from "../controllers/eventbrite";
+import { eventbriteController } from "../controllers/eventbrite";
 
 export const workshopRoute = async (req: Request, res: Response) => {
   let events;
