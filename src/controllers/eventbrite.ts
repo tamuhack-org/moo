@@ -35,7 +35,7 @@ class EventbriteController {
     if (!this.token) {
       throw new Error("The EVENTBRITE_TOKEN environment variable is not set. Please set it.");
     }
-    const tamuhackEventsUrl = `${EVENTBRITEAPI_URL}/users/me/events/?time_filter=current_future&token=${this.token}`; // need to change back to current_future
+    const tamuhackEventsUrl = `${EVENTBRITEAPI_URL}/users/me/events/?time_filter=current_future&token=${this.token}`;
     const response = await rp.get(tamuhackEventsUrl);
     const parsedEvents = JSON.parse(response).events;
     let allEvents: Array<EventbriteEvent> = [];
