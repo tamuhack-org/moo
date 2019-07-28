@@ -80,6 +80,9 @@ class EventbriteController {
     };
   }
   private async fetchEventVenueData(venueId: string): Promise<string> {
+    if (!venueId) {
+      return "";
+    }
     const individualEventVenueUrl = `${EVENTBRITEAPI_URL}/venues/${venueId}/?token=${this.token}`;
     const individualEventVenueResponse = await rp.get(individualEventVenueUrl);
     const individualEventVenueData = JSON.parse(individualEventVenueResponse);
