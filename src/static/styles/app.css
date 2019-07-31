@@ -591,6 +591,10 @@ input.form-control {
   font-size: 15px;
   color: #a4a4a4;
 }
+#timeline-full .timeline-content .custom-p-text {
+  margin-bottom: 0;
+}
+
 #timeline-small h1 {
   text-align: center;
   font-weight: 300;
@@ -611,7 +615,7 @@ input.form-control {
   left: 31px;
   margin-left: -15px;
   width: 12px;
-  margin-top: 100px;
+  margin-top: 120px;
   height: calc(100% - 180px);
   background: black;
   z-index: 1;
@@ -628,6 +632,7 @@ input.form-control {
   justify-content: space-between;
   clear: both;
   margin-top: 25px;
+  padding-top: 50px;
 }
 #timeline-small .timeline-block-right {
   float: right;
@@ -642,6 +647,7 @@ input.form-control {
   background: black;
   margin: auto 0px;
   margin-left: -10px !important;
+  margin-right: 20px;
   z-index: 9999;
 }
 #timeline-small .marker-2 {
@@ -684,10 +690,13 @@ input.form-control {
 } */
 #timeline-small .timeline-content {
   width: 95%;
-  padding: 11px;
+  padding: 20px 10px;
   border: .0px solid #cccccc;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#timeline-small .timeline-content {
+  margin-bottom: 0;
 }
 #timeline-small .timeline-content h3 {
   margin-top: 5px;
