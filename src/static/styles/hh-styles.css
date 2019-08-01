@@ -96,6 +96,23 @@ h3 {
     height: 740px;
 }
 
+.apply-btn {
+    background-color: #69A2CC; 
+    color: white; 
+    border-radius: 5px!important; 
+    padding: 20px 30px; 
+    font-size: 22px; 
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.apply-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #346c94;
+    transition: 0.3s;
+}
+
 #foot-container {
     padding-top: 250px;
 }
@@ -345,6 +362,13 @@ p {
 } 
 
 @media (max-width: 767px) {
+    .apply-btn {
+        padding: 14px 30px; 
+        font-size: 18px; 
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
     .tamuhack-logo {
         display: none;
     }
