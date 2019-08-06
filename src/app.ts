@@ -9,6 +9,7 @@ import { emailRoute } from "./routes/email";
 import { howdyHackRoute } from "./routes/hh";
 import { workshopRoute } from "./routes/workshop";
 import { th2019Route } from "./routes/th-2019";
+import { hh2018Route } from "./routes/hh-2018";
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -25,6 +26,7 @@ app.get("/", hubRoute);
 app.get("/hh", howdyHackRoute);
 app.get("/workshops", workshopRoute);
 app.get("/th2019", th2019Route);
+app.get("/hh2018", hh2018Route);
 app.post("/email", emailRoute);
 
 app.listen(PORT, () => {
