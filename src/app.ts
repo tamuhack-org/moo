@@ -6,8 +6,10 @@ import { join } from "path";
 
 import { hubRoute } from "./routes/home";
 import { emailRoute } from "./routes/email";
-import { howdyHackRoute } from "./routes/hh";
+import howdyHackRouter from "./routes/hh";
 import { workshopRoute } from "./routes/workshop";
+import tamuHackRouter from "./routes/th";
+
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -20,7 +22,8 @@ app.set('view engine', 'hbs');
 app.engine("html", ejs.renderFile);
 
 app.get("/", hubRoute);
-app.get("/hh", howdyHackRoute);
+app.use("/hh", howdyHackRouter);
+app.use("/th", tamuHackRouter);
 app.get("/workshops", workshopRoute);
 app.post("/email", emailRoute);
 
