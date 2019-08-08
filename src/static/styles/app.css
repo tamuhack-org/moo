@@ -581,6 +581,7 @@ input.form-control {
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 #timeline-full .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -708,6 +709,22 @@ input.form-control {
   font-size: 15px;
   color: #a4a4a4;
 }
+
+.timeline-content{
+  transition: background-color ease-in-out 0.5s;
+}
+
+.timeline-content:hover {
+  background-color: #FFEAEE;
+  transition: background-color ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.no-hover:hover{
+  background-color: white;
+  cursor: inherit;
+}
+
 /*--------------------------------------*/
 
 @keyframes translateplane {
