@@ -35,13 +35,6 @@
           $(element).css("margin-top", -navbarHeight);
         }
 
-        $('#hh2018').click(function() {
-          window.location.href = "/hh/2018";
-        });
-        $('#hh2018-small').click(function() {
-          window.location.href = "/hh/2018";
-        });
-
         // Very important feature.
         var trigger = document.getElementById('good-morning-trigger');
         var morning = document.getElementById('good-morning')
