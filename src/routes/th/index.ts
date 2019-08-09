@@ -6,6 +6,10 @@ tamuHackRouter.get('/', async (req: Request, res: Response) => {
     res.redirect('/th/2019');
 });
 
+tamuHackRouter.get('/2016', async (req: Request, res: Response) => {
+    res.render("th-2016.html");
+});
+
 tamuHackRouter.get('/2018', async (req: Request, res: Response) => {
     res.render("th-2018.html");
 });
