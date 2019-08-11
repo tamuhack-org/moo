@@ -1,6 +1,10 @@
 # Built files
 build/**/*
 
+# IntelliJ Files/Folders
+.idea
+*.iml
+
 # Config Folder
 config
 
