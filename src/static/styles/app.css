@@ -484,6 +484,19 @@ input.form-control {
 /*--------------------------------------*/
 
 /* Timeline Section */
+
+#timeline-full {
+  margin-top: -30px;
+}
+
+#timeline-full h2{
+  font-size: 1.5rem;
+}
+
+#timeline-full .custom-p-text, #timeline-small .custom-p-text{
+  line-height: 1.5;
+}
+
 #timeline-full h1 {
   text-align: center;
   font-weight: 300;
@@ -625,6 +638,10 @@ input.form-control {
 }
 #timeline-full .timeline-content .custom-p-text {
   margin-bottom: 0;
+}
+
+#timeline-small {
+  margin-top: -60px;
 }
 
 #timeline-small h1 {
