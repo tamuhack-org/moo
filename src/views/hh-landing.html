@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- CSS -->
-    <link href="/static/styles/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/styles/hh-styles.css" rel="stylesheet">
+    <link href="../static/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/styles/hh-styles.css" rel="stylesheet">
     <!--Stylesheet for social icons-->
     <link
         rel="stylesheet"
@@ -25,15 +25,15 @@
       />
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="/static/assets/hh-assets/hh-favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../static/assets/hh-assets/hh-favicon.png"/>
 </head>
 
 <body id="page-top" style="background-color: white;">
     <header class="row" style="margin: 0px; margin-top: 16px!important;">
         <div class="col-md-10 offset-md-1" id="top-bar-icons">
             <a id="th-header-link" href="./">
-                <img src="/static/assets/hh-assets/TH.svg" class="th-logo" style="margin-right: 15px!important;">
-                <img src="/static/assets/hh-assets/tamuhack_2.svg" class="tamuhack-logo">
+                <img src="../static/assets/hh-assets/TH.svg" class="th-logo" style="margin-right: 15px!important;">
+                <img src="../static/assets/hh-assets/tamuhack_2.svg" class="tamuhack-logo">
             </a>
         </div>
     </header>
@@ -42,7 +42,7 @@
            <!--  left content -->
             <div class="col-md-3 offset-md-1 hhlogo-column" style="margin-top: 30px;">
                 <center>
-                    <img src="/static/assets/hh-assets/hhinfo.svg" class="hh-logo">
+                    <img src="../static/assets/hh-assets/hhinfo.svg" class="hh-logo">
                     <h1 class="hh-title">HowdyHack</h1>
                     <h3 class="hh-subtitle">7th&#8211;8th September 2019</h3>
                 </center>
@@ -50,8 +50,8 @@
            
            <!--  right content -->
             <div class="col-md-7 offset-md-1" style="margin-top: 20px; padding: 0">
-                    <img src="/static/assets/hh-assets/rectangle.png" alt="" id="rect">
-                    <img src="/static/assets/hh-assets/Rectangle-sm.svg" alt="" id="rect2">
+                    <img src="../static/assets/hh-assets/rectangle.png" alt="" id="rect">
+                    <img src="../static/assets/hh-assets/Rectangle-sm.svg" alt="" id="rect2">
 
                     <div class="my-container">
                         <div class="my-wrapper">
@@ -59,7 +59,12 @@
                                 Participate in our beginner-friendly hackathon made by Aggies for Aggies!
                             </h1>
 
-                            <h2>Sign up for the latest updates!</h2>
+                            <h2>Applications are open now until September 1st!</h2>
+                            
+                            <br>
+                            <a class="apply-btn" href="https://register.tamuhack.com/">Apply Here</a>
+
+                            <!-- <h2>Sign up for the latest updates!</h2>
                             
                             <form class="form" action="/email" id="main" method="POST">
                                 <div class="input-group" id="before">
@@ -79,18 +84,18 @@
                                 </div>
                                 <div class="alert alert-success" role="alert" id="after">
                                     Awesome! Expect to hear back from us soon!
-                                </div>
+                                </div> -->
 
                             </form>
                         </div>
                     </div>
-                    <img src="/static/assets/hh-assets/bottom-rect-sm.svg" alt="" id="rect2">
+                    <img src="../static/assets/hh-assets/bottom-rect-sm.svg" alt="" id="rect2">
                 </div>
             </div>
         </div>
     <!--Sections for text and descriptions-->
     <div class="section" id="first-section">
-        <div class = "section-right"><img src="/static/assets/hh-assets/hhpeople2.png" alt="" class="section-graphic"></div>
+        <div class = "section-right"><img src="../static/assets/hh-assets/hhpeople2.png" alt="" class="section-graphic"></div>
         <div class="section-text-left">
             <h4>Howdy!</h4>
             <p>HowdyHack is Texas A&M’s 24-hour, software-oriented, Aggie-only hackathon. Hackers at 
@@ -100,7 +105,7 @@
     </div>
 
     <div class="section">
-        <div class="section-left"><img src="./static/assets/hh-assets/hhpeople1.png" alt="" class="section-graphic"></div>
+        <div class="section-left"><img src=".../static/assets/hh-assets/hhpeople1.png" alt="" class="section-graphic"></div>
         <div class = "section-text-right">
             <h4>Goal</h4>
             <p>Beyond hacking, HowdyHack is about connecting creative and talented 
@@ -120,8 +125,17 @@
               <div class="faq-card h-100">
               <p class="faq-ques">What is HowdyHack?</p>
               <p class="faq-ans">
-                HowdyHack is Texas A&M’s software-oriented Aggie-only hackathon. Originally created by a group of ambitious, hacker-loving students from Aggie Coding Club, TAMUhack has now joined efforts into making this hackathon a bigger and better iteration for this year and many more to come!
+                HowdyHack is Texas A&amp;M’s software-oriented Aggie-only hackathon. Originally created by a group of ambitious, hacker-loving students from Aggie Coding Club, TAMUhack has now joined efforts into making this hackathon a bigger and better iteration for this year and many more to come!
 
+              </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">I don’t know how to code! Can I still participate?
+              </p>
+              <p class="faq-ans">
+                Of course! There will be mentors to help answer questions you may have, along with workshops and mini events to keep you on your toes outside of the main event as well, so there will never be an ounce of boredom.
               </p>
               </div>
             </div>
@@ -137,27 +151,43 @@
             <!-- /.col-lg-4 -->
             <div class="col-lg-6">
               <div class="faq-card h-100">
-              <p class="faq-ques">Will there be companies at the hackathon, like TAMUhack?</p>
+              <p class="faq-ques">Will there be companies at the hackathon?</p>
               <p class="faq-ans">
                 While there will not be companies present at the hackathon, we will have all kinds of workshops throughout the entire event and even the week before to help you get ready. We got your back!
               </p>
               </div>
             </div>
-            <!-- /.col-lg-4 -->
             <div class="col-lg-6">
               <div class="faq-card h-100">
-              <p class="faq-ques">I'm not from A&M, can I still attend?</p>
+              <p class="faq-ques">Will there be food or prizes?</p>
               <p class="faq-ans">
-                Unfortunately, HowdyHack is only open to students from Texas A&M - College Station. However, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!
+                Yes and yes. We got you covered. ;)
               </p>
               </div>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-6">
               <div class="faq-card h-100">
-              <p class="faq-ques">I can't wait! When does registration open?</p>
+              <p class="faq-ques">I'm not from A&amp;M, can I still attend?</p>
               <p class="faq-ans">
-                Shhh... it's a secret. But if you sign up on the mailing list, you'll find out sometime in August ;)
+                Unfortunately, HowdyHack is only open to students from Texas A&amp;M - College Station. However, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!
+              </p>
+              </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">I'm registered as a hacker, but I want to mentor as well. Can I get involved, and how?</p>
+              <p class="faq-ans">
+                Absolutely! We'll be releasing our mentorship forms soon, so check our website for more info!
+              </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="faq-card h-100">
+              <p class="faq-ques">I'm registered as a hacker, but I want to volunteer as well. Can I get involved, and how?</p>
+              <p class="faq-ans">
+                We love when our hackers get involved and want to give back! Register for an account and apply to be a volunteer <a style="color: white" href="https://register.tamuhack.com/">here</a>.
               </p>
               </div>
             </div>
@@ -191,7 +221,7 @@
             <li class="nav-item">
               <div class="navbar-brand" href="#" style="float: left;">
                 <img
-                  src="/static/assets/tamuhack_official_logo_white.png"
+                  src="../static/assets/tamuhack_official_logo_white.png"
                   style="margin-left: 20px; margin-top: 6px; width: 100%; height: 100%; opacity: 0.9"
                 />
               </div>
@@ -235,7 +265,7 @@
       </nav>
       <div class="custom-nav d-lg-none d-xl-none">
         <img
-          src="/static/assets/tamuhack_official_logo_white.svg"
+          src="../static/assets/tamuhack_official_logo_white.svg"
           style="width: auto; height: 20px!important; float: left;"
         />
         <div

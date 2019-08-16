@@ -484,6 +484,19 @@ input.form-control {
 /*--------------------------------------*/
 
 /* Timeline Section */
+
+#timeline-full {
+  margin-top: -30px;
+}
+
+#timeline-full h2{
+  font-size: 1.5rem;
+}
+
+#timeline-full .custom-p-text, #timeline-small .custom-p-text{
+  line-height: 1.5;
+}
+
 #timeline-full h1 {
   text-align: center;
   font-weight: 300;
@@ -504,7 +517,7 @@ input.form-control {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 12px;
+  width: 6px;
   margin-top: 90px;
   height: calc(100% - 180px);
   background: black;
@@ -530,10 +543,10 @@ input.form-control {
   direction: rtl;
 }
 #timeline-full .marker {
-  max-width: 42px!important;
-  max-height: 42px!important;
-  min-width: 42px!important;
-  min-height: 42px!important;
+  max-width: 25px!important;
+  max-height: 25px!important;
+  min-width: 25px!important;
+  min-height: 25px!important;
   border-radius: 50%;
   background: black;
   margin: auto 0px; 
@@ -541,10 +554,10 @@ input.form-control {
   transform: translateX(-50%);
 }
 #timeline-full .marker-2 {
-  max-width: 42px!important;
-  max-height: 42px!important;
-  min-width: 42px!important;
-  min-height: 42px!important;
+  max-width: 25px!important;
+  max-height: 25px!important;
+  min-width: 25px!important;
+  min-height: 25px!important;
   border-radius: 50%;
   background: black;
   margin: auto 0px;
@@ -576,11 +589,43 @@ input.form-control {
 } */
 #timeline-full .timeline-content {
   width: 95%;
+  display: inline-block;
   padding: 30px;
-  border: .0px solid #cccccc;
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.line-container{
+  position:relative;
+  width: 150px;
+  margin: auto 0px;
+  display: inline-block;
+}
+
+.line {
+  height: 2px;
+  background-color: gray;
+  width: 100%;
+}
+
+.line-dot{
+  background-color: gray;
+  display: inline-block;
+  margin: auto 0px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.line-dot-right{
+  right: 0px;
+  transform: translateY(calc(-50% - 1px));
+}
+
+.line-dot-left{
+  transform: translate(100%, calc(-50% + 1px));
+}
+
 #timeline-full .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -591,6 +636,14 @@ input.form-control {
   font-size: 15px;
   color: #a4a4a4;
 }
+#timeline-full .timeline-content .custom-p-text {
+  margin-bottom: 0;
+}
+
+#timeline-small {
+  margin-top: -60px;
+}
+
 #timeline-small h1 {
   text-align: center;
   font-weight: 300;
@@ -610,9 +663,9 @@ input.form-control {
   top: 0;
   left: 31px;
   margin-left: -15px;
-  width: 12px;
-  margin-top: 100px;
-  height: calc(100% - 180px);
+  width: 6px;
+  margin-top: 150px;
+  height: calc(100% - 210px);
   background: black;
   z-index: 1;
 }
@@ -628,27 +681,29 @@ input.form-control {
   justify-content: space-between;
   clear: both;
   margin-top: 25px;
+  padding-top: 50px;
 }
 #timeline-small .timeline-block-right {
   float: right;
 }
 #timeline-small .marker {
-  max-width: 42px!important;
-  max-height: 42px!important;
-  min-width: 42px!important;
-  min-height: 42px!important;
+  max-width: 25px!important;
+  max-height: 25px!important;
+  min-width: 25px!important;
+  min-height: 25px!important;
   border-radius: 50%!important;
   border: 2px solid black;
   background: black;
   margin: auto 0px;
-  margin-left: -10px !important;
+  margin-left: -3px !important;
+  margin-right: 10px;
   z-index: 9999;
 }
 #timeline-small .marker-2 {
-  max-width: 60px!important;
-  max-height: 60px!important;
-  min-width: 60px!important;
-  min-height: 60px!important;
+  max-width: 25px!important;
+  max-height: 25px!important;
+  min-width: 25px!important;
+  min-height: 25px!important;
   border-radius: 50%;
   border: 2px solid black;
   background: black;
@@ -684,10 +739,11 @@ input.form-control {
 } */
 #timeline-small .timeline-content {
   width: 95%;
-  padding: 11px;
-  border: .0px solid #cccccc;
+  padding: 20px 10px;
   border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#timeline-small .timeline-content {
+  margin-bottom: 0;
 }
 #timeline-small .timeline-content h3 {
   margin-top: 5px;
@@ -699,6 +755,7 @@ input.form-control {
   font-size: 15px;
   color: #a4a4a4;
 }
+
 /*--------------------------------------*/
 
 @keyframes translateplane {

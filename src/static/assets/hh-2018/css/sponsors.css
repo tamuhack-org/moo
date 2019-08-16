@@ -1,0 +1,57 @@
+#sponsor-container{
+    margin-left: 140px;
+    padding-top: 50px;
+}
+
+.sponsor-row{
+    margin: 50px 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.sponsor-logo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 50px;
+    width: 200px;
+    transition: all 0.4s ease-in-out;
+    vertical-align: middle;
+}
+
+.tier-headline{
+    font-size: 7rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #2dbfc7;
+    margin: 0px;
+    line-height: 50px;
+}
+
+@media(max-width: 700px){
+    .tier-headline{ font-size: 5rem;}
+    .sponsor-logo{
+        width: 100px;
+    }
+    #sponsor-container{
+        margin-left: 100px;
+        margin-right: 30px;
+        padding-top: 100px;
+    }
+    .sponsor-row{
+        flex-wrap: wrap;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    .sponsor-logo{
+        max-width: 100%;
+        margin: 30px 0px;
+    }
+
+    .sponsor-filler{
+        padding-bottom: 0px !important;
+    }
+}
