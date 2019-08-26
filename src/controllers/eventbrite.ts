@@ -75,8 +75,8 @@ class EventbriteController {
       url,
       summary,
       venue,
-      start: startDatetimeData.local,
-      end: endDatetimeData.local
+      start: startDatetimeData.utc,
+      end: endDatetimeData.utc
     };
   }
   private async fetchEventVenueData(venueId: string): Promise<string> {
