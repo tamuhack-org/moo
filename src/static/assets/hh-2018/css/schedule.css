@@ -1,0 +1,118 @@
+.schedule-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-left: 180px; 
+    margin-right: 40px;
+}
+
+/*To be deleted after schedule goes up*/
+#schedule{
+    margin-bottom: 100px;
+}
+
+.schedule-card{
+    width: calc(50% - 40px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    flex-grow: 1;
+    margin: 20px;
+}
+
+/*To be deleted after schedule goes up*/
+.schedule-filler{
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%);
+    text-align: center; 
+    line-height: 70px; 
+}
+
+/*To be deleted after schedule goes up*/
+.schedule-filler h1{
+    padding-top: 150px;
+    font-size: 9rem; 
+}
+
+.schedule-filler p{
+    line-height: 40px;
+    font-size: 7rem;
+}
+
+.card-title{
+    width: calc(100% - 40px);
+    color: white;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+}
+
+.card-line-items{
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'myriad-pro', sans-serif;
+}
+
+.card-line-items:nth-child(4n+1){
+    background-color: #28ACB3;
+}
+
+.card-line-items:nth-child(4n+2){
+    background-color: #23999F;
+}
+
+.card-line-items:nth-child(4n+3){
+    background-color: #1E868B;
+}
+
+.card-line-items:nth-child(4n){
+    background-color: #197377;
+}
+
+.line-item-title{
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.line-item-content{
+    flex-grow: 1000;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+@media(max-width: 700px){
+    .schedule-container{
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+    .schedule-card{
+        height: auto;
+    }
+
+    .line-item-title{
+        min-width: 50px;
+        width: 50px;
+        padding: 10px;
+    }
+
+    /*To be deleted after schedule goes up*/
+    .schedule-filler h1{
+        font-size: 6rem;
+        line-height: 50px;
+        padding-top: 50px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .schedule-filler p{
+        font-size: 4rem;
+        line-height: 30px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}

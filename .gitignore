@@ -1,6 +1,10 @@
 # Built files
 build/**/*
 
+# IntelliJ Files/Folders
+.idea
+*.iml
+
 # Config Folder
 config
 
@@ -31,6 +35,7 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+!**/hh-2018/bower_components
 
 # node-waf configuration
 .lock-wscript
