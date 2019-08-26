@@ -602,12 +602,12 @@ input.form-control {
 
 .line {
   height: 2px;
-  background-color: gray;
+  background-color: #212529;
   width: 100%;
 }
 
 .line-dot{
-  background-color: gray;
+  background-color: #212529;
   display: inline-block;
   margin: auto 0px;
   height: 15px;
@@ -632,6 +632,16 @@ input.form-control {
   font-size: 25px;
   font-weight: 500;
 }
+
+.timeline-content h2 a {
+  color: #212529;
+  text-decoration: underline;
+}
+.timeline-content h2 a:hover {
+  color: #777777;
+  transition: 0.3s;
+}
+
 #timeline-full .timeline-content span {
   font-size: 15px;
   color: #a4a4a4;
