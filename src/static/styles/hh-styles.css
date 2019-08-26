@@ -375,7 +375,6 @@ p {
     display: block;
     margin: 0 auto;
 }
-
 .sponsor-img .col-12 a img {
     max-height: 80px;
 }
@@ -391,6 +390,13 @@ p {
 @media (min-width: 720px) {
     .sponsor-img a img.padded {
         margin-top: 10px;
+    }
+    .sponsor-img a img {
+        transition: 0.2s;
+    }
+    .sponsor-img a img:hover {
+        transition: 0.5s;
+        transform: scale(1.2);
     }
 }
 
