@@ -3,11 +3,11 @@ import { Request, Response, Router } from "express";
 let howdyHackRouter = Router();
 
 howdyHackRouter.get('/', async (req: Request, res: Response) => {
-    res.redirect('/hh/2019');
+    res.render("hh-landing.html");
 });
 
 howdyHackRouter.get('/2019', async (req: Request, res: Response) => {
-    res.render("hh-landing.html");
+    res.redirect('/hh');
 });
 
 howdyHackRouter.get('/2018', async (req: Request, res: Response) => {
