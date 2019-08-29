@@ -29,20 +29,45 @@
 </head>
 
 <body id="page-top">
-    <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#schedule">SCHEDULE</a>
-      <a href="#faq">FAQ</a>
-      <a href="#sponsors">SPONSORS</a>
-    </nav>
-    <header class="row" style="margin: 0px; margin-top: 16px!important;">
-        <div class="col-md-10 offset-md-1" id="top-bar-icons">
-            <a id="th-header-link" href="./">
-                <img src="/static/assets/hh-assets/TH.svg" class="th-logo" style="margin-right: 15px!important;">
-                <img src="/static/assets/hh-assets/tamuhack_2.svg" class="tamuhack-logo">
-            </a>
+    <nav class="navbar navbar-expand-md navbar-light" id="top-nav-bar">
+        <a class="navbar-brand" href="/">
+          <img src="/static/assets/th_logo.svg" class="th-logo" alt="" />
+          <img
+            src="/static/assets/tamuhack.svg"
+            class="th-text-logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText-Top"
+          aria-controls="navbarText-Top"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="hamburger"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText-Top">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="navbar-nav main-nav-ui">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">faq</a>
+            </li>
+            <li class="nav-item" style="padding-right: 0px;">
+              <a class="nav-link" href="#sponsors">sponsors</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </nav>
 
         <div class="row h-100" style="margin: 0px;">
            <!--  left content -->
@@ -421,13 +446,13 @@
             style="margin: 0px auto!important;"
           >
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/tamuhack-org/">collaborate</a>
+              <a class="nav-link" href="https://github.com/tamuhack-org/">COLLABORATE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mailto:sponsor@tamuhack.com">sponsor</a>
+              <a class="nav-link" href="mailto:sponsor@tamuhack.com">SPONSOR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mailto:hello@tamuhack.com">email</a>
+              <a class="nav-link" href="mailto:hello@tamuhack.com">EMAIL</a>
             </li>
           </ul>
           <ul
@@ -487,6 +512,7 @@
       </div>
       <center>
         <nav
+          class="nav nav-pills nav-justified d-lg-none d-xl-none"
           style="width: 100%!important;"
         >
           <a
@@ -516,6 +542,14 @@
 
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+      async
+    ></script>
 
     <script>
         $('#after').hide()

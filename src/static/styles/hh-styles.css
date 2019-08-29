@@ -11,34 +11,63 @@ html, body{
 }
 
 
+/* Logo Styling */
+.th-logo{
+    width: 30px;
+    height: 30px;
+  }
+  .th-text-logo {
+    margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
+  }
+  .th-faded{
+    width: 75%;
+    height: auto;
+  }
+  /*--------------------------------------*/
 
-/****** NAV ******/
-
-#page-top > nav {
-    position: absolute;
-    right: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    width: 60%;
-    top: 10px;
-}
-
-#page-top > nav a {
-    display: inline-block;
-    margin: 10px 30px;
+/* Top Navigation Section */
+.navbar {
+    background-color: transparent; 
+    margin: 0!important; 
+    padding-left: 10vw!important; 
+    padding-right: 10vw!important;
+  }
+  .nav-container{
+    position: relative;
+    padding-right: 0px !important;
+    margin-bottom: 79px;
+  }
+  .navbar-toggler {
+    border-color: transparent!important;
+  }
+  #top-nav-bar {
+    z-index: 10000;
+    padding-top: 16px;
     padding-bottom: 10px;
-    text-decoration: none;
-    color: white;
-}
-
-#page-top > nav > a:hover {
-    color: white;
-    text-decoration: none;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 78vw;
+  }
+  #top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+  }
+  #top-nav-bar div ul li {
+    padding: 0px 10px;
+  }
+  #top-nav-bar div a {
+    border-bottom: 7px solid transparent;
+    color: white!important;
+  }
+  #top-nav-bar div .main-nav-ui li > a {
+    text-transform: uppercase;
+    color: white!important;
+  }
+  #top-nav-bar div .main-nav-ui li > a:hover {
     transition: all 0.3s ease-out;
     box-shadow: 0 -1px 0 0 white inset, 0 -6px 0 0 white inset;
   }
+  /*--------------------------------------*/
 
 /* nav p a {
     text-decoration: none;
@@ -58,6 +87,13 @@ header {
     height: 30px;
     width: 30px;
 }
+
+#top-nav-bar div ul li {
+    padding: 0px 30px;
+  }
+  #top-nav-bar {
+    padding-left: 10px!important; 
+  }
 
 .tamuhack-logo {
     margin-top: 6px!important;
@@ -558,6 +594,10 @@ p {
 }
 
 @media (max-width: 767px) {
+
+    .th-text-logo{
+        opacity: 0 !important;
+    }
     .apply-btn, .mentor-btn {
         padding: 14px 30px; 
         font-size: 18px; 
@@ -666,6 +706,19 @@ p {
 
     .schedule-graphic{
         width: 1200px;
+    }
+
+    #top-nav-bar{
+        background-color: white;
+    }
+
+    #top-nav-bar .nav-item .nav-link{
+        color: black !important;
+    }
+
+    #top-nav-bar div .main-nav-ui li > a:hover {
+        transition: all 0.3s ease-out;
+        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
     }
 }
 
