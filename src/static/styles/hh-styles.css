@@ -183,6 +183,7 @@ h3 {
     font-size: 22px; 
     font-weight: 600;
     margin-top: 20px;
+    margin-right: 20px;
     display: inline-block;
 }
 
@@ -200,7 +201,6 @@ h3 {
     font-size: 22px; 
     font-weight: 600;
     margin-top: 20px;
-    margin-left: 20px;
     display: inline-block;
     border: 2px solid white;
     box-sizing: border-box;
@@ -331,6 +331,13 @@ p {
 
 #schedule h4{
     color: white;
+    margin: 0px;
+}
+
+#schedule-content .col-lg-6 .schedule-item:first-child p{
+    font-size: 1.35rem;
+    font-weight: 700 !important;
+    margin-left: 3px;
 }
 
 .schedule-item{
@@ -346,7 +353,7 @@ p {
 }
 
 .schedule-item .schedule-item-time{
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 5px;
     margin-bottom: 5px;
     flex: 0 0 150px;
@@ -512,12 +519,6 @@ p {
 
 
 /****** RESPONSIVENESS ******/
-
-@media (max-width: 1227px) {
-    .mentor-btn{
-        margin-left: 0px;
-    }
-}
 
 @media (max-width: 1101px) {
     h1 {
