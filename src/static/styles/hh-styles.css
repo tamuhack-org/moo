@@ -23,14 +23,22 @@ html, body{
     width: 75%;
     height: auto;
   }
+
+  #top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+  }
   /*--------------------------------------*/
 
 /* Top Navigation Section */
 .navbar {
-    background-color: transparent; 
-    margin: 0!important; 
+    background-color: transparent;  
     padding-left: 10vw!important; 
     padding-right: 10vw!important;
+  }
+
+  #top-nav-bar{
+    margin-bottom: 50px !important;
   }
   .nav-container{
     position: relative;
@@ -90,9 +98,6 @@ header {
 
 #top-nav-bar div ul li {
     padding: 0px 30px;
-  }
-  #top-nav-bar {
-    padding-left: 10px!important; 
   }
 
 .tamuhack-logo {
@@ -174,7 +179,7 @@ h3 {
     background-color: #69A2CC; 
     color: white; 
     border-radius: 5px!important; 
-    padding: 20px 30px; 
+    padding: 15px 20px; 
     font-size: 22px; 
     font-weight: 600;
     margin-top: 20px;
@@ -189,20 +194,23 @@ h3 {
 }
 
 .mentor-btn {
-    background-color: #FF7C93; 
     color: white; 
     border-radius: 5px!important; 
-    padding: 20px 30px; 
+    padding: 15px 20px; 
     font-size: 22px; 
     font-weight: 600;
     margin-top: 20px;
     margin-left: 20px;
     display: inline-block;
+    border: 2px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 .mentor-btn:hover {
     text-decoration: none;
     color: white;
-    background-color: #D47082;
+    background-color: #69A2CC;
     transition: 0.3s;
 }
 
@@ -402,7 +410,7 @@ p {
 
 /*** FAQ ***/
 #about {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 #sec-faq {
