@@ -202,7 +202,7 @@ h3 {
     font-weight: 600;
     margin-top: 20px;
     display: inline-block;
-    border: 2px solid white;
+    box-shadow: inset 0px 0px 0px 2px white;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
