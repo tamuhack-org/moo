@@ -5,7 +5,82 @@
     font-weight: 400!important;
 }
 
-/****** NAV ******/
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* Logo Styling */
+.th-logo{
+    width: 30px;
+    height: 30px;
+  }
+  .th-text-logo {
+    margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
+  }
+  .th-faded{
+    width: 75%;
+    height: auto;
+  }
+
+  #top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+  }
+  /*--------------------------------------*/
+
+/* Top Navigation Section */
+.navbar {
+    background-color: transparent;  
+    padding-left: 10vw!important; 
+    padding-right: 10vw!important;
+  }
+
+  #top-nav-bar{
+    margin-bottom: 50px !important;
+  }
+  .nav-container{
+    position: relative;
+    padding-right: 0px !important;
+    margin-bottom: 79px;
+  }
+  .navbar-toggler {
+    border-color: transparent!important;
+  }
+  #top-nav-bar {
+    z-index: 10000;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 78vw;
+  }
+  #top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+  }
+  #top-nav-bar div ul li {
+    padding: 0px 10px;
+  }
+  #top-nav-bar div a {
+    border-bottom: 7px solid transparent;
+    color: white!important;
+  }
+  #top-nav-bar div .main-nav-ui li > a {
+    text-transform: uppercase;
+    color: white!important;
+  }
+  #top-nav-bar div .main-nav-ui li > a:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 white inset, 0 -6px 0 0 white inset;
+  }
+  /*--------------------------------------*/
+
+/* nav p a {
+    text-decoration: none;
+    color: white;
+} */
 
 #th-header-link:hover {
     text-decoration: none;
@@ -20,6 +95,10 @@ header {
     height: 30px;
     width: 30px;
 }
+
+#top-nav-bar div ul li {
+    padding: 0px 30px;
+  }
 
 .tamuhack-logo {
     margin-top: 6px!important;
@@ -100,16 +179,38 @@ h3 {
     background-color: #69A2CC; 
     color: white; 
     border-radius: 5px!important; 
-    padding: 20px 30px; 
+    padding: 15px 20px; 
     font-size: 22px; 
     font-weight: 600;
     margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
 }
 
 .apply-btn:hover {
     text-decoration: none;
     color: white;
     background-color: #346c94;
+    transition: 0.3s;
+}
+
+.mentor-btn {
+    color: white; 
+    border-radius: 5px!important; 
+    padding: 15px 20px; 
+    font-size: 22px; 
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 2px white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+.mentor-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #69A2CC;
     transition: 0.3s;
 }
 
@@ -213,12 +314,113 @@ p {
     max-width: 100%;
 }
 
-/*** FAQ ***/
-#first-section {
-    margin-top: 200px;
+/*** Schedule ***/
+
+.schedule-wrapper {
+    background-color: #354965;
 }
 
-#faq-con {
+.schedule-graphic{
+    width: 100%;
+    background-color: #354965;
+}
+
+#schedule-content{
+    margin-left: calc(10vw - 25px);
+}
+
+#schedule h4{
+    color: white;
+    margin: 0px;
+}
+
+#schedule-content .col-lg-6 .schedule-item:first-child p{
+    font-size: 1.35rem;
+    font-weight: 700 !important;
+    margin-left: 3px;
+}
+
+.schedule-item{
+    margin: 5px 0px;
+    display: flex;
+}
+
+.schedule-item .fill{
+    flex: 0 0 15px; 
+    margin-right: 10px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.schedule-item .schedule-item-time{
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex: 0 0 150px;
+}
+
+.schedule-item .schedule-item-title{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.schedule-item .workshop{
+    background-color: #3E678C;
+}
+
+.schedule-item .food{
+    background-color: #8DBFEC;
+}
+
+.schedule-item .mini-event{
+    background-color: #273954;
+}
+
+.schedule-item p{
+    color: white;
+}
+
+.schedule-key{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.schedule-key .key-item{
+    display: flex;
+    align-items: center;
+}
+
+.key-item .key-fill{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+}
+
+.key-item:nth-child(1) .key-fill{
+    background-color: #3E678C;
+}
+
+.key-item:nth-child(2) .key-fill{
+    background-color: #69A2CC;
+}
+
+.key-item:nth-child(3) .key-fill{
+    background-color: #273954;
+}
+
+.key-item p{
+    margin-left: 15px;
+    color: white;
+    margin-right: 30px;
+}
+
+/*** FAQ ***/
+#about {
+    margin-top: 150px;
+}
+
+#sec-faq {
     margin: 0px;
     max-width: 100%!important;
 }
@@ -286,11 +488,11 @@ p {
 #bottom-nav-bar div a {
   color: rgba(255, 255, 255, 0.8) !important;
 }
-#bottom-nav-bar div .main-nav-ui li > a {
+#bottom-nav-bar div .bottom-nav-ui li > a {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8) !important;
 }
-#bottom-nav-bar div .main-nav-ui li > a:hover {
+#bottom-nav-bar div .bottom-nav-ui li > a:hover {
   transition: all 0.3s ease-out;
   box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
   color: rgba(255, 255, 255, 1) !important;
@@ -401,7 +603,13 @@ p {
 }
 
 @media (max-width: 767px) {
-    .apply-btn {
+    #about {
+        margin-top: 0px;
+    }
+    .th-text-logo{
+        opacity: 0 !important;
+    }
+    .apply-btn, .mentor-btn {
         padding: 14px 30px; 
         font-size: 18px; 
         font-weight: 600;
@@ -501,6 +709,27 @@ p {
 /****** FORM ******/
     .form-control, .btn {
         font-size: 16px !important;
+    }
+
+    #schedule-content .row .col-lg-6{
+        width: 100%;
+    }
+
+    .schedule-graphic{
+        width: 1200px;
+    }
+
+    #top-nav-bar{
+        background-color: white;
+    }
+
+    #top-nav-bar .nav-item .nav-link{
+        color: black !important;
+    }
+
+    #top-nav-bar div .main-nav-ui li > a:hover {
+        transition: all 0.3s ease-out;
+        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
     }
 }
 
