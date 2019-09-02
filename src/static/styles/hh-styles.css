@@ -603,7 +603,9 @@ p {
 }
 
 @media (max-width: 767px) {
-
+    #about {
+        margin-top: 0px;
+    }
     .th-text-logo{
         opacity: 0 !important;
     }
