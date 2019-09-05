@@ -769,6 +769,11 @@ input.form-control {
   color: #a4a4a4;
 }
 
+.panel{
+  display: none;
+  overflow: hidden;
+}
+
 /*--------------------------------------*/
 
 @keyframes translateplane {

@@ -425,15 +425,16 @@ p {
     max-width: 100%!important;
 }
 
-.col-lg-6 {
-  margin: 0px;
-  padding: 10px;
+#sec-faq .col-lg-6{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .faq-card {
   background-color: #354965;
   border-radius: 15px;
-  padding: 5px 30px 10px 30px;
+  padding: 20px;
+  margin: 10px 0px;
 }
 
 .faq-ques {
@@ -442,6 +443,8 @@ p {
   font-size: 18px;
   margin-top: 14px;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0px;
 }
 
 .faq-ans {
