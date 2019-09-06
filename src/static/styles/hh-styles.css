@@ -797,16 +797,16 @@ p {
   .plusminus:before {
     top: 0;
     left: 50%;
-    width: 4px;
+    width: 3px;
     height: 100%;
-    margin-left: -2px;
+    margin-left: -1.5px;
   }
   .plusminus:after {
     top: 50%;
     left: 0;
     width: 100%;
-    height: 4px;
-    margin-top: -2px;
+    height: 3px;
+    margin-top: -1.5px;
   }
   .plusminus:hover {
     cursor: pointer;
