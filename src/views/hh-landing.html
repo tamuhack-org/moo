@@ -18,15 +18,11 @@
     <link href="/static/styles/bootstrap.min.css" rel="stylesheet">
     <link href="/static/styles/hh-styles.css" rel="stylesheet">
     <!--Stylesheet for social icons-->
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous"
-      />
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/static/assets/hh-assets/hh-favicon.png"/>
-</head>
+    <script src="https://kit.fontawesome.com/372b6afb11.js"></script>
+  </head>
 
 <body id="page-top">
     <nav class="navbar navbar-expand-md navbar-light" id="top-nav-bar">
@@ -299,8 +295,9 @@
           <div class="row" id="three-cols">
             <div class="col-lg-6">
               <div class="faq-card">
-              <div class="faq-ques" data-toggle="collapse" data-target="#question1" aria-expanded="false">I don’t know how to code! Can I still participate?
-              </div>
+              <p class="faq-ques" data-toggle="collapse" data-target="#question1" aria-expanded="false">I don’t know how to code! Can I still participate?
+              </p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question1" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question1">
                 <br/>
                 Of course! There will be mentors to help answer questions you may have, along with workshops and mini events to keep you on your toes outside of the main event as well, so there will never be an ounce of boredom.
@@ -311,6 +308,7 @@
             <div class="col-lg-6">
               <div class="faq-card">
               <p class="faq-ques" data-toggle="collapse" data-target="#question2" aria-expanded="false">Is there a theme for HowdyHack?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question2" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question2">
                 <br/>
                 Yes! This year, the theme is For Aggies, By Aggies. This is an opportunity for you to come up with the coolest, most technologically-savvy hacks to benefit the university and Aggies!
@@ -321,6 +319,7 @@
             <div class="col-lg-6">
               <div class="faq-card">
               <p class="faq-ques" data-toggle="collapse" data-target="#question3" aria-expanded="false">I don't have a team. How do I find people to hack with?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question3" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question3">
                 <br/>
                 Don't sweat it! We will have a team-forming workshop before we kickoff the opening ceremony so that everyone will have a group to hack with. 
@@ -331,6 +330,7 @@
             <div class="col-lg-6">
               <div class="faq-card">
               <p class="faq-ques" data-toggle="collapse" data-target="#question4" aria-expanded="false">Will there be companies at the hackathon?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question4" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question4">
                 <br/>
                 While there will not be companies present at the hackathon, we will have all kinds of workshops throughout the entire event and even the week before to help you get ready. We got your back!
@@ -340,6 +340,7 @@
             <div class="col-lg-6">
               <div class="faq-card">
               <p class="faq-ques" data-toggle="collapse" data-target="#question5" aria-expanded="false">Will there be food or prizes?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question5" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question5">
                 <br/>
                 Yes and yes. We got you covered. ;)
@@ -350,6 +351,7 @@
             <div class="col-lg-6">
               <div class="faq-card">
               <p class="faq-ques" data-toggle="collapse" data-target="#question6" aria-expanded="false">I'm not from A&amp;M, can I still attend?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question6" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question6">
                 <br/>
                 Unfortunately, HowdyHack is only open to students from Texas A&amp;M - College Station. However, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!
@@ -360,6 +362,7 @@
             <div class="col-lg-6">
               <div class="faq-card">
               <p class="faq-ques" data-toggle="collapse" data-target="#question7" aria-expanded="false">I'm registered as a hacker, but I want to mentor as well. Can I get involved, and how?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question7" aria-expanded="false"></div>
               <div class="faq-ans collapse" id="question7">
                 <br/>
                 Absolutely! We'll be releasing our mentorship forms soon, so check our website for more info!
@@ -374,15 +377,17 @@
                 We love when our hackers get involved and want to give back! Register for an account and apply to be a volunteer <a style="color: white" href="https://register.tamuhack.com/">here</a>.
               </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="faq-card h-100">
-              <p class="faq-ques">I missed the deadline to apply. Can I still attend HowdyHack?</p>
-              <p class="faq-ans">
-                While we cannot guarantee a place, we will be accepting walk-ins the morning of the event!
-              </p>
-              </div>
             </div>-->
+            <div class="col-lg-6">
+              <div class="faq-card">
+              <p class="faq-ques" data-toggle="collapse" data-target="#question8" aria-expanded="false">I missed the deadline to apply. Can I still attend HowdyHack?</p>
+              <div class="plusminus" data-toggle="collapse" data-target="#question8" aria-expanded="false"></div>
+              <div class="faq-ans collapse" id="question8">
+                <br/>
+                While we cannot guarantee a place, we will be accepting walk-ins the morning of the event!
+              </div>
+              </div>
+            </div>
             <!-- /.col-lg-4 -->
           </div>
         </div>
@@ -579,6 +584,12 @@
         $('#errorMessageOne').hide()
         $('#errorMessageTwo').hide()
         $(document).ready(function () {
+            $(".plusminus").on('click', function(){
+              $(this).toggleClass('plusminus-clicked');
+            })
+            $(".faq-ques").on('click', function(){
+              $(this).next(".plusminus").toggleClass('plusminus-clicked');
+            })
             // Listen to submit event on the <form> itself!
             $('#main').submit(function (e) {
 
