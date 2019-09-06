@@ -9,6 +9,7 @@ import { emailRoute } from "./routes/email";
 import { judgeRoute } from "./routes/judge";
 import { facebookRoute } from "./routes/facebook";
 import { slackRoute } from "./routes/slack";
+import { demoRoute } from "./routes/demo";
 import howdyHackRouter from "./routes/hh";
 import { workshopRoute } from "./routes/workshop";
 import tamuHackRouter from "./routes/th";
@@ -30,6 +31,7 @@ app.use("/th", tamuHackRouter);
 app.get("/workshops", workshopRoute);
 app.get("/judge", judgeRoute);
 app.get("/slack", slackRoute);
+app.get("/demo", demoRoute);
 app.get("/facebook", facebookRoute);
 app.post("/email", emailRoute);
 
