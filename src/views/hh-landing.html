@@ -584,12 +584,7 @@
         $('#errorMessageOne').hide()
         $('#errorMessageTwo').hide()
         $(document).ready(function () {
-            $(".plusminus").on('click', function(){
-              $(this).toggleClass('plusminus-clicked');
-            })
-            $(".faq-ques").on('click', function(){
-              $(this).next(".plusminus").toggleClass('plusminus-clicked');
-            })
+            
             // Listen to submit event on the <form> itself!
             $('#main').submit(function (e) {
 
@@ -619,7 +614,20 @@
                     $('#errorMessageTwo').hide()
                 }
             });
+            plusMinusCheck();
         });
+
+        function plusMinusCheck() {
+          $('.faq-ques').each(function(){
+              if($(this).attr('aria-expanded') == "true"){
+                $(this).next('.plusminus').addClass("plusminus-clicked");
+              }
+              else {
+                $(this).next('.plusminus').removeClass("plusminus-clicked");
+              }
+          });
+          setTimeout(plusMinusCheck, 100);
+        }
     </script>
 
 </body>
