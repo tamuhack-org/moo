@@ -425,15 +425,23 @@ p {
     max-width: 100%!important;
 }
 
-.col-lg-6 {
-  margin: 0px;
-  padding: 10px;
+#sec-faq .col-lg-6{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .faq-card {
   background-color: #354965;
   border-radius: 15px;
-  padding: 5px 30px 10px 30px;
+  padding: 20px;
+  margin: 10px 0px;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.faq-card:hover{
+    background-color: #1c2735;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .faq-ques {
@@ -442,6 +450,9 @@ p {
   font-size: 18px;
   margin-top: 14px;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0px;
+  padding-right: 50px;
 }
 
 .faq-ans {
@@ -768,3 +779,42 @@ p {
 }
 
 
+.plusminus {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    /* Vertical line */
+    /* horizontal line */
+  }
+  .plusminus:before, .plusminus:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    transition: transform 0.25s ease-out;
+  }
+  .plusminus:before {
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    margin-left: -1.5px;
+  }
+  .plusminus:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: -1.5px;
+  }
+  .plusminus:hover {
+    cursor: pointer;
+  }
+  .plusminus-clicked:before {
+    transform: rotate(90deg);
+  }
+  .plusminus-clicked:after {
+    transform: rotate(180deg);
+  }
+  
