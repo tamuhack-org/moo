@@ -437,6 +437,7 @@ p {
   margin: 10px 0px;
   position: relative;
   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .faq-card:hover{
@@ -450,7 +451,6 @@ p {
   font-size: 18px;
   margin-top: 14px;
   color: rgb(255, 255, 255);
-  cursor: pointer;
   margin: 0px;
   padding-right: 50px;
 }
