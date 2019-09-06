@@ -415,6 +415,20 @@ p {
     margin-right: 30px;
 }
 
+#prizes .col-lg-6{
+    margin: 15px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* 29px because 30px - 1px for the border */
+#prizes .col-lg-6 p{
+    margin-bottom: 29px;
+}
+
+.prize-header{
+    font-weight: bolder !important;
+}
+
 /*** FAQ ***/
 #about {
     margin-top: 150px;
