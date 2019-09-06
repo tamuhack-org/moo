@@ -7,6 +7,7 @@ import { join } from "path";
 import { hubRoute } from "./routes/home";
 import { emailRoute } from "./routes/email";
 import { judgeRoute } from "./routes/judge";
+import { facebookRoute } from "./routes/facebook";
 import { slackRoute } from "./routes/slack";
 import howdyHackRouter from "./routes/hh";
 import { workshopRoute } from "./routes/workshop";
@@ -29,6 +30,7 @@ app.use("/th", tamuHackRouter);
 app.get("/workshops", workshopRoute);
 app.get("/judge", judgeRoute);
 app.get("/slack", slackRoute);
+app.get("/facebook", facebookRoute);
 app.post("/email", emailRoute);
 
 app.listen(PORT, () => {
