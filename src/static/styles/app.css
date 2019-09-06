@@ -172,7 +172,7 @@ header{
   z-index: 5;
 }
 .backdrop-container {
-  top: calc(100vh - 63px - (100vw * .45833333333));
+  top: calc(100vh - 165px - (100vw * .45833333333));
   position: relative;
   height: calc(100vw * .45833333333);
   overflow: hidden;
@@ -893,7 +893,7 @@ input.form-control {
   }
   .tamuhack-title {
     max-width: 300px;
-    top: 30vh;
+    top: 35vh;
     transform: translate(-50%, -50%);
   }
   .container {
@@ -926,6 +926,10 @@ input.form-control {
   }
   .nav-link{
     display: inline-block;
+  }
+
+  .hh-live-button{
+    margin-top: 60px;
   }
 }
 
