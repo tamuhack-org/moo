@@ -415,9 +415,40 @@ p {
     margin-right: 30px;
 }
 
+#event-prep a[role="button"]{
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1.15rem;
+    color: white;
+    display: inline-block;
+    background-color: #8DBFEC;
+    margin: 15px 0 30px 0;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#event-prep a[role="button"]:hover{
+    background-color: #5b9af0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#links p{
+    margin: 15px 0px;
+}
+
+#links .col-lg-6, #links .col-lg-12{
+    margin: 15px 0px;
+}
+
+#links a, #event-prep a{
+    color: #354965;
+    text-decoration: underline;
+}
+
 #prizes .col-lg-6{
     margin: 15px 0px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
 }
 
 /* 29px because 30px - 1px for the border */
@@ -425,7 +456,7 @@ p {
     margin-bottom: 29px;
 }
 
-.prize-header{
+.event-info-header{
     font-weight: bolder !important;
 }
 
@@ -435,7 +466,6 @@ p {
 }
 
 #sec-faq {
-    margin: 0px;
     max-width: 100%!important;
 }
 
