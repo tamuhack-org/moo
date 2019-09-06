@@ -79,12 +79,14 @@
     <!--END Navbar-->
     <!--BEGIN Header-->
     <header>
-      <img
-        src="/static/assets/tamuhacfull_k.svg"
-        class="tamuhack-title"
-        id="good-morning-trigger"
-        style="cursor: pointer; z-index: 10"
-      />
+      <div class="tamuhack-title">
+        <img
+          src="/static/assets/tamuhacfull_k.svg"
+          id="good-morning-trigger"
+          style="cursor: pointer; z-index: 10; flex: 0 0 100%;"
+        />
+        <a class="btn btn-primary hh-button hh-live-button" href="/hh" role="button">HowdyHack is live!</a>
+      </div>
       <div class="backdrop-container">
         <img
           src="/static/assets/buildings-filled.svg"
@@ -259,13 +261,8 @@
               Stay connected! Sign up for our mailing list for events,
               updates, and more.
             </p>
-            <a href="https://forms.gle/dHHMt3PNQ6jVpWso8"
-                class="btn btn-outline-secondary w-50 signup-button"
-            >
-                Sign Up
-            </a>
             <!--BEGIN Email Form-->
-            <!-- <form class="form" action="/" id="email-form">
+            <form class="form" action="/" id="email-form">
               <div class="input-group mb-3" id="before">
                 <input
                   name="email"
@@ -299,7 +296,7 @@
               >
                 All good! Expect to hear back from us soon!
               </div>
-            </form> -->
+            </form>
             <!--END Email Form-->
           </div>
         </div>
@@ -624,7 +621,7 @@
           class="card-img-top"
           src="/static/assets/headshots/addison.jpg"
           alt="Card image cap"
-        />
+        />align-content
         <div class="card-body">
           <h5 class="card-title">Addison Maupin</h5>
           <p class="card-text card-subtitle">Finance Mentor</p>

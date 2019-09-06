@@ -153,7 +153,14 @@ header{
   transform: translateX(-50%);
   top: 20vh;
   max-width: 345px;
-  z-index: 1;
+  z-index: 20;
+}
+.hh-live-button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 1.25rem;
+  width: 200px;
 }
 .backdrop {
   position: absolute;
