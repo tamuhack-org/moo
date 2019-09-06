@@ -436,6 +436,12 @@ p {
   padding: 20px;
   margin: 10px 0px;
   position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.faq-card:hover{
+    background-color: #1c2735;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .faq-ques {
@@ -447,6 +453,7 @@ p {
   cursor: pointer;
   margin: 0px;
   padding-right: 50px;
+  z-index: 10
 }
 
 .faq-ans {
