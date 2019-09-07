@@ -422,14 +422,25 @@ p {
     font-size: 1.15rem;
     color: white;
     display: inline-block;
-    background-color: #8DBFEC;
+    background-color: #69A2CC;
     margin: 15px 0 30px 0;
     border: none;
 }
 
 #event-prep a[role="button"]:hover{
     background-color: #346c94;
+    color: white;
     transition: background-color 0.3s;
+}
+
+#event-prep .col-lg-4{
+    text-align: center;
+}
+
+#event-prep .col-lg-4 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 #links p{
