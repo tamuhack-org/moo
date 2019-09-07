@@ -81,6 +81,22 @@ html, body{
     text-decoration: none;
     color: white;
 } */
+.live-list {
+    color: white;
+    font-size: 28px;
+    padding-left: 25px;
+  }
+.live-list li {
+    padding-left: 15px;
+}
+.live-list li a {
+    color: white;
+    text-decoration: underline;
+}
+.live-list li a:hover {
+    color: #cdcdcd;
+    transition: 0.3s;
+}
 
 #th-header-link:hover {
     text-decoration: none;
@@ -799,6 +815,9 @@ p {
     #top-nav-bar div .main-nav-ui li > a:hover {
         transition: all 0.3s ease-out;
         box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
+    }
+    .live-list {
+        font-size: 22px;
     }
 }
 
