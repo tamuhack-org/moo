@@ -425,12 +425,11 @@ p {
     background-color: #8DBFEC;
     margin: 15px 0 30px 0;
     border: none;
-    transition: background-color 0.3s ease-in-out;
 }
 
 #event-prep a[role="button"]:hover{
-    background-color: #5b9af0;
-    transition: background-color 0.3s ease-in-out;
+    background-color: #346c94;
+    transition: background-color 0.3s;
 }
 
 #links p{
@@ -444,6 +443,10 @@ p {
 #links a, #event-prep a{
     color: #354965;
     text-decoration: underline;
+}
+
+#links a:hover, #event-prep a:hover{
+    color: #5879a7;
 }
 
 #prizes .col-lg-6{
