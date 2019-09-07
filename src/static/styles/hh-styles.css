@@ -686,7 +686,9 @@ p {
     #top-nav-bar{
         background-color: white;
     }
-
+    #top-nav-bar .nav-item {
+       padding: 5px 20px;
+    }
     #top-nav-bar .nav-item .nav-link{
         color: black !important;
         display: inline;
