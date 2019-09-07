@@ -347,7 +347,7 @@ p {
 
 .schedule-item .fill{
     flex: 0 0 15px; 
-    margin-right: 10px;
+    margin-right: 3px;
     height: 40px;
     margin-left: 5px;
 }
@@ -421,7 +421,6 @@ p {
 }
 
 #sec-faq {
-    margin: 0px;
     max-width: 100%!important;
 }
 
@@ -437,6 +436,7 @@ p {
   margin: 10px 0px;
   position: relative;
   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .faq-card:hover{
@@ -450,7 +450,6 @@ p {
   font-size: 18px;
   margin-top: 14px;
   color: rgb(255, 255, 255);
-  cursor: pointer;
   margin: 0px;
   padding-right: 50px;
 }
@@ -679,8 +678,8 @@ p {
 
 /****** LEFT CONTAINER ******/
     .hhlogo-column {
-        padding-left: 15vw!important;
-        padding-right: 15vw;
+        padding-left: 8vw!important;
+        padding-right: 8vw;
         margin-top: 0px!important;
     }
     .hh-logo {
