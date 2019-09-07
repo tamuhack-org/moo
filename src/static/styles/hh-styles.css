@@ -689,6 +689,8 @@ p {
 
     #top-nav-bar .nav-item .nav-link{
         color: black !important;
+        display: inline;
+        margin: 10px 10px 30px;
     }
 
     #top-nav-bar div .main-nav-ui li > a:hover {
