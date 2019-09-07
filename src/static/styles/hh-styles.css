@@ -61,7 +61,7 @@ html, body{
     margin-left: 30px;
   }
   #top-nav-bar div ul li {
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
   #top-nav-bar div a {
     border-bottom: 7px solid transparent;
@@ -95,10 +95,6 @@ header {
     height: 30px;
     width: 30px;
 }
-
-#top-nav-bar div ul li {
-    padding: 0px 30px;
-  }
 
 .tamuhack-logo {
     margin-top: 6px!important;
@@ -422,19 +418,30 @@ p {
     font-size: 1.15rem;
     color: white;
     display: inline-block;
-    background-color: #69A2CC;
+    background-color: #354965;
     margin: 15px 0 30px 0;
     border: none;
+    text-decoration: none;
 }
 
 #event-prep a[role="button"]:hover{
     background-color: #346c94;
     color: white;
     transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+#hackathon-101{
+    background-color: #69A2CC !important;
+}
+
+#hackathon-101:hover{
+    background-color: #346c94 !important;
 }
 
 #event-prep .col-lg-4{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #event-prep .col-lg-4 img{
@@ -658,6 +665,27 @@ p {
     max-height: 30px;
 }
 
+@media (max-width: 992px){
+    #top-nav-bar{
+        background-color: white;
+    }
+
+    #top-nav-bar .nav-item .nav-link{
+        color: black !important;
+    }
+
+    #top-nav-bar div .main-nav-ui li > a:hover {
+        transition: all 0.3s ease-out;
+        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
+    }
+    .th-text-logo{
+        opacity: 0 !important;
+    }
+    .tamuhack-logo {
+        display: none;
+    }
+}
+
 @media (min-width: 720px) {
     .sponsor-img a img.padded {
         margin-top: 10px;
@@ -675,18 +703,11 @@ p {
     #about {
         margin-top: 0px;
     }
-    .th-text-logo{
-        opacity: 0 !important;
-    }
     .apply-btn, .mentor-btn {
         padding: 14px 30px; 
         font-size: 18px; 
         font-weight: 600;
         margin-top: 10px;
-    }
-    
-    .tamuhack-logo {
-        display: none;
     }
 
     #top-bar-icons {
@@ -786,19 +807,6 @@ p {
 
     .schedule-graphic{
         width: 1200px;
-    }
-
-    #top-nav-bar{
-        background-color: white;
-    }
-
-    #top-nav-bar .nav-item .nav-link{
-        color: black !important;
-    }
-
-    #top-nav-bar div .main-nav-ui li > a:hover {
-        transition: all 0.3s ease-out;
-        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
     }
 }
 
