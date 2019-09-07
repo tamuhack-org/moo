@@ -61,7 +61,7 @@ html, body{
     margin-left: 30px;
   }
   #top-nav-bar div ul li {
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
   #top-nav-bar div a {
     border-bottom: 7px solid transparent;
@@ -81,6 +81,22 @@ html, body{
     text-decoration: none;
     color: white;
 } */
+.live-list {
+    color: white;
+    font-size: 28px;
+    padding-left: 25px;
+  }
+.live-list li {
+    padding-left: 15px;
+}
+.live-list li a {
+    color: white;
+    text-decoration: underline;
+}
+.live-list li a:hover {
+    color: #cdcdcd;
+    transition: 0.3s;
+}
 
 #th-header-link:hover {
     text-decoration: none;
@@ -95,10 +111,6 @@ header {
     height: 30px;
     width: 30px;
 }
-
-#top-nav-bar div ul li {
-    padding: 0px 30px;
-  }
 
 .tamuhack-logo {
     margin-top: 6px!important;
@@ -281,7 +293,8 @@ p {
 
 .section {
     overflow: hidden;
-    margin: 20px 10vw 60px 10vw;
+    margin: 0px 10vw 0px 10vw;
+    padding-top: 40px;
 }
 
 .section-left {
@@ -413,6 +426,69 @@ p {
     margin-left: 15px;
     color: white;
     margin-right: 30px;
+}
+
+#event-prep a[role="button"]{
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 15px 0 30px 0;
+    font-size: 1.15rem;
+    color: white;
+    display: inline-block;
+    background-color: #69A2CC;
+    border: none;
+    text-decoration: none;
+}
+
+#event-prep a[role="button"]:hover{
+    background-color: #346c94;
+    color: white;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+#event-prep .col-lg-4{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#event-prep .col-lg-4 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#links p{
+    margin: 15px 0px;
+}
+
+#links .col-lg-6, #links .col-lg-12{
+    margin: 15px 0px;
+}
+
+#links a, #event-prep a{
+    color: #354965;
+    text-decoration: underline;
+}
+
+#links a:hover, #event-prep a:hover{
+    color: #5879a7;
+}
+
+#prizes .col-lg-6{
+    margin: 15px 0px;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+
+/* 29px because 30px - 1px for the border */
+#prizes .col-lg-6 p{
+    margin-bottom: 29px;
+}
+
+.event-info-header{
+    font-weight: bolder !important;
 }
 
 /*** FAQ ***/
@@ -599,6 +675,31 @@ p {
     max-height: 30px;
 }
 
+@media (max-width: 992px){
+    #top-nav-bar{
+        background-color: white;
+    }
+    #top-nav-bar .nav-item {
+       padding: 5px 20px;
+    }
+    #top-nav-bar .nav-item .nav-link{
+        color: black !important;
+        display: inline;
+        margin: 10px 10px 30px;
+    }
+
+    #top-nav-bar div .main-nav-ui li > a:hover {
+        transition: all 0.3s ease-out;
+        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
+    }
+    .th-text-logo{
+        opacity: 0 !important;
+    }
+    .tamuhack-logo {
+        display: none;
+    }
+}
+
 @media (min-width: 720px) {
     .sponsor-img a img.padded {
         margin-top: 10px;
@@ -616,18 +717,11 @@ p {
     #about {
         margin-top: 0px;
     }
-    .th-text-logo{
-        opacity: 0 !important;
-    }
     .apply-btn, .mentor-btn {
         padding: 14px 30px; 
         font-size: 18px; 
         font-weight: 600;
         margin-top: 10px;
-    }
-    
-    .tamuhack-logo {
-        display: none;
     }
 
     #top-bar-icons {
@@ -648,7 +742,8 @@ p {
 
     .section {
         overflow: hidden;
-        margin: 20px 30px 60px 30px;
+        margin: 0px 30px 0px 30px;
+        padding-top: 40px;
     }
 
     #faq-sec {
@@ -727,19 +822,6 @@ p {
 
     .schedule-graphic{
         width: 1200px;
-    }
-
-    #top-nav-bar{
-        background-color: white;
-    }
-
-    #top-nav-bar .nav-item .nav-link{
-        color: black !important;
-    }
-
-    #top-nav-bar div .main-nav-ui li > a:hover {
-        transition: all 0.3s ease-out;
-        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
     }
 }
 
