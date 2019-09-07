@@ -25,7 +25,7 @@
   </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-md navbar-light" id="top-nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light" id="top-nav-bar">
         <a class="navbar-brand" href="/">
           <img src="/static/assets/th_logo.svg" class="th-logo" alt="" />
           <img
@@ -53,7 +53,7 @@
               <a class="nav-link" href="#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#schedule">schedule</a>
+              <a class="nav-link" href="#schedule">event info</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#faq">faq</a>
@@ -84,13 +84,15 @@
                     <div class="my-container">
                         <div class="my-wrapper">
                             <h1 class="content-txt">
-                                Participate in our beginner-friendly hackathon made by Aggies for Aggies!
+                                HowdyHack 2019 is live! Check out some important info:
                             </h1>
 
-                            <h2>Applications are now closed. Check back soon for event updates!</h2>
-                            
-                            <br>
-                            <a class="apply-btn" href="https://forms.gle/mCriLEccShPh4XnZA">Mentor Signup</a>
+                            <ol class="live-list">
+                              <li><a href="#schedule">Schedule</a></li>
+                              <li><a href="#event-prep">Event Prep</a></li>
+                              <li><a href="#links">Important Links</a></li>
+                              <li><a href="#prizes">Prizes</a></li>
+                            </ol>
                             
                             <!-- <h2>Sign up for the latest updates!</h2>
                             
@@ -122,7 +124,7 @@
             </div>
         </div>
     <!--Sections for text and descriptions-->
-    <div class="section" id="about">
+    <div class="section pt-0" id="about">
         <div class = "section-right"><img src="/static/assets/hh-assets/hhpeople2.png" alt="" class="section-graphic"></div>
         <div class="section-text-left">
             <h4>Howdy!</h4>
@@ -132,7 +134,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section mb-5">
         <div class="section-left"><img src="/static/assets/hh-assets/hhpeople1.png" alt="" class="section-graphic"></div>
         <div class = "section-text-right">
             <h4>Goal</h4>
@@ -144,8 +146,8 @@
     </div>
     <!--schedule section-->
     <div class="schedule-wrapper">
-      <img src="/static/assets/hh-assets/hhemailbanntop.png" alt="" class="schedule-graphic" style="margin-bottom: 40px">
-      <div class="section" id="schedule" style="margin-top: 0px; margin-bottom: 0px;">
+      <img src="/static/assets/hh-assets/hhemailbanntop.png" alt="" class="schedule-graphic">
+      <div class="section" id="schedule" style="margin-bottom: 0px;">
         <h4>SCHEDULE</h4>
       </div>
       <div class="section" id="schedule-content" style="margin-bottom: 0px; margin-top: 0px;">
@@ -286,12 +288,102 @@
       </div>
       <img src="/static/assets/hh-assets/hhemailbannbot.png" alt="" class="schedule-graphic">
     </div>
-    <!--faq section-->
-    <div class="section" style="margin-bottom: 30px;" id="faq">
-        <h4 style="padding-top: 40px;">FAQ</h4>
-    </div>
-    <div class="section" id="sec-faq">
+
+    <div class="section mt-5" id="event-prep">
+      <h4>Event Prep</h4>
+      <br />
       <div class="row">
+        <div class="col-lg-4">
+          <img src="/static/assets/hh-assets/location-icon.svg">
+          <h5 class="event-info-header">Event Location</h5>
+          <p>The event is located at <b>Memorial Student Center 2400</b>. Please be respectful of MSC traditions by not wearing hats inside or walking on the grass outside.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/static/assets/hh-assets/parking.svg">
+          <h5 class="event-info-header">Parking Locations</h5>
+          <p>Parking will be free for any unmarked/unreserved spots. Lot 62 is the main lot to find parking. A full map of parking locations can be found <a href="https://transport.tamu.edu/parkingmap/tsmap.htm?map=vis">here</a>.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/static/assets/hh-assets/code.svg">
+          <h5 class="event-info-header">Workshop Map</h5>
+          <p>Workshops are scheduled throughout the event. All workshops will be held in West Wing 2500.</p>
+        </div>
+      </div>
+      <hr style="margin: 15px 0px;"/>
+      <div class="row">
+        <div class="col-lg-12" style="margin-top: 15px;">
+          <h5 class="event-info-header">Hackathon 101</h5>
+          <p>We prepared this cool document for some tips and tricks, especially if this is your first hackathon!</p>
+          <a class="btn btn-primary" href="/static/assets/hh-assets/hackathon101.pdf" role="button" target="_blank" id="hackathon-101">View Hack101</a>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="links">
+      <h4>Important Links</h4>
+      <br />
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="event-info-header">Connect with Hackers</h5>
+          <p><a href="/slack" target="_blank">HowdyHack 2019 Slack</a></p>
+          <p><a href="/facebook" target="_blank">HowdyHack 2019 Facebook Group</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h5 class="event-info-header">Get Mentorship</h5>
+          <p><a href="https://help.tamuhack.com" target="_blank">help.tamuhack.com</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="event-info-header">Final Submissions</h5>
+          <p>All submissions are due on Sunday at 10:30 am. Please submit your projects at <a href="/demo" target="_blank">howdyhack2019.devpost.com</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="event-info-header">Emergency Contact</h5>
+          <p>TAMU Police (979) 845-2345</p>
+        </div>
+      </div>
+    </div> 
+
+    <div class="section" id="prizes">
+      <h4>Prizes</h4>
+      <br />
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="event-info-header">1st Place Grand Prize</h5>
+          <p>Glorious Modular Mechanical Gaming Keyboard Full Size Customized (Gateron Green + Black Key Cap Set)</p>
+        </div>
+        <div class="col-lg-6">
+          <h5 class="event-info-header">2nd Place Prize</h5>
+          <p>Google Home (White Slate)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="event-info-header">3rd Place Prize</h5>
+          <p>TOZO T10 Bluetooth 5.0 Wireless Earbuds</p>
+        </div>
+        <div class="col-lg-6">
+          <h5 class="event-info-header">Best Aggie Hack</h5>
+          <p>Texas A&M Aggie Reveille Pillow Pet. The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="event-info-header">Best Sustainable Hack</h5>
+          <p>Super Starter Kit for Arduino by LAFVIN. The best hack that is geared towards sustainability, whether it be environmentally, socially, or economically.</p>
+        </div>
+        <div class="col-lg-6">
+          <h5 class="event-info-header">Best Original Hack</h5>
+          <p>$20 Amazon Gift Cards. Tired of seeing the same repeating project ideas, like "tinder, but for dogs" or "uber, but for boats"? We want you to be extra creative, extra funny, and extra out-of-the-world with your hack. Bring out your most original idea and make it into reality through technology!</p>
+        </div>
+      </div>
+    </div>
+    <!--faq section-->
+    <div class="section sec-faq" style="margin-bottom: 30px;" id="faq">
+        <h4>FAQ</h4>
+      <div class="row pt-3">
         <div class="col-lg-6">
           <div class="faq-card" data-toggle="collapse" data-target="#question1" aria-expanded="false">
           <p class="faq-ques">I don’t know how to code! Can I still participate?
@@ -391,8 +483,8 @@
       </div>
     </div>
     <!--sponsor section-->
-    <div class="section" id="sponsors">
-        <h4 style="padding-top: 40px;">Sponsored By</h4>
+    <div class="section mt-2" id="sponsors">
+        <h4>Sponsored By</h4>
         <br />
 
         <div class="row sponsor-img">
