@@ -888,7 +888,7 @@ input.form-control {
     padding-left: 10px!important; 
   }
   .backdrop-container {
-    top: calc(100vh - 63px -  385px);
+    top: calc(100vh - 135px -  385px);
     height: 385px;
   }
   .tamuhack-title {
