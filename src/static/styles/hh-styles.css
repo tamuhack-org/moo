@@ -293,8 +293,7 @@ p {
 
 .section {
     overflow: hidden;
-    margin: 0px 10vw 0px 10vw;
-    padding-top: 40px;
+    margin: 20px 10vw 60px 10vw;
 }
 
 .section-left {
@@ -432,11 +431,11 @@ p {
     padding: 15px;
     width: 200px;
     border-radius: 5px;
+    margin: 15px 0 30px 0;
     font-size: 1.15rem;
     color: white;
     display: inline-block;
-    background-color: #354965;
-    margin: 15px 0 30px 0;
+    background-color: #69A2CC;
     border: none;
     text-decoration: none;
 }
@@ -448,15 +447,8 @@ p {
     text-decoration: none;
 }
 
-#hackathon-101{
-    background-color: #69A2CC !important;
-}
-
-#hackathon-101:hover{
-    background-color: #346c94 !important;
-}
-
 #event-prep .col-lg-4{
+    position: relative;
     text-align: center;
     margin-bottom: 30px;
 }
