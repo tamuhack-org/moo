@@ -172,7 +172,7 @@ header{
   z-index: 5;
 }
 .backdrop-container {
-  top: calc(100vh - 165px - (100vw * .45833333333));
+  top: calc(100vh - 63px - (100vw * .45833333333));
   position: relative;
   height: calc(100vw * .45833333333);
   overflow: hidden;
@@ -888,7 +888,7 @@ input.form-control {
     padding-left: 10px!important; 
   }
   .backdrop-container {
-    top: calc(100vh - 135px -  385px);
+    top: calc(100vh - 63px -  385px);
     height: 385px;
   }
   .tamuhack-title {
