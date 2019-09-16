@@ -178,6 +178,11 @@ h3 {
     font-family: Questrial, sans-serif;
 }
 
+.content-txt a{
+    color: white;
+    text-decoration: underline;
+}
+
 #rect {
     position: absolute; 
     right: 0; 
