@@ -153,7 +153,14 @@ header{
   transform: translateX(-50%);
   top: 20vh;
   max-width: 345px;
-  z-index: 1;
+  z-index: 20;
+}
+.hh-live-button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 1.25rem;
+  width: 200px;
 }
 .backdrop {
   position: absolute;
@@ -518,8 +525,8 @@ input.form-control {
   left: 50%;
   transform: translateX(-50%);
   width: 6px;
-  margin-top: 90px;
-  height: calc(100% - 180px);
+  margin-top: 70px;
+  height: calc(100% - 150px);
   background: black;
   z-index: -1;
 }
@@ -679,6 +686,10 @@ input.form-control {
   background: black;
   z-index: 1;
 }
+
+#timeline-small .timeline-block:first-child{
+  padding-top: 50px;
+}
 #timeline-small .timeline-block {
   width: 100%;
   display: -webkit-box;
@@ -691,7 +702,6 @@ input.form-control {
   justify-content: space-between;
   clear: both;
   margin-top: 25px;
-  padding-top: 50px;
 }
 #timeline-small .timeline-block-right {
   float: right;
@@ -764,6 +774,11 @@ input.form-control {
 #timeline-small .timeline-content span {
   font-size: 15px;
   color: #a4a4a4;
+}
+
+.panel{
+  display: none;
+  overflow: hidden;
 }
 
 /*--------------------------------------*/
@@ -911,5 +926,25 @@ input.form-control {
   }
   .nav-link{
     display: inline-block;
+  }
+}
+
+@media (max-width: 990px) {
+  #timeline-full .container:before {
+    margin-top: 90px;
+    height: calc(100% - 190px);
+  }
+}
+
+@media (max-width: 500px) {
+  #timeline-small .container:before {
+    height: calc(100% - 220px);
+  }
+}
+
+@media (max-width: 400px) {
+  #timeline-small .container:before {
+    margin-top: 160px;
+    height: calc(100% - 250px);
   }
 }
