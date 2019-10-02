@@ -1,0 +1,365 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem !important;
+}
+
+.container-fluid {
+    padding-right: 10vw;
+    padding-left: calc(10vw + 26px);
+    /* Accounts for the logo offset */
+    margin: 75px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    color: #FF5482;
+}
+
+
+/* Logo Styling */
+
+.th-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.th-text-logo {
+    margin-left: 15px;
+    margin-top: 6px;
+    min-width: 90px;
+    opacity: 0.8;
+}
+
+.th-faded {
+    width: 75%;
+    height: auto;
+}
+
+#logo-2020 {
+    max-width: 500px;
+    width: 100%;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#about {
+    margin-top: 150px;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Sponsor Logo Styling */
+
+#sponsored-by .row,
+#our-partners .row {
+    margin: 40px 0;
+}
+
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+}
+
+.left {
+    margin-right: auto !important;
+    display: block;
+}
+
+.right {
+    margin-left: auto !important;
+    display: block;
+}
+
+.sponsor-container {
+    margin: 0px 7.5vw;
+}
+
+.sponsor-logo-lg,
+.sponsor-logo-md,
+.sponsor-logo-sm {
+    transition: transform 0.3s ease-in-out;
+}
+
+.sponsor-logo-lg:hover,
+.sponsor-logo-md:hover,
+.sponsor-logo-sm:hover {
+    transform: scale(1.05);
+}
+
+#aa-logo {
+    max-width: 650px;
+}
+
+#jpmc-logo {
+    max-width: 600px;
+}
+
+#usaa-logo {
+    max-width: 125px;
+}
+
+#pwc-logo {
+    max-width: 125px;
+}
+
+#gartner-logo {
+    max-width: 150px;
+}
+
+#cbre-logo {
+    max-width: 150px;
+}
+
+#p66-logo {
+    max-width: 100px;
+}
+
+#bp-logo {
+    max-width: 90px;
+}
+
+#credera-logo {
+    max-width: 90px;
+}
+
+#msft-logo {
+    max-width: 250px;
+}
+
+#pariveda-logo {
+    max-width: 275px;
+}
+
+#ultrapress-logo {
+    max-width: 250px;
+}
+
+#botanicalpaperworks-logo {
+    max-width: 250px;
+}
+
+#our-partners .sponsor-logo-sm {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Top Navigation Section */
+
+.navbar {
+    margin: 0!important;
+    padding-left: 10vw!important;
+    padding-right: 10vw!important;
+}
+
+.nav-container {
+    position: absolute;
+    padding-right: 0px !important;
+    margin-bottom: 79px;
+}
+
+.navbar-toggler {
+    border-color: transparent!important;
+}
+
+#top-nav-bar {
+    z-index: 10000;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 78vw;
+}
+
+#top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+}
+
+#top-nav-bar div ul li {
+    padding: 0px 10px;
+}
+
+#top-nav-bar div a {
+    border-bottom: 7px solid transparent;
+    color: black!important;
+}
+
+#top-nav-bar div .main-nav-ui li>a {
+    text-transform: uppercase;
+    color: black!important;
+}
+
+#top-nav-bar div .main-nav-ui li>a:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 #F27B93 inset, 0 -6px 0 0 #F27B93 inset;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Landing Section */
+
+#email-tag {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#email-form input {
+    border-radius: 0px;
+}
+
+#landing .bg-wrapper {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    background-color: #EEB9D5;
+}
+
+.signup-button {
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0px !important;
+    padding: 0 40px !important;
+}
+
+.form-message {
+    display: none;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid #AAA;
+    border-radius: 8px;
+}
+
+.card-title {
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+
+.card-title-underline {
+    width: 60px;
+    height: 9px;
+    margin-bottom: 20px;
+}
+
+
+/* Card Underline Coloring */
+
+.col-lg-6:nth-of-type(1) .card:nth-of-type(1) .card-title-underline {
+    background-color: #6F85FB;
+}
+
+.col-lg-6:nth-of-type(1) .card:nth-of-type(2) .card-title-underline {
+    background-color: #FF5482;
+}
+
+.col-lg-6:nth-of-type(2) .card:nth-of-type(1) .card-title-underline {
+    background-color: #7FC0FA;
+}
+
+.col-lg-6:nth-of-type(2) .card:nth-of-type(2) .card-title-underline {
+    background-color: #6F85FB;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Button/Form Information */
+
+.btn.btn-primary {
+    border: none;
+}
+
+.btn.btn-outline-secondary {
+    padding: 8px 15px;
+}
+
+input.form-control {
+    padding: 22px 18px;
+}
+
+.tamu-button {
+    background-color: #FF7C93 !important;
+    border-radius: 4px!important;
+}
+
+.tamu-button:hover {
+    background-color: #D47082 !important;
+}
+
+.hh-button {
+    border-radius: 4px!important;
+    background-color: #3E678C !important;
+}
+
+.hh-button:hover {
+    background-color: #2E4D68 !important;
+}
+
+footer {
+    margin-top: 200px;
+    background-color: #EEB9D5;
+    padding: 15px 100px;
+    width: 100%;
+}
+
+footer .nav-link {
+    display: inline-block !important;
+}
+
+footer i {
+    color: black;
+}
+
+
+/*--------------------------------------*/
+
+@media all and (max-width: 840px) {
+    .th-text-logo {
+        opacity: 0;
+    }
+    .tamuhack-title {
+        max-width: 300px;
+        top: 30vh;
+        transform: translate(-50%, -50%);
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 14px;
+    }
+    .navbar {
+        padding-left: 10px!important;
+    }
+    #top-nav-bar div ul li {
+        padding: 0px 30px;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+}
