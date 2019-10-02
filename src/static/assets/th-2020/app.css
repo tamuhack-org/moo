@@ -52,10 +52,11 @@ h1 {
 #logo-2020 {
     max-width: 500px;
     width: 100%;
-    margin-top: -70px;
+    margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding: 0 50px;
 }
 
 #about {
@@ -134,7 +135,7 @@ h1 {
 }
 
 #credera-logo {
-    max-width: 90px;
+    max-width: 250px;
 }
 
 #msft-logo {
@@ -145,12 +146,24 @@ h1 {
     max-width: 275px;
 }
 
+#tamu-csce-logo {
+    max-width: 300px;
+}
+
 #ultrapress-logo {
     max-width: 250px;
 }
 
 #botanicalpaperworks-logo {
     max-width: 250px;
+}
+
+#kind-logo {
+    max-width: 125px;
+}
+
+#redbull-logo {
+    max-width: 200px;
 }
 
 
