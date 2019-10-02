@@ -1,6 +1,7 @@
 html,
 body {
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .mb-5 {
@@ -8,7 +9,7 @@ body {
 }
 
 .container-fluid {
-    padding-right: 10vw;
+    padding-right: calc(10vw + 26px);
     padding-left: calc(10vw + 26px);
     /* Accounts for the logo offset */
     margin: 75px 0;
@@ -67,11 +68,6 @@ h1 {
 
 /* Sponsor Logo Styling */
 
-#sponsored-by .row,
-#our-partners .row {
-    margin: 40px 0;
-}
-
 .center {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -96,6 +92,7 @@ h1 {
 .sponsor-logo-md,
 .sponsor-logo-sm {
     transition: transform 0.3s ease-in-out;
+    margin: 30px 0;
 }
 
 .sponsor-logo-lg:hover,
@@ -154,11 +151,6 @@ h1 {
 
 #botanicalpaperworks-logo {
     max-width: 250px;
-}
-
-#our-partners .sponsor-logo-sm {
-    padding: 0px;
-    margin: 0px;
 }
 
 
@@ -323,7 +315,7 @@ input.form-control {
 footer {
     margin-top: 200px;
     background-color: #EEB9D5;
-    padding: 15px 100px;
+    padding: 15px 10vw;
     width: 100%;
 }
 
@@ -361,5 +353,22 @@ footer i {
     }
     .nav-link {
         display: inline-block;
+    }
+}
+
+@media (max-width: 992px) {
+    .left,
+    .right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sponsor-container {
+        margin: 0;
+    }
+    #logo-2020 {
+        margin-top: 10px;
+    }
+    footer {
+        margin-top: 50px;
     }
 }
