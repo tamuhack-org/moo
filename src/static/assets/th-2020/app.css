@@ -30,6 +30,13 @@ h1 {
     color: #FF5482;
 }
 
+#mlh-banner {
+    position: absolute;
+    width: 100px;
+    right: calc(10vw - 40px);
+    top: 0px;
+}
+
 
 /* Logo Styling */
 
@@ -205,6 +212,7 @@ h1 {
     z-index: 10000;
     padding-top: 16px;
     padding-bottom: 10px;
+    padding-right: calc(10vw + 80px) !important;
     margin-left: 10vw;
     margin-right: 10vw;
     min-width: 78vw;
@@ -232,7 +240,7 @@ h1 {
 
 #top-nav-bar div .main-nav-ui li>a:hover {
     transition: all 0.3s ease-out;
-    box-shadow: 0 -1px 0 0 #F27B93 inset, 0 -6px 0 0 #F27B93 inset;
+    box-shadow: 0 -1px 0 0 black inset, 0 -6px 0 0 black inset;
 }
 
 
@@ -291,19 +299,19 @@ h1 {
 
 /* Card Underline Coloring */
 
-.col-md-6:nth-of-type(1) .card:nth-of-type(1) .card-title-underline {
+.col-md-6:nth-of-type(1) .card:nth-of-type(2n) .card-title-underline {
     background-color: #6F85FB;
 }
 
-.col-md-6:nth-of-type(1) .card:nth-of-type(2) .card-title-underline {
+.col-md-6:nth-of-type(1) .card:nth-of-type(2n + 1) .card-title-underline {
     background-color: #FF5482;
 }
 
-.col-md-6:nth-of-type(2) .card:nth-of-type(1) .card-title-underline {
+.col-md-6:nth-of-type(2) .card:nth-of-type(2n) .card-title-underline {
     background-color: #7FC0FA;
 }
 
-.col-md-6:nth-of-type(2) .card:nth-of-type(2) .card-title-underline {
+.col-md-6:nth-of-type(2) .card:nth-of-type(2n+1) .card-title-underline {
     background-color: #6F85FB;
 }
 
@@ -393,6 +401,9 @@ footer .nav-link img {
         margin-left: auto;
         margin-right: auto;
     }
+    #top-nav-bar {
+        padding-right: 10vw !important;
+    }
     .sponsor-container {
         margin: 0;
     }
@@ -412,5 +423,8 @@ footer .nav-link img {
     .container-fluid {
         padding-left: 5vw;
         padding-right: 5vw;
+    }
+    #mlh-banner {
+        display: none;
     }
 }
