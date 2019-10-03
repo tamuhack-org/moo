@@ -2,6 +2,7 @@ html,
 body {
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 .mb-5 {
@@ -60,7 +61,7 @@ h1 {
 }
 
 #about {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 
@@ -103,19 +104,24 @@ h1 {
 }
 
 #aa-logo {
-    max-width: 650px;
-}
-
-#jpmc-logo {
     max-width: 600px;
 }
 
+#jpmc-logo {
+    max-width: 550px;
+}
+
 #usaa-logo {
-    max-width: 125px;
+    max-width: 100px;
+}
+
+#southwest-logo {
+    max-width: 225px;
 }
 
 #pwc-logo {
     max-width: 125px;
+    margin-top: -20px;
 }
 
 #gartner-logo {
@@ -123,7 +129,7 @@ h1 {
 }
 
 #cbre-logo {
-    max-width: 150px;
+    max-width: 125px;
 }
 
 #p66-logo {
@@ -132,6 +138,7 @@ h1 {
 
 #bp-logo {
     max-width: 90px;
+    margin-top: -5px;
 }
 
 #credera-logo {
@@ -143,7 +150,7 @@ h1 {
 }
 
 #pariveda-logo {
-    max-width: 275px;
+    max-width: 250px;
 }
 
 #tamu-csce-logo {
@@ -173,6 +180,14 @@ h1 {
     margin: 0!important;
     padding-left: 10vw!important;
     padding-right: 10vw!important;
+}
+
+.navbar .nav-item .nav-link {
+    font-weight: 700;
+}
+
+.navbar .nav-item {
+    margin: 0 30px;
 }
 
 .nav-container {
@@ -225,12 +240,13 @@ h1 {
 /* Landing Section */
 
 #email-tag {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 #email-form input {
-    border-radius: 0px;
+    border-radius: 3px;
+    border: 1px solid #AAAAAA;
 }
 
 #landing .bg-wrapper {
@@ -241,11 +257,11 @@ h1 {
 }
 
 .signup-button {
-    background-color: black;
-    border-color: black;
+    background-color: #231F1B;
+    border-color: #231F1B;
     color: white;
     font-weight: bolder;
-    border-radius: 0px !important;
+    border-radius: 3px !important;
     padding: 0 40px !important;
 }
 
@@ -336,8 +352,8 @@ footer .nav-link {
     display: inline-block !important;
 }
 
-footer i {
-    color: black;
+footer .nav-link img {
+    height: 30px;
 }
 
 
@@ -383,5 +399,16 @@ footer i {
     }
     footer {
         margin-top: 50px;
+    }
+    #pwc-logo,
+    #bp-logo {
+        margin-top: 0px;
+    }
+    #about {
+        margin-top: 20px;
+    }
+    .container-fluid {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
