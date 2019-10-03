@@ -369,32 +369,6 @@ footer .nav-link img {
 
 /*--------------------------------------*/
 
-@media all and (max-width: 840px) {
-    .th-text-logo {
-        opacity: 0;
-    }
-    .tamuhack-title {
-        max-width: 300px;
-        top: 30vh;
-        transform: translate(-50%, -50%);
-    }
-    h2 {
-        font-size: 1.4rem;
-    }
-    p {
-        font-size: 14px;
-    }
-    .navbar {
-        padding-left: 10px!important;
-    }
-    #top-nav-bar div ul li {
-        padding: 0px 30px;
-    }
-    .nav-link {
-        display: inline-block;
-    }
-}
-
 @media (max-width: 992px) {
     .left,
     .right {
@@ -424,7 +398,30 @@ footer .nav-link img {
         padding-left: 5vw;
         padding-right: 5vw;
     }
-    #mlh-banner {
+    #mlh-banner-tag {
         display: none;
+    }
+    .th-text-logo {
+        opacity: 0;
+    }
+    .tamuhack-title {
+        max-width: 300px;
+        top: 30vh;
+        transform: translate(-50%, -50%);
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 14px;
+    }
+    .navbar {
+        padding-left: 10px!important;
+    }
+    #top-nav-bar div ul li {
+        padding: 0px 30px;
+    }
+    .nav-link {
+        display: inline-block;
     }
 }
