@@ -22,32 +22,31 @@
 
 <body>
     <!--BEGIN Navbar-->
-    <div class="nav-container container">
-        <nav class="navbar navbar-expand-lg navbar-light" id="top-nav-bar">
-            <a class="navbar-brand" href="#">
-                <img src="/static/assets/th_logo.svg" class="th-logo" alt="" />
-                <img src="/static/assets/tamuhack.svg" class="th-text-logo" />
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light" id="top-nav-bar">
+        <a class="navbar-brand" href="/">
+            <img src="/static/assets/th-2020/th_bw.svg" class="th-logo" alt="" />
+            <img src="/static/assets/tamuhack.svg" class="th-text-logo" />
+        </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
           <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto"></ul>
-                <ul class="navbar-nav main-nav-ui">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sponsored-by">SPONSORS</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav main-nav-ui">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sponsored-by">SPONSORS</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://mlh.io/seasons/na-2020/events" target="_blank" id="mlh-banner-tag"><img src="/static/assets/th-2020/sns/mlh-banner.svg" id="mlh-banner"></a>
+    </nav>
     <!--END Navbar-->
     <section>
         <section id="landing">
@@ -56,10 +55,10 @@
         <!--BEGIN Email Form-->
         <div class="container-fluid" style="margin-top: 40px">
             <div class="row align-items-center">
-                <div class="col-lg-5">
+                <div class="col-md-5">
                     <p id="email-tag">Sign up to be the first to get updates!</p>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-md-7">
                     <form class="form" action="/" id="email-form">
                         <div class="input-group mb-3" id="before">
                             <input name="email" type="text" class="form-control mr-2" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" />
@@ -79,29 +78,32 @@
                 </div>
             </div>
         </div>
+        <!-- END Email Form -->
     </section>
-    <section class="container-fluid" id="about">
+    <section class="container-fluid pt-4" id="about">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <h1 class="mb-5">About TAMUhack</h1>
                 <p>At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
                 <p>We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free
                     food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!</p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <img src="/static/assets/th-2020/2020-graphic.svg" id="logo-2020">
             </div>
         </div>
     </section>
-    <section class="container-fluid" id="faq">
+    <section class="container-fluid pt-4" id="faq">
         <h1 class="mb-5">Frequently Asked Questions</h1>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h4 class="card-title">Who can attend?</h4>
                         <div class="card-title-underline"></div>
                         <p class="card-text">Any graduate/undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend.</p>
+                        <p class="card-text"><b>NOTE</b><br/>We are able to admit minors only if the are accompanied by a college student (18+) who is planning on participating in the hackathon. Have additional questions? Email us at <a href="mailto:highschool@tamuhack.com">highschool@tamuhack.com</a></a>
+                        </p>
                     </div>
                 </div>
 
@@ -112,14 +114,44 @@
                         <p class="card-text">Nothing. Nada. Zilch. It's completely free for all accepted hackers. To make it even better, we'll throw in a ton of swag, food, WiFi, workspaces, and caffeine while you're here.</p>
                     </div>
                 </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">How do teams work?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">Teams are limited to 4 hackers. You don’t need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one
+                            yet. </p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Do you offer travel reimbursements?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">We will be providing gas reimbursement of up to $25 on a case by case basis to those that drive to TAMUhack from outside of College Station. Receipt required.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">What should I bring?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. A laptop, charger, mouse, keyboard, hardware, light jacket, and any hygienic products should be helpful.
+                            Don't bring anything you wouldn't bring on an airplane.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Tabs or Spaces?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">Spaces--don't tabs make you practically unhirable?</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h4 class="card-title">How much experience do I need?</h4>
                         <div class="card-title-underline"></div>
                         <p class="card-text">Absolutely zero! We want you here because you have a passion for creating, not because you’re the most experienced hacker on the block. We’ll have lots of resources including workshops and a bunch of mentors to help beginners get
-                            started. There'll also be plenty of people to learn from and help out!</p>
+                            started. There will also be plenty of people to learn from and help out!</p>
                     </div>
                 </div>
                 <div class="card mb-4">
@@ -129,100 +161,118 @@
                         <p class="card-text">We are looking for novices, experts, and everyone in between. In fact, we aim to have a very diverse set of of hackers who can show their passion for creation and learning.</p>
                     </div>
                 </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Will there be workshops or talks?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">What is your Code of Conduct?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">What a great question! Check out the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>. Although we're all here to have fun, we want to create a safe environment for every hacker.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Are you providing hardware?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">Yes! In addition to the MLH hardware lab, we have our own custom hardware available.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Have more questions?</h4>
+                        <div class="card-title-underline"></div>
+                        <p class="card-text">Email us with any questions, comments, concerns at <a href="mailto:hello@tamuhack.com">hello@tamuhack.com</a>.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="container-fluid" id="sponsored-by">
+    <section class="container-fluid pt-4" id="sponsored-by">
         <h1 class="mb-5">Sponsored By</h1>
         <div class="sponsor-container">
             <div class="row align-items-center">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <a href="https://jobs.aa.com" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/aa.svg" class="sponsor-logo-lg center" id="aa-logo"></a>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-8">
+                <div class="col-md-8">
                     <a href="https://careers.jpmorgan.com" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/jpmc.svg" class="sponsor-logo-md left" id="jpmc-logo"></a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <a href="https://www.usaajobs.com" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/usaa.svg" class="sponsor-logo-sm right" id="usaa-logo"></a>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-4">
+                <div class="col-md-4 col-6">
                     <a href="https://www.pwc.com/us/en/careers/search-jobs.html" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/pwc.svg" class="sponsor-logo-sm left" id="pwc-logo"></a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4 col-6">
                     <a href="https://jobs.gartner.com" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/gartner.svg" class="sponsor-logo-sm center" id="gartner-logo"></a>
                 </div>
-                <div class="col-lg-4">
-                    <a href="https://www.cbre.com/about/careers" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/cbre.svg" class="sponsor-logo-sm right" id="cbre-logo"></a>
+                <div class="col-md-4 col-6">
+                    <a href="https://careers.southwestair.com/" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/southwest.svg" class="sponsor-logo-sm right" id="southwest-logo"></a>
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <a href="https://phillips66.jobs" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/phillips66.svg" class="sponsor-logo-sm left" id="p66-logo"></a>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.cbre.com/about/careers" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/cbre.svg" class="sponsor-logo-sm left" id="cbre-logo"></a>
                 </div>
-                <div class="col-lg-4">
-                    <a href="https://www.bp.com/en/global/corporate/careers.html" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/bp.svg" class="sponsor-logo-sm center" id="bp-logo"></a>
+                <div class="col-md-4 col-6">
+                    <a href="https://phillips66.jobs" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/phillips66.svg" class="sponsor-logo-sm center" id="p66-logo"></a>
                 </div>
-                <div class="col-lg-4">
-                    <a href="https://www.credera.com/careers/" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/credera.svg" class="sponsor-logo-sm right" id="credera-logo"></a>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.bp.com/en/global/corporate/careers.html" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/bp.svg" class="sponsor-logo-sm right" id="bp-logo"></a>
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <a href="https://careers.microsoft.com" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/msft.svg" class="sponsor-logo-sm left" id="msft-logo"></a>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.credera.com/careers/" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/credera.svg" class="sponsor-logo-sm left" id="credera-logo"></a>
                 </div>
-                <div class="col-lg-4">
-                    <a href="https://www.parivedasolutions.com/careers-overview" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/pariveda.svg" class="sponsor-logo-sm center" id="pariveda-logo"></a>
+                <div class="col-md-4 col-6">
+                    <a href="https://careers.microsoft.com" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/msft.svg" class="sponsor-logo-sm center" id="msft-logo"></a>
                 </div>
-                <div class="col-lg-4">
-
+                <div class="col-md-4 col-6">
+                    <a href="https://www.parivedasolutions.com/careers-overview" target="_blank"><img src="/static/assets/th-2020/sponsor_logos/pariveda.svg" class="sponsor-logo-sm right" id="pariveda-logo"></a>
                 </div>
             </div>
         </div>
 
 
     </section>
-    <section class="container-fluid" id="our-partners">
+    <section class="container-fluid pt-4" id="our-partners">
         <h1 class="mb-5">Our Partners</h1>
         <div class="row align-items-center">
-            <div class="col-lg-4">
+            <div class="col-md-4 col-6">
                 <a href="https://engineering.tamu.edu/cse/index.html" target="_blank"><img src="/static/assets/th-2020/partners/tamu_csce.svg" class="sponsor-logo-sm left" id="tamu-csce-logo"></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-6">
                 <a href="https://ultrapress.com/" target="_blank"><img src="/static/assets/th-2020/partners/ultrapress.svg" class="sponsor-logo-sm center" id="ultrapress-logo"></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-6">
                 <a href="https://www.botanicalpaperworks.com/" target="_blank"><img src="/static/assets/th-2020/partners/botanicalpaperworks.svg" class="sponsor-logo-sm right" id="botanicalpaperworks-logo"></a>
             </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-4">
+            <div class="col-md-4 col-6">
                 <a href="https://www.kindsnacks.com/" target="_blank"><img src="/static/assets/th-2020/partners/kind.png" class="sponsor-logo-sm left" id="kind-logo"></a>
             </div>
-            <div class="col-lg-4">
-                <a href="https://www.redbull.com/us-en/" target="_blank"><img src="/static/assets/th-2020/partners/redbull.png" class="sponsor-logo-sm center" id="redbull-logo"></a>
-            </div>
-            <div class="col-lg-4">
-
-            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
         </div>
         <p class="mt-4">Interested in sponsoring? Reach out to us at <a href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a></p>
     </section>
     <footer>
         <a class="nav-link" href="https://www.facebook.com/tamuhack/" target="_blank">
-            <i class="fab fa-facebook-f fa-lg"></i>
+            <img src="/static/assets/th-2020/sns/fb.svg">
         </a>
         <a class="nav-link" href="https://www.instagram.com/tamuhack/" target="_blank">
-            <i class="fab fa-instagram fa-lg"></i>
+            <img src="/static/assets/th-2020/sns/instagram.svg">
         </a>
         <a class="nav-link" href="https://twitter.com/tamuhack" target="_blank">
-            <i class="fab fa-twitter fa-lg"></i>
+            <img src="/static/assets/th-2020/sns/twitter.svg">
         </a>
         <a class="nav-link" href="mailto:hello@tamuhack.com">
-            <i class="fas fa-envelope fa-lg"></i>
+            <img src="/static/assets/th-2020/sns/email.svg">
         </a>
     </footer>
     <!--END Email Form-->
