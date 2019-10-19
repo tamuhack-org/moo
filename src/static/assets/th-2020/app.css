@@ -32,8 +32,8 @@ h1 {
 
 #mlh-banner {
     position: absolute;
-    width: 100px;
-    right: calc(10vw - 40px);
+    width: 90px;
+    right: calc(10vw);
     top: 0px;
 }
 
@@ -42,7 +42,6 @@ h1 {
 
 .th-logo {
     width: 30px;
-    height: 30px;
 }
 
 .th-text-logo {
@@ -195,6 +194,7 @@ h1 {
 
 .navbar .nav-item .nav-link {
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .navbar .nav-item {
@@ -284,7 +284,7 @@ h1 {
 }
 
 .card {
-    padding: 15px;
+    padding: 8px;
     border: 1px solid #AAA;
     border-radius: 8px;
 }
@@ -367,7 +367,7 @@ footer .nav-link {
 }
 
 footer .nav-link img {
-    height: 30px;
+    height: 20px;
 }
 
 
@@ -434,7 +434,33 @@ footer .nav-link img {
 }
 
 @media (max-width: 776px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    .th-logo {
+        width: 20px;
+    }
+    #logo-2020 {
+        max-width: 300px;
+    }
+    .mb-5 {
+        margin-bottom: 1.5rem!important;
+    }
+    .container-fluid {
+        margin-bottom: 40px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+    }
     #landing .bg-wrapper {
         height: 78vh;
     }
+    #email-tag {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
 }
