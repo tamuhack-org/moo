@@ -100,22 +100,26 @@ h1 {
 .sponsor-logo-lg,
 .sponsor-logo-md,
 .sponsor-logo-sm {
-    transition: transform 0.3s ease-in-out;
+    transition: 0.5s;
     margin: 30px 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .sponsor-logo-lg:hover,
 .sponsor-logo-md:hover,
 .sponsor-logo-sm:hover {
     transform: scale(1.05);
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
 #aa-logo {
-    max-width: 600px;
+    width: 75%;
 }
 
 #jpmc-logo {
-    max-width: 550px;
+    max-width: 520px;
 }
 
 #usaa-logo {
@@ -261,7 +265,7 @@ h1 {
 
 #landing .bg-wrapper {
     width: 100%;
-    height: 100vh;
+    height: 83.5vh;
     margin: 0px;
     background-color: #F8658C;
 }
@@ -391,6 +395,9 @@ footer .nav-link img {
     #bp-logo {
         margin-top: 0px;
     }
+    #jpmc-logo {
+        max-width: 300px;
+    }
     #about {
         margin-top: 20px;
     }
@@ -423,5 +430,11 @@ footer .nav-link img {
     }
     .nav-link {
         display: inline-block;
+    }
+}
+
+@media (max-width: 776px) {
+    #landing .bg-wrapper {
+        height: 78vh;
     }
 }
