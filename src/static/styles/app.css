@@ -134,7 +134,7 @@ section .goto {
   height: 30px;
 }
 .th-text-logo {
-  margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
+  margin-left: 15px; margin-top: 6px; height: 24px; opacity: 0.8;
 }
 .th-faded{
   width: 75%;
@@ -146,6 +146,7 @@ section .goto {
 header{
   min-height: 100vh;
   background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
+  background-image: linear-gradient(white 60%, rgb(255, 246, 248) 60%);
 }
 .tamuhack-title {
   position: relative;
@@ -487,6 +488,9 @@ input.form-control {
 }
 .hh-button:hover {
   background-color: #2E4D68 !important;
+}
+.ws-button:hover {
+  background-color: rgb(84, 130, 170) !important;
 }
 /*--------------------------------------*/
 
