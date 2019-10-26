@@ -162,14 +162,7 @@ section .goto {
 }
 
 .th-text-logo {
-<<<<<<< HEAD
   margin-left: 15px; margin-top: 6px; height: 24px; opacity: 0.8;
-=======
-    margin-left: 15px;
-    margin-top: 6px;
-    min-width: 90px;
-    opacity: 0.8;
->>>>>>> 9780a97402b5d786505de7b56af3a32bfd8d1487
 }
 
 .th-faded {
@@ -182,17 +175,10 @@ section .goto {
 
 
 /* Header Section */
-<<<<<<< HEAD
 header{
   min-height: 100vh;
   background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
   background-image: linear-gradient(white 60%, rgb(255, 246, 248) 60%);
-=======
-
-header {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
->>>>>>> 9780a97402b5d786505de7b56af3a32bfd8d1487
 }
 
 .tamuhack-title {
@@ -633,14 +619,9 @@ input.form-control {
 .hh-button:hover {
     background-color: #2E4D68 !important;
 }
-<<<<<<< HEAD
 .ws-button:hover {
   background-color: rgb(84, 130, 170) !important;
 }
-=======
-
-
->>>>>>> 9780a97402b5d786505de7b56af3a32bfd8d1487
 /*--------------------------------------*/
 
 
