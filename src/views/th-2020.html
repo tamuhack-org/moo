@@ -47,52 +47,55 @@
         <a href="https://mlh.io/seasons/na-2020/events" target="_blank" id="mlh-banner-tag"><img src="/static/assets/th-2020/sns/mlh-banner.svg" id="mlh-banner"></a>
     </nav>
     <!--END Navbar-->
-    <section>
-        <section id="landing">
-            <div id="top-bar"></div>
-            <div id="left-bar"></div>
-            <div id="right-bar"></div>
-            <div id="bottom-bar"></div>
-            <div class="bg-wrapper">
-                <div class="internal-wrapper">
-                    <div class="row align-bottom">
-                        <div class="col-lg-5">
-                            <img src="/static/assets/th-2020/th20-landing-graphic.svg" id="landing-graphic">
+    <!-- Landing -->
+    <section id="landing">
+        <div id="top-bar"></div>
+        <div id="left-bar"></div>
+        <div id="right-bar"></div>
+        <div id="bottom-bar"></div>
+        <div class="bg-wrapper">
+            <div class="row align-bottom">
+                <div class="col-md-5">
+                    <img src="/static/assets/th-2020/th20-landing-graphic.svg" id="landing-graphic">
+                </div>
+                <div class="col-md-7 text-right">
+                    <div class="landing-info-wrapper">
+                        <div class="header-info">
+                            <h4>January 25-26, 2020</h4>
+                            <h4>Texas A&M University</h4>
                         </div>
-                        <div class="col-lg-7 text-right">
-                            <div class="landing-info-wrapper">
-                                <div class="header-info">
-                                    <h4>January 25-26, 2020</h4>
-                                    <h4>Texas A&M University</h4>
+                        <p id="email-tag">Sign up to be the first to get updates!</p>
+                        <form class="form" action="/" id="email-form">
+                            <div class="input-group mb-3" id="before">
+                                <input name="email" type="text" class="form-control mr-2" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary signup-button" type="submit">
+                                                    SUBMIT
+                                                </button>
                                 </div>
-                                <p id="email-tag">Sign up to be the first to get updates!</p>
-                                <form class="form" action="/" id="email-form">
-                                    <div class="input-group mb-3" id="before">
-                                        <input name="email" type="text" class="form-control mr-2" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" />
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-secondary signup-button" type="submit">
-                                                            SUBMIT
-                                                        </button>
-                                        </div>
-                                    </div>
-                                    <div class="alert alert-danger form-message" role="alert" id="u_failed">
-                                        Email was not accepted. Try again!
-                                    </div>
-                                    <div class="alert alert-success form-message" role="alert" id="after">
-                                        All good! Expect to hear back from us soon!
-                                    </div>
-                                </form>
                             </div>
-                        </div>
+                            <div class="alert alert-danger form-message" role="alert" id="u_failed">
+                                Email was not accepted. Try again!
+                            </div>
+                            <div class="alert alert-success form-message" role="alert" id="after">
+                                All good! Expect to hear back from us soon!
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
+    <!-- END Landing-->
+    <div class="d-block-sm-none">
+        <br><br><br><br><br>
+    </div>
+
+    <!-- About -->
     <section class="container-fluid pt-4" id="about">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="mb-5">About TAMUhack</h1>
+                <h1 class="mt-4 mb-5">About TAMUhack</h1>
                 <p>At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
                 <p>We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free
                     food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!</p>
@@ -247,8 +250,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
     <section class="container-fluid pt-4" id="our-partners">
         <h1 class="mb-5">Our Partners</h1>

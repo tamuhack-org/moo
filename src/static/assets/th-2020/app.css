@@ -238,7 +238,7 @@ h1 {
 #top-nav-bar div .main-nav-ui li>a {
     text-transform: uppercase;
     color: black!important;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #top-nav-bar div .main-nav-ui li>a:hover {
@@ -267,42 +267,42 @@ h1 {
 }
 
 #landing .bg-wrapper {
-    width: 98%;
+    width: calc(98vw - 152px);
+    left: 76px;
+    top: 76px;
+    height: calc(92vh - 152px);
     margin: 0px;
-    border: 7px solid black;
+    border: 6px solid black;
     position: relative;
+    outline: 6px solid black;
+    outline-offset: 70px;
+    min-height: 552px;
 }
-
+/* 
 #landing .bg-wrapper:before {
     content: "";
     position: absolute;
-    border-top: 7px solid black;
-    width: 75px;
+    border-top: 6px solid black;
+    width: 96px;
     right: -5px;
-    top: 70px;
+    top: 43px;
     transform-origin: 0% 0%;
 }
 
 #landing .bg-wrapper:after {
     content: "";
     position: absolute;
-    border-top: 7px solid black;
+    border-top: 6px solid black;
     width: 75px;
     left: -5px;
-    bottom: 70px;
+    bottom: 84px;
     transform-origin: 0% 0%;
-}
-
-#landing .internal-wrapper {
-    margin: 70px;
-    width: calc(100% - 140px);
-    border: 7px solid black;
-}
+} */
 
 #landing-graphic {
-    flex: 0 0 120%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    flex: 0 0 110%;
+    margin-top: 62px;
+    margin-bottom: 62px;
     margin-left: 5vw;
     align-self: center;
 }
@@ -313,7 +313,7 @@ h1 {
     height: 70px;
     background-color: #7FC0FA;
     right: 0px;
-    top: 35px;
+    top: 44px;
     animation: fill-horizontal-rect 1s;
     -webkit-animation: fill-horizontal-rect 1s forwards;
 }
@@ -321,7 +321,7 @@ h1 {
 #left-bar {
     position: absolute;
     width: 70px;
-    top: 35px;
+    top: 114px;
     left: 35px;
     background-color: #7FC0FA;
     animation: fill-vertical-rect 1s forwards;
@@ -334,7 +334,7 @@ h1 {
     background-color: #FF5482;
     left: 35px;
     height: 70px;
-    bottom: -35px;
+    bottom: -184px;
     animation: fill-horizontal-rect 1s forwards;
     -webkit-animation: fill-horizontal-rect 1s forwards;
     animation-delay: 2s;
@@ -344,7 +344,7 @@ h1 {
     position: absolute;
     right: 0px;
     width: 70px;
-    bottom: -35px;
+    bottom: -114px;
     background-color: #FF5482;
     animation: fill-vertical-rect 1s forwards;
     -webkit-animation: fill-vertical-rect 1s forwards;
@@ -358,8 +358,8 @@ h1 {
     align-self: center;
 }
 
-#landing .col-lg-7,
-#landing .col-lg-5 {
+#landing .col-md-7,
+#landing .col-md-5 {
     display: flex;
 }
 
@@ -583,25 +583,25 @@ footer .nav-link img {
         font-weight: 500;
     }
     #left-bar {
-        width: 25px;
-        left: 17.5px;
-        top: 17.5px;
+        width: 35px;
+        left: 18px;
+        top: 60px;
         height: 0px;
     }
     #top-bar {
-        height: 25px;
-        top: 17.5px;
+        height: 35px;
+        top: 25px;
         right: 0px;
         animation-name: fill-horizontal-rect-small;
     }
     #right-bar {
-        width: 25px;
-        bottom: -17.5px;
+        width: 35px;
+        bottom: -60px;
         height: 0px;
     }
     #bottom-bar {
-        height: 25px;
-        bottom: -17.5px;
+        height: 35px;
+        bottom: -95px;
         left: 17.5px;
         animation-name: fill-horizontal-rect-small;
     }
@@ -609,16 +609,23 @@ footer .nav-link img {
         padding: 10px;
         padding-left: 6vw;
     }
-    #landing .col-lg-5 {
+    #landing .col-md-5 {
         display: flex;
     }
-    #landing .col-lg-5 img {
+    #landing .col-md-5 img {
         align-self: flex-end;
         flex: 0 0 90%;
-        margin-left: 5%;
+        margin: 80px auto 60px;
+        max-width: 325px;
     }
     #landing .bg-wrapper {
         border: 5px solid black;
+        outline: 5px solid black;
+        outline-offset: 35px;
+        top: 40px;
+        left: 40px;
+        width: calc(98vw - 80px);
+        height: calc(98vh - 80px);
     }
     #landing .bg-wrapper:before {
         border-top: 5px solid black;
@@ -640,6 +647,7 @@ footer .nav-link img {
         position: relative;
         padding: 10px;
         text-align: left;
+        left: 11px;
     }
     .landing-info-wrapper h4 {
         font-size: 1.5rem;
@@ -662,6 +670,9 @@ footer .nav-link img {
     }
     #top-nav-bar {
         padding-top: 45px !important;
+    }
+    .d-block-sm-none {
+        display: none !important;
     }
 }
 
