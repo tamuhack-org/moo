@@ -277,10 +277,9 @@ h1 {
     content: "";
     position: absolute;
     border-top: 7px solid black;
-    width: 110px;
-    right: -31px;
-    top: 75px;
-    transform: rotate(-45deg);
+    width: 75px;
+    right: -5px;
+    top: 70px;
     transform-origin: 0% 0%;
 }
 
@@ -288,9 +287,9 @@ h1 {
     content: "";
     position: absolute;
     border-top: 7px solid black;
-    width: 110px;
+    width: 75px;
     left: -5px;
-    transform: rotate(-45deg);
+    bottom: 70px;
     transform-origin: 0% 0%;
 }
 
@@ -313,35 +312,44 @@ h1 {
     width: calc(100% - 35px);
     height: 70px;
     background-color: #7FC0FA;
-    left: 35px;
+    right: 0px;
     top: 35px;
+    animation: fill-horizontal-rect 1s;
+    -webkit-animation: fill-horizontal-rect 1s forwards;
 }
 
 #left-bar {
     position: absolute;
-    height: 100%;
     width: 70px;
     top: 35px;
     left: 35px;
     background-color: #7FC0FA;
+    animation: fill-vertical-rect 1s forwards;
+    -webkit-animation: fill-vertical-rect 1s forwards;
+    animation-delay: 1s;
 }
 
 #bottom-bar {
     position: absolute;
-    width: calc(100% - 35px);
     background-color: #FF5482;
     left: 35px;
     height: 70px;
     bottom: -35px;
+    animation: fill-horizontal-rect 1s forwards;
+    -webkit-animation: fill-horizontal-rect 1s forwards;
+    animation-delay: 2s;
 }
 
 #right-bar {
     position: absolute;
     right: 0px;
-    height: 100%;
     width: 70px;
-    top: 35px;
+    bottom: -35px;
     background-color: #FF5482;
+    animation: fill-vertical-rect 1s forwards;
+    -webkit-animation: fill-vertical-rect 1s forwards;
+    animation-delay: 3s;
+    z-index: -1;
 }
 
 #landing .row {
@@ -482,7 +490,8 @@ footer .nav-link img {
     }
     #top-nav-bar {
         padding-top: 35px !important;
-        padding-right: 10vw !important;
+        padding-right: 15vw !important;
+        padding-left: 10vw !important;
     }
     .sponsor-container {
         margin: 0;
@@ -577,22 +586,24 @@ footer .nav-link img {
         width: 25px;
         left: 17.5px;
         top: 17.5px;
+        height: 0px;
     }
     #top-bar {
         height: 25px;
         top: 17.5px;
-        left: 17.5px;
-        width: calc(100% - 17.5px);
+        right: 0px;
+        animation-name: fill-horizontal-rect-small;
     }
     #right-bar {
         width: 25px;
-        top: 17.5px;
+        bottom: -17.5px;
+        height: 0px;
     }
     #bottom-bar {
         height: 25px;
         bottom: -17.5px;
         left: 17.5px;
-        width: calc(100% - 17.5px);
+        animation-name: fill-horizontal-rect-small;
     }
     #landing .row {
         padding: 10px;
@@ -611,13 +622,14 @@ footer .nav-link img {
     }
     #landing .bg-wrapper:before {
         border-top: 5px solid black;
-        width: 42px;
-        top: 28px;
-        right: -11px;
+        width: 30px;
+        top: 25px;
+        right: -5px;
     }
     #landing .bg-wrapper:after {
         border-top: 5px solid black;
-        width: 45px;
+        width: 30px;
+        bottom: 25px;
     }
     #landing .internal-wrapper {
         margin: 25px;
@@ -647,5 +659,35 @@ footer .nav-link img {
     #email-form button {
         padding: 7.5px !important;
         margin-top: 5px !important;
+    }
+    #top-nav-bar {
+        padding-top: 45px !important;
+    }
+}
+
+@keyframes fill-horizontal-rect {
+    from {
+        width: 0px;
+    }
+    to {
+        width: calc(100% - 35px);
+    }
+}
+
+@keyframes fill-vertical-rect {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes fill-horizontal-rect-small {
+    from {
+        width: 0px;
+    }
+    to {
+        width: calc(100% - 17.5px);
     }
 }
