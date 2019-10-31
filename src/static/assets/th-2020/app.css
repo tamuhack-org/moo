@@ -660,11 +660,11 @@ footer .nav-link img {
         margin: 0px !important;
     }
     #email-form .input-group-append,
-    #email-form button {
+    #email-form button, #email-form .btn {
         width: 100%;
         margin: 0px !important;
     }
-    #email-form button {
+    #email-form button, #email-form .btn {
         padding: 7.5px !important;
         margin-top: 5px !important;
     }
