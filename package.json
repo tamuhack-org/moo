@@ -1,41 +1,41 @@
 {
-  "name": "moo",
-  "version": "0.0.0",
-  "description": "",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
-  "files": [
-    "build/src"
-  ],
-  "license": "Apache-2.0",
-  "keywords": [],
-  "scripts": {
-    "compile": "tsc -p .",
-    "fix": "gts fix",
-    "start": "node build/src/app.js",
-    "copyfiles": "ts-node copyStaticAssets.ts",
-    "gcp-build": "DEL /S /Q build && tsc -p . && npm run copyfiles",
-    "deploy": "gcloud app deploy"
-  },
-  "devDependencies": {
-    "@types/ejs": "^2.6.3",
-    "@types/express": "^4.16.1",
-    "@types/hbs": "^4.0.1",
-    "@types/node": "^11.13.11",
-    "@types/request-promise": "^4.1.44",
-    "@types/shelljs": "^0.8.5",
-    "gts": "^0.9.0",
-    "ts-node": "^8.2.0",
-    "typescript": "~3.1.0"
-  },
-  "dependencies": {
-    "@google-cloud/datastore": "^3.1.2",
-    "ejs": "^2.6.1",
-    "express": "^4.17.1",
-    "hbs": "^4.0.4",
-    "pug": "^2.0.3",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "shelljs": "^0.8.3"
-  }
+    "name": "moo",
+    "version": "0.0.0",
+    "description": "",
+    "main": "build/src/index.js",
+    "types": "build/src/index.d.ts",
+    "files": [
+        "build/src"
+    ],
+    "license": "Apache-2.0",
+    "keywords": [],
+    "scripts": {
+        "compile": "tsc -p .",
+        "fix": "gts fix",
+        "start": "node build/src/app.js",
+        "copyfiles": "ts-node copyStaticAssets.ts",
+        "gcp-build": "rm -rf build/ && tsc -p . && npm run copyfiles",
+        "deploy": "gcloud app deploy"
+    },
+    "devDependencies": {
+        "@types/ejs": "^2.6.3",
+        "@types/express": "^4.16.1",
+        "@types/hbs": "^4.0.1",
+        "@types/node": "^11.13.11",
+        "@types/request-promise": "^4.1.44",
+        "@types/shelljs": "^0.8.5",
+        "gts": "^0.9.0",
+        "ts-node": "^8.2.0",
+        "typescript": "~3.1.0"
+    },
+    "dependencies": {
+        "@google-cloud/datastore": "^3.1.2",
+        "ejs": "^2.6.1",
+        "express": "^4.17.1",
+        "hbs": "^4.0.4",
+        "pug": "^2.0.3",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.4",
+        "shelljs": "^0.8.3"
+    }
 }

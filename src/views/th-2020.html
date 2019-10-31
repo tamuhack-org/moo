@@ -49,35 +49,45 @@
     <!--END Navbar-->
     <section>
         <section id="landing">
-            <div class="bg-wrapper"></div>
-        </section>
-        <!--BEGIN Email Form-->
-        <div class="container-fluid" style="margin-top: 40px">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <p id="email-tag">Sign up to be the first to get updates!</p>
-                </div>
-                <div class="col-md-7">
-                    <form class="form" action="/" id="email-form">
-                        <div class="input-group mb-3" id="before">
-                            <input name="email" type="text" class="form-control mr-2" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" />
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary signup-button" type="submit">
-                                    SUBMIT
-                                </button>
+            <div id="top-bar"></div>
+            <div id="left-bar"></div>
+            <div id="right-bar"></div>
+            <div id="bottom-bar"></div>
+            <div class="bg-wrapper">
+                <div class="internal-wrapper">
+                    <div class="row align-bottom">
+                        <div class="col-lg-5">
+                            <img src="/static/assets/th-2020/th20-landing-graphic.svg" id="landing-graphic">
+                        </div>
+                        <div class="col-lg-7 text-right">
+                            <div class="landing-info-wrapper">
+                                <div class="header-info">
+                                    <h4>January 25-26, 2020</h4>
+                                    <h4>Texas A&M University</h4>
+                                </div>
+                                <p id="email-tag">Sign up to be the first to get updates!</p>
+                                <form class="form" action="/" id="email-form">
+                                    <div class="input-group mb-3" id="before">
+                                        <input name="email" type="text" class="form-control mr-2" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" />
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary signup-button" type="submit">
+                                                            SUBMIT
+                                                        </button>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-danger form-message" role="alert" id="u_failed">
+                                        Email was not accepted. Try again!
+                                    </div>
+                                    <div class="alert alert-success form-message" role="alert" id="after">
+                                        All good! Expect to hear back from us soon!
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="alert alert-danger form-message" role="alert" id="u_failed">
-                            Email was not accepted. Try again!
-                        </div>
-                        <div class="alert alert-success form-message" role="alert" id="after">
-                            All good! Expect to hear back from us soon!
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- END Email Form -->
+        </section>
     </section>
     <section class="container-fluid pt-4" id="about">
         <div class="row">
@@ -88,7 +98,7 @@
                     food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!</p>
             </div>
             <div class="col-md-6">
-                <img src="/static/assets/th-2020/2020-graphic.svg" alt="TAMUhack logo" id="logo-2020">
+                <img src="/static/assets/th-2020/th20-graphic.svg" alt="TAMUhack logo" id="logo-2020">
             </div>
         </div>
     </section>
