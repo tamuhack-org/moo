@@ -282,7 +282,7 @@ h1 {
 
 #landing-graphic {
     flex: 0 0 110%;
-    margin-top: 62px;
+    margin-top: calc(500px - 28vw);
     margin-bottom: 62px;
     margin-left: 5vw;
     align-self: center;
