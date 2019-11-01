@@ -278,15 +278,14 @@ h1 {
     outline: 6px solid black;
     outline-offset: 70px;
     min-height: 552px;
+    display: flex;
 }
 
 #landing-graphic {
     flex: 0 0 110%;
-    margin-top: calc(500px - 28vw);
-    margin-bottom: 62px;
     margin-left: 5vw;
     align-self: center;
-    top:50%;
+    top: 50%;
 }
 
 #top-bar {
@@ -391,6 +390,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 /* Card Underline Coloring */
 
 .col-md-6:nth-of-type(1) .card:nth-of-type(2n) .card-title-underline {
@@ -460,7 +460,6 @@ footer {
     width: 100%;
     z-index: -2;
 }
-
 
 footer .nav-link {
     display: inline-block !important;
@@ -533,11 +532,12 @@ footer .nav-link img {
     .nav-link {
         display: inline-block;
     }
-
     #landing-graphic {
         transform: none;
         position: static;
         flex: 0 0 100%;
+        margin-top: calc(500px - 28vw);
+        margin-bottom: 62px;
         margin-left: 3vw;
     }
     #landing {
@@ -549,7 +549,7 @@ footer .nav-link img {
     #landing .col-lg-5 img {
         align-self: flex-end;
         flex: 0 0 90%;
-        margin:  60px auto auto;
+        margin: 60px auto auto;
         max-width: 500px;
     }
     #landing .bg-wrapper {
@@ -665,11 +665,13 @@ footer .nav-link img {
         margin: 0px !important;
     }
     #email-form .input-group-append,
-    #email-form button, #email-form .btn {
+    #email-form button,
+    #email-form .btn {
         width: 100%;
         margin: 0px !important;
     }
-    #email-form button, #email-form .btn {
+    #email-form button,
+    #email-form .btn {
         padding: 7.5px !important;
         margin-top: 5px !important;
     }
