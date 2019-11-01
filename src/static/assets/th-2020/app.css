@@ -32,7 +32,7 @@ h1 {
 
 #mlh-banner {
     position: absolute;
-    width: 90px;
+    width: 100px;
     right: calc(10vw);
     top: 0px;
 }
@@ -112,11 +112,11 @@ h1 {
 }
 
 #aa-logo {
-    width: 75%;
+    width: 60%;
 }
 
 #jpmc-logo {
-    max-width: 520px;
+    max-width: 510px;
 }
 
 #usaa-logo {
@@ -185,7 +185,7 @@ h1 {
 /* Top Navigation Section */
 
 .navbar {
-    margin: 0!important;
+    margin: 0 40px 0 0 !important;
     padding-left: 10vw!important;
     padding-right: 10vw!important;
 }
@@ -264,13 +264,14 @@ h1 {
 
 #landing {
     position: relative;
+    min-width: 332px;
 }
 
 #landing .bg-wrapper {
-    width: calc(98vw - 152px);
+    width: calc(98vw - 140px);
     left: 76px;
     top: 76px;
-    height: calc(92vh - 152px);
+    height: calc(92vh - 130px);
     margin: 0px;
     border: 6px solid black;
     position: relative;
@@ -278,26 +279,6 @@ h1 {
     outline-offset: 70px;
     min-height: 552px;
 }
-/* 
-#landing .bg-wrapper:before {
-    content: "";
-    position: absolute;
-    border-top: 6px solid black;
-    width: 96px;
-    right: -5px;
-    top: 43px;
-    transform-origin: 0% 0%;
-}
-
-#landing .bg-wrapper:after {
-    content: "";
-    position: absolute;
-    border-top: 6px solid black;
-    width: 75px;
-    left: -5px;
-    bottom: 84px;
-    transform-origin: 0% 0%;
-} */
 
 #landing-graphic {
     flex: 0 0 110%;
@@ -305,6 +286,7 @@ h1 {
     margin-bottom: 62px;
     margin-left: 5vw;
     align-self: center;
+    top:50%;
 }
 
 #top-bar {
@@ -312,21 +294,21 @@ h1 {
     width: calc(100% - 35px);
     height: 70px;
     background-color: #7FC0FA;
+    top: 25px;
     right: 0px;
-    top: 44px;
-    animation: fill-horizontal-rect 1s;
-    -webkit-animation: fill-horizontal-rect 1s forwards;
+    animation: fill-horizontal-rect 0.8s;
+    -webkit-animation: fill-horizontal-rect 0.8s forwards;
 }
 
 #left-bar {
     position: absolute;
     width: 70px;
-    top: 114px;
+    top: 95px;
     left: 35px;
     background-color: #7FC0FA;
-    animation: fill-vertical-rect 1s forwards;
-    -webkit-animation: fill-vertical-rect 1s forwards;
-    animation-delay: 1s;
+    animation: fill-vertical-rect 0.8s forwards;
+    -webkit-animation: fill-vertical-rect 0.8s forwards;
+    animation-delay: 0.8s;
 }
 
 #bottom-bar {
@@ -334,21 +316,21 @@ h1 {
     background-color: #FF5482;
     left: 35px;
     height: 70px;
-    bottom: -184px;
-    animation: fill-horizontal-rect 1s forwards;
-    -webkit-animation: fill-horizontal-rect 1s forwards;
-    animation-delay: 2s;
+    bottom: -165px;
+    animation: fill-horizontal-rect 0.8s forwards;
+    -webkit-animation: fill-horizontal-rect 0.8s forwards;
+    animation-delay: 1.6s;
 }
 
 #right-bar {
     position: absolute;
     right: 0px;
     width: 70px;
-    bottom: -114px;
+    bottom: -95px;
     background-color: #FF5482;
-    animation: fill-vertical-rect 1s forwards;
-    -webkit-animation: fill-vertical-rect 1s forwards;
-    animation-delay: 3s;
+    animation: fill-vertical-rect 0.8s forwards;
+    -webkit-animation: fill-vertical-rect 0.8s forwards;
+    animation-delay: 2.4s;
     z-index: -1;
 }
 
@@ -358,8 +340,8 @@ h1 {
     align-self: center;
 }
 
-#landing .col-md-7,
-#landing .col-md-5 {
+#landing .col-lg-7,
+#landing .col-lg-5 {
     display: flex;
 }
 
@@ -408,7 +390,6 @@ h1 {
     height: 9px;
     margin-bottom: 20px;
 }
-
 
 /* Card Underline Coloring */
 
@@ -465,11 +446,21 @@ input.form-control {
 }
 
 footer {
-    margin-top: 200px;
-    background-color: #F8658C;
-    padding: 15px 10vw;
+    border: 5px solid black;
+    padding: 20px 10vw 10px;
     width: 100%;
 }
+
+.black-box {
+    background-color: #FF5482;
+    position: relative;
+    height: 75px;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}
+
 
 footer .nav-link {
     display: inline-block !important;
@@ -542,9 +533,7 @@ footer .nav-link img {
     .nav-link {
         display: inline-block;
     }
-}
 
-@media(max-width: 992px) {
     #landing-graphic {
         transform: none;
         position: static;
@@ -553,6 +542,53 @@ footer .nav-link img {
     }
     #landing {
         margin-bottom: 100px;
+    }
+    #landing .col-lg-5 {
+        display: flex;
+    }
+    #landing .col-lg-5 img {
+        align-self: flex-end;
+        flex: 0 0 90%;
+        margin:  60px auto auto;
+        max-width: 500px;
+    }
+    #landing .bg-wrapper {
+        border: 5px solid black;
+        outline: 5px solid black;
+        outline-offset: 35px;
+        top: 40px;
+        left: 40px;
+        width: calc(98vw - 80px);
+        height: calc(98vh - 80px);
+    }
+    #left-bar {
+        width: 35px;
+        left: 18px;
+        top: 60px;
+        height: 0px;
+    }
+    #top-bar {
+        height: 35px;
+        top: 25px;
+        right: 0px;
+        animation-name: fill-horizontal-rect-small;
+    }
+    #right-bar {
+        width: 35px;
+        bottom: -60px;
+        height: 0px;
+    }
+    #bottom-bar {
+        height: 35px;
+        bottom: -95px;
+        left: 17.5px;
+        animation-name: fill-horizontal-rect-small;
+    }
+    .landing-info-wrapper .header-info {
+        margin-bottom: 20px;
+    }
+    .landing-info-wrapper h4 {
+        font-size: 1.5rem;
     }
 }
 
@@ -609,51 +645,20 @@ footer .nav-link img {
         padding: 10px;
         padding-left: 6vw;
     }
-    #landing .col-md-5 {
-        display: flex;
-    }
-    #landing .col-md-5 img {
-        align-self: flex-end;
-        flex: 0 0 90%;
-        margin: 80px auto 60px;
-        max-width: 325px;
-    }
-    #landing .bg-wrapper {
-        border: 5px solid black;
-        outline: 5px solid black;
-        outline-offset: 35px;
-        top: 40px;
-        left: 40px;
-        width: calc(98vw - 80px);
-        height: calc(98vh - 80px);
-    }
-    #landing .bg-wrapper:before {
-        border-top: 5px solid black;
-        width: 30px;
-        top: 25px;
-        right: -5px;
-    }
-    #landing .bg-wrapper:after {
-        border-top: 5px solid black;
-        width: 30px;
-        bottom: 25px;
-    }
-    #landing .internal-wrapper {
-        margin: 25px;
-        border: 5px solid black;
-        width: calc(100% - 50px);
-    }
     .landing-info-wrapper {
         position: relative;
         padding: 10px;
         text-align: left;
-        left: 11px;
     }
     .landing-info-wrapper h4 {
         font-size: 1.5rem;
     }
     .landing-info-wrapper .header-info {
         margin-bottom: 0px;
+    }
+    #landing .col-lg-5 img {
+        max-width: 325px;
+        margin: 80px auto 60px;
     }
     #email-form input {
         width: 100%;
@@ -673,6 +678,28 @@ footer .nav-link img {
     }
     .d-block-sm-none {
         display: none !important;
+    }
+    input.form-control {
+        padding: 22px 14px;
+    }
+    #top-nav-bar div .main-nav-ui li>a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    #landing .row {
+        width: auto;
+    }
+    .landing-info-wrapper h4,
+    #email-tag {
+        font-size: 1.0rem;
+    }
+    #landing .col-lg-5 img {
+        margin-bottom: 30px;
+    }
+    input[type=email] {
+        font-size: 14px;
     }
 }
 
