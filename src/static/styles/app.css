@@ -70,6 +70,31 @@ h5 a i:hover {
     visibility: hidden;
 }
 
+.toast {
+    background-color: #FF7C93;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.toast:hover {
+    background-color: #D47082;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.fixed-top {
+    top: 40px!important;
+}
 
 /*For the scrolling href elements */
 
@@ -343,6 +368,9 @@ header{
     border-color: #FF7C93;
     color: white;
     font-weight: bolder;
+}
+.signup-button:hover {
+    background-color: #D47082;
 }
 
 .form-message {
