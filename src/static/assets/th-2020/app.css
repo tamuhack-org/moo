@@ -161,6 +161,11 @@ h1 {
     max-width: 250px;
 }
 
+#exxon-logo {
+    margin-top: 50px;
+    max-width: 200px;
+}
+
 #tamu-csce-logo {
     max-width: 300px;
 }
@@ -175,6 +180,10 @@ h1 {
 
 #kind-logo {
     max-width: 125px;
+}
+
+#gogosqueez-logo {
+    max-width: 170px;
 }
 
 #redbull-logo {
@@ -686,6 +695,9 @@ footer .nav-link img {
     }
     #top-nav-bar div .main-nav-ui li>a {
         font-size: 14px;
+    }
+    #exxon-logo {
+        margin-top: 38px;
     }
 }
 
