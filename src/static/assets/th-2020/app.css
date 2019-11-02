@@ -162,6 +162,7 @@ h1 {
 }
 
 #exxon-logo {
+    margin-top: 50px;
     max-width: 200px;
 }
 
@@ -694,6 +695,9 @@ footer .nav-link img {
     }
     #top-nav-bar div .main-nav-ui li>a {
         font-size: 14px;
+    }
+    #exxon-logo {
+        margin-top: 38px;
     }
 }
 
