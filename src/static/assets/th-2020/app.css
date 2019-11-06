@@ -100,6 +100,7 @@ h1 {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    width: 100%;
 }
 
 .sponsor-logo-lg:hover,
@@ -162,7 +163,19 @@ h1 {
 }
 
 #exxon-logo {
-    max-width: 200px;
+    max-width: 250px;
+}
+
+#wolfram-logo {
+    max-width: 250px;
+}
+
+#contrary-logo {
+    max-width: 250px;
+}
+
+#tamu-sustainability-logo {
+    max-width: 100px;
 }
 
 #tamu-csce-logo {
@@ -179,6 +192,10 @@ h1 {
 
 #kind-logo {
     max-width: 125px;
+}
+
+#mlh-logo {
+    max-width: 200px;
 }
 
 #gogosqueez-logo {
@@ -694,6 +711,9 @@ footer .nav-link img {
     }
     #top-nav-bar div .main-nav-ui li>a {
         font-size: 14px;
+    }
+    #aa-logo {
+        width: 90%;
     }
 }
 
