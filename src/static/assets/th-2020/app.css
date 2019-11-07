@@ -616,6 +616,9 @@ footer .nav-link img {
     .landing-info-wrapper h4 {
         font-size: 1.5rem;
     }
+    footer {
+        margin-top: 12px;
+    }
 }
 
 @media (max-width: 776px) {
