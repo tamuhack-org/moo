@@ -96,10 +96,11 @@ h1 {
 .sponsor-logo-md,
 .sponsor-logo-sm {
     transition: 0.5s;
-    margin: 30px 0;
+    margin: 40px 0;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    width: 100%;
 }
 
 .sponsor-logo-lg:hover,
@@ -129,7 +130,7 @@ h1 {
 
 #pwc-logo {
     max-width: 125px;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 #gartner-logo {
@@ -162,8 +163,20 @@ h1 {
 }
 
 #exxon-logo {
-    margin-top: 50px;
-    max-width: 200px;
+    max-width: 250px;
+    margin-top: 55px;
+}
+
+#wolfram-logo {
+    max-width: 250px;
+}
+
+#contrary-logo {
+    max-width: 250px;
+}
+
+#tamu-sustainability-logo {
+    max-width: 80px;
 }
 
 #tamu-csce-logo {
@@ -180,6 +193,10 @@ h1 {
 
 #kind-logo {
     max-width: 125px;
+}
+
+#mlh-logo {
+    max-width: 150px;
 }
 
 #gogosqueez-logo {
@@ -599,6 +616,13 @@ footer .nav-link img {
     .landing-info-wrapper h4 {
         font-size: 1.5rem;
     }
+    footer {
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+    .black-box {
+        height: 70px;
+    }
 }
 
 @media (max-width: 776px) {
@@ -696,8 +720,8 @@ footer .nav-link img {
     #top-nav-bar div .main-nav-ui li>a {
         font-size: 14px;
     }
-    #exxon-logo {
-        margin-top: 38px;
+    #aa-logo {
+        width: 90%;
     }
 }
 
