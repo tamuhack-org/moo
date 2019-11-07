@@ -196,7 +196,7 @@ h1 {
 }
 
 #mlh-logo {
-    max-width: 170px;
+    max-width: 150px;
 }
 
 #gogosqueez-logo {
@@ -617,7 +617,11 @@ footer .nav-link img {
         font-size: 1.5rem;
     }
     footer {
-        margin-top: 12px;
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+    .black-box {
+        height: 70px;
     }
 }
 
