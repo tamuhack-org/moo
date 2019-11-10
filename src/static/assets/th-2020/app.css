@@ -619,6 +619,8 @@ footer .nav-link img {
     footer {
         margin-top: 5px;
         padding-top: 10px;
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
     .black-box {
         height: 70px;
