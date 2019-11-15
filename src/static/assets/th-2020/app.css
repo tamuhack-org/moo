@@ -154,6 +154,10 @@ h1 {
     max-width: 250px;
 }
 
+#statefarm-logo {
+    max-width: 250px;
+}
+
 #msft-logo {
     max-width: 250px;
 }
@@ -164,7 +168,12 @@ h1 {
 
 #exxon-logo {
     max-width: 250px;
-    margin-top: 55px;
+    margin-top: 45px;
+}
+
+#bh-logo {
+    max-width: 260px;
+    margin-top: 35px;
 }
 
 #wolfram-logo {
@@ -392,7 +401,15 @@ h1 {
     color: white;
     font-weight: bolder;
     border-radius: 3px !important;
-    padding: 0 40px !important;
+    padding: 0 80px !important;
+}
+
+#mc_embed_signup {
+    overflow: hidden;
+}
+
+#th-apply {
+    float: right;
 }
 
 .form-message {
@@ -740,6 +757,11 @@ footer .nav-link img {
     }
     input[type=email] {
         font-size: 14px;
+    }
+    #th-apply {
+        width: 100%;
+        padding: 0px !important;
+        float: left;
     }
 }
 
