@@ -416,23 +416,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-
-/* Card Underline Coloring */
-
-.col-md-6:nth-of-type(1) .card:nth-of-type(2n) .card-title-underline {
+.purple{
     background-color: #6F85FB;
 }
 
-.col-md-6:nth-of-type(1) .card:nth-of-type(2n + 1) .card-title-underline {
+.pink{
     background-color: #FF5482;
 }
 
-.col-md-6:nth-of-type(2) .card:nth-of-type(2n) .card-title-underline {
+.blue{
     background-color: #7FC0FA;
-}
-
-.col-md-6:nth-of-type(2) .card:nth-of-type(2n+1) .card-title-underline {
-    background-color: #6F85FB;
 }
 
 
@@ -724,6 +717,18 @@ footer .nav-link img {
     }
     #aa-logo {
         width: 90%;
+    }
+
+    .mb-purple{
+        background-color: #6F85FB;
+    }
+    
+    .mb-pink{
+        background-color: #FF5482;
+    }
+    
+    .mb-blue{
+        background-color: #7FC0FA;
     }
 }
 
