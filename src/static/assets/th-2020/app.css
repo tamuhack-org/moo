@@ -154,6 +154,10 @@ h1 {
     max-width: 250px;
 }
 
+#statefarm-logo {
+    max-width: 250px;
+}
+
 #msft-logo {
     max-width: 250px;
 }
@@ -164,7 +168,28 @@ h1 {
 
 #exxon-logo {
     max-width: 250px;
-    margin-top: 55px;
+    margin-top: 45px;
+}
+
+#bh-logo {
+    max-width: 270px;
+    margin-top: 35px;
+}
+
+#gcp-logo {
+    max-width: 220px;
+}
+
+#pathrise-logo {
+    max-width: 220px;
+}
+
+#tamu-sec-logo {
+    -webkit-filter: invert(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
+    max-width: 120px;
+    margin-top: 30px;
 }
 
 #wolfram-logo {
@@ -173,6 +198,11 @@ h1 {
 
 #contrary-logo {
     max-width: 250px;
+}
+
+#voiceflow-logo {
+    margin-top:50px;
+    max-width: 200px;
 }
 
 #tamu-sustainability-logo {
@@ -201,6 +231,11 @@ h1 {
 
 #gogosqueez-logo {
     max-width: 170px;
+    margin-top: 30px;
+}
+
+#piada-logo {
+    max-width: 220px;
 }
 
 #redbull-logo {
@@ -392,7 +427,15 @@ h1 {
     color: white;
     font-weight: bolder;
     border-radius: 3px !important;
-    padding: 0 40px !important;
+    padding: 0 80px !important;
+}
+
+#mc_embed_signup {
+    overflow: hidden;
+}
+
+#th-apply {
+    float: right;
 }
 
 .form-message {
@@ -745,6 +788,11 @@ footer .nav-link img {
     }
     input[type=email] {
         font-size: 14px;
+    }
+    #th-apply {
+        width: 100%;
+        padding: 0px !important;
+        float: left;
     }
 }
 
