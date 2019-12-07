@@ -14,6 +14,9 @@ import howdyHackRouter from "./routes/hh";
 import { workshopRoute } from "./routes/workshop";
 import tamuHackRouter from "./routes/th";
 
+import { mentorRoute } from "./routes/mentor";
+import { volunteerRoute } from "./routes/volunteer";
+
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -34,6 +37,9 @@ app.get("/slack", slackRoute);
 app.get("/demo", demoRoute);
 app.get("/facebook", facebookRoute);
 app.post("/email", emailRoute);
+
+app.get("/mentor", mentorRoute);
+app.get("/volunteer", volunteerRoute);
 
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}`);

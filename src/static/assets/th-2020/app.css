@@ -176,12 +176,33 @@ h1 {
     margin-top: 35px;
 }
 
+#gcp-logo {
+    max-width: 220px;
+}
+
+#pathrise-logo {
+    max-width: 220px;
+}
+
+#tamu-sec-logo {
+    -webkit-filter: invert(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
+    max-width: 120px;
+    margin-top: 30px;
+}
+
 #wolfram-logo {
     max-width: 250px;
 }
 
 #contrary-logo {
     max-width: 250px;
+}
+
+#voiceflow-logo {
+    margin-top:50px;
+    max-width: 200px;
 }
 
 #tamu-sustainability-logo {
@@ -210,6 +231,11 @@ h1 {
 
 #gogosqueez-logo {
     max-width: 170px;
+    margin-top: 30px;
+}
+
+#piada-logo {
+    max-width: 220px;
 }
 
 #redbull-logo {
