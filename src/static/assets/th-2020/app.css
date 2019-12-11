@@ -323,6 +323,17 @@ h1 {
     border: 1px solid #AAAAAA;
 }
 
+#volunteer-mentor-tag{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+#volunteer-mentor-tag .volunteer{
+    color: #6F85FB;
+}
+#volunteer-mentor-tag .mentor{
+    color: #FF5482;
+}
+
 #landing {
     position: relative;
     min-width: 332px;
@@ -428,6 +439,7 @@ h1 {
     font-weight: bolder;
     border-radius: 3px !important;
     padding: 0 80px !important;
+    font-size: 1.5rem;
 }
 
 #mc_embed_signup {
@@ -660,6 +672,9 @@ footer .nav-link img {
     }
     .black-box {
         height: 70px;
+    }
+    .signup-button{
+        width: 100px;
     }
 }
 
