@@ -1,17 +1,17 @@
-import { Request, Response, Router } from "express";
+import {Request, Response, Router} from 'express';
 
-let howdyHackRouter = Router();
+const howdyHackRouter = Router();
 
 howdyHackRouter.get('/', async (req: Request, res: Response) => {
-    res.render("hh-2019.html");
+  res.render('hh-2019.html');
 });
 
 howdyHackRouter.get('/2018', async (req: Request, res: Response) => {
-    res.render("hh-2018.html");
+  res.render('hh-2018.html');
 });
 
 howdyHackRouter.get('/2019', async (req: Request, res: Response) => {
-    res.redirect('/hh');
+  res.redirect('/hh');
 });
 
-export default howdyHackRouter;
+export {howdyHackRouter};
