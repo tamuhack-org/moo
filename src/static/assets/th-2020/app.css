@@ -608,9 +608,6 @@ footer .nav-link img {
     #bp-logo {
         margin-top: 0px;
     }
-    #jpmc-logo {
-        width: 70%;
-    }
     #usaa-logo{
         max-width: 90px;
     }
@@ -822,6 +819,15 @@ footer .nav-link img {
     }
     #aa-logo {
         width: 90%;
+    }
+    #jpmc-logo {
+        width: 70%;
+    }
+    #usaa-logo{
+        margin-bottom: 10px;
+    }
+    #jpmc-logo{
+        margin: 20px 0;
     }
 
     .mb-purple{
