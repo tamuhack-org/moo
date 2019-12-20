@@ -118,13 +118,16 @@ h1 {
 
 #jpmc-logo {
     width: 50%;
+    margin-bottom: 20px;
 }
 
 #usaa-logo {
     max-width: 125px;
+    margin-bottom: 50px;
 }
 #hpe-logo{
     max-width: 300px;
+    margin-bottom: 50px;
 }
 
 #southwest-logo {
