@@ -674,7 +674,8 @@ footer .nav-link img {
         height: 70px;
     }
     .signup-button{
-        width: 100px;
+        padding: 0px 30px !important;
+        font-size: 1.25rem;
     }
 }
 
