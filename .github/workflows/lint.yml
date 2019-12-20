@@ -1,0 +1,28 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  lint:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install, compile, and lint
+        run: |
+          npm i
+          npm run gcp-build
+          npm i -g typescript
+          npm i -g tslint
+          tslint -c tslint.json 'src/**/*.ts'
+        env:
+          CI: true
