@@ -117,11 +117,14 @@ h1 {
 }
 
 #jpmc-logo {
-    max-width: 510px;
+    width: 50%;
 }
 
 #usaa-logo {
-    max-width: 100px;
+    max-width: 125px;
+}
+#hpe-logo{
+    max-width: 300px;
 }
 
 #southwest-logo {
@@ -603,7 +606,13 @@ footer .nav-link img {
         margin-top: 0px;
     }
     #jpmc-logo {
-        max-width: 300px;
+        width: 70%;
+    }
+    #usaa-logo{
+        max-width: 90px;
+    }
+    #hpe-logo{
+        max-width: 225px;
     }
     #about {
         margin-top: 20px;
