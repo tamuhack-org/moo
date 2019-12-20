@@ -349,7 +349,7 @@ h1 {
     position: relative;
     outline: 6px solid black;
     outline-offset: 70px;
-    min-height: 552px;
+    min-height: 650px;
     display: flex;
 }
 
@@ -449,6 +449,29 @@ h1 {
 #th-apply {
     float: right;
 }
+#th-mentor, #th-volunteer{
+    display: inline-block;
+}
+
+.mentor-button, .volunteer-button{
+    font-size: 1.4rem;
+    border: 2px solid black !important;
+    margin: 5px 10px;
+}
+
+.volunteer-button{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+.mentor-button{
+    color: black;
+}
+
+.volunteer-button:hover{
+    border-color: #6c757d !important;
+}
+
 
 .form-message {
     display: none;
@@ -676,6 +699,9 @@ footer .nav-link img {
     .signup-button{
         width: 100px;
     }
+    .mentor-button, .volunteer-button{
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 776px) {
@@ -787,6 +813,9 @@ footer .nav-link img {
     
     .mb-blue{
         background-color: #7FC0FA;
+    }
+    .mentor-button, .volunteer-button{
+        font-size: 1.1rem;
     }
 }
 
