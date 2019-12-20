@@ -444,19 +444,28 @@ h1 {
 
 #mc_embed_signup {
     overflow: hidden;
+    margin-left: auto; 
+    margin-right: -10px; 
+    display: flex; 
+    max-width: 500px;
+    flex-wrap: wrap;
 }
 
 #th-apply {
     float: right;
 }
 #th-mentor, #th-volunteer{
-    display: inline-block;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .mentor-button, .volunteer-button{
     font-size: 1.4rem;
-    border: 2px solid black !important;
+    border: 4px solid black !important;
     margin: 5px 10px;
+    width: 100%;
+    font-weight: 600;
 }
 
 .volunteer-button{
@@ -468,7 +477,7 @@ h1 {
     color: black;
 }
 
-.volunteer-button:hover{
+.volunteer-button:hover, .mentor-button:hover{
     border-color: #6c757d !important;
 }
 
@@ -814,6 +823,10 @@ footer .nav-link img {
     .mb-blue{
         background-color: #7FC0FA;
     }
+    #mc_embed_signup{
+        margin-left: -10px;
+        margin-right: auto;
+    }
     .mentor-button, .volunteer-button{
         font-size: 1.1rem;
     }
@@ -837,6 +850,13 @@ footer .nav-link img {
         width: 100%;
         padding: 0px !important;
         float: left;
+    }
+    #mc_embed_signup{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #th-volunteer, #th-mentor{
+        flex: 0 0 100%;
     }
 }
 
