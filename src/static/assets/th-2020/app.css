@@ -236,7 +236,7 @@ h1 {
 }
 
 #stickermule-logo{
-    max-width: 325px;
+    max-width: 320px;
 }
 
 #gogosqueez-logo {
@@ -833,6 +833,9 @@ footer .nav-link img {
     }
     #jpmc-logo{
         margin: 20px 0;
+    }
+    #mlh-logo{
+        max-width: 100px;
     }
 
     .mb-purple{
