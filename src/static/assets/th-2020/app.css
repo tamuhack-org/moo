@@ -117,8 +117,8 @@ h1 {
 }
 
 #jpmc-logo {
-    width: 50%;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin-bottom: 50px;
 }
 
 #usaa-logo {
@@ -827,12 +827,7 @@ footer .nav-link img {
     }
     #jpmc-logo {
         width: 70%;
-    }
-    #usaa-logo{
-        margin-bottom: 10px;
-    }
-    #jpmc-logo{
-        margin: 20px 0;
+        margin-left: auto !important;
     }
     #mlh-logo{
         max-width: 100px;
