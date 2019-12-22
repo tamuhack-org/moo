@@ -117,8 +117,8 @@ h1 {
 }
 
 #jpmc-logo {
-    width: 50%;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin-bottom: 50px;
 }
 
 #usaa-logo {
@@ -233,6 +233,10 @@ h1 {
 
 #mlh-logo {
     max-width: 150px;
+}
+
+#stickermule-logo{
+    max-width: 320px;
 }
 
 #gogosqueez-logo {
@@ -823,12 +827,10 @@ footer .nav-link img {
     }
     #jpmc-logo {
         width: 70%;
+        margin-left: auto !important;
     }
-    #usaa-logo{
-        margin-bottom: 10px;
-    }
-    #jpmc-logo{
-        margin: 20px 0;
+    #mlh-logo{
+        max-width: 100px;
     }
 
     .mb-purple{
