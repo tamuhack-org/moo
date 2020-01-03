@@ -535,14 +535,14 @@ h1 {
 }
 
 #schedule .schedule-item-time{
-    flex: 0 0 115px;
+    flex: 0 0 108px;
     font-size: 1.1rem;
     margin: 20px 0;
     font-weight: bolder;
 }
 
 #schedule .schedule-item-title{
-    flex: 0 0 calc(100% - 160px);
+    flex: 0 0 calc(100% - 153px);
     font-size: 1.1rem;
     margin: 20px 0;
 }
@@ -552,7 +552,7 @@ h1 {
     flex: 0 0 45px;
 }
 
-#schedule .dot{
+#schedule .dot, .legend-dot{
     height: 15px;
     width: 15px;
     background-color: #231F1B;
@@ -562,6 +562,42 @@ h1 {
     top: 25px;
     transform: translateX(-50%);
     display: inline-block;
+}
+
+#schedule-legend{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    max-width: 600px;
+    border-radius: 5px;
+    margin: 40px 15px 0px 15px;
+}
+
+.legend-item{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+#schedule-legend p{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 20px 10px 20px 0px;
+}
+
+.legend-dot-container{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.legend-dot{
+    position: static;
+    display: inline-block;
+    margin: 20px 0px;
 }
 
 .workshop-event .dot{
@@ -579,7 +615,7 @@ h1 {
     left: calc(50% - 2px) !important;
 }
 
-.workshop-event .dot:after, .food-event .dot:after, .mini-event .dot:after{
+.workshop-event .dot:after, .food-event .dot:after, .mini-event .dot:after, .legend-dot:after{
     content: "";
     height: 15px;
     width: 15px;
