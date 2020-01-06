@@ -704,6 +704,28 @@ footer .nav-link img {
     height: 20px;
 }
 
+.parking-card {
+    margin-bottom: 20px;
+}
+
+.parking-card h6 {
+    font-size: 20px;
+}
+
+.parking-card a {
+    color: #232323;
+    text-decoration: underline;
+    margin: 5px 0;
+    display: block;
+}
+.parking-card a:hover {
+    color: #777;
+    transition: 0.3s;
+}
+.parking-card p {
+    font-size: 14px;
+    line-height: 17px;
+}
 
 /*--------------------------------------*/
 
@@ -969,6 +991,9 @@ footer .nav-link img {
     }
     .mentor-button, .volunteer-button{
         font-size: 1.1rem;
+    }
+    .parking-card h6 {
+        font-size: 16px;
     }
 }
 
