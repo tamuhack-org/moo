@@ -496,6 +496,10 @@ h1 {
     display: none;
 }
 
+.faq-card{
+    cursor: pointer;
+}
+
 .card {
     padding: 8px;
     border: 1px solid #AAA;
@@ -510,7 +514,10 @@ h1 {
 .title-underline {
     width: 60px;
     height: 9px;
-    margin-bottom: 20px;
+}
+
+.faq-ans > p:nth-child(1){
+    margin-top: 1.25rem;
 }
 
 .purple{
@@ -1023,6 +1030,9 @@ footer .nav-link img {
     #th-volunteer, #th-mentor{
         flex: 0 0 100%;
     }
+    .plusminus{
+        top: 30px;
+    }
 }
 
 @keyframes fill-horizontal-rect {
@@ -1051,3 +1061,43 @@ footer .nav-link img {
         width: calc(100% - 17.5px);
     }
 }
+
+
+.plusminus {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    width: 15px;
+    height: 15px;
+    /* Vertical line */
+    /* horizontal line */
+  }
+  .plusminus:before, .plusminus:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    transition: transform 0.25s ease-out;
+  }
+  .plusminus:before {
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    margin-left: -1.5px;
+  }
+  .plusminus:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: -1.5px;
+  }
+  .plusminus:hover {
+    cursor: pointer;
+  }
+  .plusminus-clicked:before {
+    transform: rotate(90deg);
+  }
+  .plusminus-clicked:after {
+    transform: rotate(180deg);
+  }
