@@ -514,6 +514,11 @@ h1 {
 .title-underline {
     width: 60px;
     height: 9px;
+    margin-bottom: 20px;
+}
+
+.faq-card .title-underline{
+    margin-bottom: 0px;
 }
 
 .faq-ans > p:nth-child(1){
