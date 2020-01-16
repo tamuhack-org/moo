@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--BEGIN Metadata-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="TAMUhack" />
+    <meta property="og:image" content="https://tamuhack.com/static/assets/ogimage.jpg" />
+    <meta property="og:url" content="https://tamuhack.com" />
+    <meta property="og:description" content="At TAMUhack, teams spend the weekend working on 
+          innovative software and hardware solutions to real-world problems in a community full of mentorship." />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/assets/th-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/assets/th-2020/live-app.css" />
+    <title>TAMUhack 2020</title>
+</head>
+<!--END Metadata-->
+
+<body>
+    <!--BEGIN Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light" id="top-nav-bar">
+        <a class="navbar-brand" href="/">
+            <img src="/static/assets/th-2020/th_bw.svg" class="th-logo" alt="" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav main-nav-ui">
+                <li class="nav-item">
+                    <a class="nav-link" href="#map">INFO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule">SCHEDULE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resources">RESOURCES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prizes">PRIZES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://mlh.io/seasons/na-2020/events" target="_blank" id="mlh-banner-tag"><img src="/static/assets/th-2020/sns/mlh-banner.svg" id="mlh-banner"></a>
+    </nav>
+    <!--END Navbar-->
+    <!-- Landing -->
+    <section id="landing">
+        <div id="top-bar"></div>
+        <div id="left-bar"></div>
+        <div id="right-bar"></div>
+        <div id="bottom-bar"></div>
+        <div class="bg-wrapper">
+            <div class="row align-bottom">
+                <div class="col-lg-5">
+                    <img src="/static/assets/th-2020/th20-landing-graphic.svg" id="landing-graphic">
+                </div>
+                <div class="col-lg-7 text-right">
+                    <div class="landing-info-wrapper">
+                        <div class="header-info">
+                            <h4>January 25-26, 2020</h4>
+                            <h4>Texas A&M University</h4>
+                        </div>
+                        <div class="button-container">
+                            <a>
+                                <div class="devpost-button dark-button mt-3">
+                                    <p>DEVPOST</p>
+                                </div>  
+                            </a>
+                            <a>
+                                <div class="mentor-button light-button mt-3">
+                                    <p>MENTORSHIP</p>
+                                </div>
+                            </a>
+                        </div>
+                        <p id="email-tag">Connect with hackers!</p>
+                        <div class="social-media-container">
+                            <a>
+                                <div class="social-media-item">
+                                    <i class="fab fa-slack fa-2x"></i>
+                                </div>
+                            </a>
+                            <a>
+                                <div class="social-media-item">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--End mc_embed_signup-->
+                        <!--original placeholder signup form starts here
+                        <form class="form" action="/" id="email-form">
+                            <div class="input-group mb-3" id="before">
+                                <input name="email" type="text" class="form-control mr-2" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary signup-button" type="submit">
+                                                    SUBMIT
+                                                </button>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger form-message" role="alert" id="u_failed">
+                                Email was not accepted. Try again!
+                            </div>
+                            <div class="alert alert-success form-message" role="alert" id="after">
+                                All good! Expect to hear back from us soon!
+                            </div>
+                        </form>-->
+                        <!-- <p id="volunteer-mentor-tag">Become a <a class="volunteer" href="/volunteer">Volunteer</a> or a <a class="mentor" href="/mentor">Mentor</a>!</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Landing-->
+    <div class="d-block-sm-none">
+        <br><br><br><br><br>
+    </div>
+    <section class="container-fluid pt-4" id="map">
+        <h1 class="mt-4 mb-5">Event Information</h1>
+        <h4 class="card-title">Parking</h4>
+        <div class="title-underline purple mb-purple"></div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="parking-card">
+                    <h6>Lot 61</h6>
+                    <a target="_blank" href="https://www.google.com/maps/place/Lot+61/@30.6087605,-96.3496686,16z/data=!4m5!3m4!1s0x864683a203846fb7:0x3db1f555f87a4265!8m2!3d30.6095613!4d-96.3455312">
+                        133-155 John Kimbrough Blvd, College Station, TX 77840
+                    </a>
+                    <p>*Free in unmarked spaces EXCEPT Saturday, 12:30PM - 3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="parking-card">
+                    <h6>Lot 74</h6>
+                    <a target="_blank" href="https://www.google.com/maps/place/Lot+74/@30.6088938,-96.3490563,18z/data=!3m1!4b1!4m5!3m4!1s0x864683a15e4b1c31:0x3ad7046e2458afe6!8m2!3d30.6088938!4d-96.347962">
+                        730 Olsen Blvd, College Station, TX 77845
+                    </a>
+                    <p>*Free in unmarked spaces</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="parking-card">
+                    <h6>Lot 97</h6>
+                    <a target="_blank" href="https://www.google.com/maps/place/Lot+97/@30.6068371,-96.3494986,17z/data=!4m5!3m4!1s0x864683a130c6f97f:0xf20e4972fdacaefe!8m2!3d30.6071998!4d-96.348628">
+                        600 John Kimbrough Blvd, College Station, TX 77845
+                    </a>
+                    <p>*Free in unmarked spaces</p>
+                </div>
+            </div>
+        </div>
+        <h4 class="card-title mt-4">Venue</h4>
+        <div class="title-underline blue mb-blue"></div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="parking-card">
+                    <h6>Memorial Student Center</h6>
+                    <a target="_blank" href="https://www.google.com/maps/place/Memorial+Student+Center/@30.6124134,-96.3412159,17.13z/data=!4m5!3m4!1s0x8646839854d18149:0x90311327f8c2221d!8m2!3d30.6123103!4d-96.3413076">
+                        730 Olsen Blvd, College Station, TX 77845
+                    </a> 
+                    <a target="_blank" href="/static/assets/th-2020/msc_map.png">View Building Map</a>
+                    <p>*Main hacking location will be in the Bethancourt Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pt-5 pb-5" id="schedule">
+        <h1 style="margin: 0px">Schedule</h1>
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h3>Saturday</h3>
+                <div class="title-underline" style="background-color: #7FC0FA"></div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">9:00 AM</div>
+                    <div class="col-md dot-container">
+                        <div class="top-vline vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Doors Open, Check-In Starts</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">11:00 AM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Opening Ceremony</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">11:00 AM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Walk-In Check-In Starts</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">12:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Hacking Begins</div>
+                </div>
+                <div class="row workshop-event">
+                    <div class="col-md schedule-item-time">12:15 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Team Formation</div>
+                </div>
+                <div class="row food-event">
+                    <div class="col-md schedule-item-time">1:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Lunch</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">1:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">All Check-In Ends</div>
+                </div>
+                <div class="row mini-event">
+                    <div class="col-md schedule-item-time">1:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Meet & Greet with Miss Reveille</div>
+                </div>
+                <div class="row workshop-event">
+                    <div class="col-md schedule-item-time">1:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Hackathons 101</div>
+                </div>
+                <div class="row workshop-event">
+                    <div class="col-md schedule-item-time">1:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Three Powerful Google Cloud Products for Your Project</div>
+                </div>
+                <div class="row workshop-event">
+                    <div class="col-md schedule-item-time">2:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Introduction to Contrary Capital Challenge</div>
+                </div>
+                <div class="row mini-event">
+                    <div class="col-md schedule-item-time">6:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">So You Think You Can Fly?</div>
+                </div>
+                <div class="row food-event">
+                    <div class="col-md schedule-item-time">7:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Dinner</div>
+                </div>
+                <div class="row workshop-event">
+                    <div class="col-md schedule-item-time">7:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Ladies Storm Hackathon/WiCS Meet-Up</div>
+                </div>
+                <div class="row mini-event">
+                    <div class="col-md schedule-item-time">8:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">MLH Cup Stacking</div>
+                </div>
+                <div class="row food-event">
+                    <div class="col-md schedule-item-time">9:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Snack</div>
+                </div>
+                <div class="row mini-event">
+                    <div class="col-md schedule-item-time">10:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="bottom-vline vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Talent Show</div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <h3>Sunday</h3>
+                <div class="title-underline" style="background-color: #6F85FB"></div>
+                <div class="row food-event">
+                    <div class="col-md schedule-item-time">12:00 AM</div>
+                    <div class="col-md dot-container">
+                        <div class="top-vline vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Midnight Snack</div>
+                </div>
+                <div class="row food-event">
+                    <div class="col-md schedule-item-time">7:00 AM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Breakfast</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">12:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Hacking Ends</div>
+                </div>
+                <div class="row food-event">
+                    <div class="col-md schedule-item-time">12:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Lunch</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">12:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Submissions Due</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">1:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Judging Expo</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">3:30 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">Closing Ceremony</div>
+                </div>
+                <div class="row">
+                    <div class="col-md schedule-item-time">5:00 PM</div>
+                    <div class="col-md dot-container">
+                        <div class="bottom-vline vline"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="col-md schedule-item-title">TAMUhack Ends, Buses Depart</div>
+                </div>
+                <div class="row">
+                <div class="col-md" id="schedule-legend">
+                    <div class="legend-item">
+                        <div class="legend-dot-container"><div class="legend-dot" style="background-color: #6F85FB"></div></div>
+                        <p>Workshop</p>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot-container"><div class="legend-dot" style="background-color: #7FC0FA"></div></div>
+                        <p>Food</p>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot-container"><div class="legend-dot" style="background-color: #FF5482"></div></div>
+                        <p>Mini-Event</p>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="resources">
+        <h1 class="pt-4 mb-5">Hacker Resources</h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="resource-item">
+                    <h4 class="card-title">Connect with Hackers</h4>
+                    <div class="title-underline purple mb-purple"></div>
+                    <a>
+                        <div class="dark-button mt-4">
+                            <p>FACEBOOK</p>
+                        </div>
+                    </a>
+                    <p class="button-tag">Share photos and videos of the event!</p>
+                    <a>
+                        <div class="dark-button">
+                            <p>SLACK</p>
+                        </div>
+                    </a>
+                    <p class="button-tag">Communicate with companies and hackers in specialized channels.</p>
+                </div>
+                <div class="resource-item">
+                    <h4 class="card-title">Submit Your Hack</h4>
+                    <div class="title-underline purple mb-purple"></div>
+                    <a>
+                        <div class="dark-button">
+                            <p>DEVPOST</p>
+                        </div>
+                    </a>
+                    <p>All submissions are due on Sunday at 10:30 AM!</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="resource-item">
+                    <h4 class="card-title">Get Help</h4>
+                    <div class="title-underline purple mb-purple"></div>
+                    <a>
+                        <div class="light-button">
+                            <p>HACKATHON 101</p>
+                        </div>
+                    </a>
+                    <p class="button-tag">Get some useful tips and tricks, especially for first-time hackers.</p>
+                    <a>
+                        <div class="light-button">
+                            <p>MENTORSHIP</p>
+                        </div>
+                    </a>
+                    <p class="button-tag">Recieve hacking help from awesome mentors.</p>
+                </div>
+                <div class="resource-item">
+                    <h4 class="card-title">Emergency Contact</h4>
+                    <div class="title-underline purple mb-purple"></div>
+                    <h5>TAMU Police</h5>
+                    <p>(979) 845-2345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pt-5 pb-5 mt-4" id="prizes">
+        <h1 class="mb-4">Prizes</h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">American Airlines</h4>
+                        <p class="prize-item">iPad Pro (2018) with Apple Pencil</p>
+                        <div class="title-underline purple mb-purple"></div>
+                        <p>Description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">JPMorgan Chase & Co.</h4>
+                        <p class="prize-item">Airpod Pro</p>
+                        <div class="title-underline pink mb-pink"></div>
+                        <p>Description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Gartner</h4>
+                        <p class="prize-item">Nintendo Switch</p>
+                        <div class="title-underline blue mb-blue"></div>
+                        <p>Description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Microsoft</h4>
+                        <p class="prize-item">Microsoft Surface Pro X</p>
+                        <div class="title-underline purple mb-purple"></div>
+                        <p>Description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pt-4" id="faq">
+        <h1 class="mb-5">Frequently Asked Questions</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question1" aria-expanded="false">
+                        <h4 class="card-title">Who can attend?</h4>
+                        <div class="title-underline pink mb-pink"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question1">
+                            <p class="card-text">Any graduate/undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend.</p>
+                            <p class="card-text"><b>NOTE</b><br/>We are able to admit minors only if they are accompanied by a college student (18+) who is planning on participating in the hackathon. Have additional questions? Email us at <a href="mailto:highschool@tamuhack.com">highschool@tamuhack.com</a></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question2" aria-expanded="false">
+                        <h4 class="card-title">How much does it cost?</h4>
+                        <div class="title-underline purple mb-purple"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question2">
+                            <p class="card-text">Nothing. Nada. Zilch. It's completely free for all accepted hackers. To make it even better, we'll throw in a ton of swag, food, WiFi, workspaces, and caffeine while you're here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question3" aria-expanded="false">
+                        <h4 class="card-title">How do teams work?</h4>
+                        <div class="title-underline pink mb-blue"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question3">
+                            <p class="card-text">Teams are limited to 4 hackers. You don’t need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one
+                                yet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question4" aria-expanded="false">
+                        <h4 class="card-title">Do you offer travel reimbursements?</h4>
+                        <div class="title-underline purple mb-pink"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question4">
+                            <p class="card-text" id="question">We will be providing gas reimbursement of up to $25 on a case by case basis to those that drive to TAMUhack from outside of College Station. Receipt required.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question5" aria-expanded="false">
+                        <h4 class="card-title">What should I bring?</h4>
+                        <div class="title-underline pink mb-purple"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question5">
+                            <p class="card-text">Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. A laptop, charger, mouse, keyboard, hardware, light jacket, and any hygienic products should be helpful.
+                            Don't bring anything you wouldn't bring on an airplane.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question6" aria-expanded="false">
+                        <h4 class="card-title">Tabs or Spaces?</h4>
+                        <div class="title-underline purple mb-blue"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question6">
+                            <p class="card-text">Spaces&#8212;don't tabs make you practically unhirable?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question7" aria-expanded="false">
+                        <h4 class="card-title">How much experience do I need?</h4>
+                        <div class="title-underline purple mb-pink"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question7">
+                            <p class="card-text">Absolutely zero! We want you here because you have a passion for creating, not because you’re the most experienced hacker on the block. We’ll have lots of resources including workshops and a bunch of mentors to help beginners get
+                                started. There will also be plenty of people to learn from and help out!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question8" aria-expanded="false">
+                        <h4 class="card-title">How do you select who attends?</h4>
+                        <div class="title-underline blue mb-purple"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question8">
+                            <p class="card-text">We are looking for novices, experts, and everyone in between. In fact, we aim to have a very diverse set of of hackers who can show their passion for creation and learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question9" aria-expanded="false">
+                        <h4 class="card-title">Will there be workshops or talks?</h4>
+                        <div class="title-underline purple mb-blue"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question9">
+                            <p class="card-text">Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question10" aria-expanded="false">
+                        <h4 class="card-title">What is your Code of Conduct?</h4>
+                        <div class="title-underline blue mb-pink"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question10">
+                            <p class="card-text">What a great question! Check out the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>. Although we're all here to have fun, we want to create a safe environment for every hacker.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question11" aria-expanded="false">
+                        <h4 class="card-title">Are you providing hardware?</h4>
+                        <div class="title-underline purple mb-purple"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question11">
+                            <p class="card-text">Yes! In addition to the MLH hardware lab, we have our own custom hardware available.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 faq-card">
+                    <div class="card-body" data-toggle="collapse" data-target="#question12" aria-expanded="false">
+                        <h4 class="card-title">Have more questions?</h4>
+                        <div class="title-underline blue mb-blue"></div>
+                        <div class="plusminus"></div>
+                        <div class="faq-ans collapse" id="question12">
+                            <p class="card-text">Email us with any questions, comments, concerns at <a href="mailto:hello@tamuhack.com">hello@tamuhack.com</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pt-4" id="sponsored-by">
+        <h1 class="mb-5">Sponsored By</h1>
+        <div class="sponsor-container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <a href="https://jobs.aa.com" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/aa.svg" class="sponsor-logo-lg center" id="aa-logo"></a>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <a href="https://careers.jpmorgan.com" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/jpmc.svg" class="sponsor-logo-md left" id="jpmc-logo"></a>
+                </div>
+                <div class="col-md-2 col-6">
+                    <a href="https://www.usaajobs.com" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/usaa.svg" class="sponsor-logo-sm center" id="usaa-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.hpe.com/us/en/about/jobs/students.html" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/hpe.svg" class="sponsor-logo-sm right" id="hpe-logo"></a>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4 col-6">
+                    <a href="https://www.pwc.com/us/en/careers/search-jobs.html" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/pwc.svg" class="sponsor-logo-sm left" id="pwc-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://jobs.gartner.com" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/gartner.svg" class="sponsor-logo-sm center" id="gartner-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.cbre.com/about/careers" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/cbre.svg" class="sponsor-logo-sm right" id="cbre-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://careers.southwestair.com/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/southwest.svg" class="sponsor-logo-sm left" id="southwest-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://phillips66.jobs" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/phillips66.svg" class="sponsor-logo-sm center" id="p66-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.bp.com/en/global/corporate/careers.html" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/bp.svg" class="sponsor-logo-sm right" id="bp-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.statefarm.com/careers" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/statefarm.svg" class="sponsor-logo-sm left" id="statefarm-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.credera.com/careers/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/credera.svg" class="sponsor-logo-sm center" id="credera-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://careers.microsoft.com" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/msft.svg" class="sponsor-logo-sm right" id="msft-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.parivedasolutions.com/careers-overview" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/pariveda.svg" class="sponsor-logo-sm left" id="pariveda-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://jobs.exxonmobil.com/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/exxon.svg" class="sponsor-logo-sm center" id="exxon-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://careers.bakerhughes.com/global/en" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/bakerhughes.png" class="sponsor-logo-sm right" id="bh-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://cloud.google.com/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/gcp.png" class="sponsor-logo-sm left" id="gcp-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.pathrise.com/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/pathrise.svg" class="sponsor-logo-sm center" id="pathrise-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://sec.tamu.edu/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/sec.png" class="sponsor-logo-sm right" id="tamu-sec-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.wolfram.com/company/careers/opportunities/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/wolfram.png" class="sponsor-logo-sm left" id="wolfram-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://contrarycap.com/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/contrary.png" class="sponsor-logo-sm center" id="contrary-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="https://www.voiceflow.com/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/voiceflow.png" class="sponsor-logo-sm right" id="voiceflow-logo"></a>
+                </div>
+                <div class="col-md-4 col-6">
+                    <a href="http://sustainability.tamu.edu/" target="_blank"><img alt="" src="/static/assets/th-2020/sponsor_logos/tamu-sustainability.png" class="sponsor-logo-sm left" id="tamu-sustainability-logo"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pt-4" id="our-partners">
+        <h1 class="mb-5">Our Partners</h1>
+        <div class="row align-items-center partner-container">
+            <div class="col-md-4 col-6">
+                <a href="https://mlh.io/" target="_blank"><img alt="" src="/static/assets/th-2020/partners/mlh.svg" class="sponsor-logo-sm left" id="mlh-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank"><img alt="" src="/static/assets/th-2020/partners/stickermule.svg" class="sponsor-logo-sm center" id="stickermule-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="https://ultrapress.com/" target="_blank"><img alt="" src="/static/assets/th-2020/partners/ultrapress.svg" class="sponsor-logo-sm right" id="ultrapress-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="https://www.botanicalpaperworks.com/" target="_blank"><img alt="" src="/static/assets/th-2020/partners/botanicalpaperworks.svg" class="sponsor-logo-sm left" id="botanicalpaperworks-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="https://www.kindsnacks.com/" target="_blank"><img alt="" src="/static/assets/th-2020/partners/kind.png" class="sponsor-logo-sm center" id="kind-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="https://www.gogosqueez.com/" target="_blank"><img alt="" src="/static/assets/th-2020/partners/gogosqueez.png" class="sponsor-logo-sm right" id="gogosqueez-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="https://mypiada.com/" target="_blank"><img alt="" src="/static/assets/th-2020/partners/piada.png" class="sponsor-logo-sm left" id="piada-logo"></a>
+            </div>
+            <div class="col-md-4 col-6">
+                <a href="https://engineering.tamu.edu/cse/index.html" target="_blank"><img alt="" src="/static/assets/th-2020/partners/tamu_csce.svg" class="sponsor-logo-sm center" id="tamu-csce-logo"></a>
+            </div>
+        </div>
+        <p class="mt-4">Interested in sponsoring? Reach out to us at <a href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a></p>
+    </section>
+    <!-- About -->
+    <section class="container-fluid pt-4" id="about">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="mt-4 mb-5">About TAMUhack</h1>
+                <p>At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
+                <p>We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free
+                    food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/assets/th-2020/th20-graphic.svg" alt="TAMUhack logo" id="logo-2020">
+            </div>
+        </div>
+    </section>
+    <div class="black-box"></div>
+    <footer>
+        <a class="nav-link" href="https://www.facebook.com/tamuhack/" target="_blank">
+            <img alt="Facebook social icon" src="/static/assets/th-2020/sns/fb.svg">
+        </a>
+        <a class="nav-link" href="https://www.instagram.com/tamuhack/" target="_blank">
+            <img alt="Instagram social icon" src="/static/assets/th-2020/sns/instagram.svg">
+        </a>
+        <a class="nav-link" href="https://twitter.com/tamuhack" target="_blank">
+            <img alt="Twitter social icon" src="/static/assets/th-2020/sns/twitter.svg">
+        </a>
+        <a class="nav-link" href="https://www.reddit.com/r/TAMUHack/" target="_blank">
+            <img alt="Reddit social icon" src="/static/assets/th-2020/sns/reddit.svg">
+        </a>
+        <a class="nav-link" href="mailto:hello@tamuhack.com">
+            <img alt="Email contact icon" src="/static/assets/th-2020/sns/email.svg">
+        </a>
+    </footer>
+    <!--END Email Form-->
+    <!--BEGIN Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
+    <script>
+        $(document).ready(function () {
+            plusMinusCheck();
+        });
+        function plusMinusCheck() {
+          $('.faq-card > .card-body').each(function(){
+              if($(this).attr('aria-expanded') == "true"){
+                $(this).children().next('.plusminus').addClass("plusminus-clicked");
+              }
+              else {
+                $(this).children().next('.plusminus').removeClass("plusminus-clicked");
+              }
+          });
+          setTimeout(plusMinusCheck, 100);
+        }
+    </script>
+    <!--END Scripts-->
+</body>
+
+</html>

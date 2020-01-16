@@ -1,0 +1,1225 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem !important;
+}
+
+.container-fluid {
+    padding-right: calc(10vw + 26px);
+    padding-left: calc(10vw + 26px);
+    /* Accounts for the logo offset */
+    margin: 75px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    color: #FF5482;
+}
+
+#mlh-banner {
+    position: absolute;
+    width: 100px;
+    right: calc(10vw);
+    top: 0px;
+}
+
+
+/* Logo Styling */
+
+.th-logo {
+    width: 30px;
+}
+
+.th-text-logo {
+    margin-left: 15px;
+    margin-top: 6px;
+    min-width: 90px;
+    opacity: 0.8;
+}
+
+.th-faded {
+    width: 75%;
+    height: auto;
+}
+
+#logo-2020 {
+    max-width: 500px;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0 50px;
+}
+
+#about {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Sponsor Logo Styling */
+
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+}
+
+.left {
+    margin-right: auto !important;
+    display: block;
+}
+
+.right {
+    margin-left: auto !important;
+    display: block;
+}
+
+.sponsor-logo-lg,
+.sponsor-logo-md,
+.sponsor-logo-sm {
+    transition: 0.5s;
+    margin: 40px 0;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.sponsor-logo-lg:hover,
+.sponsor-logo-md:hover,
+.sponsor-logo-sm:hover {
+    transform: scale(1.05);
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+#aa-logo {
+    width: 60%;
+}
+
+#jpmc-logo {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+#usaa-logo {
+    max-width: 125px;
+    margin-bottom: 50px;
+}
+#hpe-logo{
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+#southwest-logo {
+    max-width: 225px;
+}
+
+#pwc-logo {
+    max-width: 125px;
+    margin-top: -15px;
+}
+
+#gartner-logo {
+    max-width: 150px;
+}
+
+#cbre-logo {
+    max-width: 125px;
+}
+
+#p66-logo {
+    max-width: 100px;
+}
+
+#bp-logo {
+    max-width: 90px;
+    margin-top: -5px;
+}
+
+#credera-logo {
+    max-width: 250px;
+}
+
+#statefarm-logo {
+    max-width: 250px;
+}
+
+#msft-logo {
+    max-width: 250px;
+}
+
+#pariveda-logo {
+    max-width: 250px;
+}
+
+#exxon-logo {
+    max-width: 250px;
+    margin-top: 45px;
+}
+
+#bh-logo {
+    max-width: 270px;
+    margin-top: 35px;
+}
+
+#gcp-logo {
+    max-width: 220px;
+}
+
+#pathrise-logo {
+    max-width: 220px;
+}
+
+#tamu-sec-logo {
+    -webkit-filter: invert(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
+    max-width: 120px;
+    margin-top: 30px;
+}
+
+#wolfram-logo {
+    max-width: 250px;
+}
+
+#contrary-logo {
+    max-width: 250px;
+}
+
+#voiceflow-logo {
+    margin-top:50px;
+    max-width: 200px;
+}
+
+#tamu-sustainability-logo {
+    max-width: 80px;
+}
+
+#tamu-csce-logo {
+    max-width: 300px;
+}
+
+#ultrapress-logo {
+    max-width: 250px;
+}
+
+#botanicalpaperworks-logo {
+    max-width: 250px;
+}
+
+#kind-logo {
+    max-width: 125px;
+}
+
+#mlh-logo {
+    max-width: 150px;
+}
+
+#stickermule-logo{
+    max-width: 320px;
+}
+
+#gogosqueez-logo {
+    max-width: 170px;
+    margin-top: 30px;
+}
+
+#piada-logo {
+    max-width: 220px;
+}
+
+#redbull-logo {
+    max-width: 200px;
+}
+
+
+/* Top Navigation Section */
+
+.navbar {
+    margin: 0 40px 0 0 !important;
+    padding-left: 10vw!important;
+    padding-right: 10vw!important;
+}
+
+.navbar .nav-item .nav-link {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-item {
+    margin: 0 30px;
+}
+
+.nav-container {
+    position: absolute;
+    padding-right: 0px !important;
+    margin-bottom: 79px;
+}
+
+.navbar-toggler {
+    border-color: transparent!important;
+}
+
+#top-nav-bar {
+    position: absolute;
+    z-index: 10000;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: calc(10vw + 80px) !important;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 78vw;
+    width: 100%;
+}
+
+#top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+}
+
+#top-nav-bar div ul li {
+    padding: 0px 10px;
+}
+
+#top-nav-bar div a {
+    border-bottom: 7px solid transparent;
+    color: black!important;
+}
+
+#top-nav-bar div .main-nav-ui li>a {
+    text-transform: uppercase;
+    color: black!important;
+    font-size: 1.2rem;
+}
+
+#top-nav-bar div .main-nav-ui li>a:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 black inset, 0 -6px 0 0 black inset;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Landing Section */
+
+#email-tag {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#email-form input {
+    border-radius: 3px;
+    border: 1px solid #AAAAAA;
+}
+
+#volunteer-mentor-tag{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+#volunteer-mentor-tag .volunteer{
+    color: #6F85FB;
+}
+#volunteer-mentor-tag .mentor{
+    color: #FF5482;
+}
+
+#landing {
+    position: relative;
+    min-width: 332px;
+}
+
+#landing .bg-wrapper {
+    width: calc(98vw - 140px);
+    left: 76px;
+    top: 76px;
+    height: calc(92vh - 130px);
+    margin: 0px;
+    border: 6px solid black;
+    position: relative;
+    outline: 6px solid black;
+    outline-offset: 70px;
+    min-height: 650px;
+    display: flex;
+}
+
+#landing-graphic {
+    flex: 0 0 110%;
+    margin-left: 5vw;
+    align-self: center;
+    top: 50%;
+}
+
+#top-bar {
+    position: absolute;
+    width: calc(100% - 35px);
+    height: 70px;
+    background-color: #7FC0FA;
+    top: 25px;
+    right: 0px;
+    animation: fill-horizontal-rect 0.8s;
+    -webkit-animation: fill-horizontal-rect 0.8s forwards;
+}
+
+#left-bar {
+    position: absolute;
+    width: 70px;
+    top: 95px;
+    left: 35px;
+    background-color: #7FC0FA;
+    animation: fill-vertical-rect 0.8s forwards;
+    -webkit-animation: fill-vertical-rect 0.8s forwards;
+    animation-delay: 0.8s;
+}
+
+#bottom-bar {
+    position: absolute;
+    background-color: #FF5482;
+    left: 35px;
+    height: 70px;
+    bottom: -165px;
+    animation: fill-horizontal-rect 0.8s forwards;
+    -webkit-animation: fill-horizontal-rect 0.8s forwards;
+    animation-delay: 1.6s;
+}
+
+#right-bar {
+    position: absolute;
+    right: 0px;
+    width: 70px;
+    bottom: -95px;
+    background-color: #FF5482;
+    animation: fill-vertical-rect 0.8s forwards;
+    -webkit-animation: fill-vertical-rect 0.8s forwards;
+    animation-delay: 2.4s;
+    z-index: -1;
+}
+
+#landing .row {
+    width: 100%;
+    padding: 0 2vw;
+    align-self: center;
+}
+
+#landing .col-lg-7,
+#landing .col-lg-5 {
+    display: flex;
+}
+
+.landing-info-wrapper {
+    flex: 0 0 100%;
+    padding-right: 1vw;
+    padding-left: 8vw;
+    padding-bottom: 2vw;
+    align-self: flex-end;
+}
+
+.landing-info-wrapper h4 {
+    font-size: 2rem;
+}
+
+.landing-info-wrapper .header-info {
+    margin-bottom: 50px;
+}
+
+.signup-button {
+    background-color: #231F1B;
+    border-color: #231F1B;
+    color: white;
+    font-weight: bolder;
+    border-radius: 3px !important;
+    padding: 0 80px !important;
+    font-size: 1.5rem;
+}
+
+#mc_embed_signup {
+    overflow: hidden;
+    margin-left: auto; 
+    margin-right: -10px; 
+    display: flex; 
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+#th-apply {
+    float: right;
+}
+
+.button-container{
+    margin-bottom: 50px;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.social-media-item{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-item i{
+    color: white;
+}
+.social-media-item:nth-child(1){
+    margin-right: 10px;
+}
+.social-media-item:nth-child(2){
+    margin-left: 10px;
+}
+.devpost-button, .mentor-button{
+    display: inline-flex !important;
+    margin: 0px 5px;
+    margin-bottom: 0px !important;
+}
+
+.form-message {
+    display: none;
+}
+
+.faq-card{
+    cursor: pointer;
+}
+
+.card {
+    padding: 8px;
+    border: 1px solid #AAA;
+    border-radius: 8px;
+}
+
+.card-title {
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+
+.title-underline {
+    width: 60px;
+    height: 9px;
+    margin-bottom: 20px;
+}
+
+.faq-card .title-underline{
+    margin-bottom: 0px;
+}
+
+.faq-ans > p:nth-child(1){
+    margin-top: 1.25rem;
+}
+
+.purple{
+    background-color: #6F85FB;
+}
+
+.pink{
+    background-color: #FF5482;
+}
+
+.blue{
+    background-color: #7FC0FA;
+}
+
+
+/*--------------------------------------*/
+
+/* Schedule Styling */
+
+#schedule{
+    border: 14px solid #FF5482;
+}
+
+#schedule .schedule-item-time{
+    flex: 0 0 108px;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+#schedule .schedule-item-title{
+    flex: 0 0 calc(100% - 153px);
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+#schedule .dot-container{
+    position: relative;
+    flex: 0 0 45px;
+}
+
+#schedule .dot, .legend-dot{
+    height: 15px;
+    width: 15px;
+    background-color: #231F1B;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+#schedule-legend{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    max-width: 600px;
+    border-radius: 5px;
+    margin: 40px 15px 0px 15px;
+}
+
+.legend-item{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+#schedule-legend p{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 20px 10px 20px 0px;
+}
+
+.legend-dot-container{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.legend-dot{
+    position: static;
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+.workshop-event .dot{
+    background-color: #6F85FB !important;
+    left: calc(50% - 2px) !important;
+}
+
+.food-event .dot{
+    background-color: #7FC0FA !important;
+    left: calc(50% - 2px) !important;
+}
+
+.mini-event .dot{
+    background-color: #FF5482 !important;
+    left: calc(50% - 2px) !important;
+}
+
+.workshop-event .dot:after, .food-event .dot:after, .mini-event .dot:after, .legend-dot:after{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    left: 2px;
+    top: -1px;
+    display: inline-block;
+}
+
+#schedule .vline{
+    width: 1px;
+    height: 100%;
+    background-color: #ABABAB;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#schedule .top-vline{
+    top: 25px;
+    height: calc(100% - 25px);
+}
+
+#schedule .bottom-vline{
+    height: 25px;
+}
+
+/*--------------------------------------*/
+
+/* Hacker Resource Styling */
+
+#resources .title-underline{
+    margin-bottom: 40px;
+}
+
+.dark-button{
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.dark-button p{
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.light-button{
+    height: 50px;
+    width: 200px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.light-button p{
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.button-tag{
+    margin-bottom: 50px;
+}
+
+
+
+/* Button/Form Information */
+
+.btn.btn-primary {
+    border: none;
+}
+
+.btn.btn-outline-secondary {
+    padding: 8px 15px;
+}
+
+input.form-control {
+    padding: 22px 18px;
+}
+
+.tamu-button {
+    background-color: #FF7C93 !important;
+    border-radius: 4px!important;
+}
+
+.tamu-button:hover {
+    background-color: #D47082 !important;
+}
+
+.hh-button {
+    border-radius: 4px!important;
+    background-color: #3E678C !important;
+}
+
+.hh-button:hover {
+    background-color: #2E4D68 !important;
+}
+
+footer {
+    border: 5px solid black;
+    padding: 20px 10vw 10px;
+    width: 100%;
+}
+
+.black-box {
+    background-color: #FF5482;
+    position: relative;
+    height: 75px;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+footer .nav-link {
+    display: inline-block !important;
+}
+
+footer .nav-link img {
+    height: 20px;
+}
+
+.parking-card {
+    margin-bottom: 20px;
+}
+
+.parking-card h6 {
+    font-size: 20px;
+}
+
+.parking-card a {
+    color: #232323;
+    text-decoration: underline;
+    margin: 5px 0;
+    display: block;
+}
+.parking-card a:hover {
+    color: #777;
+    transition: 0.3s;
+}
+.parking-card p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#prizes{
+    border: 14px solid #7FC0FA;
+}
+
+#prizes .card{
+    border: none;
+    padding: 25px 0px;
+    margin: 0px 16px;
+    margin-bottom: 25px;
+    border-radius: 0px;
+}
+
+#prizes .card-body{
+    padding: 0px;
+}
+
+#prizes .col-md-6 .card:nth-child(1){
+    border-bottom: 1px solid black;
+}
+
+#prizes .prize-item{
+    font-size: 1.15rem;
+}
+
+/*--------------------------------------*/
+
+@media (max-width: 1200px){
+    #landing .row{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .left,
+    .right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #top-nav-bar {
+        padding-top: 35px !important;
+        padding-right: 15vw !important;
+        padding-left: 10vw !important;
+    }
+
+    #email-tag, .social-media-container{
+        display: inline-flex;
+    }
+    #email-tag{
+        margin-right: 10px;
+    }
+    .button-container{
+        margin-bottom: 10px;
+    }
+
+    .nav-link{
+        font-size: 1rem !important;
+    }
+    .sponsor-container {
+        margin: 0;
+    }
+    #logo-2020 {
+        margin-top: 10px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+    #pwc-logo,
+    #bp-logo {
+        margin-top: 0px;
+    }
+    #usaa-logo{
+        max-width: 90px;
+    }
+    #hpe-logo{
+        max-width: 225px;
+    }
+    #about {
+        margin-top: 20px;
+    }
+    .container-fluid {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    #mlh-banner-tag {
+        display: none;
+    }
+    .th-text-logo {
+        opacity: 0;
+    }
+    .tamuhack-title {
+        max-width: 300px;
+        top: 30vh;
+        transform: translate(-50%, -50%);
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 14px;
+    }
+    .navbar {
+        padding-left: 10px!important;
+    }
+    #top-nav-bar div ul li {
+        padding: 0px 30px;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    #landing-graphic {
+        transform: none;
+        position: static;
+        flex: 0 0 100%;
+        margin-top: calc(500px - 28vw);
+        margin-bottom: 62px;
+        margin-left: 3vw;
+    }
+    #landing {
+        margin-bottom: 100px;
+    }
+    #landing .row{
+        margin-top: 0px;
+    }
+    #landing .col-lg-5 {
+        display: flex;
+    }
+    #landing .col-lg-5 img {
+        align-self: flex-end;
+        flex: 0 0 90%;
+        margin: 60px auto auto;
+        max-width: 500px;
+    }
+    #landing .bg-wrapper {
+        border: 5px solid black;
+        outline: 5px solid black;
+        outline-offset: 35px;
+        top: 40px;
+        left: 40px;
+        width: calc(98vw - 80px);
+        height: calc(98vh - 80px);
+    }
+    #left-bar {
+        width: 35px;
+        left: 18px;
+        top: 60px;
+        height: 0px;
+    }
+    #top-bar {
+        height: 35px;
+        top: 25px;
+        right: 0px;
+        animation-name: fill-horizontal-rect-small;
+    }
+    #right-bar {
+        width: 35px;
+        bottom: -60px;
+        height: 0px;
+    }
+    #bottom-bar {
+        height: 35px;
+        bottom: -95px;
+        left: 17.5px;
+        animation-name: fill-horizontal-rect-small;
+    }
+    .landing-info-wrapper .header-info {
+        margin-bottom: 20px;
+    }
+    .landing-info-wrapper h4 {
+        font-size: 1.5rem;
+    }
+    footer {
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+    .black-box {
+        height: 70px;
+    }
+    .signup-button{
+        padding: 0px 30px !important;
+        font-size: 1.25rem;
+    }
+    .mentor-button, .devpost-button{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 776px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    .th-logo {
+        width: 20px;
+    }
+    #logo-2020 {
+        max-width: 300px;
+    }
+    .mb-5 {
+        margin-bottom: 1.5rem!important;
+    }
+    .container-fluid {
+        margin-bottom: 40px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+    }
+    #email-tag {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #left-bar {
+        width: 35px;
+        left: 18px;
+        top: 60px;
+        height: 0px;
+    }
+    #top-bar {
+        height: 35px;
+        top: 25px;
+        right: 0px;
+        animation-name: fill-horizontal-rect-small;
+    }
+    #right-bar {
+        width: 35px;
+        bottom: -60px;
+        height: 0px;
+    }
+    #bottom-bar {
+        height: 35px;
+        bottom: -95px;
+        left: 17.5px;
+        animation-name: fill-horizontal-rect-small;
+    }
+    #landing .row {
+        padding: 10px;
+        padding-left: 6vw;
+    }
+    .landing-info-wrapper {
+        position: relative;
+        padding: 10px;
+        text-align: left;
+    }
+    .landing-info-wrapper h4 {
+        font-size: 1.5rem;
+    }
+    .landing-info-wrapper .header-info {
+        margin-bottom: 0px;
+    }
+    #landing .col-lg-5 img {
+        max-width: 325px;
+        margin: 80px auto 60px;
+    }
+    #landing .social-media-container{
+        transform: scale(0.75);
+        position: relative;
+        top: 5px;
+    }
+    #email-form input {
+        width: 100%;
+        margin: 0px !important;
+    }
+    #email-form .input-group-append,
+    #email-form button,
+    #email-form .btn {
+        width: 100%;
+        margin: 0px !important;
+    }
+    #email-form button,
+    #email-form .btn {
+        padding: 7.5px !important;
+        margin-top: 5px !important;
+    }
+    #top-nav-bar {
+        padding-top: 45px !important;
+    }
+    .d-block-sm-none {
+        display: none !important;
+    }
+    input.form-control {
+        padding: 22px 14px;
+    }
+    #top-nav-bar div .main-nav-ui li>a {
+        font-size: 14px;
+    }
+    #aa-logo {
+        width: 90%;
+    }
+    #jpmc-logo {
+        width: 70%;
+        margin-left: auto !important;
+    }
+    #mlh-logo{
+        max-width: 100px;
+    }
+
+    .mb-purple{
+        background-color: #6F85FB;
+    }
+    
+    .mb-pink{
+        background-color: #FF5482;
+    }
+    
+    .mb-blue{
+        background-color: #7FC0FA;
+    }
+    #mc_embed_signup{
+        margin-left: -10px;
+        margin-right: auto;
+    }
+    .mentor-button, .devpost-button{
+        font-size: 1.1rem;
+    }
+    .parking-card h6 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #landing .row {
+        width: auto;
+    }
+    .landing-info-wrapper h4,
+    #email-tag {
+        font-size: 1.0rem;
+    }
+    #landing .col-lg-5 img {
+        margin-bottom: 30px;
+    }
+    input[type=email] {
+        font-size: 14px;
+    }
+    #th-apply {
+        width: 100%;
+        padding: 0px !important;
+        float: left;
+    }
+    #mc_embed_signup{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #th-devpost, #th-mentor{
+        flex: 0 0 100%;
+    }
+    .plusminus{
+        top: 30px;
+    }
+    .devpost-button, .mentor-button{
+        width: calc(100% - 20px);
+    }
+    #landing .col-lg-7{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 466px){
+    .social-media-container{
+        left: -17px;
+    }
+    #email-tag{
+        margin-top: 1rem;
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes fill-horizontal-rect {
+    from {
+        width: 0px;
+    }
+    to {
+        width: calc(100% - 35px);
+    }
+}
+
+@keyframes fill-vertical-rect {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes fill-horizontal-rect-small {
+    from {
+        width: 0px;
+    }
+    to {
+        width: calc(100% - 17.5px);
+    }
+}
+
+
+.plusminus {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    width: 15px;
+    height: 15px;
+    /* Vertical line */
+    /* horizontal line */
+  }
+  .plusminus:before, .plusminus:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    transition: transform 0.25s ease-out;
+  }
+  .plusminus:before {
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    margin-left: -1.5px;
+  }
+  .plusminus:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: -1.5px;
+  }
+  .plusminus:hover {
+    cursor: pointer;
+  }
+  .plusminus-clicked:before {
+    transform: rotate(90deg);
+  }
+  .plusminus-clicked:after {
+    transform: rotate(180deg);
+  }
