@@ -188,7 +188,7 @@ h1 {
 }
 
 #gcp-logo {
-    max-width: 220px;
+    max-width: 250px;
 }
 
 #pathrise-logo {
@@ -495,6 +495,12 @@ h1 {
 .social-media-item:nth-child(2){
     margin-left: 10px;
 }
+
+.social-media-item:hover{
+    background-color: #6c757d;
+    transition: background-color .15s ease-in-out;
+}
+
 .devpost-button, .mentor-button{
     display: inline-flex !important;
     margin: 0px 5px;
@@ -715,6 +721,21 @@ h1 {
     margin-bottom: 50px;
 }
 
+.dark-button:hover{
+    background-color: #6c757d;
+    transition: background-color .15s ease-in-out;
+}
+
+.light-button:hover{
+    background-color: black;
+    transition: background-color .15s ease-in-out;
+}
+
+.light-button:hover p{
+    color: white;
+    transition: color .15s ease-in-out;
+}
+
 
 
 /* Button/Form Information */
@@ -803,13 +824,16 @@ footer .nav-link img {
 #prizes .card{
     border: none;
     padding: 25px 0px;
-    margin: 0px 16px;
     margin-bottom: 25px;
-    border-radius: 0px;
+    border-radius: 0px
 }
 
 #prizes .card-body{
     padding: 0px;
+}
+
+#prizes .card-body p{
+    margin-bottom: 25px;
 }
 
 #prizes .col-md-6 .card:nth-child(1){
@@ -818,6 +842,7 @@ footer .nav-link img {
 
 #prizes .prize-item{
     font-size: 1.15rem;
+    text-decoration: underline;
 }
 
 /*--------------------------------------*/
