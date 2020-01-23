@@ -846,37 +846,41 @@ footer .nav-link img {
 }
 
 #prizes{
+    border: 14px solid #FF5482;
+}
+
+#challenges{
     border: 14px solid #7FC0FA;
 }
 
-#prizes .card{
+#prizes .card, #challenges .card{
     border: none;
     padding: 25px 0px;
     margin-bottom: 25px;
     border-radius: 0px
 }
 
-#prizes .card-body{
+#prizes .card-body, #challenges .card-body{
     padding: 0px;
 }
 
-#prizes .card-body p{
+#prizes .card-body p, #challenges .card-body p{
     margin-bottom: 10px;
 }
 
-#prizes .col-md-6 .card{
+#prizes .col-md-6 .card, #challenges .col-md-6 .card{
     border-bottom: 1px solid black;
 }
 
-#prizes .col-md-6 .card:last-child{
+#prizes .col-md-6 .card:last-child, #challenges .col-md-6 .card:last-child{
     border-bottom: none;
 }
 
-#prizes .prize-item{
+#prizes .prize-item, #challenges .prize-item{
     font-size: 16px;
 }
 
-#prizes-small{
+#prizes-small, #challenges-small{
     display: none;
 }
 
@@ -1179,11 +1183,11 @@ footer .nav-link img {
         font-size: 16px;
     }
 
-    #prizes-large{
+    #prizes-large, #challenges-large{
         display: none;
     }
 
-    #prizes-small{
+    #prizes-small, #challenges-small{
         display: inherit;
     }
 }
