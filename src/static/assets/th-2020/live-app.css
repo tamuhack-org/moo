@@ -846,14 +846,20 @@ footer .nav-link img {
 }
 
 #prizes{
-    border: 14px solid #FF5482;
-}
-
-#challenges{
     border: 14px solid #7FC0FA;
 }
 
-#prizes .card, #challenges .card{
+#challenges{
+    border: 14px solid #6F85FB;
+}
+
+#prizes .card {
+    border: none;
+    padding: 25px 0px;
+    border-radius: 0px
+}
+
+#challenges .card{
     border: none;
     padding: 25px 0px;
     margin-bottom: 25px;
@@ -1189,6 +1195,9 @@ footer .nav-link img {
 
     #prizes-small, #challenges-small{
         display: inherit;
+    }
+    #prizes .card {
+        padding-bottom: 0;
     }
 }
 
