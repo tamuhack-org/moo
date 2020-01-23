@@ -1200,6 +1200,9 @@ footer .nav-link img {
     #landing .col-lg-7{
         margin-top: 30px;
     }
+    .button-tag{
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 466px){
