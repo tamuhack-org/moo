@@ -3,7 +3,7 @@ import {Request, Response, Router} from 'express';
 const tamuHackRouter = Router();
 
 tamuHackRouter.get('/', async (req: Request, res: Response) => {
-  res.render('th-live.html');
+  res.render('th-2020.html');
 });
 
 tamuHackRouter.get('/2016', async (req: Request, res: Response) => {
