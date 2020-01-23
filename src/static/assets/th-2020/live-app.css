@@ -572,14 +572,24 @@ h1 {
 #schedule .schedule-item-time{
     flex: 0 0 108px;
     font-size: 1.1rem;
-    margin: 20px 0;
+    margin: 15px 0;
     font-weight: bolder;
 }
 
 #schedule .schedule-item-title{
     flex: 0 0 calc(100% - 153px);
     font-size: 1.1rem;
-    margin: 20px 0;
+    margin: 15px 0;
+}
+
+#schedule .schedule-item-title .ws-title{
+    margin: 0;
+}
+
+#schedule .schedule-item-title .ws-subtitle{
+    font-size: 1rem;
+    margin: 0;
+    color: #6F85FB;
 }
 
 #schedule .dot-container{
@@ -594,7 +604,7 @@ h1 {
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 25px;
+    top: 19px;
     transform: translateX(-50%);
     display: inline-block;
 }
@@ -604,6 +614,8 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 25px;
     max-width: 600px;
     border-radius: 5px;
@@ -619,7 +631,15 @@ h1 {
 #schedule-legend p{
     font-size: 1.1rem;
     display: inline-block;
-    margin: 20px 10px 20px 0px;
+    margin: 0 10px 0 0;
+}
+
+#schedule-legend .legend-dot{
+    margin: 10px 0px !important;
+}
+
+#schedule-legend .legend-dot-container{
+    top: -2px;
 }
 
 .legend-dot-container{
@@ -841,7 +861,7 @@ footer .nav-link img {
 }
 
 #prizes .card-body p{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 #prizes .col-md-6 .card{
@@ -853,8 +873,7 @@ footer .nav-link img {
 }
 
 #prizes .prize-item{
-    font-size: 1.15rem;
-    text-decoration: underline;
+    font-size: 16px;
 }
 
 #prizes-small{
@@ -1206,6 +1225,14 @@ footer .nav-link img {
     }
     .button-tag{
         margin-bottom: 40px;
+    }
+    .mb-vline{
+        top: 0 !important;
+        height: 100% !important;
+    }
+
+    #schedule .col-md-6:last-child{
+        margin-top: 0 !important;
     }
 }
 
