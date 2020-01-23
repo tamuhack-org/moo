@@ -2,6 +2,10 @@ import {Request, Response, Router} from 'express';
 
 const judgeRouter = Router();
 
+judgeRouter.get('/', async (req: Request, res: Response) => {
+    res.redirect('https://forms.gle/GSNEFZ1P1V5BqG7y7');
+});
+
 judgeRouter.get('/main', async (req: Request, res: Response) => {
     res.redirect('https://gavel-tamuhack-main.herokuapp.com/');
 });
