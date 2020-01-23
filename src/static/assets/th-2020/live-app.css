@@ -840,8 +840,12 @@ footer .nav-link img {
     margin-bottom: 25px;
 }
 
-#prizes .col-md-6 .card:nth-child(1){
+#prizes .col-md-6 .card{
     border-bottom: 1px solid black;
+}
+
+#prizes .col-md-6 .card:last-child{
+    border-bottom: none;
 }
 
 #prizes .prize-item{
@@ -849,11 +853,46 @@ footer .nav-link img {
     text-decoration: underline;
 }
 
+#prizes-small{
+    display: none;
+}
+
 /*--------------------------------------*/
 
 @media (max-width: 1200px){
     #landing .row{
         margin-top: 100px;
+    }
+    #top-nav-bar {
+        padding-top: 35px !important;
+        padding-right: 15vw !important;
+        padding-left: 10vw !important;
+    }
+    .nav-link{
+        font-size: 1rem !important;
+    }
+    #mlh-banner-tag {
+        display: none;
+    }
+    .th-text-logo {
+        opacity: 0;
+    }
+    .tamuhack-title {
+        max-width: 300px;
+        top: 30vh;
+        transform: translate(-50%, -50%);
+    }
+    .navbar {
+        padding-left: 10px!important;
+    }
+    #top-nav-bar div ul li {
+        padding: 0px 30px;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .navbar .nav-item {
+        margin: 0;
     }
 }
 
@@ -863,11 +902,7 @@ footer .nav-link img {
         margin-left: auto;
         margin-right: auto;
     }
-    #top-nav-bar {
-        padding-top: 35px !important;
-        padding-right: 15vw !important;
-        padding-left: 10vw !important;
-    }
+    
 
     #email-tag, .social-media-container{
         display: inline-flex;
@@ -877,10 +912,6 @@ footer .nav-link img {
     }
     .button-container{
         margin-bottom: 10px;
-    }
-
-    .nav-link{
-        font-size: 1rem !important;
     }
     .sponsor-container {
         margin: 0;
@@ -908,32 +939,14 @@ footer .nav-link img {
         padding-left: 5vw;
         padding-right: 5vw;
     }
-    #mlh-banner-tag {
-        display: none;
-    }
-    .th-text-logo {
-        opacity: 0;
-    }
-    .tamuhack-title {
-        max-width: 300px;
-        top: 30vh;
-        transform: translate(-50%, -50%);
-    }
+    
     h2 {
         font-size: 1.4rem;
     }
     p {
         font-size: 14px;
     }
-    .navbar {
-        padding-left: 10px!important;
-    }
-    #top-nav-bar div ul li {
-        padding: 0px 30px;
-    }
-    .nav-link {
-        display: inline-block;
-    }
+    
     #landing-graphic {
         transform: none;
         position: static;
@@ -1031,9 +1044,6 @@ footer .nav-link img {
     }
     .container-fluid {
         margin-bottom: 40px;
-    }
-    .navbar .nav-item {
-        margin: 0;
     }
     #email-tag {
         font-size: 1rem;
@@ -1144,6 +1154,14 @@ footer .nav-link img {
     }
     .parking-card h6 {
         font-size: 16px;
+    }
+
+    #prizes-large{
+        display: none;
+    }
+
+    #prizes-small{
+        display: inherit;
     }
 }
 
