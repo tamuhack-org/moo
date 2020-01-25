@@ -5,6 +5,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.no-underline:hover{
+    text-decoration: none;
+}
+
 .mb-5 {
     margin-bottom: 2.5rem !important;
 }
@@ -68,6 +72,7 @@ h1 {
 
 #about {
     margin-top: 100px;
+    margin-bottom: 0px;
 }
 
 
@@ -248,7 +253,7 @@ h1 {
     max-width: 220px;
 }
 
-#ffexp-logo{
+#ffexpress-logo{
     max-width: 220px;
 }
 
@@ -438,7 +443,7 @@ h1 {
     flex: 0 0 100%;
     padding-right: 1vw;
     padding-left: 8vw;
-    padding-bottom: 5vw;
+    padding-bottom: 2vw;
     align-self: flex-end;
 }
 
@@ -472,33 +477,43 @@ h1 {
 #th-apply {
     float: right;
 }
-#th-mentor, #th-volunteer{
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
+
+.button-container{
+    margin-bottom: 50px;
+    margin-right: -5px;
+    margin-left: -5px;
 }
 
-.mentor-button, .volunteer-button{
-    font-size: 1.4rem;
-    border: 4px solid black !important;
-    margin: 5px 10px;
-    width: 100%;
-    font-weight: 600;
-}
-
-.volunteer-button{
+.social-media-item{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
     background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-item i{
     color: white;
+}
+.social-media-item:nth-child(1){
+    margin-right: 10px;
+}
+.social-media-item:nth-child(2){
     margin-left: 10px;
 }
-.mentor-button{
-    color: black;
+
+.social-media-item:hover{
+    background-color: #6c757d;
+    transition: background-color .15s ease-in-out;
 }
 
-.volunteer-button:hover, .mentor-button:hover{
-    border-color: #6c757d !important;
+.devpost-button, .mentor-button{
+    display: inline-flex !important;
+    margin: 0px 5px;
+    margin-bottom: 0px !important;
 }
-
 
 .form-message {
     display: none;
@@ -687,6 +702,69 @@ h1 {
 
 /*--------------------------------------*/
 
+/* Hacker Resource Styling */
+
+#resources .title-underline{
+    margin-bottom: 40px;
+}
+
+.dark-button{
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.dark-button p{
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+.light-button{
+    height: 50px;
+    width: 200px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.light-button p{
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.button-tag{
+    margin-bottom: 50px;
+}
+
+.dark-button:hover{
+    background-color: #6c757d;
+    transition: background-color .15s ease-in-out;
+}
+
+.light-button:hover{
+    background-color: black;
+    transition: background-color .15s ease-in-out;
+}
+
+.light-button:hover p{
+    color: white;
+    transition: color .15s ease-in-out;
+}
+
+
 
 /* Button/Form Information */
 
@@ -767,7 +845,89 @@ footer .nav-link img {
     line-height: 17px;
 }
 
+#prizes{
+    border: 14px solid #7FC0FA;
+}
+
+#challenges{
+    border: 14px solid #6F85FB;
+}
+
+#prizes .card {
+    border: none;
+    padding: 25px 0px;
+    border-radius: 0px
+}
+
+#challenges .card{
+    border: none;
+    padding: 25px 0px;
+    margin-bottom: 25px;
+    border-radius: 0px
+}
+
+#prizes .card-body, #challenges .card-body{
+    padding: 0px;
+}
+
+#prizes .card-body p, #challenges .card-body p{
+    margin-bottom: 10px;
+}
+
+#prizes .col-md-6 .card, #challenges .col-md-6 .card{
+    border-bottom: 1px solid black;
+}
+
+#prizes .col-md-6 .card:last-child, #challenges .col-md-6 .card:last-child{
+    border-bottom: none;
+}
+
+#prizes .prize-item, #challenges .prize-item{
+    font-size: 16px;
+}
+
+#prizes-small, #challenges-small{
+    display: none;
+}
+
 /*--------------------------------------*/
+
+@media (max-width: 1200px){
+    #landing .row{
+        margin-top: 100px;
+    }
+    #top-nav-bar {
+        padding-top: 35px !important;
+        padding-right: 15vw !important;
+        padding-left: 10vw !important;
+    }
+    .nav-link{
+        font-size: 1rem !important;
+    }
+    #mlh-banner-tag {
+        display: none;
+    }
+    .th-text-logo {
+        opacity: 0;
+    }
+    .tamuhack-title {
+        max-width: 300px;
+        top: 30vh;
+        transform: translate(-50%, -50%);
+    }
+    .navbar {
+        padding-left: 10px!important;
+    }
+    #top-nav-bar div ul li {
+        padding: 0px 30px;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .navbar .nav-item {
+        margin: 0;
+    }
+}
 
 @media (max-width: 992px) {
     .left,
@@ -775,10 +935,16 @@ footer .nav-link img {
         margin-left: auto;
         margin-right: auto;
     }
-    #top-nav-bar {
-        padding-top: 35px !important;
-        padding-right: 15vw !important;
-        padding-left: 10vw !important;
+    
+
+    #email-tag, .social-media-container{
+        display: inline-flex;
+    }
+    #email-tag{
+        margin-right: 10px;
+    }
+    .button-container{
+        margin-bottom: 10px;
     }
     .sponsor-container {
         margin: 0;
@@ -806,32 +972,14 @@ footer .nav-link img {
         padding-left: 5vw;
         padding-right: 5vw;
     }
-    #mlh-banner-tag {
-        display: none;
-    }
-    .th-text-logo {
-        opacity: 0;
-    }
-    .tamuhack-title {
-        max-width: 300px;
-        top: 30vh;
-        transform: translate(-50%, -50%);
-    }
+    
     h2 {
         font-size: 1.4rem;
     }
     p {
         font-size: 14px;
     }
-    .navbar {
-        padding-left: 10px!important;
-    }
-    #top-nav-bar div ul li {
-        padding: 0px 30px;
-    }
-    .nav-link {
-        display: inline-block;
-    }
+    
     #landing-graphic {
         transform: none;
         position: static;
@@ -842,6 +990,9 @@ footer .nav-link img {
     }
     #landing {
         margin-bottom: 100px;
+    }
+    #landing .row{
+        margin-top: 0px;
     }
     #landing .col-lg-5 {
         display: flex;
@@ -903,7 +1054,7 @@ footer .nav-link img {
         padding: 0px 30px !important;
         font-size: 1.25rem;
     }
-    .mentor-button, .volunteer-button{
+    .mentor-button, .devpost-button{
         font-size: 1.25rem;
     }
 }
@@ -926,9 +1077,6 @@ footer .nav-link img {
     }
     .container-fluid {
         margin-bottom: 40px;
-    }
-    .navbar .nav-item {
-        margin: 0;
     }
     #email-tag {
         font-size: 1rem;
@@ -975,6 +1123,11 @@ footer .nav-link img {
     #landing .col-lg-5 img {
         max-width: 325px;
         margin: 80px auto 60px;
+    }
+    #landing .social-media-container{
+        transform: scale(0.75);
+        position: relative;
+        top: 5px;
     }
     #email-form input {
         width: 100%;
@@ -1029,11 +1182,22 @@ footer .nav-link img {
         margin-left: -10px;
         margin-right: auto;
     }
-    .mentor-button, .volunteer-button{
+    .mentor-button, .devpost-button{
         font-size: 1.1rem;
     }
     .parking-card h6 {
         font-size: 16px;
+    }
+
+    #prizes-large, #challenges-large{
+        display: none;
+    }
+
+    #prizes-small, #challenges-small{
+        display: inherit;
+    }
+    #prizes .card {
+        padding-bottom: 0;
     }
 }
 
@@ -1060,11 +1224,20 @@ footer .nav-link img {
         margin-left: -10px;
         margin-right: -10px;
     }
-    #th-volunteer, #th-mentor{
+    #th-devpost, #th-mentor{
         flex: 0 0 100%;
     }
     .plusminus{
         top: 30px;
+    }
+    .devpost-button, .mentor-button{
+        width: calc(100% - 20px);
+    }
+    #landing .col-lg-7{
+        margin-top: 30px;
+    }
+    .button-tag{
+        margin-bottom: 40px;
     }
     .mb-vline{
         top: 0 !important;
@@ -1073,6 +1246,16 @@ footer .nav-link img {
 
     #schedule .col-md-6:last-child{
         margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 466px){
+    .social-media-container{
+        left: -17px;
+    }
+    #email-tag{
+        margin-top: 1rem;
+        margin-bottom: 0px;
     }
 }
 
