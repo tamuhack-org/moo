@@ -1,6 +1,5 @@
-# TAKEN FROM https://github.com/GoogleCloudPlatform/github-actions/blob/master/example-workflows/gke/.github/workflows/gke.yml
-
-name: Build and Push Image to GCR
+name: Build and Deploy to GCR
+# Re-uses a lot from https://github.com/GoogleCloudPlatform/github-actions/tree/docs/service-account-key/example-workflows/gke
 
 on:
   push:
@@ -21,7 +20,6 @@ jobs:
         uses: actions/checkout@master
 
       # Setup gcloud CLI
-      - name: Setup gcloud
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           version: "270.0.0"
@@ -31,12 +29,14 @@ jobs:
       # Configure docker to use the gcloud command-line tool as a credential helper
       - run: |
           gcloud auth configure-docker
+
       # Build the Docker image
       - name: Build
         run: |
           docker build -t gcr.io/$GCP_PROJECT/$IMAGE:$GITHUB_SHA \
             --build-arg GITHUB_SHA="$GITHUB_SHA" \
             --build-arg GITHUB_REF="$GITHUB_REF" .
+
       # Push the Docker image to Google Container Registry
       - name: Publish
         run: |
