@@ -19,7 +19,7 @@ import {slackRoute} from './routes/slack';
 import {tamuHackRouter} from './routes/th';
 import {volunteerRoute} from './routes/volunteer';
 import {workshopRoute} from './routes/workshop';
-import {applyRoute} from './routes/apply'
+import {applyRoute} from './routes/apply';
 
 const PORT = process.env.PORT || 3000;
 const app = express();
