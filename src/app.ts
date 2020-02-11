@@ -19,6 +19,7 @@ import {slackRoute} from './routes/slack';
 import {tamuHackRouter} from './routes/th';
 import {volunteerRoute} from './routes/volunteer';
 import {workshopRoute} from './routes/workshop';
+import {applyRoute} from './routes/apply';
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -43,6 +44,7 @@ app.get('/hiss', hissRoute);
 app.get('/slack', slackRoute);
 app.get('/demo', demoRoute);
 app.get('/facebook', facebookRoute);
+app.get('/apply', applyRoute);
 app.post('/email', emailRoute);
 
 app.get('/mentor', mentorRoute);
