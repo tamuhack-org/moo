@@ -315,7 +315,7 @@ header{
 }
 
 #what-we-do-container {
-    background-color: #FFF6F8;
+    background-color: rgb(255, 255, 255);
     padding-top: 25px;
     margin-top: -2px;
     padding-bottom: 25px;
@@ -342,7 +342,7 @@ header{
 /* Our Community Section */
 
 #our-community-container {
-    background-color: #FFEAEE;
+    background-color: rgb(255, 255, 255);
 }
 
 #our-community-container .container {
@@ -384,7 +384,7 @@ header{
 /* Events Overview Section */
 
 #events-overview {
-    background-color: #FEF0F3;
+    background-color: rgb(255, 255, 255);
 }
 
 #events-overview .triangle-container {
@@ -414,6 +414,11 @@ header{
     padding: .5rem 1rem;
     font-weight: 600;
     background: #639ACB;
+}
+
+#mid-col {
+    border-right: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
 }
 
 .col-lg-4 {
