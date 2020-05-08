@@ -1,0 +1,906 @@
+* {
+    /* padding: 0px!important; */
+    margin: 0px;
+    font-family: "Questrial", "sans-serif";
+    font-weight: 400!important;
+}
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* Logo Styling */
+.th-logo{
+    width: 30px;
+    height: 30px;
+  }
+  .th-text-logo {
+    margin-left: 15px; margin-top: 6px; min-width: 90px; opacity: 0.8;
+  }
+  .th-faded{
+    width: 75%;
+    height: auto;
+  }
+
+  #top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+  }
+  /*--------------------------------------*/
+
+/* Top Navigation Section */
+.navbar {
+    background-color: transparent;  
+    padding-left: 10vw!important; 
+    padding-right: 10vw!important;
+  }
+
+  #top-nav-bar{
+    margin-bottom: 50px !important;
+  }
+  .nav-container{
+    position: relative;
+    padding-right: 0px !important;
+    margin-bottom: 79px;
+  }
+  .navbar-toggler {
+    border-color: transparent!important;
+  }
+  #top-nav-bar {
+    z-index: 10000;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 78vw;
+  }
+  #top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+  }
+  #top-nav-bar div ul li {
+    padding: 0px 20px;
+  }
+  #top-nav-bar div a {
+    border-bottom: 7px solid transparent;
+    color: white!important;
+  }
+  #top-nav-bar div .main-nav-ui li > a {
+    text-transform: uppercase;
+    color: white!important;
+  }
+  #top-nav-bar div .main-nav-ui li > a:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 white inset, 0 -6px 0 0 white inset;
+  }
+  /*--------------------------------------*/
+
+/* nav p a {
+    text-decoration: none;
+    color: white;
+} */
+.live-list {
+    color: white;
+    font-size: 28px;
+    padding-left: 25px;
+  }
+.live-list li {
+    padding-left: 15px;
+}
+.live-list li a {
+    color: white;
+    text-decoration: underline;
+}
+.live-list li a:hover {
+    color: #cdcdcd;
+    transition: 0.3s;
+}
+
+#th-header-link:hover {
+    text-decoration: none;
+}
+
+header {
+    margin-top: 16px !important;
+    margin-bottom: 14vh !important;
+}
+
+.th-logo {
+    height: 30px;
+    width: 30px;
+}
+
+.tamuhack-logo {
+    margin-top: 6px!important;
+    min-width: 90px;
+    width: 124px;
+    height: 23px;
+}
+
+/****** TYPOGRAPHY ******/
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/****** LEFT CONTAINER ******/
+
+.hh-title {
+    text-transform: uppercase;
+    font-family: Questrial;
+    font-size: 3.5vw;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #354965;
+}
+
+.hh-subtitle {
+    color: #354965;
+}
+
+/****** RIGHT CONTAINER ******/
+
+.my-container {
+    margin: 0 0 0 15vw;
+    max-width: 55%;
+}
+
+#rect2 {
+    display: none;
+    width: 100%;
+}
+
+.hh-logo {
+    max-width: 280px;
+    margin-bottom: 40px;
+}
+
+.content-txt {
+    margin-bottom: 40px; 
+    color: white; 
+    position:relative; 
+    z-index: 10; 
+    margin-top: 8%; 
+    line-height: 44px; 
+    font-family: Questrial, sans-serif;
+}
+
+.content-txt a{
+    color: white;
+    text-decoration: underline;
+}
+
+#rect {
+    position: absolute; 
+    right: 0; 
+    top: -240px; 
+    z-index: -10;
+    width: 100%; 
+    height: 740px;
+}
+
+.apply-btn {
+    background-color: #69A2CC; 
+    color: white; 
+    border-radius: 5px!important; 
+    padding: 15px 20px; 
+    font-size: 22px; 
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.apply-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #346c94;
+    transition: 0.3s;
+}
+
+.mentor-btn {
+    color: white; 
+    border-radius: 5px!important; 
+    padding: 15px 20px; 
+    font-size: 22px; 
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 2px white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+.mentor-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #69A2CC;
+    transition: 0.3s;
+}
+
+#foot-container {
+    padding-top: 250px;
+}
+
+#footer-bg {
+    background-image:url(./../assets/hh-assets/bottom-rectangle.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/****** FORM ******/
+.btn {
+    background-color: #69A2CC; 
+    border-color: #69A2CC; 
+    color: white; 
+    font-weight: bolder!important; 
+    border-radius: 0px 5px 5px 0px; 
+    padding: 0px 20px 0px 20px; 
+    font-size: 18px; 
+    width: 100%;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #2F84C3;
+    border-color: #2F84C3;
+    transition: 0.3s;
+}
+.form-control {
+    font-size: 18px; 
+    border-radius: 5px 0 0 5px; 
+    max-width: 300px;
+    width: 60%;
+}
+
+.input-group {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+/***** SECTIONS *****/
+h4 {
+    font-family: "Roboto", "sans-serif";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold!important;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+
+    color: #212121;
+}
+
+p {
+    font-family: "Questrial", "sans-serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+
+    color: #000000;
+}
+
+.section {
+    overflow: hidden;
+    margin: 0px 10vw 0px 10vw;
+    padding-top: 40px;
+}
+
+.section-left {
+    width: 50%;
+    padding-right: 5px;
+    float: left;
+}
+
+.section-right {
+    width: 50%;
+    padding-left: 5px;
+    float: right;
+}
+
+.section-text-left {
+    width: 50%;
+    padding-top: 40px;
+    padding-right: 10%;
+    float: left;
+}
+
+.section-text-right {
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 10%;
+    float: right;
+}
+
+.section-graphic {
+    max-width: 100%;
+}
+
+/*** Schedule ***/
+
+.schedule-wrapper {
+    background-color: #354965;
+}
+
+.schedule-graphic{
+    width: 100%;
+    background-color: #354965;
+}
+
+#schedule-content{
+    margin-left: calc(10vw - 25px);
+}
+
+#schedule h4{
+    color: white;
+    margin: 0px;
+}
+
+#schedule-content .col-lg-6 .schedule-item:first-child p{
+    font-size: 1.35rem;
+    font-weight: 700 !important;
+    margin-left: 3px;
+}
+
+.schedule-item{
+    margin: 5px 0px;
+    display: flex;
+}
+
+.schedule-item .fill{
+    flex: 0 0 12px; 
+    margin-right: 6px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.schedule-item .schedule-item-time{
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex: 0 0 150px;
+}
+
+.schedule-item .schedule-item-title{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.schedule-item .workshop{
+    background-color: #3E678C;
+}
+
+.schedule-item .food{
+    background-color: #8DBFEC;
+}
+
+.schedule-item .mini-event{
+    background-color: #273954;
+}
+
+.schedule-item p{
+    color: white;
+}
+
+.schedule-key{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.schedule-key .key-item{
+    display: flex;
+    align-items: center;
+}
+
+.key-item .key-fill{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+}
+
+.key-item:nth-child(1) .key-fill{
+    background-color: #3E678C;
+}
+
+.key-item:nth-child(2) .key-fill{
+    background-color: #69A2CC;
+}
+
+.key-item:nth-child(3) .key-fill{
+    background-color: #273954;
+}
+
+.key-item p{
+    margin-left: 15px;
+    color: white;
+    margin-right: 30px;
+}
+
+#event-prep a[role="button"]{
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 15px 0 30px 0;
+    font-size: 1.15rem;
+    color: white;
+    display: inline-block;
+    background-color: #69A2CC;
+    border: none;
+    text-decoration: none;
+}
+
+#event-prep a[role="button"]:hover{
+    background-color: #346c94;
+    color: white;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+#event-prep .col-lg-4{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#event-prep .col-lg-4 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#links p{
+    margin: 15px 0px;
+}
+
+#links .col-lg-6, #links .col-lg-12{
+    margin: 15px 0px;
+}
+
+#links a, #event-prep a{
+    color: #354965;
+    text-decoration: underline;
+}
+
+#links a:hover, #event-prep a:hover{
+    color: #5879a7;
+}
+
+#prizes .col-lg-6{
+    margin: 15px 0px;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+
+/* 29px because 30px - 1px for the border */
+#prizes .col-lg-6 p{
+    margin-bottom: 29px;
+}
+
+.event-info-header{
+    font-weight: bolder !important;
+}
+
+/*** FAQ ***/
+#about {
+    margin-top: 150px;
+}
+
+#sec-faq {
+    max-width: 100%!important;
+}
+
+#sec-faq .col-lg-6{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.faq-card {
+  background-color: #354965;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0px;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.faq-card:hover{
+    background-color: #1c2735;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.faq-ques {
+  font-family: "Roboto", "san-serif";
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 14px;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  padding-right: 50px;
+}
+
+.faq-ans {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/** bottom footer **/ 
+#bottom-nav-bar {
+  margin-top: 60px;
+}
+#bottom-nav-bar > a {
+  padding-top: 0px!important;
+}
+#bottom-nav-bar img {
+  margin-top: 0px!important;
+}
+#bottom-nav-bar div ul li {
+  padding: 0px 10px;
+}
+
+.nice-text > a {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8) !important;
+   }
+   .nice-text > a:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
+    color: rgba(255, 255, 255, 1) !important;
+   }
+.nav a > span {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 5px;
+   }
+   .nav a > span:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
+    color: rgba(255, 255, 255, 1) !important;
+   }
+
+#bottom-nav-bar div a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+#bottom-nav-bar div .bottom-nav-ui li > a {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+#bottom-nav-bar div .bottom-nav-ui li > a:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 1) inset, 0 -2px 0 0 rgba(255, 255, 255, 1) inset;
+  color: rgba(255, 255, 255, 1) !important;
+}
+#top-nav-bar .navbar-brand {
+  margin-top: -16px;
+  margin-left: 30px;
+}
+
+.navbar {
+  background-color: none; 
+  margin: 0!important; 
+  padding-left: 10vw!important; 
+  padding-right: 10vw!important;
+}
+
+.navbar-toggler {
+  border-color: transparent!important;
+}
+
+#top-bar-icons {
+    margin-left: 10vw; max-width: 79vw; padding-left: 30px;
+}
+
+
+/****** RESPONSIVENESS ******/
+
+@media (max-width: 1101px) {
+    h1 {
+        font-size: 24px; /* Looking for best font ratio */
+        line-height: 30px !important;
+    }
+    #bottom-nav-bar div a {
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+      #bottom-nav-bar div .main-nav-ui li > a {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+    .section-left {
+        width: 100%;
+        max-width: 500px;
+        padding-right: 0px;
+        padding-top: 10px;
+        float: none;
+        margin: auto;
+    }
+    
+    .section-right {
+        width: 100%;
+        max-width: 500px;
+        padding-left: 0px;
+        padding-top: 10px;
+        float: none;
+        margin: auto;
+    }
+    
+    .section-text-left {
+        width: 100%;
+        padding-right: 0px;
+        float: left;
+    }
+    
+    .section-text-right {
+        width: 100%;
+        padding-left: 0px;
+        float: right;
+    }
+} 
+
+.sponsor-img .col-4, 
+.sponsor-img .col-6 {
+    margin-bottom: 60px;
+}
+
+.sponsor-img .col-12 {
+    margin-bottom: 40px;
+}
+
+.sponsor-img a img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.sponsor-img .col-12 a img {
+    max-height: 80px;
+}
+
+.sponsor-img .col-6 a img {
+    max-height: 50px;
+}
+
+.sponsor-img .col-4 a img {
+    max-height: 30px;
+}
+
+@media (max-width: 992px){
+    #top-nav-bar{
+        background-color: white;
+    }
+    #top-nav-bar .nav-item {
+       padding: 5px 20px;
+    }
+    #top-nav-bar .nav-item .nav-link{
+        color: black !important;
+        display: inline;
+        margin: 10px 10px 30px;
+    }
+
+    #top-nav-bar div .main-nav-ui li > a:hover {
+        transition: all 0.3s ease-out;
+        box-shadow: 0 -1px 0 0 #354965 inset, 0 -6px 0 0 #354965 inset;
+    }
+    .th-text-logo{
+        opacity: 0 !important;
+    }
+    .tamuhack-logo {
+        display: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .sponsor-img a img.padded {
+        margin-top: 10px;
+    }
+    .sponsor-img a img {
+        transition: 0.2s;
+    }
+    .sponsor-img a img:hover {
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 767px) {
+    #about {
+        margin-top: 0px;
+    }
+    .apply-btn, .mentor-btn {
+        padding: 14px 30px; 
+        font-size: 18px; 
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    #top-bar-icons {
+        margin-left: 10px; max-width: 79vw; padding-left: 30px;
+    }
+    #first-section {
+        margin-top: 40px;
+    }
+
+    #foot-container {
+        padding-top: 40px;
+    }
+
+    #footer-bg {
+        background-image: none;
+        background-color: #354965;
+    }
+
+    .section {
+        overflow: hidden;
+        margin: 0px 30px 0px 30px;
+        padding-top: 40px;
+    }
+
+    #faq-sec {
+        margin: 20px 20px 60px 20px;
+    }
+
+
+    .col-md-10 {
+        padding: 0 8vw;
+    }
+
+    /****** NAV ******/
+    header {
+        margin-bottom: 8vh !important;
+    }
+    /* .th-logo, .tamuhack-logo {
+        height: 20px;
+    } */
+
+    /****** TYPOGRAPHY ******/
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+
+/****** LEFT CONTAINER ******/
+    .hhlogo-column {
+        padding-left: 8vw!important;
+        padding-right: 8vw;
+        margin-top: 0px!important;
+    }
+    .hh-logo {
+        max-width: 190px;
+        margin-bottom: 40px;
+    }
+    .hh-title {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+    .hh-subtitle {
+        font-size: 20px;
+    }
+/****** RIGHT CONTAINER ******/
+    .my-container {
+        margin: 0 !important;
+        max-width: 100%;
+        padding-bottom: 10px;
+        background-color: #354965;
+    }
+    .my-wrapper {
+        margin: 0 10vw;
+    }
+    .content-txt {
+        padding-top: 0;
+        margin: -1px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    #rect {
+        display: none;
+    }
+    #rect2 {
+        display: block !important;
+    }
+
+/****** FORM ******/
+    .form-control, .btn {
+        font-size: 16px !important;
+    }
+
+    #schedule-content .row .col-lg-6{
+        width: 100%;
+    }
+
+    .schedule-graphic{
+        width: 1200px;
+    }
+}
+
+/****** Fix scaling ******/
+@media (-webkit-min-device-pixel-ratio: 2.5) { 
+    h1 {
+        font-size: 24px;
+        line-height: 32px !important;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    /****** FORM ******/
+    .form-control, .btn {
+        font-size: 15px !important;
+    }
+    .form-control {
+        max-width: 240px !important;
+    }
+
+    .th-logo, .tamuhack-logo {
+        height: 20px;
+    }
+    #rect {
+        height: 590px !important;
+    }
+    .hh-logo {
+        max-width: 200px !important;
+    }
+    .hh-subtitle {
+        font-size: 18px !important;
+    }
+    #rect {
+        height: 600px;
+    }
+}
+
+
+.plusminus {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    /* Vertical line */
+    /* horizontal line */
+  }
+  .plusminus:before, .plusminus:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    transition: transform 0.25s ease-out;
+  }
+  .plusminus:before {
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    margin-left: -1.5px;
+  }
+  .plusminus:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: -1.5px;
+  }
+  .plusminus:hover {
+    cursor: pointer;
+  }
+  .plusminus-clicked:before {
+    transform: rotate(90deg);
+  }
+  .plusminus-clicked:after {
+    transform: rotate(180deg);
+  }
+  
