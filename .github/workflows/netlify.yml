@@ -1,5 +1,6 @@
-name: PR Site Preview
+name: Site Preview
 on:
+  push:
   pull_request:
     types: [opened, synchronize]
 jobs:
