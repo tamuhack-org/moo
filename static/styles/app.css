@@ -92,10 +92,6 @@ h5 a i:hover {
     color: white;
 }
 
-.fixed-top {
-    top: 40px!important;
-}
-
 /*For the scrolling href elements */
 
 section .goto {
@@ -236,7 +232,7 @@ header{
 .backdrop-container {
     top: calc(100vh - 63px - (100vw * .45833333333));
     position: relative;
-    height: calc(100vw * .45833333333);
+    height: calc(100vw * .47);
     overflow: hidden;
     background-color: white;
 }
