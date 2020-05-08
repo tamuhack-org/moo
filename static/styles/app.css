@@ -348,6 +348,8 @@ header{
 #our-community-container .container {
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 #our-community-container .inner-container {
@@ -357,10 +359,12 @@ header{
 
 #our-community-container .content-container {
     max-width: 460px;
+    justify-content: center;
 }
 
 #our-community-container .content-container p {
     padding: 20px 0px;
+    font-size: 18px;
 }
 
 .signup-button {
