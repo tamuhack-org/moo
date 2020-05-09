@@ -1,19 +1,13 @@
-# Moo
+# Moo - TAMUhack Static Site
 
-This app is hosted on [Google Cloud Platform](https://cloud.google.com) as part of a Kubernetes cluster. It uses [Google Cloud Build](https://cloud.google.com/cloud-build) for continuous deployment, and [Google Cloud Datastore](https://cloud.google.com/datastore) for storing email data.
+Hosted on github pages. Original URL on [https://tamuhack-org.github.io/moo/](https://tamuhack-org.github.io/moo/) and redirected to [http://tamuhack.com/](http://tamuhack.com/).
 
-## Running the app locally:
-The application runs using Node v10; install the dependencies with:
-```
-npm i
-```
-To run the application locally (with the exception of storing data), you'll need to compile the TypeScript into JavaScript.  The command to do this is:
-```
-npm run gcp-build
-```
-Then, to run the server:
-```
-npm start
-```
-
-The server should be hosted at [http://localhost:3000](http://localhost:3000).
+## Sitemap
+https://tamuhack.com/tamuhack-static/
+https://tamuhack.com/tamuhack-static/th
+https://tamuhack.com/tamuhack-static/th/live
+https://tamuhack.com/tamuhack-static/th/2019
+https://tamuhack.com/tamuhack-static/th/2018
+https://tamuhack.com/tamuhack-static/th/2016
+https://tamuhack.com/tamuhack-static/hh
+https://tamuhack.com/tamuhack-static/hh/2018
