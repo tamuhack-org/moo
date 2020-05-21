@@ -227,12 +227,25 @@
                 classLeaving = '';
         }
 
+        var newDate = timeline.newDateIndex;
+        var oldDate = timeline.oldDateIndex;
+        // setTimeout fixes javascript leaving behind classEntering/classLeaving classes when scrolling too fast
+        setTimeout(function() { removeAnimationClasses(timeline.content[newDate]); }, 300);
         Util.addClass(timeline.content[timeline.newDateIndex], classEntering);
         if (timeline.newDateIndex != timeline.oldDateIndex) {
             Util.removeClass(timeline.content[timeline.oldDateIndex], 'cd-h-timeline__event--selected');
+            setTimeout(function() { removeAnimationClasses(timeline.content[oldDate]); }, 300);
             Util.addClass(timeline.content[timeline.oldDateIndex], classLeaving);
             timeline.contentWrapper.style.height = timeline.content[timeline.newDateIndex].offsetHeight + 'px';
         }
+    };
+
+    // function used with the setTimeout to fix javascript leaving behind classEntering/classLeaving classes when scrolling too fast
+    function removeAnimationClasses(timelineEvent) {
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--leave-right");
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--enter-right");
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--leave-left");
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--enter-left");
     };
 
     // reset content classes when entering animation is over
