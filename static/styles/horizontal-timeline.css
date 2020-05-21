@@ -48,6 +48,12 @@
     background-position: center center;
 }
 
+.th-current::after {
+    background-image: url("../assets/horizontal-timeline/current.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 /* END HACKATHON LOGOS */
 
