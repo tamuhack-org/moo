@@ -92,10 +92,6 @@ h5 a i:hover {
     color: white;
 }
 
-.fixed-top {
-    top: 40px!important;
-}
-
 /*For the scrolling href elements */
 
 section .goto {
@@ -236,7 +232,7 @@ header{
 .backdrop-container {
     top: calc(100vh - 63px - (100vw * .45833333333));
     position: relative;
-    height: calc(100vw * .45833333333);
+    height: calc(100vw * .47);
     overflow: hidden;
     background-color: white;
 }
@@ -315,7 +311,7 @@ header{
 }
 
 #what-we-do-container {
-    background-color: #FFF6F8;
+    background-color: rgb(255, 255, 255);
     padding-top: 25px;
     margin-top: -2px;
     padding-bottom: 25px;
@@ -342,12 +338,14 @@ header{
 /* Our Community Section */
 
 #our-community-container {
-    background-color: #FFEAEE;
+    background-color: rgb(255, 255, 255);
 }
 
 #our-community-container .container {
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 #our-community-container .inner-container {
@@ -357,10 +355,12 @@ header{
 
 #our-community-container .content-container {
     max-width: 460px;
+    justify-content: center;
 }
 
 #our-community-container .content-container p {
     padding: 20px 0px;
+    font-size: 18px;
 }
 
 .signup-button {
@@ -384,7 +384,7 @@ header{
 /* Events Overview Section */
 
 #events-overview {
-    background-color: #FEF0F3;
+    background-color: rgb(255, 255, 255);
 }
 
 #events-overview .triangle-container {
@@ -414,6 +414,11 @@ header{
     padding: .5rem 1rem;
     font-weight: 600;
     background: #639ACB;
+}
+
+#mid-col {
+    border-right: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
 }
 
 .col-lg-4 {
