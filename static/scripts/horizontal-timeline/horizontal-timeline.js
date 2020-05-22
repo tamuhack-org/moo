@@ -82,19 +82,18 @@
         new SwipeContent(self.datesContainer);
         self.datesContainer.addEventListener('swipeLeft', function(event) {
             // translateTimeline(self, 'next');
-            // select new element on right arrow click
             var selectedIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
-            if (selectedIndex != 0) {
-                // left bounds check
-                selectNewDate(self, self.date[selectedIndex - 1]);
+            if (selectedIndex != self.date.length - 1) {
+                // right bounds check
+                selectNewDate(self, self.date[selectedIndex + 1]);
             }
         });
         self.datesContainer.addEventListener('swipeRight', function(event) {
             // translateTimeline(self, 'prev');
             var selectedIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
-            if (selectedIndex != self.date.length - 1) {
-                // right bounds check
-                selectNewDate(self, self.date[selectedIndex + 1]);
+            if (selectedIndex != 0) {
+                // left bounds check
+                selectNewDate(self, self.date[selectedIndex - 1]);
             }
         });
 
