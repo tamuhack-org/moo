@@ -79,7 +79,7 @@
         });
 
         //swipe on timeline
-        new SwipeContent(self.datesContainer);
+        // dependent on SwipeContainer being generated in generateTimeline()
         self.datesContainer.addEventListener('swipeLeft', function(event) {
             // translateTimeline(self, 'next');
             var selectedIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
@@ -286,6 +286,10 @@
     var horizontalTimeline;
     var horizontalTimelineTimelineArray;
 
+    // generate swipe container ONCE
+    // this is to prevent hundreds from being generated while resizing the page
+    var swipeGenerated;
+
     // create the timeline
     function generateTimeline() {
         horizontalTimeline = document.getElementsByClassName('js-cd-h-timeline');
@@ -294,6 +298,12 @@
             for (var i = 0; i < horizontalTimeline.length; i++) {
                 horizontalTimelineTimelineArray.push(new HorizontalTimeline(horizontalTimeline[i]));
             }
+        }
+        // only generate the swipecontent once
+        if (!swipeGenerated) {
+            // new SwipeContent(self.datesContainer);
+            new SwipeContent(horizontalTimeline[0].getElementsByClassName('cd-h-timeline__dates')[0]);
+            swipeGenerated = true;
         };
     }
 
