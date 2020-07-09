@@ -48,6 +48,12 @@
     background-position: center center;
 }
 
+.hh20::after {
+    background-image: url("../assets/horizontal-timeline/howdyhack19.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 /* END HACKATHON LOGOS */
 
