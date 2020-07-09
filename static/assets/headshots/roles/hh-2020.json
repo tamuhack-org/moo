@@ -32,7 +32,7 @@
     "github": "https://github.com/soriamarissa",
     "linkedin": "https://www.linkedin.com/in/marissa-soria-233b8914b/",
     "photo_id": "marissa",
-    "role": "Logistics"
+    "role": "Vice President"
   },
   {
     "name": "Humza Jaffri",
@@ -78,65 +78,58 @@
   },
   {
     "name": "Adil Rasiyani",
-    "github": "",
-    "linkedin": "",
+    "github": "https://github.com/AdilRas",
+    "linkedin": "https://www.linkedin.com/in/adil-rasiyani/",
     "photo_id": "adil",
     "role": "Tech"
   },
   {
     "name": "Dylan Theriot",
-    "github": "",
-    "linkedin": "",
+    "github": "https://github.com/dylantheriot",
+    "linkedin": "https://www.linkedin.com/in/dylan-theriot/",
     "photo_id": "Dylan",
     "role": "Tech"
   },
   {
     "name": "Zakaria Ridouh",
-    "github": "",
-    "linkedin": "",
+    "github": "https://github.com/zridouh-chwy",
+    "linkedin": "https://www.linkedin.com/in/zakaria-r-2a0088117/",
     "photo_id": "Zakaria",
-    "role": "Tech"
+    "role": "Tech Intern"
   },
   {
     "name": "Yashas Salankimatt",
     "github": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/yashas-s/",
     "photo_id": "yashas",
     "role": "Hardware"
   },
   {
-    "name": "",
+    "name": "Joanna Zhou",
     "github": "",
-    "linkedin": "",
-    "photo_id": "nathanR",
-    "role": "Tech"
+    "linkedin": "https://www.linkedin.com/in/joannazhou-tamu/",
+    "photo_id": "joanna",
+    "role": "Logistics"
   },
   {
-    "name": "Nathan Read",
-    "github": "",
-    "linkedin": "",
-    "photo_id": "nathanR",
-    "role": "Tech"
+    "name": "Anikait Sharma",
+    "github": "https://github.com/anikait627",
+    "linkedin": "https://www.linkedin.com/in/anikait/",
+    "photo_id": "anikait",
+    "role": "Logistics"
   },
   {
-    "name": "Nathan Read",
-    "github": "",
-    "linkedin": "",
-    "photo_id": "nathanR",
-    "role": "Tech"
+    "name": "Rohit Barichello",
+    "github": "https://github.com/rohitbarichello",
+    "linkedin": "https://www.linkedin.com/in/rohitbarichello/",
+    "photo_id": "rohit",
+    "role": "Logistics"
   },
   {
-    "name": "Nathan Read",
+    "name": "Sabrina Lu",
     "github": "",
-    "linkedin": "",
-    "photo_id": "nathanR",
-    "role": "Tech"
-  },
-  {
-    "name": "Nathan Read",
-    "github": "",
-    "linkedin": "",
-    "photo_id": "nathanR",
-    "role": "Tech"
+    "linkedin": "https://www.linkedin.com/in/sabrinamjlu/",
+    "photo_id": "sabrina",
+    "role": "Logistics"
   }
 ]
