@@ -79,22 +79,21 @@
         });
 
         //swipe on timeline
-        new SwipeContent(self.datesContainer);
+        // dependent on SwipeContainer being generated in generateTimeline()
         self.datesContainer.addEventListener('swipeLeft', function(event) {
             // translateTimeline(self, 'next');
-            // select new element on right arrow click
             var selectedIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
-            if (selectedIndex != 0) {
-                // left bounds check
-                selectNewDate(self, self.date[selectedIndex - 1]);
+            if (selectedIndex != self.date.length - 1) {
+                // right bounds check
+                selectNewDate(self, self.date[selectedIndex + 1]);
             }
         });
         self.datesContainer.addEventListener('swipeRight', function(event) {
             // translateTimeline(self, 'prev');
             var selectedIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
-            if (selectedIndex != self.date.length - 1) {
-                // right bounds check
-                selectNewDate(self, self.date[selectedIndex + 1]);
+            if (selectedIndex != 0) {
+                // left bounds check
+                selectNewDate(self, self.date[selectedIndex - 1]);
             }
         });
 
@@ -227,12 +226,25 @@
                 classLeaving = '';
         }
 
+        var newDate = timeline.newDateIndex;
+        var oldDate = timeline.oldDateIndex;
+        // setTimeout fixes javascript leaving behind classEntering/classLeaving classes when scrolling too fast
+        setTimeout(function() { removeAnimationClasses(timeline.content[newDate]); }, 300);
         Util.addClass(timeline.content[timeline.newDateIndex], classEntering);
         if (timeline.newDateIndex != timeline.oldDateIndex) {
             Util.removeClass(timeline.content[timeline.oldDateIndex], 'cd-h-timeline__event--selected');
+            setTimeout(function() { removeAnimationClasses(timeline.content[oldDate]); }, 300);
             Util.addClass(timeline.content[timeline.oldDateIndex], classLeaving);
             timeline.contentWrapper.style.height = timeline.content[timeline.newDateIndex].offsetHeight + 'px';
         }
+    };
+
+    // function used with the setTimeout to fix javascript leaving behind classEntering/classLeaving classes when scrolling too fast
+    function removeAnimationClasses(timelineEvent) {
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--leave-right");
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--enter-right");
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--leave-left");
+        Util.removeClass(timelineEvent, "cd-h-timeline__event--enter-left");
     };
 
     // reset content classes when entering animation is over
@@ -274,6 +286,10 @@
     var horizontalTimeline;
     var horizontalTimelineTimelineArray;
 
+    // generate swipe container ONCE
+    // this is to prevent hundreds from being generated while resizing the page
+    var swipeGenerated;
+
     // create the timeline
     function generateTimeline() {
         horizontalTimeline = document.getElementsByClassName('js-cd-h-timeline');
@@ -282,6 +298,12 @@
             for (var i = 0; i < horizontalTimeline.length; i++) {
                 horizontalTimelineTimelineArray.push(new HorizontalTimeline(horizontalTimeline[i]));
             }
+        }
+        // only generate the swipecontent once
+        if (!swipeGenerated) {
+            // new SwipeContent(self.datesContainer);
+            new SwipeContent(horizontalTimeline[0].getElementsByClassName('cd-h-timeline__dates')[0]);
+            swipeGenerated = true;
         };
     }
 

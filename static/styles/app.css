@@ -1,6 +1,78 @@
+/* AVENIR NEXT FONT */
+
+
+/* font converted using font-converter.net. thank you! */
+
+@font-face {
+    /* regular */
+    font-family: "AvenirNext";
+    src: url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/AvenirNext/AvenirNext-Regular/AvenirNext-Regular-08.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* italic */
+    font-family: "AvenirNext";
+    src: url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/AvenirNext/AvenirNext-Italic/AvenirNext-Italic-05.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    /* bold */
+    font-family: "AvenirNext";
+    src: url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    /* bold italic */
+    font-family: "AvenirNext";
+    src: url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/AvenirNext/AvenirNext-BoldItalic/AvenirNext-BoldItalic-02.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* END AVENIR NEXT FONT */
+
 body,
 html {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'AvenirNext';
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -85,12 +157,14 @@ h5 a i:hover {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .toast:hover {
     background-color: #D47082;
     transition: 0.3s;
     text-decoration: none;
     color: white;
 }
+
 
 /*For the scrolling href elements */
 
@@ -183,7 +257,10 @@ section .goto {
 }
 
 .th-text-logo {
-  margin-left: 15px; margin-top: 6px; height: 24px; opacity: 0.8;
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 24px;
+    opacity: 0.8;
 }
 
 .th-faded {
@@ -196,10 +273,11 @@ section .goto {
 
 
 /* Header Section */
-header{
-  min-height: 100vh;
-  background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
-  background-image: linear-gradient(white 60%, rgb(255, 246, 248) 60%);
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
+    background-image: linear-gradient(white 60%, rgb(255, 246, 248) 60%);
 }
 
 .tamuhack-title {
@@ -369,6 +447,7 @@ header{
     color: white;
     font-weight: bolder;
 }
+
 .signup-button:hover {
     background-color: #D47082;
 }
@@ -652,8 +731,9 @@ input.form-control {
 .hh-button:hover {
     background-color: #2E4D68 !important;
 }
+
 .ws-button:hover {
-  background-color: rgb(84, 130, 170) !important;
+    background-color: rgb(84, 130, 170) !important;
 }
 
 
