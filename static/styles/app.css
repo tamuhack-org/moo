@@ -276,8 +276,6 @@ section .goto {
 
 header {
     min-height: 100vh;
-    background: linear-gradient(to bottom, white 60%, #FFF6F8 60% 100%);
-    background-image: linear-gradient(white 60%, rgb(255, 246, 248) 60%);
 }
 
 .tamuhack-title {
