@@ -3,7 +3,11 @@ import json
 def html_template(name, github, linkedin, photo_id, role):
     if not github == "":
         s = """            <div class="col-md-2 col-4 padding-0">
-                <img src="./static/assets/headshots/{photo_id}.jpg" alt="TAMUhack Director" class="timeline-director-img">
+                <picture>
+                    <source type="image/webp" srcset="./static/assets/headshots/compressed/{photo_id}.webp" class="timeline-director-img">
+                    <source type="image/jpg" srcset="./static/assets/headshots/compressed/{photo_id}.jpg" class="timeline-director-img">
+                    <img src="./static/assets/headshots/compressed/{photo_id}.jpg" alt="TAMUhack Director" class="timeline-director-img">
+                </picture>
                 <p class="timeline-director-name">{name}</p>
                 <p class="timeline-director-position">{role}</p>
                 <div class="row justify-content-center">
@@ -13,7 +17,11 @@ def html_template(name, github, linkedin, photo_id, role):
             </div>""".format(name=name, github=github, linkedin=linkedin, photo_id=photo_id, role=role)
     else: 
         s = """            <div class="col-md-2 col-4 padding-0">
-                <img src="./static/assets/headshots/{photo_id}.jpg" alt="TAMUhack Director" class="timeline-director-img">
+                <picture>
+                    <source type="image/webp" srcset="./static/assets/headshots/compressed/{photo_id}.webp" class="timeline-director-img">
+                    <source type="image/jpg" srcset="./static/assets/headshots/compressed/{photo_id}.jpg" class="timeline-director-img">
+                    <img src="./static/assets/headshots/compressed/{photo_id}.jpg" alt="TAMUhack Director" class="timeline-director-img">
+                </picture>
                 <p class="timeline-director-name">{name}</p>
                 <p class="timeline-director-position">{role}</p>
                 <div class="row justify-content-center">
