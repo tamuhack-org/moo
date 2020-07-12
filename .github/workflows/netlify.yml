@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Build to ./dist or other directory
-      # ...
+      - name: Minify CSS and JS
+        uses: nizarmah/auto-minify@master
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0
