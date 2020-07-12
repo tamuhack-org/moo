@@ -10,7 +10,7 @@
     };
 
     function initSwipeContent(content) {
-        content.element.addEventListener('mousedown', handleEvent.bind(content));
+        content.element.addEventListener('mousedown', handleEvent.bind(content), {passive: true});
         content.element.addEventListener('touchstart', handleEvent.bind(content));
     };
 
