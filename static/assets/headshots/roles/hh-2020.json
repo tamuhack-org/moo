@@ -1,5 +1,19 @@
 [
   {
+    "name": "Humza Jaffri",
+    "github": "https://github.com/HumzaJaffri",
+    "linkedin": "https://www.linkedin.com/in/humza-jaffri-b5089299/",
+    "photo_id": "humza",
+    "role": "President/Finance Director"
+  },
+  {
+    "name": "Marissa Soria",
+    "github": "https://github.com/soriamarissa",
+    "linkedin": "https://www.linkedin.com/in/marissa-soria-233b8914b/",
+    "photo_id": "marissa",
+    "role": "Vice President"
+  },
+  {
     "name": "Meghana Pothugunta",
     "github": "",
     "linkedin": "https://www.linkedin.com/in/meghana-pothugunta-7161a8183/",
@@ -14,13 +28,6 @@
     "role": "Design Lead"
   },
   {
-    "name": "Nathan Reddy",
-    "github": "https://www.linkedin.com/in/nathan-r-profile/",
-    "linkedin": "https://github.com/onewebdev",
-    "photo_id": "nathan",
-    "role": "Tech"
-  },
-  {
     "name": "Aman Gottumukkala",
     "github": "https://github.com/amangotchu",
     "linkedin": "https://www.linkedin.com/in/amangotchu/",
@@ -28,18 +35,11 @@
     "role": "Tech Mentor"
   },
   {
-    "name": "Marissa Soria",
-    "github": "https://github.com/soriamarissa",
-    "linkedin": "https://www.linkedin.com/in/marissa-soria-233b8914b/",
-    "photo_id": "marissa",
-    "role": "Vice President"
-  },
-  {
-    "name": "Humza Jaffri",
-    "github": "https://github.com/HumzaJaffri",
-    "linkedin": "https://www.linkedin.com/in/humza-jaffri-b5089299/",
-    "photo_id": "humza",
-    "role": "President/Finance Director"
+    "name": "Nathan Reddy",
+    "github": "https://www.linkedin.com/in/nathan-r-profile/",
+    "linkedin": "https://github.com/onewebdev",
+    "photo_id": "nathan",
+    "role": "Tech"
   },
   {
     "name": "Aryan Shetty",
@@ -95,18 +95,18 @@
     "github": "https://github.com/zridouh-chwy",
     "linkedin": "https://www.linkedin.com/in/zakaria-r-2a0088117/",
     "photo_id": "Zakaria",
-    "role": "Tech Intern"
+    "role": "Tech"
   },
   {
     "name": "Yashas Salankimatt",
-    "github": "",
+    "github": "https://github.com/yashas-salankimatt",
     "linkedin": "https://www.linkedin.com/in/yashas-s/",
     "photo_id": "yashas",
     "role": "Hardware"
   },
   {
     "name": "Joanna Zhou",
-    "github": "",
+    "github": "https://github.com/jo-zho",
     "linkedin": "https://www.linkedin.com/in/joannazhou-tamu/",
     "photo_id": "joanna",
     "role": "Logistics"
@@ -127,9 +127,16 @@
   },
   {
     "name": "Sabrina Lu",
-    "github": "",
+    "github": "https://github.com/sabrinalu999",
     "linkedin": "https://www.linkedin.com/in/sabrinamjlu/",
     "photo_id": "sabrina",
     "role": "Logistics"
+  },
+  {
+    "name": "Ricky Bengani",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/rickybengani",
+    "photo_id": "ricky",
+    "role": "Design"
   }
 ]
