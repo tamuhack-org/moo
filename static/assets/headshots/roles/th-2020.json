@@ -25,7 +25,28 @@
     "github": "https://github.com/SaltyQuetzals",
     "linkedin": "https://www.linkedin.com/in/gabriel-britain-57523214b",
     "photo_id": "gabriel",
-    "role": "Dev Lead"
+    "role": "Tech Lead"
+  },
+  {
+    "name": "Aman Gottumukkala",
+    "github": "https://github.com/amangotchu",
+    "linkedin": "https://www.linkedin.com/in/amangotchu/",
+    "photo_id": "aman",
+    "role": "Tech Mentor"
+  },
+  {
+    "name": "Derek Li",
+    "github": "https://github.com/derektli97",
+    "linkedin": "https://linkedin.com/in/derek-li-4910/",
+    "photo_id": "derek",
+    "role": "Hardware Mentor"
+  },
+  {
+    "name": "Addison Maupin",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/addison-maupin-73a394131/",
+    "photo_id": "addison",
+    "role": "Finance Mentor"
   },
   {
     "name": "Jonathan Innis",
@@ -40,27 +61,6 @@
     "linkedin": "https://www.linkedin.com/in/maggie-v",
     "photo_id": "maggieV",
     "role": "Finance"
-  },
-  {
-    "name": "Aman Gottumukkala",
-    "github": "https://github.com/amangotchu",
-    "linkedin": "https://www.linkedin.com/in/amangotchu/",
-    "photo_id": "aman",
-    "role": "Tech Mentor"
-  },
-  {
-    "name": "Derek T. Li",
-    "github": "https://github.com/derektli97",
-    "linkedin": "https://linkedin.com/in/derek-li-4910/",
-    "photo_id": "derek",
-    "role": "Hardware Mentor"
-  },
-  {
-    "name": "Addison Maupin",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/addison-maupin-73a394131/",
-    "photo_id": "addison",
-    "role": "Finance Mentor"
   },
   {
     "name": "Reuben Tadpatri",

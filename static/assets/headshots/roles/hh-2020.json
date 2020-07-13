@@ -14,13 +14,6 @@
     "role": "Vice President"
   },
   {
-    "name": "Meghana Pothugunta",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/meghana-pothugunta-7161a8183/",
-    "photo_id": "maggieP",
-    "role": "Logistics"
-  },
-  {
     "name": "Anthony Teo",
     "github": "https://github.com/eightants",
     "linkedin": "https://www.linkedin.com/in/anthonyteo/",
@@ -28,11 +21,25 @@
     "role": "Design Lead"
   },
   {
+    "name": "Cameron Brill",
+    "github": "http://www.github.com/cameronbrill",
+    "linkedin": "http://www.linkedin.com/in/cameronbrill",
+    "photo_id": "cameronB2",
+    "role": "Tech Lead"
+  },
+  {
     "name": "Aman Gottumukkala",
     "github": "https://github.com/amangotchu",
     "linkedin": "https://www.linkedin.com/in/amangotchu/",
     "photo_id": "aman",
     "role": "Tech Mentor"
+  },
+  {
+    "name": "Meghana Pothugunta",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/meghana-pothugunta-7161a8183/",
+    "photo_id": "maggieP",
+    "role": "Logistics"
   },
   {
     "name": "Nathan Reddy",
@@ -54,13 +61,6 @@
     "linkedin": "https://www.linkedin.com/in/vivian-yu-aa1443194/",
     "photo_id": "vivian",
     "role": "Design"
-  },
-  {
-    "name": "Cameron Brill",
-    "github": "http://www.github.com/cameronbrill",
-    "linkedin": "http://www.linkedin.com/in/cameronbrill",
-    "photo_id": "cameronB2",
-    "role": "Tech Lead"
   },
   {
     "name": "Clay Juneau",
