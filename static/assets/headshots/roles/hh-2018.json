@@ -1,16 +1,58 @@
 [
   {
-    "name": "",
+    "name": "Gabriel Britain",
     "github": "",
     "linkedin": "",
     "photo_id": "",
-    "role": ""
+    "role": "President/Tech Director"
   },
   {
-    "name": "",
+    "name": "Feras Khemakhem",
     "github": "",
     "linkedin": "",
     "photo_id": "",
-    "role": ""
+    "role": "Logistics"
+  },
+  {
+    "name": "Brooke Green",
+    "github": "",
+    "linkedin": "",
+    "photo_id": "",
+    "role": "Design"
+  },
+  {
+    "name": "Reuben Tadpatri",
+    "github": "",
+    "linkedin": "",
+    "photo_id": "reuben",
+    "role": "Logistics"
+  },
+  {
+    "name": "Maggie von Ebers",
+    "github": "",
+    "linkedin": "",
+    "photo_id": "maggieV",
+    "role": "Logistics"
+  },
+  {
+    "name": "Jonathan Innis",
+    "github": "",
+    "linkedin": "",
+    "photo_id": "jonathan",
+    "role": "Logistics"
+  },
+  {
+    "name": "Hannah Gooden",
+    "github": "",
+    "linkedin": "",
+    "photo_id": "",
+    "role": "Logistics"
+  },
+  {
+    "name": "Marissa Soria",
+    "github": "",
+    "linkedin": "",
+    "photo_id": "marissa",
+    "role": "Logistics"
   }
 ]
