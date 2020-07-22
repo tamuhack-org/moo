@@ -120,7 +120,7 @@
     z-index: 1;
     left: 0;
     top: 99px;
-    height: 9px;
+    height: 6px;
     background-color: black;
     /* background-color: hsl(var(--cd-color-3-h), var(--cd-color-3-s), calc(var(--cd-color-3-l)*0.9)); */
     transition: -webkit-transform 0.4s;
@@ -193,7 +193,7 @@
 }
 
 .cd-h-timeline__date--selected::after {
-    bottom: -60px !important;
+    bottom: -65px !important;
     height: 140px;
     width: 140px;
     padding: 10px;
