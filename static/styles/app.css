@@ -376,7 +376,7 @@ header {
 /* What We Do Section */
 
 #what-we-do-container .emphasize {
-    font-size: 22px !important;
+    font-size: 20px !important;
     margin-top: 10px;
     margin-bottom: 0px !important;
     font-weight: 500 !important;
@@ -388,9 +388,9 @@ header {
 
 #what-we-do-container {
     background-color: rgb(255, 255, 255);
-    padding-top: 25px;
+    padding-top: 15px;
     margin-top: -2px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 #what-we-do-container h1 {
@@ -469,8 +469,8 @@ header {
 }
 
 #events-overview .container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #three-cols div {
