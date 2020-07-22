@@ -493,9 +493,11 @@ header {
     background: #639ACB;
 }
 
-#mid-col {
-    border-right: 1px solid #DFDFDF;
-    border-left: 1px solid #DFDFDF;
+@media (min-width : 500px) {
+    #mid-col {
+        border-right: 1px solid #DFDFDF;
+        border-left: 1px solid #DFDFDF;
+    }
 }
 
 .col-lg-4 {
