@@ -87,7 +87,7 @@ p {
 }
 
 h1 {
-    font-weight: 600!important;
+    font-weight: 500!important;
 }
 
 h5 a i {
@@ -511,6 +511,11 @@ header {
 
 .col-lg-4>h1 {
     margin-bottom: 1.5rem !important;
+}
+
+.col-center {
+    float: none;
+    margin: 0 auto;
 }
 
 
