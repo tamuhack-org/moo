@@ -193,12 +193,12 @@
 }
 
 .cd-h-timeline__date--selected::after {
-    bottom: -65px !important;
-    height: 140px;
-    width: 140px;
+    bottom: -51px !important;
+    height: 110px;
+    width: 110px;
     padding: 10px;
-    border: 8px solid #FF7C93;
-    background-size: 101px 101px;
+    border: 6px solid #FF7C93;
+    background-size: 89px 89px;
 }
 
 .cd-h-timeline__navigation {
