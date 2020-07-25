@@ -499,6 +499,12 @@ header {
         border-left: 1px solid #DFDFDF;
     }
 }
+@media (max-width: 500px){
+    #mid-col {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
 
 .col-lg-4 {
     padding: 40px 25px 20px 25px;
