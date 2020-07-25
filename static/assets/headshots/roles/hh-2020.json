@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Humza Jaffri",
+    "github": "https://github.com/HumzaJaffri",
+    "linkedin": "https://www.linkedin.com/in/humza-jaffri-b5089299/",
+    "photo_id": "humza",
+    "role": "President"
+  },
+  {
+    "name": "Marissa Soria",
+    "github": "https://github.com/soriamarissa",
+    "linkedin": "https://www.linkedin.com/in/marissa-soria-233b8914b/",
+    "photo_id": "marissa",
+    "role": "Vice President"
+  },
+  {
+    "name": "Anthony Teo",
+    "github": "https://github.com/eightants",
+    "linkedin": "https://www.linkedin.com/in/anthonyteo/",
+    "photo_id": "anthony",
+    "role": "Design Lead"
+  },
+  {
+    "name": "Cameron Brill",
+    "github": "http://www.github.com/cameronbrill",
+    "linkedin": "http://www.linkedin.com/in/cameronbrill",
+    "photo_id": "cameronB2",
+    "role": "Tech Lead"
+  },
+  {
+    "name": "Aman Gottumukkala",
+    "github": "https://github.com/amangotchu",
+    "linkedin": "https://www.linkedin.com/in/amangotchu/",
+    "photo_id": "aman",
+    "role": "Tech Mentor"
+  },
+  {
+    "name": "Meghana Pothugunta",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/meghana-pothugunta-7161a8183/",
+    "photo_id": "maggieP",
+    "role": "Logistics"
+  },
+  {
+    "name": "Nathan Reddy",
+    "github": "https://www.linkedin.com/in/nathan-r-profile/",
+    "linkedin": "https://github.com/onewebdev",
+    "photo_id": "nathan",
+    "role": "Tech"
+  },
+  {
+    "name": "Aryan Shetty",
+    "github": "https://github.com/aryanshetty711",
+    "linkedin": "https://www.linkedin.com/in/aryan-shetty-860717148/",
+    "photo_id": "aryan",
+    "role": "Logistics"
+  },
+  {
+    "name": "Vivian Yu",
+    "github": "https://github.com/vivians-y",
+    "linkedin": "https://www.linkedin.com/in/vivian-yu-aa1443194/",
+    "photo_id": "vivian",
+    "role": "Design"
+  },
+  {
+    "name": "Clay Juneau",
+    "github": "https://github.com/clayjuneau",
+    "linkedin": "https://www.linkedin.com/in/clayjuneau/",
+    "photo_id": "clay",
+    "role": "Design"
+  },
+  {
+    "name": "Nathan Read",
+    "github": "https://github.com/nathancread",
+    "linkedin": "https://linkedin.com/in/nathancread",
+    "photo_id": "nathanR",
+    "role": "Tech"
+  },
+  {
+    "name": "Adil Rasiyani",
+    "github": "https://github.com/AdilRas",
+    "linkedin": "https://www.linkedin.com/in/adil-rasiyani/",
+    "photo_id": "adil",
+    "role": "Tech"
+  },
+  {
+    "name": "Dylan Theriot",
+    "github": "https://github.com/dylantheriot",
+    "linkedin": "https://www.linkedin.com/in/dylan-theriot/",
+    "photo_id": "Dylan",
+    "role": "Tech"
+  },
+  {
+    "name": "Zakaria Ridouh",
+    "github": "https://github.com/zridouh-chwy",
+    "linkedin": "https://www.linkedin.com/in/zakaria-r-2a0088117/",
+    "photo_id": "Zakaria",
+    "role": "Tech"
+  },
+  {
+    "name": "Yashas Salankimatt",
+    "github": "https://github.com/yashas-salankimatt",
+    "linkedin": "https://www.linkedin.com/in/yashas-s/",
+    "photo_id": "yashas",
+    "role": "Hardware"
+  },
+  {
+    "name": "Joanna Zhou",
+    "github": "https://github.com/jo-zho",
+    "linkedin": "https://www.linkedin.com/in/joannazhou-tamu/",
+    "photo_id": "joanna",
+    "role": "Logistics"
+  },
+  {
+    "name": "Anikait Sharma",
+    "github": "https://github.com/anikait627",
+    "linkedin": "https://www.linkedin.com/in/anikait/",
+    "photo_id": "anikait",
+    "role": "Logistics"
+  },
+  {
+    "name": "Rohit Barichello",
+    "github": "https://github.com/rohitbarichello",
+    "linkedin": "https://www.linkedin.com/in/rohitbarichello/",
+    "photo_id": "rohit",
+    "role": "Logistics"
+  },
+  {
+    "name": "Sabrina Lu",
+    "github": "https://github.com/sabrinalu999",
+    "linkedin": "https://www.linkedin.com/in/sabrinamjlu/",
+    "photo_id": "sabrina",
+    "role": "Logistics"
+  },
+  {
+    "name": "Ricky Bengani",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/rickybengani",
+    "photo_id": "ricky",
+    "role": "Design"
+  }
+]

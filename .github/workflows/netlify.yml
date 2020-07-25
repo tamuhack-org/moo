@@ -7,10 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-
-      # Build to ./dist or other directory
-      # ...
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0
