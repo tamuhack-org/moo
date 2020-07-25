@@ -493,7 +493,7 @@ header {
     background: #639ACB;
 }
 
-@media (min-width : 1024px) {
+@media (min-width : 994px) {
     #mid-col {
         border-right: 1px solid #DFDFDF;
         border-left: 1px solid #DFDFDF;
@@ -1200,6 +1200,9 @@ input.form-control {
     .nav-link {
         display: inline-block;
     }
+    #three-cols div {
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -1219,19 +1222,5 @@ input.form-control {
     #timeline-small .container:before {
         margin-top: 160px;
         height: calc(100% - 250px);
-    }
-}
-
-@media (max-width: 1024px)
-{
-    .col-md-4 {
-        min-width: 100% !important;
-    }
-    #mid-col {
-        padding-top: 60px !important;
-        padding-bottom: 60px !important;
-    }
-    #three-cols div {
-        margin-bottom: 0px;
     }
 }
