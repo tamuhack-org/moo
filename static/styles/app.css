@@ -493,16 +493,10 @@ header {
     background: #639ACB;
 }
 
-@media (min-width : 500px) {
+@media (min-width : 1024px) {
     #mid-col {
         border-right: 1px solid #DFDFDF;
         border-left: 1px solid #DFDFDF;
-    }
-}
-@media (max-width: 500px){
-    #mid-col {
-        padding-top: 60px;
-        padding-bottom: 60px;
     }
 }
 
@@ -1208,9 +1202,6 @@ input.form-control {
     #side-to-side {
         height: 50vh;
     }
-    #three-cols div {
-        margin-bottom: 0px;
-    }
     .nav-link {
         display: inline-block;
     }
@@ -1233,5 +1224,19 @@ input.form-control {
     #timeline-small .container:before {
         margin-top: 160px;
         height: calc(100% - 250px);
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .col-md-4 {
+        min-width: 100% !important;
+    }
+    #mid-col {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    #three-cols div {
+        margin-bottom: 0px;
     }
 }
