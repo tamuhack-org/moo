@@ -1224,7 +1224,3 @@ input.form-control {
         height: calc(100% - 250px);
     }
 }
-
-@media (max-width: 1024px)
-{
-}
