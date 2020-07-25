@@ -1149,11 +1149,6 @@ input.form-control {
 
 /* fixes pink bar */
 
-@media all and (max-aspect-ratio: 1100/1000) {
-    header {
-        background: linear-gradient(to bottom, white 90%, #FFF6F8 90% 100%);
-    }
-}
 
 @media all and (max-width: 840px) {
     .th-text-logo {
@@ -1170,7 +1165,7 @@ input.form-control {
     }
     .backdrop-container {
         top: calc(100vh - 63px - 385px);
-        height: 385px;
+        height: 395px;
     }
     .tamuhack-title {
         max-width: 300px;
