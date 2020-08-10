@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+  
 [v-cloak] {
     display: none;
 }
@@ -119,22 +123,23 @@ body, html {
     Fixes
 */
 .gray-text {
-    color: #C0BEBB!important;
+    color: #C0BEBB;
     /* color: red!important; */
 }
 .gray-border {
     border-color: #C0BEBB!important;
-    border: 4px solid #C0BEBB!important ;
+    border: 2px solid #C0BEBB!important ;
 }
 * {
     /* color: blue!important; */
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.7;
+    font-weight: 300;
 }
 
 .primary-font {
     /* color: red!important; */
-    font-family: serif!important;
+    font-family: 'Libre Baskerville', serif!important;
 }
 
 .sponsor-hover:hover {

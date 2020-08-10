@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./../static/hh-2020/app.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <meta name="description" content="HowdyHack is Texas A&M’s 24-hour, beginner friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break, before they’ll submit their product to a panel of judges for evaluation and hopefully win some cool prizes.">
+    <meta name="keywords" content="HowdyHack, Hackathon, Texas A&M, Beginner, TAMUhack, 2020, Texas">
     <title>HowdyHack 2020</title>
-    <link href="./../static/hh-2020/img/hh20-socialicon_FINAL.png" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="./../static/hh-2020/img/hh20favicon.png" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
@@ -46,8 +48,10 @@
                     <img src="./../static/hh-2020/img/test.svg" class="w-4/5 md:w:2/5 lg:w-1/2">
                 </div>
                 <div class="flex justify-center" style="margin-top: 10vh;">
-                    <button class="text-gray-500 font-semibold py-5 px-24 border text-xl border-gray-500 gray-border
-                        hover:bg-gray-100 hover:text-white hover:border-gray-100 rounded gray-text primary-font" style="background: rgba(0, 0, 0, 0.6);">
+                    <button class="text-gray-500 font-semibold py-5 px-24 border text-xl border-gray-500
+                        hover:bg-white hover:text-white hover:border-white rounded gray-text primary-font" 
+                            style="background: rgba(0, 0, 0, 0.6); border: 2px solid #C0BEBB!"
+                            @click="window.open('https://register.tamuhack.com', '_blank')">
                         REGISTER
                     </button>
                 </div>
@@ -116,7 +120,7 @@
                 <div class="pt-32" :id="links[3]">
                     <div class="text-gray-800 font-semibold py-10 px-12 text-xl" style="background-color: #d7d5d1; width: 90%; margin-left: 5%;">
                         <div class="m-4">
-                            <h2 class="text-6xl pb-2">
+                            <h2 class="text-6xl pb-2 primary-font">
                                 PRIZES
                             </h2>
                             <div class=" w-full lg:max-w-full lg:flex border-gray-800 border-2">
@@ -126,7 +130,7 @@
                                 </div>
                                 <div class="w-full">
                                     <div class="border-gray-800 border-b-2">
-                                        <div class="text-gray-900 text-2xl py-2 px-8 uppercase">{{tracks[0].title}}</div>
+                                        <div class="text-gray-900 text-2xl py-2 px-8 uppercase primary-font">{{tracks[0].title}}</div>
                                     </div>
                                     <p class="text-gray-700 text-base py-2 px-8 mb-8">{{tracks[0].desc}}</p>
                                     <p class="text-gray-700 text-base py-2 px-8"> {{tracks[0].award}}</p>
@@ -146,7 +150,7 @@
                                         </div>
                                         <div class="w-full">
                                             <div class="border-gray-800 border-b-2">
-                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase">{{track.title}}</div>
+                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase primary-font">{{track.title}}</div>
                                             </div>
                                             <p class="text-gray-700 text-base py-2 px-8 mb-8">{{track.desc}}</p>
                                             <p class="text-gray-700 text-base py-2 px-8"> {{ track.award}}</p>
@@ -165,7 +169,7 @@
                                         </div>
                                         <div class="w-full">
                                             <div class="border-gray-800 border-b-2">
-                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase">{{track.title}}</div>
+                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase primary-font">{{track.title}}</div>
                                             </div>
                                             <p class="text-gray-700 text-base py-2 px-8 mb-8">{{track.desc}}</p>
                                             <p class="text-gray-700 text-base py-2 px-8"> {{ track.award}}</p>
@@ -181,9 +185,9 @@
                 </div>
             </div>
         </div>
-        <div class="sponsors-background pb-10" :id="links[4]"> <!-- style="background-color: #363636" -->
+        <div class="sponsors-background pb-10"> <!-- style="background-color: #363636" -->
             <!-- Sponsors -->
-            <div class="container">
+            <div class="container" v-if="hasSponsors">
                 <div style="background: rgba(0, 0, 0, 0.6);"
                 class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 inline-block mt-16 special-header">
                     <h2 class="text-5xl pb-2 text-white primary-font">
@@ -191,7 +195,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" v-if="hasSponsors">
                 <br />
                 <br />
                 <!-- Sponsor cards -->
@@ -204,14 +208,14 @@
                                     <img src="./../static/hh-2020/img/msft.png">
                                 </div>
                                 <div class="flex justify-center">
-                                    <p class="text-gray-700 text-base py-6 px-8"> {{sponsor.message}}</p>
+                                    <p class="text-gray-700 text-base py-6 px-8 primary-font"> {{sponsor.message}}</p>
                                 </div>
 
                                 <div class="flex justify-center text-lg pt-3">
-                                    <a class="block text-gray-800 mx-6 underline">
+                                    <a class="block text-gray-800 mx-6 underline primary-font">
                                         Apply
                                     </a>
-                                    <a class="block text-gray-800 mx-6 underline" v-if="sponsor.channel">
+                                    <a class="block text-gray-800 mx-6 underline primary-font" v-if="sponsor.channel">
                                         Join Channel
                                     </a>
                                 </div>
@@ -223,14 +227,14 @@
 
             </div>
             <!-- FAQ Header (Contents in next image-background-div) -->
-            <div class="mt-64"> </div>
-            <span  :id="links[5]">
+            <div class="pt-64"> </div>
+            <span :id="links[4]">
                 <br />
             </span>
             <div class="container">
                 <div style="background: rgba(0, 0, 0, 0.6); "
                 class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 inline-block special-header">
-                <h2 class="text-5xl pb-2 text-white primary-font" >
+                <h2 class="text-5xl pb-2 text-white primary-font">
                         FAQ
                     </h2>
                 </div>
@@ -245,10 +249,10 @@
                         <div class="m-4">
                             <div style="background: rgba(0, 0, 0, 0.6);" 
                             class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 gray-text gray-border">
-                                <h2 class="text-3xl pb-2 gray-text primary-font">
+                                <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4">
                                     {{f.title}}
                                 </h2>
-                                <p class="py-4 text-lg gray-text" >
+                                <p class="py-4 text-lg gray-text font-light" >
                                     {{f.desc}}
                                 </p>
                             </div>
@@ -259,10 +263,10 @@
                         <div class="m-4">
                             <div style="background: rgba(0, 0, 0, 0.6);" 
                             class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 gray-text gray-border">
-                                <h2 class="text-3xl pb-2 gray-text primary-font">
+                                <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4">
                                     {{f.title}}
                                 </h2>
-                                <p class="py-4 text-lg gray-text" >
+                                <p class="py-4 text-lg gray-text font-light" >
                                     {{f.desc}}
                                 </p>
                             </div>
@@ -288,7 +292,9 @@
             el: '#app',
             data: function () {
                 return {
-                    links: ["home", "schedule", "get started", "challenges", "sponsors", "faq"],
+                    window,
+                    hasSponsors: false,
+                    links: ["home", "schedule", "get started", "challenges", "faq"],
                     tracks: [
                         {
                             title: "First Prize",
