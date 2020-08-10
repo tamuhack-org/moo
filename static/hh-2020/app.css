@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+[v-cloak] {
+    display: none;
+}
+  
+body, html {
+    margin: 0px;
+}
+.image-background-full {
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.desk-div {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0, 0) 80%,
+        rgba(0,0,0, 100)
+      ), url('./img/1deskanimated.webp'), url("./img/1desk.png");
+      background-size: cover;
+
+    /* background: linear-gradient(
+        to bottom,
+        rgba(0,0,0, 0) 80%,
+        rgba(0,0,0, 100)
+      ), url('./img/1desk.png'); */
+    
+    /* background-image: url('./img/1desk.png'), linear-gradient(to bottom, rgba(0,0,0,0) 90%, cyan);  */
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0) 90%, cyan)!important; */
+    background-color: #1e1e1e;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.typewritter-div {
+    /* background-image: linear-gradient(to top, rgba(0,0,0, 0) 80%, rgba(0,0,0, 100));  */
+
+    background: linear-gradient(to top, rgba(0,0,0, 0) 80%, rgba(0,0,0, 100)), 
+                linear-gradient(to bottom, rgba(0,0,0, 0) 80%, rgba(0,0,0, 100)),
+                url('./img/3typewrittertrim.png');
+    background-size: cover;
+
+    /* background-image: url('./img/3typewritter.png');   */
+    background-color: #1e1e1e;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 200vw;
+    padding-bottom: 550px;
+}
+
+.sponsors-background {
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0, 0) 80%,
+        rgba(0,0,0, 100)
+    );
+    background-color: #363636;
+}
+
+.coat-div {
+    background-image: url('./img/4coat.png');
+    background-color: #363636;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.navbar-burger.burger {
+    color: white!important;
+}
+@media only screen and (max-width: 1500px) {
+    .desk-div {
+        background-position: right;
+        background: linear-gradient(
+            to bottom,
+            rgba(0,0,0, 0) 80%,
+            rgba(0,0,0, 100)
+          ), url('./img/1deskanimated.webp');
+    }
+    .special-header {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .desk-div {
+        background-position: 80% bottom;
+    }
+    .coat-div {
+        background-color: #484848;
+        background-position: top;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-image: url('./img/4coat-mobile2.png');
+    }
+
+    .special-header {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+    .typewritter-div > .container > .pb-12 > div {
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+
+    /* .special-faq {
+        width: 100vw;
+    } */
+}
+
+
+/* 
+    Fixes
+*/
+.gray-text {
+    color: #C0BEBB;
+    /* color: red!important; */
+}
+.gray-border {
+    border-color: #C0BEBB!important;
+    border: 2px solid #C0BEBB!important ;
+}
+* {
+    /* color: blue!important; */
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.primary-font {
+    /* color: red!important; */
+    font-family: 'Libre Baskerville', serif!important;
+}
+
+.sponsor-hover:hover {
+    box-shadow: 0 0 100px rgba(255,255,255, .3)!important;
+}
