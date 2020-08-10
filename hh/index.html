@@ -1,656 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- HowdyHack 2019 Website -->
+<html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>HowdyHack 2019</title>
-
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <!-- CSS -->
-
-    <link href="../static/styles/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/styles/hh-styles.css" rel="stylesheet">
-    <!--Stylesheet for social icons-->
-
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="../static/assets/hh-assets/hh-favicon.png" />
-    <script src="https://kit.fontawesome.com/372b6afb11.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../static/hh-2020/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light" id="top-nav-bar">
-        <a class="navbar-brand" href="/">
-            <img src="../static/assets/th_logo.svg" class="th-logo" alt="" />
-            <img src="../static/assets/tamuhack.svg" class="th-text-logo" />
-        </a>
+<body>
+    <div id="app" v-cloak>
+        <div class="image-background-full desk-div" style="min-height: 1000px;" :id="links[0]">
+            <div class="w-full block">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText-Top" aria-controls="navbarText-Top" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText-Top">
-            <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav main-nav-ui">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#schedule">event info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">faq</a>
-                </li>
-                <li class="nav-item" style="padding-right: 0px;">
-                    <a class="nav-link" href="#sponsors">sponsors</a>
-                </li>
-            </ul>
+
+
+
+                <div class="block md:hidden pb-10">
+                    <template>
+                        <b-navbar style="background-color: rgba(28,28,28,1);">
+                            <template slot="start">
+                                <b-navbar-item :href="'#' + link.replace(' ', '-')" v-for="link in links">
+                                    <span class="uppercase">
+                                        {{ link }}
+                                    </span>
+                                </b-navbar-item>
+                            </template>
+                        </b-navbar>
+                    </template>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="flex justify-center text-lg pt-6">
+                        <a v-for="link in links" :href="'#' + link.replace(' ', '-')" 
+                            class="uppercase block text-gray-500 hover:text-white mr-12 gray-text">
+                            {{ link }}
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center pt-6 container px-4">
+                    <img src="./../static/hh-2020/img/test.svg" class="w-4/5 md:w:2/5 lg:w-1/2">
+                </div>
+                <div class="flex justify-center" style="margin-top: 10vh;">
+                    <button class="text-gray-500 font-semibold py-5 px-24 border text-xl border-gray-500 gray-border
+                        hover:bg-gray-100 hover:text-white hover:border-gray-100 rounded gray-text primary-font" style="background: rgba(0, 0, 0, 0.6);">
+                        REGISTER
+                    </button>
+                </div>
+            </div>
         </div>
-    </nav>
+        <div class="image-background-full pb-10 typewritter-div" style="min-height: 1000px;" :id="links[2].replace(' ', '-')">
+            <div class="container">
+                <div class="pt-32">
+                    <div style="background: rgba(0, 0, 0, 0.6);" 
+                        class="m-2 md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
+                        <h2 class="text-4xl pb-2 gray-text primary-font">
+                            What is HowdyHack?
+                        </h2>
+                        <p class="py-4 text-lg gray-text">
+                            HowdyHack is Texas A&M’s 24-hour, beginner friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break, before they’ll submit their product to a panel of judges for evaluation and hopefully win some cool prizes.
+                        </p>
+                        <p class="py-4 text-lg gray-text">
+                            Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills to create something amazing while getting to know fellow hackers with the same Aggie pride!
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-32">
+                    <!-- Desktop -->
+                    <div class="m-2">
+                        <div style="background: rgba(0, 0, 0, 0.6); margin-left: 40%" 
+                        class="hidden md:block w-full md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
+                            <h2 class="text-4xl pb-2 gray-text primary-font">
+                                How do I participate?
+                            </h2>
+                            <p class="py-4 text-lg gray-text">
+                                To get started, head on over to to sign up to participate. The first 100 people to sign up and then submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
+                            </p>
+                            <p class="py-4 text-lg gray-text">
+                                After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either get a team together or find one during the team building portion right before the competition!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+                    <div style="background: rgba(0, 0, 0, 0.6);" 
+                    class="m-2 md:hidden md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
+                        <h2 class="text-4xl pb-2 gray-text primary-font">
+                            How do I participate?
+                        </h2>
 
-    <div class="row h-100" style="margin: 0px;">
-        <!--  left content -->
-        <div class="col-md-3 offset-md-1 hhlogo-column" style="margin-top: 30px;">
-            <center>
-                <img src="../static/assets/hh-assets/hhinfo.svg" class="hh-logo">
-                <h1 class="hh-title">HowdyHack</h1>
-                <h3 class="hh-subtitle">7th&#8211;8th September 2019</h3>
-                <h3 class="hh-subtitle">Memorial Student Center 2400</h3>
-            </center>
-        </div>
+                        <p class="py-4 text-lg gray-text">
+                            To get started, head on over to to sign up to participate. The first 100 people to sign up and then submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
+                        </p>
+                        <p class="py-4 text-lg gray-text">
+                            After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either get a team together or find one during the team building portion right before the competition!
+                        </p>
 
-        <!--  right content -->
-        <div class="col-md-7 offset-md-1" style="margin-top: 20px; padding: 0">
-            <img src="../static/assets/hh-assets/rectangle.png" alt="" id="rect">
-            <img src="../static/assets/hh-assets/Rectangle-sm.svg" alt="" id="rect2">
+                    </div>
 
-            <div class="my-container">
-                <div class="my-wrapper">
-                    <h1 class="content-txt">Thanks for coming out to HowdyHack 2019! Join the <a href="/facebook">Facebook group</a> to check out photos from the event!</h1>
-                    <!-- <h1 class="content-txt">
-                                HowdyHack 2019 is live! Check out some important info:
-                            </h1>
+                </div>
+                <div class="pt-32">
+                    <div style="background: rgba(0, 0, 0, 0.6);" 
+                        class="m-2 md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
+                        <h2 class="text-4xl pb-2 gray-text primary-font">
+                            What about COVID-19?
+                        </h2>
+                        <p class="py-4 text-lg gray-text">
+                            Due to concerns about spreading of COVID-19, this year’s HowdyHack will be hosted online but that does not mean it will be any less exciting! The hackathon will be streamed on Twitch with lots of workshops, events, and interactive competitions to help create the engaging atmosphere that comes with in-person hackathons.
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-32" :id="links[3]">
+                    <div class="text-gray-800 font-semibold py-10 px-12 text-xl" style="background-color: #d7d5d1; width: 90%; margin-left: 5%;">
+                        <div class="m-4">
+                            <h2 class="text-6xl pb-2">
+                                PRIZES
+                            </h2>
+                            <div class=" w-full lg:max-w-full lg:flex border-gray-800 border-2">
+                                <div class="hidden lg:block h-48 lg:h-auto lg:w-32 flex-none bg-cover rounded-t border-gray-800 border-r-2
+                                    lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+                                    <img src="./../static/hh-2020/img/fingerprint.png" alt="" class="p-2" >
+                                </div>
+                                <div class="w-full">
+                                    <div class="border-gray-800 border-b-2">
+                                        <div class="text-gray-900 text-2xl py-2 px-8 uppercase">{{tracks[0].title}}</div>
+                                    </div>
+                                    <p class="text-gray-700 text-base py-2 px-8 mb-8">{{tracks[0].desc}}</p>
+                                    <p class="text-gray-700 text-base py-2 px-8"> {{tracks[0].award}}</p>
+                                </div>
+                            </div>
+                        </div>
 
-                            <ol class="live-list">
-                              <li><a href="#schedule">Schedule</a></li>
-                              <li><a href="#event-prep">Event Prep</a></li>
-                              <li><a href="#links">Important Links</a></li>
-                              <li><a href="#prizes">Prizes</a></li>
-                            </ol> -->
-
-                    <!-- <h2>Sign up for the latest updates!</h2>
-                            
-                            <form class="form" action="/email" id="main" method="POST">
-                                <div class="input-group" id="before">
-                                    <input type="text" class="form-control" placeholder="Enter your TAMU email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="email">
-                                    <input type="hidden" name="howdyHackInterest" value="true">
-                                   <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="submit">Sign Up</button>
+                        <!-- Track Divs -->
+                        <div class="row-1 lg:w-1/2 inline-block" style="vertical-align: top;">
+                            <div class="w-full" v-for="(track, i) in tracks" v-if="i != 0 && i % 2 == 1">
+                                <div class="m-4">
+                                    <div class="border-gray-800 border-2">
+                                        <div class="relative" v-if="track == 'CYBER SECURITY'">
+                                            <div class="absolute top-20 right-0">
+                                                <img src="./../static/hh-2020/img/conf.png" class="">
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="border-gray-800 border-b-2">
+                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase">{{track.title}}</div>
+                                            </div>
+                                            <p class="text-gray-700 text-base py-2 px-8 mb-8">{{track.desc}}</p>
+                                            <p class="text-gray-700 text-base py-2 px-8"> {{ track.award}}</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="alert alert-danger" role="alert" id="u_failed">
-                                  <span id="errorMessageOne">
-                                    Please enter a valid email!
-                                  </span>
-                                  <span id="errorMessageTwo">
-                                    HowdyHack only accepts TAMU email addresses.
-                                  </span>
-                                </div>
-                                <div class="alert alert-success" role="alert" id="after">
-                                    Awesome! Expect to hear back from us soon!
-                                </div> -->
-
-                    </form>
-                </div>
-            </div>
-            <img src="../static/assets/hh-assets/bottom-rect-sm.svg" alt="" id="rect2">
-        </div>
-    </div>
-    </div>
-    <!--Sections for text and descriptions-->
-    <div class="section pt-0" id="about">
-        <div class="section-right"><img src="../static/assets/hh-assets/hhpeople2.png" alt="" class="section-graphic"></div>
-        <div class="section-text-left">
-            <h4>Howdy!</h4>
-            <p>HowdyHack is Texas A&M’s 24-hour, software-oriented, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break, before they’ll finally bring a product to a panel of judges for evaluation and hopefully win some cool prizes.
-            </p>
-        </div>
-    </div>
-
-    <div class="section mb-5">
-        <div class="section-left"><img src="../static/assets/hh-assets/hhpeople1.png" alt="" class="section-graphic"></div>
-        <div class="section-text-right">
-            <h4>Goal</h4>
-            <p>Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the
-                same Aggie pride! There will also be workshops and activities to help you learn new skills!</p>
-        </div>
-    </div>
-    <!--schedule section-->
-    <div class="schedule-wrapper">
-        <img src="../static/assets/hh-assets/hhemailbanntop.png" alt="" class="schedule-graphic">
-        <div class="section" id="schedule" style="margin-bottom: 0px;">
-            <h4>SCHEDULE</h4>
-        </div>
-        <div class="section" id="schedule-content" style="margin-bottom: 0px; margin-top: 0px;">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p>Saturday, September 7th</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">9:00 am</p>
-                        <p class="schedule-item-title">Doors Open/Check-in begins</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">10:00 am</p>
-                        <p class="schedule-item-title">Opening Ceremony</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">10:30 am</p>
-                        <p class="schedule-item-title">Walk-ins Start + Hacking Starts</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">11:00 am</p>
-                        <p class="schedule-item-title">All Check-in Ends</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill workshop"></div>
-                        <p class="schedule-item-time">11:00 am</p>
-                        <p class="schedule-item-title">Hackathon 101 by TAMUhack</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill food"></div>
-                        <p class="schedule-item-time">12:00 pm</p>
-                        <p class="schedule-item-title">Lunch</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">2:00 pm</p>
-                        <p class="schedule-item-title">Tech Club Booths Open</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill workshop"></div>
-                        <p class="schedule-item-time">2:00 pm</p>
-                        <p class="schedule-item-title">Interview Tips by TACS</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill workshop"></div>
-                        <p class="schedule-item-time">2:30 pm</p>
-                        <p class="schedule-item-title">Intro to Solidworks by IEEE</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill workshop"></div>
-                        <p class="schedule-item-time">3:00 pm</p>
-                        <p class="schedule-item-title">Intro to Data Science by TAMU Datathon</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill workshop"></div>
-                        <p class="schedule-item-time">4:00 pm</p>
-                        <p class="schedule-item-title">Intro to Web APIs by ACC</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill mini-event"></div>
-                        <p class="schedule-item-time">5:00 pm</p>
-                        <p class="schedule-item-title">Fireside Chat with CSCE Department Head</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill food"></div>
-                        <p class="schedule-item-time">7:00 pm</p>
-                        <p class="schedule-item-title">Dinner</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill mini-event"></div>
-                        <p class="schedule-item-time">9:00 pm</p>
-                        <p class="schedule-item-title">Bob Ross MS Paint</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="schedule-item">
-                        <div class="fill header-fill"></div>
-                        <p>Sunday, September 8th</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill mini-event"></div>
-                        <p class="schedule-item-time">12:30 am</p>
-                        <p class="schedule-item-title">Frozen Shirt Game</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill mini-event"></div>
-                        <p class="schedule-item-time">7:30 am</p>
-                        <p class="schedule-item-title">Yoga</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill food"></div>
-                        <p class="schedule-item-time">9:00 am</p>
-                        <p class="schedule-item-title">Breakfast</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">10:30 am</p>
-                        <p class="schedule-item-title">Hacking Ends</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">11:00 am</p>
-                        <p class="schedule-item-title">Judging Begins</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">12:00 pm</p>
-                        <p class="schedule-item-title">Final Presentations</p>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="fill"></div>
-                        <p class="schedule-item-time">12:30 pm</p>
-                        <p class="schedule-item-title">Closing Ceremony</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row schedule-key">
-                <div class="key-item">
-                    <div class="key-fill"></div>
-                    <p>Workshop</p>
-                </div>
-                <div class="key-item">
-                    <div class="key-fill"></div>
-                    <p>Food</p>
-                </div>
-                <div class="key-item">
-                    <div class="key-fill"></div>
-                    <p>Mini Event</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <img src="../static/assets/hh-assets/hhemailbannbot.png" alt="" class="schedule-graphic">
-    </div>
-
-    <!--<div class="section mt-5" id="event-prep">
-      <h4>Event Prep</h4>
-      <br />
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="../static/assets/hh-assets/location-icon.svg">
-          <h5 class="event-info-header">Event Location</h5>
-          <p>The event is located at <b>Memorial Student Center 2400</b>. Please be respectful of MSC traditions by not wearing hats inside or walking on the grass outside.</p>
-        </div>
-        <div class="col-lg-4">
-          <img src="../static/assets/hh-assets/parking.svg">
-          <h5 class="event-info-header">Parking Locations</h5>
-          <p>Parking will be free for any unmarked/unreserved spots. Lot 62 is the main lot to find parking. A full map of parking locations can be found <a href="https://transport.tamu.edu/parkingmap/tsmap.htm?map=vis">here</a>.</p>
-        </div>
-        <div class="col-lg-4">
-          <img src="../static/assets/hh-assets/code.svg">
-          <h5 class="event-info-header">Workshop Map</h5>
-          <p>Workshops are scheduled throughout the event. All workshops will be held in West Wing 2500.</p>
-        </div>
-      </div>
-      <hr style="margin: 15px 0px;"/>
-      <div class="row">
-        <div class="col-lg-12" style="margin-top: 15px;">
-          <h5 class="event-info-header">Hackathon 101</h5>
-          <p>We prepared this cool document for some tips and tricks, especially if this is your first hackathon!</p>
-          <a class="btn btn-primary" href="../static/assets/hh-assets/hackathon101.pdf" role="button" target="_blank" id="hackathon-101">View Hack101</a>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="links">
-      <h4>Important Links</h4>
-      <br />
-      <div class="row">
-        <div class="col-lg-6">
-          <h5 class="event-info-header">Connect with Hackers</h5>
-          <p><a href="/slack" target="_blank">HowdyHack 2019 Slack</a></p>
-          <p><a href="/facebook" target="_blank">HowdyHack 2019 Facebook Group</a></p>
-        </div>
-        <div class="col-lg-6">
-          <h5 class="event-info-header">Get Mentorship</h5>
-          <p><a href="https://help.tamuhack.com" target="_blank">help.tamuhack.com</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h5 class="event-info-header">Final Submissions</h5>
-          <p>All submissions are due on Sunday at 10:30 am. Please submit your projects at <a href="/demo" target="_blank">howdyhack2019.devpost.com</a>.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h5 class="event-info-header">Emergency Contact</h5>
-          <p>TAMU Police (979) 845-2345</p>
-        </div>
-      </div>
-    </div> 
-
-    <div class="section" id="prizes">
-      <h4>Prizes</h4>
-      <br />
-      <div class="row">
-        <div class="col-lg-6">
-          <h5 class="event-info-header">1st Place Grand Prize</h5>
-          <p>Glorious Modular Mechanical Gaming Keyboard Full Size Customized (Gateron Green + Black Key Cap Set)</p>
-        </div>
-        <div class="col-lg-6">
-          <h5 class="event-info-header">2nd Place Prize</h5>
-          <p>Google Home (White Slate)</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h5 class="event-info-header">3rd Place Prize</h5>
-          <p>TOZO T10 Bluetooth 5.0 Wireless Earbuds</p>
-        </div>
-        <div class="col-lg-6">
-          <h5 class="event-info-header">Best Aggie Hack</h5>
-          <p>Texas A&M Aggie Reveille Pillow Pet. The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h5 class="event-info-header">Best Sustainable Hack</h5>
-          <p>Super Starter Kit for Arduino by LAFVIN. The best hack that is geared towards sustainability, whether it be environmentally, socially, or economically.</p>
-        </div>
-        <div class="col-lg-6">
-          <h5 class="event-info-header">Best Original Hack</h5>
-          <p>$20 Amazon Gift Cards. Tired of seeing the same repeating project ideas, like "tinder, but for dogs" or "uber, but for boats"? We want you to be extra creative, extra funny, and extra out-of-the-world with your hack. Bring out your most original idea and make it into reality through technology!</p>
-        </div>
-      </div>
-    </div>-->
-    <!--faq section-->
-    <div class="section sec-faq" style="margin-bottom: 30px;" id="faq">
-        <h4>FAQ</h4>
-        <div class="row pt-3">
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question1" aria-expanded="false">
-                    <p class="faq-ques">I don’t know how to code! Can I still participate?
-                    </p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question1">
-                        <br/> Of course! There will be mentors to help answer questions you may have, along with workshops and mini events to keep you on your toes outside of the main event as well, so there will never be an ounce of boredom.
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question2" aria-expanded="false">
-                    <p class="faq-ques">Is there a theme for HowdyHack?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question2">
-                        <br/> Yes! This year, the theme is For Aggies, By Aggies. This is an opportunity for you to come up with the coolest, most technologically-savvy hacks to benefit the university and Aggies!
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question3" aria-expanded="false">
-                    <p class="faq-ques">I don't have a team. How do I find people to hack with?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question3">
-                        <br/> Don't sweat it! We will have a team-forming workshop before we kickoff the opening ceremony so that everyone will have a group to hack with.
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question4" aria-expanded="false">
-                    <p class="faq-ques">Will there be companies at the hackathon?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question4">
-                        <br/> While there will not be companies present at the hackathon, we will have all kinds of workshops throughout the entire event and even the week before to help you get ready. We got your back!
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question5" aria-expanded="false">
-                    <p class="faq-ques">Will there be food or prizes?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question5">
-                        <br/> Yes and yes. We got you covered. ;)
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question6" aria-expanded="false">
-                    <p class="faq-ques">I'm not from A&amp;M, can I still attend?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question6">
-                        <br/> Unfortunately, HowdyHack is only open to students from Texas A&amp;M - College Station. However, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question7" aria-expanded="false">
-                    <p class="faq-ques">I'm registered as a hacker, but I want to mentor as well. Can I get involved, and how?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question7">
-                        <br/> Absolutely! Please register to be a mentor <a href="https://forms.gle/mCriLEccShPh4XnZA" style="color: white; text-decoration: underline;">here</a>!
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col-lg-6">
-          <div class="faq-card">
-          <p class="faq-ques" data-toggle="collapse" data-target="#question8" aria-expanded="false">I'm registered as a hacker, but I want to volunteer as well. Can I get involved, and how?</p>
-          <div class="faq-ans collapse" id="question8">
-            <br/>
-            We love when our hackers get involved and want to give back! Register for an account and apply to be a volunteer <a style="color: white" href="https://register.tamuhack.com/">here</a>.
-          </div>
-          </div>
-        </div>-->
-            <div class="col-lg-6">
-                <div class="faq-card" data-toggle="collapse" data-target="#question8" aria-expanded="false">
-                    <p class="faq-ques">I missed the deadline to apply. Can I still attend HowdyHack?</p>
-                    <div class="plusminus"></div>
-                    <div class="faq-ans collapse" id="question8">
-                        <br/> While we cannot guarantee a place, we will be accepting walk-ins the morning of the event!
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-lg-4 -->
-        </div>
-    </div>
-    <!--sponsor section-->
-    <div class="section mt-2" id="sponsors">
-        <h4>Sponsored By</h4>
-        <br />
-
-        <div class="row sponsor-img">
-            <div class="col-12">
-                <a href="https://jobs.aa.com/content/college/" target="_blank"><img src="https://www.aa.com/content/images/chrome/rebrand/aa-logo.png" /></a>
-            </div>
-            <div class="col-6">
-                <a href="https://jpmorganchase.com/techcareers" target="_blank"><img style="margin-top: 40px;" src="../static/assets/hh-assets/JPMC.png" /></a>
-            </div>
-            <div class="col-6">
-                <a href="https://www.usaajobs.com/university" target="_blank"><img style="height: 120px; max-height: 100px" src="https://content.usaa.com/mcontent/static_assets/Media/globalHeader-usaaLogo-2016.svg" /></a>
-            </div>
-            <div class="col-4">
-                <a href="https://jobs.gartner.com/campus" target="_blank"><img src="https://emtemp.gcom.cloud/ngw/commonassets/images/build-graphics/gartner-logos/globalsite_gartner_logo.png" style="margin-top: 10px" /></a>
-            </div>
-            <div class="col-4">
-                <a href="https://p66oncampus.jobs/" target="_blank"><img style="height: 90px; max-height: 70px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Phillips_66_logo.svg/1200px-Phillips_66_logo.svg.png" /></a>
-            </div>
-            <div class="col-4">
-                <a href="https://www.bp.com/en/global/corporate/careers/students-and-graduates.html" target="_blank"><img style="height: 90px; max-height: 70px" src="https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/images-jpg-png/who-we-are/bp-helios-card.png.img.3840.medium.png" /></a>
-            </div>
-            <div class="col-4">
-                <a href="https://www.credera.com/careers/" target="_blank"><img style="max-height: 50px" src="../static/assets/hh-assets/credera-logo.png" /></a>
-            </div>
-            <div class="col-4">
-                <a href="https://ultrapress.com/" target="_blank"><img class="padded" src="https://ultrapress-production.s3.amazonaws.com/static/images/public/ultrapress-custom-tshirts.png" /></a>
-            </div>
-            <div class="col-4">
-                <a href="https://www.botanicalpaperworks.com/" target="_blank"><img class="padded" src="https://www.botanicalpaperworks.com/img/logo.svg" /></a>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <!--footer-->
-    <div id="footer-bg">
-        <div class="container" id="foot-container">
-            <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
-                <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
-                <!-- <a class="navbar-brand" href="#" style="float: left;">
-            <img src="/tamuhack_official_logo.svg" style="margin-left: 20px; margin-top: 6px;">
-        </a> -->
-
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <!-- <ul class="navbar-nav mr-auto">
-            </ul> -->
-                    <ul class="navbar-nav main-nav-ui mr-auto" style="margin-right: 0px!important; margin-left: 0px!important; width: 148px!important;">
-                        <li class="nav-item">
-                            <div class="navbar-brand" href="#" style="float: left;">
-                                <img src="../static/assets/tamuhack_official_logo_white.png" style="margin-left: 20px; margin-top: 6px; width: 100%; height: 100%; opacity: 0.9" />
                             </div>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav main-nav-ui mr-auto" style="margin: 0px auto!important;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/tamuhack-org/">COLLABORATE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:sponsor@tamuhack.com">SPONSOR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:hello@tamuhack.com">EMAIL</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav main-nav-ui mr-auto" style="margin-right: 0px!important;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/tamuhack/">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/tamuhack/">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://twitter.com/tamuhack">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        </div><div class="row-1 lg:w-1/2 inline-block" style="vertical-align: top;">
+                            <div class="w-full" v-for="(track, i) in tracks" v-if="i != 0 && i % 2 == 0">
+                                <div class="m-4">
+                                    <div class="border-gray-800 border-2">
+                                        <div class="relative" v-if="track == 'CYBER SECURITY'">
+                                            <div class="absolute top-20 right-0">
+                                                <img src="./../static/hh-2020/img/conf.png" class="">
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="border-gray-800 border-b-2">
+                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase">{{track.title}}</div>
+                                            </div>
+                                            <p class="text-gray-700 text-base py-2 px-8 mb-8">{{track.desc}}</p>
+                                            <p class="text-gray-700 text-base py-2 px-8"> {{ track.award}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Track Divs End -->
+
+
+                    </div>
                 </div>
-            </nav>
-            <div class="custom-nav d-lg-none d-xl-none">
-                <img src="../static/assets/tamuhack_official_logo_white.svg" style="width: auto; height: 20px!important; float: left;" />
-                <div style="display: inline-block; width: 150px; float: right;" class="nice-text">
-                    <a class="nav-link" href="#" style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="nav-link" href="#" style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="nav-link" href="#" style="margin: 0px 10px!important; padding: 0px 5px!important; display: inline-block!important;">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <br />
             </div>
-            <center>
-                <nav class="nav nav-pills nav-justified d-lg-none d-xl-none" style="width: 100%!important;">
-                    <a class="nav-item nav-link" href="https://github.com/tamuhack-org" style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"><span>COLLABORATE</span></a
-          >
-          <a
-            class="nav-item nav-link"
-            href="mailto:sponsor@tamuhack.com"
-            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
-            ><span>SPONSOR</span></a
-          >
-          <a
-            class="nav-item nav-link"
-            href="mailto:hello@tamuhack.com"
-            style="padding: 0px 5px!important; margin: 5px 10px; border-radius: 0px!important"
-            ><span>EMAIL</span></a
-          >
-        </nav>
-      </center>
+        </div>
+        <div class="sponsors-background pb-10" :id="links[4]"> <!-- style="background-color: #363636" -->
+            <!-- Sponsors -->
+            <div class="container">
+                <div style="background: rgba(0, 0, 0, 0.6);"
+                class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 inline-block mt-16 special-header">
+                    <h2 class="text-5xl pb-2 text-white primary-font">
+                        SPONSORS
+                    </h2>
+                </div>
+            </div>
+            <div class="container">
+                <br />
+                <br />
+                <!-- Sponsor cards -->
+                <span v-for="sponsor in sponsors">
+                    <div :class="'w-full ' + 'inline-block ' + sponsor.width">
+                        <div class="m-4">
+                            <div style="background-image: url('./../static/hh-2020/img/grain.png'); background-color: #d7d5d1; box-shadow: 0 0 15px black" 
+                                class="w-full text-gray-800 font-semibold pt-20 pb-4 px-10 text-xl border-gray-300 sponsor-hover">
+                                <div class="flex justify-center">
+                                    <img src="./../static/hh-2020/img/msft.png">
+                                </div>
+                                <div class="flex justify-center">
+                                    <p class="text-gray-700 text-base py-6 px-8"> {{sponsor.message}}</p>
+                                </div>
+
+                                <div class="flex justify-center text-lg pt-3">
+                                    <a class="block text-gray-800 mx-6 underline">
+                                        Apply
+                                    </a>
+                                    <a class="block text-gray-800 mx-6 underline" v-if="sponsor.channel">
+                                        Join Channel
+                                    </a>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </span>
+
+            </div>
+            <!-- FAQ Header (Contents in next image-background-div) -->
+            <div class="mt-64"> </div>
+            <span  :id="links[5]">
+                <br />
+            </span>
+            <div class="container">
+                <div style="background: rgba(0, 0, 0, 0.6); "
+                class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 inline-block special-header">
+                <h2 class="text-5xl pb-2 text-white primary-font" >
+                        FAQ
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-background-full coat-div" style=" min-height: 1000px;">
+            <!-- Individual FAQs -->
+            <div class="container">
+                <div class="row-1 md:w-1/2 inline-block" style="vertical-align: top;">
+                    <div class="inline-block special-faq w-full" v-for="(f, i) in faq" v-if="i % 2 == 0">
+                        <div class="m-4">
+                            <div style="background: rgba(0, 0, 0, 0.6);" 
+                            class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 gray-text gray-border">
+                                <h2 class="text-3xl pb-2 gray-text primary-font">
+                                    {{f.title}}
+                                </h2>
+                                <p class="py-4 text-lg gray-text" >
+                                    {{f.desc}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row-1 md:w-1/2 inline-block" style="vertical-align: top;">
+                    <div class="inline-block special-faq w-full" v-for="(f, i) in faq" v-if="i % 2 == 1">
+                        <div class="m-4">
+                            <div style="background: rgba(0, 0, 0, 0.6);" 
+                            class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 gray-text gray-border">
+                                <h2 class="text-3xl pb-2 gray-text primary-font">
+                                    {{f.title}}
+                                </h2>
+                                <p class="py-4 text-lg gray-text" >
+                                    {{f.desc}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
     </div>
-    <br>
-    </div>
 
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Full bundle -->
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
-        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-      async
-    ></script>
+    <!-- Individual components -->
+    <script src="https://unpkg.com/buefy/dist/components/table"></script>
+    <script src="https://unpkg.com/buefy/dist/components/input"></script>
 
     <script>
-        $('#after').hide()
-        $('#u_failed').hide()
-        $('#errorMessageOne').hide()
-        $('#errorMessageTwo').hide()
-        $(document).ready(function () {
-            
-            // Listen to submit event on the <form> itself!
-            $('#main').submit(function (e) {
-
-                e.preventDefault();
-                var email = $("#email").val();
-                console.log('Running')
-
-                if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
-                    if(email.indexOf('@tamu.edu') !== -1) {
-                      $.post("/email", {
-                          "email": email,
-                          "howdyHackInterest": true
-                      })
-                      $('#u_failed').hide()
-                      $('#before').remove();
-                      $('#after').show()
-                    } else {
-                      console.log('Non tamu email')
-                      $('#u_failed').show()
-                      $('#errorMessageOne').hide()
-                      $('#errorMessageTwo').show()
-                    }
-                } else {
-                    console.log('invalid email')
-                    $('#u_failed').show()
-                    $('#errorMessageOne').show()
-                    $('#errorMessageTwo').hide()
+        new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    links: ["home", "schedule", "get started", "challenges", "sponsors", "faq"],
+                    tracks: [
+                        {
+                            title: "First Prize",
+                            desc: "This prize will be awarded to the best overall project submission.",
+                            award: "Prize: TBD"
+                        },
+                        {
+                            title: "Second Prize",
+                            desc: "This prize will be awarded to the second best overall project submission.",
+                            award: "Prize: TBD"
+                        },
+                        {
+                            title: "Third Prize",
+                            desc: "This prize will be awarded to the third best overall project submission.",
+                            award: "Prize: TBD"
+                        },
+                        {
+                            title: "Best Use of MongoDB",
+                            desc: "This prize will be awarded to the best project submission that utilizes MongoDB.",
+                            award: "Prize: TBD"
+                        },
+                        {
+                            title: "Best UI",
+                            desc: "This prize will be awarded to the project submission that has the best user interface in terms of aesthetics and usability.",
+                            award: "Prize: TBD"
+                        },
+                        {
+                            title: "Worst UI",
+                            desc: "This prize will be awarded to the project submission that has the worst user interface in terms of lack of aesthetics and lack of usability.",
+                            award: "Prize: TBD"
+                        }
+                    ],
+                    // tracks: ["Second Place", "Third Place", "Best Use of MongoDB", "Best UI", "Worst UI", "CYBER SECURITY"],
+                    sponsors: [
+                        {
+                            message: "This is a sponsor",
+                            width: "lg:w-1/2",
+                            channel: "..."
+                        },
+                        {
+                            message: "This is a sponsor",
+                            width: "lg:w-1/2",
+                            channel: "..."
+                        },
+                        {
+                            message: "This is a sponsor",
+                            width: "lg:w-1/2",
+                            channel: "..."
+                        },
+                        {
+                            message: "This is a sponsor",
+                            width: "lg:w-1/2",
+                            channel: "..."
+                        },
+                        {
+                            width: "sm:w-1/2 lg:w-1/3"
+                        },
+                        {
+                            width: "sm:w-1/2 lg:w-1/3"
+                        },
+                        {
+                            width: "sm:w-1/2 lg:w-1/3"
+                        }
+                    ],
+                    faq: [
+                        {
+                            title: "How much does it cost?",
+                            desc: "It’s FREE! All you need is a laptop and Wi-Fi!"
+                        },
+                        {
+                            title: "I don’t know how to code! Can I still participate?",
+                            desc: "Of course! There will be mentors online to help answer any questions you may have, along with workshops and mini events to keep you on your toes outside of the main event as well, so there will never be an ounce of boredom."
+                        },
+                        {
+                            title: "Is there a theme for HowdyHack?",
+                            desc: "Yes! This year, the theme is Spy. This is an opportunity for you to come up with the coolest, most technologically-savvy hacks relating to disguise, privacy, cybersecurity, and any life hacks!"
+                        },
+                        {
+                            title: "I don't have a team. How do I find people to hack with?",
+                            desc: "Don't sweat it! We will have team-forming channels before we kickoff the opening ceremony so that everyone will have a group to hack with."
+                        },
+                        {
+                            title: "Will there be companies at the hackathon?",
+                            desc: "While there will not be companies present at the hackathon, we will have all kinds of workshops throughout the entire event and even the week before to help you get ready. We got your back!"
+                        },
+                        {
+                            title: "I'm not from A&M, can I still join?",
+                            desc: "HowdyHack is only open to students from Texas A&M. If you're part of either the College Station, Galveston, or Qatar campus, we'd love for you to join our event! If you're not, however, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!"
+                        },
+                        {
+                            title: "When is the deadline to apply for HowdyHack?",
+                            desc: "The deadline to registration is the night before the event, September 4, at 23:59."
+                        },
+                        {
+                            title: "Have additional questions?",
+                            desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
+                        }
+                    ]
                 }
-            });
-            plusMinusCheck();
-        });
-
-        function plusMinusCheck() {
-          $('.faq-card').each(function(){
-              if($(this).attr('aria-expanded') == "true"){
-                $(this).children().next('.plusminus').addClass("plusminus-clicked");
-              }
-              else {
-                $(this).children().next('.plusminus').removeClass("plusminus-clicked");
-              }
-          });
-          setTimeout(plusMinusCheck, 100);
-        }
+            },
+        })
     </script>
-
 </body>
-
 </html>
