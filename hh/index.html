@@ -143,7 +143,7 @@
                             <div class="w-full" v-for="(track, i) in tracks" v-if="i != 0 && i % 2 == 1">
                                 <div class="m-4">
                                     <div class="border-gray-800 border-2">
-                                        <div class="relative" v-if="track == 'CYBER SECURITY'">
+                                        <div class="relative" v-if="track.title == 'Best Hack for Spies'">
                                             <div class="absolute top-20 right-0">
                                                 <img src="./../static/hh-2020/img/conf.png" class="">
                                             </div>
@@ -162,7 +162,7 @@
                             <div class="w-full" v-for="(track, i) in tracks" v-if="i != 0 && i % 2 == 0">
                                 <div class="m-4">
                                     <div class="border-gray-800 border-2">
-                                        <div class="relative" v-if="track == 'CYBER SECURITY'">
+                                        <div class="relative" v-if="track.title == 'Best Hack for Spies'">
                                             <div class="absolute top-20 right-0">
                                                 <img src="./../static/hh-2020/img/conf.png" class="">
                                             </div>
@@ -297,34 +297,49 @@
                     links: ["home", "schedule", "get started", "challenges", "faq"],
                     tracks: [
                         {
-                            title: "First Prize",
+                            title: "First Overall",
                             desc: "This prize will be awarded to the best overall project submission.",
-                            award: "Prize: TBD"
+                            award: "Prize: Acer 144hz monitor"
                         },
                         {
-                            title: "Second Prize",
+                            title: "Second Overall",
                             desc: "This prize will be awarded to the second best overall project submission.",
-                            award: "Prize: TBD"
+                            award: "Prize: Logitech MX Master Mouse 2S"
                         },
                         {
-                            title: "Third Prize",
+                            title: "Third Overall",
                             desc: "This prize will be awarded to the third best overall project submission.",
-                            award: "Prize: TBD"
-                        },
-                        {
-                            title: "Best Use of MongoDB",
-                            desc: "This prize will be awarded to the best project submission that utilizes MongoDB.",
-                            award: "Prize: TBD"
+                            award: "Prize: RK61 60% RGB Mechanical Gaming Keyboard"
                         },
                         {
                             title: "Best UI",
                             desc: "This prize will be awarded to the project submission that has the best user interface in terms of aesthetics and usability.",
-                            award: "Prize: TBD"
+                            award: "Prize: Fujifilm Instax Mini 9"
                         },
                         {
-                            title: "Worst UI",
-                            desc: "This prize will be awarded to the project submission that has the worst user interface in terms of lack of aesthetics and lack of usability.",
-                            award: "Prize: TBD"
+                            title: "Most Impractical Hack",
+                            desc: "A hackathon is the best place to explore new ideas, but maybe some ideas should be left unexplored. This prize will be awarded to the project submission that best solves a problem without actually solving anything.",
+                            award: "Prize: You Tried Trophies"
+                        },
+                        {
+                            title: "Best Beginner Hack ",
+                            desc: "This prize will be awarded to the top project submission with an all beginner team.",
+                            award: "Prize: Ultimate Swag pack"
+                        },
+                        {
+                            title: "Best Aggie Hack ",
+                            desc: "The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.",
+                            award: "Prize: Reveille Pillow Pet"
+                        },
+                        {
+                            title: "Best Accessibility Hack ",
+                            desc: "This prize will be awarded to the best project that falls under Section 508, which states that electronic and information technology should be made easily accessible to people with disabilities.",
+                            award: "Prize: Sendestar 40oz Water Bottle"
+                        },
+                        {
+                            title: "Best Hack for Spies",
+                            desc: "It's confidential. Don't worry about it. NDtfixHYQldz XuBeWocnJVOvC IFpbMsEy",
+                            award: "Prize: Tile Mate 2020"
                         }
                     ],
                     // tracks: ["Second Place", "Third Place", "Best Use of MongoDB", "Best UI", "Worst UI", "CYBER SECURITY"],
