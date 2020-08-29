@@ -179,7 +179,7 @@
                     </h2>
                 </div>
                 <div class="col-md-2 d-none d-md-block" style="float: right;">
-                    <img src="sticker_gcode 1.png" style="width: 200px;">
+                    <img src="./sticker_gcode 1.png" style="width: 200px;">
                 </div>
             </div>
 
@@ -196,21 +196,21 @@
 
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="card mb-4 faq-card" v-for="(item, key, index) in item.items">
+                        <div class="card mb-4 faq-card" v-for="(text, key, index) in item.items">
                             <div class="card-body" data-toggle="collapse" :data-target="'#question' + index + '_' + indexMain" aria-expanded="false">
                                 <h4 class="card-title" style="text-align: left;">{{key}}</h4>
                                 <div class="title-underline blue mb-purple"></div>
                                 <div class="plusminus"></div>
                                 <div class="faq-ans collapse" :id="'question' + index + '_' + indexMain" style="text-align: left;">
-                                    <p class="card-text" style="margin-top: 20px; color: #111!important; font-size: 18px!important;">{{item}}</p>
+                                    <p class="card-text" style="margin-top: 20px; color: #111!important; font-size: 18px!important;">{{text}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-4 faq-card" v-for="(item, key, index) in item.links">
-                            <div class="card-body" data-toggle="collapse" @click="window.open(item)">
+                        <div class="card mb-4 faq-card" v-for="(text, key, index) in item.links">
+                            <div class="card-body" data-toggle="collapse" @click="window.open(text)">
                                 <h4 class="card-title" style="text-align: left; margin-right: 62px;">{{key}}</h4>
                                 <div class="title-underline blue mb-pink"></div>
-                                <div class="plusminus2" style="width: 60px; background-color: #FFE1E9; color: #F27B93;">OPEN</div>
+                                <div class="plusminus2" style="width: 65px; background-color: #FFE1E9; color: #F27B93;">{{item.link_desc[index]}}</div>
                             </div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@
 
 
     <!--BEGIN Our Community Section-->
-    <section id="our-community-container" style="margin-top: 300px">
+    <section id="our-community-container" style="margin-top: 20vh">
         <div class="container">
             <span id="our-community" class="goto"> &nbsp; </span>
             <div class="content-container">
@@ -416,7 +416,9 @@
                             links: {
                                 "Tips for Hackathon Success": "https://www.launchcode.org/blog/8-tips-to-rock-your-first-hackathon/",
                                 "Hackathon Ideas": "https://get.tech/blog/hackathon-ideas/"
-                            }
+                            },
+                            link_desc: ["SITE", "SITE"]
+
                         },
                         "Demoing": {
                             desc: "Judging is the final part of the hackathon experience. We want to make sure you have the information to make the process as transparent as possible.",
@@ -428,7 +430,8 @@
                                 "How to use Devpost video": "https://www.youtube.com/watch?v=vCa7QFFthfU",
                                 "How to record": "https://www.youtube.com/watch?v=yii4M5204SE",
                                 "How to make a good pitch video": "https://www.youtube.com/watch?v=7u0cKqRPYhY"
-                            }
+                            },
+                            link_desc: ["VIDEO", "VIDEO", "VIDEO"]
                         },
                         "Website Development": {
                             desc: "For beginners, we recommend building a website as it allows for the most flexibility.",
@@ -445,7 +448,8 @@
                                 "Frontend vs Backend": "https://www.youtube.com/watch?v=oGM4LI9Z9HE",
                                 "Simple Node Boilerplate": "https://github.com/gdsouza1992/express-ejs-boilerplate",
                                 "Node Boilerplate (with MongoDB)": "https://github.com/ahari884/simple-node-boilerplate"
-                            }
+                            },
+                            link_desc: ["VIDEO", "VIDEO", "VIDEO", "VIDEO", "VIDEO", "VIDEO", "VIDEO", "REPO", "REPO"]
                         },
                         "Miscellaneous": {
                             desc: "Other articles and tools that can help.",
@@ -455,7 +459,8 @@
                                 "Introduction to MongoDB with Node": "https://www.youtube.com/watch?v=5e1NEdfs4is",
                                 "What makes a program accessible": "https://www.youtube.com/watch?v=8Ik_LHmZx8Y",
                                 "Combatting imposter syndrome": "https://www.youtube.com/watch?v=ZQUxL4Jm1Lo"
-                            }
+                            },
+                            link_desc: ["VIDEO", "VIDEO", "VIDEO", "VIDEO"]
                         }
                     }
                 }
