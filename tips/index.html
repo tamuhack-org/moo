@@ -184,18 +184,14 @@
             </div>
 
             <div v-for="(item, key, indexMain) in info">
-                <!-- {{ item }} -->
-                <!-- {{ key }} -->
-                <h2 style="margin-top: 100px;">{{key}}</h2>
-                <p style="margin: 20px 0px; font-size: 18px;">
-                    {{item.desc}}
-                </p>
-
-
-
 
                 <div class="row">
                     <div class="col-md-8">
+                        <h2 style="margin-top: 100px;">{{key}}</h2>
+                        <p style="margin: 20px 0px; font-size: 18px;">
+                            {{item.desc}}
+                        </p>
+        
                         <div class="card mb-4 faq-card" v-for="(text, key, index) in item.items">
                             <div class="card-body" data-toggle="collapse" :data-target="'#question' + index + '_' + indexMain" aria-expanded="false">
                                 <h4 class="card-title" style="text-align: left;">{{key}}</h4>
