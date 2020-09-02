@@ -36,7 +36,11 @@
                 </div>
 
                 <div class="hidden md:block">
-                    <div class="flex justify-center text-lg pt-6">
+                    <div class="flex inline-block">
+                        <img src="./../static/hh-2020/img/th_logo1.png" alt="" class="fill-current h-8 w-8 mt-6 ml-24" @click="window.open('http://tamuhack.com/')">
+                      </div>
+                    
+                    <div class="flex justify-center text-lg pt-6 inline-block" style="margin-top: -75px">
                         <a v-for="link in links" :href="'#' + link.replace(' ', '-')" 
                             class="uppercase block text-gray-500 hover:text-white mr-12 gray-text">
                             {{ link }}
@@ -296,20 +300,20 @@
                     hasSponsors: false,
                     links: ["home", "schedule", "get started", "challenges", "faq"],
                     tracks: [
-                        {
+                    {
                             title: "First Overall",
-                            desc: "This prize will be awarded to the best overall project submission.",
-                            award: "Prize: Acer 144hz monitor"
+                            desc: "This prize is the opportunity to pick first from the following choices: Acer 144hz monitor (4), Logitech MX Master Mouse 2S (4), or RK61 60% RGB Mechanical Gaming Keyboard (4).",
+                            award: "Prize: First Pick"
                         },
                         {
                             title: "Second Overall",
-                            desc: "This prize will be awarded to the second best overall project submission.",
-                            award: "Prize: Logitech MX Master Mouse 2S"
+                            desc: "This prize is the opportunity to pick second from the following choices: Acer 144hz monitor (4), Logitech MX Master Mouse 2S (4), or RK61 60% RGB Mechanical Gaming Keyboard (4).",
+                            award: "Prize: Second Pick"
                         },
                         {
                             title: "Third Overall",
-                            desc: "This prize will be awarded to the third best overall project submission.",
-                            award: "Prize: RK61 60% RGB Mechanical Gaming Keyboard"
+                            desc: "This prize is the opportunity to pick third from the following choices: Acer 144hz monitor (4), Logitech MX Master Mouse 2S (4), or RK61 60% RGB Mechanical Gaming Keyboard (4).",
+                            award: "Prize: Third Pick"
                         },
                         {
                             title: "Best UI",
@@ -388,7 +392,7 @@
                             desc: "Yes! This year’s theme is “Spy”. This is an opportunity for you to come up with the coolest, most technologically savvy hacks relating to disguise, privacy, and cybersecurity!"
                         },
                         {
-                            title: "I don’t know how to code! Can I still participate?",
+                            title: "I don't have a team. How do I find people to hack with??",
                             desc: "Don't sweat it! We will have team-forming channels before we kickoff the opening ceremony so everyone will have a group to hack with."
                         },
                         {
