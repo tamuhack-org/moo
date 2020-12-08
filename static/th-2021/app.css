@@ -274,7 +274,11 @@ html {
     }
 
     .padding-mobile {
-        padding: 10px!important;
+        padding: 20px!important;
+    }
+
+    .padding-mobile h2 {
+        font-size: 1.25rem!important;
     }
 
     .padding-mobile2 {
