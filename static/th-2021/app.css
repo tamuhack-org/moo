@@ -269,3 +269,9 @@ html {
         padding: 50px 10px;
     }
 }
+
+.bottom-cust-img {
+    position: relative;
+    display: block;
+    float: left;
+}
