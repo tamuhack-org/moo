@@ -224,10 +224,6 @@ html {
         padding: 50px 50px;
     }
 
-    .faq-margin-divs {
-        margin: 10px!important;
-    }
-
 } 
 
 @media only screen and (max-width: 600px) {
@@ -261,12 +257,20 @@ html {
     } */
 
     .faq-margin-divs {
-        margin: 10px!important;
+        margin: 10px 0px 0px 0px!important;
     }
 
     .page-content-right {
         width: 90vw;
         padding: 50px 10px;
+    }
+
+    .sponsor-offset {
+        padding-left: 10px;
+    }
+
+    .helper-text {
+        padding: 10px 0px!important;
     }
 }
 

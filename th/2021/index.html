@@ -110,7 +110,7 @@
                             <br /> 
                             TAMUhack 2021.
                         </h2>
-                        <p class="text-lg pl-4 py-10 my-5">
+                        <p class="text-lg pl-4 py-10 my-5 helper-text">
                             Texas A&M University
                             <br /> 
                             Starting 30-31 January 2021
@@ -184,7 +184,7 @@
                     Frequently Asked Questions
                 </h2>
                 <div class="row-1 md:w-1/2 inline-block" style="vertical-align: top;">
-                    <div class="inline-block special-faq w-full" v-for="(f, i) in faq" v-if="i % 2 == 0">
+                    <div class="inline-block special-faq w-full faq-margin-divs" v-for="(f, i) in faq" v-if="i % 2 == 0">
                         <div class="mr-4 my-4 faq-margin-divs th-pink-border p-2">
                             <div 
                             class="text-gray-900 font-semibold py-5 px-12 border text-xl gray-text th-pink-border">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div><div class="row-1 md:w-1/2 inline-block" style="vertical-align: top;">
-                    <div class="inline-block special-faq w-full" v-for="(f, i) in faq" v-if="i % 2 == 1">
+                    <div class="inline-block special-faq w-full faq-margin-divs" v-for="(f, i) in faq" v-if="i % 2 == 1">
                         <div class="ml-4 my-4 faq-margin-divs th-pink-border p-2">
                             <div
                             class="text-gray-900 font-semibold py-5 px-12 border text-xl gray-text th-pink-border">
@@ -282,7 +282,7 @@
         </div>     -->
         <div style="height: 314px; background: url('./../../static/th-2021/img/bottom.png')">
             <div class="faq-container" style="padding-bottom: 0px!important; padding-top: 0px!important;">
-                <p style="padding-top: 200px;">
+                <p style="padding-top: 200px;" class="sponsor-offset">
                     Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
                 </p>
             </div>
