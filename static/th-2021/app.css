@@ -274,12 +274,20 @@ html {
     }
 
     .padding-mobile {
-        padding: 10px;
+        padding: 10px!important;
     }
 
     .padding-mobile2 {
         margin-bottom: 0px;
     }
+
+    .padding-mobile3 {
+        padding-top: 0px!important;
+    }
+    .padding-mobile4 {
+        padding-bottom: 0px!important;
+    }
+
 }
 
 .bottom-cust-img {
