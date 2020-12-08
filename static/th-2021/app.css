@@ -272,6 +272,14 @@ html {
     .helper-text {
         padding: 10px 0px!important;
     }
+
+    .padding-mobile {
+        padding: 10px;
+    }
+
+    .padding-mobile2 {
+        margin-bottom: 0px;
+    }
 }
 
 .bottom-cust-img {
