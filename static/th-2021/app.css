@@ -132,12 +132,12 @@ html {
     }
     .page-content-left {
         vertical-align: top;
-        width: 600px;
-        padding: 50px;
+        width: 700px;
+        padding: 50px 50px 50px 150px;
     }
 
     .faq-container {
-        padding: 50px;
+        padding: 150px;
     }
 } 
 
