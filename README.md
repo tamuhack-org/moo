@@ -4,8 +4,10 @@ Hosted on github pages. Original URL on [https://tamuhack-org.github.io/moo/](ht
 
 ## Sitemap
 - https://tamuhack.com/
+- https://live.tamuhack.com/
 - https://tamuhack.com/th
 - https://tamuhack.com/th/live
+- https://tamuhack.com/th/2021
 - https://tamuhack.com/th/2020
 - https://tamuhack.com/th/2019
 - https://tamuhack.com/th/2018
