@@ -25,6 +25,10 @@
     border: 1px solid #F3859B;
 }
 
+.th-pink-text {
+    color: #F3859B;
+}
+
 html {
     scroll-behavior: smooth;
 }
