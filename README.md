@@ -19,6 +19,6 @@ Hosted on github pages. Original URL on [https://tamuhack-org.github.io/moo/](ht
 
 ## Powered by
 
-* Our amazing [team](#past-iterations)
+* Our amazing [team](https://tamuhack.com#past-iterations)
 * Some truly innovative sponsors
 * ![Vercel](./static/assets/powered-by-vercel.svg)
