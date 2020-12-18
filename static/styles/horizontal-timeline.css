@@ -364,11 +364,11 @@
 
 .timeline-director-socials {
     width: 100%;
-    max-height: 10px;
-    max-width: 10px;
+    max-height: 15px;
+    max-width: 15px;
     display: block;
-    margin-left: calc(3px + 0.2vw);
-    margin-right: calc(3px + 0.2vw);
+    margin-left: calc(6px + 0.1vw);
+    margin-right: calc(6px + 0.1vw);
 }
 
 .padding-0 {
