@@ -16,3 +16,9 @@ Hosted on github pages. Original URL on [https://tamuhack-org.github.io/moo/](ht
 - https://tamuhack.com/hh/2020
 - https://tamuhack.com/hh/2019
 - https://tamuhack.com/hh/2018
+
+## Powered by
+
+* Our amazing [team](https://tamuhack.com#past-iterations)
+* Some truly innovative sponsors
+* ![Vercel](./static/assets/powered-by-vercel.svg)
