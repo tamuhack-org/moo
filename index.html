@@ -1785,58 +1785,65 @@
     <footer class="container">
         <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
             <div class="collapse navbar-collapse" id="navbarText">
+                <!--BEGIN left container-->
+                <div style="display: flex; flex-direction: column; flex: 1; align-items: flex-start; justify-content: start;">
+                    <!--BEGIN top left container-->
+                    <div href="#">
+                        <img src="./static/assets/tamuhack_official_logo.svg" style="margin-bottom: 9px" />
+                    </div>
+                    <!--END top left container-->
 
-                <!--BEGIN Brand Container-->
-                <ul class="navbar-nav main-nav-ui mr-auto brand-container nav-link">
-                    <li class="nav-item">
-                        <div class="navbar-brand" href="#">
-                            <img src="./static/assets/tamuhack_official_logo.svg" style="margin-bottom: 9px" />
-                        </div>
-                    </li>
-                </ul>
-                <!--END Brand Container-->
+                    <!--BEGIN bottom left container-->
+                    <div style="vertical-align: center;">
+                        <a href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss" style="font-size: 12px;">Powered by <img src="static/assets/vercel.svg" /></a> 
+                    </div>
+                    <!--END bottom left container-->
+                </div>
+                <!--END left container-->
 
-                <!--BEGIN Main Container-->
-                <ul class="navbar-nav main-nav-ui mr-auto main-container">
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:sponsor@tamuhack.com">sponsor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:hello@tamuhack.com">email</a>
-                    </li>
-                </ul>
-                <!--END Main Container-->
-
-                <!--BEGIN Links Container-->
-                <ul class="navbar-nav main-nav-ui mr-auto links-container">
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.instagram.com/tamuhack/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://twitter.com/tamuhack">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
-                            <i class="fab fa-reddit"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!--END Links Container-->
-
+                <!--BEGIN right container-->
+                <div style="display: flex; flex-direction: column; flex: 1; align-items: flex-end; justify-content: end;">
+                    <div>
+                        <ul class="navbar-nav main-nav-ui mr-auto main-container">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:sponsor@tamuhack.com">sponsor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:hello@tamuhack.com">email</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav main-nav-ui mr-auto links-container">
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.instagram.com/tamuhack/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://twitter.com/tamuhack">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
+                                    <i class="fab fa-reddit"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--END right container-->
             </div>
         </nav>
 
@@ -1876,6 +1883,12 @@
             </nav>
         </div>
         <!--END Small Nav Container-->
+        
+        <!--BEGIN small vercel container-->
+        <div class="small-nav-container">
+            <a href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss" style="font-size: 12px;">Powered by <img src="static/assets/vercel.svg" /></a> 
+        </div>
+        <!--END small vercel container-->
 
     </footer>
     <!--BEGIN Scripts-->
