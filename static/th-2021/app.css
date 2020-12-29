@@ -88,7 +88,7 @@ html {
 .page-content-right {
     /* vertical-align: middle; */
     width: 1000px;
-    padding: 250px;
+    padding: 20px 250px 20px 50px;
 }
 
 .page-content-left {
@@ -115,12 +115,12 @@ html {
     .page-content-right {
         vertical-align: middle;
         width: 700px;
-        padding: 50px;
+        padding: 50px 150px 50px 0px;
     }
     .page-content-left {
         vertical-align: top;
         width: 700px;
-        padding: 50px 0px 50px 100px;
+        padding: 50px 0px 50px 150px;
     }
 
     .faq-container {
@@ -132,7 +132,7 @@ html {
     .page-content-right {
         vertical-align: middle;
         width: 600px;
-        padding: 50px;
+        padding: 50px 150px 50px 50px;
     }
     .page-content-left {
         vertical-align: top;
