@@ -53,7 +53,7 @@
 
         <div class="full-height-container" :id="links[0]">
 
-            <div class="block" style="height: 67px;">
+            <div class="block">
                 <div class="block lg:hidden pb-10">
                     <template>
                         <b-navbar>
@@ -118,12 +118,21 @@
                             Hosted Virtually
                         </p>
                         <a href="https://register.tamuhack.com/" target="_blank" class="hidden md:inline-block px-20 py-4 uppercase text-lg rounded-md th-pink-bg
-                            text-white hover:text-white hover:bg-pink-400 ">
+                            text-white hover:text-white hover:bg-pink-400" style="margin-right: 1.5rem;">
                             Apply
                         </a>
                         <a href="https://register.tamuhack.com/" target="_blank" class="md:hidden block py-4 text-center uppercase text-lg rounded-md th-pink-bg
-                        text-white hover:text-white hover:bg-pink-400 ">
+                        text-white hover:text-white hover:bg-pink-400" style="margin-right: 1.5rem;">
                             Apply
+                        </a>
+
+                        <a href="https://mentor.tamuhack.com" target="_blank" class="hidden md:inline-block px-20 py-4 uppercase text-lg rounded-md th-pink-border
+                            th-pink-text hover:text-white hover:bg-pink-400 ">
+                            Mentor
+                        </a>
+                        <a href="https://mentor.tamuhack.com" target="_blank" class="md:hidden block py-4 text-center uppercase text-lg rounded-md th-pink-border
+                        th-pink-text hover:text-white hover:bg-pink-400 ">
+                            Mentor
                         </a>
                     </div>
                 </div>
@@ -160,7 +169,7 @@
                     </p>
                     <p class="text-lg pt-8 mb-10 padding-mobile2">
 
-                        We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide free workshops, discord workspaces, and swag — just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!
+                        We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide free discord workspaces and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!
                     </p>
                     <p class="text-lg pt-8 mb-10 padding-mobile2">
 
@@ -197,8 +206,7 @@
                                 <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4 padding-mobile3">
                                     {{f.title}}
                                 </h2>
-                                <p class="py-4 text-lg gray-text font-light padding-mobile4">
-                                    {{f.desc}}
+                                <p class="py-4 text-lg gray-text font-light padding-mobile4" v-html="f.desc">
                                 </p>
                             </div>
                         </div>
@@ -211,8 +219,7 @@
                                 <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4 padding-mobile3">
                                     {{f.title}}
                                 </h2>
-                                <p class="py-4 text-lg gray-text font-light padding-mobile4">
-                                    {{f.desc}}
+                                <p class="py-4 text-lg gray-text font-light padding-mobile4" v-html="f.desc">
                                 </p>
                             </div>
                         </div>
@@ -235,7 +242,7 @@
                 <div class="grid grid-cols-3 justify-items-center">
                     <div class="col-span-3 md:col-span-1 p-12"  v-for="item in sponsors" :key="item.id">
                         <center>
-                            <img :src="item[0]" style="max-height: 100px;" @click="window.open(item[1], '_')">
+                            <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
                         </center>
                     </div>
                     <!-- <div class="col-span-3 md:col-span-1 pt-10 mx-10">
@@ -267,7 +274,7 @@
                 <div class="grid grid-cols-3 justify-items-center">
                     <div class="col-span-3 md:col-span-1 p-12"  v-for="item in partners" :key="item.id">
                         <center>
-                            <img :src="item[0]" style="max-height: 100px;" @click="window.open(item[1], '_')">
+                            <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
                         </center>
                     </div>
                     <!-- <div class="col-span-3 md:col-span-1 pt-10 mx-10">
@@ -349,6 +356,10 @@
                         {
                             title: "When is the deadline to apply for TAMUhack?",
                             desc: "The deadline to registration is the night before the event, January 29th, at 23:59."
+                        },
+                        {
+                            title: "Are there any rules?",
+                            desc: "Yes, by registering for this event, you're agreeing to follow the <a href=\"https://static.mlh.io/docs/mlh-code-of-conduct.pdf\" class=\"underline\">MLH Code of Conduct</a>, <a href=\"https://mlh.io/privacy\" class=\"underline\">MLH Privacy Policy</a>, and <a href=\"https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions\" class=\"underline\">MLH Prize Terms and Conditions</a>."
                         },
                         {
                             title: "Have additional questions?",
