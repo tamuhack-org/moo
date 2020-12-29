@@ -53,8 +53,8 @@
 
         <div class="full-height-container" :id="links[0]">
 
-            <div class="block">
-                <div class="block lg:hidden pb-10">
+            <div class="block my-0">
+                <div class="block lg:hidden pb-2 my-0">
                     <template>
                         <b-navbar>
                             <template slot="brand">
@@ -74,7 +74,7 @@
                     </template>
                 </div>
     
-                <div class="hidden lg:block mx-32 pt-2">
+                <div class="hidden lg:block mx-24 pt-2">
                     <div class="flex float-left">
                         <div class="p-4">
                             <img src="./../../static/th-2021/img/logo.svg" class="cursor-pointer" @click="window.open('http://tamuhack.com/')">
@@ -97,7 +97,7 @@
             </div>
             <div>
                 <div class="page-content">
-                    <div class="page-content-panel page-content-img">
+                    <div class="page-content-panel page-content-img lg:w-1/2">
                         <!-- <img id="imageOne" alt=""> -->
                         <div id="imageOne">
                             <img src="./../../static/th-2021/img/gif/th.gif" id="customImageOne" />
@@ -110,27 +110,29 @@
                             <br /> 
                             TAMUhack 2021.
                         </h2>
-                        <p class="text-lg pl-4 py-10 my-5 helper-text">
+                        <p class="text-lg pl-2 helper-text py-4 my-2">
                             Texas A&M University
                             <br /> 
                             Starting 30-31 January 2021
                             <br /> 
                             Hosted Virtually
+                            <br/>
                         </p>
-                        <a href="https://register.tamuhack.com/" target="_blank" class="hidden md:inline-block px-20 py-4 uppercase text-lg rounded-md th-pink-bg
-                            text-white hover:text-white hover:bg-pink-400" style="margin-right: 1.5rem;">
+                        <div class="pb-4"></div>
+                        <a href="https://register.tamuhack.com/" target="_blank" class="text-center lg:mr-2 lg:w-48 sm:w-full hidden md:inline-block py-4 my-2 uppercase text-lg rounded-md th-pink-bg
+                            text-white hover:text-white hover:bg-pink-400">
                             Apply
                         </a>
-                        <a href="https://register.tamuhack.com/" target="_blank" class="md:hidden block py-4 text-center uppercase text-lg rounded-md th-pink-bg
-                        text-white hover:text-white hover:bg-pink-400" style="margin-right: 1.5rem;">
+                        <a href="https://register.tamuhack.com/" target="_blank" class="lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center uppercase text-lg rounded-md th-pink-bg
+                        text-white hover:text-white hover:bg-pink-400">
                             Apply
                         </a>
 
-                        <a href="https://mentor.tamuhack.com" target="_blank" class="hidden md:inline-block px-20 py-4 uppercase text-lg rounded-md th-pink-border
+                        <a href="https://mentor.tamuhack.com" target="_blank" class="text-center lg:w-48 hidden md:inline-block sm:w-full w-36 py-4 uppercase text-lg rounded-md th-pink-border
                             th-pink-text hover:text-white hover:bg-pink-400 ">
                             Mentor
                         </a>
-                        <a href="https://mentor.tamuhack.com" target="_blank" class="md:hidden block py-4 text-center uppercase text-lg rounded-md th-pink-border
+                        <a href="https://mentor.tamuhack.com" target="_blank" class="md:hidden sm:w-full block py-4 text-center uppercase text-lg rounded-md th-pink-border
                         th-pink-text hover:text-white hover:bg-pink-400 ">
                             Mentor
                         </a>
@@ -163,20 +165,20 @@
                     <h2 class="text-5xl th-pink font-bold leading-normal padding-mobile2">
                         About TAMUhack
                     </h2>
-                    <p class="text-lg pt-8 mb-10 padding-mobile2">
+                    <p class="md:text-lg pt-4 pb-8 padding-mobile2 font-light">
 
                         At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.
                     </p>
-                    <p class="text-lg pt-8 mb-10 padding-mobile2">
+                    <p class="md:text-lg pb-8 padding-mobile2 font-light">
 
                         We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide free discord workspaces and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet! Check them out below!
                     </p>
-                    <p class="text-lg pt-8 mb-10 padding-mobile2">
+                    <p class="md:text-lg pb-8 padding-mobile2 font-light">
 
                         Due to concerns about spreading of COVID-19, this year’s TAMUhack will be hosted online, but that does not mean it will be any less exciting! The hackathon will be hosted on Hopin with lots of workshops, events, and interactive competitions to help create the engaging atmosphere that comes with in-person hackathons.
                     </p>                    
                 </div><!--
-                --><div class="page-content-panel">
+                --><div class="page-content-panel lg:w-1/2">
                     <!-- <div class="spacer s2"></div> -->
                     <div class="spacer s0" id="trigger"></div>
 
@@ -189,7 +191,6 @@
 
                 </div>
             </div>
-
         </div>
 
 
@@ -206,7 +207,7 @@
                                 <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4 padding-mobile3">
                                     {{f.title}}
                                 </h2>
-                                <p class="py-4 text-lg gray-text font-light padding-mobile4" v-html="f.desc">
+                                <p class="py-4 text-base lg:text-lg gray-text font-light padding-mobile4" v-html="f.desc">
                                 </p>
                             </div>
                         </div>
@@ -219,17 +220,13 @@
                                 <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4 padding-mobile3">
                                     {{f.title}}
                                 </h2>
-                                <p class="py-4 text-lg gray-text font-light padding-mobile4" v-html="f.desc">
+                                <p class="py-4 text-base lg:text-lg gray-text font-light padding-mobile4" v-html="f.desc">
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
 
 
