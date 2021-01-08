@@ -236,10 +236,20 @@
                     Sponsored By
                 </h2>
                 
-                <div class="grid grid-cols-3 justify-items-center">
-                    <div class="col-span-3 md:col-span-1 p-12"  v-for="item in sponsors" :key="item.id">
+                <div class="grid grid-cols-6 items-center">
+                    <div class="col-span-6 md:col-span-6 p-12"  v-for="item in sponsorsLg" :key="item.id">
+                        <center>
+                            <img :src="item[0]" style="max-height: 120px; cursor: pointer;" @click="window.open(item[1], '_')">
+                        </center>
+                    </div>
+                    <div class="col-span-6 md:col-span-3 p-12"  v-for="item in sponsorsMd" :key="item.id">
                         <center>
                             <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
+                        </center>
+                    </div>
+                    <div class="col-span-3 md:col-span-2 p-12"  v-for="item in sponsors" :key="item.id">
+                        <center>
+                            <img :src="item[0]" style="max-height: 90px; cursor: pointer;" @click="window.open(item[1], '_')">
                         </center>
                     </div>
                     <!-- <div class="col-span-3 md:col-span-1 pt-10 mx-10">
@@ -268,7 +278,7 @@
                 </h2>
 
             <!-- <p class="font-semibold pink text-4xl ml-10 mt-32">Our Partners</p> -->
-                <div class="grid grid-cols-3 justify-items-center">
+                <div class="grid grid-cols-3 justify-items-center items-center">
                     <div class="col-span-3 md:col-span-1 p-12"  v-for="item in partners" :key="item.id">
                         <center>
                             <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
@@ -363,11 +373,23 @@
                             desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
                         }
                     ],
-                    sponsors: [
+                    sponsorsLg: [
+                        [
+                            'https://s21.q4cdn.com/616071541/files/multimedia-gallery/assets/Logos/american-airlines/aa_aa__hrz_rgb_grd_pos.png',
+                            'https://jobs.aa.com/'
+                        ]
+                    ],
+                    sponsorsMd: [
                         [
                             'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Hewlett_Packard_Enterprise_logo.svg/1373px-Hewlett_Packard_Enterprise_logo.svg.png',
                             'https://www.hpe.com/us/en/about/jobs.html'
                         ],
+                        [
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dell_logo.svg/1280px-Dell_logo.svg.png',
+                            'https://jobs.dell.com/'
+                        ]
+                    ],
+                    sponsors: [
                         [
                             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSazjkljcmKiz5bmzj0SqAXDwegJfjEiR195Q&usqp=CAU',
                             'https://www.facebook.com/careers/'
@@ -383,10 +405,6 @@
                         [
                             'https://s3.us-west-2.amazonaws.com/1517-assets-public/images/1517-logo.png',
                             'https://www.1517fund.com/'
-                        ],
-                        [
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dell_logo.svg/1280px-Dell_logo.svg.png',
-                            'https://jobs.dell.com/'
                         ]
                         // 'https://cdn.phenompeople.com/CareerConnectResources/BAHUGLOBAL/en_global/mobile/assets/images/v-1605495973744-header_logo.png',
                         // 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACXCAMAAAAvQTlLAAAAe1BMVEX///8Aak0AZkijxLoAZUXv9/V+qZvW5uEAXjsib1RLh3Hs9PNTi3b2+vmuy8K3zsbC2NIseF5mm4qowrksfWU4g22YvLBjkoE2e2J9o5R4pJTh7enb5OGErqFun47o7u0UclZaloRMj3qRsaTL2dQAWDKHqZueuK1DfWajdx49AAAD5klEQVR4nO2YbZeiIBSAhTBJxdSZssnRcpqp/v8vXFNAENBq292z59znW8TLI8K9oOcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wusTJOFTnQrTxcmSRoxpWmUWEgDX+t+3LlOapc6JOciQxhjokA/b3/tKRmD0fFabAPZOlhhE5TFH/2TdfgboxuVhplSXrBsfdqeRpDOa0nG5TfaBjRMpZe1CiYU74WZHxr9q0PlphfbIuvQk17d/6RiE159nd33k16HDXVVnvFCiO7nvNpH/nzKK9i452PWC9H1nBciMXvCq3S8wzu98IbNeSGUPu7lx+qoWN8jVPciVEEMsgpUL2sVUmleWh3Bz5cWVLyaDE5oF341TZNLmlL1yhbpwCLjo+BE9arfFBrekBSqF87XNr71xSWXPM0uacmYJYpwL7w7aC25GFG9uh8Sdu5bklj1IidziDFMPBLCy8hVSXqVWvGJmPOle3mlzQtX817fcrbW7koOrwt/pNTt5SNseY93eNX8NeLtRCW7Fyv6YVal22vdd0+2qhe5wwvxqtbkNPa6lh6TREveNPcUr/alDlXYesfVA9ULV8xEH1Gsevo2JS/jxEZhxWXRt+qFsveBjCdcuvRUL3TMDFb6PC+E19R0DV76aaEr4ZtriKtGFURCX/eyoE8M2/OHfp/Smoj3+MjX5VTervlGn/IiC80r5/u4ec4LN+IE5vY6yhH/nhdaVdHsfO1EBHrAq/7N94hoWM55YREX7vfyKj7iz33rXj9J90Wbg+aFjRqt/Fb3Gh0OugOC7pWI/bgwbUyvYzFk9GLDB+mDgPSKzx8d53O9ktPchd7Ba5cbFPqtw//hTx37Fp+RVxtX1UhYiUHVcw4e4hArK3Em0OP9HXHVexevYyrHO/JQzAP+m+fKQ2cu1ueER/LQVjzSE3mbnyfI2el14HlIz9v3eJU7sTpx5Vz7Di++mUnNnHmbt3zca5iwNl1sA7ua9NJOaGvR7nYjcnjx3p/w8jK5nTFtL8h5Xe8H8oPihVYX5Yy8F+mPXh70wnVqI9C90qMS7caR5cd975BBgEycC61edkgzCgkJmUjzd9zTrv5rvIx7bWV+l3jAi2j32ld6eeuja+B5L6J/B3iplxfE1N5kzgvTWv9u8lqv9uBatEn5US9CduKY+ae8PJYuv4709g1MRexHy0e3dreGJ3nRFd/lDK+ulHIvWz+yP7tX5xYkVR6rXDuvUxgbFMtEjf5lHPboXsm1qxx2i9CvwymWk2ct5mvYyjrGnUQcvZxFaj9+NMXUiQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD41/wCNLVOa+zeF+oAAAAASUVORK5CYII=',
@@ -401,6 +419,10 @@
                         [
                             'https://pinnacle.us.org/assets/icon.png',
                             'https://pinnacle.us.org/'
+                        ],
+                        [
+                            'data:image/png;base64,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', 
+                            'http://hackp.ac/mlh-stickermule-hackathons'
                         ]
                     ]
                 }
