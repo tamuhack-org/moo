@@ -1,6 +1,6 @@
 # Moo - TAMUhack Static Site
 
-Hosted on github pages. Original URL on [https://tamuhack-org.github.io/moo/](https://tamuhack-org.github.io/moo/) and redirected to [https://tamuhack.com/](https://tamuhack.com/).
+You can visit the site at [https://tamuhack.com/](https://tamuhack.com/).
 
 ## Sitemap
 - https://tamuhack.com/
