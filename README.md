@@ -22,3 +22,20 @@ Hosted on github pages. Original URL on [https://tamuhack-org.github.io/moo/](ht
 * Our amazing [team](https://tamuhack.com#past-iterations)
 * Some truly innovative sponsors
 * [![Vercel](./static/assets/powered-by-vercel.svg)](https://vercel.com?utm_source=tamuhack&utm_campaign=oss)
+
+## Contributing
+
+Branch naming convention:
+```
+{github-username}/{event-abbreviation}{year-abbreviation}-{addressing-issue}
+```
+
+Exmaples:
+```
+For the main TAMUhack page:
+  cameronbrill/th-make-team-modular
+For the TAMUhack 2021 landing page:
+  cameronbrill/th21-add-rule-clarification
+For the Howdy Hack 2018 landing page:
+  cameronbrill/hh18-expand-description-guidelines
+```
