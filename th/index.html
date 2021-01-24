@@ -119,23 +119,34 @@
                             <br/>
                         </p>
                         <div class="pb-4"></div>
-                        <a href="https://register.tamuhack.com/" target="_blank" class="text-center lg:mr-2 lg:w-48 sm:w-full hidden md:inline-block py-4 my-2 uppercase text-lg rounded-md th-pink-bg
+                        <a href="https://register.tamuhack.com/" target="_blank" class="font-bold text-center lg:mr-2 lg:w-1/2 sm:w-full hidden md:inline-block py-4 my-2 text-lg rounded-md th-pink-bg
                             text-white hover:text-white hover:bg-pink-400">
                             Apply
                         </a>
-                        <a href="https://register.tamuhack.com/" target="_blank" class="lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center uppercase text-lg rounded-md th-pink-bg
+                        <a href="https://register.tamuhack.com/" target="_blank" class="font-bold lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center text-lg rounded-md th-pink-bg
                         text-white hover:text-white hover:bg-pink-400">
                             Apply
                         </a>
 
-                        <a href="https://mentor.tamuhack.com" target="_blank" class="text-center lg:w-48 hidden md:inline-block sm:w-full w-36 py-4 uppercase text-lg rounded-md th-pink-border
-                            th-pink-text hover:text-white hover:bg-pink-400 ">
-                            Mentor
+                        <a href="https://discord.gg/e3fDwp2" target="_blank" class="font-bold discord-bg text-center lg:mr-2 lg:w-1/2 sm:w-full hidden md:inline-block py-4 my-2 text-lg rounded-md 
+                        text-white hover:text-white">
+                          Join the Discord
                         </a>
-                        <a href="https://mentor.tamuhack.com" target="_blank" class="md:hidden sm:w-full block py-4 text-center uppercase text-lg rounded-md th-pink-border
-                        th-pink-text hover:text-white hover:bg-pink-400 ">
-                            Mentor
+                        <a href="https://discord.gg/e3fDwp2" target="_blank" class="font-bold discord-bg lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center text-lg rounded-md
+                        text-white hover:text-white">
+                          Join the Discord
                         </a>
+
+
+                        <a href="https://tamuhack2021.devpost.com/" target="_blank" class="font-bold text-center lg:mr-2 lg:w-1/2 sm:w-full hidden md:inline-block py-4 my-2 text-lg rounded-md th-pink-border
+                        th-pink-text hover:text-white hover:bg-pink-400">
+                            Devpost
+                        </a>
+                        <a href="https://tamuhack2021.devpost.com/" target="_blank" class="font-bold lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center text-lg rounded-md th-pink-border
+                        th-pink-text hover:text-white hover:bg-pink-400">
+                            Devpost
+                        </a>
+
                     </div>
                 </div>
 
@@ -194,7 +205,7 @@
         </div>
 
         <div class="full-height-container">
-          <div class="faq-container" style="padding-bottom: 0px!important;">
+          <div class="faq-container">
               <h2 class="text-5xl th-pink font-bold leading-normal">
                   Schedule
               </h2>
@@ -202,7 +213,7 @@
               <div class="w-full lg:w-1/2 inline-block" style="vertical-align: top;">
                   <h2 class="text-2xl pb-2 gray-text primary-font font-bold leading-tight pt-4 padding-mobile3">Saturday</h2>
                   <div class="inline-block special-faq w-full faq-margin-divs" >
-                      <table class="table-auto">
+                      <table class="table-auto schedule-table">
                         <tbody>
                           <tr v-for="(e, i) in eventsSaturday">
                             <td class="align-middle" style="text-align: right;">
@@ -224,9 +235,9 @@
               <div class="w-full lg:w-1/2 inline-block" style="vertical-align: top;">
                 <h2 class="text-2xl pb-2 gray-text primary-font font-bold leading-tight pt-4 padding-mobile3">Saturday</h2>
                 <div class="inline-block special-faq w-full faq-margin-divs" >
-                    <table class="table-auto">
+                    <table class="table-auto schedule-table">
                       <tbody>
-                        <tr v-for="(e, i) in eventsSaturday">
+                        <tr v-for="(e, i) in eventsSunday">
                           <td class="align-middle" style="text-align: right;">
                             {{e.time}}
                           </td>
@@ -243,9 +254,25 @@
                     </table>
                 </div>
             </div>
+           </div>
           </div>
-          </div>
-      </div>
+       </div>
+  
+       
+        <div class="full-height-container prizes-bgd py-8 md:py-24 lg:py-32">
+            <div class="faq-container" style="padding-bottom: 0px!important; padding-top: 0px!important;">
+                <h2 class="text-5xl th-pink font-bold leading-normal">
+                    Prizes
+                </h2>
+            <div class="justify-center flex flex-wrap">
+              <div class="prizes-box" v-for="(p, i) in prizes">
+                <h2 class="font-bold text-lg">{{p.name}}</h2>
+                <p class="mb-2">{{p.description}}</p>
+                <p>Prize: {{p.prize}}</p>
+              </div>
+            </div>
+            </div>
+        </div>
 
         <div class="full-height-container" :id="links[2]">
             <div class="faq-container">
@@ -533,6 +560,48 @@
                         time: "12:00 PM",
                         event: "Closing Ceremony"
                       }
+                    ],
+                    prizes: [
+                      {
+                        name: "Grand Prize",
+                        description: "1st place overall prize.",
+                        prize: "Dual Monitors"
+                      },
+                      {
+                        name: "Second Place",
+                        description: "2nd place overall prize.",
+                        prize: "iPad (latest generation)"
+                      },
+                      {
+                        name: "Third Place",
+                        description: "3rd place overall prize.",
+                        prize: "Oculus Quest 2"
+                      },
+                      {
+                        name: "Best Beginner Hack",
+                        description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
+                        prize: "AirPods Pro"
+                      },
+                      {
+                        name: "Best Hardware Hack",
+                        description: "Best hack that involves hardware usage/integration.",
+                        prize: "Raspberry Pi 4"
+                      },
+                      {
+                        name: "Best UI/UX",
+                        description: "In the world of hacking and engineering, a product must not only work well, but also provide the best user experience possible - design and usability goes a long way! Best hack that demonstrates clear design and usability intentions.",
+                        prize: "Logitech MX Master 2S + Hard Case"
+                      },
+                      {
+                        name: "Hacker Favorite",
+                        description: "After hacking ends, browse through the submissions on the TAMUhack 2020 Devpost to vote for your favorite hack! Awarded to the team with the most amount of likes on their Devpost submission link.",
+                        prize: "JBL Flip 4 Bluetooth Speaker"
+                      },
+                      {
+                        name: "American Airlines Challenge",
+                        description: "Thousands of people fly American each and every day. This awesome responsibility opens the door to incredible opportunities. Help us elevate the customer travel experience, boost operational efficiences and employee performance (baggage handling, gate agents, etc.), or enhance American's brand image with your innovative hacks!",
+                        prize: "Up to 75,000 AAdvantage miles, one round trip international"
+                      },
                     ],
                     sponsorsLg: [
                         [

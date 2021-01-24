@@ -307,3 +307,42 @@ html {
     display: block;
     float: left;
 }
+
+.prizes-box {
+  background: #FFFFFF;
+  border: 1px solid #F3859B;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #F3859B;
+  padding: 1.2rem;
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.prizes-bgd {
+  background-image: url(./img/prizesBgd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media only screen and (min-width: 900px) {
+  .prizes-box {
+    width: 30%;
+    margin: 0.75rem;
+  }
+
+  .schedule-table td {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.discord-bg {
+  background-color: #738ADB;
+}
+
+.discord-bg:hover {
+  background-color: #4665d6;
+}
