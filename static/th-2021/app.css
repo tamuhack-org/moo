@@ -256,6 +256,10 @@ html {
         margin-top: 100px;
     }
 
+    .faq-container > .schedule-tables {
+      padding-lefT: 10px;
+    }
+
     /* .faq-container > p.text-lg {
         margin-top: -100px;
     } */

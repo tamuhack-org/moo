@@ -193,6 +193,59 @@
             </div>
         </div>
 
+        <div class="full-height-container">
+          <div class="faq-container" style="padding-bottom: 0px!important;">
+              <h2 class="text-5xl th-pink font-bold leading-normal">
+                  Schedule
+              </h2>
+              <div class="schedule-tables flex flex-col lg:flex-row">
+              <div class="w-full lg:w-1/2 inline-block" style="vertical-align: top;">
+                  <h2 class="text-2xl pb-2 gray-text primary-font font-bold leading-tight pt-4 padding-mobile3">Saturday</h2>
+                  <div class="inline-block special-faq w-full faq-margin-divs" >
+                      <table class="table-auto">
+                        <tbody>
+                          <tr v-for="(e, i) in eventsSaturday">
+                            <td class="align-middle" style="text-align: right;">
+                              {{e.time}}
+                            </td>
+                            <td class="align-middle">
+                              <div class="px-2">
+                                <img src="../static/th-2021/img/scheduleDot.png"/>
+                              </div>
+                            </td>
+                            <td class="align-middle">
+                              {{e.event}}
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+              </div>
+              <div class="w-full lg:w-1/2 inline-block" style="vertical-align: top;">
+                <h2 class="text-2xl pb-2 gray-text primary-font font-bold leading-tight pt-4 padding-mobile3">Saturday</h2>
+                <div class="inline-block special-faq w-full faq-margin-divs" >
+                    <table class="table-auto">
+                      <tbody>
+                        <tr v-for="(e, i) in eventsSaturday">
+                          <td class="align-middle" style="text-align: right;">
+                            {{e.time}}
+                          </td>
+                          <td class="align-middle">
+                            <div class="px-2">
+                              <img src="../static/th-2021/img/scheduleDot.png"/>
+                            </div>
+                          </td>
+                          <td class="align-middle">
+                            {{e.event}}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
 
         <div class="full-height-container" :id="links[2]">
             <div class="faq-container">
@@ -376,6 +429,110 @@
                             title: "Have additional questions?",
                             desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
                         }
+                    ],
+                    eventsSaturday: [
+                      {
+                        time: "10:00 AM",
+                        event: "Career Fair"
+                      },
+                      {
+                        time: "11:00 AM",
+                        event: "Opening Ceremony"
+                      },
+                      {
+                        time: "11:30 AM",
+                        event: "Virtual Team Formation"
+                      },
+                      {
+                        time: "12:00 PM",
+                        event: "Hacking starts"
+                      },
+                      {
+                        time: "12:30 PM",
+                        event: "American Airlines Workshop & Tech Talk"
+                      },
+                      {
+                        time: "2:15 PM",
+                        event: "HPE Workshop & Tech Talk"
+                      },
+                      {
+                        time: "3:30 PM",
+                        event: "Dell Workshop & Tech Talk"
+                      },
+                      {
+                        time: "4:45 PM",
+                        event: "Google Cloud Workshop"
+                      },
+                      {
+                        time: "5:45 PM",
+                        event: "AWICS Meeting/Panel"
+                      },
+                      {
+                        time: "7:00 PM",
+                        event: "UI/UX Workshop"
+                      },
+                      {
+                        time: "8:00 PM",
+                        event: "So You Think You Can Fly?"
+                      },
+                      {
+                        time: "9:00 PM",
+                        event: "Cooking Show #1"
+                      },
+                      {
+                        time: "10:00 PM",
+                        event: "Among Us"
+                      },
+                      {
+                        time: "11:00 PM",
+                        event: "Break Hour"
+                      },
+                    ],
+                    eventsSunday: [
+                      {
+                          time: "12:00 AM",
+                          event: "Talent Show"
+                      },
+                      {
+                        time: "1:00 AM",
+                        event: "Debate"
+                      },
+                      {
+                        time: "2:00 AM",
+                        event: "Cooking Show #2"
+                      },
+                      {
+                        time: "3:00 AM",
+                        event: "Board Games"
+                      },
+                      {
+                        time: "6:00 AM",
+                        event: "Lofi Chill"
+                      },
+                      {
+                        time: "7:00 AM",
+                        event: "Mmorning Talk Show"
+                      },
+                      {
+                        time: "8:00 AM",
+                        event: "Break/Hacking Hour"
+                      },
+                      {
+                        time: "9:00 AM",
+                        event: "Morning Yoga"
+                      },
+                      {
+                        time: "10:00 AM",
+                        event: "Mini Events Awards"
+                      },
+                      {
+                        time: "10:15 AM",
+                        event: "Final Stretch Office Hours"
+                      },
+                      {
+                        time: "12:00 PM",
+                        event: "Closing Ceremony"
+                      }
                     ],
                     sponsorsLg: [
                         [
