@@ -204,7 +204,7 @@
             </div>
         </div>
 
-        <div class="full-height-container">
+        <div class="full-height-container" :id="links[2]">
           <div class="faq-container">
               <h2 class="text-5xl th-pink font-bold leading-normal">
                   Schedule
@@ -259,7 +259,7 @@
        </div>
   
        
-        <div class="full-height-container prizes-bgd py-8 md:py-24 lg:py-32">
+        <div class="full-height-container prizes-bgd py-8 md:py-24 lg:py-32" :id="links[3]">
             <div class="faq-container" style="padding-bottom: 0px!important; padding-top: 0px!important;">
                 <h2 class="text-5xl th-pink font-bold leading-normal">
                     Prizes
@@ -274,7 +274,7 @@
             </div>
         </div>
 
-        <div class="full-height-container" :id="links[2]">
+        <div class="full-height-container" :id="links[4]">
             <div class="faq-container">
                 <h2 class="text-5xl th-pink font-bold leading-normal">
                     Frequently Asked Questions
@@ -310,7 +310,7 @@
         </div>
 
 
-        <div class="full-height-container" :id="links[3]">
+        <div class="full-height-container" :id="links[5]">
             <div class="faq-container" style="padding-bottom: 0px!important;">
                 <h2 class="text-5xl th-pink font-bold leading-normal">
                     Sponsored By
@@ -418,7 +418,7 @@
                     window,
 
                     // Store an array. Useful for looping
-                    links: ["Home", "About", "FAQ", "Sponsors"],
+                    links: ["Home", "About", "Schedule", "Prizes", "FAQ", "Sponsors"],
                     faq: [
                         {
                             title: "Who can attend?",
@@ -538,7 +538,7 @@
                       },
                       {
                         time: "7:00 AM",
-                        event: "Mmorning Talk Show"
+                        event: "Morning Talk Show"
                       },
                       {
                         time: "8:00 AM",
@@ -617,7 +617,19 @@
                         [
                             'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dell_logo.svg/1280px-Dell_logo.svg.png',
                             'https://jobs.dell.com/'
-                        ]
+                        ],
+                        [
+                          'https://www.abilities.ca/wp-content/uploads/2019/07/Accenture-logo-no-background.png',
+                          'https://www.accenture.com/'
+                        ],
+                        [
+                          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Capital_One_logo.svg/1200px-Capital_One_logo.svg.png',
+                          'https://www.capitalone.com/'
+                        ],
+                        [
+                          'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Chevron_Logo.svg/918px-Chevron_Logo.svg.png',
+                          'https://www.chevron.com/'
+                        ],
                     ],
                     sponsors: [
                         [
@@ -635,7 +647,11 @@
                         [
                             'https://s3.us-west-2.amazonaws.com/1517-assets-public/images/1517-logo.png',
                             'https://www.1517fund.com/'
-                        ]
+                        ],
+                        [
+                          '../static/th-2021/img/sponsors/echoAR.png',
+                          'https://www.echoar.xyz/'
+                        ],
                         // 'https://cdn.phenompeople.com/CareerConnectResources/BAHUGLOBAL/en_global/mobile/assets/images/v-1605495973744-header_logo.png',
                         // 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACXCAMAAAAvQTlLAAAAe1BMVEX///8Aak0AZkijxLoAZUXv9/V+qZvW5uEAXjsib1RLh3Hs9PNTi3b2+vmuy8K3zsbC2NIseF5mm4qowrksfWU4g22YvLBjkoE2e2J9o5R4pJTh7enb5OGErqFun47o7u0UclZaloRMj3qRsaTL2dQAWDKHqZueuK1DfWajdx49AAAD5klEQVR4nO2YbZeiIBSAhTBJxdSZssnRcpqp/v8vXFNAENBq292z59znW8TLI8K9oOcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wusTJOFTnQrTxcmSRoxpWmUWEgDX+t+3LlOapc6JOciQxhjokA/b3/tKRmD0fFabAPZOlhhE5TFH/2TdfgboxuVhplSXrBsfdqeRpDOa0nG5TfaBjRMpZe1CiYU74WZHxr9q0PlphfbIuvQk17d/6RiE159nd33k16HDXVVnvFCiO7nvNpH/nzKK9i452PWC9H1nBciMXvCq3S8wzu98IbNeSGUPu7lx+qoWN8jVPciVEEMsgpUL2sVUmleWh3Bz5cWVLyaDE5oF341TZNLmlL1yhbpwCLjo+BE9arfFBrekBSqF87XNr71xSWXPM0uacmYJYpwL7w7aC25GFG9uh8Sdu5bklj1IidziDFMPBLCy8hVSXqVWvGJmPOle3mlzQtX817fcrbW7koOrwt/pNTt5SNseY93eNX8NeLtRCW7Fyv6YVal22vdd0+2qhe5wwvxqtbkNPa6lh6TREveNPcUr/alDlXYesfVA9ULV8xEH1Gsevo2JS/jxEZhxWXRt+qFsveBjCdcuvRUL3TMDFb6PC+E19R0DV76aaEr4ZtriKtGFURCX/eyoE8M2/OHfp/Smoj3+MjX5VTervlGn/IiC80r5/u4ec4LN+IE5vY6yhH/nhdaVdHsfO1EBHrAq/7N94hoWM55YREX7vfyKj7iz33rXj9J90Wbg+aFjRqt/Fb3Gh0OugOC7pWI/bgwbUyvYzFk9GLDB+mDgPSKzx8d53O9ktPchd7Ba5cbFPqtw//hTx37Fp+RVxtX1UhYiUHVcw4e4hArK3Em0OP9HXHVexevYyrHO/JQzAP+m+fKQ2cu1ueER/LQVjzSE3mbnyfI2el14HlIz9v3eJU7sTpx5Vz7Di++mUnNnHmbt3zca5iwNl1sA7ua9NJOaGvR7nYjcnjx3p/w8jK5nTFtL8h5Xe8H8oPihVYX5Yy8F+mPXh70wnVqI9C90qMS7caR5cd975BBgEycC61edkgzCgkJmUjzd9zTrv5rvIx7bWV+l3jAi2j32ld6eeuja+B5L6J/B3iplxfE1N5kzgvTWv9u8lqv9uBatEn5US9CduKY+ae8PJYuv4709g1MRexHy0e3dreGJ3nRFd/lDK+ulHIvWz+yP7tX5xYkVR6rXDuvUxgbFMtEjf5lHPboXsm1qxx2i9CvwymWk2ct5mvYyjrGnUQcvZxFaj9+NMXUiQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD41/wCNLVOa+zeF+oAAAAASUVORK5CYII=',
                         // 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png',
