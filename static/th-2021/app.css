@@ -266,6 +266,11 @@ html {
         padding-left: 10px;
         margin-top: 100px;
     }
+    
+    .schedule-cst-note {
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
 
     .faq-container > .schedule-tables {
       padding-left: 10px;
