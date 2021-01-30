@@ -5,42 +5,42 @@
 */
 
 [v-cloak] {
-    display: none;
+  display: none;
 }
 
 .text-5xl {
-    margin-bottom: 25px;
-    font-family: Raleway, sans-serif!important;
+  margin-bottom: 25px;
+  font-family: Raleway, sans-serif !important;
 }
 
 .th-pink {
-    color: #F3859B!important;
+  color: #f3859b !important;
 }
 
 .th-pink-bg {
-    background-color: #F3859B;
+  background-color: #f3859b;
 }
 
 .th-pink-border {
-    border: 1px solid #F3859B;
+  border: 1px solid #f3859b;
 }
 
 .th-pink-text {
-    color: #F3859B;
+  color: #f3859b;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .full-height-container {
-    /* min-height: 100vh; */
-    background-color: #fff;
-    margin-bottom: 20px;
+  /* min-height: 100vh; */
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .hover-red-underline:hover {
-    border-bottom: 3px solid #F3859B;
+  border-bottom: 3px solid #f3859b;
 }
 
 /* .page-content-left {
@@ -48,16 +48,16 @@ html {
 } */
 
 .page-content {
-    width: 100vw;
-    display: table;
+  width: 100vw;
+  display: table;
 }
-.page-content-panel { 
-    vertical-align: middle;
-    display: table-cell;
+.page-content-panel {
+  vertical-align: middle;
+  display: table-cell;
 }
 
 .page-content-img {
-    z-index: 100;
+  z-index: 100;
 }
 
 /* #imageOne {
@@ -70,266 +70,261 @@ html {
 } */
 
 #customImageOne {
-    /* width: 100%;
+  /* width: 100%;
     height: 100%;
     object-fit: cover; */
-    -webkit-mask-image: linear-gradient(to right, black 80%, transparent);
-    mask-image: linear-gradient(to right, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent);
+  mask-image: linear-gradient(to right, black 80%, transparent);
 }
 
 #myimg {
-    /* width: 100%;
+  /* width: 100%;
     height: 100%;
     object-fit: cover; */
-    -webkit-mask-image: linear-gradient(to left, black 80%, transparent);
-    mask-image: linear-gradient(to left, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to left, black 80%, transparent);
+  mask-image: linear-gradient(to left, black 80%, transparent);
 }
 
 .page-content-right {
-    /* vertical-align: middle; */
-    width: 1000px;
-    padding: 20px 250px 20px 50px;
+  /* vertical-align: middle; */
+  width: 1000px;
+  padding: 20px 250px 20px 50px;
 }
 
 .page-content-left {
-    /* vertical-align: top; */
-    width: 1000px;
-    /* padding: 20px 150px; */
-    padding: 20px 50px 20px 250px;
-    /* margin-right: -100px; */
+  /* vertical-align: top; */
+  width: 1000px;
+  /* padding: 20px 150px; */
+  padding: 20px 50px 20px 250px;
+  /* margin-right: -100px; */
 }
 
 .faq-container {
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .bottom-img {
-    margin-top: -200px;
+  margin-top: -200px;
 }
 
 .container {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 1850px) {
-    .page-content-right {
-        vertical-align: middle;
-        width: 700px;
-        padding: 50px 150px 50px 0px;
-    }
-    .page-content-left {
-        vertical-align: top;
-        width: 700px;
-        padding: 50px 0px 50px 150px;
-    }
+  .page-content-right {
+    vertical-align: middle;
+    width: 700px;
+    padding: 50px 150px 50px 0px;
+  }
+  .page-content-left {
+    vertical-align: top;
+    width: 700px;
+    padding: 50px 0px 50px 150px;
+  }
 
-    .faq-container {
-        padding: 100px;
-    }
-} 
+  .faq-container {
+    padding: 100px;
+  }
+}
 
 @media only screen and (max-width: 1550px) {
-    .page-content-right {
-        vertical-align: middle;
-        width: 600px;
-        padding: 50px 150px 50px 50px;
-    }
-    .page-content-left {
-        vertical-align: top;
-        width: 700px;
-        padding: 50px 50px 50px 150px;
-    }
+  .page-content-right {
+    vertical-align: middle;
+    width: 600px;
+    padding: 50px 150px 50px 50px;
+  }
+  .page-content-left {
+    vertical-align: top;
+    width: 700px;
+    padding: 50px 50px 50px 150px;
+  }
 
-    .faq-container {
-        padding: 150px;
-        padding-top: 75px;
-        padding-bottom: 75px;
-    }
-} 
-
+  .faq-container {
+    padding: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
 
 @media only screen and (max-width: 1300px) {
-    .wide-nav a {
-      margin-right: 60px;
-    }
+  .wide-nav a {
+    margin-right: 60px;
+  }
 
-    .bottom-img {
-        margin-top: -80px;
-    }
-} 
+  .bottom-img {
+    margin-top: -80px;
+  }
+}
 
 @media only screen and (max-width: 1100px) {
-    .text-5xl {
-        font-size: 2rem;
-    }
+  .text-5xl {
+    font-size: 2rem;
+  }
 
-    .page-content-right {
-        vertical-align: middle;
-        width: 400px;
-        padding: 50px;
-    }
+  .page-content-right {
+    vertical-align: middle;
+    width: 400px;
+    padding: 50px;
+  }
 
-    .page-content-left {
-        vertical-align: top;
-        width: 400px;
-        padding: 50px;
-    }
+  .page-content-left {
+    vertical-align: top;
+    width: 400px;
+    padding: 50px;
+  }
 
-    .faq-container {
-        padding: 50px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+  .faq-container {
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
-    .container > h2 {
-        padding-left: 10px;
-    }
+  .container > h2 {
+    padding-left: 10px;
+  }
 
-    .container > p.text-lg {
-        padding: 10px 10px 1px 10px;
-    }
-} 
+  .container > p.text-lg {
+    padding: 10px 10px 1px 10px;
+  }
+}
 
 @media only screen and (max-width: 900px) {
+  .text-5xl {
+    font-size: 3rem;
+  }
 
+  .page-content-panel {
+    display: block;
+    margin: 0px auto;
+    clear: both;
+  }
 
-    .text-5xl {
-        font-size: 3rem;
-    }
-
-    .page-content-panel {
-        display: block;
-        margin: 0px auto;
-        clear: both;
-    }
-
-    #customImageOne {
-        /* width: 100%;
+  #customImageOne {
+    /* width: 100%;
         height: 100%;
         object-fit: cover; */
-        -webkit-mask-image: none;
-        mask-image: none;
-    }
-    #myimg {
-        /* width: 100%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  #myimg {
+    /* width: 100%;
         height: 100%;
         object-fit: cover; */
-        -webkit-mask-image: none;
-        mask-image: none;
-    }
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
 
-    .page-content-left {
-        width: 80vw;
-        padding: 50px;
-    }
+  .page-content-left {
+    width: 80vw;
+    padding: 50px;
+  }
 
-    .faq-container {
-        padding: 50px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .page-content-right {
-        /* Home */
-        width: 80vw;
-        padding: 50px 50px;
-    }
-
-} 
+  .faq-container {
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page-content-right {
+    /* Home */
+    width: 80vw;
+    padding: 50px 50px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
-    .text-5xl {
-        font-size: 2rem;
-    }
-    .page-content-left {
-        width: 90vw;
-        padding: 10px 10px;
-    }
+  .text-5xl {
+    font-size: 2rem;
+  }
+  .page-content-left {
+    width: 90vw;
+    padding: 10px 10px;
+  }
 
-    .container > h2 {
-        padding-left: 10px;
-    }
+  .container > h2 {
+    padding-left: 10px;
+  }
 
-    .faq-container > p.text-lg {
-        padding: 50px 10px 1px 10px;
-    }
+  .faq-container > p.text-lg {
+    padding: 50px 10px 1px 10px;
+  }
 
-    .faq-container {
-        padding: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+  .faq-container {
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-    .faq-container > h2 {
-        padding-left: 10px;
-        margin-top: 100px;
-    }
-    
-    .schedule-cst-note {
-      padding-left: 10px;
-      margin-bottom: 10px;
-    }
+  .faq-container > h2 {
+    padding-left: 10px;
+    margin-top: 100px;
+  }
 
-    .faq-container > .schedule-tables {
-      padding-left: 10px;
-    }
+  .schedule-cst-note {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
 
-    /* .faq-container > p.text-lg {
+  .faq-container > .schedule-tables {
+    padding-left: 10px;
+  }
+
+  /* .faq-container > p.text-lg {
         margin-top: -100px;
     } */
 
-    .faq-margin-divs {
-        margin: 10px 0px 0px 0px!important;
-    }
+  .faq-margin-divs {
+    margin: 10px 0px 0px 0px !important;
+  }
 
-    .page-content-right {
-        width: 90vw;
-        padding: 50px 10px;
-    }
+  .page-content-right {
+    width: 90vw;
+    padding: 50px 10px;
+  }
 
-    .sponsor-offset {
-        padding-left: 10px;
-    }
+  .sponsor-offset {
+    padding-left: 10px;
+  }
 
-    .helper-text {
-        padding: 10px 0px!important;
-    }
+  .helper-text {
+    padding: 10px 0px !important;
+  }
 
-    .padding-mobile {
-        padding: 20px!important;
-    }
+  .padding-mobile {
+    padding: 20px !important;
+  }
 
-    .padding-mobile h2 {
-        font-size: 1.25rem!important;
-    }
+  .padding-mobile h2 {
+    font-size: 1.25rem !important;
+  }
 
-    .padding-mobile2 {
-        margin-bottom: 0px;
-    }
+  .padding-mobile2 {
+    margin-bottom: 0px;
+  }
 
-    .padding-mobile3 {
-        padding-top: 0px!important;
-    }
-    .padding-mobile4 {
-        padding-bottom: 0px!important;
-    }
-
+  .padding-mobile3 {
+    padding-top: 0px !important;
+  }
+  .padding-mobile4 {
+    padding-bottom: 0px !important;
+  }
 }
 
 .bottom-cust-img {
-    position: relative;
-    display: block;
-    float: left;
+  position: relative;
+  display: block;
+  float: left;
 }
 
 .prizes-box {
-  background: #FFFFFF;
-  border: 1px solid #F3859B;
+  background: #ffffff;
+  border: 1px solid #f3859b;
   box-sizing: border-box;
   border-radius: 8px;
-  color: #F3859B;
+  color: #f3859b;
   padding: 1.2rem;
   width: 100%;
   margin: 0.5rem;
@@ -341,7 +336,6 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 
 @media only screen and (min-width: 900px) {
   .prizes-box {
@@ -356,9 +350,17 @@ html {
 }
 
 .discord-bg {
-  background-color: #738ADB;
+  background-color: #738adb;
 }
 
 .discord-bg:hover {
   background-color: #4665d6;
+}
+
+.hopin-bg {
+  background-color: #185fff;
+}
+
+.hopin-bg:hover {
+  background-color: #0d42bf;
 }
