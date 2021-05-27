@@ -1,4 +1,4 @@
-(function() {
+function initalizeHoriTimeline() {
     // Horizontal Timeline - by CodyHouse.co
     // find the original at https://codyhouse.co/demo/horizontal-timeline/index.html
 
@@ -345,4 +345,4 @@
             (left + width) > window.pageXOffset
         );
     }
-}());
+};

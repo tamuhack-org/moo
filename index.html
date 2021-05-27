@@ -19,6 +19,14 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="stylesheet" href="./static/styles/app.css" />
     <link rel="stylesheet" href="./static/styles/horizontal-timeline.css">
+   
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Timeline Scripts -->
+    <script src="./static/scripts/horizontal-timeline/util.js"></script>
+    <script src="./static/scripts/horizontal-timeline/swipe-content.js"></script>
+    <script src="./static/scripts/horizontal-timeline/horizontal-timeline.js"></script>
+    <!-- End Timeline Scripts -->
+
     <title>TAMUhack</title>
 </head>
 <!--END Metadata-->
@@ -173,32 +181,8 @@
                 <div class="cd-h-timeline__line">
                     <!-- timeline events on the timeline at the top-->
                     <ol class="no-list-style">
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date th14"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date th15"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date th16"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date th18"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date hh18"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date th19"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date hh19"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date th20"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="cd-h-timeline__date cd-h-timeline__date--selected hh20"></a>
+                        <li v-for="(hackathon, idx) in hackathons">
+                            <a href="#0" class="cd-h-timeline__date" :class="[hackathon, (idx == hackathons.length - 1) ? 'cd-h-timeline__date--selected' : '']"></a>
                         </li>
                     </ol>
                 </div>
@@ -1907,23 +1891,25 @@
         async></script>
     <script src="./static/scripts/main.js"></script>
     <!-- horizontal-timeline scripts -->
-    <script src="https://unpkg.com/vue"></script>
-
     <script>
         new Vue({
           el: "#app",
           data: function () {
               return {
-                  init: ["hello world"],
+                  hackathons: ["th14", "th15", "th16", "th18", "hh18", "th19", "hh19", "th20", "hh20"],
               }
           },
+          mounted: function () {
+            this.$nextTick(function () {
+                // Code that will run only after the entire view has been rendered
+                // Need to run timeline scripts once timeline has been rendered
+                swipeContentTimeline();
+                initalizeHoriTimeline();    
+                })
+            },
         })
     </script>
 
-    <!-- Timeline Scripts need to be AFTER Vue -->
-    <script src="./static/scripts/horizontal-timeline/util.js"></script>
-    <script src="./static/scripts/horizontal-timeline/swipe-content.js"></script>
-    <script src="./static/scripts/horizontal-timeline/horizontal-timeline.js"></script>
     <!--END Scripts-->
     
 </body>
