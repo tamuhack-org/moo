@@ -1,4 +1,4 @@
-(function() {
+function swipeContentTimeline() {
     // Swipe Content Plugin - by CodyHouse.co
     // https://codyhouse.co/ds/components/info/swipe-content
     var SwipeContent = function(element) {
@@ -125,4 +125,4 @@
             (function(i) { new SwipeContent(swipe[i]); })(i);
         }
     }
-}());
+};
