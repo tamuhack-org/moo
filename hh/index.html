@@ -1,425 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./../static/hh-2020/app.css">
-    <meta name="description" content="HowdyHack is Texas A&M’s 24-hour, beginner friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break, before they’ll submit their product to a panel of judges for evaluation and hopefully win some cool prizes.">
-    <meta name="keywords" content="HowdyHack, Hackathon, Texas A&M, Beginner, TAMUhack, 2020, Texas">
-    <title>HowdyHack 2020</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link href="./../static/hh-2020/img/hh20favicon.png" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HH 2021</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        .custom-text{
+            font-size: 20px;
+            line-height: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .button-one {
+            background-color: #F9E5C0; 
+            border: 2px solid #6A4437
+        }
+
+        .button-one:hover {
+            background-color: #f7d9a2;
+        }
+
+        .button-two {
+            background-color: #DCC3A7;
+            border: 2px solid #6A4437
+        }
+
+        .button-two:hover {
+            background-color: #f8c387;
+        }
+
+        @media screen and (max-width: 900px) {
+            .no-mobile {
+                display: none!important;
+            }
+        }
+
+        @media screen and (min-width: 901px) {
+            .no-desktop {
+                display: none!important;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .mobile-text {
+                font-size: 22px!important;
+            }
+            .mobile-img {
+                height: 60px;
+            }
+        }
+        
+
+    </style>
 </head>
-
-<body>
-    <div id="app" v-cloak>
-        <div class="image-background-full desk-div" style="min-height: 1000px;" :id="links[0]">
-            <div class="w-full block">
-
-
-
-
-                <div class="block md:hidden pb-10">
-                    <template>
-                        <b-navbar style="background-color: rgba(28,28,28,1);">
-                            <template slot="start">
-                                <b-navbar-item :href="'#' + link.replace(' ', '-')" v-for="link in links">
-                                    <span class="uppercase">
-                                        {{ link }}
-                                    </span>
-                                </b-navbar-item>
-                            </template>
-                        </b-navbar>
-                    </template>
-                </div>
-
-                <div class="hidden md:block">
-                    <div class="flex inline-block">
-                        <img src="./../static/hh-2020/img/th_logo1.png" alt="" class="fill-current h-8 w-8 mt-6 ml-24" @click="window.open('http://tamuhack.com/')">
-                      </div>
-                    
-                    <div class="flex justify-center text-lg pt-6 inline-block" style="margin-top: -75px">
-                        <a v-for="link in links" :href="'#' + link.replace(' ', '-')" 
-                            class="uppercase block text-gray-500 hover:text-white mr-12 gray-text">
-                            {{ link }}
-                        </a>
-                    </div>
-                </div>
-
-                <div class="flex justify-center pt-6 container px-4">
-                    <img src="./../static/hh-2020/img/test.svg" class="w-4/5 md:w:2/5 lg:w-1/2">
-                </div>
-                <div class="flex justify-center" style="margin-top: 10vh;">
-                    <button class="text-gray-500 font-semibold py-5 px-24 border text-xl border-gray-500
-                        hover:bg-white hover:text-white hover:border-white rounded gray-text primary-font" 
-                            style="background: rgba(0, 0, 0, 0.6); border: 2px solid #C0BEBB!"
-                            @click="window.open('https://register.tamuhack.com', '_blank')">
-                        REGISTER
+<body style="background-color: #ffefd2;">
+    <div class="" style="background-color: #ffefd2;">
+        <div style="height: 100px!important; width:100px!important;">
+            <img src="./../static/hh-2021/hh.svg" style="height: 100px; padding: 15px" class="mobile-img">
+        </div>
+        <!-- <div class="flex justify-center items-center" style="height: calc(100vh - 100px)"> -->
+        <div class="flex justify-center">
+                <!-- <img src="./logo2.svg" class="h-3/4 m-1/8"> -->
+            <img src="./../static/hh-2021/logo3.svg" class="md:pb-16 p-2" style="max-height: calc(100vh - 100px); width:100%">
+            <div class="w-1/3 lg:width-2/5 h-1/3 justify-center no-mobile" style="position: absolute; bottom:0; right:0">
+                <div class="mt-6 custom-text">
+                    <span class="custom-text">
+                        Memorial Student Center
+                        <br>
+                        September 11 - 12, 2021 
+                    </span> <br /> <br />
+                    <a href="https://register.tamuhack.com/" class="mr-6">
+                        <button class="py-2 px-4 rounded w-2/5  special-text button-one">
+                            Register
+                        </button>
+                    </a>
+                    <button class="py-2 px-4 rounded w-2/5 special-text button-two">
+                        Volunteer
                     </button>
                 </div>
-            </div>
+            </div> 
         </div>
-        <div class="image-background-full pb-10 typewritter-div" style="min-height: 1000px;" :id="links[2].replace(' ', '-')">
-            <div class="container">
-                <div class="pt-32">
-                    <div style="background: rgba(0, 0, 0, 0.6);" 
-                        class="m-2 md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
-                        <h2 class="text-4xl pb-2 gray-text primary-font">
-                            What is HowdyHack?
-                        </h2>
-                        <p class="py-4 text-lg gray-text">
-                            HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon taking place virtually. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.
-                        </p>
-                        <p class="py-4 text-lg gray-text">
-                            Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills and create something amazing while getting to know fellow hackers with the same Aggie pride!
-                        </p>
-                    </div>
-                </div>
-                <div class="pt-32">
-                    <!-- Desktop -->
-                    <div class="m-2">
-                        <div style="background: rgba(0, 0, 0, 0.6); margin-left: 40%" 
-                        class="hidden md:block w-full md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
-                            <h2 class="text-4xl pb-2 gray-text primary-font">
-                                How do I participate?
-                            </h2>
-                            <p class="py-4 text-lg gray-text">
-                                To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
-                            </p>
-                            <p class="py-4 text-lg gray-text">
-                                After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition!
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Mobile -->
-                    <div style="background: rgba(0, 0, 0, 0.6);" 
-                    class="m-2 md:hidden md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
-                        <h2 class="text-4xl pb-2 gray-text primary-font">
-                            How do I participate?
-                        </h2>
-
-                        <p class="py-4 text-lg gray-text">
-                            To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
-                        </p>
-                        <p class="py-4 text-lg gray-text">
-                            After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition!
-                        </p>
-
-                    </div>
-
-                </div>
-                <div class="pt-32">
-                    <div style="background: rgba(0, 0, 0, 0.6);" 
-                        class="m-2 md:w-3/5 text-gray-300 font-semibold py-5 px-6 lg:px-12 border text-xl border-gray-300 gray-text gray-border">
-                        <h2 class="text-4xl pb-2 gray-text primary-font">
-                            What about COVID-19?
-                        </h2>
-                        <p class="py-4 text-lg gray-text">
-                            Due to concerns about the spreading of COVID-19, this year’s HowdyHack will be hosted virtually, but that does not mean it will be any less exciting! The hackathon will be streamed live on Twitch with many workshops, events, and interactive competitions to emulate the engaging atmosphere that in-person hackathons provide.
-                        </p>
-                    </div>
-                </div>
-                <div class="pt-32" :id="links[3]">
-                    <div class="text-gray-800 font-semibold py-10 md:px-12 text-xl" style="background-color: #d7d5d1; width: 90%; margin-left: 5%;">
-                        <div class="m-4">
-                            <h2 class="text-6xl pb-2 primary-font ">
-                                PRIZES
-                            </h2>
-                            <div class=" w-full lg:max-w-full lg:flex border-gray-800 border-2">
-                                <div class="hidden lg:block h-48 lg:h-auto lg:w-32 flex-none bg-cover rounded-t border-gray-800 border-r-2
-                                    lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-                                    <img src="./../static/hh-2020/img/fingerprint.png" alt="" class="p-2" >
-                                </div>
-                                <div class="w-full">
-                                    <div class="border-gray-800 border-b-2">
-                                        <div class="text-gray-900 text-2xl py-2 px-8 uppercase primary-font">{{tracks[0].title}}</div>
-                                    </div>
-                                    <p class="text-gray-700 text-base py-2 px-8 mb-8">{{tracks[0].desc}}</p>
-                                    <p class="text-gray-700 text-base py-2 px-8"> {{tracks[0].award}}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Track Divs -->
-                        <div class="row-1 lg:w-1/2 inline-block" style="vertical-align: top;">
-                            <div class="w-full" v-for="(track, i) in tracks" v-if="i != 0 && i % 2 == 1">
-                                <div class="m-4">
-                                    <div class="border-gray-800 border-2">
-                                        <div class="relative" v-if="track.title == 'Best Hack for Spies'">
-                                            <div class="absolute top-20 right-0">
-                                                <img src="./../static/hh-2020/img/conf.png" class="">
-                                            </div>
-                                        </div>
-                                        <div class="w-full">
-                                            <div class="border-gray-800 border-b-2">
-                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase primary-font">{{track.title}}</div>
-                                            </div>
-                                            <p class="text-gray-700 text-base py-2 px-8 mb-8">{{track.desc}}</p>
-                                            <p class="text-gray-700 text-base py-2 px-8"> {{ track.award}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="row-1 lg:w-1/2 inline-block" style="vertical-align: top;">
-                            <div class="w-full" v-for="(track, i) in tracks" v-if="i != 0 && i % 2 == 0">
-                                <div class="m-4">
-                                    <div class="border-gray-800 border-2">
-                                        <div class="relative" v-if="track.title == 'Best Hack for Spies'">
-                                            <div class="absolute top-20 right-0">
-                                                <img src="./../static/hh-2020/img/conf.png" class="">
-                                            </div>
-                                        </div>
-                                        <div class="w-full">
-                                            <div class="border-gray-800 border-b-2">
-                                                <div class="text-gray-900 text-2xl py-2 px-8 uppercase primary-font">{{track.title}}</div>
-                                            </div>
-                                            <p class="text-gray-700 text-base py-2 px-8 mb-8">{{track.desc}}</p>
-                                            <p class="text-gray-700 text-base py-2 px-8"> {{ track.award}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Track Divs End -->
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sponsors-background pb-10"> <!-- style="background-color: #363636" -->
-            <!-- Sponsors -->
-            <div class="container" v-if="hasSponsors">
-                <div style="background: rgba(0, 0, 0, 0.6);"
-                class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 inline-block mt-16 special-header">
-                    <h2 class="text-5xl pb-2 text-white primary-font">
-                        SPONSORS
-                    </h2>
-                </div>
-            </div>
-            <div class="container" v-if="hasSponsors">
+        
+        <div class="mt-6 custom-text flex justify-center no-desktop">
+            <div>
+                <span class="custom-text mobile-text" style="font-size: 28px;">
+                    Memorial Student Center
+                    <br>
+                    September 11 - 12, 2021 
+                </span> <br /> <br />
+                <a href="https://register.tamuhack.com/">
+                    <button class="mb-4 py-2 px-4 rounded w-full special-text button-one">
+                        Register
+                    </button>
+                </a>
                 <br />
-                <br />
-                <!-- Sponsor cards -->
-                <span v-for="sponsor in sponsors">
-                    <div :class="'w-full ' + 'inline-block ' + sponsor.width">
-                        <div class="m-4">
-                            <div style="background-image: url('./../static/hh-2020/img/grain.png'); background-color: #d7d5d1; box-shadow: 0 0 15px black" 
-                                class="w-full text-gray-800 font-semibold pt-20 pb-4 px-10 text-xl border-gray-300 sponsor-hover">
-                                <div class="flex justify-center">
-                                    <img src="./../static/hh-2020/img/msft.png">
-                                </div>
-                                <div class="flex justify-center">
-                                    <p class="text-gray-700 text-base py-6 px-8 primary-font"> {{sponsor.message}}</p>
-                                </div>
-
-                                <div class="flex justify-center text-lg pt-3">
-                                    <a class="block text-gray-800 mx-6 underline primary-font">
-                                        Apply
-                                    </a>
-                                    <a class="block text-gray-800 mx-6 underline primary-font" v-if="sponsor.channel">
-                                        Join Channel
-                                    </a>
-                                </div>
-                
-                            </div>
-                        </div>
-                    </div>
-                </span>
-
+                <button class="py-2 px-4 rounded w-full special-text button-two">
+                    Volunteer
+                </button>
             </div>
-            <!-- FAQ Header (Contents in next image-background-div) -->
-            <div class="pt-64"> </div>
-            <span :id="links[4]">
-                <br />
-            </span>
-            <div class="container">
-                <div style="background: rgba(0, 0, 0, 0.6); "
-                class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 inline-block special-header">
-                <h2 class="text-5xl pb-2 text-white primary-font">
-                        FAQ
-                    </h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="image-background-full coat-div" style=" min-height: 1000px;">
-            <!-- Individual FAQs -->
-            <div class="container">
-                <div class="row-1 md:w-1/2 inline-block" style="vertical-align: top;">
-                    <div class="inline-block special-faq w-full" v-for="(f, i) in faq" v-if="i % 2 == 0">
-                        <div class="m-4">
-                            <div style="background: rgba(0, 0, 0, 0.6);" 
-                            class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 gray-text gray-border">
-                                <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4">
-                                    {{f.title}}
-                                </h2>
-                                <p class="py-4 text-lg gray-text font-light" >
-                                    {{f.desc}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="row-1 md:w-1/2 inline-block" style="vertical-align: top;">
-                    <div class="inline-block special-faq w-full" v-for="(f, i) in faq" v-if="i % 2 == 1">
-                        <div class="m-4">
-                            <div style="background: rgba(0, 0, 0, 0.6);" 
-                            class="text-gray-300 font-semibold py-5 px-12 border text-xl border-gray-300 gray-text gray-border">
-                                <h2 class="text-2xl pb-2 gray-text primary-font leading-tight pt-4">
-                                    {{f.title}}
-                                </h2>
-                                <p class="py-4 text-lg gray-text font-light" >
-                                    {{f.desc}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <br />
         </div>
     </div>
+    <div class="" style="background-color: #ffefd2;">
+        <div class="no-mobile">
+            <div class="p-4 ml-12">
+                <div class="w-1/12 inline-block" style="vertical-align:top">
+                    <img src="./../static/hh-2021/info-1.svg" class="inline-block p-4" style="vertical-align:top">
+                </div>
+                <div class="w-5/12 inline-block p-2">
+                    <div class="text-3xl">
+                        What is HowdyHack?
+                    </div>
+                    <br>
+                    <p class="pb-2 custom-text">
+                        HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.
+                    </p>
+                    <p class="custom-text">
+                        Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills and create something amazing while getting to know fellow hackers with the same Aggie pride!
+                    </p>
+                </div>
+            </div>
 
-    <script src="https://unpkg.com/vue"></script>
-    <!-- Full bundle -->
-    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
 
-    <!-- Individual components -->
-    <script src="https://unpkg.com/buefy/dist/components/table"></script>
-    <script src="https://unpkg.com/buefy/dist/components/input"></script>
+            <div class="p-4 mr-12">
+                <div class="w-1/2 inline-block"></div><div class="w-1/12 inline-block" style="vertical-align:top">
+                    <img src="./../static/hh-2021/info-2.svg" class="inline-block p-4" style="vertical-align:top">
+                </div><div class="w-5/12 inline-block p-2">
+                    <div class="text-3xl">
+                        How do I participate?
+                    </div>
+                    <br>
+                    <p class="pb-2 custom-text">
+                        To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
+                    </p>
+                    <p class="custom-text">
+                        After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition!
+                    </p>
+                </div>
+            </div>
 
-    <script>
-        new Vue({
-            el: '#app',
-            data: function () {
-                return {
-                    window,
-                    hasSponsors: false,
-                    links: ["home", "schedule", "get started", "challenges", "faq"],
-                    tracks: [
-                    {
-                            title: "First Overall",
-                            desc: "This prize is the opportunity to pick first from the following choices: Acer 144hz monitor (4), Logitech MX Master Mouse 2S (4), or RK61 60% RGB Mechanical Gaming Keyboard (4).",
-                            award: "Prize: First Pick"
-                        },
-                        {
-                            title: "Second Overall",
-                            desc: "This prize is the opportunity to pick second from the following choices: Acer 144hz monitor (4), Logitech MX Master Mouse 2S (4), or RK61 60% RGB Mechanical Gaming Keyboard (4).",
-                            award: "Prize: Second Pick"
-                        },
-                        {
-                            title: "Third Overall",
-                            desc: "This prize is the opportunity to pick third from the following choices: Acer 144hz monitor (4), Logitech MX Master Mouse 2S (4), or RK61 60% RGB Mechanical Gaming Keyboard (4).",
-                            award: "Prize: Third Pick"
-                        },
-                        {
-                            title: "Best UI",
-                            desc: "This prize will be awarded to the project submission that has the best user interface in terms of aesthetics and usability.",
-                            award: "Prize: Fujifilm Instax Mini 9"
-                        },
-                        {
-                            title: "Most Impractical Hack",
-                            desc: "A hackathon is the best place to explore new ideas, but maybe some ideas should be left unexplored. This prize will be awarded to the project submission that best solves a problem without actually solving anything.",
-                            award: "Prize: You Tried Trophies"
-                        },
-                        {
-                            title: "Best Beginner Hack ",
-                            desc: "This prize will be awarded to the top project submission with an all beginner team.",
-                            award: "Prize: Ultimate Swag pack"
-                        },
-                        {
-                            title: "Best Aggie Hack ",
-                            desc: "The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.",
-                            award: "Prize: Reveille Pillow Pet"
-                        },
-                        {
-                            title: "Best Accessibility Hack ",
-                            desc: "This prize will be awarded to the best project that falls under Section 508, which states that electronic and information technology should be made easily accessible to people with disabilities.",
-                            award: "Prize: Sendestar 40oz Water Bottle"
-                        },
-                        {
-                            title: "Best Hack for Spies",
-                            desc: "It's confidential. Don't worry about it. NDtfixHYQldz XuBeWocnJVOvC IFpbMsEy",
-                            award: "Prize: Tile Mate 2020"
-                        }
-                    ],
-                    // tracks: ["Second Place", "Third Place", "Best Use of MongoDB", "Best UI", "Worst UI", "CYBER SECURITY"],
-                    sponsors: [
-                        {
-                            message: "This is a sponsor",
-                            width: "lg:w-1/2",
-                            channel: "..."
-                        },
-                        {
-                            message: "This is a sponsor",
-                            width: "lg:w-1/2",
-                            channel: "..."
-                        },
-                        {
-                            message: "This is a sponsor",
-                            width: "lg:w-1/2",
-                            channel: "..."
-                        },
-                        {
-                            message: "This is a sponsor",
-                            width: "lg:w-1/2",
-                            channel: "..."
-                        },
-                        {
-                            width: "sm:w-1/2 lg:w-1/3"
-                        },
-                        {
-                            width: "sm:w-1/2 lg:w-1/3"
-                        },
-                        {
-                            width: "sm:w-1/2 lg:w-1/3"
-                        }
-                    ],
-                    faq: [
-                        {
-                            title: "How much does it cost?",
-                            desc: "It’s FREE! All you need is a laptop and Wi-Fi!"
-                        },
-                        {
-                            title: "I don’t know how to code! Can I still participate?",
-                            desc: "Of course! There will be mentors online to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom."
-                        },
-                        {
-                            title: "Is there a theme for HowdyHack?",
-                            desc: "Yes! This year’s theme is “Spy”. This is an opportunity for you to come up with the coolest, most technologically savvy hacks relating to disguise, privacy, and cybersecurity!"
-                        },
-                        {
-                            title: "I don't have a team. How do I find people to hack with??",
-                            desc: "Don't sweat it! We will have team-forming channels before we kickoff the opening ceremony so everyone will have a group to hack with."
-                        },
-                        {
-                            title: "Will there be companies at the hackathon?",
-                            desc: "While there will not be companies present at the hackathon, we will have various workshops throughout the entire event and leading up to it to help you get ready. We’ve got your back!"
-                        },
-                        {
-                            title: "I'm not from A&M, can I still join?",
-                            desc: "HowdyHack is only open to students from Texas A&M, including College Station, Galveston, and Qatar campuses. If you're not a Texas A&M student, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!"
-                        },
-                        {
-                            title: "When is the deadline to apply for HowdyHack?",
-                            desc: "The deadline to register is the night before the event, September 4th at 23:59 CDT."
-                        },
-                        {
-                            title: "Have additional questions?",
-                            desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
-                        }
-                    ]
-                }
-            },
-        })
-    </script>
 
-    <script>
-        window.location.href = "https://live.tamuhack.com";
-    </script>
 
+            <div class="p-4 ml-12">
+                <div class="w-1/12 inline-block" style="vertical-align:top">
+                    <img src="./../static/hh-2021/info-3.svg" class="inline-block p-4" style="vertical-align:top">
+                </div>
+                <div class="w-5/12 inline-block p-2">
+                    <div class="text-3xl">
+                        Goal
+                    </div>
+                    <br>
+                    <p class="custom-text">
+                        Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="no-desktop">
+            <div class="mt-16">
+                <div class="text-3xl p-3" style="background-color: #220800; color: white; max-width: 400px;">
+                    What is HowdyHack?
+                </div>
+                <hr style="border: 2px solid #220800">
+                <div class="p-6">
+                    <p class="pb-2 custom-text">
+                        HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.
+                    </p>
+                    <p class="custom-text">
+                        Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills and create something amazing while getting to know fellow hackers with the same Aggie pride!
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <div class="text-3xl p-3" style="background-color: #220800; color: white; max-width: 400px;">
+                    How do I participate?
+                </div>
+                <hr style="border: 2px solid #220800">
+                <div class="p-6">
+                    <p class="pb-2 custom-text">
+                        To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
+                    </p>
+                    <p class="custom-text">
+                        After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition!
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <div class="text-3xl p-3" style="background-color: #220800; color: white; max-width: 400px;">
+                    Goal of HowdyHack
+                </div>
+                <hr style="border: 2px solid #220800">
+                <div class="p-6">
+                    <p class="custom-text">
+                        Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="">
+            <div class="ml-8 w-5/12">
+                <img src="info-1.svg" class="inline-block">
+                <div class="w-1/4; inline-block">
+                    <span class="text-3xl">
+                        Hello
+                    </span>
+                    <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, accusamus dolores dicta voluptatum nostrum velit quis quas soluta unde. Fugit asperiores enim ex, aliquam molestias delectus labore provident! Voluptas atque, enim tempore modi libero quisquam nisi rerum, debitis quia, sed eveniet illum! Nemo vel ea debitis culpa. Deserunt, accusantium ipsam?
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div style="height: 100px;">
+        &nbsp;
+    </div>
+    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </body>
 </html>
