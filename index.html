@@ -207,7 +207,11 @@
                 <li class="cd-h-timeline__event" :class="[idx == hackathons.length - 1 ? 'cd-h-timeline__event--selected' : '']">
                     <div class="cd-h-timeline__event-content container-fluid">
                         <div class="timeline-event-description">
-                            <p class="timeline-header">{{ hackathon.name }}</p>
+                            <!-- <p v-if=hackathon.link==false></p> -->
+                            <p v-if="hackathon.link==false" class="timeline-header">{{ hackathon.name }}</p>
+                            <p v-else class="timeline-header">
+                                <a :href="hackathon.link">{{ hackathon.name }}</a>
+                            </p>
                             <p class="timeline-description">
                                 {{ hackathon.description }}
                             </p>
@@ -418,26 +422,31 @@
                   hackathons: [
                       {
                           name: "TAMUhack 2014",
+                          link: false,
                           logo: "th14",
                           description: "A new tradition starts in (Room Held??) on a warm October weekend. 50 students spent aweekend creating projects and having fun.",
                       },
                       {
                           name: "TAMUhack 2015",
+                          link: false,
                           logo: "th15",
                           description: "New location, new design, we’re making things bigger. The second TAMUhack brought over 200 students and 40 projects.",
                       },
                       {
                           name: "TAMUhack 2016",
+                          link: "/th/2016",
                           logo: "th16",
                           description: "Polka dots and pastels make their first appearance.",
                       },
                       {
                           name: "TAMUhack 2018",
+                          link: "/th/2018",
                           logo: "th18",
                           description: "Even the best traditions need a little change. Switching from a Fall hackathon to a Spring hackathon."
                       },
                       {
                           name: "HowdyHack 2018",
+                          link: "/hh/2018",
                           logo: "hh18",
                           description: "The first iteration of HowdyHack. Exclusive, aggie-only hackathon.",
                           directors: [
@@ -494,11 +503,13 @@
                       },
                       {
                           name: "TAMUhack 2019",
+                          link: "/th/2019",
                           logo: "th19",
                           description: "Cue celebrations, our 5th anniversary of TAMUhack. We had our largest TAMUhack yet with 800 participants and 120 projects submitted! We introduced the TH lighted sign that has become a staple at our events!"
                       },
                       {
                           name: "HowdyHack 2019",
+                          link: "/hh/2019",
                           logo: "hh19",
                           description: "Our fall hackathon nearly triples in size! Over 200 aggies coding the night away with a bunch of activities and mini-events.",
                           directors: [
@@ -664,7 +675,7 @@
                       },
                       {
                           name: "TAMUhack 2020",
-                          logo: "th20",
+                          logo: "/th/2020",
                           description: "Continuing our promise of a fun-filled hackathon.",
                           directors: [
                             {
@@ -861,6 +872,7 @@
                       },
                       {
                           name: "HowdyHack 2020",
+                          link: "/hh/2020",
                           logo: "hh20",
                           description: "Our fall hackathon!",
                           directors: [
