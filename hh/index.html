@@ -246,10 +246,42 @@
             </div>
         </div> -->
     </div>
+    
+    <!-- SCHEDULE -->
+    <div class="flex-col" style="min-height: 100vh; background-color: #220800;">
+        <img class="opacity-30 " style="float: left; height:100vh; z-index:1; position: absolute" src="./../static/hh-2021/note.svg">
+        <div class="p-4 mt-16" style="color: #FFEFD6; z-index:2;position: relative;">
+            <p class="text-6xl font-light custom-font text-center lg:text-right lg:pr-16 font-medium mt-16 ">
+                Schedule
+            </p>
+        </div>
+        <div class="py-12 md:flex md:justify-around md:py-20 px-6 " style="z-index: 3; position: relative; color: #FFEFD6;">
+            <div >
+                <p class="pb-1 font-bold text-3xl custom-font" style="border-bottom: 10px solid #74A8A7; width: 140px;">Saturday</p>
+                <li class="pt-4" style="list-style-type: none;">
+                    <ul v-for="e in sat_events" class="flex mt-4">
+                        <p class="custom-font pr-4 font-bold" style="width: 100px;">{{e.time}}:</p>
+                        <p>{{e.desc}}</p>
+                    </ul>
+                </li>
+            </div>
+            <div class="pt-12 md:pt-0">
+                <p class="pb-1 font-bold text-3xl custom-font" style="border-bottom: 10px solid #C3645B; width: 120px;">Sunday</p>
+                <li class="pt-4" style="list-style-type: none;">
+                    <ul v-for="e in sun_events" class="flex mt-4">
+                        <p class="custom-font pr-4 font-bold" style="width: 100px;">{{e.time + ":   "}}</p>
+                        <p>{{e.desc}}</p>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
     <div style="min-height: 100vh; background-color: #ffefd2;">
         <div class='p-4 ml-16 mt-16 no-mobile'>
-            <img style="float: right; max-height: 100vh;" src="./../static/hh-2021/disk.svg">
-            <div class="text-6xl font-light custom-font">
+            <img style="float:right; height: 100vh;" src="./../static/hh-2021/disk.svg">
+            <div class="text-6xl font-light custom-font font-medium">
                 FAQ
             </div>
             <div v-for="(f,i) in faq" class="mt-8 no-mobile" >
@@ -282,7 +314,7 @@
             </div>
         </div>
         <div class="no-desktop p-4">
-            <div class="text-6xl font-light custom-font">
+            <div class="text-6xl custom-font font-medium ">
                 FAQ
             </div>
             <div v-for="(f,i) in faq" class="mt-8 no-desktop" >
@@ -316,10 +348,58 @@
         </div>
  
     </div>
-    <div style="height: 100px;">
-        &nbsp;
+
+    <div class="mb-32" style="min-height: 100vh; background-color: #ffefd2;">
+        <div class='p-4 md:ml-16 mt-16'>
+            <div class="text-6xl font-light custom-font font-medium">
+                Prizes
+            </div>
+            <div class="flex justify-between mt-8">
+                <div class="hidden lg:flex flex-col justify-around px-4">
+                    <img src="./../static/hh-2021/dial.svg">
+                    <img src="./../static/hh-2021/dial.svg" class="transform rotate-12">
+                    <img src="./../static/hh-2021/dial.svg" class="transform rotate-12 rotate-180">
+                    <img src="./../static/hh-2021/dial.svg" class="transform rotate-12 rotate-90">
+                </div>
+                <div class="md:grid md:grid-cols-2 w-12/12 lg:w-8/12">
+<!-- TODO: Separate First entry from the rest -->
+                    <div class="col-span-2 py-4 px-8 mt-4 md:ml-1 md:mt-1 border-4 border-black">
+                        <p class="custom-font text-xl font-medium text-black ">{{prizes[0].name}}</p>
+                        <p class="custom-font text-sm text-black">{{prizes[0].desc}}</p>
+                        <p class="custom-font text-sm text-black pt-8">{{prizes[0].prize}}</p>
+                    </div>
+                    <div v-for="(f,i) in prizes" v-if="i>0" class="py-4 px-8 mt-4 md:ml-1 md:mt-1 border-4 border-black">
+                        <p class="custom-font text-xl font-medium text-black ">{{f.name}}</p>
+                        <p class="custom-font text-sm text-black">{{f.desc}}</p>
+                        <p class="custom-font text-sm text-black pt-8">{{f.prize}}</p>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-col justify-around px-4">
+                    <img src="./../static/hh-2021/slider1.svg">
+                    <img src="./../static/hh-2021/slider2.svg">
+                </div>
+                <div class="hidden lg:flex flex-col justify-around px-4">
+                    <img src="./../static/hh-2021/btngroup1.svg">
+                    <div class="flex flex-col justify-around">
+                        <img class="mb-12" src="./../static/hh-2021/btn.svg">
+                        <img class="mb-12" src="./../static/hh-2021/btn.svg">
+                        <img class="mb-12" src="./../static/hh-2021/btn.svg">
+                        <img class="mb-12" src="./../static/hh-2021/btn.svg">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- <img class="w-screen min-h-screen h-screen" src="./../static/hh-2021/Frame.svg"> -->
+    <div class="overflow-hidden">
+        <div style="min-height: 100vh; background-color: #ffefd2; background-image: url(./../static/hh-2021/Frame.svg);" class="animate-wiggle pt-32 bg-cover bg-left">
+            
+        </div>
     </div>
     
+    <!-- <div style="min-height: 100vh; background-color: #ffefd2; background-image: url(./../static/hh-2021/Frame.svg);" class="pt-32 bg-cover bg-left"> -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </div>
     <script>
@@ -347,7 +427,7 @@
                     title: "Is there a theme for HowdyHack?",
                     desc: "Yes! This year’s theme is “Music”. This is an opportunity for you to come up with the coolest, most technologically savvy hacks relating to music!"
                 }, {
-                    title: "I don’t know how to code! Can I still participate?",
+                    title: "I don’t have a team! Can I still participate?",
                     desc: "Don't sweat it! We will have team-forming channels before we kickoff the opening ceremony so everyone will have a group to hack with."
                 }, {
                     title: "Will there be companies at the hackathon?",
@@ -361,7 +441,100 @@
                 }, {
                     title: "Have additional questions?",
                     desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
-                }]
+                }],
+                sat_events: [
+                    {
+                        time: "9:00 AM",
+                        desc: "Doors Open, Check-In Begins"
+                    },
+                    {
+                        time: "10:30 AM",
+                        desc: "Opening Ceremony + General Q/A"
+                    },
+                    {
+                        time: "12:00 PM",
+                        desc: "Hacking starts"
+                    },
+                    {
+                        time: "12:30 PM",
+                        desc: "Lunch"
+                    },
+                    {
+                        time: "1:15 PM",
+                        desc: "Workshops (From Datathon, AWiCs, ACC, and more)"
+                    },
+                    {
+                        time: "6:30 PM",
+                        desc: "Tech Intern Panel"
+                    },
+                    {
+                        time: "7:30 PM",
+                        desc: "Dinner"
+                    },
+                    {
+                        time: "8:00 PM",
+                        desc: "Fun Events"
+                    },
+                ],
+                sun_events: [
+                    {
+                        time: "1:00 AM",
+                        desc: "More Fun Events"
+                    },
+                    {
+                        time: "9:30 AM",
+                        desc: "Morning Yoga"
+                    },
+                    {
+                        time: "12:00 PM",
+                        desc: "Hacking Ends"
+                    },
+                    {
+                        time: "2:00 PM",
+                        desc: "Judging"
+                    },
+                    {
+                        time: "4:00 PM",
+                        desc: "Award Ceremony"
+                    },
+                ],
+                prizes: [
+                    {
+                        name: "First Place",
+                        desc:"This prize will be awarded to the best overall project submission",
+                        prize: "Noise Cancelling Headphones",
+                    },
+                    {
+                        name: "Second Place",
+                        desc: "This prize will be awarded to the second place project submission",
+                        prize: "Mechanical Keyboards",
+                    },
+                    {
+                        name: "Third Place",
+                        desc:"This prize will be awarded to the third place project submission",
+                        prize: "Mini Projectors",
+                    },
+                    {
+                        name: "Best Music Related",
+                        desc: "This prize will be awarded to the best music related hack",
+                        prize: "Bluetooth Speakers",
+                    },
+                    {
+                        name: "Best UI",
+                        desc:"This prize will be awarded to the project submission that has the best user interface in terms of aesthetics and usability.",
+                        prize: "Polaroid Cameras",
+                    },
+                    {
+                        name: "Best Impractical",
+                        desc: "A hackathon is the best place to explore new ideas, but maybe some ideas should be left unexplored. This prize will be awarded to the project submission that best solves a problem without actually solving anything.",
+                        prize: "Squeeze Chickens",
+                    },
+                    {
+                        name: "Best Aggie Hack",
+                        desc:"The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.",
+                        prize: "Reveille Pillow Pets",
+                    },
+                ]
               }
           },
           mounted: function () {
