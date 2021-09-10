@@ -25,7 +25,7 @@
         .custom-text{
             font-size: 20px;
             line-height: 30px;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .button-one {
@@ -73,17 +73,20 @@
 <body style="background-color: #ffefd2;">
 <div id="app" v-cloak>
     <div class="" style="background-color: #ffefd2;">
+        <!-- <div class="fixed bottom-0 w-screen h-24 border border-black">
+            Hello!
+        </div> -->
         <div style="height: 100px!important; width:100px!important;">
-            <img src="./../static/hh-2021/hh.svg" style="height: 100px; padding: 15px" class="mobile-img">
+            <img src="./../static/hh-2021/hh.svg" style="height: 75px; padding: 15px" class="mobile-img">
         </div>
         <!-- <div class="flex justify-center items-center" style="height: calc(100vh - 100px)"> -->
         <div class="flex justify-center">
                 <!-- <img src="./logo2.svg" class="h-3/4 m-1/8"> -->
-            <img src="./../static/hh-2021/logo3.svg" class="md:pb-16 p-2" style="max-height: calc(100vh - 100px); width:100%">
+            <img src="./../static/hh-2021/logo3.svg" class="md:pb-16 p-2 w-12/12 md:w-8/12" style="max-height: calc(100vh - 150px)">
             <div class="w-1/3 lg:width-2/5 h-1/3 justify-center no-mobile" style="position: absolute; bottom:0; right:0">
                 <div class="mt-6 custom-text">
-                    <span class="custom-text">
-                        Memorial Student Center
+                    <span class="custom-text pt-4">
+                        MSC 2400 and Virtually
                         <br>
                         September 11 - 12, 2021 
                     </span> <br /> <br />
@@ -102,6 +105,7 @@
         </div>
         
         <div class="mt-6 custom-text flex justify-center no-desktop">
+            <br>
             <div>
                 <span class="custom-text mobile-text" style="font-size: 28px;">
                     Memorial Student Center
@@ -122,14 +126,14 @@
             </div>
         </div>
     </div>
-    <div class="" style="background-color: #ffefd2;">
+    <div class="mt-8" style="background-color: #ffefd2; padding-top: 20px;">
         <div class="no-mobile">
             <div class="p-4 ml-12">
                 <div class="w-1/12 inline-block" style="vertical-align:top">
                     <img src="./../static/hh-2021/info-1.svg" class="inline-block p-4" style="vertical-align:top">
                 </div>
                 <div class="w-5/12 inline-block p-2">
-                    <div class="text-3xl">
+                    <div class="text-3xl text-black">
                         What is HowdyHack?
                     </div>
                     <br>
@@ -139,14 +143,11 @@
                     <p class="pb-2 custom-text">
                         Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills and create something amazing while getting to know fellow hackers with the same Aggie pride!
                     </p>
-                    <p class="custom-text" style="font-weight: 800;">
-                        Note: In-person availability is only for the first 200 people who check-in at our venue on the morning of HowdyHack.
-                    </p>
                 </div>
             </div>
 
 
-            <div class="p-4 mr-12">
+            <div class="p-4 mr-20">
                 <div class="w-1/2 inline-block"></div><div class="w-1/12 inline-block" style="vertical-align:top">
                     <img src="./../static/hh-2021/info-2.svg" class="inline-block p-4" style="vertical-align:top">
                 </div><div class="w-5/12 inline-block p-2">
@@ -190,7 +191,7 @@
                     What is HowdyHack?
                 </div>
                 <hr style="border: 2px solid #220800">
-                <div class="p-6">
+                <div class="p-5">
                     <p class="pb-2 custom-text">
                         HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.
                     </p>
@@ -207,7 +208,7 @@
                     How do I participate?
                 </div>
                 <hr style="border: 2px solid #220800">
-                <div class="p-6">
+                <div class="p-5">
                     <p class="pb-2 custom-text">
                         To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!
                     </p>
@@ -224,7 +225,7 @@
                     Goal of HowdyHack
                 </div>
                 <hr style="border: 2px solid #220800">
-                <div class="p-6">
+                <div class="p-5">
                     <p class="custom-text">
                         Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills!
                     </p>
@@ -249,9 +250,9 @@
     
     <!-- SCHEDULE -->
     <div class="flex-col" style="min-height: 100vh; background-color: #220800;">
-        <img class="opacity-30 " style="float: left; height:100vh; z-index:1; position: absolute" src="./../static/hh-2021/note.svg">
-        <div class="p-4 mt-16" style="color: #FFEFD6; z-index:2;position: relative;">
-            <p class="text-6xl font-light custom-font text-center lg:text-right lg:pr-16 font-medium mt-16 ">
+        <img class="opacity-30 h-screen" style="float: left; z-index:1; position: absolute" src="./../static/hh-2021/note.svg">
+        <div class="py-4 px-6 mt-16 md:px-0" style="color: #FFEFD6; z-index:2;position: relative;">
+            <p class="text-6xl custom-font  text-left md:text-center lg:text-right lg:pr-16 font-medium mt-16 ">
                 Schedule
             </p>
         </div>
@@ -261,16 +262,16 @@
                 <li class="pt-4" style="list-style-type: none;">
                     <ul v-for="e in sat_events" class="flex mt-4">
                         <p class="custom-font pr-4 font-bold" style="width: 100px;">{{e.time}}:</p>
-                        <p>{{e.desc}}</p>
+                        <p class="custom-font">{{e.desc}}</p>
                     </ul>
                 </li>
             </div>
-            <div class="pt-12 md:pt-0">
+            <div class="pt-12 mr-0 md:pt-0">
                 <p class="pb-1 font-bold text-3xl custom-font" style="border-bottom: 10px solid #C3645B; width: 120px;">Sunday</p>
                 <li class="pt-4" style="list-style-type: none;">
                     <ul v-for="e in sun_events" class="flex mt-4">
                         <p class="custom-font pr-4 font-bold" style="width: 100px;">{{e.time + ":   "}}</p>
-                        <p>{{e.desc}}</p>
+                        <p class="custom-font">{{e.desc}}</p>
                     </ul>
                 </li>
             </div>
@@ -313,7 +314,7 @@
                 </template>
             </div>
         </div>
-        <div class="no-desktop p-4">
+        <div class="no-desktop p-4 mt-4">
             <div class="text-6xl custom-font font-medium ">
                 FAQ
             </div>
@@ -368,9 +369,11 @@
                         <p class="custom-font text-sm text-black">{{prizes[0].desc}}</p>
                         <p class="custom-font text-sm text-black pt-8">{{prizes[0].prize}}</p>
                     </div>
-                    <div v-for="(f,i) in prizes" v-if="i>0" class="py-4 px-8 mt-4 md:ml-1 md:mt-1 border-4 border-black">
-                        <p class="custom-font text-xl font-medium text-black ">{{f.name}}</p>
-                        <p class="custom-font text-sm text-black">{{f.desc}}</p>
+                    <div v-for="(f,i) in prizes" v-if="i>0" class="flex flex-col py-4 px-8 mt-4 md:ml-1 md:mt-1 border-4 border-black justify-between ">
+                        <div>
+                            <p class="custom-font text-xl font-medium text-black ">{{f.name}}</p>
+                            <p class="custom-font text-sm text-black">{{f.desc}}</p>
+                        </div> 
                         <p class="custom-font text-sm text-black pt-8">{{f.prize}}</p>
                     </div>
                 </div>
