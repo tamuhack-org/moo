@@ -77,6 +77,9 @@
             }
         }
         
+        [v-cloak] {
+            display: none
+        }
 
     </style>
 </head>
@@ -95,11 +98,11 @@
                 <img src="./../static/hh-2021/Fast Forward.svg">
             </div>
             <div class="flex items-center">
-                <p class="pr-4 mt-1">Time</p>
-                <div class="flex flex-grow bar h-3 rounded-full mt-1">
-                    
+                <p class="pr-4 mt-1"></p>
+                <div class="flex flex-grow bar h-3 rounded-full mt-1" id="fill-bar-parent">
+                    <div id="fill-bar"></div>
                 </div>
-                <p class="pl-4 mt-1">Time</p>
+                <p class="pl-4 mt-1">Hacking Starts</p>
             </div>
         </div>
         <div class="volume flex items-center">
@@ -124,16 +127,31 @@
                         <br>
                         September 11 - 12, 2021 
                     </span> <br /> <br />
-                    <a href="https://register.tamuhack.com/" class="mr-6">
+                    <a href="https://howdyhack2021.devpost.com/" class="mr-6" target="_blank">
                         <button class="py-2 px-4 rounded w-2/5  special-text button-one">
-                            Register
+                            Devpost
                         </button>
                     </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqUq4VJ7TXMcQiM9PFRiuBiscbRwyQsw4BgeLXQAPhbK8dxA/viewform" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.gg/e3fDwp2" target="_blank">
                         <button class="py-2 px-4 rounded w-2/5 special-text button-two">
-                            Mentor
+                            Discord
                         </button>
                     </a>
+
+                    <br />
+                    <br />
+                    <a href="https://tamuhack.com/help" class="mr-6" target="_blank">
+                        <button class="py-2 px-4 rounded w-2/5  special-text button-one">
+                            Get Help
+                        </button>
+                    </a>
+
+                    <a href="https://tamuhack.com/tips" target="_blank">
+                        <button class="py-2 px-4 rounded w-2/5 special-text button-two">
+                            Resources
+                        </button>
+                    </a>
+
                 </div>
             </div> 
         </div>
@@ -439,6 +457,7 @@
     <!-- <div style="min-height: 100vh; background-color: #ffefd2; background-image: url(./../static/hh-2021/Frame.svg);" class="pt-32 bg-cover bg-left"> -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script>
         new Vue({
           el: "#app",
@@ -615,6 +634,43 @@
           mounted: function () {
             console.log("Init")
             window.addEventListener('scroll', this.updateScroll)
+
+            setInterval(() => {
+                var parent = document.getElementById("fill-bar-parent");
+                var child = document.getElementById("fill-bar");
+                element_width = parent.clientWidth
+                console.log(element_width) 
+                // console.log('Second')
+                
+                // border-left: 80px solid red;
+                // var hacking_starts = moment('9-11-2021 5:37 AM', 'MM-DD-YYYY hh:mm A')
+                // var hacking_ends =   moment('9-11-2021 5:39 AM', 'MM-DD-YYYY hh:mm A')
+
+                var hacking_starts = moment('9-11-2021 12:00 PM', 'MM-DD-YYYY hh:mm A')
+                var hacking_ends =   moment('9-12-2021 12:00 PM', 'MM-DD-YYYY hh:mm A')
+                e = (hacking_starts - moment.now())
+                if (e < 0) {
+                    ratio =  Math.abs(hacking_starts - moment.now()) / (hacking_ends - hacking_starts)
+                    console.log(ratio)
+
+                    width_of_div = element_width * Math.min(1, ratio)
+                    child.style.borderLeft = `${Math.floor(width_of_div)}px solid #220800`
+
+                } else {
+                    var hacking_starts = moment('9-11-2021 6:00 AM', 'MM-DD-YYYY hh:mm A')
+                    var hacking_ends =   moment('9-11-2021 12:00 PM', 'MM-DD-YYYY hh:mm A')
+
+                    ratio =  Math.abs(hacking_starts - moment.now()) / (hacking_ends - hacking_starts)
+                    console.log(ratio)
+
+                    width_of_div = element_width * Math.min(1, ratio)
+                    child.style.borderLeft = `${Math.floor(width_of_div)}px solid #220800`
+
+                    console.log("Time in past")
+                }
+            }, 250);
+
+
           },
         })
     </script>
