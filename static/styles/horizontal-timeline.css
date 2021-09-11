@@ -54,7 +54,19 @@
     background-position: center center;
 }
 
+.th21::after {
+    background-image: url("../th-2021/img/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
 
+.hh21::after {
+    background-image: url("../hh-2021/hh.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
 /* END HACKATHON LOGOS */
 
 .no-list-style {

@@ -33,6 +33,16 @@
             border: 2px solid #6A4437
         }
 
+        .playbar {
+            background-color: #DCC3A7; 
+            border-color: #6A4437; 
+            border-width: 2px;
+        }
+
+        .bar {
+            background-color: #F9E5C0; 
+        }
+
         .button-one:hover {
             background-color: #f7d9a2;
         }
@@ -67,20 +77,47 @@
             }
         }
         
+        [v-cloak] {
+            display: none
+        }
 
     </style>
 </head>
 <body style="background-color: #ffefd2;">
+
 <div id="app" v-cloak>
-    <div class="" style="background-color: #ffefd2;">
-        <!-- <div class="fixed bottom-0 w-screen h-24 border border-black">
-            Hello!
-        </div> -->
+    <div class="hidden lg:flex justify-between fixed bottom-0 w-screen h-24 px-16 border playbar z-10 items-center">
+        <div class="navigator flex flex-col justify-center items-left" style="min-width: 200px">
+            <p class="custom-font font-bold text-lg">{{this.currentScreen}}</p>
+            <p v-on:click="goto('top')" class="cursor-pointer custom-font font-light text-sm">back to top</p>
+        </div>
+        <div class="flex flex-col flex-grow px-24 playbarthing">
+            <div class="flex justify-center pt-2">
+                <img src="./../static/hh-2021/Rewind.svg">
+                <img src="./../static/hh-2021/Pause.svg" class="px-16">
+                <img src="./../static/hh-2021/Fast Forward.svg">
+            </div>
+            <div class="flex items-center">
+                <p class="pr-4 mt-1"></p>
+                <div class="flex flex-grow bar h-3 rounded-full mt-1" id="fill-bar-parent">
+                    <div id="fill-bar"></div>
+                </div>
+                <p class="pl-4 mt-1">Hacking Starts</p>
+            </div>
+        </div>
+        <div class="volume flex items-center">
+            <img src="./../static/hh-2021/Low Volume.svg" style="max-width: 35px;">
+            <div class="flex flex-grow bar h-3 rounded-full mt-1" style="min-width: 100px;">
+                
+            </div>
+        </div>
+    </div>
+    <div ref="top" style="background-color: #ffefd2;">
         <div style="height: 100px!important; width:100px!important;">
             <img src="./../static/hh-2021/hh.svg" style="height: 75px; padding: 15px" class="mobile-img">
         </div>
         <!-- <div class="flex justify-center items-center" style="height: calc(100vh - 100px)"> -->
-        <div class="flex justify-center">
+        <div class="flex justify-center md:transform md:-translate-y-20">
                 <!-- <img src="./logo2.svg" class="h-3/4 m-1/8"> -->
             <img src="./../static/hh-2021/logo3.svg" class="md:pb-16 p-2 w-12/12 md:w-8/12" style="max-height: calc(100vh - 150px)">
             <div class="w-1/3 lg:width-2/5 h-1/3 justify-center no-mobile" style="position: absolute; bottom:0; right:0">
@@ -90,16 +127,31 @@
                         <br>
                         September 11 - 12, 2021 
                     </span> <br /> <br />
-                    <a href="https://register.tamuhack.com/" class="mr-6">
+                    <a href="https://howdyhack2021.devpost.com/" class="mr-6" target="_blank">
                         <button class="py-2 px-4 rounded w-2/5  special-text button-one">
-                            Register
+                            Devpost
                         </button>
                     </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqUq4VJ7TXMcQiM9PFRiuBiscbRwyQsw4BgeLXQAPhbK8dxA/viewform" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.gg/e3fDwp2" target="_blank">
                         <button class="py-2 px-4 rounded w-2/5 special-text button-two">
-                            Mentor
+                            Discord
                         </button>
                     </a>
+
+                    <br />
+                    <br />
+                    <a href="https://tamuhack.com/help" class="mr-6" target="_blank">
+                        <button class="py-2 px-4 rounded w-2/5  special-text button-one">
+                            Get Help
+                        </button>
+                    </a>
+
+                    <a href="https://tamuhack.com/tips" target="_blank">
+                        <button class="py-2 px-4 rounded w-2/5 special-text button-two">
+                            Resources
+                        </button>
+                    </a>
+
                 </div>
             </div> 
         </div>
@@ -126,7 +178,7 @@
             </div>
         </div>
     </div>
-    <div class="mt-8" style="background-color: #ffefd2; padding-top: 20px;">
+    <div ref="info" class="mt-8" style="background-color: #ffefd2; padding-top: 20px;">
         <div class="no-mobile">
             <div class="p-4 ml-12">
                 <div class="w-1/12 inline-block" style="vertical-align:top">
@@ -249,7 +301,7 @@
     </div>
     
     <!-- SCHEDULE -->
-    <div class="flex-col" style="min-height: 100vh; background-color: #220800;">
+    <div ref="schedule" class="flex-col" style="min-height: 100vh; background-color: #220800;">
         <img class="opacity-30 h-screen" style="float: left; z-index:1; position: absolute" src="./../static/hh-2021/note.svg">
         <div class="py-4 px-6 mt-16 md:px-0" style="color: #FFEFD6; z-index:2;position: relative;">
             <p class="text-6xl custom-font  text-left md:text-center lg:text-right lg:pr-16 font-medium mt-16 ">
@@ -279,7 +331,7 @@
     </div>
 
     <!-- FAQ -->
-    <div style="min-height: 100vh; background-color: #ffefd2;">
+    <div ref="faq" style="min-height: 100vh; background-color: #ffefd2;">
         <div class='p-4 ml-16 mt-16 no-mobile'>
             <img style="float:right; height: 100vh;" src="./../static/hh-2021/disk.svg">
             <div class="text-6xl font-light custom-font font-medium">
@@ -350,7 +402,7 @@
  
     </div>
 
-    <div class="mb-32" style="min-height: 100vh; background-color: #ffefd2;">
+    <div ref="prizes" class="mb-32" style="min-height: 100vh; background-color: #ffefd2;">
         <div class='p-4 md:ml-16 mt-16'>
             <div class="text-6xl font-light custom-font font-medium">
                 Prizes
@@ -396,7 +448,7 @@
         </div>
     </div>
     <!-- <img class="w-screen min-h-screen h-screen" src="./../static/hh-2021/Frame.svg"> -->
-    <div class="overflow-hidden">
+    <div ref="bottom" class="overflow-hidden">
         <div style="min-height: 100vh; background-color: #ffefd2; background-image: url(./../static/hh-2021/Frame.svg);" class="animate-wiggle pt-32 bg-cover bg-left">
             
         </div>
@@ -405,11 +457,50 @@
     <!-- <div style="min-height: 100vh; background-color: #ffefd2; background-image: url(./../static/hh-2021/Frame.svg);" class="pt-32 bg-cover bg-left"> -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script>
         new Vue({
           el: "#app",
+          methods: {
+            goto: function (place) {
+                window.scrollTo( {
+                    top: this.$refs[place].offsetTop,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            },
+            check(pos) {
+                if(pos >= this.$refs['bottom'].offsetTop) {
+                    console.log("1")
+                } else if(pos >= this.$refs['prizes'].offsetTop) {
+                    console.log("2")
+                } else if(pos >= this.$refs['faq'].offsetTop) {
+                    console.log("3")
+                } 
+            },
+            updateScroll() {
+                this.scrollPosition = window.scrollY
+                let pos = this.scrollPosition
+                if(pos >= this.$refs['bottom'].offsetTop) {
+                    this.currentScreen = "End"
+                } else if(pos >= this.$refs['prizes'].offsetTop) {
+                    this.currentScreen = "Prizes"
+                } else if(pos >= this.$refs['faq'].offsetTop) {
+                    this.currentScreen = "FAQ"
+                } else if(pos >= this.$refs['schedule'].offsetTop) {
+                    this.currentScreen = "Schedule"
+                } else if(pos >= this.$refs['info'].offsetTop) {
+                    this.currentScreen = "Info"
+                } else {
+                    this.currentScreen = "Home" 
+                }
+            },
+ 
+          },
           data: function () {
               return {
+                scrollPosition: null,
+                currentScreen: "Home",
                 styles: [
                     'background: #FDC6A8; width: 50%',
                     'background: #C8D8C0; width: 45%',
@@ -451,8 +542,12 @@
                         desc: "Doors Open, Check-In Begins"
                     },
                     {
-                        time: "10:30 AM",
+                        time: "11:00 AM",
                         desc: "Opening Ceremony + General Q/A"
+                    },
+                    {
+                        time: "11:30 AM",
+                        desc: "Virtual Team Formation"
                     },
                     {
                         time: "12:00 PM",
@@ -462,10 +557,17 @@
                         time: "12:30 PM",
                         desc: "Lunch"
                     },
-                    {
-                        time: "1:15 PM",
-                        desc: "Workshops (From Datathon, AWiCs, ACC, and more)"
-                    },
+                    {time: "1:15 PM", desc: "TAMUDatathon: intro to python "},
+                    {time: "2:00 PM", desc: "IEEE: Arduino demo"},
+                    {time: "2:45 PM", desc: "AWiCS: Women in tech discussion panel  "},
+                    {time: "3:30 PM", desc: "Robomasters: Real time object detection"},
+                    {time: "4:15 PM", desc: "AHiCS"},
+                    {time: "5:00 PM", desc: "Cybersecurity: Binary Exploitation"},
+                    {time: "5:45 PM", desc: "ACC: How to deploy ur app"},
+                    // {
+                    //     time: "1:15 PM",
+                    //     desc: "Workshops (From Datathon, AWiCs, ACC, and more)"
+                    // },
                     {
                         time: "6:30 PM",
                         desc: "Tech Intern Panel"
@@ -476,13 +578,49 @@
                     },
                     {
                         time: "8:00 PM",
-                        desc: "Fun Events"
+                        desc: "Bob Ross Painting Show"
                     },
+                    {
+                        time: "9:00 PM",
+                        desc: "Office Hours/Help"
+                    },
+                    {
+                        time: "10:00 PM",
+                        desc: "Speed networking"
+                    },
+                    {
+                        time: "11:00 PM",
+                        desc: "Musical chairs"
+                    },
+                    {
+                        time: "Midnight",
+                        desc: "Talent show"
+                    }
                 ],
                 sun_events: [
                     {
                         time: "1:00 AM",
-                        desc: "More Fun Events"
+                        desc: "Slideshow karaoke"
+                    },
+                    {
+                        time: "2:15 AM",
+                        desc: "Debate"
+                    },
+                    {
+                        time: "3:30 AM",
+                        desc: "Lofi and chill"
+                    },
+                    {
+                        time: "5:30 AM",
+                        desc: "Netflix Party"
+                    },
+                    {
+                        time: "6:30 AM",
+                        desc: "Morning Coffee Talk Show"
+                    },
+                    {
+                        time: "8:00 AM",
+                        desc: "Awards Mini Events"
                     },
                     {
                         time: "9:30 AM",
@@ -542,9 +680,48 @@
           },
           mounted: function () {
             console.log("Init")
-          }
+            window.addEventListener('scroll', this.updateScroll)
+
+            setInterval(() => {
+                var parent = document.getElementById("fill-bar-parent");
+                var child = document.getElementById("fill-bar");
+                element_width = parent.clientWidth
+                console.log(element_width) 
+                // console.log('Second')
+                
+                // border-left: 80px solid red;
+                // var hacking_starts = moment('9-11-2021 5:37 AM', 'MM-DD-YYYY hh:mm A')
+                // var hacking_ends =   moment('9-11-2021 5:39 AM', 'MM-DD-YYYY hh:mm A')
+
+                var hacking_starts = moment('9-11-2021 12:00 PM', 'MM-DD-YYYY hh:mm A')
+                var hacking_ends =   moment('9-12-2021 12:00 PM', 'MM-DD-YYYY hh:mm A')
+                e = (hacking_starts - moment.now())
+                if (e < 0) {
+                    ratio =  Math.abs(hacking_starts - moment.now()) / (hacking_ends - hacking_starts)
+                    console.log(ratio)
+
+                    width_of_div = element_width * Math.min(1, ratio)
+                    child.style.borderLeft = `${Math.floor(width_of_div)}px solid #220800`
+
+                } else {
+                    var hacking_starts = moment('9-11-2021 6:00 AM', 'MM-DD-YYYY hh:mm A')
+                    var hacking_ends =   moment('9-11-2021 12:00 PM', 'MM-DD-YYYY hh:mm A')
+
+                    ratio =  Math.abs(hacking_starts - moment.now()) / (hacking_ends - hacking_starts)
+                    console.log(ratio)
+
+                    width_of_div = element_width * Math.min(1, ratio)
+                    child.style.borderLeft = `${Math.floor(width_of_div)}px solid #220800`
+
+                    console.log("Time in past")
+                }
+            }, 250);
+
+
+          },
         })
     </script>
+
 
 </body>
 </html>
