@@ -208,18 +208,14 @@
                     <div class="cd-h-timeline__event-content container-fluid">
                         <div class="timeline-event-description">
                             <!-- <p v-if=hackathon.link==false></p> -->
-                            <p v-if="hackathon.link==false" class="timeline-header">{{ hackathon.name }}</p>
-                            <p v-else class="timeline-header">
-                                {{ hackathon.name }} <br />
-                                <p>
-                                    <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
-                                        Visit Event Page
-                                    </a>
-                                </p>
-                        
-                            </p>
+                            <p class="timeline-header">{{ hackathon.name }}</p>
                             <p class="timeline-description">
                                 {{ hackathon.description }}
+                            </p>
+                            <p v-if="hackathon.link!=false">
+                                <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
+                                    Visit Event Page
+                                </a>
                             </p>
                         </div>
                         <div class="row">
@@ -1334,7 +1330,7 @@
                                 webp: "./static/assets/headshots/new/Abhishek.jpg",
                                 img: "./static/assets/headshots/new/Abhishek.jpg",
                                 name: "Abhishek More",
-                                position: "Dev",
+                                position: "Tech",
                                 linkedin: "https://www.linkedin.com/in/abhishek-more-linked/"
                               },
                               {
@@ -1355,7 +1351,7 @@
                                 webp: "./static/assets/headshots/new/Malavi.jpg",
                                 img: "./static/assets/headshots/new/Malavi.jpg",
                                 name: "Malavi Srinivasan",
-                                position: "Dev",
+                                position: "Tech",
                                 linkedin: "https://www.linkedin.com/in/malavi-srinivasan-9452a21ba/"
                               }
                             ]
