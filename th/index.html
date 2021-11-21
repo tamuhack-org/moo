@@ -37,6 +37,10 @@
         color: #345562;
       }
 
+      .kinda-black {
+        color: #232323;
+      }
+
       .baby-blue {
         background-color: #A4DCFF;
       }
@@ -74,6 +78,7 @@
         .no-pic {
           display:none;
         }
+
         .title-txt {
           margin-left: auto;
           margin-right: auto;
@@ -131,15 +136,15 @@
       <div id="about" class="h-screen my-20">
         <div class="flex justify-center pt-20 lg:my-30 md:my-20">
           <div class="lg:justify-left md:justify-left sm:justify-center">
-            <div class="grid grid-cols-2">
-              <div><!--1-->
-                <p class="flex justify-start lg:text-left md:text-left sm:text-center pl-40 font-extrabold text-4xl raleway-font baby-pink-txt">About TAMUhack</p>
-                <p class="flex justify-start pl-40 mt-4 text-l font-semibold font-sans kinda-black">At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
-                <p class="flex justify-start pl-40 mt-4 text-l font-semibold font-sans kinda-black">We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!</p>
-                <p class="flex justify-start pl-40 text-l font-semibold font-sans kinda-black">Check them out below!</p>
+            <div class="flex justify-between">
+              <div class="px-8 sm:pl-20 w-1/2"><!--1-->
+                <p class="lg:text-left md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">About TAMUhack</p>
+                <p class="mt-4 text-l font-semibold font-sans kinda-black">At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
+                <p class="mt-4 text-l font-semibold font-sans kinda-black">We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!</p>
+                <p class="text-l font-semibold font-sans kinda-black">Check them out below!</p>
               </div>
-              <div class="flex justify-center no-pic"><!--2-->
-                <img class="w-2/5 sm:max-h-full max-w-full md:max-h-full md:max-w-full lg:max-h-full lg:max-w-full" src="./../static/th-2022/AboutImage.svg">
+              <div class="hidden md:flex"><!--2-->
+                <img class="w-4/5 mr-4" src="./../static/th-2022/AboutImage.svg">
               </div>
             </div>
         </div>
