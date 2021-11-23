@@ -33,6 +33,10 @@
         font-family: 'Futura', sans-serif;
       }
 
+      .opensans-font {
+        font-family: 'Open Sans', sans-serif;
+      }
+
       .navy {
         color: #345562;
       }
@@ -127,6 +131,17 @@
       -->
 
 
+      <div id="FAQ" class="h-screen">
+        <p class="pb-4 pl-4 md:ml-20 baby-pink-text text-4xl font-bold raleway-font">Frequently Asked Questions</p>
+        <div class="px-4 md:mt-12 md:mx-20 md:grid grid-cols-2 auto-rows-min gap-8">
+          <div v-for="faq in faqs" class="mt-8 md:mt-0 py-8 px-8 border border-black rounded-2xl">
+            <p class="text-2xl font-bold raleway-font text-black">{{faq.title}}</p>
+            <p class="mt-5 text-xl opensans-font">{{faq.desc}}</p>
+          </div>
+        </div>
+      </div>
+
+
       <!--
       <div id="Sponsors">
         <div style="height: 314px; background: url('./../static/th-2021/img/bottom.png')">
@@ -165,7 +180,7 @@
 
             // Store an array. Useful for looping
             links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
-            faq: [
+            faqs: [
               {
                 title: "Who can attend?",
                 desc: "Any graduate/undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend."
@@ -189,10 +204,6 @@
               {
                 title: "When is the deadline to apply for TAMUhack?",
                 desc: "The deadline to registration is the night before the event, January 29th, at 23:59."
-              },
-              {
-                title: "Are there any rules?",
-                desc: "Yes, by registering for this event, you're agreeing to follow the <a href=\"https://static.mlh.io/docs/mlh-code-of-conduct.pdf\" class=\"underline\">MLH Code of Conduct</a>, <a href=\"https://mlh.io/privacy\" class=\"underline\">MLH Privacy Policy</a>, and <a href=\"https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions\" class=\"underline\">MLH Prize Terms and Conditions</a>."
               },
               {
                 title: "Is everyone elligible prizes and swag?",
