@@ -35,11 +35,11 @@
     <div id="app" v-cloak>
     <!--BEGIN Navbar-->
     <!-- UNCOMMENT WHEN APPS OPEN   -->
-    <a href="/hh" class="toast">
-        Howdy Hack Applications are now open
-    </a>
+    <!-- <a href="/apply" class="toast">
+        Apply to become a TAMUhack Director!
+    </a> -->
     <div class="nav-container container">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="top-nav-bar" style="top: 0px;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="top-nav-bar" style="">
             <a class="navbar-brand" href="#">
                 <img src="./static/assets/th_logo.svg" class="th-logo" alt="" />
             </a>
@@ -208,18 +208,14 @@
                     <div class="cd-h-timeline__event-content container-fluid">
                         <div class="timeline-event-description">
                             <!-- <p v-if=hackathon.link==false></p> -->
-                            <p v-if="hackathon.link==false" class="timeline-header">{{ hackathon.name }}</p>
-                            <p v-else class="timeline-header">
-                                {{ hackathon.name }} <br />
-                                <p>
-                                    <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
-                                        Visit Event Page
-                                    </a>
-                                </p>
-                        
-                            </p>
+                            <p class="timeline-header">{{ hackathon.name }}</p>
                             <p class="timeline-description">
                                 {{ hackathon.description }}
+                            </p>
+                            <p v-if="hackathon.link!=false">
+                                <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
+                                    Visit Event Page
+                                </a>
                             </p>
                         </div>
                         <div class="row">
@@ -1006,7 +1002,7 @@
                                 webp: "./static/assets/headshots/compressed/anikait.webp",
                                 img: "./static/assets/headshots/compressed/anikait.jpg",
                                 name: "Anikait Sharma",
-                                position: "Logistics",
+                                position: "Tech & Logistics",
                                 github: "https://github.com/anikait627",
                                 linkedin: "https://www.linkedin.com/in/anikait"
                               },
@@ -1164,7 +1160,7 @@
                                 webp: "./static/assets/headshots/compressed/anikait.webp",
                                 img: "./static/assets/headshots/compressed/anikait.jpg",
                                 name: "Anikait Sharma",
-                                position: "Logistics",
+                                position: "Tech & Logistics",
                                 github: "https://github.com/anikait627",
                                 linkedin: "https://www.linkedin.com/in/anikait"
                               },
@@ -1224,7 +1220,7 @@
                                 webp: "./static/assets/headshots/compressed/maggieP.webp",
                                 img: "./static/assets/headshots/compressed/maggieP.jpg",
                                 name: "Meghana Pothugunta",
-                                position: "Logistics",
+                                position: "President",
                                 linkedin: "https://www.linkedin.com/in/meghana-pothugunta-7161a8183"
                               },
                               {
@@ -1303,7 +1299,7 @@
                                 webp: "./static/assets/headshots/compressed/anikait.webp",
                                 img: "./static/assets/headshots/compressed/anikait.jpg",
                                 name: "Anikait Sharma",
-                                position: "Logistics",
+                                position: "Tech & Logistics",
                                 github: "https://github.com/anikait627",
                                 linkedin: "https://www.linkedin.com/in/anikait"
                               },
@@ -1334,7 +1330,7 @@
                                 webp: "./static/assets/headshots/new/Abhishek.jpg",
                                 img: "./static/assets/headshots/new/Abhishek.jpg",
                                 name: "Abhishek More",
-                                position: "Dev",
+                                position: "Tech",
                                 linkedin: "https://www.linkedin.com/in/abhishek-more-linked/"
                               },
                               {
@@ -1355,8 +1351,15 @@
                                 webp: "./static/assets/headshots/new/Malavi.jpg",
                                 img: "./static/assets/headshots/new/Malavi.jpg",
                                 name: "Malavi Srinivasan",
-                                position: "Dev",
+                                position: "Tech",
                                 linkedin: "https://www.linkedin.com/in/malavi-srinivasan-9452a21ba/"
+                              },
+                              {
+                                webp: "./static/assets/headshots/new/Ekdev.jpg",
+                                img: "./static/assets/headshots/new/Ekdev.jpg",
+                                name: "Ekdev Rajkitkul",
+                                position: "Logistics",
+                                linkedin: "https://www.linkedin.com/in/ekdevrajkitkul"
                               }
                             ]
                       }
