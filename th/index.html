@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
@@ -23,6 +24,7 @@
     <link href="./../static/th-2021/img/logo.svg" rel="icon" type="image/x-icon" />
 
     <!-- Add any styles you want here... Frick CSS files -->
+    <!-- Ok on second thought, we probably should have used CSS files -->
     <style>
 
       html {
@@ -41,12 +43,34 @@
         font-family: 'Futura', sans-serif;
       }
 
+      @font-face {
+        font-family: 'Futura';
+        src: url(./../static/fonts/Futura/Futura-Bold/futura-bold.ttf);
+        font-weight: 900;
+      }
+
+      @font-face {
+        font-family: 'Futura';
+        src: url(./../static/fonts/Futura/Futura-Light/futura-light.ttf);
+        font-weight: light;
+      }
+
+      @font-face {
+        font-family: 'Avenir Next';
+        src: url(./../static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
+        font-weight: regular;
+      }
+
       .opensans-font {
         font-family: 'Open Sans', sans-serif;
       }
 
       .navy {
         color: #345562;
+      }
+
+      .navy-border {
+        border-color: #345562;
       }
 
       .kinda-black {
@@ -74,10 +98,10 @@
       }
 
       .custom-button {
+        font-family: "Avenir Next";
         color: white;
-        font-family: 'Avenir';
         font-size: 18px;
-        font-weight: 900;
+        font-weight: 700;
         border-radius: 5px;
       }
 
@@ -92,6 +116,8 @@
         .leafy-bg {
           background-image: url("./../static/th-2022/Leaves.png");
           min-width: 500px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
           z-index: 0; 
         }
       }
@@ -139,15 +165,15 @@
 
       <!-- TODO: Make the bottom border animate in on scroll -->
       <!-- NAVBAR -->
-      <div class="fixed flex items-center justify-between border-black border-b-2 border-opacity-10 px-16 py-4 w-screen bg-offwhite z-50" >
+      <div class="fixed flex items-center justify-between border-black border-b-2 border-opacity-10 px-8 md:px-16 py-4 w-screen bg-offwhite z-50" >
         <div>
           <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer" class="hidden md:flex text-4xl font-black futura-font navy">tamuhack</a>
           <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer" class="md:hidden text-3xl font-black futura-font navy">th</a>
         </div>
         <div class="hidden lg:flex">
-          <a v-for="link in links" :href="'#' + link" class="text-xl font-light md:ml-12 lg:ml-16 futura-font navy"> {{link}}</a>
+          <a v-for="link in links" :href="'#' + link" class="text-xl font-regular md:ml-12 lg:ml-16 futura-font navy"> {{link}}</a>
         </div>
-        <a class="lg:hidden text-xl font-light futura-font navy">Hamburger</a> 
+        <a class="lg:hidden text-xl font-regular futura-font navy"></a> 
       </div>
 
       <!-- LANDING -->
@@ -159,8 +185,8 @@
           <p class="flex justify-center text-xl sm:text-2xl font-bold raleway-font navy">January 29 - 30, 2022</p>
           <p class="flex justify-center my-2 text-xl sm:text-2xl font-bold raleway-font navy">Memorial Student Center</p>
           <div class="flex flex-col sm:flex-row justify-center mt-8">
-            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-extrabold raleway-font custom-button">APPLY</a>
-            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-extrabold raleway-font custom-button">MENTOR</a>
+            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
+            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-bold custom-button">MENTOR</a>
           </div>
         </div>
       </div>
@@ -171,9 +197,9 @@
           <div class="flex justify-between px-8 md:px-32">
             <div class="w-full lg:w-1/2"><!--1-->
               <p class="lg:text-left md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">About TAMUhack</p>
-              <p class="mt-8 text-l font-semibold font-sans kinda-black">At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
-              <p class="mt-4 text-l font-semibold font-sans kinda-black">We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!</p>
-              <p class="mt-4 text-l font-semibold font-sans kinda-black">Check them out below!</p>
+              <p class="mt-8 text-l font-semibold opensans-font navy">At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
+              <p class="mt-4 text-l font-semibold opensans-font navy">We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!</p>
+              <p class="mt-4 text-l font-semibold opensans-font navy">Check them out below!</p>
             </div>
             <div class="hidden lg:flex"><!--2-->
               <img class="w-4/5" src="./../static/th-2022/AboutFlower1.svg">
@@ -190,20 +216,20 @@
               <div class="w-full lg:w-1/2"><!--1-->
                 <p class="mb-10 md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">Event Information</p>
                 <p class="lg:mt-8 md:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Parking</p>
-                <p class="mt-5 text-lg font-bold font-sans kinda-black">Lot 61</p>
-                <p class="text-lg font-normal underline font-sans kinda-black">133-155 John Kimbrough Blvd, College Station, TX 77840</p>
-                <p class="text-md font-normal font-sans kinda-black">*Free in unmarked spaces EXCEPT Saturday, 12:30PM - 3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
-                <p class="mt-4 text-lg font-bold font-sans kinda-black">Lot 97</p>
-                <p class="text-lg font-normal underline font-sans kinda-black">600 John Kimbrough Blvd, College Station, TX 77845</p>
-                <p class="text-md font-normal font-sans kinda-black">*Free in unmarked spaces</p>
-                <p class="mt-4 text-lg font-bold font-sans kinda-black">Lot 74</p>
-                <p class="text-lg font-normal underline font-sans kinda-black">730 Olsen Blvd, College Station, TX 77845</p>
-                <p class="mb-10 text-md font-normal font-sans kinda-black">*Free in unmarked spaces</p>
+                <p class="mt-5 text-lg font-bold opensans-font navy">Lot 61</p>
+                <p class="text-lg font-normal underline opensans-font navy">133-155 John Kimbrough Blvd, College Station, TX 77840</p>
+                <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces EXCEPT Saturday, 12:30PM - 3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
+                <p class="mt-4 text-lg font-bold opensans-font navy">Lot 97</p>
+                <p class="text-lg font-normal underline opensans-font navy">600 John Kimbrough Blvd, College Station, TX 77845</p>
+                <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
+                <p class="mt-4 text-lg font-bold opensans-font navy">Lot 74</p>
+                <p class="text-lg font-normal underline opensans-font navy">730 Olsen Blvd, College Station, TX 77845</p>
+                <p class="mb-10 text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
                 <p class="lg:mt-8 md:mt-8 sm:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Venue</p>
-                <p class="mt-5 text-lg font-bold font-sans kinda-black">Memorial Student Center</p>
-                <p class="text-lg font-normal underline font-sans kinda-black">275 Joe Routt Blvd, College Station, TX 77843</p>
-                <a href="https://aggiemap.tamu.edu/?bldg=0454" target="_blank" rel="noopener noreferrer" class="text-lg font-normal underline font-sans kinda-black">View building map</a>
-                <p class="text-md font-normal font-sans kinda-black">*Main hacking location will be in the Bethancourt Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
+                <p class="mt-5 text-lg font-bold opensans-font navy">Memorial Student Center</p>
+                <p class="text-lg font-normal underline opensans-font navy">275 Joe Routt Blvd, College Station, TX 77843</p>
+                <a href="https://aggiemap.tamu.edu/?bldg=0454" target="_blank" rel="noopener noreferrer" class="text-lg font-normal underline opensans-font navy">View building map</a>
+                <p class="text-md font-normal opensans-font navy">*Main hacking location will be in the Bethancourt Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
               </div>
               <div class="hidden lg:flex">
                 <img class="w-5/5" src="./../static/th-2022/msc.svg">
@@ -214,17 +240,21 @@
       </div>
 
       <!-- FAQ -->
-      <div id="FAQ" class="h-full mt-28 leafy-bg" style="scroll-margin-top: 7em;">
+      <div id="FAQ" class="h-full mt-28 pb-28 leafy-bg" style="scroll-margin-top: 7em;">
         <p class="flex pb-4 px-8 md:px-32 baby-pink-text text-4xl font-bold raleway-font">Frequently Asked Questions</p>
-        <div class="md:mt-12 px-8 lg:px-32 lg:grid grid-cols-2 gap-8 place-content-center z-40">
-          <div v-for="faq in faqs" class="mt-8 lg:mt-0 py-8 px-8 border border-black bg-offwhite rounded-2xl opacity-100">
+        <div class="md:mt-12 px-8 lg:px-32 lg:grid grid-cols-2 gap-12 place-content-center z-40">
+          <div v-for="faq in faqs" class="mt-8 lg:mt-0 py-8 px-8 border navy-border bg-offwhite rounded-2xl opacity-100">
             <p class="text-xl md:text-2xl font-bold raleway-font text-black">{{faq.title}}</p>
-            <p class="mt-5 text-l md:text-xl opensans-font">{{faq.desc}}</p>
+            <p class="mt-5 text-l md:text-md opensans-font navy">{{faq.desc}}</p>
           </div>
         </div>
       </div>
 
-
+      <div id="Sponsors" class="hidden md:flex">
+        <p class="pb-10 px-8 md:px-32 navy">
+          Interested in sponsoring? Reach out to us at <a class="underline" href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+        </p>
+      </div>
 
 
 
@@ -265,7 +295,8 @@
             window,
 
             // Store an array. Useful for looping
-            links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
+            //links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
+            links: ["Info", "FAQ", "Sponsors"],
             faqs: [
               {
                 title: "Who can attend?",
