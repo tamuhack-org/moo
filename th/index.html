@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
@@ -23,7 +24,16 @@
     <link href="./../static/th-2021/img/logo.svg" rel="icon" type="image/x-icon" />
 
     <!-- Add any styles you want here... Frick CSS files -->
+    <!-- Ok on second thought, we probably should have used CSS files -->
     <style>
+
+      html {
+        background-color: #FAFAFA;
+      }
+
+      .bg-offwhite {
+        background-color: #FAFAFA;
+      }
 
       .raleway-font {
         font-family: 'Raleway', sans-serif;
@@ -33,8 +43,34 @@
         font-family: 'Futura', sans-serif;
       }
 
+      @font-face {
+        font-family: 'Futura';
+        src: url(./../static/fonts/Futura/Futura-Bold/futura-bold.ttf);
+        font-weight: 900;
+      }
+
+      @font-face {
+        font-family: 'Futura';
+        src: url(./../static/fonts/Futura/Futura-Light/futura-light.ttf);
+        font-weight: light;
+      }
+
+      @font-face {
+        font-family: 'Avenir Next';
+        src: url(./../static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
+        font-weight: regular;
+      }
+
+      .opensans-font {
+        font-family: 'Open Sans', sans-serif;
+      }
+
       .navy {
         color: #345562;
+      }
+
+      .navy-border {
+        border-color: #345562;
       }
 
       .kinda-black {
@@ -45,17 +81,6 @@
         background-color: #A4DCFF;
       }
 
-      .baby-blue-txt{
-        color: #7FC0FA;
-;
-      }
-
-      .baby-pink {
-        background-color: #FFA4C6;
-      }
-      .baby-pink-txt {
-        color: #F3859B;
-      }
       .baby-pink {
         background-color: #FFA4C6;
       }
@@ -68,15 +93,15 @@
         color: #7FC0FA;
       }
 
-      .bg-offwhite {
-        background-color: #FAFAFA;
+      .baby-pink-txt {
+        color: #FFA4C6;
       }
 
       .custom-button {
+        font-family: "Avenir Next";
         color: white;
-        font-family: 'Avenir';
         font-size: 18px;
-        font-weight: 900;
+        font-weight: 700;
         border-radius: 5px;
       }
 
@@ -86,6 +111,17 @@
         box-shadow:0px 0px 0px 5px #375764;
       }
 
+
+      @media (min-width: 900px) {
+        .leafy-bg {
+          background-image: url("./../static/th-2022/Leaves.png");
+          min-width: 500px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          z-index: 0; 
+        }
+      }
+
       @media (max-width: 640px) {
         .custom-button {
           margin-left: auto;
@@ -93,6 +129,12 @@
         }
         .no-pic {
           display:none;
+        }
+       
+        .leafy-bg {
+          min-width: 100px;
+          max-height: 500px;
+          background-repeat: repeat-y;
         }
 
         .title-txt {
@@ -114,124 +156,118 @@
         }
       }
 
+
     </style>
   </head>
 
   <body class="bg-offwhite">
     <div id="app" v-cloak>
 
+      <!-- TODO: Make the bottom border animate in on scroll -->
       <!-- NAVBAR -->
-      <div class="sm:fixed flex items-center justify-between border-black border-b-2 border-opacity-10 px-16 py-4 w-screen bg-offwhite" >
+      <div class="fixed flex items-center justify-between border-black border-b-2 border-opacity-10 px-8 md:px-16 py-4 w-screen bg-offwhite z-50" >
         <div>
-          <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer" class="hidden md:flex text-3xl font-black futura-font navy">tamuhack</a>
           <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer" class="hidden md:flex text-4xl font-black futura-font navy">tamuhack</a>
           <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer" class="md:hidden text-3xl font-black futura-font navy">th</a>
         </div>
         <div class="hidden lg:flex">
-          <a v-for="link in links" :href="'#' + link" class="text-xl font-light md:ml-12 lg:ml-16 futura-font navy"> {{link}}</a>
+          <a v-for="link in links" :href="'#' + link" class="text-xl font-regular md:ml-12 lg:ml-16 futura-font navy"> {{link}}</a>
         </div>
-        <a class="lg:hidden text-xl font-light futura-font navy">Hamburger</a> 
+        <a class="lg:hidden text-xl font-regular futura-font navy"></a> 
       </div>
 
       <!-- LANDING -->
-      <div id="landing" class="h-screen">
-        <div class="flex justify-center pt-16">
-          <img class="w-5/5 max-h-48 sm:max-h-screen md:w-4/5 lg:w-3/5" src="./../static/th-2022/LandingImage.svg">
+      <div id="landing" class="h-full ">
+        <div class="flex justify-center pt-32 md:pt-16">
+          <img class="p-4 w-5/5 max-h-52 sm:max-h-screen md:w-4/5 lg:w-3/5" src="./../static/th-2022/LandingImage2.png">
         </div>
         <div class="mt-2">
-          <p class="flex justify-center text-2xl font-bold raleway-font navy">January 29 - 30, 2022</p>
-          <p class="flex justify-center my-2 text-2xl font-bold raleway-font navy">Memorial Student Center</p>
+          <p class="flex justify-center text-xl sm:text-2xl font-bold raleway-font navy">January 29 - 30, 2022</p>
+          <p class="flex justify-center my-2 text-xl sm:text-2xl font-bold raleway-font navy">Memorial Student Center</p>
           <div class="flex flex-col sm:flex-row justify-center mt-8">
-            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-extrabold raleway-font custom-button">APPLY</a>
-            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-extrabold raleway-font custom-button">MENTOR</a>
+            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
+            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-bold custom-button">MENTOR</a>
           </div>
         </div>
       </div>
 
       <!-- ABOUT -->
-      <div id="about" class="h-screen my-20">
-        <div class="flex justify-center pt-20 lg:my-30 md:my-20">
-          <div class="lg:justify-left md:justify-left sm:justify-center">
-            <div class="flex justify-between">
-              <div class="px-8 sm:pl-20 w-full sm:w-1/2"><!--1-->
-                <p class="lg:text-left md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">About TAMUhack</p>
-                <p class="mt-4 text-l font-semibold font-sans kinda-black">At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
-                <p class="mt-4 text-l font-semibold font-sans kinda-black">We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!</p>
-                <p class="text-l font-semibold font-sans kinda-black">Check them out below!</p>
-              </div>
-              <div class="hidden md:flex"><!--2-->
-                <img class="w-4/5 mr-4" src="./../static/th-2022/AboutImage.svg">
-              </div>
+      <div id="Info" class="mt-28" style="scroll-margin-top: 7em;">
+        <div class="flex w-full justify-between">
+          <div class="flex justify-between px-8 md:px-32">
+            <div class="w-full lg:w-1/2"><!--1-->
+              <p class="lg:text-left md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">About TAMUhack</p>
+              <p class="mt-8 text-l font-semibold opensans-font navy">At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.</p>
+              <p class="mt-4 text-l font-semibold opensans-font navy">We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends. We'll also provide all the free food and free swag—just be sure to bring plenty of resumes for all of the awesome sponsors and mentors you'll meet!</p>
+              <p class="mt-4 text-l font-semibold opensans-font navy">Check them out below!</p>
             </div>
-        </div>
+            <div class="hidden lg:flex"><!--2-->
+              <img class="w-4/5" src="./../static/th-2022/AboutFlower1.svg">
+            </div>
+          </div>
         </div>
       </div>
 
       <!--Event Information-->
-      <div id="event_info" class="h-screen">
-        <div class="flex justify-center lg:my-10 md:my-10">
-          <div class="lg:justify-left md:justify-left sm:justify-center">
-            <div class="flex justify-between">
-              <div class="px-8 sm:pl-20 w-full sm:w-1/2"><!--1-->
-                <p class="mb-10 lg:text-left md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">Event Information</p>
-                <p class="lg:text-left lg:mt-8 md:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-txt">Parking</p>
-                <p class="mt-8 text-l font-bold font-sans kinda-black">Lot 61</p>
-                <p class="text-l font-normal underline font-sans kinda-black">133-155 John Kimbrough Blvd, College Station, TX 77840</p>
-                <p class="text-l font-normal font-sans kinda-black">*Free in unmarked spaces EXCEPT Saturday, 12:30PM - 3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
-                <p class="mt-4 text-l font-bold font-sans kinda-black">Lot 97</p>
-                <p class="text-l font-normal underline font-sans kinda-black">600 John Kimbrough Blvd, College Station, TX 77845</p>
-                <p class="text-l font-normal font-sans kinda-black">*Free in unmarked spaces</p>
-                <p class="mt-4 text-l font-bold font-sans kinda-black">Lot 74</p>
-                <p class="text-l font-normal underline font-sans kinda-black">730 Olsen Blvd, College Station, TX 77845</p>
-                <p class="mb-10 text-l font-normal font-sans kinda-black">*Free in unmarked spaces</p>
-                <p class="lg:text-left lg:mt-10 md:mt-8 sm:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-txt">Venue</p>
-                <p class="mt-8 text-l font-bold font-sans kinda-black">Memorial Student Center</p>
-                <p class="text-l font-normal underline font-sans kinda-black">275 Joe Routt Blvd, College Station, TX 77843</p>
-                <a href="https://aggiemap.tamu.edu/?bldg=0454" target="_blank" rel="noopener noreferrer" class="text-l font-normal underline font-sans kinda-black">View building map</a>
-                <p class="text-l font-normal font-sans kinda-black">*Main hacking location will be in the Bethancourt Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
+      <div id="EventInfo" class="h-full mt-28">
+        <div class="flex justify-between">
+          <div class="w-full sm:justify-between">
+            <div class="flex px-8 md:px-32 justify-between">
+              <div class="w-full lg:w-1/2"><!--1-->
+                <p class="mb-10 md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">Event Information</p>
+                <p class="lg:mt-8 md:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Parking</p>
+                <p class="mt-5 text-lg font-bold opensans-font navy">Lot 61</p>
+                <p class="text-lg font-normal underline opensans-font navy">133-155 John Kimbrough Blvd, College Station, TX 77840</p>
+                <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces EXCEPT Saturday, 12:30PM - 3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
+                <p class="mt-4 text-lg font-bold opensans-font navy">Lot 97</p>
+                <p class="text-lg font-normal underline opensans-font navy">600 John Kimbrough Blvd, College Station, TX 77845</p>
+                <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
+                <p class="mt-4 text-lg font-bold opensans-font navy">Lot 74</p>
+                <p class="text-lg font-normal underline opensans-font navy">730 Olsen Blvd, College Station, TX 77845</p>
+                <p class="mb-10 text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
+                <p class="lg:mt-8 md:mt-8 sm:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Venue</p>
+                <p class="mt-5 text-lg font-bold opensans-font navy">Memorial Student Center</p>
+                <p class="text-lg font-normal underline opensans-font navy">275 Joe Routt Blvd, College Station, TX 77843</p>
+                <a href="https://aggiemap.tamu.edu/?bldg=0454" target="_blank" rel="noopener noreferrer" class="text-lg font-normal underline opensans-font navy">View building map</a>
+                <p class="text-md font-normal opensans-font navy">*Main hacking location will be in the Bethancourt Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
               </div>
-              <div class="hidden md:flex items-center"><!--2-->
-                <img class="w-4/5" src="./../static/th-2022/eventinfo.svg">
+              <div class="hidden lg:flex">
+                <img class="w-5/5" src="./../static/th-2022/msc.svg">
               </div>
-        </div>
-        <div class="mt-2">
-          <p class="flex justify-center text-2xl font-bold raleway-font navy">January 29 - 30, 2022</p>
-          <p class="flex justify-center my-2 text-2xl font-bold raleway-font navy">Memorial Student Center</p>
-          <div class="flex flex-col sm:flex-row justify-center mt-8">
-            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-extrabold raleway-font custom-button">APPLY</a>
-            <a href="https://register.tamuhack.com/"  target="_blank" rel="noopener noreferrer" class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-extrabold raleway-font custom-button">MENTOR</a>
+            </div>
           </div>
         </div>
       </div>
 
-      
-      <!-- INFO 
-      <div id="Info" class="h-screen">
-        <div class="px-16 pt-32">
-          <p class="text-4xl font-bold baby-pink-text raleway-font">Event Information</div>
-          <div class="px-16 pt-16 flex">
-            <div>
-              <p class="text-2xl font-bold baby-blue-text">Parking</p>
-            </div>
-             
+      <!-- FAQ -->
+      <div id="FAQ" class="h-full mt-28 pb-28 leafy-bg" style="scroll-margin-top: 7em;">
+        <p class="flex pb-4 px-8 md:px-32 baby-pink-text text-4xl font-bold raleway-font">Frequently Asked Questions</p>
+        <div class="md:mt-12 px-8 lg:px-32 lg:grid grid-cols-2 gap-12 place-content-center z-40">
+          <div v-for="faq in faqs" class="mt-8 lg:mt-0 py-8 px-8 border navy-border bg-offwhite rounded-2xl opacity-100">
+            <p class="text-xl md:text-2xl font-bold raleway-font text-black">{{faq.title}}</p>
+            <p class="mt-5 text-l md:text-md opensans-font navy">{{faq.desc}}</p>
           </div>
         </div>
-        </div>
       </div>
+
+      <div id="Sponsors" class="hidden md:flex">
+        <p class="pb-10 px-8 md:px-32 navy">
+          Interested in sponsoring? Reach out to us at <a class="underline" href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+        </p>
       </div>
-      -->
+
 
 
       <!--
-      <div id="Sponsors">
+        <div id="Sponsors">
         <div style="height: 314px; background: url('./../static/th-2021/img/bottom.png')">
-          <div class="faq-container" style="padding-top: 0px !important; padding-bottom: 0px !important;">
-            <p style="padding-top: 200px;" class="sponsor-offset">
-            Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
-            </p>
-          </div>
+        <div class="faq-container" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+        <p style="padding-top: 200px;" class="sponsor-offset">
+        Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+        </p>
         </div>
-      </div>
+        </div>
+        </div>
       -->
 
     </div>
@@ -259,8 +295,9 @@
             window,
 
             // Store an array. Useful for looping
-            links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
-            faq: [
+            //links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
+            links: ["Info", "FAQ", "Sponsors"],
+            faqs: [
               {
                 title: "Who can attend?",
                 desc: "Any graduate/undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend."
@@ -286,11 +323,7 @@
                 desc: "The deadline to registration is the night before the event, January 29th, at 23:59."
               },
               {
-                title: "Are there any rules?",
-                desc: "Yes, by registering for this event, you're agreeing to follow the <a href=\"https://static.mlh.io/docs/mlh-code-of-conduct.pdf\" class=\"underline\">MLH Code of Conduct</a>, <a href=\"https://mlh.io/privacy\" class=\"underline\">MLH Privacy Policy</a>, and <a href=\"https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions\" class=\"underline\">MLH Prize Terms and Conditions</a>."
-              },
-              {
-                title: "Is everyone elligible prizes and swag?",
+                title: "Is everyone eligible prizes and swag?",
                 desc: "To be eligible for physical prizes and swag, you must have a US address for shipping. International participants will not receive swag but are eligible to receive gift cards instead of physical prizes."
               },
               {
@@ -496,7 +529,7 @@
               [
                 'data:image/png;base64,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',
                             'https://www.bp.com/en/global/corporate/careers.html'
-],
+              ],
   [
     'data:image/png;base64,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',
     'https://www.pimco.com/en-us/our-firm/careers'
@@ -526,7 +559,7 @@
     [
       'data:image/png;base64,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', 
       'http://hackp.ac/mlh-stickermule-hackathons'
-],
+    ],
   [
     'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffff463ee-deef-4a7f-aeb2-31e5884233d1%2Ffull-logo-black.png?table=block&id=e803a97c-5aa2-47c9-a92e-42f9dd8e0470&spaceId=14c336f9-f36f-4a65-8553-fd271d4a5db9&width=3470&userId=&cache=v2',
     'http://thecodex.me'
