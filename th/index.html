@@ -91,7 +91,8 @@
     }
 
     .baby-pink {
-      background-color: #FFA4C6;
+      background-color: #FAFAFA;
+      color: #B4B4B4;
     }
 
     .baby-pink-text {
@@ -109,6 +110,23 @@
     .custom-button {
       font-family: "Avenir Next";
       color: white;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+
+    .custom-button-grayed {
+      font-family: "Avenir Next";
+      color:#B4B4B4;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px 5px #B4B4B4;
+    }
+
+    .custom-button-grayed:hover {
+      font-family: "Avenir Next";
+      color:#B4B4B4;
       font-size: 18px;
       font-weight: 700;
       border-radius: 5px;
@@ -133,6 +151,11 @@
 
     @media (max-width: 640px) {
       .custom-button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .custom-button-grayed {
         margin-left: auto;
         margin-right: auto;
       }
@@ -204,7 +227,7 @@
                 <div class="px-8">
                   <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
                     class="hidden md:flex text-4xl font-black futura-font navy">tamuhack</a>
-                  <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
+                  <a target="_blank" rel="noopener noreferrer"
                     class="md:hidden text-3xl font-black futura-font navy">th</a>
                 </div>
               </b-navbar-item>
@@ -220,7 +243,6 @@
           </b-navbar>
         </template>
       </div>
-
     </div>
 
 
@@ -236,8 +258,8 @@
         <div class="flex flex-col sm:flex-row justify-center mt-8">
           <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
             class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
-          <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-            class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-bold custom-button">MENTOR</a>
+          <p title="Mentor applications are not open yet. Come back later!" target="_blank" rel="noopener noreferrer"
+            class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:ml-5 text-center baby-pink font-bold custom-button-grayed">MENTOR</p>
         </div>
       </div>
     </div>
