@@ -39,3 +39,60 @@
     margin-top: -16px;
     margin-left: 30px;
 }
+
+/* FAQ Section */
+@media only screen and (min-width: 901px) {
+    .faq-container {
+        padding: 150px;
+        padding-top: 0px;
+        padding-bottom: 75px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .faq-container {
+        padding: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .faq-container {
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+/* SCHEDULE */
+@media only screen and (max-width: 780px) {
+    .schedule {
+        position: relative;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border-color: black;
+        border-radius: 2rem;
+    }
+}
+
+@media only screen and (min-width: 781px) {
+    .schedule {
+        position: relative;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border-color: black;
+        border-radius: 2rem;
+    }
+}
+
