@@ -139,6 +139,60 @@ html {
     }
 
 
+    @media only screen and (min-width: 901px) {
+      .faq-cont {
+        padding: 150px;
+        padding-top: 0px;
+        padding-bottom: 75px;
+      }
+    }
+
+    @media only screen and (max-width: 900px) {
+      .faq-cont {
+        padding: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .faq-cont {
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
+    @media only screen and (max-width: 780px) {
+      .schedule {
+        position: relative;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border-color: black;
+        border-radius: 2rem;
+      }
+    }
+
+    @media only screen and (min-width: 781px) {
+      .schedule {
+        position: relative;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border-color: black;
+        border-radius: 2rem;
+      }
+    }
+
     @media (min-width: 768px) {
       .leafy-bg {
         background-image: url("./../static/th-2022/Leaves.png");
@@ -259,7 +313,7 @@ html {
             <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
                                                                      class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
             <a href="https://forms.gle/QcKxnF6xYpaY1xGq6" target="_blank" rel="noopener noreferrer"
-                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-pink text-white font-bold custom-button">MENTOR</a>
+                                                                          class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-pink text-white font-bold custom-button">MENTOR</a>
           </div>
         </div>
       </div>
@@ -289,169 +343,169 @@ html {
 
       <!-- SCHEDULE -->
       <!--
-      <div id="Schedule" class="relative h-full mt-6 md:mt-28 pb-36" style="padding-top:6em;">
+        <div id="Schedule" class="relative h-full mt-6 md:mt-28 pb-36" style="padding-top:6em;">
         <p class="flex pb-4 px-6 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
         <div class="schedule border-4 navy-border rounded-3xl">
-          <div class="lg:grid grid-cols-2 gap-12 place-content-center">
-            <div class="">
-              <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
-              <div v-for="event in eventsSaturday" class="flex">
-                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
-              </div>
-            </div>
-            <div class="mt-16 md:mt-0">
-              <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
-              <div v-for="event in eventsSunday" class="flex">
-                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap ">{{event.time}}</p>
-                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
-              </div>
-            </div>
-          </div>
+        <div class="lg:grid grid-cols-2 gap-12 place-content-center">
+        <div class="">
+        <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
+        <div v-for="event in eventsSaturday" class="flex">
+        <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+        <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+        </div>
+        </div>
+        <div class="mt-16 md:mt-0">
+        <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
+        <div v-for="event in eventsSunday" class="flex">
+        <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap ">{{event.time}}</p>
+        <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+        </div>
+        </div>
+        </div>
         </div>
         <div class="hidden lg:flex justify-end absolute bottom-0 inset-x-0">
-          <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
+        <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
         </div>
-      </div>
-      --->
+        </div>
+        --->
 
-      <!--Event Information-->
-      <div id="EventInfo" class="h-full">
-        <div class="lg:flex justify-between">
-          <div class="w-full sm:justify-between">
-            <div class="lg:flex px-8 md:px-32 justify-between">
-              <div class="w-full lg:w-1/2">
-                <!--1-->
-                <p class="mb-10 md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">Event Information</p>
-                <p class="lg:mt-8 md:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Parking</p>
-                <p class="mt-5 text-lg font-bold opensans-font navy">Lot 61</p>
-                <p class="text-lg font-normal underline opensans-font navy">133-155 John Kimbrough Blvd, College Station,
-                TX 77840</p>
-                <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces EXCEPT Saturday, 12:30PM -
-                3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
-                <p class="mt-4 text-lg font-bold opensans-font navy">Lot 97</p>
-                <p class="text-lg font-normal underline opensans-font navy">600 John Kimbrough Blvd, College Station, TX
-                77845</p>
-                <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
-                <p class="mt-4 text-lg font-bold opensans-font navy">Lot 74</p>
-                <p class="text-lg font-normal underline opensans-font navy">730 Olsen Blvd, College Station, TX 77845</p>
-                <p class="mb-10 text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
-                <p class="lg:mt-8 md:mt-8 sm:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Venue</p>
-                <p class="mt-5 text-lg font-bold opensans-font navy">Memorial Student Center</p>
-                <p class="text-lg font-normal underline opensans-font navy">275 Joe Routt Blvd, College Station, TX 77843
-                </p>
-                <a href="https://aggiemap.tamu.edu/?bldg=0454" target="_blank" rel="noopener noreferrer"
-                                                                               class="text-lg font-normal underline opensans-font navy">View building map</a>
-                <p class="text-md font-normal opensans-font navy">*Main hacking location will be in the Bethancourt
-                Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
-              </div>
-              <div class="flex">
-                <img class="w-5/5" src="./../static/th-2022/msc.svg">
+        <!--Event Information-->
+        <div id="EventInfo" class="h-full">
+          <div class="lg:flex justify-between">
+            <div class="w-full sm:justify-between">
+              <div class="lg:flex px-8 md:px-32 justify-between">
+                <div class="w-full lg:w-1/2">
+                  <!--1-->
+                  <p class="mb-10 md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">Event Information</p>
+                  <p class="lg:mt-8 md:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Parking</p>
+                  <p class="mt-5 text-lg font-bold opensans-font navy">Lot 61</p>
+                  <p class="text-lg font-normal underline opensans-font navy">133-155 John Kimbrough Blvd, College Station,
+                  TX 77840</p>
+                  <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces EXCEPT Saturday, 12:30PM -
+                  3:30PM will charge $5 for each entry during that time due to a basketball game.</p>
+                  <p class="mt-4 text-lg font-bold opensans-font navy">Lot 97</p>
+                  <p class="text-lg font-normal underline opensans-font navy">600 John Kimbrough Blvd, College Station, TX
+                  77845</p>
+                  <p class="text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
+                  <p class="mt-4 text-lg font-bold opensans-font navy">Lot 74</p>
+                  <p class="text-lg font-normal underline opensans-font navy">730 Olsen Blvd, College Station, TX 77845</p>
+                  <p class="mb-10 text-md font-normal opensans-font navy">*Free in unmarked spaces</p>
+                  <p class="lg:mt-8 md:mt-8 sm:mt-4 md:text-left font-bold text-2xl raleway-font baby-blue-text">Venue</p>
+                  <p class="mt-5 text-lg font-bold opensans-font navy">Memorial Student Center</p>
+                  <p class="text-lg font-normal underline opensans-font navy">275 Joe Routt Blvd, College Station, TX 77843
+                  </p>
+                  <a href="https://aggiemap.tamu.edu/?bldg=0454" target="_blank" rel="noopener noreferrer"
+                                                                                 class="text-lg font-normal underline opensans-font navy">View building map</a>
+                  <p class="text-md font-normal opensans-font navy">*Main hacking location will be in the Bethancourt
+                  Ballroom (room 2300), quiet hacking in room 2400, and workshops in West Wing</p>
+                </div>
+                <div class="flex">
+                  <img class="w-5/5" src="./../static/th-2022/msc.svg">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
 
-      <!-- PRIZES -->
-      <!--
-      <div id="Prizes" class="h-full mt-6 md:mt-28 " style="padding-top:6em;">
-        <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Prizes</p>
-        <div class="md:mt-12 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
+        <!-- PRIZES -->
+        <!--
+          <div id="Prizes" class="h-full mt-6 md:mt-28 " style="padding-top:6em;">
+          <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Prizes</p>
+          <div class="md:mt-12 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
           <div class="leftcol lg:w-1/2">
-            <div v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-              <div class="border-2 navy-border rounded-md px-8 py-4">
-                <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
-                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
-              </div>
-            </div>
-            <div class="">
-              <img class="mt-12 lg:w-full lg:h-full" src="../static/th-2022/Cat.png">
-            </div>
+          <div v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+          <div class="border-2 navy-border rounded-md px-8 py-4">
+          <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
+          <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
+          <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+          </div>
+          </div>
+          <div class="">
+          <img class="mt-12 lg:w-full lg:h-full" src="../static/th-2022/Cat.png">
+          </div>
           </div>
           <div class="hidden lg:block lg:w-1/2">
-            <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-              <div class="border-2 navy-border rounded-md px-8 py-4">
-                <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
-                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+          <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+          <div class="border-2 navy-border rounded-md px-8 py-4">
+          <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
+          <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
+          <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+          </div>
+          </div>
+          </div>
+
+          </div>
+          </div>
+
+        -->
+        <!-- FAQ -->
+        <!-- TODO: Stagger the FAQS -->
+
+        <div id="FAQ" class="h-full mt-6 md:mt-0 pb-10 leafy-bg" style="padding-top:6em;">
+          <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Frequently Asked Questions</p>
+          <div class="md:mt-12 mx-4 md:px-12 lg:px-32 lg:grid grid-cols-2 gap-12 place-content-center z-40">
+            <div v-for="faq in faqs" class="mt-8 lg:mt-0 py-8 px-8 border navy-border bg-offwhite rounded-2xl opacity-100">
+              <p class="text-xl md:text-2xl font-bold raleway-font navy">{{faq.title}}</p>
+              <p class="mt-5 text-l md:text-md opensans-font navy">{{faq.desc}}</p>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          <div id="Sponsors" class="flex">
+          <p class="pb-10 px-8 md:px-32 navy">
+          Interested in sponsoring? Reach out to us at <a class="underline"
+          href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+          </p>
+          </div>
+        -->
+
+        <!-- SPONSORS -->
+        <div class="bg-offwhite mt-4" id="Sponsors" style="padding-top:6em;">
+          <p class="flex px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Sponsored By</p>
+          <div class="faq-cont">
+            <div class="grid grid-cols-6 items-center">
+              <div class="col-span-6 md:col-span-6 p-12" v-for="item in sponsorsXL" :key="item.id">
+                <center>
+                  <img :src="item[0]" style="max-height: 130px; cursor: pointer;" @click="window.open(item[1], '_')">
+                </center>
+              </div>
+              <div class="col-span-6 md:col-span-3 p-12" v-for="item in sponsorsLG" :key="item.id">
+                <center>
+                  <img :src="item[0]" style="max-height: 115px; cursor: pointer;" @click="window.open(item[1], '_')">
+                </center>
+              </div>
+              <div class="col-span-6 md:col-span-2 p-12" v-for="item in sponsorsMD" :key="item.id">
+                <center>
+                  <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
+                </center>
+              </div>
+              <div class="col-span-6 md:col-span-2 p-12" v-for="item in sponsorsSM" :key="item.id">
+                <center>
+                  <img :src="item[0]" style="max-height: 90px; cursor: pointer;" @click="window.open(item[1], '_')">
+                </center>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
-
-      -->
-      <!-- FAQ -->
-      <!-- TODO: Stagger the FAQS -->
-
-      <div id="FAQ" class="h-full mt-6 md:mt-0 pb-10 leafy-bg" style="padding-top:6em;">
-        <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Frequently Asked Questions</p>
-        <div class="md:mt-12 mx-4 md:px-12 lg:px-32 lg:grid grid-cols-2 gap-12 place-content-center z-40">
-          <div v-for="faq in faqs" class="mt-8 lg:mt-0 py-8 px-8 border navy-border bg-offwhite rounded-2xl opacity-100">
-            <p class="text-xl md:text-2xl font-bold raleway-font navy">{{faq.title}}</p>
-            <p class="mt-5 text-l md:text-md opensans-font navy">{{faq.desc}}</p>
-          </div>
-        </div>
-      </div>
-
-      <!--
-        <div id="Sponsors" class="flex">
-        <p class="pb-10 px-8 md:px-32 navy">
-        Interested in sponsoring? Reach out to us at <a class="underline"
-        href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
-        </p>
-        </div>
-      -->
-
-      <!-- SPONSORS -->
-      <div class="bg-offwhite mt-4" id="Sponsors" style="padding-top:6em;">
-        <p class="flex px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Sponsored By</p>
-        <div class="faq-cont">
-          <div class="grid grid-cols-6 items-center">
-            <div class="col-span-6 md:col-span-6 p-12" v-for="item in sponsorsXL" :key="item.id">
-              <center>
-                <img :src="item[0]" style="max-height: 130px; cursor: pointer;" @click="window.open(item[1], '_')">
-              </center>
-            </div>
-            <div class="col-span-6 md:col-span-3 p-12" v-for="item in sponsorsLG" :key="item.id">
-              <center>
-                <img :src="item[0]" style="max-height: 115px; cursor: pointer;" @click="window.open(item[1], '_')">
-              </center>
-            </div>
-            <div class="col-span-6 md:col-span-2 p-12" v-for="item in sponsorsMD" :key="item.id">
-              <center>
-                <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
-              </center>
-            </div>
-            <div class="col-span-6 md:col-span-2 p-12" v-for="item in sponsorsSM" :key="item.id">
-              <center>
-                <img :src="item[0]" style="max-height: 90px; cursor: pointer;" @click="window.open(item[1], '_')">
-              </center>
+          <p class="flex pb-8 px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Our Partners</p>
+          <div class="faq-cont">
+            <div class="grid grid-cols-3 justify-items-center items-center">
+              <div class="col-span-3 md:col-span-1 p-12" v-for="item in partners" :key="item.id">
+                <center>
+                  <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
+                </center>
+              </div>
             </div>
           </div>
+
+
+          <p class="pb-10 px-8 md:px-32 navy">
+          Interested in sponsoring? Reach out to us at <a class="underline"
+                                                          href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+          </p>
         </div>
-
-        <p class="flex pb-8 px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Our Partners</p>
-        <div class="faq-cont">
-          <div class="grid grid-cols-3 justify-items-center items-center">
-            <div class="col-span-3 md:col-span-1 p-12" v-for="item in partners" :key="item.id">
-              <center>
-                <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
-              </center>
-            </div>
-          </div>
-        </div>
-
-
-        <p class="pb-10 px-8 md:px-32 navy">
-        Interested in sponsoring? Reach out to us at <a class="underline"
-                                                        href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
-        </p>
-      </div>
 
 
     </div>
