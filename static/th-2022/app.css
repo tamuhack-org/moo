@@ -42,7 +42,7 @@
 
 /* FAQ Section */
 @media only screen and (min-width: 901px) {
-    .faq-container {
+    .faq-cont {
         padding: 150px;
         padding-top: 0px;
         padding-bottom: 75px;
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .faq-container {
+    .faq-cont {
         padding: 50px;
         padding-top: 25px;
         padding-bottom: 25px;
@@ -58,7 +58,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .faq-container {
+    .faq-cont {
         padding: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
