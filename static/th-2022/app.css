@@ -1,0 +1,98 @@
+* {
+    outline: none;
+    text-decoration: none;
+}
+
+/* Navbar stuff */
+
+.navbar {
+    background-color: #FAFAFA;
+    margin: 0!important;
+}
+
+.navbar-menu {
+    background-color: #FAFAFA;
+    width: 100vw;
+    float: left;
+}
+
+.nav-container {
+    position: relative;
+    padding-right: 0px !important;
+    margin-bottom: 79px;
+}
+
+.navbar-toggler {
+    border-color: transparent!important;
+}
+
+#top-nav-bar {
+    z-index: 10000;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 78vw;
+}
+
+#top-nav-bar .navbar-brand {
+    margin-top: -16px;
+    margin-left: 30px;
+}
+
+/* FAQ Section */
+@media only screen and (min-width: 901px) {
+    .faq-cont {
+        padding: 150px;
+        padding-top: 0px;
+        padding-bottom: 75px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .faq-cont {
+        padding: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .faq-cont {
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+/* SCHEDULE */
+@media only screen and (max-width: 780px) {
+    .schedule {
+        position: relative;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border-color: black;
+        border-radius: 2rem;
+    }
+}
+
+@media only screen and (min-width: 781px) {
+    .schedule {
+        position: relative;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 3rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border-color: black;
+        border-radius: 2rem;
+    }
+}
+
