@@ -348,40 +348,38 @@ html {
           <div class="lg:grid grid-cols-2 gap-12 place-content-center">
             <div class="">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
-              <div v-for="event in eventsSaturday" class="flex">
+              <div v-for="event in eventsSaturday" class="flex items-center">
                 <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <img v-if="event.type === 'food'" class="w-20px h-20px" style="width:25px" src="./../static/th-2022/food.svg">
-                <img v-else-if="event.type === 'event'" class="h-20px w-20px" style="width:25px" src="./../static/th-2022/minievent.svg">
-                <img v-else-if="event.type === 'workshop'" class="h-20px w-20px" style="width:25px" src="./../static/th-2022/workshop.svg">
-                <img v-else-if="event.type === 'general'" class="h-20px w-20px" style="width:25px" src="./../static/th-2022/event.svg">
-                <p class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                <p class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
             <div class="mt-16 md:mt-0">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
-              <div v-for="event in eventsSunday" class="flex">
+              <div v-for="event in eventsSunday" class="flex items-center">
                 <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <img v-if="event.type === 'food'" class="h-20px w-20px" style="width:25px" src="./../static/th-2022/food.svg">
-                <img v-else-if="event.type === 'event'" class="h-20px w-20px" style="width:25px" src="./../static/th-2022/minievent.svg">
-                <img v-else-if="event.type === 'workshop'" style="width:25px" class="h-20px w-20px" src="./../static/th-2022/workshop.svg">
-                <img v-else-if="event.type === 'general'" style="width:25px" class="h-20px w-20px" src="./../static/th-2022/event.svg">
-                <p class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                <p class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
-          </div>
-          <div class="mt-20 schedule border-2 navy-border rounded-lg w-1/2 md:mt-10">
-            <div class="lg:grid grid-cols-3">
-              <div class="lg:grid grid-cols-2 flex justify-between">
-                <img class=""src="./../static/th-2022/workshop.svg">
-                <p class="text-left font-normal text-md opensans-font navy whitespace-nowrap">Workshop</p>
+            <div class="flex border-2 navy-border rounded-lg px-4 py-2" >
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Food</p>
               </div>
-              <div class="lg:grid grid-cols-2 flex justify-between">
-                <img src="./../static/th-2022/food.svg">
-                <p class="text-left font-normal text-md opensans-font navy whitespace-nowrap">Food</p>
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Events</p>
               </div>
-              <div class="lg:grid grid-cols-2 flex justify-between">
-                <img src="./../static/th-2022/minievent.svg">
-                <p class="text-left font-normal text-md opensans-font navy whitespace-nowrap">Mini Event</p>
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Workshops</p>
               </div>
             </div>
           </div>
