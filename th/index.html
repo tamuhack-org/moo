@@ -379,41 +379,47 @@ html {
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
               <div v-for="event in eventsSaturday" class="flex items-center">
                 <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
-                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
-                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
-                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
-                <p style="width:50%" class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
+                <div class="hidden lg:flex" >
+                  <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                  <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                  <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                  <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                </div>
+                <p class="w-full sm:w-1/2 my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
             <div class="mt-16 md:mt-0">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
               <div v-for="event in eventsSunday" class="flex items-center">
                 <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
-                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
-                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
-                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
-                <p style="width:50%" class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
+                <div class="hidden lg:flex" >
+                  <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                  <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                  <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                  <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                </div>
+                <p class="w-full sm:w-1/2 my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
-            <div class="hidden sm:flex border-2 justify-center navy-border rounded-lg py-2" >
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Food</p>
+            <div class="hidden lg:inline-flex border-2 justify-center navy-border rounded-lg py-2" >
+              <div class="flex">
+                <div class="flex items-center pr-2">
+                  <img src="./../static/th-2022/food.svg" class="m-2" style="width:20px; height:20px">
+                  <p class="font-medium text-md opensans-font navy">Food</p>
+                </div>
+                <div class="flex items-center px-2">
+                  <img src="./../static/th-2022/minievent.svg" class="m-2" style="width:20px; height:20px">
+                  <p class="font-medium text-md opensans-font navy">Mini-event</p>
+                </div>
               </div>
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Events</p>
-              </div>
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Workshops</p>
+              <div class="flex items-center pl-2">
+                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:20px; height:20px">
+                <p class="font-medium text-md opensans-font navy">Workshop</p>
               </div>
             </div>
           </div>
 
-            <div class="sm:hidden border-2 justify-center navy-border rounded-lg" >
+            <div class="hidden border-2 justify-center navy-border rounded-lg px-3 py-2" >
               <div class="flex justify-center">
               <div class="flex items-center pr-3">
                 <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
@@ -425,6 +431,10 @@ html {
               </div>
               </div>
               <div class="flex justify-center">
+              <div class="flex items-center px-2">
+                <img src="./../static/th-2022/minievent.svg" class="m-2" style="width:20px; height:20px">
+                <p class="font-medium text-md opensans-font navy">Mini-events</p>
+              </div>
               <div class="flex items-center pl-3">
                 <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
                 <p class="font-medium text-md opensans-font navy">Workshops</p>
@@ -804,13 +814,13 @@ html {
               },
               {
                 name: "Best Social Good Hack",
-                description: "Best hack that promotes social good",
-                prize: "JBL Flip 4 Bluetooth Speaker"
+                description: "Best hack that promotes social good.",
+                prize: "TBD"
               },
               {
-                name: "American Airlines Challenge",
-                description: "Thousands of people fly American each and every day. This awesome responsibility opens the door to incredible opportunities. Help us elevate the customer travel experience, boost operational efficiences and employee performance (baggage handling, gate agents, etc.), or enhance American's brand image with your innovative hacks!",
-                prize: "Up to 75,000 AAdvantage miles, one round trip international"
+                name: "CTF Mini-Event Winners",
+                description: 'Compete with other hackers in a "Capture the Flag" mini-event. A CTF is a kind of information security competition that challenges contestants to solve a variety of tasks ranging from a scavenger hunt on wikipedia and basic programming exercises, to hacking your way into a server to steal data',
+                prize: "Amazon Gift Cards"
               },
             ],
             sponsorsXL: [
