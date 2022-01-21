@@ -14,6 +14,7 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+
     <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
@@ -319,7 +320,7 @@ html {
       </div>
 
       <!-- ABOUT -->
-      <div id="Info" class="mt-20 pb-24" style="padding-top: 6em">
+      <div id="Info" class="mt-20 " style="padding-top: 6em">
         <div class="flex w-full justify-between">
           <div class="flex justify-between px-8 md:px-32">
             <div class="w-full lg:w-1/2">
@@ -343,31 +344,109 @@ html {
 
       <!-- SCHEDULE -->
       <!--
-        <div id="Schedule" class="relative h-full mt-6 md:mt-28 pb-36" style="padding-top:6em;">
-        <p class="flex pb-4 px-6 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
+      <div id="Schedule" class="relative h-full mt-6 md:mt-20 pb-36" style="padding-top:6em;">
+        <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
         <div class="schedule border-4 navy-border rounded-3xl">
-        <div class="lg:grid grid-cols-2 gap-12 place-content-center">
-        <div class="">
-        <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
-        <div v-for="event in eventsSaturday" class="flex">
-        <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-        <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
-        </div>
-        </div>
-        <div class="mt-16 md:mt-0">
-        <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
-        <div v-for="event in eventsSunday" class="flex">
-        <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap ">{{event.time}}</p>
-        <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
-        </div>
-        </div>
-        </div>
+          <div class="lg:grid grid-cols-2 gap-12 place-content-center">
+            <div class="">
+              <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
+              <div v-for="event in eventsSaturday" class="flex">
+                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+              </div>
+            </div>
+            <div class="mt-16 md:mt-0">
+              <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
+              <div v-for="event in eventsSunday" class="flex">
+                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap ">{{event.time}}</p>
+                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="hidden lg:flex justify-end absolute bottom-0 inset-x-0">
-        <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
+          <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
         </div>
+      </div>
+      -->
+
+      <!-- SCHEDULE -->
+      <div id="Schedule" class="relative h-full mt-6 md:mt-20 pb-36" style="padding-top:6em;">
+        <p class="px-8 flex pb-4 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
+        <div class="schedule border-4 navy-border rounded-3xl">
+          <div class="lg:grid grid-cols-2 gap-12 place-content-center">
+            <div class="">
+              <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
+              <div v-for="event in eventsSaturday" class="flex items-center">
+                <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+                <div class="hidden lg:flex" >
+                  <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                  <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                  <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                  <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                </div>
+                <p class="w-full sm:w-1/2 my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
+              </div>
+            </div>
+            <div class="mt-16 md:mt-0">
+              <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
+              <div v-for="event in eventsSunday" class="flex items-center">
+                <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+                <div class="hidden lg:flex" >
+                  <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                  <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                  <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                  <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                </div>
+                <p class="w-full sm:w-1/2 my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
+              </div>
+            </div>
+            <div class="hidden lg:inline-flex border-2 justify-center navy-border rounded-lg py-2" >
+              <div class="flex">
+                <div class="flex items-center pr-2">
+                  <img src="./../static/th-2022/food.svg" class="m-2" style="width:20px; height:20px">
+                  <p class="font-medium text-md opensans-font navy">Food</p>
+                </div>
+                <div class="flex items-center px-2">
+                  <img src="./../static/th-2022/minievent.svg" class="m-2" style="width:20px; height:20px">
+                  <p class="font-medium text-md opensans-font navy">Mini-event</p>
+                </div>
+              </div>
+              <div class="flex items-center pl-2">
+                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:20px; height:20px">
+                <p class="font-medium text-md opensans-font navy">Workshop</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="hidden border-2 justify-center navy-border rounded-lg px-3 py-2" >
+              <div class="flex justify-center">
+              <div class="flex items-center pr-3">
+                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Food</p>
+              </div>
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Events</p>
+              </div>
+              </div>
+              <div class="flex justify-center">
+              <div class="flex items-center px-2">
+                <img src="./../static/th-2022/minievent.svg" class="m-2" style="width:20px; height:20px">
+                <p class="font-medium text-md opensans-font navy">Mini-events</p>
+              </div>
+              <div class="flex items-center pl-3">
+                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Workshops</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        <div class="hidden lg:flex justify-end absolute bottom-0 inset-x-0">
+          <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
         </div>
-        --->
+      </div>
+
 
         <!--Event Information-->
         <div id="EventInfo" class="h-full">
@@ -409,36 +488,34 @@ html {
 
 
         <!-- PRIZES -->
-        <!--
-          <div id="Prizes" class="h-full mt-6 md:mt-28 " style="padding-top:6em;">
+        <div id="Prizes" class="h-full md:mt-4" style="padding-top:6em;">
           <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Prizes</p>
-          <div class="md:mt-12 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
-          <div class="leftcol lg:w-1/2">
-          <div v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-          <div class="border-2 navy-border rounded-md px-8 py-4">
-          <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
-          <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-          <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
-          </div>
-          </div>
-          <div class="">
-          <img class="mt-12 lg:w-full lg:h-full" src="../static/th-2022/Cat.png">
-          </div>
-          </div>
-          <div class="hidden lg:block lg:w-1/2">
-          <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-          <div class="border-2 navy-border rounded-md px-8 py-4">
-          <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
-          <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-          <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
-          </div>
-          </div>
-          </div>
+          <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
+            <div class="leftcol lg:w-1/2">
+              <div v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+                <div class="border-2 navy-border rounded-md px-8 py-4">
+                  <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
+                  <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+                </div>
+              </div>
+              <div class="">
+                <img class="mt-12 lg:w-full lg:h-full" src="../static/th-2022/Cat.png">
+              </div>
+            </div>
+            <div class="hidden lg:block lg:w-1/2">
+              <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+                <div class="border-2 navy-border rounded-md px-8 py-4">
+                  <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
+                  <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+                </div>
+              </div>
+            </div>
 
           </div>
-          </div>
+        </div>
 
-        -->
         <!-- FAQ -->
         <!-- TODO: Stagger the FAQS -->
 
@@ -465,23 +542,28 @@ html {
         <div class="bg-offwhite mt-4" id="Sponsors" style="padding-top:6em;">
           <p class="flex px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Sponsored By</p>
           <div class="faq-cont">
-            <div class="grid grid-cols-6 items-center">
-              <div class="col-span-6 md:col-span-6 p-12" v-for="item in sponsorsXL" :key="item.id">
+            <div class="grid grid-cols-12 items-center">
+              <div class="col-span-12 md:col-span-12 p-12" v-for="item in sponsorsXL" :key="item.id">
                 <center>
                   <img :src="item[0]" style="max-height: 130px; cursor: pointer;" @click="window.open(item[1], '_')">
                 </center>
               </div>
-              <div class="col-span-6 md:col-span-3 p-12" v-for="item in sponsorsLG" :key="item.id">
+              <div class="col-span-12 md:col-span-6 p-12" v-for="item in sponsorsLG" :key="item.id">
                 <center>
                   <img :src="item[0]" style="max-height: 115px; cursor: pointer;" @click="window.open(item[1], '_')">
                 </center>
               </div>
-              <div class="col-span-6 md:col-span-2 p-12" v-for="item in sponsorsMD" :key="item.id">
+              <div class="col-span-12 md:col-span-4 p-12" v-for="item in sponsorsMD" :key="item.id">
                 <center>
                   <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
                 </center>
               </div>
-              <div class="col-span-6 md:col-span-2 p-12" v-for="item in sponsorsSM" :key="item.id">
+              <div class="col-span-12 md:col-span-4 py-12 px-20" v-for="item in sponsorsSM" :key="item.id">
+                <center>
+                  <img :src="item[0]" style="max-height: 90px; cursor: pointer;" @click="window.open(item[1], '_')">
+                </center>
+              </div>
+              <div class="col-span-12 md:col-span-3 py-12" v-for="item in sponsorsXS" :key="item.id">
                 <center>
                   <img :src="item[0]" style="max-height: 90px; cursor: pointer;" @click="window.open(item[1], '_')">
                 </center>
@@ -491,8 +573,8 @@ html {
 
           <p class="flex pb-8 px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Our Partners</p>
           <div class="faq-cont">
-            <div class="grid grid-cols-3 justify-items-center items-center">
-              <div class="col-span-3 md:col-span-1 p-12" v-for="item in partners" :key="item.id">
+            <div class="grid grid-cols-4 justify-items-center items-center">
+              <div class="col-span-4 md:col-span-1 p-12" v-for="item in partners" :key="item.id">
                 <center>
                   <img :src="item[0]" style="max-height: 100px; cursor: pointer;" @click="window.open(item[1], '_')">
                 </center>
@@ -536,7 +618,7 @@ html {
             },
             // Store an array. Useful for looping
             //links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
-            links: ["Info", "FAQ", "Sponsors"],
+            links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
             faqs: [
               {
                 title: "Who can attend?",
@@ -597,42 +679,47 @@ html {
                 type: "food"
               },
               {
-                time: "01:00 PM",
+                time: "12:30 PM",
                 event: "American Airlines Workshop",
-                type: "general"
+                type: "workshop"
               },
               {
-                time: "02:00 PM",
-                event: "GM Workshop",
+                time: "01:45 PM",
+                event: "Ford Workshop",
                 type: "workshop"
               },
               {
                 time: "03:00 PM",
+                event: "GM Workshop",
+                type: "workshop"
+              },
+              {
+                time: "03:45 PM",
                 event: "Credera Workshop",
                 type: "workshop"
               },
               {
-                time: "04:00 PM",
+                time: "04:30 PM",
                 event: "Phillips66 Workshop",
                 type: "workshop"
               },
               {
-                time: "05:00 PM",
+                time: "05:15 PM",
                 event: "CBRE Workshop",
                 type: "workshop"
               },
               {
-                time: "06:00 PM",
+                time: "07:00 PM",
                 event: "Statefarm Workshop",
                 type: "workshop"
               },
               {
-                time: "07:00 PM",
+                time: "07:30 PM",
                 event: "Dinner",
                 type: "food"
               },
               {
-                time: "08:00 PM",
+                time: "08:30 PM",
                 event: "American Airlines Mini-event",
                 type: "event"
               },
@@ -698,42 +785,42 @@ html {
               {
                 name: "Grand Prize",
                 description: "1st place overall prize.",
-                prize: "Dual Monitors"
+                prize: "iPad (Latest Generation)"
               },
               {
                 name: "Second Place",
                 description: "2nd place overall prize.",
-                prize: "iPad (latest generation)"
+                prize: "Airpods Pro"
               },
               {
                 name: "Third Place",
                 description: "3rd place overall prize.",
-                prize: "Oculus Quest 2"
+                prize: "Creality Ender 3 3D Printers"
               },
               {
                 name: "Best Beginner Hack",
                 description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
-                prize: "AirPods Pro"
+                prize: '1080p 160" Wi-fi Projector' 
               },
               {
                 name: "Best Hardware Hack",
                 description: "Best hack that involves hardware usage/integration.",
-                prize: "Raspberry Pi 4"
+                prize: "Keychron K2 Mechanical Keyboard"
               },
               {
-                name: "Best UI/UX",
+                name: "Best UI/UX Hack",
                 description: "In the world of hacking and engineering, a product must not only work well, but also provide the best user experience possible - design and usability goes a long way! Best hack that demonstrates clear design and usability intentions.",
-                prize: "Logitech MX Master 2S + Hard Case"
+                prize: "Fujifilm Intax Mini 9"
               },
               {
-                name: "Hacker Favorite",
-                description: "After hacking ends, browse through the submissions on the TAMUhack 2020 Devpost to vote for your favorite hack! Awarded to the team with the most amount of likes on their Devpost submission link.",
-                prize: "JBL Flip 4 Bluetooth Speaker"
+                name: "Best Social Good Hack",
+                description: "Best hack that promotes social good.",
+                prize: "TBD"
               },
               {
-                name: "American Airlines Challenge",
-                description: "Thousands of people fly American each and every day. This awesome responsibility opens the door to incredible opportunities. Help us elevate the customer travel experience, boost operational efficiences and employee performance (baggage handling, gate agents, etc.), or enhance American's brand image with your innovative hacks!",
-                prize: "Up to 75,000 AAdvantage miles, one round trip international"
+                name: "CTF Mini-Event Winners",
+                description: 'Compete with other hackers in a "Capture the Flag" mini-event. A CTF is a kind of information security competition that challenges contestants to solve a variety of tasks ranging from a scavenger hunt on wikipedia and basic programming exercises, to hacking your way into a server to steal data',
+                prize: "Amazon Gift Cards"
               },
             ],
             sponsorsXL: [
@@ -768,6 +855,10 @@ html {
             ],
             sponsorsSM: [
               [
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/CBRE_Group_logo.svg/440px-CBRE_Group_logo.svg.png',
+                'https://careers.cbre.com/en_US/careers'
+              ],
+              [
                 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/USAA_logo.svg/150px-USAA_logo.svg.png',
                 'https://www.usaajobs.com/'
               ],
@@ -775,6 +866,8 @@ html {
                 'https://www.abilities.ca/wp-content/uploads/2019/07/Accenture-logo-no-background.png',
                 'https://www.accenture.com/'
               ],
+            ],
+            sponsorsXS: [
               [
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/220px-Meta_Platforms_Inc._logo.svg.png',
                 'https://www.facebookcareers.com/'
@@ -791,15 +884,15 @@ html {
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/150px-Visa_2021.svg.png',
                 'https://usa.visa.com/careers.html'
               ],
-              // 'https://cdn.phenompeople.com/CareerConnectResources/BAHUGLOBAL/en_global/mobile/assets/images/v-1605495973744-header_logo.png',
-              // 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACXCAMAAAAvQTlLAAAAe1BMVEX///8Aak0AZkijxLoAZUXv9/V+qZvW5uEAXjsib1RLh3Hs9PNTi3b2+vmuy8K3zsbC2NIseF5mm4qowrksfWU4g22YvLBjkoE2e2J9o5R4pJTh7enb5OGErqFun47o7u0UclZaloRMj3qRsaTL2dQAWDKHqZueuK1DfWajdx49AAAD5klEQVR4nO2YbZeiIBSAhTBJxdSZssnRcpqp/v8vXFNAENBq292z59znW8TLI8K9oOcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wusTJOFTnQrTxcmSRoxpWmUWEgDX+t+3LlOapc6JOciQxhjokA/b3/tKRmD0fFabAPZOlhhE5TFH/2TdfgboxuVhplSXrBsfdqeRpDOa0nG5TfaBjRMpZe1CiYU74WZHxr9q0PlphfbIuvQk17d/6RiE159nd33k16HDXVVnvFCiO7nvNpH/nzKK9i452PWC9H1nBciMXvCq3S8wzu98IbNeSGUPu7lx+qoWN8jVPciVEEMsgpUL2sVUmleWh3Bz5cWVLyaDE5oF341TZNLmlL1yhbpwCLjo+BE9arfFBrekBSqF87XNr71xSWXPM0uacmYJYpwL7w7aC25GFG9uh8Sdu5bklj1IidziDFMPBLCy8hVSXqVWvGJmPOle3mlzQtX817fcrbW7koOrwt/pNTt5SNseY93eNX8NeLtRCW7Fyv6YVal22vdd0+2qhe5wwvxqtbkNPa6lh6TREveNPcUr/alDlXYesfVA9ULV8xEH1Gsevo2JS/jxEZhxWXRt+qFsveBjCdcuvRUL3TMDFb6PC+E19R0DV76aaEr4ZtriKtGFURCX/eyoE8M2/OHfp/Smoj3+MjX5VTervlGn/IiC80r5/u4ec4LN+IE5vY6yhH/nhdaVdHsfO1EBHrAq/7N94hoWM55YREX7vfyKj7iz33rXj9J90Wbg+aFjRqt/Fb3Gh0OugOC7pWI/bgwbUyvYzFk9GLDB+mDgPSKzx8d53O9ktPchd7Ba5cbFPqtw//hTx37Fp+RVxtX1UhYiUHVcw4e4hArK3Em0OP9HXHVexevYyrHO/JQzAP+m+fKQ2cu1ueER/LQVjzSE3mbnyfI2el14HlIz9v3eJU7sTpx5Vz7Di++mUnNnHmbt3zca5iwNl1sA7ua9NJOaGvR7nYjcnjx3p/w8jK5nTFtL8h5Xe8H8oPihVYX5Yy8F+mPXh70wnVqI9C90qMS7caR5cd975BBgEycC61edkgzCgkJmUjzd9zTrv5rvIx7bWV+l3jAi2j32ld6eeuja+B5L6J/B3iplxfE1N5kzgvTWv9u8lqv9uBatEn5US9CduKY+ae8PJYuv4709g1MRexHy0e3dreGJ3nRFd/lDK+ulHIvWz+yP7tX5xYkVR6rXDuvUxgbFMtEjf5lHPboXsm1qxx2i9CvwymWk2ct5mvYyjrGnUQcvZxFaj9+NMXUiQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD41/wCNLVOa+zeF+oAAAAASUVORK5CYII=',
-              // 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png',
-              // 'data:image/png;base64,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'
             ],
   partners: [
     [
       'https://images.squarespace-cdn.com/content/v1/5c464a9ab98a78b5f047db4a/1563212497020-EB185Z9094HLM5VFQNUU/ke17ZwdGBToddI8pDm48kB_x2tbxuRUlEA3jipT2Xr9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIwKmOtNifXcnXkCouJC1NsXOb-g5-hEW1KYJag4VRCUk/CSCE_logo_HMaroon.png',
       'https://engineering.tamu.edu/cse/index.html'
+    ],
+    [
+      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
+      'https://guayaki.com/'
     ],
     [
       'https://sustainability.tamu.edu/_images/sustainability-logo.gif',
@@ -809,6 +902,7 @@ html {
       'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
       'https://ultrapress.com/'
     ],
+
 
   ]
 }
