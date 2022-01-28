@@ -76,6 +76,7 @@
         margin-top: 3rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+        border: 4px solid #345562;
         border-color: #345562;
         border-radius: 2rem;
     }
