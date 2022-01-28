@@ -79,6 +79,10 @@ html {
       color: #345562;
     }
 
+    .navy-button {
+      background-color: #345562;
+    }
+
     .navy-border {
       border-color: #345562;
     }
@@ -312,9 +316,11 @@ html {
           <p class="flex justify-center my-2 text-xl sm:text-2xl font-bold raleway-font navy">Memorial Student Center</p>
           <div class="flex flex-col sm:flex-row justify-center mt-8">
             <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
+                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
             <a href="/mentor" target="_blank" rel="noopener noreferrer"
                                                                           class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-pink text-white font-bold custom-button">MENTOR</a>
+            <a href="https://www.signupgenius.com/go/60B0C48ABAB22A5FA7-tamuhack6/" target="_blank" rel="noopener noreferrer"
+                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center navy-button text-white font-bold custom-button">VOLUNTEER</a>                                                              
           </div>
         </div>
       </div>
@@ -342,6 +348,18 @@ html {
         </div>
       </div>
 
+      <!-- COVID GUIDELINES -->
+      <div id="COVID Guidelines" class="mt-20 " style="padding-top: 6em">
+        <div class="flex w-full justify-between">
+          <div class="flex justify-between px-8 md:px-32">
+            <div class="">
+              <p class="lg:text-left md:text-left font-extrabold text-4xl raleway-font baby-pink-txt">COVID-19 Guidelines</p>
+              <p class="mt-4 text-l font-semibold opensans-font navy">We’re doing everything we can to make TAMUhack as safe as possible for attendees and we need your help to do so. In-person attendees must satisfy one of the following criteria - a negative test* taken on or after January 15th, or proof of vaccination (presented digitally or physically). Failure to satisfy either of these requirements will deny entrance even if an acceptance has been received. Hackers are encouraged to participate virtually if they will be unable to fulfill the preconditions.</p>
+              <p class="mt-4 text-l font-semibold opensans-font navy">*Test must be a negative PCR, antibody, or Curative test (available around the Texas A&M campus and other universities) taken on or after January 15th, 2022. At home tests DO NOT count. </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- SCHEDULE -->
       <!--
       <div id="Schedule" class="relative h-full mt-6 md:mt-20 pb-36" style="padding-top:6em;">
@@ -473,7 +491,11 @@ html {
                 <div class="border-2 navy-border rounded-md px-8 py-4">
                   <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
                   <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+                  <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description2}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize1}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize2}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize3}}</p>
                 </div>
               </div>
               <div class="">
@@ -485,7 +507,11 @@ html {
                 <div class="border-2 navy-border rounded-md px-8 py-4">
                   <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
                   <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">Prize: {{prize.prize}}</p>
+                  <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description2}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize1}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize2}}</p>
+                  <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize3}}</p>
                 </div>
               </div>
             </div>
@@ -550,8 +576,13 @@ html {
 
           <p class="flex pb-8 px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Our Partners</p>
           <div class="faq-cont">
-            <div class="grid grid-cols-4 justify-items-center items-center">
-              <div class="col-span-4 md:col-span-1 p-12" v-for="item in partners" :key="item.id">
+            <div class="grid grid-cols-6 justify-items-center items-center">
+              <div class="col-span-6 md:col-span-2 p-12" v-for="item in partners1" :key="item.id">
+                <center>
+                  <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" style="max-height: 100px; cursor: pointer;"></a>
+                </center>
+              </div>
+              <div class="col-span-6 md:col-span-3 p-12" v-for="item in partners2" :key="item.id">
                 <center>
                   <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" style="max-height: 100px; cursor: pointer;"></a>
                 </center>
@@ -623,7 +654,15 @@ html {
               },
               {
                 title: "When is the deadline to apply for TAMUhack?",
-                desc: "The deadline to registration is January 21, at 23:59."
+                desc: "The deadline to registration is January 28, at 23:59."
+              },
+              {
+                title: "Will prizes be shipped to international winners?",
+                desc: "Unfortunately we are unable to ship prizes outside of the United States, but we will make alternate arrangements for non-US based winners."
+              },
+              {
+                title: "Are there any COVID-19 Guidelines that I need to follow to attend TAMUhack?",
+                desc: "You will need to either present a negative COVID-19 test taken on or after January 15th OR show proof of vaccination (presented digitally or physically). More detailed guidelines on our COVID-19 guidelines can be found on our 'About TAMUhack' section on our Info page."
               },
               {
                 title: "Will there be workshops or talks?",
@@ -662,7 +701,7 @@ html {
               },
               {
                 time: "12:30 PM",
-                event: "American Airlines Workshop",
+                event: "Intro to Web Development Workshop",
                 type: "workshop"
               },
               {
@@ -682,7 +721,7 @@ html {
               },
               {
                 time: "04:30 PM",
-                event: "Phillips66 Workshop",
+                event: "Phillips 66 Workshop",
                 type: "workshop"
               },
               {
@@ -692,7 +731,7 @@ html {
               },
               {
                 time: "07:00 PM",
-                event: "Statefarm Workshop",
+                event: "State Farm Workshop",
                 type: "workshop"
               },
               {
@@ -734,7 +773,7 @@ html {
               },
               {
                 time: "09:00 AM",
-                event: "Morning Yoga",
+                event: "Morning Yoga with Sabrina Lu",
                 type: "event"
               },
               {
@@ -767,43 +806,101 @@ html {
               {
                 name: "Grand Prize",
                 description: "1st place overall prize.",
-                prize: "iPad (Latest Generation)"
+                prize: "Prize: iPad (Latest Generation)"
               },
               {
                 name: "Second Place",
                 description: "2nd place overall prize.",
-                prize: "Airpods Pro"
+                prize: "Prize: Airpods Pro"
               },
               {
                 name: "Third Place",
                 description: "3rd place overall prize.",
-                prize: "Creality Ender 3 3D Printers"
+                prize: "Prize: Creality Ender 3 3D Printers"
               },
               {
                 name: "Best Beginner Hack",
                 description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
-                prize: '1080p 160" Wi-fi Projector' 
+                prize: 'Prize: 1080p 160" Wi-fi Projector' 
               },
               {
                 name: "Best Hardware Hack",
                 description: "Best hack that involves hardware usage/integration.",
-                prize: "Keychron K2 Mechanical Keyboard"
+                prize: "Prize: Keychron K2 Mechanical Keyboard"
               },
               {
                 name: "Best UI/UX Hack",
                 description: "In the world of hacking and engineering, a product must not only work well, but also provide the best user experience possible - design and usability goes a long way! Best hack that demonstrates clear design and usability intentions.",
-                prize: "Fujifilm Intax Mini 9"
+                prize: "Prize: Fujifilm Intax Mini 9"
               },
               {
-                name: "Best Social Good Hack",
-                description: "Best hack that promotes social good.",
-                prize: "JBL Clip 3 Bluetooth Speaker"
+                name: "Capital One Challenge",
+                description: 'Best Financial Hack',
+                prize: "Prize: x4 $200 Amazon Gift Cards"
               },
               {
                 name: "CTF Mini-Event Winners",
                 description: 'Compete with other hackers in a "Capture the Flag" mini-event. A CTF is a kind of information security competition that challenges contestants to solve a variety of tasks ranging from a scavenger hunt on wikipedia and basic programming exercises, to hacking your way into a server to steal data',
-                prize: "Amazon Gift Cards"
+                prize: "Prize: Amazon Gift Cards"
               },
+              {
+                name: "American Airlines Challenge",
+                description: 'Best Airline Hack',
+                prize: "Prize: TBD"
+              },
+              {
+                name: "State Farm Challenge",
+                description: 'State Farm sells more than auto insurance. State Farm offers customers "Drive Safe and Save," a mobile application that tracks driving habits in order to reward safe driving practices.',
+                description2: "Design a system that would allow State Farm to offer discounted home owners/renters insurance and/or life insurance based off of positive customer behavior.",
+                prize: "Prizes: ",
+                prize1: "1st - Oculus Quest 2",
+                prize2: "2nd - Power Beats Pro",
+                prize3: "3rd - Mechanical Keyboard",
+              },
+              {
+                name: "USAA Challenge",
+                description: 'Best Remote Learning Hack',
+                prize: "Prizes: ",
+                prize1: "1st - 4 ASUS Portable Monitors",
+                prize2: "2nd - Solar Power Banks",
+                prize3: "3rd - Smart LED Lamps"
+              },
+              {
+                name: "CBRE Challenge",
+                description: 'TBD',
+                prize: "Prize: x4 $100 VISA Gift Cards"
+              },
+              {
+                name: "Ford Challenge",
+                description: "Ford is challenging you to change the way drivers experience the road. From safety, navigation, fuel emissions, or comfort, build a hack that improves the way we travel. Whtether your focus is on building features like hands free mirror adjustment or crafting more efficient trips by improving navigation, we're excited to see the types of innovative solutions you and your team come up with. As an added bonus, Ford is giving each winning team member a $100 credit to the Ford store, usable towards a huge collection of amazing swag including sweatshirts, backpacks, hats, stickers, and so much more!",
+                prize: "Prize: $100 Ford Store Gift Cards"
+              },
+              {
+                name: "Pimco Challenge",
+                description: 'For 50 years, PIMCO has worked relentlessly to help millions of investors around the world pursue their financial goals while navigating market change. Our growing technology team plays a crucial role in that mission by building and improving applications that the firm uses to support our clients on the path to meeting their goals.',
+                description2: "For this challenge, we’d like to see Hacks that encourage good financial behavior and help to set individuals up for success in meeting their financial goals. Whether you choose to focus on saving, investing, building credit, financial literacy, or anything else you dream up, from our perspective, when you combine finance with technology, the sky’s the limit.",
+                prize: "Prizes: ",
+                prize1: "1st - $80 Amazon Gift Cards",
+                prize2: "2nd - $40 Amazon Gift Cards",
+              },
+              {
+                name: "JPMorgan Chase Challenge",
+                description: 'Best Hack for Social Good',
+                prize: "Prize: AirPod Pros"
+              },
+              {
+                name: "Credera Challenge",
+                description: 'Best Use of Serverless Technology',
+                prize: "Prize: Amazon Echo Dots"
+              },
+              {
+                name: "Google Cloud Challenge",
+                description: 'Best Use of Google Cloud',
+                prize: "Prizes: ",
+                prize1: "1st - Google Cloud branded backpack",
+                prize2: "2nd - Google Cloud Swag Box, Google Cloud credits, and Google Cloud Skills Boost Access",
+              },
+
             ],
             sponsorsXL: [
               [
@@ -868,25 +965,32 @@ html {
                 'https://usa.visa.com/careers.html'
               ],
             ],
-  partners: [
+  partners1: [
     [
       'https://images.squarespace-cdn.com/content/v1/5c464a9ab98a78b5f047db4a/1563212497020-EB185Z9094HLM5VFQNUU/ke17ZwdGBToddI8pDm48kB_x2tbxuRUlEA3jipT2Xr9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIwKmOtNifXcnXkCouJC1NsXOb-g5-hEW1KYJag4VRCUk/CSCE_logo_HMaroon.png',
       'https://engineering.tamu.edu/cse/index.html'
     ],
     [
-      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
-      'https://guayaki.com/'
+      'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
+      'https://ultrapress.com/'
     ],
     [
       'https://sustainability.tamu.edu/_images/sustainability-logo.gif',
       'https://sustainability.tamu.edu/'
     ],
+    
+  ],
+  partners2:[
+    
     [
-      'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
-      'https://ultrapress.com/'
+      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
+      'https://guayaki.com/'
     ],
-
-
+    [
+      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/440px-RedBullEnergyDrink.svg.png',
+      'https://redbull.com/'       
+    ],
+    
   ]
 }
 },
@@ -910,3 +1014,4 @@ html {
   </body>
 
 </html>
+
