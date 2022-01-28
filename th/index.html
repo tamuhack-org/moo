@@ -576,8 +576,13 @@ html {
 
           <p class="flex pb-8 px-8 md:px-32 baby-pink-txt text-4xl font-bold raleway-font">Our Partners</p>
           <div class="faq-cont">
-            <div class="grid grid-cols-4 justify-items-center items-center">
-              <div class="col-span-4 md:col-span-1 p-12" v-for="item in partners" :key="item.id">
+            <div class="grid grid-cols-6 justify-items-center items-center">
+              <div class="col-span-6 md:col-span-2 p-12" v-for="item in partners1" :key="item.id">
+                <center>
+                  <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" style="max-height: 100px; cursor: pointer;"></a>
+                </center>
+              </div>
+              <div class="col-span-6 md:col-span-3 p-12" v-for="item in partners2" :key="item.id">
                 <center>
                   <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" style="max-height: 100px; cursor: pointer;"></a>
                 </center>
@@ -888,7 +893,7 @@ html {
                 description: 'Best Use of Google Cloud',
                 prize: "Prizes: ",
                 prize1: "1st - Google Cloud branded backpack",
-                prize2: "2nd - Google Cloud credits and Google Cloud Skills Boost Access",
+                prize2: "2nd - Google Cloud Swag Box, Google Cloud credits, and Google Cloud Skills Boost Access",
               },
               {
                 name: "Capital One Challenge",
@@ -959,25 +964,32 @@ html {
                 'https://usa.visa.com/careers.html'
               ],
             ],
-  partners: [
+  partners1: [
     [
       'https://images.squarespace-cdn.com/content/v1/5c464a9ab98a78b5f047db4a/1563212497020-EB185Z9094HLM5VFQNUU/ke17ZwdGBToddI8pDm48kB_x2tbxuRUlEA3jipT2Xr9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIwKmOtNifXcnXkCouJC1NsXOb-g5-hEW1KYJag4VRCUk/CSCE_logo_HMaroon.png',
       'https://engineering.tamu.edu/cse/index.html'
     ],
     [
-      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
-      'https://guayaki.com/'
+      'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
+      'https://ultrapress.com/'
     ],
     [
       'https://sustainability.tamu.edu/_images/sustainability-logo.gif',
       'https://sustainability.tamu.edu/'
     ],
+    
+  ],
+  partners2:[
+    
     [
-      'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
-      'https://ultrapress.com/'
+      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
+      'https://guayaki.com/'
     ],
-
-
+    [
+      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/440px-RedBullEnergyDrink.svg.png',
+      'https://redbull.com/'       
+    ],
+    
   ]
 }
 },
