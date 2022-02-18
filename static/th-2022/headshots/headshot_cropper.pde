@@ -17,6 +17,7 @@ void setup ()
       PImage image = loadImage(pic.getAbsolutePath());
       PImage croppedImage = createImage(image.width, image.width, RGB);
       croppedImage.copy(image, 0, 500, image.width, image.width, 0, 0, image.width, image.width);
+      croppedImage.resize(360, 0);
       croppedImage.save(output_folder_path + pic.getName());
     }
   }
