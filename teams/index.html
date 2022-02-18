@@ -16,6 +16,10 @@
           .bg-offwhite {
             background-color: #FAFAFA;
           }
+
+          .bg-sky {
+            background-color: #EEF6FC;
+          }
       
           .raleway-font {
             font-family: 'Raleway', sans-serif;
@@ -64,7 +68,8 @@
           }
       
           .baby-blue {
-            background-color: #A4DCFF;
+            background-color: #EEF6FC;
+;
           }
       
           .baby-pink {
@@ -226,51 +231,38 @@
           }
           </style>
 </head>
-<body>
+
+<body class="bg-sky">
     
     <!-- NAVBAR -->
     <div
-        class="fixed md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bg-offwhite z-50">
+        class="fixed md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bg-sky z-50">
         <div>
           <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
-                                                         class="hidden md:flex text-4xl font-black futura-font navy">tamuhack</a>
+                                                         class="">
+                                                        <img class="hidden md:flex w-10" src=".\..\static\assets\th_logo.svg"></a>
           <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
-                                                         img class="md:hidden w-25" src="static/assets/th_logo.svg"></a>
+                                                         class="">
+                                                        <img class="md:hidden w-8" src=".\..\static\assets\th_logo.svg"></a>
         </div>
     </div>
 
     <!-- LANDING -->
-    <div id="Prizes" class="h-full md:mt-4" style="padding-top:6em;">
-        <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Prizes</p>
-        <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
-          <div class="leftcol lg:w-1/2">
-            <div v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-              <div class="border-2 navy-border rounded-md px-8 py-4">
-                <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
-                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description2}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize1}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize2}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize3}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="hidden lg:block lg:w-1/2">
-            <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-              <div class="border-2 navy-border rounded-md px-8 py-4">
-                <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
-                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
-                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description2}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize1}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize2}}</p>
-                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize3}}</p>
-              </div>
-            </div>
-          </div>
-
+    <div id="landing" class="h-full ">
+      <div class="flex justify-center pt-32 md:pt-16">
+        <img class="p-4 w-5/5 max-h-52 sm:max-h-screen md:w-4/5 lg:w-3/5" src=".\..\static\assets\tamuhacfull_k.svg">
+      </div>
+      <div class="mt-2">
+        <p class="flex justify-center text-xl sm:text-2xl font-bold raleway-font navy">January 29 - 30, 2022</p>
+        <p class="flex justify-center my-2 text-xl sm:text-2xl font-bold raleway-font navy">Memorial Student Center</p>
+        <div class="flex flex-col sm:flex-row justify-center mt-8">
+          <a href="https://discord.gg/k7U2MMHF" target="_blank" rel="noopener noreferrer"
+                                                                        class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">DISCORD</a>
+          <a href="https://tamuhack2022.devpost.com/" target="_blank" rel="noopener noreferrer"
+                                                                  class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-pink text-white font-bold custom-button">DEVPOST</a>                                                              
         </div>
       </div>
+    </div>
+    
 </body>
 </html>
