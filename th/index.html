@@ -373,25 +373,70 @@ html {
       <!-- SCHEDULE -->
       <!--
       <div id="Schedule" class="relative h-full mt-6 md:mt-20 pb-36" style="padding-top:6em;">
+<<<<<<< HEAD
+        <p class="px-8 flex pb-4 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
+=======
         <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
+>>>>>>> naveen-dev
         <div class="schedule border-4 navy-border rounded-3xl">
           <div class="lg:grid grid-cols-2 gap-12 place-content-center">
             <div class="">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
-              <div v-for="event in eventsSaturday" class="flex">
-                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+              <div v-for="event in eventsSaturday" class="flex items-center">
+                <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                <p style="width:50%" class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
             <div class="mt-16 md:mt-0">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
-              <div v-for="event in eventsSunday" class="flex">
-                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap ">{{event.time}}</p>
-                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
+              <div v-for="event in eventsSunday" class="flex items-center">
+                <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
+                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
+                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
+                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
+                <p style="width:50%" class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
+              </div>
+            </div>
+            <div class="hidden sm:flex border-2 justify-center navy-border rounded-lg py-2" >
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Food</p>
+              </div>
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Events</p>
+              </div>
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Workshops</p>
               </div>
             </div>
           </div>
-        </div>
+
+            <div class="sm:hidden border-2 justify-center navy-border rounded-lg" >
+              <div class="flex justify-center">
+              <div class="flex items-center pr-3">
+                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Food</p>
+              </div>
+              <div class="flex items-center px-3">
+                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Events</p>
+              </div>
+              </div>
+              <div class="flex justify-center">
+              <div class="flex items-center pl-3">
+                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
+                <p class="font-medium text-md opensans-font navy">Workshops</p>
+              </div>
+              </div>
+            </div>
+          </div>
         <div class="hidden lg:flex justify-end absolute bottom-0 inset-x-0">
           <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
         </div>
@@ -679,6 +724,14 @@ html {
                 desc: "Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event."
               },
               {
+                title: "Will prizes be shipped to international participants?",
+                desc: "Unfortunately we are unable to ship prizes outside of the United Status, but we will make alternate arrangements for non-US based winners."
+              },
+              {
+                title: "Are there any COVID-19 guidelines that I need to follow to attend TAMUhack?",
+                desc: "You will need to present a negative COVID-19 test within one week of the event if you are attending in-person."
+              },
+              {
                 title: "Have additional questions?",
                 desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
               }
@@ -725,8 +778,13 @@ html {
                 type: "workshop"
               },
               {
+<<<<<<< HEAD
+                time: "04:00 PM",
+                event: "Phillips 66 Workshop",
+=======
                 time: "03:45 PM",
                 event: "Credera Workshop",
+>>>>>>> naveen-dev
                 type: "workshop"
               },
               {
@@ -740,8 +798,13 @@ html {
                 type: "workshop"
               },
               {
+<<<<<<< HEAD
+                time: "06:00 PM",
+                event: "State Farm Workshop",
+=======
                 time: "07:00 PM",
                 event: "State Farm Workshop (online)",
+>>>>>>> naveen-dev
                 type: "workshop"
               },
               {

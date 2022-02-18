@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Teams at TAMUhack</title>
+    <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
+
+    <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
+    <style>
+      html {
+        background-color: #FAFAFA;
+      }
+      
+          .bg-offwhite {
+            background-color: #FAFAFA;
+          }
+      
+          .raleway-font {
+            font-family: 'Raleway', sans-serif;
+          }
+      
+          .futura-font {
+            font-family: 'Futura';
+          }
+      
+          @font-face {
+            font-family: 'Futura';
+            src: url(./../static/fonts/Futura/Futura-Bold/futura-bold.ttf);
+            font-weight: 900;
+          }
+      
+          @font-face {
+            font-family: 'Futura';
+            src: url(./../static/fonts/Futura/Futura-Light/futura-light.ttf);
+            font-weight: light;
+          }
+      
+          @font-face {
+            font-family: 'Avenir Next';
+            src: url(./../static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
+            font-weight: regular;
+          }
+      
+          .opensans-font {
+            font-family: 'Open Sans', sans-serif;
+          }
+      
+          .navy {
+            color: #345562;
+          }
+      
+          .navy-button {
+            background-color: #345562;
+          }
+      
+          .navy-border {
+            border-color: #345562;
+          }
+      
+          .kinda-black {
+            color: #232323;
+          }
+      
+          .baby-blue {
+            background-color: #A4DCFF;
+          }
+      
+          .baby-pink {
+            background-color: #FFA4C6;
+            color: #B4B4B4;
+          }
+      
+          .baby-pink-text {
+            color: #F3859B;
+          }
+      
+          .baby-blue-text {
+            color: #7FC0FA;
+          }
+      
+          .baby-pink-txt {
+            color: #FFA4C6;
+          }
+      
+          .custom-button {
+            font-family: "Avenir Next";
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 5px;
+          }
+      
+          .custom-button-grayed {
+            font-family: "Avenir Next";
+            color:#B4B4B4;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px 5px #B4B4B4;
+          }
+      
+          .custom-button-grayed:hover {
+            font-family: "Avenir Next";
+            color:#B4B4B4;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 5px;
+          }
+      
+          .custom-button:hover {
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px 5px #375764;
+          }
+      
+      
+          @media only screen and (min-width: 901px) {
+            .faq-cont {
+              padding: 150px;
+              padding-top: 0px;
+              padding-bottom: 75px;
+            }
+          }
+      
+          @media only screen and (max-width: 900px) {
+            .faq-cont {
+              padding: 50px;
+              padding-top: 25px;
+              padding-bottom: 25px;
+            }
+          }
+      
+          @media only screen and (max-width: 600px) {
+            .faq-cont {
+              padding: 10px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+          }
+      
+          @media only screen and (max-width: 780px) {
+            .schedule {
+              position: relative;
+              padding-left: 1.5rem;
+              padding-right: 1.5rem;
+              padding-top: 2rem;
+              padding-bottom: 2rem;
+              margin-top: 3rem;
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+              border: 4px solid #345562;
+              border-radius: 2rem;
+            }
+          }
+      
+          @media only screen and (min-width: 781px) {
+            .schedule {
+              position: relative;
+              padding-left: 4rem;
+              padding-right: 4rem;
+              padding-top: 2rem;
+              padding-bottom: 2rem;
+              margin-top: 3rem;
+              margin-left: 4rem;
+              margin-right: 4rem;
+              border: 4px solid #345562;
+              border-radius: 2rem;
+            }
+          }
+      
+          @media (min-width: 768px) {
+            .leafy-bg {
+              background-image: url("./../static/th-2022/Leaves.png");
+              min-width: 500px;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              z-index: 0;
+            }
+          }
+      
+          @media (max-width: 640px) {
+            .custom-button {
+              margin-left: auto;
+              margin-right: auto;
+            }
+      
+            .custom-button-grayed {
+              margin-left: auto;
+              margin-right: auto;
+            }
+      
+            .no-pic {
+              display: none;
+            }
+      
+            .leafy-bg {
+              background-image: url("./../static/th-2022/Leaves.png");
+              min-width: 100px;
+      
+              background-size: 100% 15%;
+              background-repeat: repeat-y;
+            }
+      
+            .title-txt {
+              margin-left: auto;
+              margin-right: auto;
+              content: center;
+      
+            }
+      
+            .par-txt {
+              margin-left: auto;
+              margin-right: auto;
+              content: center;
+            }
+      
+            .custom-grid {
+              grid: grid-cols-1;
+            }
+      
+            .custom-margin {
+              margin-top: 5;
+            }
+          }
+          </style>
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <div
+        class="fixed md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bg-offwhite z-50">
+        <div>
+          <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
+                                                         class="hidden md:flex text-4xl font-black futura-font navy">tamuhack</a>
+          <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
+                                                         img class="md:hidden w-25" src="static/assets/th_logo.svg"></a>
+        </div>
+    </div>
+
+    <!-- LANDING -->
+    <div id="Prizes" class="h-full md:mt-4" style="padding-top:6em;">
+        <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Prizes</p>
+        <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
+          <div class="leftcol lg:w-1/2">
+            <div v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+              <div class="border-2 navy-border rounded-md px-8 py-4">
+                <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
+                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
+                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description2}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize1}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize2}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize3}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block lg:w-1/2">
+            <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+              <div class="border-2 navy-border rounded-md px-8 py-4">
+                <p class="text-xl md:text-2xl font-extrabold raleway-font navy">{{prize.name}}</p>
+                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description}}</p>
+                <p class="mt-3 text-l md:text-md font-md opensans-font navy">{{prize.description2}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize1}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize2}}</p>
+                <p class="mt-3 text-l md:text-md font-bold opensans-font navy">{{prize.prize3}}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+</body>
+</html>
