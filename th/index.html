@@ -315,28 +315,28 @@ html {
           <p class="flex justify-center text-xl sm:text-2xl font-bold raleway-font navy">January 29 - 30, 2022</p>
           <p class="flex justify-center my-2 text-xl sm:text-2xl font-bold raleway-font navy">Memorial Student Center</p>
           <div class="flex flex-col sm:flex-row justify-center mt-8">
-            <!-- <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>-->
+            <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
+                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center baby-blue text-white font-bold custom-button">APPLY</a>
             <a href="https://discord.gg/k7U2MMHF" target="_blank" rel="noopener noreferrer"
-                                                                          class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-blue text-white font-bold custom-button">DISCORD</a>
+                                                                          class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-pink text-white font-bold custom-button">DISCORD</a>
             <a href="https://tamuhack2022.devpost.com/" target="_blank" rel="noopener noreferrer"
-                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center baby-pink text-white font-bold custom-button">DEVPOST</a>                                                              
+                                                                     class="px-8 py-4 w-4/5 sm:w-60 min-w-min mt-4 sm:mr-5 text-center navy-button text-white font-bold custom-button">DEVPOST</a>                                                              
           </div>
         </div>
       </div>
 
-      <!-- TWITCH STREAM 
+      <!-- TWITCH STREAM -->
       <div id="Stream" class="hidden md:flex mt-10 " style="padding-top: 6em">
         <div class="flex w-full justify-center">
           <div class="flex justify-center px-8 md:px-32">
             <iframe src="https://player.twitch.tv/?channel=tamuhack&parent=tamuhack.com" frameborder="0" allowfullscreen="true" scrolling="no" height="398" width="640"></iframe>
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/86YLFOog4GM" title="TAMUhack Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/86YLFOog4GM" title="TAMUhack Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- ABOUT -->
-      <div id="Info" class="mt-20" style="padding-top: 6em">
+      <div id="Info" class="mt-20 " style="padding-top: 6em">
         <div class="flex w-full justify-between">
           <div class="flex justify-between px-8 md:px-32">
             <div class="w-full lg:w-1/2">
@@ -373,66 +373,25 @@ html {
       <!-- SCHEDULE -->
       <!--
       <div id="Schedule" class="relative h-full mt-6 md:mt-20 pb-36" style="padding-top:6em;">
-        <p class="px-8 flex pb-4 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
+        <p class="flex pb-4 px-8 md:px-32 baby-pink-txt text-4xl font-extrabold raleway-font">Schedule</p>
         <div class="schedule border-4 navy-border rounded-3xl">
           <div class="lg:grid grid-cols-2 gap-12 place-content-center">
             <div class="">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Saturday</p>
-              <div v-for="event in eventsSaturday" class="flex items-center">
-                <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
-                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
-                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
-                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
-                <p style="width:50%" class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
+              <div v-for="event in eventsSaturday" class="flex">
+                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
+                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
             <div class="mt-16 md:mt-0">
               <p class="lg:mt-8 md:mt-4 mb-8 md:text-left font-bold text-2xl raleway-font baby-blue-text">Sunday</p>
-              <div v-for="event in eventsSunday" class="flex items-center">
-                <p style="width:110px" class="my-3 lg:my-2 md:text-left md:my-3 font-bold text-lg opensans-font navy whitespace-nowrap">{{event.time}}</p>
-                <img v-if="event.type === 'food'" style="width:25px; height:25px" src="./../static/th-2022/food.svg">
-                <img v-else-if="event.type === 'event'" style="width:25px; height:25px" src="./../static/th-2022/minievent.svg">
-                <img v-else-if="event.type === 'workshop'" style="width:25px; height:25px" src="./../static/th-2022/workshop.svg">
-                <img v-else-if="event.type === 'general'" style="width:25px; height:25px" src="./../static/th-2022/event.svg">
-                <p style="width:50%" class="my-3 lg:my-2 md:text-left md:my-3 pl-8 font-medium text-md opensans-font navy ">{{event.event}}</p>
-              </div>
-            </div>
-            <div class="hidden sm:flex border-2 justify-center navy-border rounded-lg py-2" >
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Food</p>
-              </div>
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Events</p>
-              </div>
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Workshops</p>
+              <div v-for="event in eventsSunday" class="flex">
+                <p style="width:85px" class="lg:my-2 md:text-left font-bold text-lg opensans-font navy whitespace-nowrap ">{{event.time}}</p>
+                <p class="lg:my-2 md:text-left pl-8 font-semibold text-md opensans-font navy ">{{event.event}}</p>
               </div>
             </div>
           </div>
-
-            <div class="sm:hidden border-2 justify-center navy-border rounded-lg" >
-              <div class="flex justify-center">
-              <div class="flex items-center pr-3">
-                <img src="./../static/th-2022/food.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Food</p>
-              </div>
-              <div class="flex items-center px-3">
-                <img src="./../static/th-2022/event.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Events</p>
-              </div>
-              </div>
-              <div class="flex justify-center">
-              <div class="flex items-center pl-3">
-                <img src="./../static/th-2022/workshop.svg" class="m-2" style="width:25px; height:25px">
-                <p class="font-medium text-md opensans-font navy">Workshops</p>
-              </div>
-              </div>
-            </div>
-          </div>
+        </div>
         <div class="hidden lg:flex justify-end absolute bottom-0 inset-x-0">
           <img class="h-1/3 w-1/3 mr-24" src="./../static/th-2022/leaf.png">
         </div>
@@ -650,7 +609,7 @@ html {
 
 
     </div>
-    <script src="https://unpkg.com/vue@2"></script>
+    <script src="https://unpkg.com/vue"></script>
     <!-- Full bundle -->
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
     <!-- <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script> -->
@@ -720,14 +679,6 @@ html {
                 desc: "Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event."
               },
               {
-                title: "Will prizes be shipped to international participants?",
-                desc: "Unfortunately we are unable to ship prizes outside of the United Status, but we will make alternate arrangements for non-US based winners."
-              },
-              {
-                title: "Are there any COVID-19 guidelines that I need to follow to attend TAMUhack?",
-                desc: "You will need to present a negative COVID-19 test within one week of the event if you are attending in-person."
-              },
-              {
                 title: "Have additional questions?",
                 desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
               }
@@ -774,13 +725,13 @@ html {
                 type: "workshop"
               },
               {
-                time: "04:00 PM",
-                event: "Phillips 66 Workshop",
+                time: "03:45 PM",
+                event: "Credera Workshop",
                 type: "workshop"
               },
               {
                 time: "04:30 PM",
-                event: "VALORANT with Jaden",
+                event: "VALORANT with Jaden on Discord/🕹Gaming",
                 type: "general"
               },
               {
@@ -789,8 +740,8 @@ html {
                 type: "workshop"
               },
               {
-                time: "06:00 PM",
-                event: "State Farm Workshop",
+                time: "07:00 PM",
+                event: "State Farm Workshop (online)",
                 type: "workshop"
               },
               {
@@ -832,12 +783,12 @@ html {
               },
               {
                 time: "09:00 AM",
-                event: "Morning Yoga with Vivian Yu",
+                event: "Morning Yoga with Abhishek",
                 type: "event"
               },
               {
                 time: "10:00 AM",
-                event: "How to use Devpost",
+                event: "Devpost Presentation",
                 type: "general"
               },
               {
@@ -879,7 +830,7 @@ html {
               },
               {
                 name: "Best Beginner Hack",
-                description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have majority first-timers to qualify).",
+                description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
                 prize: 'Prize: 1080p 160" Wi-fi Projector' 
               },
               {
@@ -911,7 +862,7 @@ html {
                 name: "State Farm Challenge",
                 description: 'State Farm sells more than auto insurance. State Farm offers customers "Drive Safe and Save," a mobile application that tracks driving habits in order to reward safe driving practices.',
                 description2: "Design a system that would allow State Farm to offer discounted home owners/renters insurance and/or life insurance based off of positive customer behavior.",
-                prize: "Prizes: (US only)",
+                prize: "Prizes: ",
                 prize1: "1st - Oculus Quest 2",
                 prize2: "2nd - Power Beats Pro",
                 prize3: "3rd - Mechanical Keyboard",
@@ -932,7 +883,7 @@ html {
               },
               {
                 name: "Ford Challenge",
-                description: "Ford is challenging you to change the way drivers experience the road. From safety, navigation, fuel emissions, or comfort, build a hack that improves the way we travel. Whether your focus is on building features like hands free mirror adjustment or crafting more efficient trips by improving navigation, we're excited to see the types of innovative solutions you and your team come up with. As an added bonus, Ford is giving each winning team member a $100 credit to the Ford store, usable towards a huge collection of amazing swag including sweatshirts, backpacks, hats, stickers, and so much more!",
+                description: "Ford is challenging you to change the way drivers experience the road. From safety, navigation, fuel emissions, or comfort, build a hack that improves the way we travel. Whtether your focus is on building features like hands free mirror adjustment or crafting more efficient trips by improving navigation, we're excited to see the types of innovative solutions you and your team come up with. As an added bonus, Ford is giving each winning team member a $100 credit to the Ford store, usable towards a huge collection of amazing swag including sweatshirts, backpacks, hats, stickers, and so much more!",
                 prize: "Prize: $100 Ford Store Gift Cards"
               },
               {
@@ -1078,4 +1029,3 @@ html {
   </body>
 
 </html>
-
