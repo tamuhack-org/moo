@@ -8,6 +8,12 @@
     <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    
+    <!-- for the footer -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="./../static/styles/app.css" rel="stylesheet">
+
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
     <style>
       html {
@@ -142,6 +148,13 @@
             color: white;
             border-radius: 5px;
             box-shadow: 0px 0px 0px 5px #375764;
+          }
+
+          .mailing-signup {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
           }
       
       
@@ -295,116 +308,213 @@
 
     <!-- TEAMS -->
     <div id="Teams 1" class="h-full md:mt-4" style="padding-top:6em;">
-      <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
-        <div class="leftcol lg:w-1/2">
-          <div class="lg:mr-8 mt-8 py-3 px-3 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
-            <div class="border-1 border-gray rounded-full px-8 py-4">
-              <img class="mx-auto w-20 py-5" src=".\..\static\th-2022\teams_log.png">
-              <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Logistics</p>
-              <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
-                <li>Reaching out to and maintaining professional ties with potential TAMUhack sponsors</li>
-                <li>Hacker communication before, during, and after the event (ex. emails, Discord announcements, surveys)</li>
-                <li>Communicating with food vendors to order and deliver meals for the hackathons</li>
-                <li>Promoting TAMUhack among other student organizations</li>
-                <li>Hosting workshops throughout the year</li>
-                <li>Marketing for TAMUhack events and hackathons</li>
-                <li>Facilitate the judging, mentorship, and volunteer processes</li>
-                <li>Designing the hacker experience</li>
-              </ul>
-            </div>
-          </div>
+      <div class="lg:grid lg:grid-cols-2 mx-5 lg:gap-7 lg:justify-center lg:justify-items-center items-stretch md:px-12 lg:px-32 place-content-center z-40">
+        <div class="md:flex-auto lg:justify-self-stretch lg:max-w-4xl mt-8 lg:mx-5 py-10 px-10 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
+          <img class="mx-auto w-20" src=".\..\static\th-2022\teams_log.png">
+            <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Logistics</p>
+            <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
+              <li>Reaching out to and maintaining professional ties with potential TAMUhack sponsors</li>
+              <li>Hacker communication before, during, and after the event (ex. emails, Discord announcements, surveys)</li>
+              <li>Communicating with food vendors to order and deliver meals for the hackathons</li>
+              <li>Promoting TAMUhack among other student organizations</li>
+              <li>Hosting workshops throughout the year</li>
+              <li>Marketing for TAMUhack events and hackathons</li>
+              <li>Facilitate the judging, mentorship, and volunteer processes</li>
+              <li>Designing the hacker experience</li>
+            </ul>
         </div>
-        <div class="lg:block lg:w-1/2">
-          <div class="lg:mr-8 mt-8 py-3 px-3 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
-            <div class="border-1 border-gray rounded-full px-8 py-4 lg:pb-20 md:pb-40">
-              <img class="mx-auto w-20 py-5" src=".\..\static\th-2022\teams_des.png">
-              <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Design</p>
-              <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
-                <li>Prototype TAMUhack and HowdyHack websites </li>
-                <li>Design marketing materials for the hackathons, workshops, and various events </li>
-                <li>Create graphics for merchandise (ex. T-shirts, stickers, etc.)</li>
-                <li>Building digital documents</li>
-                <li>Maintain engagement with community through promotional media</li>
-                <li>Marketing/photography/film</li>
-              </ul>
-            </div>
-          </div>
+        <div class="md:flex-auto lg:justify-self-stretch lg:max-w-4xl mt-8 lg:mx-5 py-10 px-10 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
+          <img class="mx-auto w-20" src=".\..\static\th-2022\teams_des.png">
+          <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Design</p>
+          <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
+            <li>Prototype TAMUhack and HowdyHack websites </li>
+            <li>Design marketing materials for the hackathons, workshops, and various events </li>
+            <li>Create graphics for merchandise (ex. T-shirts, stickers, etc.)</li>
+            <li>Building digital documents</li>
+            <li>Maintain engagement with community through promotional media</li>
+            <li>Marketing/photography/film</li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div id="Teams 2" class="h-full md:mt-4" style="padding-top:1em;">
-      <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
-        <div class="leftcol lg:w-1/2">
-          <div class="lg:mr-8 mt-8 py-3 px-3 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
-            <div class="border-1 border-gray rounded-full px-8 py-4">
-              <img class="mx-auto w-20 py-5" src=".\..\static\th-2022\teams_dev.png">
-              <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Development</p>
-              <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
-                <li>Implement web page for TAMUhack and HowdyHack with the design team </li>
-                <li>Develop and deploy cool internal projects (ex. Discord sign in bot, QR app, registration system, team matching)</li>
-                <li>Maintain existing software (ex. judging system, mentor help platform)</li>
-              </ul>
-            </div>
-          </div>
+      <div class="lg:grid lg:grid-cols-2 mx-5 lg:gap-7 lg:justify-center lg:justify-items-center items-stretch md:px-12 lg:px-32 place-content-center z-40">
+        <div class="md:flex-auto lg:justify-self-stretch lg:max-w-4xl mt-8 lg:mx-5 py-10 px-10 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
+          <img class="mx-auto w-20" src=".\..\static\th-2022\teams_dev.png">
+          <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Development</p>
+          <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
+            <li>Implement web page for TAMUhack and HowdyHack with the design team </li>
+            <li>Develop and deploy cool internal projects (ex. Discord sign in bot, QR app, registration system, team matching)</li>
+            <li>Maintain existing software (ex. judging system, mentor help platform)</li>
+          </ul>
         </div>
-        <div class="lg:block lg:w-1/2">
-          <div class="lg:mr-8 mt-8 py-3 px-3 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
-            <div class="border-1 border-gray rounded-full px-8 py-4 pb-10">
-              <img class="mx-auto w-20 py-5" src=".\..\static\th-2022\teams_hw.png">
-              <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Hardware</p>
-              <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
-                <li>Take lead on A/V and any day-of technical issues with presenting</li>
-                <li>Streaming hackathon ceremonies and workshops</li>
-                <li>Build professional and engaging decorations with the help of the design team</li>
-              </ul>
-            </div>
-          </div>
+        <div class="md:flex-auto lg:justify-self-stretch lg:max-w-4xl mt-8 lg:mx-5 py-10 px-10 border-4 border-zinc-600 bg-white rounded-lg opacity-100">
+          <img class="mx-auto w-20" src=".\..\static\th-2022\teams_hw.png">
+          <p class="pb-5 text-xl md:text-2xl font-extrabold raleway-font th-pink-txt">Hardware</p>
+          <ul class="list-disc mt-3 text-l md:text-md font-md opensans-font black">
+            <li>Take lead on A/V and any day-of technical issues with presenting</li>
+            <li>Streaming hackathon ceremonies and workshops</li>
+            <li>Build professional and engaging decorations with the help of the design team</li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="Footer" class="h-full">
-      <div class="pt-20 flex place-content-center">
-        <p class="px-10 py-5 text-xl md:text-xl text-center font-semibold raleway-font black">Sign up for our mailing list for events, updates, and more.</p>
-      </div>
-      <!-- NAVEEN DO THIS BRUH PLEASE
-      <form class="flex justify-center bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <div class="mb-4">
-          <input class="h-10 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter your email here...">
-        </div> -->
-        <div class="flex justify-center pb-10">
-          <a href="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d" target="_blank" rel="noopener noreferrer"
-                                                                class="px-8 py-4 text-center th-pink text-white font-bold rounded-lg">SUBSCRIBE</a>
-        </div>
+    
+    <br><br><br><br><br>
+
+    <div class="mailing-signup">
+    <p class="custom-p-text">
+      Sign up for our mailing list for events, updates, and more.
+    </p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form
+          action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+              <div class="mc-field-group input-group mb-3">
+                  <label for="mce-EMAIL" style="display: none">Email Address </label>
+                  <input type="email" value="" name="EMAIL" placeholder="Enter your email here..."
+                      class="required email form-control"
+                      style="border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;"
+                      id="mce-EMAIL">
+                  <div class="clear input-group-append"><input type="submit" value="Subscribe"
+                          name="subscribe" id="mc-embedded-subscribe"
+                          class="btn btn-outline-secondary signup-button"></div>
+              </div>
+              <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                      name="b_ba74e26a78411ab40af6384c5_2f4969eb6d" tabindex="-1" value=""></div>
+          </div>
       </form>
-      <div class="flex place-content-center pb-10">
-      <div class="flex justify-between">
-        <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer">
-          <img class="h-6 px-3" src=".\..\static\assets\tamuhack_official_logo.svg">
-        </a>
-        <a href="mailto:sponsor@tamuhack.com" target="_blank" rel="noopener noreferrer">
-          <p class="px-3 gray-text font-regular text-xl">SPONSOR</p>
-        </a>
-        <a href="mailto:hello@tamuhack.com" target="_blank" rel="noopener noreferrer">
-          <p class="px-3 gray-text font-regular text-xl">EMAIL</p>
-        </a>
-      </div>
     </div>
-    <div class="flex place-content-center pb-10">
-      <div class="flex justify-between">
-        <a href="https://www.linkedin.com/company/tamuhack/" target="_blank" rel="noopener noreferrer">
-          <img class="h-6 w-6 mx-3" src=".\..\static\assets\horizontal-timeline\linkedin.svg">
-        </a>
-        <a href="https://github.com/tamuhack-org/" target="_blank" rel="noopener noreferrer">
-          <img class="h-6 w-6 mx-3 " src=".\..\static\assets\horizontal-timeline\github.svg">
-        </a>
-        <a href="https://twitter.com/tamuhack" target="_blank" rel="noopener noreferrer">
-        <img class="h-6 w-6 mx-3" src=".\..\static\assets\horizontal-timeline\twitter.svg">
-        </a>
-      </div>
+      <!--End mc_embed_signup-->
     </div>
-    </div>
+
+    <br><br>
+
+
+    <!--BEGIN Footer-->
+    <footer class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <!--BEGIN left container-->
+                <div style="display: flex; flex-direction: column; flex: 1; align-items: flex-start; justify-content: start;">
+                    <!--BEGIN top left container-->
+                    <div href="#">
+                        <img src="./../static/assets/tamuhack_official_logo.svg" style="margin-bottom: 9px" />
+                    </div>
+                    <!--END top left container-->
+
+                    <!--BEGIN bottom left container-->
+                    <div style="vertical-align: center;">
+                        <a href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss" style="font-size: 12px;">Powered by <img src="./../static/assets/vercel.svg" style="display: inline;" /></a> 
+                    </div>
+                    <!--END bottom left container-->
+                </div>
+                <!--END left container-->
+
+                <!--BEGIN right container-->
+                <div style="display: flex; flex-direction: column; flex: 1; align-items: flex-end; justify-content: end;">
+                    <div>
+                        <ul class="navbar-nav main-nav-ui mr-auto main-container">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:sponsor@tamuhack.com">sponsor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:hello@tamuhack.com">email</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav main-nav-ui mr-auto links-container">
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.instagram.com/tamuhack/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://twitter.com/tamuhack">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
+                                    <i class="fab fa-reddit"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--END right container-->
+            </div>
+        </nav>
+
+        <!--BEGIN Smaller Links Container-->
+        <div class="custom-nav d-lg-none d-xl-none small-links-container">
+            <img alt="" src="./../static/assets/tamuhack_official_logo.svg" />
+            <div class="nice-text small-links-wrapper">
+                <a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="nav-link small-link" target="_blank" href="https://www.instagram.com/tamuhack/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="nav-link small-link" target="_blank" href="https://twitter.com/tamuhack">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="nav-link small-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
+                    <i class="fab fa-reddit"></i>
+                </a>
+                <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <br />
+        </div>
+        <!--END Smaller Links Container-->
+
+        <!--BEGIN Small Nav Container-->
+        <div class="small-nav-container">
+            <nav class="nav nav-pills nav-justified d-lg-none d-xl-none">
+                <a class="nav-item nav-link" href="mailto:sponsor@tamuhack.com">
+                    <span>SPONSOR</span>
+                </a>
+                <a class="nav-item nav-link" href="mailto:hello@tamuhack.com">
+                    <span>EMAIL</span>
+                </a>
+            </nav>
+        </div>
+        <!--END Small Nav Container-->
+        
+        <!--BEGIN small vercel container-->
+        <div class="small-nav-container">
+            <nav class="nav nav-pills nav-justified d-lg-none d-xl-none" style="justify-content: center;">
+                <a href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss" style="font-size: 12px; color: #999999 !important;">Powered by <img src="./../static/assets/vercel.svg" /></a> 
+            </nav>
+        </div>
+        <!--END small vercel container-->
+
+    </footer>
+
 </body>
 </html>
