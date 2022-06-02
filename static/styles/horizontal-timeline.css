@@ -74,6 +74,13 @@
     background-position: center center;
     padding: 15px;
 }
+
+.hh22::after {
+    background-image: url("../hh-2022/hh22_assets/hh22icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
 /* END HACKATHON LOGOS */
 
 .no-list-style {
