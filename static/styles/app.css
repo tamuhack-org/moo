@@ -432,13 +432,23 @@ header {
 }
 
 #our-community-container .content-container {
-    max-width: 460px;
+    max-width: 640px;
     justify-content: center;
+    text-align: center;
 }
 
 #our-community-container .content-container p {
     padding: 20px 0px;
     font-size: 18px;
+}
+
+#our-community-container .content-container #mc_embed_signup {
+    display: flex;
+    justify-content: center;
+}
+
+#our-community-container .content-container #mc-embedded-subscribe-form {  
+    width: 75%;
 }
 
 .signup-button {
