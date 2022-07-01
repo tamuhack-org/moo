@@ -1065,6 +1065,11 @@ input.form-control {
     overflow: hidden;
 }
 
+.mc-field-group input[type=checkbox] {
+    display: inline !important;
+    width: auto !important;
+}
+
 
 /*--------------------------------------*/
 
