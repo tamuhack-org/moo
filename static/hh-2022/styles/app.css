@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+[v-cloak] {
+    display: none;
+}
+
+.off-black-text{
+    color: #0000ff;
+}
