@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HH 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <script src="https://unpkg.com/vue@2"></script>
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script src="https://unpkg.com/buefy/dist/components/table"></script>
+    <script src="https://unpkg.com/buefy/dist/components/input"></script>
+
+
+    <!--
+        DO NOT USE THIS!
+        Please use static/hh-2022/styles/app.css for any styles that are too hard to do in tailwind
+     -->
+    <style>
+    </style>
+
+</head>
+<div id="app" v-cloak>
+    <img src="../static/hh-2022/hh22_assets/backgroundmid.png">
+    <p>Start of a new era</p> 
+    <p>Check out the hh2021 html to learn how to do stuff</p> 
+
+    <!--
+    Ignore this stuff unless you know what you're doing.
+     -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+        new Vue({
+          el: "#app",
+          methods: {
+ 
+          },
+          data: function () {
+              return {
+                scrollPosition: null,
+                currentScreen: "Home",
+                faq: [{
+                    title: "How much does it cost?",
+                    desc: "It’s FREE! All you need is a laptop and Wi-Fi!"
+                }, {
+                    title: "I don’t know how to code! Can I still participate?",
+                    desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom."
+                }, {
+                    title: "Is there a theme for HowdyHack?",
+                    desc: "Yes! This year’s theme is “Music”. This is an opportunity for you to come up with the coolest, most technologically savvy hacks relating to music!"
+                }, {
+                    title: "I don’t have a team! Can I still participate?",
+                    desc: "Don't sweat it! We will have team-forming channels before we kickoff the opening ceremony so everyone will have a group to hack with."
+                }, {
+                    title: "Will there be companies at the hackathon?",
+                    desc: "While there will not be companies present at the hackathon, we will have various workshops throughout the entire event and leading up to it to help you get ready. We’ve got your back!"
+                }, {
+                    title: "I'm not from A&M, can I still join?",
+                    desc: "HowdyHack is only open to students from Texas A&M, including College Station, Galveston, and Qatar campuses. If you're not a Texas A&M student, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!"
+                }, {
+                    title: "When is the deadline to apply for HowdyHack?",
+                    desc: "The deadline to register is the night before the event, September 10th at 23:59 CDT."
+                }, {
+                    title: "Have additional questions?",
+                    desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
+                }],
+                sat_events: [
+                    {
+                        time: "9:00 AM",
+                        desc: "Doors Open, Check-In Begins"
+                    },
+                    {
+                        time: "10:30 AM",
+                        desc: "Opening Ceremony + General Q/A"
+                    },
+                    {
+                        time: "11:30 AM",
+                        desc: "Virtual Team Formation"
+                    },
+                    {
+                        time: "12:00 PM",
+                        desc: "Hacking starts"
+                    },
+                    {
+                        time: "12:30 PM",
+                        desc: "Lunch"
+                    },
+                    {time: "1:15 PM", desc: "TAMUDatathon: intro to python "},
+                    {time: "2:00 PM", desc: "IEEE: Arduino demo"},
+                    {time: "2:45 PM", desc: "AWiCS: Women in tech discussion panel  "},
+                    {time: "3:30 PM", desc: "Robomasters: Real time object detection"},
+                    {time: "4:15 PM", desc: "AHiCS"},
+                    {time: "5:00 PM", desc: "Cybersecurity: Binary Exploitation"},
+                    {time: "5:45 PM", desc: "ACC: How to deploy ur app"},
+                    {
+                        time: "6:30 PM",
+                        desc: "Tech Intern Panel"
+                    },
+                    {
+                        time: "7:30 PM",
+                        desc: "Dinner"
+                    },
+                    {
+                        time: "8:00 PM",
+                        desc: "Bob Ross Painting Show"
+                    },
+                    {
+                        time: "9:00 PM",
+                        desc: "Office Hours/Help"
+                    },
+                    {
+                        time: "10:00 PM",
+                        desc: "Speed networking"
+                    },
+                    {
+                        time: "11:00 PM",
+                        desc: "Musical chairs"
+                    },
+                    {
+                        time: "Midnight",
+                        desc: "Talent show"
+                    }
+                ],
+                sun_events: [
+                    {
+                        time: "1:00 AM",
+                        desc: "Slideshow karaoke"
+                    },
+                    {
+                        time: "2:15 AM",
+                        desc: "Debate"
+                    },
+                    {
+                        time: "3:30 AM",
+                        desc: "Lofi and chill"
+                    },
+                    {
+                        time: "5:30 AM",
+                        desc: "Netflix Party"
+                    },
+                    {
+                        time: "6:30 AM",
+                        desc: "Morning Coffee Talk Show"
+                    },
+                    {
+                        time: "8:00 AM",
+                        desc: "Awards Mini Events"
+                    },
+                    {
+                        time: "9:30 AM",
+                        desc: "Morning Yoga"
+                    },
+                    {
+                        time: "12:00 PM",
+                        desc: "Hacking Ends"
+                    },
+                    {
+                        time: "2:00 PM",
+                        desc: "Judging"
+                    },
+                    {
+                        time: "4:00 PM",
+                        desc: "Award Ceremony"
+                    },
+                ],
+                prizes: [
+                    {
+                        name: "First Place",
+                        desc:"This prize will be awarded to the best overall project submission",
+                        prize: "Noise Cancelling Headphones",
+                    },
+                    {
+                        name: "Second Place",
+                        desc: "This prize will be awarded to the second place project submission",
+                        prize: "Mechanical Keyboards",
+                    },
+                    {
+                        name: "Third Place",
+                        desc:"This prize will be awarded to the third place project submission",
+                        prize: "Mini Projectors",
+                    },
+                    {
+                        name: "Best Music Related",
+                        desc: "This prize will be awarded to the best music related hack",
+                        prize: "Bluetooth Speakers",
+                    },
+                    {
+                        name: "Best UI",
+                        desc:"This prize will be awarded to the project submission that has the best user interface in terms of aesthetics and usability.",
+                        prize: "Polaroid Cameras",
+                    },
+                    {
+                        name: "Best Impractical",
+                        desc: "A hackathon is the best place to explore new ideas, but maybe some ideas should be left unexplored. This prize will be awarded to the project submission that best solves a problem without actually solving anything.",
+                        prize: "Squeeze Chickens",
+                    },
+                    {
+                        name: "Best Aggie Hack",
+                        desc:"The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.",
+                        prize: "Reveille Pillow Pets",
+                    },
+                ]
+              }
+          },
+          mounted: function () {
+            console.log("Init")
+          },
+        })
+    </script>
+</body>
+</html>
