@@ -82,7 +82,7 @@ ion-icon {
   .showcase h1{
     font-size:60px;
     color: #fff;
-    font-family: "Tempus Sans ITC";
+    font-family: "Source Code Pro", monospace;
     font-weight: bold;
     margin-bottom: 0px;
   }
@@ -94,7 +94,7 @@ ion-icon {
     border-right: 2px solid white;
     width: 12ch;
     color:white;
-    font-family: consolas;
+    font-family: "Source Code Pro", monospace;
     animation: typist 8s steps(12), blink step-end 1s infinite;
   }
   @keyframes typist{
