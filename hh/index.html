@@ -32,7 +32,7 @@
 
 <body class="off-black">
     <div id="app" v-cloak>
-        <div class="bg-cover bg-no-repeat" style="background-image: url('./../static/hh-2022/hh22_assets/bg.jpg');">
+        <div class="bg-cover bg-repeat" style="background-image: url('./../static/hh-2022/hh22_assets/stars.jpg');">
             <!-- NAVBAR -->
             <nav class="p-5 md:flex md:items-center md:justify-between">
                 <div class="flex justify-between items-center">
@@ -84,15 +84,30 @@
             </div>
 
             <!-- INFO -->
-            <div id="info" class="pt-20 mt-3">
-                <div class="flex">
-                    <p class="text-2xl font-bold text-white text-center w-1/2 relative">testing</p>
-                    <p class="text-2xl font-bold text-white text-center w-1/2 relative pt-[400px]">testing2</p>
-                </div>
-                <div class="flex justify-center pt-20 mt-20">
-                    <img class="md:w-full pt-20 mt-20" src=".\..\static\hh-2022\hh22_assets\info_board.png">
-                </div>
-            </div>
+            <div id="info" class="h-full" style="padding-top: 6em;">
+                <p class="flex pb-4 px-8 md:px-32 text-white text-3xl font-extrabold raleway-font">Information</p>
+                <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
+                    <div class="leftcol lg:w-1/2">
+                      <div v-for="(information, i) in information" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+                        <div class="border-2 navy-border rounded-md px-8 py-4">
+                          <p class="text-xl md:text-2xl font-extrabold raleway-font text-white">{{information.title}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc2}}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hidden lg:block lg:w-1/2">
+                      <div v-for="(information, i) in information" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
+                        <div class="border-2 navy-border rounded-md px-8 py-4">
+                          <p class="text-xl md:text-2xl font-extrabold raleway-font text-white">{{information.title}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc2}}</p>
+                        </div>
+                      </div>
+                    </div>
+        
+                  </div>
+                
         </div>
     </div> 
 </body>   
@@ -111,32 +126,32 @@
           },
           data: function () {
               return {
+                window: {
+                    width: 0,
+                    height: 0
+                },
+
                 scrollPosition: null,
                 currentScreen: "Home",
+                information: [{
+                    title: "What is HowdyHack?",
+                    desc: "It’s FREE! All you need is a laptop and Wi-Fi!",
+                    desc2: "It’s FREE! All you need is a laptop and Wi-Fi!"
+                }, {
+                    title: "I don’t know how to code! Can I still participate?",
+                    desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom.",
+                    desc2: ""
+                }, {
+                    title: "I don’t know how to code! Can I still participate?",
+                    desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom.",
+                    desc2: ""
+                }],
                 faq: [{
                     title: "How much does it cost?",
                     desc: "It’s FREE! All you need is a laptop and Wi-Fi!"
                 }, {
                     title: "I don’t know how to code! Can I still participate?",
                     desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom."
-                }, {
-                    title: "Is there a theme for HowdyHack?",
-                    desc: "Yes! This year’s theme is “Music”. This is an opportunity for you to come up with the coolest, most technologically savvy hacks relating to music!"
-                }, {
-                    title: "I don’t have a team! Can I still participate?",
-                    desc: "Don't sweat it! We will have team-forming channels before we kickoff the opening ceremony so everyone will have a group to hack with."
-                }, {
-                    title: "Will there be companies at the hackathon?",
-                    desc: "While there will not be companies present at the hackathon, we will have various workshops throughout the entire event and leading up to it to help you get ready. We’ve got your back!"
-                }, {
-                    title: "I'm not from A&M, can I still join?",
-                    desc: "HowdyHack is only open to students from Texas A&M, including College Station, Galveston, and Qatar campuses. If you're not a Texas A&M student, be on the lookout for TAMUhack, our inter-collegiate Spring hackathon!"
-                }, {
-                    title: "When is the deadline to apply for HowdyHack?",
-                    desc: "The deadline to register is the night before the event, September 10th at 23:59 CDT."
-                }, {
-                    title: "Have additional questions?",
-                    desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
                 }],
                 sat_events: [
                     {
@@ -279,6 +294,19 @@
           mounted: function () {
             console.log("Init")
           },
+          created() {
+                window.addEventListener('resize', this.handleResize);
+                this.handleResize();
+            },
+            destroyed() {
+                window.removeEventListener('resize', this.handleResize);
+            },
+            methods: {
+                handleResize() {
+                this.window.width = window.innerWidth;
+                this.window.height = window.innerHeight;
+                }
+            }
         })
     </script>
 </body>
