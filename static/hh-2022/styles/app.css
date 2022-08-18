@@ -10,6 +10,10 @@ html {
     color: hsl(240, 9%, 4%);
 }
 
+.transparent-white{
+  background-color: #ffffff6c;
+}
+
 ion-icon {
   color: white;
 }

@@ -88,25 +88,30 @@
                 <p class="flex pb-4 px-8 md:px-32 text-white text-3xl font-extrabold raleway-font">Information</p>
                 <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
                     <div class="leftcol lg:w-1/2">
-                      <div v-for="(information, i) in information" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-                        <div class="border-2 navy-border rounded-md px-8 py-4">
-                          <p class="text-xl md:text-2xl font-extrabold raleway-font text-white">{{information.title}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc2}}</p>
+                      <div v-for="(information, i) in information" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-0 transparent-white rounded-md opacity-100">
+                        <div class="rounded-md px-8 py-4">
+                          <p class="text-xl md:text-2xl font-extrabold raleway-font off-black-text">{{information.title}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc2}}</p>
                         </div>
                       </div>
                     </div>
-                    <div class="hidden lg:block lg:w-1/2">
-                      <div v-for="(information, i) in information" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 navy-border bg-offwhite rounded-md opacity-100">
-                        <div class="border-2 navy-border rounded-md px-8 py-4">
-                          <p class="text-xl md:text-2xl font-extrabold raleway-font text-white">{{information.title}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font text-white">{{information.desc2}}</p>
+                    <div class="hidden lg:block lg:w-1/2 md:py-20 md:my-20">
+                      <div v-for="(information, i) in information" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-0 rounded-md transparent-white opacity-100">
+                        <div class="rounded-md px-8 py-4">
+                          <p class="text-xl md:text-2xl font-extrabold raleway-font off-black-text">{{information.title}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc}}</p>
+                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc2}}</p>
                         </div>
                       </div>
                     </div>
-        
-                  </div>
+            </div>
+
+            <!-- PRIZES -->
+
+            <div id="prizes" class="h-full" style="padding-top: 6em;">
+                <p class="flex pb-4 px-8 md:px-32 text-white text-3xl font-extrabold raleway-font">Information</p>
+            </div>
                 
         </div>
     </div> 
@@ -135,15 +140,15 @@
                 currentScreen: "Home",
                 information: [{
                     title: "What is HowdyHack?",
-                    desc: "It’s FREE! All you need is a laptop and Wi-Fi!",
-                    desc2: "It’s FREE! All you need is a laptop and Wi-Fi!"
+                    desc: "HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.",
+                    desc2: "Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills and create something amazing while getting to know fellow hackers with the same Aggie pride!"
                 }, {
-                    title: "I don’t know how to code! Can I still participate?",
-                    desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom.",
-                    desc2: ""
+                    title: "How do I participate?",
+                    desc: "To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!",
+                    desc2: "After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition!"
                 }, {
-                    title: "I don’t know how to code! Can I still participate?",
-                    desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom.",
+                    title: "Goal of HowdyHack",
+                    desc: "Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills!",
                     desc2: ""
                 }],
                 faq: [{
