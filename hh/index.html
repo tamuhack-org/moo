@@ -78,46 +78,29 @@
                         </div>
                     </div>
                 </section>
-                <div class="flex justify-center">
-                    <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_clouds.png"> 
-                    <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_ocean.png"> 
-                    <img class="md:w-1/2 shake" src=".\..\static\hh-2022\hh22_assets\hh22_earth.png"> 
+                <div class="flex">
+                    <div class="flex justify-center">
+                        <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_clouds.png"> 
+                        <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_ocean.png"> 
+                        <img class="md:w-1/2 shake" src=".\..\static\hh-2022\hh22_assets\hh22_earth.png"> 
+                        <div class="z-50 absolute w-full h-full comets">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-center mt-8">
                     <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-white font-bold border-2 rounded-md apply-button">APPLY</a>
+                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-lg text-white font-bold border-2 rounded-md apply-button">APPLY</a>
                     <a href="https://mentor.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-white font-bold border-2 rounded-md">MENTOR</a>
+                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-lg text-white font-bold border-2 rounded-md">MENTOR</a>
                 </div>
             </div>
 
-            <!-- INFO 
-            <div id="info" class="h-full" style="padding-top: 6em;">
-                <p class="flex pb-4 px-8 md:px-32 text-white text-3xl font-extrabold raleway-font">Information</p>
-                <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-32 place-content-center z-40">
-                    <div class="leftcol lg:w-1/2">
-                      <div v-for="(information, i) in information" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="lg:mr-8 mt-8 py-3 px-3 border-0 transparent-white rounded-md opacity-100 md:mb-20">
-                        <div class="rounded-md px-8 py-4">
-                          <p class="text-xl md:text-2xl font-extrabold raleway-font off-black-text">{{information.title}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc2}}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="hidden lg:block lg:w-1/2 md:py-20 md:my-20">
-                      <div v-for="(information, i) in information" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-0 rounded-md transparent-white opacity-100">
-                        <div class="rounded-md px-8 py-4">
-                          <p class="text-xl md:text-2xl font-extrabold raleway-font off-black-text">{{information.title}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc}}</p>
-                          <p class="mt-3 text-l md:text-md font-md opensans-font off-black-text">{{information.desc2}}</p>
-                        </div>
-                      </div>
-                    </div>
-            </div>
-            -->
-
-            <!-- INFO -->
             <div class="spacer" style="min-height: 100vh;"></div>
+
+            <!-- INFO DESKTOP -->
             <div id="info" class="hidden xl:block" style="padding: 6em;">
                 <div style="font-family: 'Inter'; font-weight: 400;" class="flex">
                     <div class="w-1/4 flex flex-col self-center">
@@ -181,34 +164,32 @@
                                     <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32 ">EVENT</th>
                                     <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-6 lg:pr-8">SPONSOR</th>
                                     <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">ROOM</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">REMARK</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">STATUS</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class = "bg-black h-10 border-gray-600 border-b-2" v-for="event in events">
                                     <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Day }}</td>
                                     <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Time }}</td>
-                                    <td class="text-left align-middle text-sm text-yellow-300 pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32">{{ event.Name }}</td>
+                                    <td class="text-left align-middle text-sm text-yellow-200 pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32">{{ event.Name }}</td>
                                     <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-6 lg:pr-8">{{ event.Sponsor }}</td>
                                     <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Room }}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-green-600 pb-1 lg:pb-2 px-6 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
+                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-green-400 pb-1 lg:pb-2 px-6 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
                                     <td class="hidden xl:table-cell text-left align-middle text-sm text-red-600 pb-1 lg:pb-2 px-6 lg:px-8" v-else>{{ event.Remark }}</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                        <p class="text-center mt-10 text-xl text-white inter-font font-bold">Note: Schedule will be updated as the event approaches. Check back soon!</p>
             </div>
 
             <div class="spacer" style="min-height: 100vh;"></div>
 
-            <!-- PRIZES 
+            <!-- FAQ -->
 
-            <div id="prizes" class="h-full" style="padding-top: 4em;">
-                <p class="flex pb-4 px-8 md:px-32 text-white text-3xl font-extrabold raleway-font">Prizes</p>
-            </div>
+            <!-- PRIZES -->
 
-            -->
         </div>
     </div> 
 </body>   
