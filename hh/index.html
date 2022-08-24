@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <script src="https://unpkg.com/vue@2"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
@@ -20,6 +21,7 @@
     <script src="https://unpkg.com/buefy/dist/components/input"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 
     <!--
@@ -81,6 +83,12 @@
                     <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_ocean.png"> 
                     <img class="md:w-1/2 shake" src=".\..\static\hh-2022\hh22_assets\hh22_earth.png"> 
                 </div>
+                <div class="flex flex-col sm:flex-row justify-center mt-8">
+                    <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
+                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-white font-bold border-2 rounded-md apply-button">APPLY</a>
+                    <a href="https://mentor.tamuhack.com/" target="_blank" rel="noopener noreferrer"
+                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-white font-bold border-2 rounded-md">MENTOR</a>
+                </div>
             </div>
 
             <!-- INFO 
@@ -109,28 +117,90 @@
             -->
 
             <!-- INFO -->
-
-            <div id="info" class="" style="padding: 6em;">
-                <div class="flex flex-row">
-                    <div class="w-1/4">
-                        <div class="flex flex-col">
-                            <div class="self-start">
-                                <p class="text-md font-bold py-2 px-2 bg-white rounded-md">testing.</p>
-                            </div>
-                            <div class="self-end">
-                                <p class="text-md font-bold py-2 px-2 bg-white rounded-md">testing.</p>
-                            </div>
-                            
+            <div class="spacer" style="min-height: 100vh;"></div>
+            <div id="info" class="hidden xl:block" style="padding: 6em;">
+                <div style="font-family: 'Inter'; font-weight: 400;" class="flex">
+                    <div class="w-1/4 flex flex-col self-center">
+                        <div class="mb-72">
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold py-4 px-4 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
+                        </div>
+                        <div class="mt-">
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold py-4 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
                         </div>
                     </div>
                     <div class="w-1/2 px-10">
                         <img src=".\..\static\hh-2022\hh22_assets\info_board.png">
                     </div>
                     <div class="w-1/4 self-center">
-                        <p class="text-md font-bold py-2 px-2 bg-white rounded-md">testing.</p>
+                        <div class="text-md font-bold py-4 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
+                            <p style="font-family: 'Inter'; font-weight: 600;">To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!</p>
+                            <br>
+                            <p style="font-family: 'Inter'; font-weight: 600;">After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition! </p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- SCHEDULE -->
+            <div>
+                <div class="flex justify-center w-full">
+                    <!-- Left bar  -->
+                    <div class="flex items-center float-right flex-grow">
+                        <div class=" bg-gray-200 border-gray-200 w-full h-1/4"></div>
+                    </div>
+                    <!-- Big Sign  -->
+                    <div class="border-[15px] border-8 border-gray-200 bg-black">
+                        <p class="text-5xl text-center text-yellow-300 p-9">NOW BOARDING: HOWDYHACK AIRLINES</p> 
+                    </div>
+                    <!-- Right Bar -->
+                    <div class="flex items-center float-right flex-grow">
+                        <div class=" bg-gray-200 w-full h-1/4"></div>
+                    </div>
+                </div>
+                <!-- two small connecting bars -->
+                <div class= "flex justify-center w-full h-20">
+                    <div class="border-x-8 border-gray-200 w-1/2"></div>
+                </div>
+                <!-- actual schedule  -->
+                <div class="flex justify-center mx-8">
+                    <div class="rounded-lg border-8 border-gray-200">
+                        <div>
+                            <div class="flex float-left bg-yellow-200 w-1/3 md:w-1/4 px-8 py-4 h-full">
+                                <img class="hidden md:inline pr-4" src="../static/hh-2022/hh22_assets/plane.png" alt="">
+                                <hp class="text-left text-2xl text-black font-semibold">Schedule</p>
+                            </div>
+                            <div class="float-right bg-black w-2/3 md:w-3/4 h-full">
+                                <h1 class="text-right text-2xl text-yellow-200 font-semibold px-8 py-4">Terminal MSC</h1>
+                            </div>
+                        </div>
+                        <table id="app" class="border-collapse">
+                            <thead class="h-10">
+                                <tr  class="bg-blue-700 ">
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">DAY</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 lg:px-8 ">TIME</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32 ">EVENT</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-6 lg:pr-8">SPONSOR</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">ROOM</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">REMARK</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class = "bg-black h-10 border-gray-600 border-b-2" v-for="event in events">
+                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Day }}</td>
+                                    <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Time }}</td>
+                                    <td class="text-left align-middle text-sm text-yellow-300 pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32">{{ event.Name }}</td>
+                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-6 lg:pr-8">{{ event.Sponsor }}</td>
+                                    <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Room }}</td>
+                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-green-600 pb-1 lg:pb-2 px-6 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
+                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-red-600 pb-1 lg:pb-2 px-6 lg:px-8" v-else>{{ event.Remark }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer" style="min-height: 100vh;"></div>
 
             <!-- PRIZES 
 
@@ -147,6 +217,7 @@
     Ignore this stuff unless you know what you're doing.
      -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script>
@@ -319,7 +390,122 @@
                         desc:"The best hack that helps, improves, or unites Aggies, the University, or Aggieland community overall.",
                         prize: "Reveille Pillow Pets",
                     },
-                ]
+
+                ],
+                events: [
+                {
+                    Day: "Saturday",
+                    Time: "9:00 AM",
+                    Name: "Doors open! Check-In Begins",
+                    Sponsor: "HH",
+                    Room: "Outside MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Saturday",
+                    Time: "10:30 AM",
+                    Name: "Opening Ceremony + General Q/A",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Saturday",
+                    Time: "11:30 AM",
+                    Name: "Team Formation",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Saturday",
+                    Time: "12:00 AM",
+                    Name: "Hacking Starts",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Saturday",
+                    Time: "12:30 PM",
+                    Name: "Lunch",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Saturday",
+                    Time: "7:30 PM",
+                    Name: "Dinner",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "12:00 AM",
+                    Name: "Midnight Talent Show",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "2:00 AM",
+                    Name: "Late Night Valorant Stream w/ Anish & Jaden",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "3:30 AM",
+                    Name: "Lofi and Chill",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "8:00 AM",
+                    Name: "Breakfast",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "9:00 AM",
+                    Name: "Morning Yoga with Jiyoon",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "12:00 PM",
+                    Name: "Hacking Ends + Lunch",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "2:00 PM",
+                    Name: "Judging",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+                {
+                    Day: "Sunday",
+                    Time: "4:30 PM",
+                    Name: "Awards Ceremony",
+                    Sponsor: "HH",
+                    Room: "MSC 2400",
+                    Remark: "On Time"
+                },
+            ]
               }
           },
           mounted: function () {

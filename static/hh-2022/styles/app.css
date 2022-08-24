@@ -30,6 +30,10 @@ ion-icon {
   font-family: 'Raleway', sans-serif;
 }
 
+.inter-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .opensans-font {
   font-family: 'Open Sans', sans-serif;
 }
@@ -77,12 +81,16 @@ ion-icon {
     padding:0px;
   }
   
+  .apply-button {
+    background-color: #1481fd;
+  }
   
   .ptext{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .showcase h1{
     font-size:60px;
     color: #fff;
@@ -90,6 +98,7 @@ ion-icon {
     font-weight: bold;
     margin-bottom: 0px;
   }
+
   .showcase h2{
     font-size: 60px;
     text-transform: capitalize;
@@ -101,6 +110,7 @@ ion-icon {
     font-family: "Source Code Pro", monospace;
     animation: typist 8s steps(12), blink step-end 1s infinite;
   }
+
   @keyframes typist{
     0%{width: 0ch;}
     47%{width: 12ch;}
@@ -112,4 +122,19 @@ ion-icon {
     from, to{border-color: transparent;}
     50%{border-color: white;}
   }
+
+  @media (max-width: 780px) {
+    .showcase h2{
+      font-size: 40px;
+      text-transform: capitalize;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+      width: 12ch;
+      color:white;
+      font-family: "Source Code Pro", monospace;
+      animation: typist 8s steps(12), blink step-end 1s infinite;
+    }
+  }
+
   
