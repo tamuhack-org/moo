@@ -10,6 +10,10 @@ html {
     color: hsl(240, 9%, 4%);
 }
 
+.transparent-white{
+  background-color: #ffffffbc;
+}
+
 ion-icon {
   color: white;
 }
@@ -24,6 +28,10 @@ ion-icon {
 
 .raleway-font {
   font-family: 'Raleway', sans-serif;
+}
+
+.inter-font {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .opensans-font {
@@ -73,19 +81,24 @@ ion-icon {
     padding:0px;
   }
   
+  .apply-button {
+    background-color: #1c71d1;
+  }
   
   .ptext{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .showcase h1{
     font-size:60px;
     color: #fff;
-    font-family: "Tempus Sans ITC";
+    font-family: "Source Code Pro", monospace;
     font-weight: bold;
     margin-bottom: 0px;
   }
+
   .showcase h2{
     font-size: 60px;
     text-transform: capitalize;
@@ -94,9 +107,10 @@ ion-icon {
     border-right: 2px solid white;
     width: 12ch;
     color:white;
-    font-family: consolas;
+    font-family: "Source Code Pro", monospace;
     animation: typist 8s steps(12), blink step-end 1s infinite;
   }
+
   @keyframes typist{
     0%{width: 0ch;}
     47%{width: 12ch;}
@@ -108,4 +122,118 @@ ion-icon {
     from, to{border-color: transparent;}
     50%{border-color: white;}
   }
+
+  @media (max-width: 780px) {
+    .showcase h2{
+      font-size: 40px;
+      text-transform: capitalize;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+      width: 12ch;
+      color:white;
+      font-family: "Source Code Pro", monospace;
+      animation: typist 8s steps(12), blink step-end 1s infinite;
+    }
+  }
+
+
+  /* comets animations */
+
+#comets{
+  position:relative;
+  top:0px;
+  width:100vw;
+  text-align: left; 
+  height: 100%; 
+  min-height: 900px;
+  overflow:hidden;
+}
+
+#comets i {
+  display: inline-block;
+  width: 250px;
+  height: 150px;position:absolute;
+  border-radius: 5% 40% 70%;
+  box-shadow: inset 0px 0px 1px #294b67;
+  border: 1px solid #333;
+  z-index: 1;
+  background-color: #fff;
+  opacity: .7;
+  -webkit-animation: falling 8s 0s infinite;
+  -webkit-animation-timing-function:ease-in;
+}
+
+
+#comets i:nth-child(1){
+  left: 50vw;
+  height:73px; 
+  width:3px;
+  background-color: #fff;
+}
+#comets i:nth-child(3){
+  height:11px; 
+  width:3px;
+  -webkit-animation: falling3 8s 3s infinite;
+  left: 10vw;
+background-color: #fff;
+}
+#comets i:nth-child(2){
+  -webkit-animation: falling2 8s 1s infinite;
+  left: 30vw;
+  height:70px; 
+  width:4px;
+  background-color: #fff;
+
+}
+
+@-webkit-keyframes falling {
+
+  0% {
+    -webkit-transform: translate3d(100px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    -webkit-transform:
+    translate3d(450px,900px,0) rotate(160deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform:
+    translate3d(450px,900px,0) rotate(160deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes falling3 {
+ 0% {
+  -webkit-transform: translate3d(0,0,0) rotate(150deg);
+}
+
+10% {
+  -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
+  opacity: 0;
+}
+
+100% {
+  -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
+  opacity: 0;
+}
+}
+
+@-webkit-keyframes falling2 {
+ 0% {
+  -webkit-transform:translate3d(100px,0,0) rotate(130deg);
+}
+
+15% {
+  -webkit-transform:translate3d(800px,580px,0) rotate(130deg);
+  opacity: 0;
+}
+
+100% {
+  -webkit-transform: translate3d(800px,680px,0) rotate(180deg);
+  opacity: 0;
+}
+}
   
