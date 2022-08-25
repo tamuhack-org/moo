@@ -237,3 +237,18 @@ background-color: #fff;
 }
 }
   
+.prizes-card {
+  background: #DAC6B5;
+  border: 30px solid;
+  border-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 0, 0, 0.4),
+    rgba(255, 0, 0, 0.4) 20px,
+    #fff 20px,
+    #fff 60px,
+    rgba(0, 56, 255, 0.4) 60px,
+    rgba(0, 56, 255, 0.4) 80px, 
+    #fff 80px,
+    #fff 120px
+  ) 24/20px;
+}
