@@ -13,12 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <script src="https://unpkg.com/vue@2"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
     <script src="https://unpkg.com/buefy/dist/components/table"></script>
     <script src="https://unpkg.com/buefy/dist/components/input"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -46,19 +47,19 @@
                 </div>
                 <ul class="off-black md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
                     <li class="mx-4 my-2 md:my-0">
-                        <a href="#landing" class="text-xl text-white font-semibold raleway-font">Info</a>
+                        <a href="#landing" class="nav-button text-xl text-gray-300 font-semibold raleway-font">Info</a>
                     </li>
                     <li class="mx-4 my-2 md:my-0">
-                        <a href="#" class="text-xl text-white font-semibold raleway-font">Schedule</a>
+                        <a href="#" class="nav-button text-xl text-gray-300 font-semibold raleway-font">Schedule</a>
                     </li>
                     <li class="mx-4 my-2 md:my-0">
-                        <a href="#" class="text-xl text-white font-semibold raleway-font">Prizes</a>
+                        <a href="#" class="nav-button text-xl text-gray-300 font-semibold raleway-font">Prizes</a>
                     </li>
                     <li class="mx-4 my-2 md:my-0">
-                        <a href="#" class="text-xl text-white font-semibold raleway-font">FAQ</a>
+                        <a href="#" class="nav-button text-xl text-gray-300 font-semibold raleway-font">FAQ</a>
                     </li>
                     <li class="mx-4 my-2 md:my-0">
-                        <a href="#" class="text-xl text-white font-semibold raleway-font">Sponsors</a>
+                        <a href="#" class="nav-button text-xl text-gray-300 font-semibold raleway-font">Sponsors</a>
                     </li>
                 </ul>
             </nav>
@@ -70,7 +71,7 @@
             </script>
 
             <!-- LANDING -->
-            <div id="landing">
+            <div id="landing" class="min-h-screen">
                 <section>
                     <div class="showcase">
                         <div class="ptext">
@@ -78,46 +79,81 @@
                         </div>
                     </div>
                 </section>
-                <div class="flex">
+                <div class="flex relative">
                     <div class="flex justify-center">
                         <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_clouds.png"> 
                         <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_ocean.png"> 
                         <img class="md:w-1/2 shake" src=".\..\static\hh-2022\hh22_assets\hh22_earth.png"> 
-                        <div class="z-50 absolute w-full h-full comets">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                        </div>
+                    </div>
+                    <div class="meteors absolute h-full w-full">
+                        <div class="meteo"></div>
+                        <div class="meteo"></div>
+                        <div class="meteo"></div>
+                        <div class="meteo"></div>
                     </div>
                 </div>
-                <div class="flex flex-col sm:flex-row justify-center mt-8">
-                    <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-lg text-white font-bold border-2 rounded-md apply-button">APPLY</a>
-                    <a href="https://mentor.tamuhack.com/" target="_blank" rel="noopener noreferrer"
-                                                                             class="px-8 py-4 w-3/5 sm:w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-lg text-white font-bold border-2 rounded-md">MENTOR</a>
+                <div class="flex justify-center">
+                    <div class="flex flex-col sm:flex-row justify-center place-content-center mt-8 relative z-50">
+                        <a href="https://register.tamuhack.com/" target="_blank" rel="noopener noreferrer"
+                                                                                class="px-8 py-4 w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-lg text-white font-bold border-4 rounded-md apply-button">APPLY</a>
+                        <a href="https://mentor.tamuhack.com/" target="_blank" rel="noopener noreferrer"
+                                                                                class="px-8 py-4 w-60 min-w-min mt-4 sm:mr-5 sm:ml-5 text-center text-lg text-white font-bold border-4 rounded-md mentor-button">MENTOR</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="spacer" style="min-height: 100vh;"></div>
+            <div class="spacer hidden xl:block" style="min-height: 70vh;"></div>
+            <div class="spacer block xl:hidden" style="min-height: 20vh;"></div>
 
-            <!-- INFO DESKTOP -->
+            <!-- INFO (DESKTOP) -->
             <div id="info" class="hidden xl:block" style="padding: 6em;">
                 <div style="font-family: 'Inter'; font-weight: 400;" class="flex">
                     <div class="w-1/4 flex flex-col self-center">
                         <div class="mb-72">
-                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold py-4 px-4 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-xl font-bold py-5 px-3 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
                         </div>
                         <div class="mt-">
-                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold py-4 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-xl font-bold py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
                         </div>
                     </div>
                     <div class="w-1/2 px-10">
                         <img src=".\..\static\hh-2022\hh22_assets\info_board.png">
                     </div>
                     <div class="w-1/4 self-center">
-                        <div class="text-md font-bold py-4 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
+                        <div class="text-xl font-bold py-5 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
                             <p style="font-family: 'Inter'; font-weight: 600;">To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!</p>
                             <br>
+                            <p style="font-family: 'Inter'; font-weight: 600;">After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFO (MEDIUM SIZE) (I'm sorry, I was too lazy to responsively size this) -->
+            <div id="info" class="hidden md:block xl:hidden mx-4 mb-80">
+                <div style="font-family: 'Inter'; font-weight: 400;" class="">
+                    <div class="flex justify-center">
+                        <div class="card mx-4">
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="card-content text-md font-bold mb-4 mx-4 py-5 px-3 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
+                        </div>
+                        <div class="card mx-4">
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold mb-4 py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
+                        </div>
+                        <div class="card mx-4">
+                            <p class="text-md font-bold mx-4 py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl" style="font-family: 'Inter'; font-weight: 600;">To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- INFO (MOBILE) -->
+            <div id="info" class="block md:hidden mx-4">
+                <div style="font-family: 'Inter'; font-weight: 400;" class="">
+                    <div class=" flex flex-col self-center">
+                        <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold mb-4 py-5 px-3 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
+                        <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold mb-4 py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
+                        <div class="text-md font-bold py-5 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
+                            <p style="font-family: 'Inter'; font-weight: 600;">To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!</p>
                             <p style="font-family: 'Inter'; font-weight: 600;">After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition! </p>
                         </div>
                     </div>
@@ -148,45 +184,88 @@
                 <div class="flex justify-center mx-8">
                     <div class="rounded-lg border-8 border-gray-200">
                         <div>
-                            <div class="flex float-left bg-yellow-200 w-1/3 md:w-1/4 px-8 py-4 h-full">
-                                <img class="hidden md:inline pr-4" src="../static/hh-2022/hh22_assets/plane.png" alt="">
-                                <hp class="text-left text-2xl text-black font-semibold">Schedule</p>
+                            <div class="flex float-left bg-yellow-200 w-1/2 md:w-1/3 lg:w-1/4 px-3 md:px-8 py-4 h-full">
+                                <img class="hidden lg:inline pr-4" src="../static/hh-2022/hh22_assets/plane.png" alt="">
+                                <p class="text-left text-2xl text-black font-semibold">Schedule</p>
                             </div>
-                            <div class="float-right bg-black w-2/3 md:w-3/4 h-full">
-                                <h1 class="text-right text-2xl text-yellow-200 font-semibold px-8 py-4">Terminal MSC</h1>
+                            <div class="float-right bg-black w-1/2 md:w-2/3 lg:w-3/4 h-full">
+                                <h1 class="text-right text-2xl text-yellow-200 font-semibold px-8 py-4">MSC</h1>
                             </div>
                         </div>
                         <table id="app" class="border-collapse">
                             <thead class="h-10">
                                 <tr  class="bg-blue-700 ">
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">DAY</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 lg:px-8 ">TIME</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32 ">EVENT</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-6 lg:pr-8">SPONSOR</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">ROOM</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-6 lg:px-8">STATUS</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 lg:px-8 ">DAY</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-center align-middle text-sm text-white pb-1 lg:pb-2 pl-2 lg:px-8 ">TIME</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 pl-2 lg:pb-2 lg:pl-8">EVENT</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 lg:pl-32 pr-6 lg:pr-8">SPONSOR</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm font-semibold text-white pb-1 lg:px-8 lg:pb-2">ROOM</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden lg:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 lg:px-8">STATUS</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class = "bg-black h-10 border-gray-600 border-b-2" v-for="event in events">
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Day }}</td>
-                                    <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Time }}</td>
-                                    <td class="text-left align-middle text-sm text-yellow-200 pb-1 lg:pb-2 pl-6 lg:pl-8 pr-20 lg:pr-32">{{ event.Name }}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-6 lg:pr-8">{{ event.Sponsor }}</td>
-                                    <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-6 lg:px-8 ">{{ event.Room }}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-green-400 pb-1 lg:pb-2 px-6 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-red-600 pb-1 lg:pb-2 px-6 lg:px-8" v-else>{{ event.Remark }}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 lg:px-8 ">{{ event.Day }}</td>
+                                    <td class="text-left whitespace-nowrap align-middle text-sm text-white pb-1 lg:pb-2 px-2 lg:px-8 ">{{ event.Time }}</td>
+                                    <td class="text-left align-middle text-sm text-yellow-200 pb-1 pl-2 pr-2 lg:pb-2 lg:pl-8 lg:pr-32">{{ event.Name }}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 lg:pl-32 lg:pr-8">{{ event.Sponsor }}</td>
+                                    <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 pr-2 lg:px-8">{{ event.Room }}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-green-400 pb-1 lg:pb-2 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-red-600 pb-1 lg:pb-2 lg:px-8" v-else>{{ event.Remark }}</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                        <p class="text-center mt-10 text-xl text-white inter-font font-bold">Note: Schedule will be updated as the event approaches. Check back soon!</p>
+                        <p class="text-center mt-10 text-xl px-4 text-white inter-font font-bold">Note: Schedule will be updated as the event approaches. Check back soon!</p>
             </div>
 
-            <div class="spacer" style="min-height: 100vh;"></div>
+            <div class="spacer" style="min-height: 20vh;"></div>
 
-            <!-- FAQ -->
+            <!-- FAQ (DESKTOP) -->
+            <div class="flex justify-center">
+                <img class="md:w-1/2" loading="lazy" src="../static/hh-2022/hh22_assets/FAQ.png">
+            </div>
+            <div class="hidden lg:flex px-8">
+                <div class="">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person2.png">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person3.png">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person4.png">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person5.png">
+                    <img class="hidden lg:inline" loading="lazy" src="../static/hh-2022/hh22_assets/person6.png">
+                    <img class="lg:hidden" loading="lazy" src="../static/hh-2022/hh22_assets/person7.png">
+                    <img class="lg:hidden" loading="lazy" src="../static/hh-2022/hh22_assets/person8.png">
+                </div>
+                <div class="mt-10">
+                    <div v-for="faq in faqs" class="mt-8 lg:mt-10 py-5 px-8 border navy-border bg-white rounded-2xl opacity-100">
+                        <p class="text-xl md:text-2xl font-bold inter-font navy">{{faq.title}}</p>
+                        <p class="mt-5 text-l md:text-md inter-font navy">{{faq.desc}}</p>
+                    </div>
+                </div>
+                <div class="mt-48 hidden xl:inline">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person6.png">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person7.png">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person8.png">
+                    <img class="" loading="lazy" src="../static/hh-2022/hh22_assets/person9.png">
+                </div>
+
+            </div>
+
+            <!-- FAQ (MOBILE) -->
+            <div class="inline lg:hidden px-8">
+                <div class="mt-10">
+                    <div v-for="faq in faqs" class="mx-4 sm:mx-4 mt-8 lg:mt-10 py-4 px-2 border navy-border bg-white rounded-2xl opacity-100">
+                        <div class="flex items-center px-4">
+                            <img class="h-20 w-20 px-4 border-2 bg-gray-300 rounded-full" v-bind:src="'../static/hh-2022/hh22_assets/' + faq.icon" />
+                            <p class="text-xl md:text-2xl font-bold opensans-font navy ml-4">{{faq.title}}</p>
+                        </div>
+                        <p class="mt-4 px-4 opensans-font navy">{{faq.desc}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+
 
             <!-- PRIZES -->
 
@@ -201,6 +280,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+        console.log("AAAA")
+        var reset = function(e) {
+            e.target.className = '';
+            setTimeout(function() {
+                e.target.className = 'meteor';
+            }, 0);
+        };
+        var meteors = document.getElementsByClassName("meteor");
+        for(var i = 0; i < meteors.length; i++) {
+            meteors[i].addEventListener('animationend', reset);
+            console.log("AAAAAA")
+        }
+    </script>
     <script>
         new Vue({
           el: "#app",
@@ -229,13 +322,48 @@
                     desc: "Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills!",
                     desc2: ""
                 }],
-                faq: [{
-                    title: "How much does it cost?",
-                    desc: "It’s FREE! All you need is a laptop and Wi-Fi!"
-                }, {
-                    title: "I don’t know how to code! Can I still participate?",
-                    desc: "Of course! There will be mentors online and in-person to help answer any questions you may have. We will also have workshops and mini-events to keep you on your toes throughout the competition, so there will never be an ounce of boredom."
-                }],
+                faqs: [
+              {
+                title: "Who can attend?",
+                desc: "Any TAMU graduate / undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend.",
+                icon: "chibi1.png"
+              },
+              {
+                title: "How much experience do I need?",
+                desc: "Absolutely zero! We want you here because you have a passion for creating, not because you’re the most experienced hacker on the block. We’ll have lots of resources including workshops and a bunch of mentors to help beginners get started. There'll also be plenty of people to learn from and help out!",
+                icon: "chibi1.png"
+              },
+              {
+                title: "How much does it cost?",
+                desc: "Nothing. Nada. Zilch. It’s completely free for all accepted hackers. To make it even better, we’ll be giving out a ton of swag to every in-person hacker, and prizes to our winners.",
+                icon: "chibi1.png"
+              },
+              {
+                title: "What should I bring?",
+                desc: "Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. Don't bring anything you wouldn't bring on an airplane.",
+                icon: "chibi1.png"
+              },
+              {
+                title: "How do teams work?",
+                desc: "Teams are limited to 4 hackers. You don’t need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one yet.",
+                icon: "chibi1.png"
+              },
+              {
+                title: "When is the deadline to apply?",
+                desc: "The deadline to registration is September 30, at 23:59.",
+                icon: "chibi1.png"
+              },
+              {
+                title: "Will there be workshops or talks?",
+                desc: "Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event.",
+                icon: "chibi1.png"
+              },
+              {
+                title: "Have additional questions?",
+                desc: "Email us with any questions, comments, concerns at hello@tamuhack.com.",
+                icon: "chibi1.png"
+              }
+            ],
                 sat_events: [
                     {
                         time: "9:00 AM",

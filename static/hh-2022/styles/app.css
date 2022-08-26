@@ -31,7 +31,7 @@ ion-icon {
 }
 
 .inter-font {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .opensans-font {
@@ -84,6 +84,21 @@ ion-icon {
   .apply-button {
     background-color: #1c71d1;
   }
+
+  .apply-button:hover {
+    color: rgb(223, 223, 223);
+    border-color: rgb(223, 223, 223);
+  }
+
+  .mentor-button:hover {
+    color: rgb(223, 223, 223);
+    border-color: rgb(223, 223, 223);
+  }
+
+  .nav-button:hover {
+    color: white;
+  }
+
   
   .ptext{
     display: flex;
@@ -141,7 +156,6 @@ ion-icon {
   /* comets animations */
 
 #comets{
-  position:relative;
   top:0px;
   width:100vw;
   text-align: left; 
@@ -158,7 +172,7 @@ ion-icon {
   box-shadow: inset 0px 0px 1px #294b67;
   border: 1px solid #333;
   z-index: 1;
-  background-color: #fff;
+  background-color: red;
   opacity: .7;
   -webkit-animation: falling 8s 0s infinite;
   -webkit-animation-timing-function:ease-in;
@@ -167,23 +181,23 @@ ion-icon {
 
 #comets i:nth-child(1){
   left: 50vw;
-  height:73px; 
+  height:7px; 
   width:3px;
-  background-color: #fff;
+  background-color: red;
 }
 #comets i:nth-child(3){
   height:11px; 
   width:3px;
   -webkit-animation: falling3 8s 3s infinite;
   left: 10vw;
-background-color: #fff;
+background-color: red;
 }
 #comets i:nth-child(2){
   -webkit-animation: falling2 8s 1s infinite;
   left: 30vw;
   height:70px; 
   width:4px;
-  background-color: #fff;
+  background-color: red;
 
 }
 
@@ -237,3 +251,59 @@ background-color: #fff;
 }
 }
   
+
+.meteor {
+  border: 2px solid transparent;
+  border-bottom: 60px solid #fff;
+  position: absolute;
+  animation: shower 0.5s infinite;
+  transform-origin: top center;
+  opacity: 0;
+}
+
+.meteor:after {
+  content: '';
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background: #fff;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px 0 #fff;
+}
+
+.meteor:nth-child(1) {
+  left: 56vw;
+  top: 23vh;
+  animation-delay: 6s;
+}
+
+.meteor:nth-child(2) {
+  left: 50vw;
+  top: 23vh;
+  animation-delay: 6s;
+}
+
+.meteor:nth-child(3) {
+  left: 45vw;
+  top: 23vh;
+  animation-delay: 6s;
+}
+
+
+@keyframes shower {
+  0% {
+    transform: rotate(30deg) scaleY(0);
+    opacity: 0;
+  }
+  65% {
+    transform: rotate(30deg) scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0;
+  }
+}
