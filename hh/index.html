@@ -16,9 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <script src="https://unpkg.com/vue@2"></script>
-    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
-    <script src="https://unpkg.com/buefy/dist/components/table"></script>
-    <script src="https://unpkg.com/buefy/dist/components/input"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -103,24 +100,24 @@
             </div>
 
             <div class="spacer hidden xl:block" style="min-height: 70vh;"></div>
-            <div class="spacer block xl:hidden" style="min-height: 20vh;"></div>
+            <div class="spacer block xl:hidden" style="min-height: 40vh;"></div>
 
             <!-- INFO (DESKTOP) -->
-            <div id="info" class="hidden xl:block" style="padding: 6em;">
+            <div id="info" class="hidden lg:block mb-56 mx-8" >
                 <div style="font-family: 'Inter'; font-weight: 400;" class="flex">
                     <div class="w-1/4 flex flex-col self-center">
-                        <div class="mb-72">
-                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-xl font-bold py-5 px-3 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
+                        <div class="mb-56 xl:mb-72">
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-sm xl:text-xl font-bold py-5 px-3 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
                         </div>
                         <div class="mt-">
-                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-xl font-bold py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-sm xl:text-xl font-bold py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
                         </div>
                     </div>
                     <div class="w-1/2 px-10">
                         <img src=".\..\static\hh-2022\hh22_assets\info_board.png">
                     </div>
                     <div class="w-1/4 self-center">
-                        <div class="text-xl font-bold py-5 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
+                        <div class="text-sm xl:text-xl font-bold py-5 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
                             <p style="font-family: 'Inter'; font-weight: 600;">To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!</p>
                             <br>
                             <p style="font-family: 'Inter'; font-weight: 600;">After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition! </p>
@@ -129,7 +126,7 @@
                 </div>
             </div>
 
-            <!-- INFO (MEDIUM SIZE) (I'm sorry, I was too lazy to responsively size this) -->
+            <!-- INFO (MEDIUM SIZE) (I'm sorry, I was too lazy to responsively size this) 
             <div id="info" class="hidden md:block xl:hidden mx-4 mb-80">
                 <div style="font-family: 'Inter'; font-weight: 400;" class="">
                     <div class="flex justify-center">
@@ -144,11 +141,11 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div> -->
 
             <!-- INFO (MOBILE) -->
-            <div id="info" class="block md:hidden mx-4">
-                <div style="font-family: 'Inter'; font-weight: 400;" class="">
+            <div id="info" class="block lg:hidden mx-4">
+                <div style="font-family: 'Inter'; font-weight: 400;" class="mb-40">
                     <div class=" flex flex-col self-center">
                         <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold mb-4 py-5 px-3 bg-white bg-opacity-70 text-gray-600 rounded-xl"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
                         <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold mb-4 py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
