@@ -252,3 +252,9 @@ background-color: #fff;
     #fff 120px
   ) 24/20px;
 }
+
+.stamp {
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/stamp-border.png) 8 round;
+  border-width: 10px;
+  border-style: solid;
+}
