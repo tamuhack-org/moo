@@ -256,8 +256,8 @@ background-color: red;
   border: 2px solid transparent;
   border-bottom: 60px solid #fff;
   position: absolute;
-  animation: shower 0.5s infinite;
   transform-origin: top center;
+  z-index: 0;
   opacity: 0;
 }
 
@@ -275,35 +275,83 @@ background-color: red;
 }
 
 .meteor:nth-child(1) {
-  left: 56vw;
-  top: 23vh;
-  animation-delay: 6s;
+  left: 85vw;
+  animation: shower 6s infinite;
+  top: 40vh;
+  animation-delay: 3s;
 }
 
 .meteor:nth-child(2) {
-  left: 50vw;
-  top: 23vh;
-  animation-delay: 6s;
+  left: 20vw;
+  top: 13vh;
+  animation: shower 5s infinite;
+  animation-delay: 7s;
 }
 
 .meteor:nth-child(3) {
-  left: 45vw;
-  top: 23vh;
-  animation-delay: 6s;
+  left: 69vw;
+  top: 17vh;
+  animation: shower 4s infinite;
+  animation-delay: 9s;
 }
 
+.meteor:nth-child(4) {
+  left: 34vw;
+  top: 10vh;
+  animation: shower2 13s infinite;
+  animation-delay: 10s;
+}
+
+.meteor:nth-child(5) {
+  left: 10vw;
+  top: 43vh;
+  animation: shower2 10s infinite;
+  animation-delay: 13s;
+}
+
+.meteor:nth-child(6) {
+  left: 98vw;
+  top: 29vh;
+  animation: shower2 10s infinite;
+  animation-delay: 15s;
+}
 
 @keyframes shower {
   0% {
     transform: rotate(30deg) scaleY(0);
     opacity: 0;
   }
-  65% {
+  6.5% {
     transform: rotate(30deg) scaleY(1);
     opacity: 1;
   }
-  100% {
+  10.0% {
     transform: rotate(30deg) scaleY(1) translateY(500%);
     opacity: 0;
+  }
+
+  100% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0; 
+  }
+}
+
+@keyframes shower2 {
+  0% {
+    transform: rotate(30deg) scaleY(0);
+    opacity: 0;
+  }
+  3.25% {
+    transform: rotate(30deg) scaleY(1);
+    opacity: 1;
+  }
+  5.0% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0; 
   }
 }

@@ -20,13 +20,10 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
     <!--
         DO NOT USE THIS!
         Please use static/hh-2022/styles/app.css for any styles that are too hard to do in tailwind
      -->
-    
 
 </head>
 
@@ -77,16 +74,18 @@
                     </div>
                 </section>
                 <div class="flex relative">
-                    <div class="flex justify-center">
+                    <div class="flex justify-center z-50">
                         <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_clouds.png"> 
                         <img class="md:w-1/2 shake absolute" src=".\..\static\hh-2022\hh22_assets\hh22_ocean.png"> 
                         <img class="md:w-1/2 shake" src=".\..\static\hh-2022\hh22_assets\hh22_earth.png"> 
                     </div>
                     <div class="meteors absolute h-full w-full">
-                        <div class="meteo"></div>
-                        <div class="meteo"></div>
-                        <div class="meteo"></div>
-                        <div class="meteo"></div>
+                        <div class="meteor"></div>
+                        <div class="meteor"></div>
+                        <div class="meteor"></div>
+                        <div class="meteor"></div>
+                        <div class="meteor"></div>
+                        <div class="meteor"></div>
                     </div>
                 </div>
                 <div class="flex justify-center">
@@ -151,7 +150,6 @@
                         <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-bold mb-4 py-5 px-3 bg-white bg-opacity-70  text-gray-600 rounded-xl">Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills! </p>
                         <div class="text-md font-bold py-5 px-4 bg-white bg-opacity-70  text-gray-600 rounded-xl">
                             <p style="font-family: 'Inter'; font-weight: 600;">To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!</p>
-                            <p style="font-family: 'Inter'; font-weight: 600;">After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition! </p>
                         </div>
                     </div>
                 </div>
@@ -254,7 +252,7 @@
                 <div class="mt-10">
                     <div v-for="faq in faqs" class="mx-4 sm:mx-4 mt-8 lg:mt-10 py-4 px-2 border navy-border bg-white rounded-2xl opacity-100">
                         <div class="flex items-center px-4">
-                            <img class="h-20 w-20 px-4 border-2 bg-gray-300 rounded-full" v-bind:src="'../static/hh-2022/hh22_assets/' + faq.icon" />
+                            <img class="h-20 w-20 px-2 border-2 bg-gray-300 rounded-full" v-bind:src="'../static/hh-2022/hh22_assets/' + faq.icon" />
                             <p class="text-xl md:text-2xl font-bold opensans-font navy ml-4">{{faq.title}}</p>
                         </div>
                         <p class="mt-4 px-4 opensans-font navy">{{faq.desc}}</p>
@@ -324,42 +322,42 @@
               {
                 title: "Who can attend?",
                 desc: "Any TAMU graduate / undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend.",
-                icon: "chibi1.png"
+                icon: "chibi7.png"
               },
               {
                 title: "How much experience do I need?",
                 desc: "Absolutely zero! We want you here because you have a passion for creating, not because you’re the most experienced hacker on the block. We’ll have lots of resources including workshops and a bunch of mentors to help beginners get started. There'll also be plenty of people to learn from and help out!",
-                icon: "chibi1.png"
+                icon: "chibi2.png"
               },
               {
                 title: "How much does it cost?",
                 desc: "Nothing. Nada. Zilch. It’s completely free for all accepted hackers. To make it even better, we’ll be giving out a ton of swag to every in-person hacker, and prizes to our winners.",
-                icon: "chibi1.png"
+                icon: "chibi3.png"
               },
               {
                 title: "What should I bring?",
                 desc: "Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. Don't bring anything you wouldn't bring on an airplane.",
-                icon: "chibi1.png"
+                icon: "chibi4.png"
               },
               {
                 title: "How do teams work?",
                 desc: "Teams are limited to 4 hackers. You don’t need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one yet.",
-                icon: "chibi1.png"
+                icon: "chibi5.png"
               },
               {
                 title: "When is the deadline to apply?",
                 desc: "The deadline to registration is September 30, at 23:59.",
-                icon: "chibi1.png"
+                icon: "chibi6.png"
               },
               {
                 title: "Will there be workshops or talks?",
                 desc: "Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event.",
-                icon: "chibi1.png"
+                icon: "chibi7.png"
               },
               {
                 title: "Have additional questions?",
                 desc: "Email us with any questions, comments, concerns at hello@tamuhack.com.",
-                icon: "chibi1.png"
+                icon: "chibi8.png"
               }
             ],
                 sat_events: [
