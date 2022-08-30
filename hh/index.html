@@ -9,10 +9,6 @@
     <link rel="icon" href="../static/hh-2022/hh22_assets/hh22icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
@@ -21,12 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
-    <!--
-        DO NOT USE THIS!
-        Please use static/hh-2022/styles/app.css for any styles that are too hard to do in tailwind
-     -->
 
 </head>
 
@@ -54,9 +45,11 @@
                     <li class="mx-4 my-2 md:my-0">
                         <a href="#faq" class="nav-button text-xl text-gray-300 font-semibold raleway-font">FAQ</a>
                     </li>
+                    <!--
                     <li class="mx-4 my-2 md:my-0">
                         <a href="#prizes" class="nav-button text-xl text-gray-300 font-semibold raleway-font">Prizes</a>
                     </li>
+                -->
                 </ul>
             </nav>
             <script>
@@ -134,7 +127,7 @@
                     <div class=" flex flex-col self-center">
                         <div class="bg-white px-3 my-4 rounded-xl">
                             <p class="text-black px-3 my-4 text-2xl inter-font font-bold ">What is HowdyHack?</p>
-                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-extrabold mb-4 px-3 text-black"> HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
+                            <p style="font-family: 'Inter'; font-weight: 600;" class="text-md font-extrabold mb-4 px-3 text-black">HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.</p>
                         </div>
                         <div class="bg-white  px-3 my-4 rounded-xl">
                         <p class="text-black px-3 my-4 text-2xl inter-font font-bold">How do I participate?</p>
@@ -307,19 +300,6 @@
 
                 scrollPosition: null,
                 currentScreen: "Home",
-                information: [{
-                    title: "What is HowdyHack?",
-                    desc: "HowdyHack is Texas A&M's 24-hour, beginner-friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break their product before they’ll submit it to a panel of judges for evaluation and hopefully win some cool prizes.",
-                    desc2: "Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the creative space to showcase their skills and create something amazing while getting to know fellow hackers with the same Aggie pride!"
-                }, {
-                    title: "How do I participate?",
-                    desc: "To get started, head on over to register for the event. The first 100 people to sign up and submit a project will receive a care package with a T-shirt, stickers, and other hackathon swag from our sponsors. Sign up as soon as possible to secure your spot and qualify for a care package!",
-                    desc2: "After you sign up, you will receive a confirmation email letting you know you’re good to go. Now you can either form a team yourself, or you find one during the team building portion right before the competition!"
-                }, {
-                    title: "Goal of HowdyHack",
-                    desc: "Beyond hacking, HowdyHack is about connecting creative and talented Aggie hackers with each other. We want to give hackers the opportunity to show off their capabilities to an audience who will listen and get to know fellow hackers with the same Aggie pride! There will also be workshops and activities to help you learn new skills!",
-                    desc2: ""
-                }],
                 faqs: [
               {
                 title: "Who can attend?",
