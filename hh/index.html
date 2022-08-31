@@ -149,35 +149,35 @@
                 <div class="flex justify-center mx-8">
                     <div class="rounded-lg border-4 xl:border-8 border-gray-200">
                         <div>
-                            <div class="flex float-left bg-yellow-200 w-1/2 sm:w-1/4 px-4 sm:px-8 py-4 h-full">
+                            <div class="flex float-left bg-yellow-200 w-1/2 lg:w-1/4 px-4 sm:px-8 py-4 h-full">
                                 <!-- class="xl:h-24 h-12" -->
-                                <img class="md:inline pr-4 h-6" src="../static/hh-2022/hh22_assets/plane.png" alt="">
-                                <p class="text-left text-lg xl:text-2xl text-black font-semibold">Schedule</p>
+                                <img class="md:inline pr-4 h-6 md:h-8" src="../static/hh-2022/hh22_assets/plane.png" alt="">
+                                <p class="text-left text-lg sm:text-2xl text-black font-semibold">Schedule</p>
                             </div>
-                            <div class="float-right bg-black w-1/2 sm:w-3/4 h-full">
-                                <h1 class="text-right text-lg xl:text-2xl text-yellow-200 font-semibold px-4 sm:px-8 py-4 h-full">Terminal MSC</h1>
+                            <div class="float-right bg-black w-1/2 lg:w-3/4 h-full">
+                                <h1 class="text-right text-lg sm:text-2xl text-yellow-200 font-semibold px-4 sm:px-8 py-4 h-full">Terminal MSC</h1>
                             </div>
                         </div>
                         <table id="app" class="border-collapse">
                             <thead class="h-10">
-                                <tr  class="bg-blue-700 ">
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">DAY</th>
+                                <tr  class="bg-blue-700">
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">DAY</th>
                                     <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">TIME</th>
                                     <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-6 lg:pl-8 pr-16 lg:pr-32 ">EVENT</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-4 lg:pr-8">SPONSOR</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-4 lg:pr-8">SPONSOR</th>
                                     <th style="font-family: 'Inter'; font-weight: 600;" class="text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-4 lg:px-8">ROOM</th>
-                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden xl:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-4 lg:px-8">STATUS</th>
+                                    <th style="font-family: 'Inter'; font-weight: 600;" class="hidden lg:table-cell text-left align-middle text-sm font-semibold text-white pb-1 lg:pb-2 px-4 lg:px-8">STATUS</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class = "bg-black h-10 border-gray-600 border-b-2" v-for="event in events">
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">{{ event.Day }}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">{{ event.Day }}</td>
                                     <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">{{ event.Time }}</td>
                                     <td class="text-left align-middle text-sm text-yellow-200 pb-1 lg:pb-2 pl-6 lg:pl-8 pr-16 lg:pr-32">{{ event.Name }}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-4 lg:pr-8">{{ event.Sponsor }}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-white pb-1 lg:pb-2 pl-20 lg:pl-32 pr-4 lg:pr-8">{{ event.Sponsor }}</td>
                                     <td class="text-left align-middle text-sm text-white pb-1 lg:pb-2 px-4 lg:px-8 ">{{ event.Room }}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-green-400 pb-1 lg:pb-2 px-4 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
-                                    <td class="hidden xl:table-cell text-left align-middle text-sm text-red-600 pb-1 lg:pb-2 px-4 lg:px-8" v-else>{{ event.Remark }}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-green-400 pb-1 lg:pb-2 px-4 lg:px-8" v-if="event.Remark == 'On Time' ">{{ event.Remark}}</td>
+                                    <td class="hidden lg:table-cell text-left align-middle text-sm text-red-600 pb-1 lg:pb-2 px-4 lg:px-8" v-else>{{ event.Remark }}</td>
                                 </tr>
                             </tbody>
                         </table>
