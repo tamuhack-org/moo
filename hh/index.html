@@ -152,24 +152,25 @@
                 <div class="flex justify-center w-full overflow-hidden">
                     <!-- Left bar  -->
                     <div class="flex items-center float-right flex-grow">
-                        <div class="bg-gray-200 border-gray-200 w-full h-1/4"></div>
+                    <div class=" bg-gray-200 border-gray-200 w-full h-1/6 sm:h-1/4"></div>
                     </div>
                     <!-- Big Sign  -->
-                    <div class="border-[15px] border-8 border-gray-200 rounded-md bg-black sm:mx-5 md:mx-0">
-                        <p class="text-5xl text-center font-bold text-yellow-300 p-9">NOW BOARDING: HOWDYHACK AIRLINES</p> 
+                    <div class="border-8 border-gray-200 bg-black">
+                        <p class="hidden sm:block text-4xl lg:text-5xl text-center text-yellow-300 p-5 lg:p-9">NOW BOARDING: HOWDYHACK AIRLINES</p> 
+                        <p class="sm:hidden text-4xl text-center text-yellow-300 p-5">NOW BOARDING</p> 
                     </div>
                     <!-- Right Bar -->
                     <div class="flex items-center float-right flex-grow">
-                        <div class=" bg-gray-200 w-full h-1/4"></div>
+                        <div class=" bg-gray-200 w-full h-1/6 sm:h-1/4"></div>
                     </div>
                 </div>
-                <!-- two small connecting bars -->
-                <div class= "flex justify-center w-full h-20">
+                <!-- Two small connecting bars -->
+                <div class= "flex justify-center w-full h-10 sm:h-20">
                     <div class="border-x-8 border-gray-200 w-1/2"></div>
                 </div>
                 <!-- actual schedule  -->
                 <div class="flex justify-center mx-8">
-                    <div class="rounded-lg border-8 border-gray-200">
+                    <div class="rounded-lg border-4 xl:border-8 border-gray-200">
                         <div>
                             <div class="flex float-left bg-yellow-200 w-1/2 md:w-1/3 lg:w-1/4 px-3 md:px-8 py-4 h-full">
                                 <img class="hidden lg:inline pr-4" src="../static/hh-2022/hh22_assets/plane.png" alt="">
@@ -226,7 +227,7 @@
                         </table>
                     </div>
                 </div>
-                        <p class="text-center mt-10 text-xl px-4 text-white inter-font font-bold">Note: Schedule will be updated as the event approaches. Check back soon!</p>
+                <p class="text-center mt-10 text-xl px-4 text-white inter-font font-bold">Note: Schedule will be updated as the event approaches. Check back soon!</p>
             </div>
 
             <div class="spacer" style="min-height: 20vh;"></div>
@@ -274,9 +275,76 @@
             </div>
 
 
-
-            <!-- PRIZES -->
-
+            <!-- PRIZES (hidden for now) -->
+            <div class="hidden prizes-card mx-[5%] px-8 py-12">
+                <!-- Header -->
+                <div class="flex justify-between pb-12">
+                    <h1 class="xl:text-6xl text-4xl text-black">PRIZES</h1>
+                    <img src="../static/hh-2022/hh22_assets/hh-stamp-logo.png" alt="" class="xl:h-24 h-12">
+                </div>
+                <!-- Body -->
+                <div class="grid xl:grid-cols-4 grid-cols-1 xl:gap-8 gap-4">
+                    <!-- First row -->
+                    <div class="xl:col-span-2 stamp">
+                        <div class="bg-gradient-to-t from-violet-300 to-blue-400 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">First Place Prize</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the best overall project submission</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-4">Noise Cancelling Headphones</p>
+                        </div>
+                    </div>
+                    <div class="stamp">
+                        <div class="bg-gradient-to-tr from-violet-300 to-teal-400 xl:p-2 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Second Place Prize</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the second place project submission</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-2">Mechanical Keyboard</p>
+                        </div>
+                    </div>
+                    <div class="stamp">
+                        <div class="bg-gradient-to-t from-cyan-300 to-blue-300 xl:p-2 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Third Place Prize</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the third place project submission</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-2">Mini Projectors</p>
+                        </div>
+                    </div>
+                    <!-- Second Row -->
+                    <div class="stamp">
+                        <div class="bg-gradient-to-tl from-amber-200 to-green-200 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Best Aggie hack</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the best aggie hack</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-2">Mechanical Keyboard</p>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-2 stamp">
+                        <div class="bg-gradient-to-t from-amber-200 to-green-200 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Best Travel Related</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the best travel related Hack</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-4">Neck Pillow</p>
+                        </div>
+                    </div>
+                    <div class="stamp">
+                        <div class="bg-gradient-to-tr from-amber-200 to-teal-400 xl:p-2 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Best UI</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to hack with the best UI</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-2">Bob Ross Bobblehead</p>
+                        </div>
+                    </div>
+                    <!-- Third Row -->
+                    <div class="xl:col-span-2 stamp">
+                        <div class="bg-gradient-to-t from-red-200 via-amber-200 to-yellow-300 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Best Documentation</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the Hack with the best documentation</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-4">Book</p>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-2 stamp">
+                        <div class="bg-gradient-to-t from-red-200 via-amber-200 to-yellow-300 p-5 h-full">
+                            <h1 style="font-family: 'Inter';" class="text-2xl text-black">Best Impractical</h1>
+                            <p style="font-family: 'Inter';" class="text-lg text-black">This prize will be awarded to the most impractical Hack</p>
+                            <p style="font-family: 'Inter';" class="text-lg text-black pt-4">Rubber Chicken</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div> 
 </body>   

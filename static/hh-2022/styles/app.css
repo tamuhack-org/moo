@@ -271,8 +271,37 @@ ion-icon {
     opacity: 0;
   }
 
+<<<<<<< HEAD
+100% {
+  -webkit-transform: translate3d(800px,680px,0) rotate(180deg);
+  opacity: 0;
+}
+}
+  
+.prizes-card {
+  background: #DAC6B5;
+  border: 30px solid;
+  border-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 0, 0, 0.4),
+    rgba(255, 0, 0, 0.4) 20px,
+    #fff 20px,
+    #fff 60px,
+    rgba(0, 56, 255, 0.4) 60px,
+    rgba(0, 56, 255, 0.4) 80px, 
+    #fff 80px,
+    #fff 120px
+  ) 24/20px;
+}
+
+.stamp {
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/stamp-border.png) 8 round;
+  border-width: 10px;
+  border-style: solid;
+=======
   100% {
     transform: rotate(30deg) scaleY(1) translateY(500%);
     opacity: 0; 
   }
+>>>>>>> 7055a2187eba475430c8ab3cacc566ab8b7423d4
 }
