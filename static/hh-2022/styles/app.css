@@ -31,7 +31,7 @@ ion-icon {
 }
 
 .inter-font {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .opensans-font {
@@ -40,6 +40,12 @@ ion-icon {
 
 .shake{
   animation: shake 5.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.shake2{
+  animation: shake2 5.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -56,6 +62,20 @@ ion-icon {
   80% { transform: translate(1px, 1px) rotate(1deg); }
   90% { transform: translate(-1px, -1px) rotate(0deg); }
   100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+
+@keyframes shake2 {
+  0% { transform: translate(-1px, -1px) rotate(-1deg); }
+  10% { transform: translate(1px, 1px) rotate(1deg); }
+  20% { transform: translate(-1px, -1px) rotate(0deg); }
+  30% { transform: translate(1px, 1px) rotate(1deg); }
+  40% { transform: translate(-1px, -1px) rotate(-1deg); }
+  50% { transform: translate(1px, 1px) rotate(0deg); }
+  60% { transform: translate(-1px, -1px) rotate(-1deg); }
+  70% { transform: translate(1px, 1px) rotate(1deg); }
+  80% { transform: translate(-1px, -1px) rotate(0deg); }
+  90% { transform: translate(1px, 1px) rotate(-1deg); }
+  100% { transform: translate(-1px, -1x) rotate(-1deg); }
 }
 
 @font-face {
@@ -84,6 +104,21 @@ ion-icon {
   .apply-button {
     background-color: #1c71d1;
   }
+
+  .apply-button:hover {
+    color: rgb(223, 223, 223);
+    border-color: rgb(223, 223, 223);
+  }
+
+  .mentor-button:hover {
+    color: rgb(223, 223, 223);
+    border-color: rgb(223, 223, 223);
+  }
+
+  .nav-button:hover {
+    color: white;
+  }
+
   
   .ptext{
     display: flex;
@@ -138,99 +173,105 @@ ion-icon {
   }
 
 
-  /* comets animations */
-
-#comets{
-  position:relative;
-  top:0px;
-  width:100vw;
-  text-align: left; 
-  height: 100%; 
-  min-height: 900px;
-  overflow:hidden;
+.meteor {
+  border: 2px solid transparent;
+  border-bottom: 60px solid #fff;
+  position: absolute;
+  transform-origin: top center;
+  z-index: 0;
+  opacity: 0;
 }
 
-#comets i {
-  display: inline-block;
-  width: 250px;
-  height: 150px;position:absolute;
-  border-radius: 5% 40% 70%;
-  box-shadow: inset 0px 0px 1px #294b67;
-  border: 1px solid #333;
-  z-index: 1;
-  background-color: #fff;
-  opacity: .7;
-  -webkit-animation: falling 8s 0s infinite;
-  -webkit-animation-timing-function:ease-in;
+.meteor:after {
+  content: '';
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background: #fff;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px 0 #fff;
 }
 
-
-#comets i:nth-child(1){
-  left: 50vw;
-  height:73px; 
-  width:3px;
-  background-color: #fff;
+.meteor:nth-child(1) {
+  left: 85vw;
+  animation: shower 6s infinite;
+  top: 40vh;
+  animation-delay: 3s;
 }
-#comets i:nth-child(3){
-  height:11px; 
-  width:3px;
-  -webkit-animation: falling3 8s 3s infinite;
+
+.meteor:nth-child(2) {
+  left: 20vw;
+  top: 13vh;
+  animation: shower 5s infinite;
+  animation-delay: 7s;
+}
+
+.meteor:nth-child(3) {
+  left: 69vw;
+  top: 17vh;
+  animation: shower 4s infinite;
+  animation-delay: 9s;
+}
+
+.meteor:nth-child(4) {
+  left: 34vw;
+  top: 10vh;
+  animation: shower2 13s infinite;
+  animation-delay: 10s;
+}
+
+.meteor:nth-child(5) {
   left: 10vw;
-background-color: #fff;
-}
-#comets i:nth-child(2){
-  -webkit-animation: falling2 8s 1s infinite;
-  left: 30vw;
-  height:70px; 
-  width:4px;
-  background-color: #fff;
-
+  top: 43vh;
+  animation: shower2 10s infinite;
+  animation-delay: 13s;
 }
 
-@-webkit-keyframes falling {
+.meteor:nth-child(6) {
+  left: 98vw;
+  top: 29vh;
+  animation: shower2 10s infinite;
+  animation-delay: 15s;
+}
 
+@keyframes shower {
   0% {
-    -webkit-transform: translate3d(100px,0px,0px) rotate(160deg);
-  }
-
-  3% {
-    -webkit-transform:
-    translate3d(450px,900px,0) rotate(160deg);
+    transform: rotate(30deg) scaleY(0);
     opacity: 0;
   }
+  6.5% {
+    transform: rotate(30deg) scaleY(1);
+    opacity: 1;
+  }
+  10.0% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0;
+  }
+
   100% {
-    -webkit-transform:
-    translate3d(450px,900px,0) rotate(160deg);
-    opacity: 0;
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0; 
   }
 }
 
-@-webkit-keyframes falling3 {
- 0% {
-  -webkit-transform: translate3d(0,0,0) rotate(150deg);
-}
+@keyframes shower2 {
+  0% {
+    transform: rotate(30deg) scaleY(0);
+    opacity: 0;
+  }
+  3.25% {
+    transform: rotate(30deg) scaleY(1);
+    opacity: 1;
+  }
+  5.0% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0;
+  }
 
-10% {
-  -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
-  opacity: 0;
-}
-
-100% {
-  -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
-  opacity: 0;
-}
-}
-
-@-webkit-keyframes falling2 {
- 0% {
-  -webkit-transform:translate3d(100px,0,0) rotate(130deg);
-}
-
-15% {
-  -webkit-transform:translate3d(800px,580px,0) rotate(130deg);
-  opacity: 0;
-}
-
+<<<<<<< HEAD
 100% {
   -webkit-transform: translate3d(800px,680px,0) rotate(180deg);
   opacity: 0;
@@ -257,4 +298,10 @@ background-color: #fff;
   border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/stamp-border.png) 8 round;
   border-width: 10px;
   border-style: solid;
+=======
+  100% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0; 
+  }
+>>>>>>> 7055a2187eba475430c8ab3cacc566ab8b7423d4
 }
