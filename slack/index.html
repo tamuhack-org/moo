@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Last updated 8/26/2022 -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMUhack @-er</title>
+
+    <style>
+        body { text-align: center; font-family: Arial, Helvetica, sans-serif; }
+        h1 { font-size: 50px; }
+        h2 { font-size: 40px; }
+        ul { font-size: 30px; line-height: 50px; display: inline-block; margin-left: auto; margin-right: auto; }
+        li { text-align: left; }
+        button { font-size: 30px; }
+        input { height: 30px; width: 30px; margin-left: 10px; }
+        textarea { font-size: 20px; }
+    </style>
+</head>
+<body onload="populate();">
+    <h1>TAMUhack @-er of Jankiness</h1>
+    <h3>By Naveen Iyer</p>
+    <br>
+
+    <h2>Who's here?</h2>
+    <ul id="member-list">
+
+    </ul>
+
+    <h2>@ those suckers</h2>
+    <textarea readonly autocomplete="off" id="textarea" cols="50" rows="10"></textarea>
+    <p><button id="copy-btn" onclick="copyAts();">Copy</button></p>
+    
+    <script>
+        const memberNames = [
+            // Slack usernames
+            "Vivian",
+            "Adil Rasiyani",
+            "Abhishek More",
+            "malavi srinivasan",
+            "Irené Masabarakiza",
+            "Ekdev Rajkitkul",
+            "Jiyoon Kim",
+            "Jaden Banze",
+            "Naveen Iyer",
+            "Kirthivel Ramesh",
+            "Ayo Fatoye",
+            "Ashrita Vadlapatla",
+            "Arya Gupta",
+            "Vanessa Le",
+            "Anish Karthik",
+            "Mateo Ruiz",
+            "Harshitha Dhulipala",
+            "Anjali Kumar",
+            "Keegan Reynolds",
+            "Nafi Islam",
+            "Joshua John",
+            "Lizzy Yoon",
+            "Shen Li",
+            "Gabrielle Irava"
+        ];
+
+        function populate ()
+        {
+            for (let memberName of memberNames)
+            {
+                let listItem = document.createElement("li");
+                listItem.innerText = memberName;
+
+                let checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.onclick = evaluateAttendance;
+                checkbox.id = memberName;
+                checkbox.className = "member-checkbox";
+                checkbox.autocomplete = "off";
+                listItem.appendChild(checkbox);
+
+                document.getElementById("member-list").appendChild(listItem);
+            }
+
+            evaluateAttendance();
+        }
+
+        function evaluateAttendance ()
+        {
+            const textarea = document.getElementById("textarea");
+            textarea.value = "";
+
+            for (let checkbox of document.getElementsByClassName("member-checkbox"))
+            {
+                if (!checkbox.checked)
+                {
+                    textarea.value += "@" + checkbox.id + " ";
+                }
+            }
+
+            textarea.value += "get over here!!!";
+        }
+
+        function copyAts ()
+        {
+            const textarea = document.getElementById("textarea");
+            textarea.select();
+            textarea.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(textarea.value);
+        }
+    </script>
+</body>
+</html>
