@@ -349,7 +349,8 @@ header {
 
 #top-nav-bar .navbar-brand {
     margin-top: -16px;
-    margin-left: 30px;
+    margin-left: 20px;
+
 }
 
 #top-nav-bar div ul li {
@@ -369,6 +370,17 @@ header {
 #top-nav-bar div .main-nav-ui li>a:hover {
     transition: all 0.3s ease-out;
     box-shadow: 0 -1px 0 0 #F27B93 inset, 0 -6px 0 0 #F27B93 inset;
+}
+
+#mlh-trust-badge {
+    display:block;
+    max-width:100px;
+    min-width:60px;
+    position:fixed;
+    right:20px;
+    top:0;
+    width:10%;
+    z-index:10000;
 }
 
 
@@ -1227,6 +1239,11 @@ input.form-control {
 @media (max-width: 500px) {
     #timeline-small .container:before {
         height: calc(100% - 220px);
+    }
+
+    .toast {
+        text-align: left;
+        padding-left: 30px; 
     }
 }
 
