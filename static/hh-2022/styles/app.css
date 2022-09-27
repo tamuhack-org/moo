@@ -271,11 +271,10 @@ ion-icon {
     opacity: 0;
   }
 
-<<<<<<< HEAD
-100% {
-  -webkit-transform: translate3d(800px,680px,0) rotate(180deg);
-  opacity: 0;
-}
+  100% {
+    transform: rotate(30deg) scaleY(1) translateY(500%);
+    opacity: 0; 
+  }
 }
   
 .prizes-card {
@@ -298,10 +297,4 @@ ion-icon {
   border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/stamp-border.png) 8 round;
   border-width: 10px;
   border-style: solid;
-=======
-  100% {
-    transform: rotate(30deg) scaleY(1) translateY(500%);
-    opacity: 0; 
-  }
->>>>>>> 7055a2187eba475430c8ab3cacc566ab8b7423d4
 }
