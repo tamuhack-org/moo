@@ -287,8 +287,8 @@
                   <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
                     <picture v-if="typeof director.img !== 'undefined' && (hackathon.name !== 'HowdyHack 2022' || !party)">
                       <source type="image/webp" :srcset="director.webp" class="timeline-director-img">
-                      <source type="image/jpg" :srcset="director.img" class="timeline-director-img">
-                      <img :src="director.img" alt="TAMUhack Director" class="timeline-director-img">
+                      <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
+                      <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
                     <picture v-if="hackathon.name === 'HowdyHack 2022' && party">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
@@ -397,12 +397,6 @@
       <div class="custom-nav d-lg-none d-xl-none small-links-container">
         <img alt="" src="./static/assets/tamuhack_official_logo.svg" />
         <div class="nice-text small-links-wrapper">
-          <a class="nav-link small-link" target="_blank">
-            <i class="fab fa-party-horn"></i>
-          </a>
-          <a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
-            <i class="fab fa-facebook-f"></i>
-          </a>
           <a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
             <i class="fab fa-facebook-f"></i>
           </a>
@@ -463,6 +457,8 @@
   <script src="./static/scripts/main.js"></script>
   <!-- horizontal-timeline scripts -->
   <script>
+    
+
     new Vue({
       el: "#app",
       data: function () {
