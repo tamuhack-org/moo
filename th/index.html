@@ -19,11 +19,12 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet"> 
     
-
     <!-- Styles -->
     <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./../static/th-2023/app.css">
+    <link rel="stylesheet" href="./../static/th-2023/styles/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
 
 
     <!-- 2021 Hackathon Season Member Event Badge style as recommended by MLH (Add this in later with the updated badge)
@@ -36,9 +37,79 @@
   </head>
 
   <body class="bg-offwhite">
-    <div id="app" v-cloak>
+    <div id="app" vcloak>
+      <!-- NAVBAR -->
+      <!-- <div class="absolute flex flex-row justify-between top-0 w-screen pt-4 px-8">
+        <div>
+          <p class="text-3xl text-black font-bold">
+            TH
+          </p>
+        </div>
+        <div class="hidden md:flex gap-8 font-heading text-xl text-[#192F6D]">
+          <a class="cursor-pointer">About</a>
+          <a>Schedule</a>
+          <a>Prizes</a>
+          <a>FAQ</a>
+          <a>Resources</a>
+        </div>
+      </div> -->
 
+      <div
+        class="fixed hidden md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bg-offwhite z-50">
+        <div>
+          <a target="_blank" rel="noopener noreferrer"
+            class="text-3xl rounded-full font-black font-heading text-[#192F6D]">th</a>
+        </div>
+        <div class="hidden md:flex">
+          <a v-for="link in links" :href="'#' + link" class="text-xl font-regular md:ml-12 lg:ml-8 futura-font navy">
+            {{link}}</a>
+        </div>
 
+        <a class="md:hidden text-xl font-regular futura-font navy"></a>
+      </div>
+
+      <div class="block fixed my-0 bg-offwhite items-center w-screen pr-8 z-50">
+        <div class="md:hidden pb-2 my-0 bg-offwhite ">
+          <template class="bg-offwhite">
+            <b-navbar class="bg-offwhite pt-2">
+              <template slot="brand" class="bg-offwhite pt-2">
+                <b-navbar-item tag="router-link">
+                  <div class="px-8">
+                    <a target="_blank" rel="noopener noreferrer"
+                                       class="text-3xl rounded-full font-black font-heading text-[#192F6D]">th</a>
+                  </div>
+                </b-navbar-item>
+              </template>
+
+              <template slot="start" class="bg-offwhite">
+                <b-navbar-item class="bg-offwhite" :href="'#' + link" v-for="link in links">
+                  <span class="bg-offwhite pl-8">
+                    {{ link }}
+                  </span>
+                </b-navbar-item>
+              </template>
+            </b-navbar>
+          </template>
+        </div>
+      </div>
+
+      <div class="flex px-8 justify-center pt-40 md:pt-56 md:px-0">
+        <img class="hidden lg:flex absolute landingart" src="../static/th-2023/assets/landingart.png" />
+        <div>
+          <img src="../static/th-2023/assets/th.png" />
+          <div class="text-center font-heading text-2xl text-[#192F6D] mt-24 sm:mt-16">
+            <p class="font-medium">January 29-29, 2023</p>
+            <p class="font-bold">Texas A&M University</p>
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-col sm:flex-row justify-center font-heading gap-4 mt-8">
+              <a class="text-center py-4 w-[300px] sm:w-[220px] bg-[#192F6D] font-bold text-white rounded-lg border-4 border-[#192F6D]">APPLY</a>
+              <a class="text-center py-4 w-[300px] sm:w-[220px] bg-white font-bold text-[#192F6D] rounded-lg border-4 border-[#192F6D]">MENTOR</a>
+              <img class="absolute w-screen -bottom-24 -z-50" src="../static/th-2023/assets/landingribbon.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/vue@2"></script>
     <!-- Full bundle -->
@@ -52,6 +123,7 @@
     <!-- <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Create a vue.js object -->
     <script>
