@@ -54,18 +54,16 @@
         </div>
       </div> -->
 
-      <div
-        class="fixed hidden md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bgoffwhite z-50">
-        <div>
+      <div class="fixed hidden md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bgoffwhite z-50">
+        <div class="">
           <a target="_blank" rel="noopener noreferrer"
             class="text-3xl rounded-full font-black font-heading text-[#192F6D]">th</a>
         </div>
-        <div class="hidden md:flex">
-          <a v-for="link in links" :href="'#' + link" class="text-xl font-medium ml-8 futura-font navy">
+        <div class="flex justify-end items-center">
+          <a v-for="link in links" :href="'#' + link" class="text-xl font-medium mr-8 futura-font navy">
             {{link}}</a>
+          <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="text-center py-3 w-[125px] bg-[#192F6D] font-bold text-white rounded-lg hover:text-gray-300">APPLY</a>
         </div>
-
-        <a class="md:hidden text-xl font-regular futura-font navy"></a>
       </div>
 
       <div class="block fixed my-0 bgoffwhite items-center w-screen pr-8 z-50">
@@ -104,7 +102,7 @@
           </div>
           <div class="flex justify-center">
             <div class="flex flex-col sm:flex-row justify-center font-heading gap-4 mt-8">
-              <a class="text-center py-4 w-[300px] sm:w-[220px] bg-[#192F6D] font-bold text-white rounded-lg border-4 border-[#192F6D] hover:text-gray-300">APPLY</a>
+              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="text-center py-4 w-[300px] sm:w-[220px] bg-[#192F6D] font-bold text-white rounded-lg border-4 border-[#192F6D] hover:text-gray-300">APPLY</a>
               <a class="text-center py-4 w-[300px] sm:w-[220px] bg-white font-bold text-[#192F6D] rounded-lg border-4 border-[#192F6D]">MENTOR</a>
               <img class="absolute w-screen -bottom-24 -z-50" src="../static/th-2023/assets/landingribbon.png" />
             </div>
@@ -131,7 +129,7 @@
             Check them out below!
           </p>
           <div class="flex justify-center mt-16">
-            <img src="../static/th-2023/assets/circle.png" />
+            <img id="infoanim" src="../static/th-2023/assets/circle.png" />
           </div>
         </div>
 
@@ -186,13 +184,13 @@
     <script src="https://unpkg.com/vue@2"></script>
     <!-- Full bundle -->
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
-    <!-- <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script> -->
-    <!-- <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script> -->
-    <!-- <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script> -->
-    <!--<script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script> -->
-    <!-- <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
-    <!-- <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script> -->
-    <!-- <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+    <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -210,7 +208,7 @@
             },
             // Store an array. Useful for looping
             //links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
-            links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
+            links: ["Schedule", "Prizes", "FAQ"],
             faqs: [
               {
                 title: "Who can attend?",
@@ -597,6 +595,32 @@
     }
   }
 })
+
+var obj = {rotate: 0};
+
+var tween = TweenMax.to(obj, 0.5,
+		{
+			curImg: 360,	// animate propery curImg to number of images
+			roundProps: "curImg",				// only integers so it can be used as an array index
+			repeat: 0,									// repeat 3 times
+			immediateRender: true,			// load first image automatically
+			// ease: Linear.ease,			// show every image the same ammount of time
+			onUpdate: function () {
+			  $("#infoanim").attr("", rotate); // set the image source
+			}
+		}
+	);
+
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
+					.setTween(tween)
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+    scene.duration(800);
     </script>
   </body>
 </html>
