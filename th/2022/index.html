@@ -1012,6 +1012,23 @@ html {
   created() {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
+
+    if (!this.$isServer) {
+        this._scrollListener = () => {
+          // window.pageX/YOffset is equivalent to window.scrollX/Y, but works in IE
+          // We round values because high-DPI devies can provide some really nasty subpixel values
+          this[propertyName] = [
+            Math.round(window.pageXOffset),
+            Math.round(window.pageYOffset)
+          ]
+        }
+        console.log()
+        // Call listener once to detect initial position
+        this._scrollListener()
+
+        // When scrolling, update the position
+        window.addEventListener('scroll', this._scrollListener)
+      }
   },
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
@@ -1027,5 +1044,4 @@ html {
 
     </script>
   </body>
-
 </html>

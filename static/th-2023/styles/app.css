@@ -6,17 +6,37 @@ html {
   font-family: 'Roboto Flex', 'Open Sans';
 }
 
+.font-text {
+  font-family: 'Open Sans';
+}
+
+.bgoffwhite {
+  background-color: #FAFAFA;
+}
+
+.pink {
+  color: #E090BB;
+}
+
+.navy {
+  color: #192F6D;
+}
+
 @keyframes slideInLeft {
   0% {
-    transform: translateX(200%) translateY(-40px);
+    transform: translateX(200%) translateY(-80px) scale(0.5);
+    content:url("../assets/walking.gif");
   }
+  99.99% {
+    transform: translateX(0) translateY(-80px) scale(0.5);
+  }
+
   100% {
-    transform: translateX(0) translateY(-40px);
+    content:url("../assets/walking.gif");
   }
 }
 
 .landingart {
-  animation: 3s ease-out 0s 1 slideInLeft;
-  transform: translateY(-40px);
-  padding: 40px;
+  animation: 5s ease-out 0s 1 slideInLeft;
+  transform: translateY(-80px) scale(0.5);
 }
