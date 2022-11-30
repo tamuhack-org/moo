@@ -26,16 +26,18 @@
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
 
 
-    <!-- 2021 Hackathon Season Member Event Badge style as recommended by MLH (Add this in later with the updated badge)
-      <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position: absolute;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
-    -->
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:20px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-black.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
     
     <!-- Change icon -->
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
 
   </head>
 
-  <body class="bg-[#FFFFFF]">
+  <style>
+  </style>
+
+
+  <body class="bg-[#FAFAFA]">
     <div id="app" vcloak>
       <!-- NAVBAR -->
       <!-- <div class="absolute flex flex-row justify-between top-0 w-screen pt-4 px-8">
@@ -53,7 +55,7 @@
         </div>
       </div> -->
 
-      <div class="fixed hidden md:flex items-center justify-between px-8 md:px-16 py-4 w-screen bgoffwhite z-50">
+      <div :style="{'border-bottom':'2px solid rgba(0, 0, 0,' + navOpacity + ')'}" class="fixed hidden md:flex items-center justify-between px-8 md:px-40 py-4 w-screen bgoffwhite z-50">
         <div class="">
           <a target="_blank" rel="noopener noreferrer"
             class="text-3xl rounded-full font-black font-heading text-[#192F6D]">th</a>
@@ -201,6 +203,7 @@
         data: function () {
           return {
             // Needed for window.open, as seen in the navbar segment
+            navOpacity: 0,
             window: {
               width: 0,
               height: 0
@@ -582,44 +585,29 @@
 },
   created() {
     window.addEventListener('resize', this.handleResize);
+    window.addEventListener("scroll", this.handleScroll);
     this.handleResize();
   },
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
-    }
+    },
+    handleScroll(event) {
+      // Any code to be executed when the window is scrolled
+      if(window.scrollY > 100) {
+        return (this.navOpacity = 0.25);
+      } else {
+        return (this.navOpacity = window.scrollY * 0.0025); 
+      }
+    },
   }
 })
 
-var obj = {rotate: 0};
-
-var tween = TweenMax.to(obj, 0.5,
-		{
-			curImg: 360,	// animate propery curImg to number of images
-			roundProps: "curImg",				// only integers so it can be used as an array index
-			repeat: 0,									// repeat 3 times
-			immediateRender: true,			// load first image automatically
-			// ease: Linear.ease,			// show every image the same ammount of time
-			onUpdate: function () {
-			  $("#infoanim").attr("", rotate); // set the image source
-			}
-		}
-	);
-
-	// init controller
-	var controller = new ScrollMagic.Controller();
-
-	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
-					.setTween(tween)
-					// .addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-
-    scene.duration(800);
     </script>
   </body>
 </html>
