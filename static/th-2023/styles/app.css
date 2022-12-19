@@ -10,8 +10,8 @@ html {
   font-family: 'Open Sans';
 }
 
-.bgoffwhite {
-  background-color: #FAFAFA;
+.font-poppins {
+  font-family: 'Poppins', 'Open Sans';
 }
 
 .pink {
@@ -20,6 +20,10 @@ html {
 
 .navy {
   color: #192F6D;
+}
+
+a {
+  text-decoration: none;
 }
 
 *,
@@ -50,12 +54,11 @@ html {
 }
 
 .text_shadows {
-
-  font-family: bungee, sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 150px;
   text-align: center;
   margin: 0;
