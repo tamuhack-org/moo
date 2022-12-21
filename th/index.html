@@ -23,7 +23,15 @@
     <script src="https://kit.fontawesome.com/640b86bfda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
 
-    
+
+    <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
     <!-- Change icon -->
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
 
@@ -51,11 +59,11 @@
             Prizes
           </a>
 
-          <button data-popover-target="popover-default" type="button" class="flex items-center gap-2 cursor-pointer">
+          <button data-popover-target="popover-default" data-popover-trigger="click" type="button" class="flex items-center gap-2 cursor-pointer">
             <a href="#schedule" class="text-lg font-medium font-poppins text-[#1a2542]">
               Resources
             </a>
-            <a class="nav-link navy">
+            <a class="navy">
               <i class="fa-solid fa-chevron-down"></i>
             </a>
           </button>
@@ -95,7 +103,7 @@
           <a href="#schedule" class="text-lg font-medium mr-8 font-poppins text-[#1a2542]">
             Mentor
           </a>
-          <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 px-5 bg-[#9F2D58] text-lg font-bold font-poppins text-white rounded-md transition-all hover:navy hover:bg-white">
+          <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 px-5 border-4 border-[#9F2D58] bg-[#9F2D58] text-lg font-bold font-poppins text-white rounded-md transition-all hover:navy hover:bg-white">
             Apply
           </a>
         </div>
@@ -126,12 +134,12 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row px-8 h-screen justify-between pt-20 pb-40 sm:pb-0 md:pt-40 sm:px-20">
+      <div class="flex flex-col h-screen md:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-40 sm:px-20">
         <div class="flex justify-center xl:justify-start xl:w-1/2">
           <img class="max-w-[150px] max-h-[150px] sm:max-w-[300px] sm:max-h-[300px] lg:max-w-[500px] lg:max-h-[500px] w-auto h-auto" src="../static/th-2023/assets/statichero.svg">
         </div>
-        <div class="xl:w-1/2 xl:pl-24">
-          <p class="font-bold text-5xl font-poppins text-[#1a2542]">TAMUhack 2023</p>
+        <div class="xl:w-1/2 xl:pl-24 lg:pt-24 pl-8">
+          <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542]">TAMUhack 2023</p>
           <div class="flex items-center justify-start gap-2 mt-2 mb-8 sm:mb-16">
             <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">24 hours</p>
             <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">In-person</p>
@@ -139,10 +147,10 @@
             <p class="font-semibold text-2xl font-poppins text-[#1a2542]">January 28-29, 2023</p>
             <p class="font-semibold text-2xl font-poppins text-[#1a2542]">Texas A&M University</p>
             <div class="pt-4 flex flex-col gap-2 text-center">
-              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:text-white hover:bg-[#white]">
+              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
                 Apply
               </a>
-              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins navy bg-white rounded-md transition-all hover:text-white hover:bg-[#1a2542]">
+              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins text-white bg-[#1a2542] rounded-md transition-all hover:navy hover:bg-white">
                 Mentor
               </a>
             </div>
@@ -151,7 +159,7 @@
 
 
       <!-- ABOUT SECTION -->
-      <div class="flex flex-col md:flex-row justify-between px-10 md:px-16 lg:px-24 mt-8">
+      <div class="flex flex-col md:flex-row justify-between px-10 md:px-16 lg:px-24 mt-16">
         <!-- LEFT -->
         <div class="md:w-2/5 md:mb-16">
           <p class="font-heading font-semibold pink text-3xl mb-4">What is TAMUhack?</p>
@@ -176,7 +184,7 @@
 
         <!-- MIDDLE -->
         <div class="flex justify-center w-1/5">
-          <div class="h-full w-3 bg-[#9F2D58]">
+          <div class="h-full rounded-full w-3 bg-[#9F2D58]">
           </div>
         </div>
         
@@ -217,21 +225,31 @@
             <br />
             *Free in unmarked spaces
             <br />
-
           </p>
+        </div>
+
+      </div>
+
+      <div id="wrapper" class="flex justify-center mt-64 mb-16 h-[300px] mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+        <div class="flex flex-col justify-center">
+          <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
+          <p class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-4">Check back later</p>
         </div>
       </div>
     </div>
+
+    <div style="height: 314px; background: url('./../../static/th-2021/img/bottom.png')">
+      <div class="text-center sm:pl-16 sm:text-left" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+        <p style="padding-top: 200px;" class="sponsor-offset">
+          Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+        </p>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/vue@2"></script>
     <!-- Full bundle -->
-    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -648,6 +666,84 @@
     },
   }
 })
+
+  const lastPoint = {x: null, y: null}
+  var cursor = $(".cursor"),
+          follower = $(".cursor-follower");
+
+      var posX = 0,
+          posY = 0,
+          mouseX = 0,
+          mouseY = 0;
+
+      console.log("STARTED")
+      TweenMax.to({}, 0.016, {
+          repeat: -1,
+          onRepeat: function() {
+              posX += (mouseX - posX) / 9;
+              posY += (mouseY - posY) / 9;
+
+              TweenMax.set(follower, {
+                  css: {
+                      left: posX ,
+                      top: posY 
+                  }
+              });
+
+              TweenMax.set(cursor, {
+                  css: {
+                      left: mouseX,
+                      top: mouseY
+                  }
+              });
+          }
+      });
+
+
+      $(document).on("mousemove", function(e) {
+          mouseX = e.pageX;
+          mouseY = e.pageY;
+
+          const leftOrRight = (
+            e.clientX > lastPoint.x ? 'right'
+            : e.clientX < lastPoint.x ? 'left'
+            : 'none'
+          )
+
+          if(leftOrRight == "right") {
+            follower.addClass("right");
+            follower.removeClass("left");
+            follower.removeClass("still");
+          }
+
+          else if(leftOrRight == "left") {
+            follower.addClass("left");
+            follower.removeClass("right");
+            follower.removeClass("still");
+          } 
+
+          lastPoint.x = e.clientX
+          lastPoint.y = e.clientY
+
+      });
+
+      $(".portfolio-item").on("mouseenter", function() {
+          cursor.addClass("active");
+          follower.addClass("active");
+      });
+
+      $(".portfolio-item").on("mousedown", function() {
+          follower.addClass("clicked");
+      });
+
+      $(".portfolio-item").on("mouseup", function() {
+          follower.removeClass("clicked");
+      });
+
+      $(".portfolio-item").on("mouseleave", function() {
+          cursor.removeClass("active");
+          follower.removeClass("active");
+      });
 
     </script>
   </body>
