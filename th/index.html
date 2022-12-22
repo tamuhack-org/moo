@@ -162,7 +162,7 @@
       <div class="flex flex-col md:flex-row justify-between px-10 md:px-16 lg:px-24 mt-16">
         <!-- LEFT -->
         <div class="md:w-2/5 md:mb-16">
-          <p class="font-heading font-semibold pink text-3xl mb-4 font-poppins">What is TAMUhack?</p>
+          <p class="font-heading font-semibold pink text-4xl mb-4 font-poppins">What is TAMUhack?</p>
           <p class="font-text font-semibold navy font-text">
             TAMUhack is a 24 hour event where teams create innovative software
             and hardware solutions to real-world problems in a community of mentorship.
@@ -190,7 +190,7 @@
         
         <!-- RIGHT -->
         <div class="md:w-2/5">
-          <p class="font-heading font-semibold pink text-3xl mb-4 font-poppins">Event Information</p>
+          <p class="font-heading font-semibold pink text-4xl mb-4 font-poppins">Event Information</p>
           <div class="inline-block mb-4">
             <p class="font-heading font-semibold navy text-xl font-poppins">Location</p>
             <div class="w-full h-1 bg-[#192F6D]"></div>
@@ -229,7 +229,9 @@
         </div>
       </div>
 
+      <div class="w-screen">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+      </div>
       <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
         <div class="text-gray-200 font-poppins flex justify-start items-start">
           <div class="sticky top-32">
@@ -240,7 +242,7 @@
           </div>
         </div>
         <div class="flex flex-col lg:w-2/3">
-          <div v-for="faq in faqs" class=" py-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
+          <div v-for="faq in faqs" class="pb-8 mb-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
             <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">{{faq.title}}</p>
             <p class="mt-3 text-lg md:text-lg  font-text navy text-gray-200">{{faq.desc}}</p>
           </div>
@@ -291,7 +293,7 @@
             faqs: [
               {
                 title: "Who can attend?",
-                desc: "Any graduate/undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend."
+                desc: `Any graduate/undergraduate student who is at least 18. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend. If you are currently in high school, please contact our team at hello@tamuhack.com to fill out a waiver form.`
               },
               {
                 title: "How much experience do I need?",
@@ -299,11 +301,7 @@
               },
               {
                 title: "How much does it cost?",
-                desc: "Nothing. Nada. Zilch. It’s completely free for all accepted hackers. To make it even better, we’ll be giving out a ton of swag to every in-person hacker, and prizes to our winners."
-              },
-              {
-                title: "How do you select who attends?",
-                desc: "We are looking for novices, experts, and everyone in between. In fact, we aim to have a very diverse set of of hackers who can show their passion for creation and learning."
+                desc: "Nothing. Nada. Zilch. It’s completely free for all accepted hackers. To make it even better, we’ll be giving out a ton of swag to every hacker, and prizes to our winners."
               },
               {
                 title: "What should I bring?",
@@ -311,15 +309,11 @@
               },
               {
                 title: "How do teams work?",
-                desc: "Teams are limited to 4 hackers. You don't need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one yet."
+                desc: "Teams are limited to 4 hackers. You don't need to have a team before the event or have one at all, but hacking with friends is more fun! We'll have a dedicated time for team formation after the opening ceremony for anyone who wants a team."
               },
               {
                 title: "When is the deadline to apply for TAMUhack?",
-                desc: "The deadline to registration is January 22, at 23:59."
-              },
-              {
-                title: "Will prizes be shipped to international winners?",
-                desc: "Unfortunately we are unable to ship prizes outside of the United States, but we will make alternate arrangements for non-US based winners."
+                desc: "The deadline for registration is January 22, at 23:59. We'll be doing rolling admissions until that date. Our capacity is limited, so make sure to apply early!"
               },
               {
                 title: "Are there any COVID-19 Guidelines that I need to follow to attend TAMUhack?",
@@ -329,10 +323,6 @@
                 title: "Will there be workshops or talks?",
                 desc: "Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event."
               },
-              {
-                title: "Have additional questions?",
-                desc: "Email us with any questions, comments, concerns at hello@tamuhack.com."
-              }
             ],
             eventsSaturday: [
               {
