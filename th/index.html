@@ -46,21 +46,21 @@
       <a id="mlh-trust-badge" class="hidden xl:block" style="max-width:100px;min-width:60px;position:fixed;right:20px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-black.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
 
       <!-- NAVBAR  -->
-      <div :style="{'border-bottom':'2px solid rgba(25, 47, 109,' + navOpacity + ')'}" class="fixed hidden lg:flex items-center justify-between px-8 xl:px-40 py-4 w-screen bg-white z-50">
+      <div :style="{'border-bottom':'2px solid rgba(25, 47, 109,' + navOpacity + ')'}" class="fixed hidden lg:flex  items-center justify-between px-8 xl:px-40 py-4 w-screen bg-white z-50">
         <div class="w-1/3">
           <a target="_blank" rel="noopener noreferrer"
             class="text-3xl rounded-full font-black font-heading text-[#1a2542]">th</a>
         </div>
         <div class="flex justify-center items-center gap-8 w-1/3">
-          <a href="#schedule" class="text-lg font-medium font-poppins navy text-[#1a2542]">
+          <a href="#construction" class="text-lg font-medium font-poppins navy text-[#1a2542]">
             Schedule
           </a>
-          <a href="#prizes" class="text-lg font-medium font-poppins navy text-[#1a2542]">
+          <a href="#construction" class="text-lg font-medium font-poppins navy text-[#1a2542]">
             Prizes
           </a>
 
           <button data-popover-target="popover-default" data-popover-trigger="hover" type="button" class="flex items-center gap-2 cursor-pointer">
-            <a href="#schedule" class="text-lg font-medium font-poppins text-[#1a2542]">
+            <a class="text-lg font-medium font-poppins text-[#1a2542]">
               Resources
             </a>
             <a class="navy">
@@ -100,7 +100,7 @@
           </div>
         </div>
         <div class="w-1/3 flex justify-end items-center">
-          <a href="#schedule" class="text-lg font-medium mr-8 font-poppins text-[#1a2542]">
+          <a href="#" class="text-lg font-medium mr-8 font-poppins text-[#1a2542]">
             Mentor
           </a>
           <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 px-5 border-4 border-[#9F2D58] bg-[#9F2D58] text-lg font-bold font-poppins text-white rounded-md transition-all hover:navy hover:bg-white">
@@ -162,13 +162,13 @@
       <div class="flex flex-col md:flex-row justify-between px-10 md:px-16 lg:px-24 mt-16">
         <!-- LEFT -->
         <div class="md:w-2/5 md:mb-16">
-          <p class="font-heading font-semibold pink text-3xl mb-4">What is TAMUhack?</p>
-          <p class="font-text font-semibold navy">
+          <p class="font-heading font-semibold pink text-3xl mb-4 font-poppins">What is TAMUhack?</p>
+          <p class="font-text font-semibold navy font-text">
             TAMUhack is a 24 hour event where teams create innovative software
             and hardware solutions to real-world problems in a community of mentorship.
           </p>
           <br />
-          <p class="font-text font-semibold navy">
+          <p class="font-text font-semibold navy font-text">
             You'll have the resources, mentors, and freedom to create a unique product,
             learn new skills or just have fun collaborating with friends. 
             We'll also provide all the free food and free swag—just be sure to bring
@@ -190,25 +190,25 @@
         
         <!-- RIGHT -->
         <div class="md:w-2/5">
-          <p class="font-heading font-semibold pink text-3xl mb-4">Event Information</p>
+          <p class="font-heading font-semibold pink text-3xl mb-4 font-poppins">Event Information</p>
           <div class="inline-block mb-4">
-            <p class="font-heading font-semibold navy text-xl">Location</p>
+            <p class="font-heading font-semibold navy text-xl font-poppins">Location</p>
             <div class="w-full h-1 bg-[#192F6D]"></div>
           </div>
-          <p class="font-text font-semibold navy">
+          <p class="font-text font-semibold navy font-text">
             Bethancourt Ballroom (MSC 2300) <br />
             730 Olsen Blvd, College Station, TX 77845 <br />
             <br />
           </p>
-          <a class="font-text font-bold navy underline" href="https://tamuhack.com/static/assets/th-2020/msc_map.png">
+          <a class="font-text font-bold navy underline font-text" href="https://tamuhack.com/static/assets/th-2020/msc_map.png">
             View Building Map
           </a>
           <br />
           <div class="inline-block mt-8 mb-4">
-            <p class="font-heading font-semibold navy text-xl">Parking</p>
+            <p class="font-heading font-semibold navy text-xl font-poppins">Parking</p>
             <div class="w-full h-1 bg-[#192F6D]"></div>
           </div>
-          <p class="font-text font-semibold navy">
+          <p class="font-text font-semibold navy font-text">
             <a class="font-bold underline" href="https://www.google.com/maps/place/Lot+61/@30.6087605,-96.3496686,16z/data=!4m5!3m4!1s0x864683a203846fb7:0x3db1f555f87a4265!8m2!3d30.6095613!4d-96.3455312">Lot 61</a>
             <br />
             *Free in unmarked spaces
@@ -227,15 +227,35 @@
             <br />
           </p>
         </div>
-
       </div>
 
-      <div id="wrapper" class="flex justify-center mt-64 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item border-dashed">
-        <div class="cursor"></div>
-        <div class="hidden lg:flex cursor-follower"></div>
-        <div class="flex flex-col justify-center px-8 select-none">
-          <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
-          <p class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-2">Check back later</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+      <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
+        <div class="text-gray-200 font-poppins flex justify-start items-start">
+          <div class="sticky top-32">
+            <p class="text-4xl mb-4 text-white">Frequently Asked Questions</p>
+            <p class="text-xl mt-2">Everything you need to know about participating in TAMUhack.</p>
+            <p class="text-xl mt-2">Can't find what you're looking for?</p>
+            <a class="underline text-xl hover:text-white" href="mailto:hello@tamuhack.com">Contact our team.</a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:w-2/3">
+          <div v-for="faq in faqs" class=" py-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
+            <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">{{faq.title}}</p>
+            <p class="mt-3 text-lg md:text-lg  font-text navy text-gray-200">{{faq.desc}}</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,106.7C320,96,400,64,480,53.3C560,43,640,53,720,80C800,107,880,149,960,149.3C1040,149,1120,107,1200,80C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+
+      <div style="padding-top:6em;">
+        <div id="construction" class="flex justify-center mt-64 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item border-dashed md:cursor-none">
+          <div class="cursor"></div>
+          <div class="hidden lg:flex cursor-follower"></div>
+          <div class="flex flex-col justify-center px-8 select-none">
+            <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
+            <p class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-2">Check back later</p>
+          </div>
         </div>
       </div>
     </div>
@@ -249,9 +269,6 @@
     </div>
 
     <script src="https://unpkg.com/vue@2"></script>
-    <!-- Full bundle -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
@@ -290,15 +307,15 @@
               },
               {
                 title: "What should I bring?",
-                desc: "Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. A laptop, charger, mouse, keyboard, hardware, light jacket, and any hygienic products should be helpful. Don't bring anything you wouldn't bring on an airplane. In accordance to our COVID policy, you are required to bring a negative COVID test taken after January 15th, or proof of vaccination if you wish to attend in-person. See more info at tamuhack.com/covid"
+                desc: "Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. A laptop, charger, mouse, keyboard, hardware, light jacket, and any hygienic products should be helpful. Don't bring anything you wouldn't bring on an airplane."
               },
               {
                 title: "How do teams work?",
-                desc: "Teams are limited to 4 hackers. You don’t need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one yet."
+                desc: "Teams are limited to 4 hackers. You don't need to have a team before the event or have one at all, but hacking with friends is more fun! There will be plenty of time after the opening ceremony to form teams if you don't have one yet."
               },
               {
                 title: "When is the deadline to apply for TAMUhack?",
-                desc: "The deadline to registration is January 28, at 23:59."
+                desc: "The deadline to registration is January 22, at 23:59."
               },
               {
                 title: "Will prizes be shipped to international winners?",
@@ -681,8 +698,8 @@
       TweenMax.to({}, 0.016, {
           repeat: -1,
           onRepeat: function() {
-              posX += (mouseX - posX) / 9;
-              posY += (mouseY - posY) / 9;
+              posX += (mouseX - posX - 50) / 9;
+              posY += (mouseY - posY - 50) / 9;
 
               TweenMax.set(follower, {
                   css: {
