@@ -79,9 +79,9 @@
                   <i class="fa-solid fa-building text-black w-4 flex justify-center"></i>
                   <a class="text-base font-poppins font-medium text-[#172E6C]">Sponsors</a>
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 opacity-40">
                   <i class="fa-solid fa-pencil text-black w-4 flex justify-center"></i>
-                  <a class="text-base font-poppins font-medium text-[#1a2542]" href="https://tamuhack.com/help" target="_blank" rel="noreferrer noopener">HelpR</a>
+                  <a class="text-base font-poppins font-medium text-[#1a2542]"  target="_blank" rel="noreferrer noopener">HelpR</a>
                 </div>
                 <div class="flex items-center gap-2 text-[#172E6C] opacity-40">
                   <i class="fa-brands fa-discord text-black w-4 flex justify-center"></i>
@@ -123,10 +123,25 @@
               </template>
 
               <template slot="start" class="bgoffwhite">
-                <b-navbar-item class="bgoffwhite" :href="'#' + link" v-for="link in links">
+                <!-- <b-navbar-item class="bgoffwhite" :href="'#' + link" v-for="link in links">
                   <span class="bgoffwhite pl-8">
                     {{ link }}
                   </span>
+                </b-navbar-item> -->
+                <b-navbar-item class="bgoffwhite" href="#faq">
+                  <span class="bgoffwhite pl-8">
+                    FAQ
+                  </span> 
+                </b-navbar-item>
+                <b-navbar-item class="bgoffwhite" href="#prizes">
+                  <span class="bgoffwhite pl-8">
+                    Prizes
+                  <span> 
+                </b-navbar-item>
+                <b-navbar-item class="bgoffwhite" href="#construction">
+                  <span class="bgoffwhite pl-8">
+                    Schedule
+                  <span> 
                 </b-navbar-item>
               </template>
             </b-navbar>
@@ -135,8 +150,8 @@
       </div>
 
       <div class="flex flex-col h-screen md:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-40 sm:px-20">
-        <div class="flex justify-center xl:justify-start xl:w-1/2">
-          <img class="max-w-[200px] max-h-[200px] sm:max-w-[300px] sm:max-h-[300px] lg:max-w-[500px] lg:max-h-[500px] w-auto h-auto" src="../static/th-2023/assets/statichero.svg">
+        <div class="flex justify-center xl:justify-start w-1/2">
+          <img class="w-auto h-[500px]" src="../static/th-2023/assets/landing1.gif">
         </div>
         <div class="xl:w-1/2 xl:pl-24 lg:pt-24">
           <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542]">TAMUhack 2023</p>
@@ -145,7 +160,7 @@
             <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">In-person</p>
           </div>
             <p class="font-semibold text-2xl font-poppins text-[#1a2542]">January 28-29, 2023</p>
-            <p class="font-semibold text-2xl font-poppins text-[#1a2542]">Texas A&M University</p>
+            <p class="font-semibold text-2xl font-poppins text-[#1a2542]">Texas <a href="https://abhishekmore.com" target="_blank" rel="noopener noreferrer">A&M</a> University</p>
             <div class="pt-4 flex flex-col gap-2 text-center">
               <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
                 Apply
@@ -229,12 +244,12 @@
         </div>
       </div>
 
-      <div class="w-screen">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+      <div class="w-screen mt-16 lg:mt-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
       </div>
       <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
-        <div class="text-gray-200 font-poppins flex justify-start items-start">
-          <div class="sticky top-32">
+        <div class="text-gray-200 font-poppins flex justify-start items-start mb-8">
+          <div class="faqblock sticky top-32">
             <p class="text-4xl mb-4 text-white">Frequently Asked Questions</p>
             <p class="text-xl mt-2">Everything you need to know about participating in TAMUhack.</p>
             <p class="text-xl mt-2">Can't find what you're looking for?</p>
@@ -250,13 +265,43 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,106.7C320,96,400,64,480,53.3C560,43,640,53,720,80C800,107,880,149,960,149.3C1040,149,1120,107,1200,80C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
+      <!-- PRIZES -->
+      <div id="prizes" class="h-full md:mt-4" style="padding-top:6em;">
+        <p class="flex pb-4 px-8 md:px-24 baby-pink-txt text-4xl font-extrabold font-poppins">Prizes</p>
+        <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-24 place-content-center z-40">
+          <div class="leftcol lg:w-1/2">
+            <div :cursor="prize.image" v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="portfolio-item prize lg:mr-8 mt-8 py-4 px-4 border-4 border-[#1a2542] bg-offwhite rounded-md opacity-100">
+              <!-- <div :id="prize.image" :style="{'background-image': 'url(../static/th-2023/assets/' + prize.image + ')'}" class="hidden lg:flex cursor-follower "></div>  -->
+              <p :cursor="prize.image" class="text-xl md:text-xl font-extrabold font-poppins navy">{{prize.name}}</p>
+              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description}}</p>
+              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description2}}</p>
+              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize}}</p>
+              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize1}}</p>
+              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize2}}</p>
+              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize3}}</p>
+            </div>
+          </div>
+          <div class="hidden lg:block lg:w-1/2">
+            <div v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="lg:ml-8 mt-8 py-3 px-3 border-4 border-[#1a2542] bg-offwhite rounded-md opacity-100">
+              <p class="text-xl md:text-xl font-extrabold font-poppins navy">{{prize.name}}</p>
+              <p class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description}}</p>
+              <p class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description2}}</p>
+              <p class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize}}</p>
+              <p class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize1}}</p>
+              <p class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize2}}</p>
+              <p class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize3}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div style="padding-top:6em;">
-        <div id="construction" class="flex justify-center mt-64 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item border-dashed md:cursor-none">
-          <div class="cursor"></div>
-          <div class="hidden lg:flex cursor-follower"></div>
-          <div class="flex flex-col justify-center px-8 select-none">
-            <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
-            <p class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-2">Check back later</p>
+        <div id="construction" cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
+          <div cursor="cursorleft.svg" class="cursor"></div>
+          <div cursor="cursorleft.svg" class="hidden lg:flex cursor-follower"></div>
+          <div cursor="cursorleft.svg" class="flex flex-col justify-center px-8 select-none">
+            <p cursor="cursorleft.svg" class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
+            <p cursor="cursorleft.svg" class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-2">Check back later</p>
           </div>
         </div>
       </div>
@@ -274,6 +319,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
     <!-- Create a vue.js object -->
     <script>
@@ -457,106 +503,43 @@
               {
                 name: "Grand Prize",
                 description: "1st place overall prize.",
-                prize: "Prize: iPad (Latest Generation)"
+                prize: "Prize: iPad",
+                image: "circle.svg",
               },
               {
                 name: "Second Place",
                 description: "2nd place overall prize.",
-                prize: "Prize: Airpods Pro"
+                prize: 'Prize: 31" 4K Monitor',
+                image: "square.svg",
               },
               {
                 name: "Third Place",
                 description: "3rd place overall prize.",
-                prize: "Prize: Creality Ender 3 3D Printers"
+                prize: "Prize: Beats Solo 3",
+                image: "bouncetriangle.gif",
               },
               {
                 name: "Best Beginner Hack",
                 description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
-                prize: 'Prize: 1080p 160" Wi-fi Projector' 
-              },
-              {
-                name: "Best Hardware Hack",
-                description: "Best hack that involves hardware usage/integration.",
-                prize: "Prize: Keychron K2 Mechanical Keyboard"
+                prize: 'Prize: Echo Dot (5th Gen) + Phillip Hue Smart Lightbulb',
+                image: "circle.svg",
               },
               {
                 name: "Best UI/UX Hack",
                 description: "In the world of hacking and engineering, a product must not only work well, but also provide the best user experience possible - design and usability goes a long way! Best hack that demonstrates clear design and usability intentions.",
-                prize: "Prize: Fujifilm Intax Mini 9"
+                prize: "Prize: Fujifilm Intax Mini 7",
+                image: "square.svg",
               },
-              {
-                name: "Capital One Challenge",
-                description: 'Best Financial Hack',
-                prize: "Prize: x4 $200 Amazon Gift Cards"
-              },
-              {
-                name: "CTF Mini-Event Winners",
-                description: 'Compete with other hackers in a "Capture the Flag" mini-event. A CTF is a kind of information security competition that challenges contestants to solve a variety of tasks ranging from a scavenger hunt on wikipedia and basic programming exercises, to hacking your way into a server to steal data',
-                prize: "Prize: Amazon Gift Cards"
-              },
-              {
-                name: "American Airlines Challenge",
-                description: 'Best Airline Hack',
-                prize: "Prize: TBD"
-              },
-              {
-                name: "State Farm Challenge",
-                description: 'State Farm sells more than auto insurance. State Farm offers customers "Drive Safe and Save," a mobile application that tracks driving habits in order to reward safe driving practices.',
-                description2: "Design a system that would allow State Farm to offer discounted home owners/renters insurance and/or life insurance based off of positive customer behavior.",
-                prize: "Prizes: ",
-                prize1: "1st - Oculus Quest 2",
-                prize2: "2nd - Power Beats Pro",
-                prize3: "3rd - Mechanical Keyboard",
-              },
-              {
-                name: "USAA Challenge",
-                description: 'Best Remote Learning Hack',
-                prize: "Prizes: ",
-                prize1: "1st - 4 ASUS Portable Monitors",
-                prize2: "2nd - Solar Power Banks",
-                prize3: "3rd - Smart LED Lamps"
-              },
-              {
-                name: "CBRE Challenge",
-                description: 'Best Hack for NLP',
-                description2: 'Get everything you can from an invoice and to what category it belongs to. Invoices are in English and can be pdf or image. Approach to the problem, most times, matters more than the mere solution. The Discord channel would be open during the Hackathon for any queries.',
-                prize: "Prize: x4 $100 VISA Gift Cards"
-              },
-              {
-                name: "Ford Challenge",
-                description: "Ford is challenging you to change the way drivers experience the road. From safety, navigation, fuel emissions, or comfort, build a hack that improves the way we travel. Whtether your focus is on building features like hands free mirror adjustment or crafting more efficient trips by improving navigation, we're excited to see the types of innovative solutions you and your team come up with. As an added bonus, Ford is giving each winning team member a $100 credit to the Ford store, usable towards a huge collection of amazing swag including sweatshirts, backpacks, hats, stickers, and so much more!",
-                prize: "Prize: $100 Ford Store Gift Cards"
-              },
-              {
-                name: "Pimco Challenge",
-                description: 'For 50 years, PIMCO has worked relentlessly to help millions of investors around the world pursue their financial goals while navigating market change. Our growing technology team plays a crucial role in that mission by building and improving applications that the firm uses to support our clients on the path to meeting their goals.',
-                description2: "For this challenge, we’d like to see Hacks that encourage good financial behavior and help to set individuals up for success in meeting their financial goals. Whether you choose to focus on saving, investing, building credit, financial literacy, or anything else you dream up, from our perspective, when you combine finance with technology, the sky’s the limit.",
-                prize: "Prizes: ",
-                prize1: "1st - $80 Amazon Gift Cards",
-                prize2: "2nd - $40 Amazon Gift Cards",
-              },
-              {
-                name: "JPMorgan Chase Challenge",
-                description: 'Best Hack for Social Good',
-                prize: "Prize: AirPod Pros"
-              },
-              {
-                name: "Credera Challenge",
-                description: 'Best Use of Serverless Technology',
-                prize: "Prize: Amazon Echo Dots"
-              },
-              {
-                name: "Google Cloud Challenge",
-                description: 'Best Use of Google Cloud',
-                prize: "Prizes: ",
-                prize1: "1st - Google Cloud branded backpack",
-                prize2: "2nd - Google Cloud Swag Box, Google Cloud credits, and Google Cloud Skills Boost Access",
-              },
-              {
-                name: "Office of Sustainability Challenge: Disaster Resilience",
-                description: 'Disasters in the Gulf Coast have impacted communities, often disproportionately. Develop an original innovative solution that tackles disasters for disenfranchised communities to manage their food, energy, and/or water challenges during and after disasters. Disasters may include (but not limited to) hurricanes, high winds, flooding, storm surge, winter extreme weather or others. Focus on the US Gulf Coast but could be applicable to anywhere in the world. Solutions with advanced data analytics, optimization (e.g. asset management, supply chain networks), and/or app development ideas will be given credits.',
-                prize: "Prize: TAMU TEES Polo Shirt + Camelbak Water Bottle",
-              },
+              // {
+              //   name: "Best Hardware Hack",
+              //   description: "Best hack that involves hardware usage/integration.",
+              //   prize: "Prize: TBD"
+              // },
+              // {
+              //   name: "More Tracks Coming Soon",
+              //   description: "Stay tuned for more tracks. We have tons of sponsor challenges and prizes on the way!",
+              //   prize: "Prize: TBD"
+              // },
             ],
             sponsorsXL: [
               [
@@ -677,14 +660,13 @@
 
   const lastPoint = {x: null, y: null}
   var cursor = $(".cursor"),
-          follower = $(".cursor-follower");
+  follower = $(".cursor-follower");
 
-      var posX = 0,
-          posY = 0,
-          mouseX = 0,
-          mouseY = 0;
+  var posX = 0,
+      posY = 0,
+      mouseX = 0,
+      mouseY = 0;
 
-      console.log("STARTED")
       TweenMax.to({}, 0.016, {
           repeat: -1,
           onRepeat: function() {
@@ -708,34 +690,39 @@
       });
 
 
-      $(document).on("mousemove", function(e) {
+      $(".portfolio-item").on("mousemove", function(e) {
           mouseX = e.pageX;
           mouseY = e.pageY;
 
-          const leftOrRight = (
-            e.clientX > lastPoint.x ? 'right'
-            : e.clientX < lastPoint.x ? 'left'
-            : 'none'
-          )
+          if(e.target.id == "construction") {
+            const leftOrRight = (
+              e.clientX > lastPoint.x ? 'right'
+              : e.clientX < lastPoint.x ? 'left'
+              : 'none'
+            )
 
-          if(leftOrRight == "right") {
-            follower.addClass("right");
-            follower.removeClass("left");
-            follower.removeClass("still");
+            if(leftOrRight == "right") {
+              follower.addClass("right");
+              follower.removeClass("left");
+              follower.removeClass("still");
+            }
+
+            else if(leftOrRight == "left") {
+              follower.addClass("left");
+              follower.removeClass("right");
+              follower.removeClass("still");
+            } 
+
+            lastPoint.x = e.clientX
+            lastPoint.y = e.clientY
           }
-
-          else if(leftOrRight == "left") {
-            follower.addClass("left");
-            follower.removeClass("right");
-            follower.removeClass("still");
-          } 
-
-          lastPoint.x = e.clientX
-          lastPoint.y = e.clientY
 
       });
 
-      $(".portfolio-item").on("mouseenter", function() {
+      $(".portfolio-item").on("mouseenter", function(e) {
+          let target = e.target;
+          console.log(target)
+          follower.css("background-image", "url(../static/th-2023/assets/" + target.getAttribute("cursor") + ")");
           cursor.addClass("active");
           follower.addClass("active");
       });
@@ -751,6 +738,8 @@
       $(".portfolio-item").on("mouseleave", function() {
           cursor.removeClass("active");
           follower.removeClass("active");
+          follower.removeClass("right");
+          follower.removeClass("left");
       });
 
     </script>
