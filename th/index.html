@@ -55,7 +55,7 @@
           <a href="#construction" class="text-lg font-medium font-poppins navy text-[#1a2542]">
             Schedule
           </a>
-          <a href="#construction" class="text-lg font-medium font-poppins navy text-[#1a2542]">
+          <a href="#prizes" class="text-lg font-medium font-poppins navy text-[#1a2542]">
             Prizes
           </a>
 
@@ -149,33 +149,45 @@
         </div>
       </div>
 
-      <div class="flex flex-col h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-0 md:px-20">
-        <div class="hidden xl:flex justify-center xl:justify-start md:w-1/2">
-          <img class="object-contain" src="../static/th-2023/assets/landing1.gif">
+      <div class="flex flex-col h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-0 ">
+        <div id="logo" class="hidden xl:flex justify-center xl:justify-start md:w-1/2">
+          <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landing1.gif">
         </div>
-        <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start xl:w-1/2 lg:pt-24 pb-8">
+        <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start md:w-1/2 md:pt-40 pb-8">
           <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg">
         </div>
-        <div class="md:w-1/2 xl:pl-24 md:pt-44 w-auto sm:w-screen">
+        <div class="md:w-1/2 xl:pl-24 md:pt-44 w-auto sm:w-screen md:text-right lg:text-left">
           <div class="flex justify-between">
-            <div class="flex flex-col justify-start">
+            <div class="flex flex-col justify-center">
               <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542]">TAMUhack 2023</p>
-              <div class="flex items-center justify-start gap-2 mt-2 mb-8">
+              <div class="flex items-center justify-start md:justify-end lg:justify-start gap-2 mt-2 mb-8">
                 <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">24 hours</p>
                 <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">In-person</p>
               </div>
               <p class="font-semibold text-2xl font-poppins text-[#1a2542]">January 28-29, 2023</p>
               <p class="font-semibold text-2xl font-poppins text-[#1a2542]">Texas <a href="https://abhishekmore.com" target="_blank" rel="noopener noreferrer">A&M</a> University</p>
+              <div class="hidden md:flex justify-end lg:hidden">
+                <div class="pt-4 flex flex-col gap-2 text-center">
+                  <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
+                    Apply
+                  </a>
+                  <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins text-white bg-[#1a2542] rounded-md transition-all hover:navy hover:bg-white">
+                    Mentor
+                  </a>
+                </div>
+              </div>
             </div>
           <img class="h-[200px] hidden sm:flex md:hidden" src="../static/th-2023/assets/statichero.svg">
           </div>
-          <div class="pt-4 flex flex-col gap-2 text-center">
-            <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
-              Apply
-            </a>
-            <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins text-white bg-[#1a2542] rounded-md transition-all hover:navy hover:bg-white">
-              Mentor
-            </a>
+          <div class="block md:hidden justify-end lg:block">
+            <div class="pt-4 flex flex-col gap-2 text-center">
+              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
+                Apply
+              </a>
+              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins text-white bg-[#1a2542] rounded-md transition-all hover:navy hover:bg-white">
+                Mentor
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -253,7 +265,7 @@
       </div>
 
       <div class="w-screen mt-16 lg:mt-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
       </div>
       <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
         <div class="text-gray-200 font-poppins flex justify-start items-start mb-8">
@@ -271,11 +283,11 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a2542" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,106.7C320,96,400,64,480,53.3C560,43,640,53,720,80C800,107,880,149,960,149.3C1040,149,1120,107,1200,80C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+      <svg class="hidden md:flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path fill="#1a2542" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,106.7C320,96,400,64,480,53.3C560,43,640,53,720,80C800,107,880,149,960,149.3C1040,149,1120,107,1200,80C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
       <!-- PRIZES -->
       <div id="prizes" class="h-full md:mt-4" style="padding-top:6em;">
-        <p class="flex pb-4 px-8 md:px-24 baby-pink-txt text-4xl font-extrabold font-poppins">Prizes</p>
+        <p class="flex pb-4 px-8 md:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
         <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-24 place-content-center z-40">
           <div class="leftcol lg:w-1/2">
             <div :cursor="prize.image" v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="portfolio-item prize lg:mr-8 mt-8 py-4 px-4 border-4 border-[#1a2542] bg-offwhite rounded-md opacity-100">
@@ -478,7 +490,7 @@
               },
               {
                 time: "09:00 AM",
-                event: "Morning Yoga with Abhishek",
+                event: "Morning Yoga with Lizzy",
                 type: "event"
               },
               {
@@ -535,7 +547,7 @@
               {
                 name: "Best UI/UX Hack",
                 description: "In the world of hacking and engineering, a product must not only work well, but also provide the best user experience possible - design and usability goes a long way! Best hack that demonstrates clear design and usability intentions.",
-                prize: "Prize: Fujifilm Intax Mini 7",
+                prize: "Prize: Fujifilm Instax Mini 7+",
                 image: "square.svg",
               },
               // {
@@ -749,6 +761,13 @@
           follower.removeClass("right");
           follower.removeClass("left");
       });
+
+      $(document).ready(function(){
+        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing1.gif");
+        setTimeout(function(){
+          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/floating.gif");
+      }, 6500);
+    });
 
     </script>
   </body>
