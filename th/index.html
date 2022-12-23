@@ -69,7 +69,7 @@
           </button>
           <div data-popover id="popover-default" role="tooltip" class="absolute z-10 w-[450px] invisible inline-block border-2 border-[#9F2D58] text-sm transition-all duration-300 bg-white rounded-lg shadow-lg opacity-0">
             <div class="p-4">
-              <p class="text-sm font-poppins text-[#172E6C] opacity-80 pb-4">Hacker Resources</p>
+              <p class="text-sm font-poppins text-[#172E6C] opacity-80 pb-4">Quick Links</p>
               <div class="grid grid-cols-2 gap-2">
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-lightbulb text-black w-4 flex justify-center"></i>
@@ -151,7 +151,7 @@
 
       <div class="flex flex-col h-auto lg:h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-40 lg:pb-0 md:pt-0 ">
         <div id="logo" class="hidden xl:flex justify-center xl:justify-start md:w-1/2">
-          <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landing1.gif">
+          <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landing12.gif">
         </div>
         <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start md:w-1/2 md:pt-40 pb-8">
           <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg" />
@@ -325,15 +325,52 @@
           </div>
         </div>
       </div>
+
+      <div class="my-32">
+        <div class="w-screen h-3 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+        <div class="flex justify-between px-28 mt-24">
+          <div>
+            <p class="font-poppins font-bold navy text-3xl">TAMUhack 2023</p>
+          </div>
+          <div class="flex justify-center gap-12 w-2/3">
+            <div>
+              <p class="font-poppins text-base navy">Hacker Resources</p>
+              <div v-for="resource in resources" class="mb-2">
+                <a :href="resource.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{resource.title}}</a>
+              </div>
+            </div>
+            <div>
+              <p class="font-poppins text-base navy">Socials</p>
+              <div v-for="social in socials" class="mb-2">
+                <a :href="social.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{social.title}}</a>
+              </div>
+            </div>
+            <div>
+              <p class="font-poppins text-base navy">Other Hackathons</p>
+              <div v-for="hack in otherHackathons" class="mb-2">
+                <a :href="hack.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{hack.title}}</a>
+              </div>
+            </div>
+            <div>
+              <p class="font-poppins text-base navy">Workshops</p>
+              <div v-for="workshop in workshopLinks" class="mb-2">
+                <a :href="workshop.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{workshop.title}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div style="height: 314px; background: url('./../../static/th-2021/img/bottom.png')">
+
+
+    <!-- <div style="height: 314px; background: url('./../../static/th-2021/img/bottom.png')">
       <div class="text-center sm:pl-16 sm:text-left" style="padding-top: 0px !important; padding-bottom: 0px !important;">
         <p style="padding-top: 200px;" class="sponsor-offset">
           Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
         </p>
       </div>
-    </div>
+    </div> -->
 
     <script src="https://unpkg.com/vue@2"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -561,6 +598,67 @@
               //   prize: "Prize: TBD"
               // },
             ],
+            resources: [
+              {
+                title: "HelpR",
+                link: "https://helpr-six.com/"
+              },
+              {
+                title: "Devpost",
+                link: "https://devpost.com/"
+              },
+              {
+                title: "Spotify Queue",
+                link: "https://spotify.com"
+              },
+              {
+                title: "Hacker Guide",
+                link: "https://tamuhack.com/tips"
+              },
+            ],
+            socials: [
+              {
+                title: "Instagram",
+                link: "https://www.instagram.com/tamuhack/?hl=en"
+              },
+              {
+                title: "TikTok",
+                link: "https://www.tiktok.com/@tamuhack?"
+              },
+              {
+                title: "LinkedIn",
+                link: "https://www.linkedin.com/company/tamuhack"
+              },
+              {
+                title: "Discord",
+                link: "https://discord.com/invite/V8FEmGvQAG"
+              },
+            ],
+            otherHackathons: [
+              {
+                title: "HackTX",
+                link: "https://hacktx.com/"
+              },
+              {
+                title: "HackUTD",
+                link: "https://hackutd.com/"
+              },
+              {
+                title: "RowdyHacks",
+                link: "https://www.rowdyhacks.org/"
+              },
+              {
+                title: "HackUNT",
+                link: "https://unthackathon.com/"
+              },
+            ],
+            workshopLinks: [
+              {
+                title: "Intro to Web Dev",
+                link: "https://tamuhack.com/web-workshop"
+              },
+            ],
+
             sponsorsXL: [
               [
                 'https://s21.q4cdn.com/616071541/files/multimedia-gallery/assets/Logos/american-airlines/aa_aa__hrz_rgb_grd_pos.png',
@@ -763,9 +861,9 @@
       });
 
       $(document).ready(function(){
-        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing12.gif");
+        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingone.gif");
         setTimeout(function(){
-          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing2.gif");
+          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingtwo.gif");
       }, 6500);
     });
 
