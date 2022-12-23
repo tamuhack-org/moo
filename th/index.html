@@ -149,26 +149,34 @@
         </div>
       </div>
 
-      <div class="flex flex-col h-screen md:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-40 sm:px-20">
-        <div class="flex justify-center xl:justify-start w-1/2">
-          <img class="w-auto h-[500px]" src="../static/th-2023/assets/landing1.gif">
+      <div class="flex flex-col h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-0 md:px-20">
+        <div class="hidden xl:flex justify-center xl:justify-start md:w-1/2">
+          <img class="object-contain" src="../static/th-2023/assets/landing1.gif">
         </div>
-        <div class="xl:w-1/2 xl:pl-24 lg:pt-24">
-          <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542]">TAMUhack 2023</p>
-          <div class="flex items-center justify-start gap-2 mt-2 mb-8 sm:mb-16">
-            <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">24 hours</p>
-            <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">In-person</p>
-          </div>
-            <p class="font-semibold text-2xl font-poppins text-[#1a2542]">January 28-29, 2023</p>
-            <p class="font-semibold text-2xl font-poppins text-[#1a2542]">Texas <a href="https://abhishekmore.com" target="_blank" rel="noopener noreferrer">A&M</a> University</p>
-            <div class="pt-4 flex flex-col gap-2 text-center">
-              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
-                Apply
-              </a>
-              <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 sm:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins text-white bg-[#1a2542] rounded-md transition-all hover:navy hover:bg-white">
-                Mentor
-              </a>
+        <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start xl:w-1/2 lg:pt-24 pb-8">
+          <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg">
+        </div>
+        <div class="md:w-1/2 xl:pl-24 md:pt-44 w-auto sm:w-screen">
+          <div class="flex justify-between">
+            <div class="flex flex-col justify-start">
+              <p class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542]">TAMUhack 2023</p>
+              <div class="flex items-center justify-start gap-2 mt-2 mb-8">
+                <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">24 hours</p>
+                <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">In-person</p>
+              </div>
+              <p class="font-semibold text-2xl font-poppins text-[#1a2542]">January 28-29, 2023</p>
+              <p class="font-semibold text-2xl font-poppins text-[#1a2542]">Texas <a href="https://abhishekmore.com" target="_blank" rel="noopener noreferrer">A&M</a> University</p>
             </div>
+          <img class="h-[200px] hidden sm:flex md:hidden" src="../static/th-2023/assets/statichero.svg">
+          </div>
+          <div class="pt-4 flex flex-col gap-2 text-center">
+            <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
+              Apply
+            </a>
+            <a href="https://register.tamuhack.com" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#1a2542] text-lg font-bold font-poppins text-white bg-[#1a2542] rounded-md transition-all hover:navy hover:bg-white">
+              Mentor
+            </a>
+          </div>
         </div>
       </div>
 
@@ -250,7 +258,7 @@
       <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
         <div class="text-gray-200 font-poppins flex justify-start items-start mb-8">
           <div class="faqblock sticky top-32">
-            <p class="text-4xl mb-4 text-white">Frequently Asked Questions</p>
+            <p class="text-4xl mb-4 font-semibold text-white">Frequently Asked Questions</p>
             <p class="text-xl mt-2">Everything you need to know about participating in TAMUhack.</p>
             <p class="text-xl mt-2">Can't find what you're looking for?</p>
             <a class="underline text-xl hover:text-white" href="mailto:hello@tamuhack.com">Contact our team.</a>
