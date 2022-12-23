@@ -149,7 +149,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-40 sm:pb-0 md:pt-0 ">
+      <div class="flex flex-col h-auto lg:h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-40 lg:pb-0 md:pt-0 ">
         <div id="logo" class="hidden xl:flex justify-center xl:justify-start md:w-1/2">
           <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landing1.gif">
         </div>
@@ -288,7 +288,7 @@
       <!-- PRIZES -->
       <div id="prizes" class="h-full md:mt-4" style="padding-top:6em;">
         <p class="flex pb-4 px-8 md:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
-        <div class="md:mt-8 mx-4 lg:flex md:px-12 lg:px-24 place-content-center z-40">
+        <div class="md:mt-8 mx-4 lg:flex md:px-24 place-content-center z-40">
           <div class="leftcol lg:w-1/2">
             <div :cursor="prize.image" v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="portfolio-item prize lg:mr-8 mt-8 py-4 px-4 border-4 border-[#1a2542] bg-offwhite rounded-md opacity-100">
               <!-- <div :id="prize.image" :style="{'background-image': 'url(../static/th-2023/assets/' + prize.image + ')'}" class="hidden lg:flex cursor-follower "></div>  -->
@@ -382,8 +382,8 @@
                 desc: "The deadline for registration is January 22, at 23:59. We'll be doing rolling admissions until that date. Our capacity is limited, so make sure to apply early!"
               },
               {
-                title: "Are there any COVID-19 Guidelines that I need to follow to attend TAMUhack?",
-                desc: "You will need to either present a negative COVID-19 test taken on or after January 15th OR show proof of vaccination (presented digitally or physically). More detailed guidelines on our COVID-19 guidelines can be found on our 'About TAMUhack' section on our Info page."
+                title: "What do I need to submit?",
+                desc: "All teams are REQUIRED to complete a Devpost submission for their project by 12:00 PM on 01/29/23 to be considered for judging. A video demo is OPTIONAL, but always helps! "
               },
               {
                 title: "Will there be workshops or talks?",
@@ -765,7 +765,7 @@
       $(document).ready(function(){
         $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing1.gif");
         setTimeout(function(){
-          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/floating.gif");
+          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing2.gif");
       }, 6500);
     });
 
