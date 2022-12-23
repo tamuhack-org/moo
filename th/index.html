@@ -154,7 +154,7 @@
           <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landing1.gif">
         </div>
         <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start md:w-1/2 md:pt-40 pb-8">
-          <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg">
+          <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg" />
         </div>
         <div class="md:w-1/2 xl:pl-24 md:pt-44 w-auto sm:w-screen md:text-right lg:text-left">
           <div class="flex justify-between">
@@ -383,7 +383,7 @@
               },
               {
                 title: "What do I need to submit?",
-                desc: "All teams are REQUIRED to complete a Devpost submission for their project by 12:00 PM on 01/29/23 to be considered for judging. A video demo is OPTIONAL, but always helps! "
+                desc: "All teams are REQUIRED to complete a Devpost submission for their project by 12:00 PM on 01/29/23 to be considered for judging. Submitting a video demo on Devpost  is OPTIONAL, but always helps! "
               },
               {
                 title: "Will there be workshops or talks?",
@@ -678,6 +678,7 @@
   }
 })
 
+  //I'm so sorry for whoever has to read this.
   const lastPoint = {x: null, y: null}
   var cursor = $(".cursor"),
   follower = $(".cursor-follower");
@@ -714,7 +715,7 @@
           mouseX = e.pageX;
           mouseY = e.pageY;
 
-          if(e.target.id == "construction") {
+          if(e.target.id == "construction" || e.target.getAttribute("cursor") == "cursorleft.svg") {
             const leftOrRight = (
               e.clientX > lastPoint.x ? 'right'
               : e.clientX < lastPoint.x ? 'left'
@@ -741,7 +742,6 @@
 
       $(".portfolio-item").on("mouseenter", function(e) {
           let target = e.target;
-          console.log(target)
           follower.css("background-image", "url(../static/th-2023/assets/" + target.getAttribute("cursor") + ")");
           cursor.addClass("active");
           follower.addClass("active");
@@ -763,7 +763,7 @@
       });
 
       $(document).ready(function(){
-        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing1.gif");
+        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing12.gif");
         setTimeout(function(){
           $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landing2.gif");
       }, 6500);
