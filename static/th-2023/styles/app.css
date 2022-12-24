@@ -20,7 +20,15 @@ html {
 }
 
 .navy {
-  color: #1a2542;
+  color: #192F6D;
+}
+
+.border-navy {
+  border-color: #192F6D; 
+}
+
+.bg-navy {
+  background-color: #192F6D; 
 }
 
 a {
