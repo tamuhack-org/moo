@@ -286,40 +286,43 @@
       <svg class="hidden md:flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path fill="#1a2542" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,106.7C320,96,400,64,480,53.3C560,43,640,53,720,80C800,107,880,149,960,149.3C1040,149,1120,107,1200,80C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
       <!-- PRIZES (i was in a rush, sorry)-->
-      <div class="px-32 grid gap-8 grid-cols-1 lg:grid-cols-6 grid-flow-row auto-rows-min">
-        <div :cursor="prizes[0].image" class="h-[140px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
-          <div>
-            <p :cursor="prizes[0].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[0].name}}</p>
-            <p :cursor="prizes[0].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[0].description}}</p>
-            <p :cursor="prizes[0].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[0].prize}}</p> 
+      <div id="prizes" style="padding-top:6em;">
+        <p class="flex my-8 pb-4 px-8 md:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
+        <div class="px-8 lg:px-28 flex flex-col md:grid gap-8 grid-cols-6 ">
+          <div :cursor="prizes[0].image" class=" flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div>
+              <p :cursor="prizes[0].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[0].name}}</p>
+              <p :cursor="prizes[0].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[0].description}}</p>
+              <p :cursor="prizes[0].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[0].prize}}</p> 
+            </div>
+            <img class="hidden xl:flex w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' + prizes[0].image" />
           </div>
-          <img class="hidden xl:flex w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' + prizes[0].image" />
-        </div>
-        <div :cursor="prizes[2].image" class="h-[140px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
-          <div>
-            <p :cursor="prizes[2].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[2].name}}</p>
-            <p :cursor="prizes[2].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[2].description}}</p>
-            <p :cursor="prizes[2].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[2].prize}}</p> 
+          <div :cursor="prizes[2].image" class="h-[140px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div>
+              <p :cursor="prizes[2].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[2].name}}</p>
+              <p :cursor="prizes[2].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[2].description}}</p>
+              <p :cursor="prizes[2].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[2].prize}}</p> 
+            </div>
+            <img class="hidden xl:flex w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' + prizes[2].image" />
           </div>
-          <img class="hidden xl:flex w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' + prizes[2].image" />
-        </div>
-        <div :cursor="prizes[4].image" class="h-[140px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
-          <div>
-            <p :cursor="prizes[4].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[4].name}}</p>
-            <p :cursor="prizes[4].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[4].description}}</p>
-            <p :cursor="prizes[4].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[4].prize}}</p> 
+          <div :cursor="prizes[4].image" class="h-[140px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div>
+              <p :cursor="prizes[4].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[4].name}}</p>
+              <p :cursor="prizes[4].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[4].description}}</p>
+              <p :cursor="prizes[4].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[4].prize}}</p> 
+            </div>
+            <img class="hidden xl:flex w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' + prizes[4].image" />
           </div>
-          <img class="hidden xl:flex w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' + prizes[4].image" />
-        </div>
-        <div :cursor="prizes[1].image" class="portfolio-item prize lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
-          <p :cursor="prizes[1].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[1].name}}</p>
-          <p :cursor="prizes[1].image" class="mt-3 text-l md:text-md font-md font-text navy">{{prizes[1].description}}</p>
-          <p :cursor="prizes[1].image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prizes[1].prize}}</p> 
-        </div>
-        <div :cursor="prizes[3].image" class="portfolio-item prize lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
-          <p :cursor="prizes[3].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[3].name}}</p>
-          <p :cursor="prizes[3].image" class="mt-3 text-l md:text-md font-md font-text navy">{{prizes[3].description}}</p>
-          <p :cursor="prizes[3].image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prizes[3].prize}}</p> 
+          <div :cursor="prizes[1].image" class="portfolio-item prize lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <p :cursor="prizes[1].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[1].name}}</p>
+            <p :cursor="prizes[1].image" class="mt-3 text-l md:text-md font-md font-text navy">{{prizes[1].description}}</p>
+            <p :cursor="prizes[1].image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prizes[1].prize}}</p> 
+          </div>
+          <div :cursor="prizes[3].image" class="portfolio-item prize lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <p :cursor="prizes[3].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[3].name}}</p>
+            <p :cursor="prizes[3].image" class="mt-3 text-l md:text-md font-md font-text navy">{{prizes[3].description}}</p>
+            <p :cursor="prizes[3].image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prizes[3].prize}}</p> 
+          </div>
         </div>
       </div>
 
@@ -368,11 +371,12 @@
 
       <div class="my-32">
         <div class="w-screen h-3 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
-        <div class="md:flex px-8 lg:px-28 mt-24">
-          <div>
-            <p class="font-poppins font-bold navy text-3xl">TAMUhack 2023</p>
+        <div class="lg:flex justify-between px-8 lg:px-28 mt-8 md:mt-24">
+          <div class="lg:w-1/5">
+            <p class="font-poppins font-bold navy text-3xl mb-8">TAMUhack 2023</p>
+            <p class="font-poppins font-medium navy text-xl mb-8">All the resources you'll need for our hackathon.</p>
           </div>
-          <div class="flex flex-wrap justify-start flex-grow gap-12">
+          <div class="flex flex-wrap justify-start lg:justify-center flex-grow gap-12">
             <div>
               <p class="font-poppins text-base navy mb-2">Hacker Resources</p>
               <div v-for="resource in resources" class="mb-2">
@@ -684,8 +688,16 @@
             ],
             otherHackathons: [
               {
+                title: "TAMU Datathon",
+                link: "https://tamudatathon.com/"
+              },
+              {
                 title: "HackTX",
                 link: "https://hacktx.com/"
+              },
+              {
+                title: "HackUNT",
+                link: "https://unthackathon.com/"
               },
               {
                 title: "HackUTD",
@@ -695,14 +707,10 @@
                 title: "RowdyHacks",
                 link: "https://www.rowdyhacks.org/"
               },
-              {
-                title: "HackUNT",
-                link: "https://unthackathon.com/"
-              },
             ],
             workshopLinks: [
               {
-                title: "Intro to Web Dev",
+                title: "Web Dev",
                 link: "https://tamuhack.com/web-workshop"
               },
             ],
