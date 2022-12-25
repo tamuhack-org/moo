@@ -1,300 +1,117 @@
 html {
-    scroll-behavior: smooth;
-}
-  
-[v-cloak] {
-    display: none;
+  scroll-behavior: smooth;
 }
 
-.off-black-text{
-    color: hsl(240, 9%, 4%);
+
+.font-heading {
+  font-family: 'Roboto Flex', 'Open Sans';
 }
 
-.transparent-white{
-  background-color: #ffffffbc;
+.font-text {
+  font-family: 'Open Sans';
 }
 
-ion-icon {
-  color: white;
+.font-poppins {
+  font-family: 'Poppins', 'Open Sans';
 }
 
-.off-black{
-  background-color: #0a0a0c;
+.pink {
+  color: #9F2D58;
 }
 
-.futura-font {
-  font-family: 'Futura';
+.navy {
+  color: #192F6D;
 }
 
-.raleway-font {
-  font-family: 'Raleway', sans-serif;
+.border-navy {
+  border-color: #192F6D; 
 }
 
-.inter-font {
-  font-family: 'Inter', sans-serif;
+.bg-navy {
+  background-color: #192F6D; 
 }
 
-.opensans-font {
-  font-family: 'Open Sans', sans-serif;
+a {
+  text-decoration: none;
 }
 
-.shake{
-  animation: shake 5.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.shake2{
-  animation: shake2 5.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+#construction {
+  overflow: hidden;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -1px) rotate(-1deg); }
-  20% { transform: translate(1px, 1px) rotate(1deg); }
-  30% { transform: translate(-1px, -1px) rotate(0deg); }
-  40% { transform: translate(1px, 1px) rotate(1deg); }
-  50% { transform: translate(-1px, -1px) rotate(-1deg); }
-  60% { transform: translate(1px, 1px) rotate(0deg); }
-  70% { transform: translate(-1px, -1px) rotate(-1deg); }
-  80% { transform: translate(1px, 1px) rotate(1deg); }
-  90% { transform: translate(-1px, -1px) rotate(0deg); }
-  100% { transform: translate(1px, 1px) rotate(0deg); }
+.cursor {
+    position: absolute;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
 }
 
-@keyframes shake2 {
-  0% { transform: translate(-1px, -1px) rotate(-1deg); }
-  10% { transform: translate(1px, 1px) rotate(1deg); }
-  20% { transform: translate(-1px, -1px) rotate(0deg); }
-  30% { transform: translate(1px, 1px) rotate(1deg); }
-  40% { transform: translate(-1px, -1px) rotate(-1deg); }
-  50% { transform: translate(1px, 1px) rotate(0deg); }
-  60% { transform: translate(-1px, -1px) rotate(-1deg); }
-  70% { transform: translate(1px, 1px) rotate(1deg); }
-  80% { transform: translate(-1px, -1px) rotate(0deg); }
-  90% { transform: translate(1px, 1px) rotate(-1deg); }
-  100% { transform: translate(-1px, -1x) rotate(-1deg); }
-}
-
-@font-face {
-  font-family: 'Futura';
-  src: url(./../static/fonts/Futura/Futura-Bold/futura-bold.ttf);
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'Futura';
-  src: url(./../static/fonts/Futura/Futura-Light/futura-light.ttf);
-  font-weight: light;
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  src: url(./../static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
-  font-weight: regular;
-}
-
-*{
-    margin:0px;
-    padding:0px;
-  }
-  
-  .apply-button {
-    background-color: #1c71d1;
-  }
-
-  .apply-button:hover {
-    color: rgb(223, 223, 223);
-    border-color: rgb(223, 223, 223);
-  }
-
-  .mentor-button:hover {
-    color: rgb(223, 223, 223);
-    border-color: rgb(223, 223, 223);
-  }
-
-  .nav-button:hover {
-    color: white;
-  }
-
-  
-  .ptext{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .showcase h1{
-    font-size:60px;
-    color: #fff;
-    font-family: "Source Code Pro", monospace;
-    font-weight: bold;
-    margin-bottom: 0px;
-  }
-
-  .showcase h2{
-    font-size: 60px;
-    text-transform: capitalize;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid white;
-    width: 12ch;
-    color:white;
-    font-family: "Source Code Pro", monospace;
-    animation: typist 8s steps(12), blink step-end 1s infinite;
-  }
-
-  @keyframes typist{
-    0%{width: 0ch;}
-    47%{width: 12ch;}
-    70%{width: 12ch;}
-    75%{width: 12ch;}
-    100%{ width: 12ch;}
-  }
-  @keyframes blink{
-    from, to{border-color: transparent;}
-    50%{border-color: white;}
-  }
-
-  @media (max-width: 780px) {
-    .showcase h2{
-      font-size: 40px;
-      text-transform: capitalize;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 2px solid white;
-      width: 12ch;
-      color:white;
-      font-family: "Source Code Pro", monospace;
-      animation: typist 8s steps(12), blink step-end 1s infinite;
-    }
-  }
-
-
-.meteor {
-  border: 2px solid transparent;
-  border-bottom: 60px solid #fff;
-  position: absolute;
-  transform-origin: top center;
-  z-index: 0;
-  opacity: 0;
-}
-
-.meteor:after {
-  content: '';
-  position: absolute;
-  top: 58px;
-  left: 50%;
-  height: 4px;
-  width: 4px;
-  border-radius: 100%;
-  background: #fff;
-  transform: translateX(-50%);
-  box-shadow: 0 0 15px 0 #fff;
-}
-
-.meteor:nth-child(1) {
-  left: 85vw;
-  animation: shower 6s infinite;
-  top: 40vh;
-  animation-delay: 3s;
-}
-
-.meteor:nth-child(2) {
-  left: 20vw;
-  top: 13vh;
-  animation: shower 5s infinite;
-  animation-delay: 7s;
-}
-
-.meteor:nth-child(3) {
-  left: 69vw;
-  top: 17vh;
-  animation: shower 4s infinite;
-  animation-delay: 9s;
-}
-
-.meteor:nth-child(4) {
-  left: 34vw;
-  top: 10vh;
-  animation: shower2 13s infinite;
-  animation-delay: 10s;
-}
-
-.meteor:nth-child(5) {
-  left: 10vw;
-  top: 43vh;
-  animation: shower2 10s infinite;
-  animation-delay: 13s;
-}
-
-.meteor:nth-child(6) {
-  left: 98vw;
-  top: 29vh;
-  animation: shower2 10s infinite;
-  animation-delay: 15s;
-}
-
-@keyframes shower {
-  0% {
-    transform: rotate(30deg) scaleY(0);
+.cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
     opacity: 0;
-  }
-  6.5% {
-    transform: rotate(30deg) scaleY(1);
+}
+
+.cursor.active {
     opacity: 1;
-  }
-  10.0% {
-    transform: rotate(30deg) scaleY(1) translateY(500%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: rotate(30deg) scaleY(1) translateY(500%);
-    opacity: 0; 
-  }
+    transform: scale(1);
 }
 
-@keyframes shower2 {
-  0% {
-    transform: rotate(30deg) scaleY(0);
-    opacity: 0;
-  }
-  3.25% {
-    transform: rotate(30deg) scaleY(1);
+.cursor.active::before {
     opacity: 1;
-  }
-  5.0% {
-    transform: rotate(30deg) scaleY(1) translateY(500%);
+}
+
+.cursor-follower {
+    position: absolute;
+    background-image: url("../assets/cursorleft.svg"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.4s cubic-bezier(.69,-0.04,.28,1.57) transform,
+        0.2s cubic-bezier(.69,-0.04,.28,1.57) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0);
     opacity: 0;
-  }
-
-  100% {
-    transform: rotate(30deg) scaleY(1) translateY(500%);
-    opacity: 0; 
-  }
-}
-  
-.prizes-card {
-  background: #DAC6B5;
-  border: 30px solid;
-  border-image: repeating-linear-gradient(
-    -45deg,
-    rgba(255, 0, 0, 0.4),
-    rgba(255, 0, 0, 0.4) 20px,
-    #fff 20px,
-    #fff 60px,
-    rgba(0, 56, 255, 0.4) 60px,
-    rgba(0, 56, 255, 0.4) 80px, 
-    #fff 80px,
-    #fff 120px
-  ) 24/20px;
 }
 
-.stamp {
-  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/stamp-border.png) 8 round;
-  border-width: 10px;
-  border-style: solid;
+.cursor-follower.left {
+  background-image: url("../assets/cursorleft.svg") !important; 
+}
+
+.cursor-follower.right {
+  background-image: url("../assets/cursorright.svg") !important; 
+}
+
+.cursor-follower.clicked {
+  transition: 0.1s cubic-bezier(.69,-0.04,.28,1.57) transform !important;
+  transform: scale(0.85) !important;
+}
+
+.cursor-follower.active {
+    opacity: 1;
+    transform: scale(1);
 }
