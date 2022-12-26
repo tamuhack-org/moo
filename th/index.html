@@ -407,11 +407,11 @@
         </div>
       </div>
 
-      <div id="happy-hacking-and-3d-friend" class="mx-auto flex flex-row flex-wrap text-center max-w-5xl">
-        <div id="happy-hacking" class="flex-initial w-fit mx-auto px-8">
-          <img class="" src="../static/th-2023/assets/happy_hacking.png">
+      <div id="happy-hacking-and-3d-friend" class="flex flex-row flex-wrap text-center max-w-7xl mx-auto mt-24">
+        <div id="happy-hacking" class="flex-initial w-fit mx-auto my-auto px-8">
+          <img class="max-w-[500px] w-full" src="../static/th-2023/assets/happy_hacking.png">
         </div>
-        <div id="3d-friend" class="flex-none w-fit cursor-grab active:cursor-grabbing mx-auto"></div>
+        <div id="3d-friend" class="flex-none mx-auto my-auto"></div> <!-- border-4 border-dashed border-[#1D336F] -->
       </div>
       
 
@@ -496,8 +496,8 @@
 
 
       // Setup
-      const SCENE_WIDTH = 300;
-      const SCENE_HEIGHT = 300;
+      const SCENE_WIDTH = 1;
+      const SCENE_HEIGHT = 1;
       const FOV = 50;
       const CAMERA_DISTANCE = 8;
 
@@ -511,6 +511,7 @@
       renderer.outputEncoding = THREE.sRGBEncoding;
       renderer.setClearColor(0xffffff, 1);
       renderer.setSize(SCENE_WIDTH, SCENE_HEIGHT);
+      renderer.domElement.classList.add("cursor-grab", "active:cursor-grabbing");
       document.getElementById("3d-friend").appendChild(renderer.domElement);
 
       const outline_brightness_scalar = 0.3;
@@ -533,9 +534,19 @@
 
       // Add friend
       const loader = new GLTFLoader();
+      let gltfScene;
+      let gltfSceneInitialScale;
 
       loader.load('/static/th-2023/3d-friend/models/friend_smol_faces_rounded.glb', function ( gltf ) {
-          scene.add(gltf.scene);
+          gltfScene = gltf.scene
+          gltfSceneInitialScale = {
+            x: gltfScene.scale.x,
+            y: gltfScene.scale.y,
+            z: gltfScene.scale.z
+          }
+          scene.add(gltfScene);
+
+          resizeWindow();
       }, undefined, function (error) {
           console.error(error);
       });
@@ -556,6 +567,22 @@
           effect.render(scene, camera);
       }
       animate();
+
+
+      window.addEventListener('resize', resizeWindow, false);
+      function resizeWindow ()
+      {
+        const maxWidth = 500;
+        const windowWidth = Math.min(maxWidth, window.innerWidth - 20);
+
+        camera.aspect = 1;
+        camera.updateProjectionMatrix();
+
+        const sceneScalar = windowWidth * 0.0015;
+        gltfScene.scale.set(sceneScalar * gltfSceneInitialScale.x, sceneScalar * gltfSceneInitialScale.y, sceneScalar * gltfSceneInitialScale.z);
+
+        renderer.setSize(windowWidth, windowWidth);
+      }
 
     </script>
 
