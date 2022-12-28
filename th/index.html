@@ -413,7 +413,7 @@
           <div class="lg:w-1/5">
             <p class="font-poppins font-bold navy text-3xl mb-8">TAMUhack 2023</p>
             <p class="font-poppins font-medium navy text-xl mb-8">All the resources you'll need for your hackathon journey.</p>
-            <div id="3d-friend" class="mb-8 hidden lg:inline"></div> <!-- border-4 border-dashed border-[#1D336F] -->
+            <div id="3d-friend" class="mb-8 hidden lg:block absolute right-5 bottom-5"></div>
           </div>
           <div class="flex flex-wrap justify-start lg:justify-center flex-grow gap-12">
             <div>
@@ -504,7 +504,7 @@
       renderer.outputEncoding = THREE.sRGBEncoding;
       renderer.setClearColor(0xffffff, 1);
       renderer.setSize(SCENE_WIDTH, SCENE_HEIGHT);
-      renderer.domElement.classList.add("cursor-grab", "active:cursor-grabbing");
+      renderer.domElement.classList.add("cursor-grab", "active:cursor-grabbing");  // "border-4", "border-dashed", "border-[#1D336F]"
       document.getElementById("3d-friend").appendChild(renderer.domElement);
 
       const outline_brightness_scalar = 0.3;
@@ -539,7 +539,10 @@
           }
           scene.add(gltfScene);
 
-          resizeWindow();
+          const sceneScalar = 1.15;
+          gltfScene.scale.set(sceneScalar * gltfSceneInitialScale.x, sceneScalar * gltfSceneInitialScale.y, sceneScalar * gltfSceneInitialScale.z);
+
+          // resizeWindow();
       }, undefined, function (error) {
           console.error(error);
       });
