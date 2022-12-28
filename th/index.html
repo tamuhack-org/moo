@@ -407,20 +407,13 @@
         </div>
       </div>
 
-      <div id="happy-hacking-and-3d-friend" class="flex flex-row flex-wrap gap-y-6 text-center max-w-7xl mx-auto mt-24">
-        <div id="happy-hacking" class="flex-initial w-fit mx-auto my-auto px-8">
-          <img class="max-w-[500px] w-full" src="../static/th-2023/assets/happy_hacking.png">
-        </div>
-        <div id="3d-friend" class="flex-none mx-auto my-auto"></div> <!-- border-4 border-dashed border-[#1D336F] -->
-      </div>
-      
-
       <div id="footer" class="my-24" style="padding-top:6em;">
         <div class="w-screen h-2 bg-[#d490aa]"></div>
         <div class="lg:flex justify-between px-8 lg:px-16 mt-8 lg:mt-24">
           <div class="lg:w-1/5">
             <p class="font-poppins font-bold navy text-3xl mb-8">TAMUhack 2023</p>
             <p class="font-poppins font-medium navy text-xl mb-8">All the resources you'll need for your hackathon journey.</p>
+            <div id="3d-friend" class="mb-8 hidden lg:inline"></div> <!-- border-4 border-dashed border-[#1D336F] -->
           </div>
           <div class="flex flex-wrap justify-start lg:justify-center flex-grow gap-12">
             <div>
@@ -496,8 +489,8 @@
 
 
       // Setup
-      const SCENE_WIDTH = 1;
-      const SCENE_HEIGHT = 1;
+      const SCENE_WIDTH = 150;
+      const SCENE_HEIGHT = 150;
       const FOV = 50;
       const CAMERA_DISTANCE = 8;
 
@@ -560,15 +553,18 @@
       // Animate
       function animate()
       {
-          controls.update();
+        requestAnimationFrame(animate);
 
-          requestAnimationFrame(animate);
+        if (window.innerWidth >= 1024)  // Don't render on mobile
+        {
+          controls.update();
           renderer.render(scene, camera);
           effect.render(scene, camera);
+        }
       }
       animate();
 
-
+      /*
       window.addEventListener('resize', resizeWindow, false);
       function resizeWindow ()
       {
@@ -584,6 +580,7 @@
 
         renderer.setSize(windowWidth, windowWidth);
       }
+      */
 
     </script>
 
