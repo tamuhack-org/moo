@@ -17,6 +17,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/640b86bfda.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./static/styles/app.css" />
   <link rel="stylesheet" href="./static/styles/horizontal-timeline.css">
 
@@ -36,9 +37,11 @@
     <!--BEGIN Navbar-->
     <!-- UNCOMMENT WHEN APPS OPEN   -->
 
-    <a href="https://tamuhack.com/hh" class="toast" target="_blank">
-        Register for HowdyHack 2022!
+    
+    <a href="https://register.tamuhack.com/" class="toast" target="_blank">
+        Register for TAMUhack 2023!
     </a>
+   
 
     <div class="nav-container container">
       <!-- ADD THE FOLLOWING STYLE ATTRIBUTE TO THE NAV BELOW WHEN APPS OPEN: style="top: 41px;" -->
@@ -141,7 +144,7 @@
                 style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">A&M</a> University
             </p><br>
             <p>
-              <a class="btn btn-primary tamu-button" href="/th" role="button">Visit TAMUhack 2022</a>
+              <a class="btn btn-primary tamu-button" href="/th" role="button">Visit TAMUhack 2023</a>
             </p>
           </div>
           <!--End Column-->
@@ -282,10 +285,14 @@
                 </div>
                 <div class="row">
                   <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
-                    <picture v-if="typeof director.img !== 'undefined'">
+                    <picture v-if="typeof director.img !== 'undefined' && (hackathon.name !== 'HowdyHack 2022' || !party)">
                       <source type="image/webp" :srcset="director.webp" class="timeline-director-img">
-                      <source type="image/jpg" :srcset="director.img" class="timeline-director-img">
-                      <img :src="director.img" alt="TAMUhack Director" class="timeline-director-img">
+                      <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
+                      <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
+                    </picture>
+                    <picture v-if="hackathon.name === 'HowdyHack 2022' && party">
+                      <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
+                      <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
                     <p class="timeline-director-name">{{ director.name }}</p>
                     <p class="timeline-director-position">{{ director.position }}</p>
@@ -349,6 +356,11 @@
             </div>
             <div>
               <ul class="navbar-nav main-nav-ui mr-auto links-container">
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <i class="fa-solid fa-cake-candles" v-on:click="toggleParty"></i>
+                  </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
                     <i class="fab fa-facebook-f"></i>
@@ -445,10 +457,13 @@
   <script src="./static/scripts/main.js"></script>
   <!-- horizontal-timeline scripts -->
   <script>
+    
+
     new Vue({
       el: "#app",
       data: function () {
         return {
+          party: false,
           hackathons: [
             {
               name: "TAMUhack 2014",
@@ -1380,7 +1395,7 @@
             },
             {
               name: "TAMUhack 2022",
-              link: "/th",
+              link: "/th/2022",
               logo: "th22",
               description: "The 2022 installment of your favorite hackathon!",
               directors: [
@@ -1608,6 +1623,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/ekdev.webp",
                   img: "./static/th-2022/headshots/jpg/ekdev.jpg",
+                  gif: "./static/th-2023/headshots/gif/ekdev.gif",
                   name: "Ekdev Rajkitkul",
                   position: "President",
                   linkedin: "https://www.linkedin.com/in/ekdevrajkitkul"
@@ -1615,6 +1631,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/vivian.webp",
                   img: "./static/th-2022/headshots/jpg/vivian.jpg",
+                  gif: "./static/th-2023/headshots/gif/vivian.gif",
                   name: "Vivian Yu",
                   position: "Vice President",
                   github: "https://github.com/vivians-y",
@@ -1623,6 +1640,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/abhishek.webp",
                   img: "./static/th-2022/headshots/jpg/abhishek.jpg",
+                  gif: "./static/th-2023/headshots/gif/abhishek.gif",
                   name: "Abhishek More",
                   position: "Tech Lead",
                   github: "https://www.github.com/Abhishek-More",
@@ -1631,6 +1649,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/irene.webp",
                   img: "./static/th-2022/headshots/jpg/irene.jpg",
+                  gif: "./static/th-2023/headshots/gif/irene.gif",
                   name: "Irené Masabarakiza",
                   position: "Logistics Lead",
                   linkedin: "https://www.linkedin.com/in/irené-masabarakiza-57543319b"
@@ -1638,6 +1657,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/kirthivel.webp",
                   img: "./static/th-2022/headshots/jpg/kirthivel.jpg",
+                  gif: "./static/th-2023/headshots/gif/kirthivel.gif",
                   name: "Kirthivel Ramesh",
                   position: "Creative Lead",
                   linkedin: "https://www.linkedin.com/in/kirthivel"
@@ -1645,6 +1665,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/adil.webp",
                   img: "./static/th-2022/headshots/jpg/adil.jpg",
+                  gif: "./static/th-2023/headshots/gif/adil.gif",
                   name: "Adil Rasiyani",
                   position: "Tech",
                   github: "https://github.com/AdilRas",
@@ -1653,6 +1674,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/jaden.webp",
                   img: "./static/th-2022/headshots/jpg/jaden.jpg",
+                  gif: "./static/th-2023/headshots/gif/jaden.gif",
                   name: "Jaden Banze",
                   position: "Tech & Creative",
                   github: "https://github.com/jadenbanze",
@@ -1661,6 +1683,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/malavi.webp",
                   img: "./static/th-2022/headshots/jpg/malavi.jpg",
+                  gif: "./static/th-2023/headshots/gif/malavi.gif",
                   name: "Malavi Srinivasan",
                   position: "Creative",
                   linkedin: "https://www.linkedin.com/in/malavi-srinivasan-9452a21ba/"
@@ -1668,6 +1691,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/jiyoon.webp",
                   img: "./static/th-2022/headshots/jpg/jiyoon.jpg",
+                  gif: "./static/th-2023/headshots/gif/jiyoon.gif",
                   name: "Jiyoon Kim",
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/jiyoon-kim1"
@@ -1676,6 +1700,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/naveen.webp",
                   img: "./static/th-2022/headshots/jpg/naveen.jpg",
+                  gif: "./static/th-2023/headshots/gif/naveen.gif",
                   name: "Naveen Iyer",
                   position: "Tech",
                   github: "https://github.com/NitroGuy10",
@@ -1684,6 +1709,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/ayomide.webp",
                   img: "./static/th-2022/headshots/jpg/ayomide.jpg",
+                  gif: "./static/th-2023/headshots/gif/ayo.gif",
                   name: "Ayomide Fatoye",
                   position: "Logistics",
                   github: "https://github.com/Ayo-Fatoye",
@@ -1692,6 +1718,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/ashrita.webp",
                   img: "./static/th-2022/headshots/jpg/ashrita.jpg",
+                  gif: "./static/th-2023/headshots/gif/ashrita.gif",
                   name: "Ashrita Vadlapatla",
                   position: "Creative",
                   linkedin: "https://www.linkedin.com/in/ashrita-vadlapatla/"
@@ -1699,6 +1726,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/arya.webp",
                   img: "./static/th-2022/headshots/jpg/arya.jpg",
+                  gif: "./static/th-2023/headshots/gif/arya.gif",
                   name: "Arya Gupta",
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/aryagupta12345"
@@ -1706,6 +1734,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/van.webp",
                   img: "./static/th-2022/headshots/jpg/van.jpg",
+                  gif: "./static/th-2023/headshots/gif/vanessa.gif",
                   name: "Vanessa Le",
                   position: "Tech",
                   github: "https://github.com/mopositive2001",
@@ -1714,6 +1743,7 @@
                 {
                   webp: "./static/th-2022/headshots/webp/anish.webp",
                   img: "./static/th-2022/headshots/jpg/anish.jpg",
+                  gif: "./static/th-2023/headshots/gif/anish.gif",
                   name: "Anish Karthik",
                   position: "Logistics",
                   github: "https://github.com/anishfish2",
@@ -1722,6 +1752,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/anjali.webp",
                   img: "./static/hh-2022/headshots/jpg/anjali.jpg",
+                  gif: "./static/th-2023/headshots/gif/anjali.gif",
                   name: "Anjali Kumar",
                   position: "Tech",
                   linkedin: "https://www.linkedin.com/in/anjali-kumar-02"
@@ -1729,6 +1760,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/gabe.webp",
                   img: "./static/hh-2022/headshots/jpg/gabe.jpg",
+                  gif: "./static/th-2023/headshots/gif/gabe.gif",
                   name: "Gabrielle Anne Irava",
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/gabrielle-anne-irava-582667236/"
@@ -1736,6 +1768,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/harshitha.webp",
                   img: "./static/hh-2022/headshots/jpg/harshitha.jpg",
+                  gif: "./static/th-2023/headshots/gif/harshitha.gif",
                   name: "Harshitha Dhulipala",
                   position: "Logistics",
                   github: "https://github.com/hdhulipala02",
@@ -1744,6 +1777,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/joshua.webp",
                   img: "./static/hh-2022/headshots/jpg/joshua.jpg",
+                  gif: "./static/th-2023/headshots/gif/josh.gif",
                   name: "Joshua John",
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/joshua-john-1055b8240"
@@ -1751,6 +1785,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/keegan.webp",
                   img: "./static/hh-2022/headshots/jpg/keegan.jpg",
+                  gif: "./static/th-2023/headshots/gif/keegan.gif",
                   name: "Keegan Reynolds",
                   position: "Logistics",
                   github: "https://github.com/boxkr",
@@ -1759,6 +1794,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/lizzy.webp",
                   img: "./static/hh-2022/headshots/jpg/lizzy.jpg",
+                  gif: "./static/th-2023/headshots/gif/lizzy.gif",
                   name: "Lizzy Yoon",
                   position: "Creative",
                   linkedin: "https://www.linkedin.com/in/lizzy-yoon/"
@@ -1766,6 +1802,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/mateo.webp",
                   img: "./static/hh-2022/headshots/jpg/mateo.jpg",
+                  gif: "./static/th-2023/headshots/gif/mateo.gif",
                   name: "Mateo Ruiz",
                   position: "Tech",
                   github: "https://github.com/m-ruiz21",
@@ -1774,6 +1811,7 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/nafi.webp",
                   img: "./static/hh-2022/headshots/jpg/nafi.jpg",
+                  gif: "./static/th-2023/headshots/gif/nafi.gif",
                   name: "Nafi Islam",
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/nafiislam"
@@ -1781,6 +1819,219 @@
                 {
                   webp: "./static/hh-2022/headshots/webp/li.webp",
                   img: "./static/hh-2022/headshots/jpg/lii.jpg",
+                  gif: "./static/th-2023/headshots/gif/li.gif",
+                  name: "Li Shen",
+                  position: "Creative",
+                  linkedin: "https://www.linkedin.com/in/lishen123/"
+                }
+              ]
+            },
+            {
+              name: "TAMUhack 2023",
+              link: "/th",
+              logo: "th23",
+              description: "Our upcoming hackathon!",
+              directors: [
+                {
+                  webp: "./static/th-2022/headshots/webp/ekdev.webp",
+                  img: "./static/th-2022/headshots/jpg/ekdev.jpg",
+                  gif: "./static/th-2023/headshots/gif/ekdev.gif",
+                  name: "Ekdev Rajkitkul",
+                  position: "President",
+                  linkedin: "https://www.linkedin.com/in/ekdevrajkitkul"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/vivian.webp",
+                  img: "./static/th-2022/headshots/jpg/vivian.jpg",
+                  gif: "./static/th-2023/headshots/gif/vivian.gif",
+                  name: "Vivian Yu",
+                  position: "Vice President",
+                  github: "https://github.com/vivians-y",
+                  linkedin: "https://www.linkedin.com/in/vivian-yu-aa1443194"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/abhishek.webp",
+                  img: "./static/th-2022/headshots/jpg/abhishek.jpg",
+                  gif: "./static/th-2023/headshots/gif/abhishek.gif",
+                  name: "Abhishek More",
+                  position: "Tech Lead",
+                  github: "https://www.github.com/Abhishek-More",
+                  linkedin: "https://www.linkedin.com/in/abhishek-more-linked/"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/irene.webp",
+                  img: "./static/th-2022/headshots/jpg/irene.jpg",
+                  gif: "./static/th-2023/headshots/gif/irene.gif",
+                  name: "Irené Masabarakiza",
+                  position: "Logistics Lead",
+                  linkedin: "https://www.linkedin.com/in/irené-masabarakiza-57543319b"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/kirthivel.webp",
+                  img: "./static/th-2022/headshots/jpg/kirthivel.jpg",
+                  gif: "./static/th-2023/headshots/gif/kirthivel.gif",
+                  name: "Kirthivel Ramesh",
+                  position: "Creative Lead",
+                  linkedin: "https://www.linkedin.com/in/kirthivel"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/adil.webp",
+                  img: "./static/th-2022/headshots/jpg/adil.jpg",
+                  gif: "./static/th-2023/headshots/gif/adil.gif",
+                  name: "Adil Rasiyani",
+                  position: "Tech",
+                  github: "https://github.com/AdilRas",
+                  linkedin: "https://www.linkedin.com/in/adil-rasiyani"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/jaden.webp",
+                  img: "./static/th-2022/headshots/jpg/jaden.jpg",
+                  gif: "./static/th-2023/headshots/gif/jaden.gif",
+                  name: "Jaden Banze",
+                  position: "Tech & Creative",
+                  github: "https://github.com/jadenbanze",
+                  linkedin: "https://www.linkedin.com/in/jadenbanze/"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/malavi.webp",
+                  img: "./static/th-2022/headshots/jpg/malavi.jpg",
+                  gif: "./static/th-2023/headshots/gif/malavi.gif",
+                  name: "Malavi Srinivasan",
+                  position: "Creative",
+                  linkedin: "https://www.linkedin.com/in/malavi-srinivasan-9452a21ba/"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/jiyoon.webp",
+                  img: "./static/th-2022/headshots/jpg/jiyoon.jpg",
+                  gif: "./static/th-2023/headshots/gif/jiyoon.gif",
+                  name: "Jiyoon Kim",
+                  position: "Logistics",
+                  linkedin: "https://www.linkedin.com/in/jiyoon-kim1"
+                },
+                
+                {
+                  webp: "./static/th-2022/headshots/webp/naveen.webp",
+                  img: "./static/th-2022/headshots/jpg/naveen.jpg",
+                  gif: "./static/th-2023/headshots/gif/naveen.gif",
+                  name: "Naveen Iyer",
+                  position: "Tech",
+                  github: "https://github.com/NitroGuy10",
+                  linkedin: "https://www.linkedin.com/in/naveen-iyer-66412b225/"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/ayomide.webp",
+                  img: "./static/th-2022/headshots/jpg/ayomide.jpg",
+                  gif: "./static/th-2023/headshots/gif/ayo.gif",
+                  name: "Ayomide Fatoye",
+                  position: "Logistics",
+                  github: "https://github.com/Ayo-Fatoye",
+                  linkedin: "https://www.linkedin.com/in/ayomide-fatoye-b6a0751b8/"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/ashrita.webp",
+                  img: "./static/th-2022/headshots/jpg/ashrita.jpg",
+                  gif: "./static/th-2023/headshots/gif/ashrita.gif",
+                  name: "Ashrita Vadlapatla",
+                  position: "Creative",
+                  linkedin: "https://www.linkedin.com/in/ashrita-vadlapatla/"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/arya.webp",
+                  img: "./static/th-2022/headshots/jpg/arya.jpg",
+                  gif: "./static/th-2023/headshots/gif/arya.gif",
+                  name: "Arya Gupta",
+                  position: "Logistics",
+                  linkedin: "https://www.linkedin.com/in/aryagupta12345"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/van.webp",
+                  img: "./static/th-2022/headshots/jpg/van.jpg",
+                  gif: "./static/th-2023/headshots/gif/vanessa.gif",
+                  name: "Vanessa Le",
+                  position: "Tech",
+                  github: "https://github.com/mopositive2001",
+                  linkedin: "http://linkedin.com/in/vanessa-le-a82335199"
+                },
+                {
+                  webp: "./static/th-2022/headshots/webp/anish.webp",
+                  img: "./static/th-2022/headshots/jpg/anish.jpg",
+                  gif: "./static/th-2023/headshots/gif/anish.gif",
+                  name: "Anish Karthik",
+                  position: "Logistics",
+                  github: "https://github.com/anishfish2",
+                  linkedin: "https://www.linkedin.com/in/anishkarthik"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/anjali.webp",
+                  img: "./static/hh-2022/headshots/jpg/anjali.jpg",
+                  gif: "./static/th-2023/headshots/gif/anjali.gif",
+                  name: "Anjali Kumar",
+                  position: "Tech",
+                  linkedin: "https://www.linkedin.com/in/anjali-kumar-02"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/gabe.webp",
+                  img: "./static/hh-2022/headshots/jpg/gabe.jpg",
+                  gif: "./static/th-2023/headshots/gif/gabe.gif",
+                  name: "Gabrielle Anne Irava",
+                  position: "Logistics",
+                  linkedin: "https://www.linkedin.com/in/gabrielle-anne-irava-582667236/"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/harshitha.webp",
+                  img: "./static/hh-2022/headshots/jpg/harshitha.jpg",
+                  gif: "./static/th-2023/headshots/gif/harshitha.gif",
+                  name: "Harshitha Dhulipala",
+                  position: "Logistics",
+                  github: "https://github.com/hdhulipala02",
+                  linkedin: "https://www.linkedin.com/in/harshitha-dhulipala-00744719b"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/joshua.webp",
+                  img: "./static/hh-2022/headshots/jpg/joshua.jpg",
+                  gif: "./static/th-2023/headshots/gif/josh.gif",
+                  name: "Joshua John",
+                  position: "Logistics",
+                  linkedin: "https://www.linkedin.com/in/joshua-john-1055b8240"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/keegan.webp",
+                  img: "./static/hh-2022/headshots/jpg/keegan.jpg",
+                  gif: "./static/th-2023/headshots/gif/keegan.gif",
+                  name: "Keegan Reynolds",
+                  position: "Logistics",
+                  github: "https://github.com/boxkr",
+                  linkedin: "https://www.linkedin.com/in/keeg/"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/lizzy.webp",
+                  img: "./static/hh-2022/headshots/jpg/lizzy.jpg",
+                  gif: "./static/th-2023/headshots/gif/lizzy.gif",
+                  name: "Lizzy Yoon",
+                  position: "Creative",
+                  linkedin: "https://www.linkedin.com/in/lizzy-yoon/"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/mateo.webp",
+                  img: "./static/hh-2022/headshots/jpg/mateo.jpg",
+                  gif: "./static/th-2023/headshots/gif/mateo.gif",
+                  name: "Mateo Ruiz",
+                  position: "Tech",
+                  github: "https://github.com/m-ruiz21",
+                  linkedin: "https://www.linkedin.com/in/amateoruiz"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/nafi.webp",
+                  img: "./static/hh-2022/headshots/jpg/nafi.jpg",
+                  gif: "./static/th-2023/headshots/gif/nafi.gif",
+                  name: "Nafi Islam",
+                  position: "Logistics",
+                  linkedin: "https://www.linkedin.com/in/nafiislam"
+                },
+                {
+                  webp: "./static/hh-2022/headshots/webp/li.webp",
+                  img: "./static/hh-2022/headshots/jpg/lii.jpg",
+                  gif: "./static/th-2023/headshots/gif/li.gif",
                   name: "Li Shen",
                   position: "Creative",
                   linkedin: "https://www.linkedin.com/in/lishen123/"
@@ -1798,6 +2049,11 @@
           initalizeHoriTimeline();
         })
       },
+      methods: {
+        toggleParty() {
+          this.party = !this.party
+        }
+      }
     })
   </script>
 
