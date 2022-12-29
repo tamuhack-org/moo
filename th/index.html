@@ -169,7 +169,7 @@
 
       <div class="flex flex-col h-auto lg:h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-20 sm:pb-40 lg:pb-0 md:pt-0 ">
         <div id="logo" class="hidden xl:flex justify-center xl:justify-start md:w-1/2 ml-20">
-          <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landingone.gif">
+          <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landingone.apng">
         </div>
         <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start md:w-1/2 md:pt-40 lg:pt-64 pb-8">
           <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg" />
@@ -270,7 +270,7 @@
             <div class="w-full h-1 bg-[#D490AA]"></div>
           </div>
           <p class="font-text font-semibold navy font-text">
-            <a class="font-bold underline" href="https://www.google.com/maps/place/Lot+61/@30.6087605,-96.3496686,16z/data=!4m5!3m4!1s0x864683a203846fb7:0x3db1f555f87a4265!8m2!3d30.6095613!4d-96.3455312">Lot 61</a>
+            <a class="font-bold underline" href="https://goo.gl/maps/Fg75idhQXpP35Tpc6">Lot 61</a>
             <br />
             *Free in unmarked spaces
             <br />
@@ -413,7 +413,7 @@
           <div class="lg:w-1/5">
             <p class="font-poppins font-bold navy text-3xl mb-8">TAMUhack 2023</p>
             <p class="font-poppins font-medium navy text-xl mb-8">All the resources you'll need for your hackathon journey.</p>
-            <div id="3d-friend" class="mb-8 hidden lg:inline"></div> <!-- border-4 border-dashed border-[#1D336F] -->
+            <div id="3d-friend" class="mb-8 hidden lg:block absolute right-5 bottom-5"></div>
           </div>
           <div class="flex flex-wrap justify-start lg:justify-center flex-grow gap-12">
             <div>
@@ -504,7 +504,7 @@
       renderer.outputEncoding = THREE.sRGBEncoding;
       renderer.setClearColor(0xffffff, 1);
       renderer.setSize(SCENE_WIDTH, SCENE_HEIGHT);
-      renderer.domElement.classList.add("cursor-grab", "active:cursor-grabbing");
+      renderer.domElement.classList.add("cursor-grab", "active:cursor-grabbing");  // "border-4", "border-dashed", "border-[#1D336F]"
       document.getElementById("3d-friend").appendChild(renderer.domElement);
 
       const outline_brightness_scalar = 0.3;
@@ -539,7 +539,10 @@
           }
           scene.add(gltfScene);
 
-          resizeWindow();
+          const sceneScalar = 1.15;
+          gltfScene.scale.set(sceneScalar * gltfSceneInitialScale.x, sceneScalar * gltfSceneInitialScale.y, sceneScalar * gltfSceneInitialScale.z);
+
+          // resizeWindow();
       }, undefined, function (error) {
           console.error(error);
       });
@@ -980,7 +983,7 @@
   }
 })
   var img=new Image();
-  img.src="../static/th-2023/assets/landingtwo.gif";
+  img.src="../static/th-2023/assets/landingtwo.apng";
 
 
   //I'm so sorry for whoever has to read this.
@@ -1068,9 +1071,9 @@
       });
 
       $(document).ready(function(){
-        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingone.gif");
+        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingone.apng");
         setTimeout(function(){
-          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingtwo.gif");
+          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingtwo.apng");
       }, 5000);
     });
 
