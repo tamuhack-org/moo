@@ -22,8 +22,7 @@
     <link rel="stylesheet" href="./../static/th-2023/styles/app.css">
     <script src="https://kit.fontawesome.com/640b86bfda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
-
-
+    
     <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
     <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
     <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
@@ -407,9 +406,74 @@
         </div>
       </div>
 
-      <div id="footer" class="my-24" style="padding-top:6em;">
-        <div class="w-screen h-2 bg-[#d490aa]"></div>
-        <div class="lg:flex justify-between px-8 lg:px-16 mt-8 lg:mt-24">
+      <div id="footer" class="my-24" style="padding-top:6em;"> 
+        <div class="w-screen h-2 bg-[#d490aa]"></div> 
+      </div>
+      
+      <!-- Begin Mailchimp Signup Form  -->
+      <!-- Ref: https://briancaffey.github.io/2020/10/10/how-to-add-email-signup-form-to-nuxt-site-with-mailchimp.html/ -->
+
+        <div class="lg:flex lg:justify-between px-8 lg:px-16">
+          <div class="lg:text-start text-center">  
+            <p class="mb-0 font-poppins navy text-2xl font-bold">Sign up to our newsletter</p>
+            <p class="font-poppins navy">Stay connected! Sign up for our mailing list for events, updates, and more.</p>
+          </div>
+          <!-- TODO:: Add input validation -->
+          <form
+            action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
+            method="post" 
+            id="mc-embedded-subscribe-form" 
+            name="mc-embedded-subscribe-form" 
+            target="_blank" 
+            novalidate
+            > 
+              <div class="mc-field-group lg:flex-none flex justify-center gap-4 py-4">
+                <label for="mce-EMAIL" style="display:none">Email Address </label>
+                <input
+                  type="text"
+                  value=""
+                  name="EMAIL"
+                  class="2xl:w-96 w-72 px-4 py-2 rounded-md border-[#192F6D]" 
+                  id="mce-EMAIL"
+                  placeholder="Enter your email address"
+                />
+                <button class="clear">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="px-4 py-2 rounded-md bg-[#192F6D] hover:bg-white border border-[#192F6D] text-white hover:text-[#192F6D] font-poppins font-semibold"
+                  />
+                </button>
+              </div>
+              <!-- Response divs  -->
+              <!-- <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div> -->
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_43a795784ca963e25903a0da6_9937fe4fc5"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+          </form>
+        </div>
+        <!-- End Mailchimp sign up -->
+        
+        <div class="lg:flex justify-between px-8 lg:px-16 mt-8 lg:mt-16">
           <div class="lg:w-1/5">
             <p class="font-poppins font-bold navy text-3xl mb-8">TAMUhack 2023</p>
             <p class="font-poppins font-medium navy text-xl mb-8">All the resources you'll need for your hackathon journey.</p>
