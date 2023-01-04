@@ -7,12 +7,14 @@ You can visit the site at [https://tamuhack.com/](https://tamuhack.com/).
 - https://live.tamuhack.com/
 - https://tamuhack.com/th
 - https://tamuhack.com/th/live
+- https://tamuhack.com/th/2022
 - https://tamuhack.com/th/2021
 - https://tamuhack.com/th/2020
 - https://tamuhack.com/th/2019
 - https://tamuhack.com/th/2018
 - https://tamuhack.com/th/2016
 - https://tamuhack.com/hh
+- https://tamuhack.com/hh/2021
 - https://tamuhack.com/hh/2020
 - https://tamuhack.com/hh/2019
 - https://tamuhack.com/hh/2018
