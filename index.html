@@ -273,12 +273,12 @@
                 </div>
                 <div class="row">
                   <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
-                    <picture v-if="typeof director.img !== 'undefined' && (hackathon.name !== 'HowdyHack 2022' || !party)">
+                    <picture v-if="typeof director.img !== 'undefined' && (!(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') || !party)">
                       <source type="image/webp" :srcset="director.webp" class="timeline-director-img">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture v-if="hackathon.name === 'HowdyHack 2022' && party">
+                    <picture v-if="(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') && party">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
