@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
     
     <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <!-- <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
     <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
     <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
     <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
 
     <!-- Change icon -->
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
@@ -56,7 +56,7 @@
           <a href="#prizes" class="text-lg font-medium font-poppins navy navy">
             Prizes
           </a>
-          <a href="#construction" class="text-lg font-medium font-poppins navy navy">
+          <a href="#schedule" class="text-lg font-medium font-poppins navy navy">
             Schedule
           </a>
           <a href="#construction" class="text-lg font-medium font-poppins navy navy">
@@ -145,7 +145,7 @@
                     Prizes
                   <span> 
                 </b-navbar-item>
-                <b-navbar-item class="bgoffwhite" href="#construction">
+                <b-navbar-item class="bgoffwhite" href="#schedule">
                   <span class="bgoffwhite pl-8">
                     Schedule
                   <span> 
@@ -252,7 +252,7 @@
         <div class="md:w-2/5">
           <p class="font-heading font-semibold pink text-4xl mb-4 font-poppins">Event Information</p>
           <div class="inline-block mb-4">
-            <p class="font-heading font-semibold text-[#D490AA] text-xl font-poppins">Location</p>
+            <p class="font-heading font-semibold pink text-xl font-poppins">Location</p>
             <div class="w-full h-1 bg-[#D490AA]"></div>
           </div>
           <p class="font-text font-semibold navy font-text">
@@ -265,7 +265,7 @@
           </a>
           <br />
           <div class="inline-block mt-8 mb-4">
-            <p class="font-heading font-semibold text-[#D490AA] text-xl font-poppins">Parking</p>
+            <p class="font-heading font-semibold pink text-xl font-poppins">Parking</p>
             <div class="w-full h-1 bg-[#D490AA]"></div>
           </div>
           <p class="font-text font-semibold navy font-text">
@@ -395,6 +395,40 @@
         </div>
       </div> -->
 
+      <!-- SCHEDULE -->
+      <div id="schedule" style="padding-top:8em;" class="px-8 lg:px-28 border-4 border-[#9F2D58] border-dashed mt-16 md:mt-24 py-16">
+        <p class="pb-4 pink text-4xl font-semibold font-poppins">Schedule</p>
+        <div class="flex flex-col md:flex-row gap-16">
+          <div class="md:w-1/2">
+            <p class="inline-block mt-4 mb-8 text-2xl font-semibold pink font-poppins border-b-4 border-[#9F2D58]">
+              Saturday
+            </p>
+            <div v-for="(event, i) in eventsSaturday" class="group">
+              <div class="flex gap-8 justify-between py-4 px-2">
+                <p class="font-text font-semibold w-1\/5 flex-shrink-0">{{event.time}}</p>
+                <p class="font-text font-semibold text-right">{{event.event}}</p>
+              </div>
+              <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <p class="inline-block mt-4 mb-8 text-2xl font-semibold pink font-poppins border-b-4 border-[#9F2D58]">
+              Sunday
+            </p>
+            <div v-for="(event, i) in eventsSunday" class="group">
+              <div class="flex gap-8 justify-between py-4 px-2">
+                <p class="font-text font-semibold w-1\/5 flex-shrink-0">{{event.time}}</p>
+                <p class="font-text font-semibold text-right">{{event.event}}</p>
+              </div>
+              <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
+            </div>
+            <div class="absolute hidden md:flex justify-center -bottom-16 left-0 right-0">
+              <img class="h-[300px]" src="../static/th-2023/assets/stack.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="construction" style="padding-top:6em;">
         <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
           <div cursor="cursorleft.svg" class="cursor"></div>
@@ -481,7 +515,7 @@
           </div>
           <div class="flex flex-wrap justify-start lg:justify-center flex-grow gap-12">
             <div>
-              <p class="font-poppins text-base navy mb-2">Hacker Resources</p>
+              <p class="font-poppins text-base navy mb-2 ">Hacker Resources</p>
               <div v-for="resource in resources" class="mb-2">
                 <a :href="resource.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{resource.title}}</a>
               </div>
@@ -517,18 +551,9 @@
       </div>
     </div>
 
-    <!-- <div style="height: 314px; background: url('./../../static/th-2021/img/bottom.png')">
-      <div class="text-center sm:pl-16 sm:text-left" style="padding-top: 0px !important; padding-bottom: 0px !important;">
-        <p style="padding-top: 200px;" class="sponsor-offset">
-          Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
-        </p>
-      </div>
-    </div> -->
-
     <script src="https://unpkg.com/vue@2"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
-    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
     <!-- 3D-Friend :3 -->
@@ -720,7 +745,7 @@
               },
               {
                 time: "1:00 PM",
-                event: "Intro to Web Development Workshop",
+                event: "Intro to Web Dev Workshop",
                 type: "workshop"
               },
               {
@@ -740,7 +765,7 @@
               },
               {
                 time: "04:30 PM",
-                event: "VALORANT with Jaden on Discord/🕹Gaming",
+                event: "VALORANT with Jaden",
                 type: "general"
               },
               {
@@ -883,7 +908,7 @@
                 link: "https://tamuhack.com/tips"
               },
               {
-                title: "MLH Code of Conduct",
+                title: "Code of Conduct",
                 link: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               },
             ],
