@@ -1242,8 +1242,7 @@ input.form-control {
     }
 
     .toast {
-        text-align: left;
-        padding-left: 30px; 
+        text-align: center;
     }
 }
 
