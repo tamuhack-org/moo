@@ -273,19 +273,19 @@
             <br />
             *Free in unmarked spaces
             <br />
-            *EXCEPT Sat, 12:30 - 3:30PM
-            <br />
             <br />
 
             <a class="font-bold underline pt-4" href="https://www.google.com/maps/place/Lot+74/@30.6088938,-96.3490563,18z/data=!3m1!4b1!4m5!3m4!1s0x864683a15e4b1c31:0x3ad7046e2458afe6!8m2!3d30.6088938!4d-96.347962">Lot 74</a>
             <br />
             *Free in unmarked spaces
             <br />
+            <br />
+            **Both lots will be cashiered from approximately 5:00pm to 7:45pm on 1/28 with an entry fee of $5/each/entry. If a vehicle is already parked in either lot prior to 5:00 pm, they will not be required to leave or pay if they remain parked in the lot.
           </p>
         </div>
       </div>
 
-      <div id="faq" class="w-screen mt-16 lg:mt-">
+      <div id="faq" class="w-screen lg:mt-">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
       </div>
       <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
@@ -358,38 +358,6 @@
           </div>
         </div>
       </div>
-
-      <!-- PRIZES -->
-      <!-- <div id="prizes" class="h-full md:mt-4" style="padding-top:6em;">
-        <p class="flex pb-4 px-8 md:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
-        <div class="md:mt-8 mx-4 lg:flex md:px-24 place-content-center z-40">
-          <div class="leftcol lg:w-1/2">
-            <div :cursor="prize.image" v-for="(prize, i) in prizes" v-if="(window.width >= 1024 && i % 2 == 0) || (window.width < 1024)" class="portfolio-item prize flex justify-between lg:mr-8 mt-8 py-4 px-4 border-4 border-[#1a2542] bg-offwhite rounded-md opacity-100">
-              <div>
-                <p :cursor="prize.image" class="text-xl md:text-xl font-extrabold font-poppins navy">{{prize.name}}</p>
-                <p :cursor="prize.image" class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description}}</p>
-                <p :cursor="prize.image" class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description2}}</p>
-                <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize}}</p>
-                <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize1}}</p>
-                <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize2}}</p>
-                <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize3}}</p>
-              </div>
-              <img class="w-[100px] h-[100px] object-contain":src="'../static/th-2023/assets/' +prize.image" />
-            </div>
-          </div>
-          <div class="hidden lg:block lg:w-1/2">
-            <div :cursor="prize.image" v-for="(prize, i) in prizes" v-if="i % 2 == 1" class="portfolio-item prize lg:ml-8 mt-8 py-3 px-3 border-4 border-[#1a2542] bg-offwhite rounded-md opacity-100">
-              <p :cursor="prize.image" class="text-xl md:text-xl font-extrabold font-poppins navy">{{prize.name}}</p>
-              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description}}</p>
-              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-md font-text navy">{{prize.description2}}</p>
-              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize}}</p>
-              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize1}}</p>
-              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize2}}</p>
-              <p :cursor="prize.image" class="mt-3 text-l md:text-md font-bold font-text navy">{{prize.prize3}}</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
       <!-- SCHEDULE -->
       <div id="schedule" style="padding-top:5em;" class="md:mx-8 rounded-lg px-8 lg:px-28 border-4 border-[#9F2D58] border-dashed mt-16 md:mt-24 py-16">
