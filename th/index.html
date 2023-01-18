@@ -318,7 +318,7 @@
       <!-- PRIZES (i was in a rush, sorry)-->
       <div id="prizes">
         <div class="flex items-end mt-16 md:mt-8">
-          <p class="flex  pb-4 px-8 md:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
+          <p class="flex pb-4 px-8 lg:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
           <img class="hidden lg:flex w-[600px]" src="../static/th-2023/assets/prizerunner.svg">
         </div>
         <div class="px-8 lg:px-28 flex flex-col md:grid gap-8 grid-cols-6 ">
@@ -425,44 +425,50 @@
           </div>
         </div>
       </div>
-
-      <!-- <div id="construction" style="padding-top:6em;">
-        <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
-          <div cursor="cursorleft.svg" class="cursor"></div>
-          <div cursor="cursorleft.svg" class="hidden lg:flex cursor-follower"></div>
-          <div cursor="cursorleft.svg" class="flex flex-col justify-center px-8 select-none">
-            <p cursor="cursorleft.svg" class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
-            <p cursor="cursorleft.svg" class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-2">Check back later</p>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="px-12 pt-24 grid grid-cols-3 auto-rows-max">
-        <p class="align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
+      <div class="px-8 lg:px-28 pt-24 flex items-end">
+        <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
+        <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.svg">
       </div>
 
-      <!-- begin sponsors -->
+      <!-- Begin Sponsors -->
       <div class="items-center grid grid-cols-3">
-        <div class="col-span-3 sm:col-span-3 px-12 pt-12" v-for="item in sponsorsLG" :key="item.id">
+        <div class="col-span-3 px-12 pt-12" v-for="item in sponsorsLG" :key="item.id">
           <center>
             <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-36"></a>
           </center>
         </div>
-        <div class="col-span-1 p-12" v-for="item in sponsorsSM" :key="item.id">
+        <div class="p-12 sm:col-span-1 col-span-3" v-for="item in sponsorsSM" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-28"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
           </center>
         </div>
-        <div class="col-start-2 col-end-3 p-12">
+        <div class="sm:col-start-2 sm:col-end-3 p-12 sm:col-span-1 col-span-3">
           <center>
-            <a href="google.com" target="_blank" rel="noopener noreferrer"><img src="../static/th-2023/assets/PRHI.png" class="max-h-36"></a>
+            <a href="google.com" target="_blank" rel="noopener noreferrer"><img src="../static/th-2023/assets/PRHI.svg" class="w-max h-auto"></a>
           </center>
-        </div> -->
+        </div>
       </div> 
-      <!-- end sponsors  -->
-
+      <!-- End Sponsors  -->
+      
+      <!-- Start Partners -->
+      <div class="px-8 lg:px-28">
+        <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Partners </p>
+      </div>
+      
+      <div class="items-center grid grid-cols-3">
+        <div class="sm:col-span-1 col-span-3 px-12 pt-12" v-for="item in partners" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+          </center>     
+        </div>
+      </div>
+      <!-- End Partners -->
+      
       <div id="footer" class="my-24" style="padding-top:6em;"> 
-        <div class="w-screen h-2 bg-[#d490aa]"></div> 
+        <div class="flex justify-center items-center pb-8">   
+          <img src="../static/th-2023/assets/happy_hacking.svg" class="sm:w-1/2 w-3/4 h-auto">
+        </div> 
+          <div class="w-screen h-2 bg-[#d490aa]"></div> 
       </div>
       
       <!-- Begin Mailchimp Signup Form  -->
@@ -941,66 +947,53 @@
             ],
             sponsorsLG: [
               [
-                '../static/th-2023/assets/aa.png',
+                '../static/th-2023/assets/aa.svg',
                 'https://jobs.aa.com/'
               ],
               [
-                '../static/th-2023/assets/Goldman_Sachs.png',  
-                'https://www.statefarm.com/careers'
+                '../static/th-2023/assets/Goldman_Sachs.svg',  
+                'https://www.goldmansachs.com/careers/'
               ],
             ],
             sponsorsSM: [
               [
-                '../static/th-2023/assets/bp.png',  
-                'https://search-careers.gm.com/'
+                '../static/th-2023/assets/bp.svg',  
+                'https://www.bp.com/en/global/corporate/careers.html'
               ],
               [ 
-                '../static/th-2023/assets/pimco.png',  
-                'https://phillips66.jobs/'
+                '../static/th-2023/assets/pimco.svg',  
+                'https://www.pimco.com/en-us/our-firm/careers'
               ],
               [
-                '../static/th-2023/assets/gm.png',  
-                'https://www.credera.com/careers'
+                '../static/th-2023/assets/gm.svg',  
+                'https://search-careers.gm.com/'
               ],
               [
-                '../static/th-2023/assets/EA.png',  
-                'https://www.credera.com/careers'
+                '../static/th-2023/assets/EA.svg',  
+                'https://www.ea.com/careers'
               ],
               [
-                '../static/th-2023/assets/CBRE.png',  
-                'https://www.credera.com/careers'
+                '../static/th-2023/assets/CBRE.svg',  
+                'https://www.cbre.com/careers'
               ],
               [
-                '../static/th-2023/assets/USAA.png',  
-                'https://www.credera.com/careers'
+                '../static/th-2023/assets/USAA.svg',  
+                'https://www.usaajobs.com/'
               ]
             ],
-  partners1: [
+  partners: [
     [
-      'https://images.squarespace-cdn.com/content/v1/5c464a9ab98a78b5f047db4a/1563212497020-EB185Z9094HLM5VFQNUU/ke17ZwdGBToddI8pDm48kB_x2tbxuRUlEA3jipT2Xr9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIwKmOtNifXcnXkCouJC1NsXOb-g5-hEW1KYJag4VRCUk/CSCE_logo_HMaroon.png',
+      '../static/th-2023/assets/tamu_csce.svg',   
       'https://engineering.tamu.edu/cse/index.html'
     ],
     [
-      'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
-      'https://ultrapress.com/'
+      '../static/th-2023/assets/SEC.svg',   
+      'https://sec.tamu.edu/'
     ],
     [
-      'https://sustainability.tamu.edu/_images/sustainability-logo.gif',
-      'https://sustainability.tamu.edu/'
-    ],
-    
-  ],
-  partners2:[
-    
-    [
-      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
-      'https://guayaki.com/'
-    ],
-    [
-      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/440px-RedBullEnergyDrink.svg.png',
-      'https://redbull.com/'       
-    ],
-    
+      '../static/th-2023/assets/tamu.svg',           
+      'https://tamu.edu/' 
+    ], 
   ]
 }
 },
