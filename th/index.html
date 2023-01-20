@@ -59,7 +59,7 @@
           <a href="#schedule" class="text-lg font-medium font-poppins navy navy">
             Schedule
           </a>
-          <a href="#construction" class="text-lg font-medium font-poppins navy navy">
+          <a href="#sponsors" class="text-lg font-medium font-poppins navy navy">
             Sponsors
           </a>
 
@@ -150,7 +150,7 @@
                     Schedule
                   <span> 
                 </b-navbar-item>
-                <b-navbar-item class="bgoffwhite" href="#construction">
+                <b-navbar-item class="bgoffwhite" href="#sponsors">
                   <span class="bgoffwhite pl-8">
                     Sponsors
                   <span> 
@@ -425,13 +425,13 @@
           </div>
         </div>
       </div>
-      <div class="px-8 lg:px-28 pt-24 flex items-end">
+      <div id="sponsors" class="px-8 lg:px-28 pt-24 flex items-end"  style="padding-top:6em;">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
         <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.svg">
       </div>
 
       <!-- Begin Sponsors -->
-      <div class="items-center grid grid-cols-3">
+      <div  class="items-center grid grid-cols-3">
         <div class="col-span-3 px-12 pt-12" v-for="item in sponsorsLG" :key="item.id">
           <center>
             <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-36"></a>
@@ -440,11 +440,6 @@
         <div class="p-12 sm:col-span-1 col-span-3" v-for="item in sponsorsSM" :key="item.id">
           <center>
             <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
-          </center>
-        </div>
-        <div class="sm:col-start-2 sm:col-end-3 p-12 sm:col-span-1 col-span-3">
-          <center>
-            <a href="google.com" target="_blank" rel="noopener noreferrer"><img src="../static/th-2023/assets/PRHI.svg" class="w-max h-auto"></a>
           </center>
         </div>
       </div> 
@@ -463,11 +458,23 @@
         </div>
       </div>
       <!-- End Partners -->
+
+      <div id="construction" style="padding-top:6em;">
+        <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 pt-8 pb-16 mx-8 md:mx-16 rounded-lg bg-[#f9fba5] border-4 border-[#FED522] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
+          <div cursor="cursorleft.svg" class="cursor"></div>
+          <div cursor="cursorleft.svg" class="hidden lg:flex cursor-follower"></div>
+          <div cursor="cursorleft.svg" class="flex flex-col justify-center px-8 select-none">
+            <div class="flex justify-center">
+              <img class="flex justify-center" src="../static/th-2023/assets/happyhacking.svg" class="w-1/2 h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
       
       <div id="footer" class="my-24" style="padding-top:6em;"> 
-        <div class="flex justify-center items-center pb-8">   
+        <!-- <div class="flex justify-center items-center pb-8">   
           <img src="../static/th-2023/assets/happy_hacking.svg" class="sm:w-1/2 w-3/4 h-auto">
-        </div> 
+        </div>  -->
           <div class="w-screen h-2 bg-[#d490aa]"></div> 
       </div>
       
@@ -968,13 +975,17 @@
                 '../static/th-2023/assets/gm.svg',  
                 'https://search-careers.gm.com/'
               ],
-              [
-                '../static/th-2023/assets/EA.svg',  
-                'https://www.ea.com/careers'
-              ],
+              // [
+              //   '../static/th-2023/assets/EA.svg',  
+              //   'https://www.ea.com/careers'
+              // ],
               [
                 '../static/th-2023/assets/CBRE.svg',  
                 'https://www.cbre.com/careers'
+              ],
+              [
+                '../static/th-2023/assets/PRHI.svg',  
+                'https://www.prhi.org/'
               ],
               [
                 '../static/th-2023/assets/USAA.svg',  
