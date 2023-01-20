@@ -59,7 +59,7 @@
           <a href="#schedule" class="text-lg font-medium font-poppins navy navy">
             Schedule
           </a>
-          <a href="#construction" class="text-lg font-medium font-poppins navy navy">
+          <a href="#sponsors" class="text-lg font-medium font-poppins navy navy">
             Sponsors
           </a>
 
@@ -150,7 +150,7 @@
                     Schedule
                   <span> 
                 </b-navbar-item>
-                <b-navbar-item class="bgoffwhite" href="#construction">
+                <b-navbar-item class="bgoffwhite" href="#sponsors">
                   <span class="bgoffwhite pl-8">
                     Sponsors
                   <span> 
@@ -318,7 +318,7 @@
       <!-- PRIZES (i was in a rush, sorry)-->
       <div id="prizes">
         <div class="flex items-end mt-16 md:mt-8">
-          <p class="flex  pb-4 px-8 md:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
+          <p class="flex pb-4 px-8 lg:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
           <img class="hidden lg:flex w-[600px]" src="../static/th-2023/assets/prizerunner.svg">
         </div>
         <div class="px-8 lg:px-28 flex flex-col md:grid gap-8 grid-cols-6 ">
@@ -393,20 +393,57 @@
           </div>
         </div>
       </div>
+      <div id="sponsors" class="px-8 lg:px-28 pt-24 flex items-end"  style="padding-top:6em;">
+        <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
+        <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.svg">
+      </div>
+
+      <!-- Begin Sponsors -->
+      <div  class="items-center grid grid-cols-3">
+        <div class="col-span-3 px-12 pt-12" v-for="item in sponsorsLG" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-36"></a>
+          </center>
+        </div>
+        <div class="p-12 sm:col-span-1 col-span-3" v-for="item in sponsorsSM" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+          </center>
+        </div>
+      </div> 
+      <!-- End Sponsors  -->
+      
+      <!-- Start Partners -->
+      <div class="px-8 lg:px-28">
+        <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Partners </p>
+      </div>
+      
+      <div class="items-center grid grid-cols-3">
+        <div class="sm:col-span-1 col-span-3 px-12 pt-12" v-for="item in partners" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+          </center>     
+        </div>
+      </div>
+      <!-- End Partners -->
 
       <div id="construction" style="padding-top:6em;">
-        <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 h-[300px] mx-8 md:mx-16 rounded-lg bg-[#9F2D58] border-4 border-[#9F2D58] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
+        <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 pt-8 pb-16 mx-8 md:mx-16 rounded-lg bg-[#f9fba5] border-4 border-[#FED522] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
           <div cursor="cursorleft.svg" class="cursor"></div>
           <div cursor="cursorleft.svg" class="hidden lg:flex cursor-follower"></div>
           <div cursor="cursorleft.svg" class="flex flex-col justify-center px-8 select-none">
-            <p cursor="cursorleft.svg" class="font-bold text-3xl md:text-5xl font-poppins text-[#1a2542] text-center">Under Construction</p>
-            <p cursor="cursorleft.svg" class="font-semibold text-xl md:text-3xl font-poppins text-[#1a2542] text-center pt-2">Check back later</p>
+            <div class="flex justify-center">
+              <img class="flex justify-center" src="../static/th-2023/assets/happyhacking.svg" class="w-1/2 h-auto" />
+            </div>
           </div>
         </div>
       </div>
-
+      
       <div id="footer" class="my-24" style="padding-top:6em;"> 
-        <div class="w-screen h-2 bg-[#d490aa]"></div> 
+        <!-- <div class="flex justify-center items-center pb-8">   
+          <img src="../static/th-2023/assets/happy_hacking.svg" class="sm:w-1/2 w-3/4 h-auto">
+        </div>  -->
+          <div class="w-screen h-2 bg-[#d490aa]"></div> 
       </div>
       
       <!-- Begin Mailchimp Signup Form  -->
@@ -927,96 +964,59 @@
                 link: "https://tamuhack.com/web-workshop"
               },
             ],
-
-            sponsorsXL: [
-              [
-                'https://s21.q4cdn.com/616071541/files/multimedia-gallery/assets/Logos/american-airlines/aa_aa__hrz_rgb_grd_pos.png',
-                'https://jobs.aa.com/'
-              ]
-            ],
             sponsorsLG: [
               [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/250px-Ford_logo_flat.svg.png',
-                'https://corporate.ford.com/careers.html'
+                '../static/th-2023/assets/aa.svg',
+                'https://jobs.aa.com/'
               ],
               [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/State_Farm_logo.svg/300px-State_Farm_logo.svg.png',
-                'https://www.statefarm.com/careers'
-              ],
-            ],
-            sponsorsMD: [
-              [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/General_Motors_%282021%29.svg/150px-General_Motors_%282021%29.svg.png',
-                'https://search-careers.gm.com/'
-              ],
-              [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Phillips_66_logo.svg/155px-Phillips_66_logo.svg.png',
-                'https://phillips66.jobs/'
-              ],
-              [
-                'https://recruitinguploadbucket.s3.amazonaws.com/company_images/p1i33Logotype-V-Color%402x%20%281%29.png?versionId=397vdnAUjDYEuQfzNH952kPMpyOPYiaq',
-                'https://www.credera.com/careers'
+                '../static/th-2023/assets/Goldman_Sachs.svg',  
+                'https://www.goldmansachs.com/careers/'
               ],
             ],
             sponsorsSM: [
               [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/CBRE_Group_logo.svg/250px-CBRE_Group_logo.svg.png',
-                'https://careers.cbre.com/en_US/careers'
+                '../static/th-2023/assets/bp.svg',  
+                'https://www.bp.com/en/global/corporate/careers.html'
               ],
-              [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Capital_One_logo.svg/200px-Capital_One_logo.svg.png',
-                'https://www.capitalonecareers.com/internships'
-              ],
-
-              [
-                'https://www.abilities.ca/wp-content/uploads/2019/07/Accenture-logo-no-background.png',
-                'https://www.accenture.com/'
-              ],
-            ],
-            sponsorsXS: [
-              [
-                'https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/USAA_logo.svg/150px-USAA_logo.svg.png',
-                'https://www.usaajobs.com/'
-              ],
-              [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/J_P_Morgan_Chase_Logo_2008_1.svg/400px-J_P_Morgan_Chase_Logo_2008_1.svg.png',
-                'https://careers.jpmorgan.com/us/en/home'
-              ],
-              [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/PIMCO_Logo.svg/220px-PIMCO_Logo.svg.png',
+              [ 
+                '../static/th-2023/assets/pimco.svg',  
                 'https://www.pimco.com/en-us/our-firm/careers'
               ],
               [
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/150px-Visa_2021.svg.png',
-                'https://usa.visa.com/careers.html'
+                '../static/th-2023/assets/gm.svg',  
+                'https://search-careers.gm.com/'
               ],
+              // [
+              //   '../static/th-2023/assets/EA.svg',  
+              //   'https://www.ea.com/careers'
+              // ],
+              [
+                '../static/th-2023/assets/CBRE.svg',  
+                'https://www.cbre.com/careers'
+              ],
+              [
+                '../static/th-2023/assets/PRHI.svg',  
+                'https://www.prhi.org/'
+              ],
+              [
+                '../static/th-2023/assets/USAA.svg',  
+                'https://www.usaajobs.com/'
+              ]
             ],
-  partners1: [
+  partners: [
     [
-      'https://images.squarespace-cdn.com/content/v1/5c464a9ab98a78b5f047db4a/1563212497020-EB185Z9094HLM5VFQNUU/ke17ZwdGBToddI8pDm48kB_x2tbxuRUlEA3jipT2Xr9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIwKmOtNifXcnXkCouJC1NsXOb-g5-hEW1KYJag4VRCUk/CSCE_logo_HMaroon.png',
+      '../static/th-2023/assets/tamu_csce.svg',   
       'https://engineering.tamu.edu/cse/index.html'
     ],
     [
-      'https://cdn.shopify.com/s/files/1/0556/3144/6212/files/UP_Logo_black_957x150_30cfa01e-a095-4c42-b625-89ab5ed1bc8d_1204x630.png?v=1625602441',
-      'https://ultrapress.com/'
+      '../static/th-2023/assets/SEC.svg',   
+      'https://sec.tamu.edu/'
     ],
     [
-      'https://sustainability.tamu.edu/_images/sustainability-logo.gif',
-      'https://sustainability.tamu.edu/'
-    ],
-    
-  ],
-  partners2:[
-    
-    [
-      'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
-      'https://guayaki.com/'
-    ],
-    [
-      'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/440px-RedBullEnergyDrink.svg.png',
-      'https://redbull.com/'       
-    ],
-    
+      '../static/th-2023/assets/tamu.svg',           
+      'https://tamu.edu/' 
+    ], 
   ]
 }
 },
