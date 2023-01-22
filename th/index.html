@@ -370,9 +370,10 @@
             </p>
             <div v-for="(event, i) in eventsSaturday" class="group">
               <div class="flex gap-8 justify-between py-4 px-2">
-                <p class="font-text font-semibold w-1\/5 flex-shrink-0">{{event.time}}</p>
-                <p class="font-text font-semibold text-right">{{event.event}}</p>
+                <p class="font-text font-semibold w-[75px] flex-shrink-0">{{event.time}}</p>
+                  <p class="font-text font-semibold text-right">{{event.event}}</p>
               </div>
+              <!-- <p class="font-text text-sm font-semibold md:text-right mb-2 px-2">Event description that says the description of the event, which is very descriptive.</p> -->
               <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
             </div>
           </div>
@@ -756,53 +757,73 @@
               },
               {
                 time: "12:30 PM",
-                event: "Intro to Web Development Workshop",
+                event: "Intro to Web Dev",
                 type: "workshop"
               },
-              // {
-              //   time: "01:45 PM",
-              //   event: "American Airlines Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "03:00 PM",
-              //   event: "Goldman Sachs Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "03:45 PM",
-              //   event: "BP Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "04:30 PM",
-              //   event: "CBRE Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "05:15 PM",
-              //   event: "PRHI Workshop",
-              //   type: "workshop"
-              // },
               {
-                time: "07:30 PM",
+                time: "01:15 PM",
+                event: "Intro to Git",
+                type: "workshop"
+              },
+              {
+                time: "02:00 PM",
+                event: "BP Workshop",
+                type: "workshop"
+              },
+              {
+                time: "02:45 PM",
+                event: "American Airlines Workshop",
+                type: "workshop"
+              },
+              {
+                time: "4:00 PM",
+                event: "MLH Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "4:45 PM",
+                event: "PRHI Workshop",
+                type: "workshop"
+              },
+              {
+                time: "5:30 PM",
+                event: "Goldman Sachs Workshop",
+                type: "workshop"
+              },
+              {
+                time: "6:15 PM",
+                event: "CBRE Workshop",
+                type: "workshop"
+              },
+              {
+                time: "7:00 PM",
+                event: "MLH Workshop",
+                type: "workshop"
+              },
+              {
+                time: "7:30 PM",
                 event: "Dinner",
-                type: "food"
-              },
-              // {
-              //   time: "08:30 PM",
-              //   event: "American Airlines Mini-event",
-              //   type: "event"
-              // },
-              {
-                time: "10:30 PM",
-                event: "Frozen T-shirt Contest",
-                type: "event"
+                type: "workshop"
               },
               {
-                time: "11:15 PM",
+                time: "8:30 PM",
+                event: "American Airlines Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "10:00 PM",
                 event: "Hacker Speed Dating",
-                type: "event"
+                type: "workshop"
+              },
+              {
+                time: "10:45 PM",
+                event: "Frozen T-shirt Contest",
+                type: "workshop"
+              },
+              {
+                time: "11:20 PM",
+                event: "Vibez with Li",
+                type: "workshop"
               },
             ],
             eventsSunday: [
@@ -847,7 +868,7 @@
                 type: "general"
               },
               {
-                time: "04:00 PM",
+                time: "04:30 PM",
                 event: "Closing Ceremony",
                 type: "general"
               }
