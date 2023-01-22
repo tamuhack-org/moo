@@ -322,27 +322,27 @@
           <img class="hidden lg:flex w-[600px]" src="../static/th-2023/assets/prizerunner.svg">
         </div>
         <div class="px-8 lg:px-28 flex flex-col md:grid gap-8 grid-cols-6 ">
-          <div :cursor="prizes[0].image" class=" flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
-            <div>
+          <div :cursor="prizes[0].image" class="h-[160px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div style=" display: flex; flex-flow: column nowrap;">
               <p :cursor="prizes[0].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[0].name}}</p>
               <p :cursor="prizes[0].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[0].description}}</p>
-              <p :cursor="prizes[0].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[0].prize}}</p> 
+              <p :cursor="prizes[0].image" class="mt-auto text-l md:text-md font-bold font-text navy">{{prizes[0].prize}}</p> 
             </div>
             <img class="hidden xl:flex w-[100px] h-[100px] xl:mr-4 object-contain":src="'../static/th-2023/assets/' + prizes[0].image" />
           </div>
           <div :cursor="prizes[2].image" class="h-[160px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
-            <div>
+            <div style=" display: flex; flex-flow: column nowrap;">
               <p :cursor="prizes[2].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[2].name}}</p>
               <p :cursor="prizes[2].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[2].description}}</p>
-              <p :cursor="prizes[2].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[2].prize}}</p> 
+              <p :cursor="prizes[2].image" class="mt-auto text-l md:text-md font-bold font-text navy">{{prizes[2].prize}}</p> 
             </div>
             <img class="hidden xl:flex w-[100px] h-[100px]  xl:mr-4 object-contain":src="'../static/th-2023/assets/' + prizes[2].image" />
           </div>
-          <div :cursor="prizes[4].image" class="h-[140px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
-            <div>
+          <div :cursor="prizes[4].image" class="h-[160px] flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div style=" display: flex; flex-flow: column nowrap;">
               <p :cursor="prizes[4].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[4].name}}</p>
               <p :cursor="prizes[4].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[4].description}}</p>
-              <p :cursor="prizes[4].image" class="mt-4 text-l md:text-md font-bold font-text navy">{{prizes[4].prize}}</p> 
+              <p :cursor="prizes[4].image" class="mt-auto text-l md:text-md font-bold font-text navy">{{prizes[4].prize}}</p> 
             </div>
             <img class="hidden xl:flex w-[100px] h-[100px]  xl:mr-4 object-contain":src="'../static/th-2023/assets/' + prizes[4].image" />
           </div>
