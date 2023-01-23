@@ -400,19 +400,20 @@
 
       <!-- Begin Sponsors -->
       <div  class="items-center grid grid-cols-6">
-        <div class="col-span-6 px-8 md:px-28 pt-12" v-for="item in sponsorsLG" :key="item.id">
+        <div class="col-span-6 px-12 md:px-28 pt-12" v-for="item in sponsorsLG" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="block sm:max-h-40 sm:w-auto w-max h-auto"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:block hidden max-w-4xl h-auto"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[1]" class="sm:hidden w-max h-auto"></a>
           </center>
         </div>
         <div class="sm:col-span-3 col-span-6 py-12 sm:px-12 px-20" v-for="item in sponsorsMD" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-36 max-h-24 w-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 max-w-xs"></a>
           </center>
         </div> 
         <div class="py-12 sm:px-12 px-20 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:w-max w-max-xs h-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 sm:max-w-xs max-w-1/2"></a>
           </center>
         </div>
       </div> 
@@ -426,12 +427,12 @@
       <div class="items-center grid grid-cols-6">
         <div class="sm:col-span-2 col-span-6 p-12" v-for="item in partners1" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 w-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
           </center>     
         </div>
         <div class="sm:col-span-3 col-span-6 p-12" v-for="item in partners2" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 w-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
           </center>     
         </div>
       </div>
@@ -976,7 +977,8 @@
             ],
             sponsorsLG: [
               [
-                '../static/th-2023/assets/aa_lg.svg',
+                '../static/th-2023/assets/aa.png',
+                '../static/th-2023/assets/aa_sm.png',
                 'https://jobs.aa.com/'
               ],
             ],
@@ -986,21 +988,21 @@
                 'https://careers.chevron.com/'
               ],
               [
-                '../static/th-2023/assets/Goldman_Sachs.svg',  
+                '../static/th-2023/assets/Goldman_Sachs.png',  
                 'https://www.goldmansachs.com/careers/'
               ],
             ],
             sponsorsSM: [
               [
-                '../static/th-2023/assets/bp.svg',  
+                '../static/th-2023/assets/bp.png',  
                 'https://www.bp.com/en/global/corporate/careers.html'
               ],
               [ 
-                '../static/th-2023/assets/pimco.svg',  
+                '../static/th-2023/assets/pimco.png',  
                 'https://www.pimco.com/en-us/our-firm/careers'
               ],
               [
-                '../static/th-2023/assets/gm.svg',  
+                '../static/th-2023/assets/gm.png',  
                 'https://search-careers.gm.com/'
               ],
               // [
@@ -1008,29 +1010,29 @@
               //   'https://www.ea.com/careers'
               // ],
               [
-                '../static/th-2023/assets/CBRE.svg',  
+                '../static/th-2023/assets/CBRE.png',  
                 'https://www.cbre.com/careers'
               ],
               [
-                '../static/th-2023/assets/PRHI.svg',  
+                '../static/th-2023/assets/PRHI.png',  
                 'https://www.prhi.org/'
               ],
               [
-                '../static/th-2023/assets/USAA.svg',  
+                '../static/th-2023/assets/USAA.png',  
                 'https://www.usaajobs.com/'
               ]
             ],
         partners1: [
           [
-            '../static/th-2023/assets/tamu_csce.svg',   
+            '../static/th-2023/assets/tamu_csce.png',   
             'https://engineering.tamu.edu/cse/index.html'
           ],
           [
-            '../static/th-2023/assets/SEC.svg',   
+            '../static/th-2023/assets/SEC.png',   
             'https://sec.tamu.edu/'
           ],
           [
-            '../static/th-2023/assets/tamu.svg',           
+            '../static/th-2023/assets/tamu.png',           
             'https://tamu.edu/' 
           ], 
         ],
