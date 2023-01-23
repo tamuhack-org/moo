@@ -393,38 +393,39 @@
           </div>
         </div>
       </div>
-      <div id="sponsors" class="px-8 lg:px-28 pt-24 flex items-end"  style="padding-top:6em;">
+      <div id="sponsors" class="px-12 lg:px-28 pt-24 flex items-end"  style="padding-top:6em;">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
         <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.png">
       </div>
 
       <!-- Begin Sponsors -->
       <div  class="items-center grid grid-cols-6">
-        <div class="col-span-6 sm:px-12 px-2 pt-12" v-for="item in sponsorsLG" :key="item.id">
+        <div class="col-span-6 px-6 lg:px-28 pt-12" v-for="item in sponsorsLG" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="block sm:max-h-40 sm:w-auto w-max h-auto"></a>
+            <!-- <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[1]" class="sm:hidden max-w-max "></a> -->
           </center>
         </div>
-        <div class="sm:col-span-3 col-span-6 p-12" v-for="item in sponsorsMD" :key="item.id">
+        <div class="sm:col-span-3 col-span-6 py-12 sm:px-12 px-20" v-for="item in sponsorsMD" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-40 w-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-36 max-h-24 w-auto"></a>
           </center>
         </div> 
-        <div class="p-12 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
+        <div class="py-12 sm:px-12 px-20 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:w-max max-w-xs h-auto"></a>
           </center>
         </div>
       </div> 
       <!-- End Sponsors  -->
       
       <!-- Start Partners -->
-      <div class="px-8 lg:px-28">
+      <div class="px-6 lg:px-28">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Partners </p>
       </div>
       
       <div class="items-center grid grid-cols-6">
-        <div class="sm:col-span-2 col-span-6 p-12 justify-items-center items-center" v-for="item in partners1" :key="item.id">
+        <div class="sm:col-span-2 col-span-6 p-12" v-for="item in partners1" :key="item.id">
           <center>
             <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 w-auto"></a>
           </center>     
@@ -976,6 +977,7 @@
             ],
             sponsorsLG: [
               [
+                '../static/th-2023/assets/aa_lg.svg',
                 '../static/th-2023/assets/aa.svg',
                 'https://jobs.aa.com/'
               ],
