@@ -30,6 +30,9 @@
     <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    
 
     <!-- Change icon -->
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
@@ -701,7 +704,7 @@
 
     <!-- Create a vue.js object -->
     <script>
-      new Vue({
+      let v = new Vue({
         el: '#app',
         data: function () {
           return {
@@ -1074,6 +1077,36 @@
     window.addEventListener('resize', this.handleResize);
     window.addEventListener("scroll", this.handleScroll);
     this.handleResize();
+
+    axios({
+      method: 'get',
+      url: 'https://o5fot0gpog.execute-api.us-east-1.amazonaws.com/Prod/getSchedule',
+    })
+    .then(function (response) {
+      let sat = [];
+      let sun = [];
+      let events = response.data.Items;
+      //for each event, if the event.date is before 1/29/2023, push it to the sat array, else push it to the sun array
+      events.forEach(event => {
+        let newEvent = {}
+        newEvent.event = event.time;
+        newEvent.time = moment(event.date).format('LT');
+        newEvent.date = moment(event.date).format();
+        if(newEvent.date < "2023-01-29T00:00:00-06:00") {
+          sat.push(newEvent);
+        } else {
+          sun.push(newEvent);
+        }
+      });
+
+      //sort the sat and sun arrays by date
+      sat.sort((a, b) => (moment(a.date).format() > moment(b.date).format()) ? 1 : -1);
+      sun.sort((a, b) => (moment(a.date).format() > moment(b.date).format()) ? 1 : -1);
+
+      v.eventsSaturday = sat;
+      v.eventsSunday = sun;
+
+    });
   },
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
@@ -1092,7 +1125,7 @@
         return (this.navOpacity = window.scrollY * 0.0025); 
       }
     },
-  }
+  },
 })
   var img=new Image();
   img.src="../static/th-2023/assets/landingtwo.apng";
@@ -1188,6 +1221,99 @@
           $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingtwo.apng");
       }, 5000);
     });
+
+    eventsSaturday: [
+              {
+                time: "09:00 AM",
+                event: "Doors Open, Check-In Starts",
+                type: "general"
+              },
+              {
+                time: "10:00 AM",
+                event: "Career Fair",
+                type: "general"
+              },
+              {
+                time: "11:00 AM",
+                event: "Opening Ceremony",
+                type: "general"
+              },
+              {
+                time: "11:30 AM",
+                event: "Team Formation",
+                type: "general"
+              },
+              {
+                time: "12:00 PM",
+                event: "Hacking starts + Lunch",
+                type: "food"
+              },
+              {
+                time: "12:30 PM",
+                event: "Intro to Web Dev",
+                type: "workshop"
+              },
+              {
+                time: "01:15 PM",
+                event: "Intro to Git",
+                type: "workshop"
+              },
+              {
+                time: "02:45 PM",
+                event: "American Airlines Workshop",
+                type: "workshop"
+              },
+              {
+                time: "4:00 PM",
+                event: "MLH Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "4:45 PM",
+                event: "PRHI Workshop",
+                type: "workshop"
+              },
+              {
+                time: "5:30 PM",
+                event: "Goldman Sachs Workshop",
+                type: "workshop"
+              },
+              {
+                time: "6:15 PM",
+                event: "CBRE Workshop",
+                type: "workshop"
+              },
+              {
+                time: "7:00 PM",
+                event: "American Airlines Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "7:30 PM",
+                event: "Dinner",
+                type: "workshop"
+              },
+              {
+                time: "8:30 PM",
+                event: "MLH Workshop",
+                type: "workshop"
+              },
+              {
+                time: "10:00 PM",
+                event: "Hacker Speed Dating",
+                type: "workshop"
+              },
+              {
+                time: "10:45 PM",
+                event: "Frozen T-shirt Contest",
+                type: "workshop"
+              },
+              {
+                time: "11:20 PM",
+                event: "Vibez with Li",
+                type: "workshop"
+              },
+            ]
 
     </script>
   </body>
