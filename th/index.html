@@ -33,7 +33,7 @@
 
     <!-- Change icon -->
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
-
+    
   </head>
 
   <style>
@@ -413,7 +413,7 @@
         </div> 
         <div class="py-12 sm:px-12 px-20 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 sm:max-w-xs max-w-1/2"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 lg:max-w-xs max-w-1/2"></a>
           </center>
         </div>
       </div> 
@@ -427,12 +427,12 @@
       <div class="items-center grid grid-cols-6">
         <div class="sm:col-span-2 col-span-6 p-12" v-for="item in partners1" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 lg:max-w-xs max-w-1/2"></a>
           </center>     
         </div>
         <div class="sm:col-span-3 col-span-6 p-12" v-for="item in partners2" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 lg:max-w-xs max-w-1/2"></a>
           </center>     
         </div>
       </div>
