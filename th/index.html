@@ -394,35 +394,46 @@
           </div>
         </div>
       </div>
-      <div id="sponsors" class="px-8 lg:px-28 pt-24 flex items-end"  style="padding-top:6em;">
+      <div id="sponsors" class="px-8 md:px-28 pt-24 flex items-end">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
-        <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.svg">
+        <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.png">
       </div>
 
       <!-- Begin Sponsors -->
-      <div  class="items-center grid grid-cols-3">
-        <div class="col-span-3 px-12 pt-12" v-for="item in sponsorsLG" :key="item.id">
+      <div  class="items-center grid grid-cols-6">
+        <div class="col-span-6 px-12 md:px-28 pt-12" v-for="item in sponsorsLG" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-36"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:block hidden max-w-4xl h-auto"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[1]" class="sm:hidden w-max h-auto"></a>
           </center>
         </div>
-        <div class="p-12 sm:col-span-1 col-span-3" v-for="item in sponsorsSM" :key="item.id">
+        <div class="sm:col-span-3 col-span-6 py-12 sm:px-12 px-20" v-for="item in sponsorsMD" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 max-w-xs"></a>
+          </center>
+        </div> 
+        <div class="py-12 sm:px-12 px-20 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 sm:max-w-xs max-w-1/2"></a>
           </center>
         </div>
       </div> 
       <!-- End Sponsors  -->
       
       <!-- Start Partners -->
-      <div class="px-8 lg:px-28">
+      <div class="px-8 md:px-28">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Partners </p>
       </div>
       
-      <div class="items-center grid grid-cols-3">
-        <div class="sm:col-span-1 col-span-3 px-12 pt-12" v-for="item in partners" :key="item.id">
+      <div class="items-center grid grid-cols-6">
+        <div class="sm:col-span-2 col-span-6 p-12" v-for="item in partners1" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="w-max h-auto"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
+          </center>     
+        </div>
+        <div class="sm:col-span-3 col-span-6 p-12" v-for="item in partners2" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
           </center>     
         </div>
       </div>
@@ -986,25 +997,32 @@
             ],
             sponsorsLG: [
               [
-                '../static/th-2023/assets/aa.svg',
+                '../static/th-2023/assets/aa.png',
+                '../static/th-2023/assets/aa_sm.png',
                 'https://jobs.aa.com/'
               ],
+            ],
+            sponsorsMD: [
               [
-                '../static/th-2023/assets/Goldman_Sachs.svg',  
+                '../static/th-2023/assets/Chevron.png',
+                'https://careers.chevron.com/'
+              ],
+              [
+                '../static/th-2023/assets/Goldman_Sachs.png',  
                 'https://www.goldmansachs.com/careers/'
               ],
             ],
             sponsorsSM: [
               [
-                '../static/th-2023/assets/bp.svg',  
+                '../static/th-2023/assets/bp.png',  
                 'https://www.bp.com/en/global/corporate/careers.html'
               ],
               [ 
-                '../static/th-2023/assets/pimco.svg',  
+                '../static/th-2023/assets/pimco.png',  
                 'https://www.pimco.com/en-us/our-firm/careers'
               ],
               [
-                '../static/th-2023/assets/gm.svg',  
+                '../static/th-2023/assets/gm.png',  
                 'https://search-careers.gm.com/'
               ],
               // [
@@ -1012,33 +1030,45 @@
               //   'https://www.ea.com/careers'
               // ],
               [
-                '../static/th-2023/assets/CBRE.svg',  
+                '../static/th-2023/assets/CBRE.png',  
                 'https://www.cbre.com/careers'
               ],
               [
-                '../static/th-2023/assets/PRHI.svg',  
+                '../static/th-2023/assets/PRHI.png',  
                 'https://www.prhi.org/'
               ],
               [
-                '../static/th-2023/assets/USAA.svg',  
+                '../static/th-2023/assets/USAA.png',  
                 'https://www.usaajobs.com/'
               ]
             ],
-  partners: [
-    [
-      '../static/th-2023/assets/tamu_csce.svg',   
-      'https://engineering.tamu.edu/cse/index.html'
-    ],
-    [
-      '../static/th-2023/assets/SEC.svg',   
-      'https://sec.tamu.edu/'
-    ],
-    [
-      '../static/th-2023/assets/tamu.svg',           
-      'https://tamu.edu/' 
-    ], 
-  ]
-}
+        partners1: [
+          [
+            '../static/th-2023/assets/tamu_csce.png',   
+            'https://engineering.tamu.edu/cse/index.html'
+          ],
+          [
+            '../static/th-2023/assets/SEC.png',   
+            'https://sec.tamu.edu/'
+          ],
+          [
+            '../static/th-2023/assets/tamu.png',           
+            'https://tamu.edu/' 
+          ], 
+        ],
+        partners2:[
+          
+          [
+            'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
+            'https://guayaki.com/'
+          ],
+          [
+            'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/440px-RedBullEnergyDrink.svg.png',
+            'https://redbull.com/'       
+          ],
+          
+        ]
+    }
 },
   created() {
     window.addEventListener('resize', this.handleResize);
