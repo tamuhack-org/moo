@@ -195,7 +195,7 @@
               </div> 
               <div class="hidden md:flex justify-end lg:hidden mt-4">
                 <p class="font-medium navy text-right">
-                  We will be doing rolling admissions <br> until January 22, 2023.
+                  NOTE: Even if you are admitted, entry to the event is first-come first-serve due to limited capacity of the MSC. We will only grant entry to the first 750 participants to check-in. Please arrive early to ensure your spot.
                 </p>
               </div>
             </div>
@@ -210,8 +210,8 @@
                 Mentor
               </a>
             </div>
-            <p class="font-medium navy md:w-1/2 mt-4 ">
-              We will be doing rolling admissions until January 22, 2023.
+            <p class="font-medium navy md:w-2/3 mt-4 ">
+              NOTE: Even if you are admitted, entry to the event is first-come first-serve due to limited capacity of the MSC. We will only grant entry to the first 750 participants to check-in. Please arrive early to ensure your spot.
             </p>
           </div>
         </div>
@@ -305,7 +305,7 @@
           </div>
           <div class="pb-8 mb-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
             <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">When is the deadline to apply for TAMUhack?</p>
-            <p class="mt-3 text-lg md:text-lg  font-text navy text-gray-200">The deadline for registration is January 22, at 23:59. <span class="underline font-bold">We'll be doing rolling admissions until that date.</span> Our capacity is limited, so make sure to apply early!</p>
+            <p class="mt-3 text-lg md:text-lg  font-text navy text-gray-200">The deadline for registration is January 22, at 23:59. <span class="underline font-bold">We'll be doing rolling admissions until that date.</span> Our capacity is limited, so make sure to apply early! <br> <br> NOTE: Even if you are admitted, entry to the event is first-come first-serve due to limited capacity of the MSC. We will only grant entry to the first 750 participants to check-in. Please arrive early to ensure your spot.</p>
           </div>
           <div v-for="faq in faqs" class="pb-8 mb-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
             <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">{{faq.title}}</p>
@@ -370,9 +370,10 @@
             </p>
             <div v-for="(event, i) in eventsSaturday" class="group">
               <div class="flex gap-8 justify-between py-4 px-2">
-                <p class="font-text font-semibold w-1\/5 flex-shrink-0">{{event.time}}</p>
-                <p class="font-text font-semibold text-right">{{event.event}}</p>
+                <p class="font-text font-semibold w-[75px] flex-shrink-0">{{event.time}}</p>
+                  <p class="font-text font-semibold text-right">{{event.event}}</p>
               </div>
+              <!-- <p class="font-text text-sm font-semibold md:text-right mb-2 px-2">Event description that says the description of the event, which is very descriptive.</p> -->
               <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
             </div>
           </div>
@@ -387,9 +388,9 @@
               </div>
               <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
             </div>
-            <!-- <div class="absolute hidden md:flex justify-center -bottom-16 left-0 right-0">
+            <div class="absolute hidden md:flex justify-center -bottom-16 left-0 right-0">
               <img class="h-[300px]" src="../static/th-2023/assets/stack.svg">
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -443,8 +444,8 @@
           <div cursor="cursorleft.svg" class="cursor"></div>
           <div cursor="cursorleft.svg" class="hidden lg:flex cursor-follower"></div>
           <div cursor="cursorleft.svg" class="flex flex-col justify-center px-8 select-none">
-            <div class="flex justify-center">
-              <img class="flex justify-center" src="../static/th-2023/assets/happyhacking.svg" class="w-1/2 h-auto" />
+            <div cursor="cursorleft.svg" class="flex justify-center">
+              <img cursor="cursorleft.svg" class="flex justify-center" src="../static/th-2023/assets/happyhacking.svg" class="w-1/2 h-auto" />
             </div>
           </div>
         </div>
@@ -728,7 +729,7 @@
               },
               {
                 title: "How do teams work?",
-                desc: "Teams are limited to 1-4 hackers. If you have a team in mind, make sure all members submit an application before the deadline. If you don't have a team and would like to be a part of one, no worries! We'll have a dedicated time for team formation after the opening ceremony."
+                desc: "Teams are limited to 1-4 hackers. If you have a team in mind, make sure all members submit an application before the deadline. If you don't have a team and would like to be a part of one, no worries! We'll have a dedicated time for team formation after the opening ceremony. Teams are only finalized when the final Devpost submission is due."
               },
               {
                 title: "What do I need to submit?",
@@ -767,53 +768,73 @@
               },
               {
                 time: "12:30 PM",
-                event: "Intro to Web Development Workshop",
+                event: "Intro to Web Dev",
                 type: "workshop"
               },
-              // {
-              //   time: "01:45 PM",
-              //   event: "American Airlines Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "03:00 PM",
-              //   event: "Goldman Sachs Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "03:45 PM",
-              //   event: "BP Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "04:30 PM",
-              //   event: "CBRE Workshop",
-              //   type: "workshop"
-              // },
-              // {
-              //   time: "05:15 PM",
-              //   event: "PRHI Workshop",
-              //   type: "workshop"
-              // },
               {
-                time: "07:30 PM",
+                time: "01:15 PM",
+                event: "Intro to Git",
+                type: "workshop"
+              },
+              {
+                time: "02:00 PM",
+                event: "BP Workshop",
+                type: "workshop"
+              },
+              {
+                time: "02:45 PM",
+                event: "American Airlines Workshop",
+                type: "workshop"
+              },
+              {
+                time: "4:00 PM",
+                event: "MLH Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "4:45 PM",
+                event: "PRHI Workshop",
+                type: "workshop"
+              },
+              {
+                time: "5:30 PM",
+                event: "Goldman Sachs Workshop",
+                type: "workshop"
+              },
+              {
+                time: "6:15 PM",
+                event: "CBRE Workshop",
+                type: "workshop"
+              },
+              {
+                time: "7:00 PM",
+                event: "MLH Workshop",
+                type: "workshop"
+              },
+              {
+                time: "7:30 PM",
                 event: "Dinner",
-                type: "food"
-              },
-              // {
-              //   time: "08:30 PM",
-              //   event: "American Airlines Mini-event",
-              //   type: "event"
-              // },
-              {
-                time: "10:30 PM",
-                event: "Frozen T-shirt Contest",
-                type: "event"
+                type: "workshop"
               },
               {
-                time: "11:15 PM",
+                time: "8:30 PM",
+                event: "American Airlines Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "10:00 PM",
                 event: "Hacker Speed Dating",
-                type: "event"
+                type: "workshop"
+              },
+              {
+                time: "10:45 PM",
+                event: "Frozen T-shirt Contest",
+                type: "workshop"
+              },
+              {
+                time: "11:20 PM",
+                event: "Vibez with Li",
+                type: "workshop"
               },
             ],
             eventsSunday: [
@@ -858,7 +879,7 @@
                 type: "general"
               },
               {
-                time: "04:00 PM",
+                time: "04:30 PM",
                 event: "Closing Ceremony",
                 type: "general"
               }
@@ -886,7 +907,7 @@
               {
                 name: "Best Beginner Hack",
                 description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
-                prize: 'Prize: Echo Dot (5th Gen) + Phillip Hue Smart Lightbulb',
+                prize: 'Prize: Echo Dot (5th Gen) + Philips Hue Smart Lightbulb',
                 image: "echo.png",
               },
 
@@ -910,7 +931,7 @@
             resources: [
               // {
               //   title: "HelpR",
-              //   link: "https://helpr-six.com/"
+              //   link: "https://tamuhack.com/help"
               // },
               {
                 title: "Devpost",
@@ -973,6 +994,10 @@
               {
                 title: "Web Dev",
                 link: "https://tamuhack.com/web-workshop"
+              },
+              {
+                title: "Intro to Git",
+                link: "https://tamuhack.com/git"
               },
             ],
             sponsorsLG: [
