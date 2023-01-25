@@ -36,7 +36,7 @@
 
     <!-- Change icon -->
     <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
-
+    
   </head>
 
   <style>
@@ -489,7 +489,7 @@
           </div>
         </div>
       </div>
-      <div id="sponsors" class="px-8 md:px-28 pt-24 flex items-end">
+      <div id="sponsors" class="px-8 lg:px-28 pt-24 flex items-end">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
         <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.png">
       </div>
@@ -498,42 +498,43 @@
       <div  class="items-center grid grid-cols-6">
         <div class="col-span-6 px-12 md:px-28 pt-12" v-for="item in sponsorsLG" :key="item.id">
           <center>
-            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:block hidden max-w-4xl h-auto"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:block hidden lg:max-w-4xl w-max h-auto"></a>
             <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[1]" class="sm:hidden w-max h-auto"></a>
           </center>
         </div>
         <div class="sm:col-span-3 col-span-6 py-12 sm:px-12 px-20" v-for="item in sponsorsMD" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 max-w-xs"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-36 max-h-24 max-w-xs"></a>
           </center>
         </div> 
         <div class="py-12 sm:px-12 px-20 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 sm:max-w-xs max-w-1/2"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 lg:max-w-xs max-w-1/2"></a>
           </center>
         </div>
       </div> 
       <!-- End Sponsors  -->
       
       <!-- Start Partners -->
-      <div class="px-8 md:px-28">
+      <div class="px-8 lg:px-28">
         <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Partners </p>
       </div>
       
       <div class="items-center grid grid-cols-6">
         <div class="sm:col-span-2 col-span-6 p-12" v-for="item in partners1" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 lg:max-w-xs max-w-1/2"></a>
           </center>     
         </div>
         <div class="sm:col-span-3 col-span-6 p-12" v-for="item in partners2" :key="item.id">
           <center>
-            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 max-w-xs"></a>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 lg:max-w-xs max-w-1/2"></a>
           </center>     
         </div>
       </div>
       <!-- End Partners -->
 
+      <!-- Begin Happy Hacking Div  -->
       <div id="construction" style="padding-top:6em;">
         <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 pt-8 pb-16 mx-8 md:mx-16 rounded-lg bg-[#f9fba5] border-4 border-[#FED522] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
           <div cursor="cursorleft.svg" class="cursor"></div>
@@ -545,7 +546,8 @@
           </div>
         </div>
       </div>
-      
+      <!-- End Happy Hacking Div  -->
+
       <div id="footer" class="my-24" style="padding-top:6em;"> 
         <!-- <div class="flex justify-center items-center pb-8">   
           <img src="../static/th-2023/assets/happy_hacking.svg" class="sm:w-1/2 w-3/4 h-auto">
