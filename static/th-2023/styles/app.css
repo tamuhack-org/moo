@@ -47,7 +47,6 @@ a {
 
 .cursor {
     position: absolute;
-    border-radius: 100%;
     z-index: 1;
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
         0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
@@ -67,7 +66,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 100%;
     opacity: 0;
 }
 
@@ -88,7 +86,6 @@ a {
     background-position: center;
     width: 100px;
     height: 100px;
-    border-radius: 100%;
     z-index: 1;
     transition: 0.4s cubic-bezier(.69,-0.04,.28,1.57) transform,
         0.2s cubic-bezier(.69,-0.04,.28,1.57) opacity;
