@@ -84,19 +84,19 @@
                 </div>
                 <div class="flex items-center gap-2 navy">
                   <i class="fa-solid fa-scale-balanced text-black w-4 flex justify-center"></i>
-                  <a href="https://tamuhack-2023.devpost.com/" class="text-base font-poppins font-medium navy">Devpost</a>
+                  <a href="https://tamuhack-2023.devpost.com/" target="_blank" rel="noreferrer noopener" class="text-base font-poppins font-medium navy">Devpost</a>
                 </div>
                 <div class="flex items-center gap-2 navy">
                   <i class="fa-brands fa-discord text-black w-4 flex justify-center"></i>
-                  <a href="https://discord.gg/jSTPpy4F" class="text-base font-poppins font-medium ">Discord</a>
+                  <a href="https://discord.gg/jSTPpy4F" target="_blank" rel="noreferrer noopener" class="text-base font-poppins font-medium ">Discord</a>
                 </div>
-                <div class="flex items-center gap-2 opacity-40">
+                <div class="flex items-center gap-2">
                   <i class="fa-solid fa-pencil text-black w-4 flex justify-center"></i>
-                  <a class="text-base font-poppins font-medium text-[#1a2542]"  target="_blank" rel="noreferrer noopener">HelpR</a>
+                  <a class="text-base font-poppins font-medium text-[#1a2542]" href="https://tamuhack.com/help" target="_blank" rel="noreferrer noopener">HelpR</a>
                 </div>
-                <div class="flex items-center gap-2 opacity-40">
+                <div class="flex items-center gap-2">
                   <i class="fa-brands fa-spotify text-black w-4 flex justify-center"></i>
-                  <a class="text-base font-poppins font-medium navy">Spotify Queue</a>
+                  <a class="text-base font-poppins font-medium text-[#1a2542]" href="https://spotted-user.onrender.com" target="_blank" rel="noreferrer noopener">Spotify Queue</a>
                 </div>
                 <div class="flex items-center gap-2 hover:text-green cursor-pointer">
                   <i class="fa-solid fa-ellipsis text-black w-4 flex justify-center"></i>
@@ -387,7 +387,7 @@
           </div>
 
           <!-- Goldman  -->
-          <div onclick="window.open('/static/th-2023/assets/TAMUHack%20GS%20Challenge%20Statement.pdf', '_blank').focus();" :cursor="otherPrizes[6]" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+          <div onclick="window.open('/static/th-2023/assets/TAMUHack%20GS%20Challenge%20Statement.pdf', '_blank').focus();" :cursor="otherPrizes[6].image" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
             <div>
               <p :cursor="otherPrizes[6].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[6].name}}</p>
               <p :cursor="otherPrizes[6].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[6].description}}</p>
@@ -405,15 +405,6 @@
             <p :cursor="otherPrizes[5].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[5].prize}}</p> 
           </div>
 
-          <!-- IEEE -->
-          <div :cursor="otherPrizes[7].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
-            <div>
-              <p :cursor="otherPrizes[7].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[7].name}}</p>
-              <p :cursor="otherPrizes[7].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[7].description}}</p>
-            </div>
-            <p :cursor="otherPrizes[7].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[7].prize}}</p> 
-          </div>
-
           <!-- PIMCO  -->
           <div :cursor="otherPrizes[8].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
             <div>
@@ -423,9 +414,20 @@
             <p :cursor="otherPrizes[8].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[8].prize}}</p> 
           </div>
 
-          <!-- PHRI -->
-          <div onclick="window.open(`https:&#47;&#47;www.patientsafetytech.com/patient-safety`, '_blank').focus();":cursor="otherPrizes[4]" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+          <!-- IEEE -->
+          <div :cursor="otherPrizes[7].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
             <div>
+              <p :cursor="otherPrizes[7].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[7].name}}</p>
+              <p :cursor="otherPrizes[7].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[7].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[7].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[7].prize}}</p> 
+          </div>
+
+
+
+          <!-- PHRI -->
+          <div onclick="window.open(`https:&#47;&#47;www.patientsafetytech.com/patient-safety`, '_blank').focus();" :cursor="otherPrizes[4].image" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div :cursor="otherPrizes[4].image">
               <p :cursor="otherPrizes[4].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[4].name}}</p>
               <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-md font-text navy">
                 Envision the best technology-enabled patient safety solution that has the potential to avert patient harm and save lives and the top team will win $1000. Your hack must align with one of the following five leading patient safety challenges anywhere across the continuum of care:
@@ -1014,31 +1016,31 @@
                 name: "AA Challenge: Best Airlines Hack",
                 description: "Create a solution for the airline industry, be it passenger experience, employee experience, or operational efficiencies.",
                 prize: "Prize: AAdvantage 25k, 50k, 75k miles",
-                image: "",
+                image: "aaprize.png",
               },
               {
                 name: "GM Challenge",
                 description: "Design an app or system that helps GM accomplish its goal of Zero Crashes, Zero Emissions, and Zero Congestion",
                 prize: "Prize: 250$ Amazon Gift Cards",
-                image: "",
+                image: "amazongift.png",
               },
               {
                 name: "PRHI Challenge",
                 description: "Envision the best technology-enabled patient safety solution that has the potential to avert patient harm and save lives and the top team will win $1000. Your hack must align with one of the following five leading patient safety challenges anywhere across the continuum of care: medication errors, procedural/surgical errors, errors during routine patient care, infections, and diagnostic safety.",
                 prize: "Prize: 250$ Amazon Gift Cards",
-                image: "",
+                image: "amazongift2.png",
               },
               {
                 name: "CBRE Challenge",
                 description: "CBRE is the #1 commercial real estate firm in the world. We lease, sell, manage, and maintain our clients commercial property for them, so they can focus on what they do best. Managing the day-to-day operations of corporate offices is an example of a service we specialize in. Your challenge is to develop a web or mobile app that will increase employee engagement & satisfaction in the workplace, as many return to the workplace for the first time in years.",
                 prize: "Prize: $150, $75, $50 Amazon Gift Cards for 1st, 2nd, 3rd place",
-                image: "",
+                image: "amazongift2.png",
               }, 
               {
                 name: "Goldman Sachs Challenge",
                 description: "Build a risk analysis tool that someone would use when considering how to manage and invest their money.",
                 prize: "Prize: 1. Apple TVs, 2. JBL Speakers, 3. Grubhub Giftcards",
-                image: "",
+                image: "goldmanprize.png",
               },
               {
                 name: "IEEE Challenge: Best Hardware Hack",
@@ -1050,22 +1052,22 @@
                 name: "PIMCO Challenge",
                 description: "Create a financial literacy tool for either children, adolescents or college students",
                 prize: "Prize: $40 Amazon Gift Cards",
-                image: ""
+                image: "amazongift.png"
               },
             ],
             resources: [
-              // {
-              //   title: "HelpR",
-              //   link: "https://tamuhack.com/help"
-              // },
+              {
+                title: "HelpR",
+                link: "https://tamuhack.com/help"
+              },
               {
                 title: "Devpost",
                 link: "https://tamuhack-2023.devpost.com/"
               },
-              // {
-              //   title: "Spotify Queue",
-              //   link: "https://spotify.com"
-              // },
+              {
+                title: "Spotify Queue",
+                link: "https://spotted-user.onrender.com"
+              },
               {
                 title: "Hacker Guide",
                 link: "https://tamuhack.com/tips"
