@@ -191,7 +191,7 @@
                   <a href="https://discord.gg/jSTPpy4F" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
                     Discord
                   </a>
-                  <a href="https://tamuhack.com/tips" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-navy text-lg font-bold font-poppins text-white bg-navy rounded-md transition-all hover:navy hover:bg-white">
+                  <a href="https://mountain-burglar-040.notion.site/Hacker-Starter-Guide-8f63850820444aa8a0f1ee28f971437d" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-navy text-lg font-bold font-poppins text-white bg-navy rounded-md transition-all hover:navy hover:bg-white">
                     Hacker Guide
                   </a>
                 </div>
@@ -555,6 +555,11 @@
             <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 lg:max-w-xs max-w-1/2"></a>
           </center>
         </div>
+        <div class="py-12 sm:px-12 px-20 col-span-6 sm:col-start-3 sm:col-end-5">
+          <center>
+            <a href="https://www.ea.com/careers" target="_blank" rel="noopener noreferrer"><img src="../static/th-2023/assets/ea.png" class="sm:max-h-32 max-h-24 lg:max-w-xs max-w-1/2"></a>
+          </center>
+        </div>
       </div> 
       <!-- End Sponsors  -->
       
@@ -825,14 +830,11 @@
       {
         const maxWidth = 500;
         const windowWidth = Math.min(maxWidth, window.innerWidth - 200);
-
         camera.aspect = 1;
         camera.updateProjectionMatrix();
-
         // const sceneScalar = windowWidth * 0.0026;
         const sceneScalar = 434 * 0.0026;
         gltfScene.scale.set(sceneScalar * gltfSceneInitialScale.x, sceneScalar * gltfSceneInitialScale.y, sceneScalar * gltfSceneInitialScale.z);
-
         renderer.setSize(windowWidth, windowWidth);
       }
       */
