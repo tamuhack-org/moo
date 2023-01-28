@@ -442,9 +442,50 @@
             <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[4].prize}}</p> 
           </div>
 
+          <!-- Mongo -->
+          <div :cursor="otherPrizes[9].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[9].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[9].name}}</p>
+              <p :cursor="otherPrizes[9].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[9].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[9].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[9].prize}}</p> 
+          </div>
 
+          <!-- Domain.com -->
+          <div :cursor="otherPrizes[10].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[10].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[10].name}}</p>
+              <p :cursor="otherPrizes[10].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[10].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[10].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[10].prize}}</p> 
+          </div>
 
-          <!-- CBRE  -->
+          <!-- MATLAB -->
+          <div :cursor="otherPrizes[11].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[11].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[11].name}}</p>
+              <p :cursor="otherPrizes[11].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[11].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[11].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[11].prize}}</p> 
+          </div>
+
+          <!-- MATLAB -->
+          <div :cursor="otherPrizes[12].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[12].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[12].name}}</p>
+              <p :cursor="otherPrizes[12].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[12].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[12].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[12].prize}}</p> 
+          </div>
+
+          <!-- MATLAB -->
+          <div :cursor="otherPrizes[13].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[13].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[13].name}}</p>
+              <p :cursor="otherPrizes[13].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[13].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[13].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[13].prize}}</p> 
+          </div>
 
         </div>
       </div>
@@ -1049,7 +1090,43 @@
               {
                 name: "PIMCO Challenge",
                 description: "Create a financial literacy tool for either children, adolescents or college students",
+<<<<<<< Updated upstream
                 prize: "Prize: $40 Amazon Gift Cards",
+                image: ""
+=======
+                prize: "Prize: $80 Amazon Gift Cards",
+                image: "amazongift.png"
+>>>>>>> Stashed changes
+              },
+              {
+                name: "Best Use of MongoDB Atlas",
+                description: "MongoDB Atlas takes the leading modern database and makes it accessible in the cloud! Get started with a $50 credit for students or sign up for the Atlas free forever tier (no credit card required). Along with a suite of services and functionalities, you'll have everything you need to manage all of your data! Build a hack using MongoDB Atlas for a chance to win a M5GO IoT Starter Kit for you and each member of your team.",
+                prize: "Prize: M5G0 IoT Starter Kit", 
+                image: ""
+              },
+              {
+                name: "Best Domain Name from Domain.com",
+                description: "Register a .tech domain name using Domain.com during the weekend. Each team may submit one entry per person on the team. Each winning team member will receive a Domain.com Branded Backpack",
+                prize: "Prize: Domain.com Branded Backpack",
+                image: ""
+              },
+              {
+                name: "Best Use of MATLAB",
+                description: "MATLAB and Simulink are computation tools used at more than 5,000 institutions worldwide. Use their software in your next hack to win some exclusive MathWorks swag including a MathWorks branded cinch bag, pair of socks, baseball cap, stylus pen & deck of cards! You can also claim a free MATLAB software license to get started.",
+                prize: "Prize: MathWorks Swag Bag",
+                image: ""
+              },
+              {
+                name: "Best Use of Velo by Wix",
+                description: "We know how difficult it can be to create a phenomenal website in a short period of time, especially when it comes to hackathons. Velo by Wix cuts down your development time without sacrificing on functionality! With a built-in database and fully customizable JavaScript frontend and backend, you can develop a full-stack application directly in your browser. With Velo, all the tools you need are conveniently located in one platform! Build your hackathon project with Velo by Wix for a chance to win Wacom Drawing Tablets for you and each of your teammates.",
+                prize: "Prize: Wacom Drawing Tablet",
+                image: ""
+              },
+
+              {
+                name: "Best Use of Microsoft Cloud for Your Community",
+                description: "Bring your idea to life using the Microsoft Cloud - automatically build and deploy a full stack web app from a code repository, create and train a Machine Learning model, develop business applications with little to no code using Power Platform, and more! View our recommended popular solutions in the Education Hub at https://aka.ms/startedu. Build your hackathon project with the Microsoft Cloud that tackles a social impact issue of your choice, and have a chance to win a LinkedIn Premium 12-Month subscription and an XBox Ultimate 3-Month Game Pass subscription.",
+                prize: "Prize: LinkedIn Premium 12-Month subscription and Xbox Ultimate 3-Month Game Pass",
                 image: ""
               },
             ],
