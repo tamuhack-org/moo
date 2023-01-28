@@ -446,6 +446,15 @@
             <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[4].prize}}</p> 
           </div>
 
+          <!-- USAA -->
+          <div :cursor="otherPrizes[14].image" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div :cursor="otherPrizes[14].image">
+              <p :cursor="otherPrizes[14].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[14].name}}</p>
+              <p :cursor="otherPrizes[14].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[14].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[14].prize}}</p> 
+          </div>
+
           <!-- Mongo -->
           <div :cursor="otherPrizes[9].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
             <div>
@@ -1123,6 +1132,12 @@
                 name: "Best Use of Microsoft Cloud for Your Community",
                 description: "Bring your idea to life using the Microsoft Cloud - automatically build and deploy a full stack web app from a code repository, create and train a Machine Learning model, develop business applications with little to no code using Power Platform, and more! View our recommended popular solutions in the Education Hub at https://aka.ms/startedu. Build your hackathon project with the Microsoft Cloud that tackles a social impact issue of your choice, and have a chance to win a LinkedIn Premium 12-Month subscription and an XBox Ultimate 3-Month Game Pass subscription.",
                 prize: "Prize: LinkedIn Premium 12-Month subscription and Xbox Ultimate 3-Month Game Pass",
+                image: ""
+              },
+              {
+                name: "USAA Challenge",
+                description: "Build a solution using open source technology, preferably use object oriented language, cloud technology, and include a data source. Stretch Goals: Build an information aggregator, adding maintainability and reliability.",
+                prize: "Prize: Smart Light Bar, Anker Portable Charger, Handheld Fidget Cube for 1st, 2nd, 3rd place",
                 image: ""
               },
             ],
