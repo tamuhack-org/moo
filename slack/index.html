@@ -97,9 +97,9 @@
                 checkbox.id = memberName;
                 checkbox.className = "member-checkbox";
                 checkbox.autocomplete = "off";
+                listItem.innerHTML += memberName;
                 listItem.appendChild(checkbox);
 
-                listItem.innerHTML += memberName;
 
                 document.getElementById("member-list-" + currentList).appendChild(listItem);
                 currentList = (currentList + 1) % 3;
