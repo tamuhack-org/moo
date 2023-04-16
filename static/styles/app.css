@@ -519,7 +519,7 @@ header {
 
 @media (min-width : 994px) {
     #mid-col {
-        border-right: 1px solid #DFDFDF;
+        /* border-right: 1px solid #DFDFDF; */
         border-left: 1px solid #DFDFDF;
     }
 }
