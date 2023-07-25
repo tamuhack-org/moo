@@ -88,6 +88,14 @@
     background-position: center center;
     padding: 15px;
 }
+
+.hh23::after {
+    background-image: url("../hh-2023/assets/hh23icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
+
 /* END HACKATHON LOGOS */
 
 .no-list-style {
