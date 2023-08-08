@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rattle/static/css/main.ef501e5b.css",
-    "main.js": "/rattle/static/js/main.62e63b0a.js",
+    "main.js": "/rattle/static/js/main.a5b08045.js",
     "static/media/hiss_full_logo.svg": "/rattle/static/media/hiss_full_logo.e90bd7a739ea54cc3fe81da3d8ee4679.svg",
     "static/media/hiss.svg": "/rattle/static/media/hiss.2ce0a3bc4bca9033cf1a17ad9f7854e3.svg",
     "index.html": "/rattle/index.html",
@@ -11,10 +11,10 @@
     "static/media/isymbol.svg": "/rattle/static/media/isymbol.45374503f2bc908b56b4.svg",
     "static/media/arrowleft.svg": "/rattle/static/media/arrowleft.e1abd49049e17316d928.svg",
     "main.ef501e5b.css.map": "/rattle/static/css/main.ef501e5b.css.map",
-    "main.62e63b0a.js.map": "/rattle/static/js/main.62e63b0a.js.map"
+    "main.a5b08045.js.map": "/rattle/static/js/main.a5b08045.js.map"
   },
   "entrypoints": [
     "static/css/main.ef501e5b.css",
-    "static/js/main.62e63b0a.js"
+    "static/js/main.a5b08045.js"
   ]
 }
