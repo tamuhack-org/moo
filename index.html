@@ -6,6 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script defer src="/_vercel/insights/script.js"></script>
   <meta property="og:title" content="TAMUhack" />
   <meta property="og:image" content="https://tamuhack.com/static/assets/th20-hub-pink-buildings.jpg" />
   <meta property="og:url" content="https://tamuhack.com" />
@@ -35,17 +36,14 @@
 <body>
   <div id="app" v-cloak>
     <!--BEGIN Navbar-->
-    <!-- UNCOMMENT WHEN APPS OPEN   -->
 
-    
-    <a href="/th" class="toast">
-        Register for TAMUhack 2023!
+    <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
+    <a v-if="bannerShown" href="/teams" class="toast">
+      Apply to be a TAMUhack organizer!
     </a>
-   
 
     <div class="nav-container container">
-      <!-- ADD THE FOLLOWING STYLE ATTRIBUTE TO THE NAV BELOW WHEN APPS OPEN: style="top: 41px;" -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="top: 41px;" id="top-nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" :style="bannerShown ? 'top: 41px;' : ''" id="top-nav-bar">
         <a class="navbar-brand" href="#">
           <img src="./static/assets/th_logo.svg" class="th-logo" alt="" />
         </a>
@@ -76,7 +74,8 @@
       <div class="tamuhack-title">
         <img alt="" src="./static/assets/tamuhacfull_k.svg" id="good-morning-trigger"
           style="cursor: pointer; z-index: 10; flex: 0 0 100%;" />
-          <h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January 28-29, 2023</h5>
+          <!--Date for TAMUhack :3-->
+          <!--<h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January 28-29, 2023</h5>-->
       </div>
       <div class="backdrop-container">
         <img alt="" src="./static/assets/th20-hub-pink-buildings.svg" class="backdrop" />
@@ -84,7 +83,7 @@
       <object id="plane" data="./static/assets/plane.svg" type="image/svg+xml"></object>
       <object id="sun" class="spinning-element" data="./static/assets/sun.svg" type="image/svg+xml"></object>
       <object id="good-morning" class="spinning-element" data="./static/assets/hh-assets/goodmorning.svg"
-        type="image/svg+xml"></object>
+        type="image/svg+xml" style="visibility: hidden;"></object>
       <div id="side-to-side">
         <object id="cloud-left" data="./static/assets/cloud.svg" type="image/svg+xml"></object>
         <object id="cloud-right" data="./static/assets/cloud2.svg" type="image/svg+xml"></object>
@@ -102,8 +101,7 @@
           <div class="col-md-7 text-center py-5">
             <h1>We organize hackathons</h1>
             <p class="emphasize center">
-              <span>"Hack"</span> in hackathon is used to describe how technology can be used in new and
-              innovative ways.
+              Hackathons are <span>24-hour events</span> where students come together to build an awesome project, meet new people, and win prizes. 
             </p>
             <br />
           </div>
@@ -291,6 +289,9 @@
                       <a v-if="typeof director.linkedin !== 'undefined'" :href="director.linkedin" target="_blank"><img
                           src="./static/assets/horizontal-timeline/linkedin.svg" alt="LinkedIn"
                           class="timeline-director-socials"></a>
+                      <a v-if="typeof director.portfolio !== 'undefined'" :href="director.portfolio" target="_blank"><img
+                          src="./static/assets/horizontal-timeline/portfolio.svg" alt="Portfolio"
+                          class="timeline-director-socials"></a>
                     </div>
                   </div>
                 </div>
@@ -445,6 +446,7 @@
       el: "#app",
       data: function () {
         return {
+          bannerShown: false,
           party: false,
           hackathons: [
             {
@@ -1812,7 +1814,7 @@
               name: "TAMUhack 2023",
               link: "/th",
               logo: "th23",
-              description: "Our upcoming hackathon!",
+              description: "The best hackathon comes in all shapes and sizes!",
               directors: [
                 {
                   webp: "./static/th-2022/headshots/webp/ekdev.webp",
@@ -2034,25 +2036,27 @@
                   linkedin: "https://www.linkedin.com/in/ekdevrajkitkul"
                 },
                 {
-                  webp: "./static/hh-2023/headshots/jpg/abhishek.jpg",
+                  webp: "./static/hh-2023/headshots/webp/abhishek.webp",
                   img: "./static/hh-2023/headshots/jpg/abhishek.jpg",
                   name: "Abhishek More",
                   position: "Tech Lead",
                   github: "https://www.github.com/Abhishek-More",
-                  linkedin: "https://www.linkedin.com/in/abhishek-more-linked/"
+                  linkedin: "https://www.linkedin.com/in/abhishek-more-linked/",
+                  portfolio: "https://www.abhishekmore.com"
                 },
                 {
                   webp: "./static/hh-2023/headshots/webp/li.webp",
                   img: "./static/hh-2023/headshots/jpg/li.jpg",
                   name: "Li Shen",
-                  position: "Creative",
-                  linkedin: "https://www.linkedin.com/in/lishen123/"
+                  position: "Creative Lead",
+                  linkedin: "https://www.linkedin.com/in/lishen123/",
+                  portfolio: "https://lishen.app/"
                 },
                 {
                   webp: "./static/hh-2023/headshots/webp/ayomide.webp",
                   img: "./static/hh-2023/headshots/jpg/ayomide.jpg",
                   name: "Ayomide Fatoye",
-                  position: "Logistics",
+                  position: "Logistics Lead",
                   github: "https://github.com/Ayo-Fatoye",
                   linkedin: "https://www.linkedin.com/in/ayomide-fatoye-b6a0751b8/"
                 },
@@ -2060,7 +2064,7 @@
                   webp: "./static/hh-2023/headshots/webp/anish.webp",
                   img: "./static/hh-2023/headshots/jpg/anish.jpg",
                   name: "Anish Karthik",
-                  position: "Logistics",
+                  position: "Logistics Lead",
                   github: "https://github.com/anishfish2",
                   linkedin: "https://www.linkedin.com/in/anishkarthik"
                 },
@@ -2068,8 +2072,9 @@
                   webp: "./static/hh-2023/headshots/webp/kirthivel.webp",
                   img: "./static/hh-2023/headshots/jpg/kirthivel.jpg",
                   name: "Kirthivel Ramesh",
-                  position: "Secretary",
-                  linkedin: "https://www.linkedin.com/in/kirthivel"
+                  position: "Secretary + Mentor",
+                  linkedin: "https://www.linkedin.com/in/kirthivel",
+                  portfolio: "https://tx.ag/kirthivel"
                 },
                 {
                   webp: "./static/hh-2023/headshots/webp/ashrita.webp",
@@ -2135,7 +2140,6 @@
                   img: "./static/hh-2023/headshots/jpg/harshitha.jpg",
                   name: "Harshitha Dhulipala",
                   position: "Logistics",
-                  github: "https://github.com/hdhulipala02",
                   linkedin: "https://www.linkedin.com/in/harshitha-dhulipala-00744719b"
                 },
                 {
@@ -2147,15 +2151,14 @@
                   linkedin: "https://www.linkedin.com/in/naveen-iyer-66412b225/"
                 },
                 {
-                  webp: "./static/hh-2023/headshots/jpg/gabrielle.jpeg",
+                  webp: "./static/hh-2023/headshots/webp/gabrielle.webp",
                   img: "./static/hh-2023/headshots/jpg/gabrielle.jpg",
                   name: "Gabrielle Anne Irava",
-                  position: "Logistics",
-                  linkedin: "https://www.linkedin.com/in/gabrielle-anne-irava-582667236/"
+                  position: "Tech + Logistics",
+                  linkedin: "https://www.linkedin.com/in/gairava/"
                 },
                 {
                   webp: "./static/hh-2022/headshots/webp/nafi.webp",
-                  img: "./static/hh-2022/headshots/jpg/nafi.jpg",
                   name: "Nafi Islam",
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/nafiislam"
