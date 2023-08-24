@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="[January 28th, 2022] - At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.">
+    <meta name="keywords"
+        content="[January 28th, 2022] - At TAMUhack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.">
+    <title>TAMUhack 2023</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link href="./../static/th-2021/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <link rel="stylesheet" href="./../static/th-2023/styles/app.css">
+    <script src="https://kit.fontawesome.com/640b86bfda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    
+    <script src="https://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    
+
+    <!-- Change icon -->
+    <link href="./../static/th-2022/favicon.png" rel="icon" type="image/x-icon" />
+    
+  </head>
+
+  <style>
+  </style>
+
+  <body class="bg-[#FFFFFF]">
+    <div id="app" vcloak class="relative">
+
+      <a id="mlh-trust-badge" class="block" style="max-width:100px;min-width:60px;position:fixed;right:20px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-black.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
+
+      <!-- NAVBAR  -->
+      <div :style="{'border-bottom':'2px solid rgba(25, 47, 109,' + navOpacity + ')'}" class="fixed hidden lg:flex items-center justify-between px-8 xl:px-32 py-4 w-screen bg-white z-50">
+        <div class="w-1/3">
+          <a target="_blank" rel="noopener noreferrer"
+            class="text-3xl rounded-full font-black font-heading navy">
+            <img class="w-[40px]" src="../static/th-2023/assets/logo.svg" />
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-8 w-1/3">
+          <a href="#prizes" class="text-lg font-medium font-poppins navy navy">
+            Prizes
+          </a>
+          <a href="#schedule" class="text-lg font-medium font-poppins navy navy">
+            Schedule
+          </a>
+          <a href="#sponsors" class="text-lg font-medium font-poppins navy navy">
+            Sponsors
+          </a>
+
+          <button data-popover-target="popover-default" data-popover-trigger="hover" type="button" class="flex items-center gap-2 cursor-pointer">
+            <a class="text-lg font-medium font-poppins navy">
+              Resources
+            </a>
+            <a class="navy">
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </button>
+          <div data-popover id="popover-default" role="tooltip" class="absolute z-10 w-[450px] invisible inline-block border-2 border-[#9F2D58] text-sm transition-all duration-300 bg-white rounded-lg shadow-lg opacity-0">
+            <div class="p-4">
+              <p class="text-sm font-poppins text-[#172E6C] opacity-80 pb-4">Quick Links</p>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-lightbulb text-black w-4 flex justify-center"></i>
+                  <a class="text-base font-poppins font-medium navy" href="https://mountain-burglar-040.notion.site/Hacker-Starter-Guide-8f63850820444aa8a0f1ee28f971437d"  target="_blank" rel="noreferrer noopener">Hacker Guide</a>
+                </div>
+                <div class="flex items-center gap-2 navy">
+                  <i class="fa-solid fa-scale-balanced text-black w-4 flex justify-center"></i>
+                  <a href="https://tamuhack-2023.devpost.com/" target="_blank" rel="noreferrer noopener" class="text-base font-poppins font-medium navy">Devpost</a>
+                </div>
+                <div class="flex items-center gap-2 navy">
+                  <i class="fa-brands fa-discord text-black w-4 flex justify-center"></i>
+                  <a href="https://discord.gg/jSTPpy4F" target="_blank" rel="noreferrer noopener" class="text-base font-poppins font-medium ">Discord</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-pencil text-black w-4 flex justify-center"></i>
+                  <a class="text-base font-poppins font-medium text-[#1a2542]" href="https://tamuhack.com/help" target="_blank" rel="noreferrer noopener">HelpR</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-brands fa-spotify text-black w-4 flex justify-center"></i>
+                  <a class="text-base font-poppins font-medium text-[#1a2542]" href="https://spotted-user.onrender.com" target="_blank" rel="noreferrer noopener">Spotify Queue</a>
+                </div>
+                <div class="flex items-center gap-2 hover:text-green cursor-pointer">
+                  <i class="fa-solid fa-ellipsis text-black w-4 flex justify-center"></i>
+                  <a href="#footer" class="text-base font-poppins font-medium navy hover:text-black">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 flex justify-end items-center">
+          <a class="hidden cursor-default xl:flex text-lg font-medium mr-8 font-poppins text-gray-500 hover:text-gray-500">
+            Mentor
+          </a>
+          <a class=" cursor-default hidden xl:flex py-2 px-5 border-4 border-gray-500 bg-gray-500 text-lg font-bold font-poppins text-white rounded-md transition-all hover:text-white">
+            Apply
+          </a>
+        </div>
+      </div>
+
+      <div class="block fixed my-0  bgoffwhite items-center w-screen z-50">
+        <div class="lg:hidden pb-2 my-0 bgoffwhite">
+          <template class="bgoffwhite">
+            <b-navbar class="bgoffwhite pt-2 pr-20 sm:pr-32">
+              <template slot="brand" class="bgoffwhite pt-2">
+                <b-navbar-item tag="router-link">
+                  <div class="">
+                    <a href="https://tamuhack.com" target="_blank" rel="noopener noreferrer"
+                                       class="text-3xl rounded-full font-black font-heading navy">
+                    <img class="w-[60px] h-[60px]" src="../static/th-2023/assets/logo.svg" />
+                  </a>
+
+                  </div>
+                </b-navbar-item>
+              </template>
+
+              <template slot="start" class="bgoffwhite text-black">
+                <!-- <b-navbar-item class="bgoffwhite" :href="'#' + link" v-for="link in links">
+                  <span class="bgoffwhite pl-8">
+                    {{ link }}
+                  </span>
+                </b-navbar-item> -->
+                <b-navbar-item class="bgoffwhite" href="#faq">
+                  <span class="bgoffwhite pl-8">
+                    FAQ
+                  </span> 
+                </b-navbar-item>
+                <b-navbar-item class="bgoffwhite" href="#prizes">
+                  <span class="bgoffwhite pl-8">
+                    Prizes
+                  <span> 
+                </b-navbar-item>
+                <b-navbar-item class="bgoffwhite" href="#schedule">
+                  <span class="bgoffwhite pl-8">
+                    Schedule
+                  <span> 
+                </b-navbar-item>
+                <b-navbar-item class="bgoffwhite" href="#sponsors">
+                  <span class="bgoffwhite pl-8">
+                    Sponsors
+                  <span> 
+                </b-navbar-item>
+                <b-navbar-item class="bgoffwhite" href="#footer">
+                  <span class="bgoffwhite pl-8">
+                    Resources
+                  <span> 
+                </b-navbar-item>
+              </template>
+            </b-navbar>
+          </template>
+        </div>
+      </div>
+
+      <div class="flex flex-col h-auto lg:h-screen w-screen sm:flex-row px-8 justify-between pt-20 pb-20 sm:pb-40 lg:pb-0 md:pt-0 ">
+        <div id="logo" class="hidden xl:flex justify-center xl:justify-start md:w-1/2 ml-20">
+          <img id="overlayEffect" class="object-contain" src="../static/th-2023/assets/landingone.apng">
+        </div>
+        <div class="flex sm:hidden md:flex xl:hidden justify-center xl:justify-start md:w-1/2 md:pt-40 lg:pt-64 pb-8">
+          <img class="h-[200px] sm:h-[275px] md:h-[350px]" src="../static/th-2023/assets/statichero.svg" />
+        </div>
+        <div class="md:w-1/2 xl:pl-24 md:pt-40 lg:pt-64 w-auto sm:w-screen md:text-right lg:text-left">
+          <div class="flex justify-between">
+            <div class="flex flex-col justify-center">
+              <p class="font-bold text-3xl md:text-5xl font-poppins navy">TAMUhack 2023</p>
+              <div class="flex items-center justify-start md:justify-end lg:justify-start gap-2 mt-2 mb-8">
+                <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">24 hours</p>
+                <p class="px-4 border-2 border-[#9F2D58] text-[#9F2D58] rounded-full font-poppins">In-person</p>
+              </div>
+              <p class="font-semibold text-2xl font-poppins navy">January 28-29, 2023</p>
+              <p class="font-semibold text-2xl font-poppins navy">Texas <a href="https://abhishekmore.com" target="_blank" rel="noopener noreferrer">A&M</a> University</p>
+              <div class="hidden md:flex justify-end lg:hidden">
+                <div class="pt-4 flex flex-col gap-2 text-center">
+                  <a href="https://discord.gg/jSTPpy4F" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
+                    Discord
+                  </a>
+                  <a href="https://mountain-burglar-040.notion.site/Hacker-Starter-Guide-8f63850820444aa8a0f1ee28f971437d" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-navy text-lg font-bold font-poppins text-white bg-navy rounded-md transition-all hover:navy hover:bg-white">
+                    Hacker Guide
+                  </a>
+                </div>
+              </div> 
+            </div>
+          <img class="h-[200px] hidden sm:flex md:hidden" src="../static/th-2023/assets/statichero.svg">
+          </div>
+          <div class="block md:hidden justify-end lg:block">
+            <div class="pt-4 flex flex-col gap-2 text-center">
+              <a href="https://discord.gg/jSTPpy4F" target="_blank" rel="noopener noreferrer" class="py-2 md:w-[250px] border-4 border-[#9F2D58] text-lg font-bold font-poppins text-white bg-[#9F2D58] rounded-md transition-all hover:navy hover:bg-white">
+                Discord
+              </a>
+              <a href="https://mountain-burglar-040.notion.site/Hacker-Starter-Guide-8f63850820444aa8a0f1ee28f971437d " target="_blank" rel="noopener noreferrer"  class="py-2 md:w-[250px] border-4 border-navy text-lg font-bold font-poppins text-white bg-navy rounded-md transition-all hover:navy hover:bg-white">
+                Hacker Guide
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ABOUT SECTION -->
+      <div class="flex flex-col md:flex-row justify-between px-10 md:px-16 lg:px-24 mt-16">
+        <!-- LEFT -->
+        <div class="md:w-2/5 md:mb-16">
+          <p class="font-heading font-semibold pink text-4xl mb-4 font-poppins">What is TAMUhack?</p>
+          <p class="font-text font-semibold navy font-text">
+            TAMUhack is a 24 hour event where teams create innovative software
+            and hardware solutions to real-world problems in a community of mentorship.
+          </p>
+          <br />
+          <p class="font-text font-semibold navy font-text">
+            You'll have the resources, mentors, and freedom to create a unique product,
+            learn new skills or just have fun collaborating with friends. 
+            We'll also provide all the free food and free swag—just be sure to bring
+            your resume for all of the awesome sponsors and mentors you'll meet! 
+            Check them out below!
+          </p>
+          <div class="flex justify-center mt-16 mb-16 md:mb-0">
+            <img id="infoanim" class="w-[100px] md:w-[150px]" src="../static/th-2023/assets/circle.svg" />
+            <img id="infoanim" class="w-[100px] md:w-[150px]" src="../static/th-2023/assets/bouncetriangle.gif" />
+            <img id="infoanim" class="w-[100px] md:w-[150px]" src="../static/th-2023/assets/square.svg" />
+          </div>
+        </div>
+
+        <!-- MIDDLE -->
+        <div class="flex justify-center w-1/5">
+          <div class="h-full rounded-full w-3 bg-[#9F2D58]">
+          </div>
+        </div>
+        
+        <!-- RIGHT -->
+        <div class="md:w-2/5">
+          <p class="font-heading font-semibold pink text-4xl mb-4 font-poppins">Event Information</p>
+          <div class="inline-block mb-4">
+            <p class="font-heading font-semibold pink text-xl font-poppins">Location</p>
+            <div class="w-full h-1 bg-[#D490AA]"></div>
+          </div>
+          <p class="font-text font-semibold navy font-text">
+            Bethancourt Ballroom (MSC 2300) <br />
+            730 Olsen Blvd, College Station, TX 77845 <br />
+            <br />
+          </p>
+          <a class="font-text font-bold navy underline font-text" href="https://tamuhack.com/static/assets/th-2020/msc_map.png">
+            View Building Map
+          </a>
+          <br />
+          <div class="inline-block mt-8 mb-4">
+            <p class="font-heading font-semibold pink text-xl font-poppins">Parking</p>
+            <div class="w-full h-1 bg-[#D490AA]"></div>
+          </div>
+          <p class="font-text font-semibold navy font-text">
+            <a class="font-bold underline" href="https://goo.gl/maps/Fg75idhQXpP35Tpc6">Lot 61</a>
+            <br />
+            *Free in unmarked spaces
+            <br />
+            <br />
+
+            <a class="font-bold underline pt-4" href="https://www.google.com/maps/place/Lot+74/@30.6088938,-96.3490563,18z/data=!3m1!4b1!4m5!3m4!1s0x864683a15e4b1c31:0x3ad7046e2458afe6!8m2!3d30.6088938!4d-96.347962">Lot 74</a>
+            <br />
+            *Free in unmarked spaces
+            <br />
+            <br />
+            **Both lots will be cashiered from approximately 5:00pm to 7:45pm on 1/28 with an entry fee of $5/each/entry. If a vehicle is already parked in either lot prior to 5:00 pm, they will not be required to leave or pay if they remain parked in the lot.
+          </p>
+        </div>
+      </div>
+
+      <div id="faq" class="w-screen lg:mt-">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320"><path fill="#1a2542" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,218.7C373.3,235,427,245,480,224C533.3,203,587,149,640,138.7C693.3,128,747,160,800,176C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,149.3C1173.3,149,1227,171,1280,176C1333.3,181,1387,171,1413,165.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+      </div>
+      <div class="bg-[#1a2542] py-8 px-8 md:px-28 flex flex-col lg:flex-row gap-8 align-top">
+        <div class="text-gray-200 font-poppins flex justify-start items-start mb-8">
+          <div class="faqblock sticky top-32">
+            <p class="text-4xl mb-4 font-semibold text-white">Frequently Asked Questions</p>
+            <p class="text-xl mt-2">Everything you need to know about participating in TAMUhack.</p>
+            <p class="text-xl mt-2">Can't find what you're looking for?</p>
+            <a class="underline text-xl hover:text-white" href="mailto:hello@tamuhack.com">Contact our team.</a>
+            <img class="hidden lg:flex mt-16 w-[200px]" src="../static/th-2023/assets/reader.png" />
+          </div>
+        </div>
+        <div class="flex flex-col lg:w-2/3">
+          <div class="pb-8 mb-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
+            <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">Who can attend?</p>
+            <p class="mt-3 text-lg md:text-lg font-text navy text-gray-200">All students can sign up to be a hacker. Regardless of your experience, education, or background, as long as you are excited about learning, building, and having fun, we’d love for you to attend. If you are currently under the age of 18, please contact our team at <a class="underline hover:text-white" href="mailto:hello@tamuhack.com">hello@tamuhack.com</a> to fill out a waiver form.</p>
+          </div>
+          <div class="pb-8 mb-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
+            <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">When is the deadline to apply for TAMUhack?</p>
+            <p class="mt-3 text-lg md:text-lg  font-text navy text-gray-200">The deadline for registration is January 22, at 23:59. <span class="underline font-bold">We'll be doing rolling admissions until that date.</span> Our capacity is limited, so make sure to apply early! <br> <br> NOTE: Even if you are admitted, entry to the event is first-come first-serve due to limited capacity of the MSC. We will only grant entry to the first 750 participants to check-in. Please arrive early to ensure your spot.</p>
+          </div>
+          <div v-for="faq in faqs" class="pb-8 mb-8 border-b-2 border-gray-200 border-opacity-10 transition-all hover:border-opacity-80 ">
+            <p class="text-xl md:text-xl font-semibold font-poppins navy text-gray-200">{{faq.title}}</p>
+            <p class="mt-3 text-lg md:text-lg  font-text navy text-gray-200">{{faq.desc}}</p>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path fill="#1a2542" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,106.7C320,96,400,64,480,53.3C560,43,640,53,720,80C800,107,880,149,960,149.3C1040,149,1120,107,1200,80C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+
+      <!-- PRIZES (i was in a rush, sorry)-->
+      <div id="prizes">
+        <div class="flex items-end mt-16 md:mt-8">
+          <p class="flex pb-4 px-8 lg:px-28 pink text-4xl font-semibold font-poppins">Prizes</p>
+          <img class="hidden lg:flex w-[600px]" src="../static/th-2023/assets/prizerunner.svg">
+        </div>
+        <div class="px-8 lg:px-28 flex flex-col md:grid gap-8 grid-cols-6 ">
+          <div :cursor="prizes[0].image" class=" flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div>
+              <p :cursor="prizes[0].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[0].name}}</p>
+              <p :cursor="prizes[0].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[0].description}}</p>
+              <p :cursor="prizes[0].image" class="mt-4 text-l md:text-md font-bold font-text pink">{{prizes[0].prize}}</p> 
+            </div>
+            <img class="hidden xl:flex w-[100px] h-[100px] xl:mr-4 object-contain":src="'../static/th-2023/assets/' + prizes[0].image" />
+          </div>
+          <div :cursor="prizes[1].image" class="flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div>
+              <p :cursor="prizes[1].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[1].name}}</p>
+              <p :cursor="prizes[1].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[1].description}}</p>
+              <p :cursor="prizes[1].image" class="mt-4 text-l md:text-md font-bold font-text pink">{{prizes[1].prize}}</p> 
+            </div>
+            <img class="hidden xl:flex w-[100px] h-[100px]  xl:mr-4 object-contain":src="'../static/th-2023/assets/' + prizes[1].image" />
+          </div>
+          <div :cursor="prizes[2].image" class="flex justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-2">
+            <div>
+              <p :cursor="prizes[2].image" class="text-xl md:text-xl font-bold font-poppins navy">{{prizes[2].name}}</p>
+              <p :cursor="prizes[2].image" class="mt-1 text-l md:text-md font-md font-text navy">{{prizes[2].description}}</p>
+              <p :cursor="prizes[2].image" class="mt-4 text-l md:text-md font-bold font-text pink">{{prizes[2].prize}}</p> 
+            </div>
+            <img class="hidden xl:flex w-[100px] h-[100px]  xl:mr-4 object-contain":src="'../static/th-2023/assets/' + prizes[2].image" />
+          </div>
+          
+          <!-- Best UI/UX -->
+          <div :cursor="otherPrizes[0].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[0].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[0].name}}</p>
+              <p :cursor="otherPrizes[0].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[0].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[0].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[0].prize}}</p> 
+          </div>
+          
+          <!-- Best Beginner -->
+          <div :cursor="otherPrizes[1].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[1].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[1].name}}</p>
+              <p :cursor="otherPrizes[1]" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[1].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[1].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[1].prize}}</p> 
+          </div>
+          
+          <!-- AA -->
+          <div :cursor="otherPrizes[2].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[2].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[2].name}}</p>
+              <p :cursor="otherPrizes[2].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[2].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[2].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[2].prize}}</p> 
+          </div>
+
+          <!-- GM -->
+          <div :cursor="otherPrizes[3].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[3].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[3].name}}</p>
+              <p :cursor="otherPrizes[3].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[3].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[3].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[3].prize}}</p> 
+          </div>
+
+          <!-- Goldman  -->
+          <div onclick="window.open('/static/th-2023/assets/TAMUHack%20GS%20Challenge%20Statement.pdf', '_blank').focus();" :cursor="otherPrizes[6].image" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[6].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[6].name}}</p>
+              <p :cursor="otherPrizes[6].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[6].description}}</p>
+              <a href="/static/th-2023/assets/TAMUHack GS Challenge Statement.pdf" target: :cursor="otherPrizes[6].image" class="mt-3 text-l md:text-md font-md font-text navy">Click this card to learn more.</a>
+            </div>
+            <p :cursor="otherPrizes[6].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[6].prize}}</p> 
+          </div>
+
+          <!-- CBRE  -->
+          <div onclick="window.open('/static/th-2023/assets/CBRE%20Challenge.pdf', '_blank').focus();" :cursor="otherPrizes[5].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[5].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[5].name}}</p>
+              <p :cursor="otherPrizes[5].image" class="mt-3 text-l md:text-md font-md font-text navy">CBRE is the largest Commercial Real Estate Services company by revenue. One common challenge we help our clients overcome is to help fill an office space, given a team structure and preferences. And at the same time, maximize the amount of space available. Create an app to visualize the most optimal way of allotting the teams to the space across the
+                floors, so that none of the floors remain empty and at least 25% of each floor remains occupied.</p>
+              <a href="/static/th-2023/assets/CBRE Challenge.pdf" target: :cursor="otherPrizes[6].image" class="mt-3 text-l md:text-md font-md font-text navy">Click this card to learn more.</a>
+            </div>
+            <p :cursor="otherPrizes[5].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[5].prize}}</p> 
+          </div>
+
+          <!-- PIMCO  -->
+          <div :cursor="otherPrizes[8].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[8].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[8].name}}</p>
+              <p :cursor="otherPrizes[8].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[8].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[8].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[8].prize}}</p> 
+          </div>
+
+          <!-- IEEE -->
+          <div :cursor="otherPrizes[7].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[7].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[7].name}}</p>
+              <p :cursor="otherPrizes[7].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[7].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[7].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[7].prize}}</p> 
+          </div>
+
+
+
+          <!-- PHRI -->
+          <div onclick="window.open(`https:&#47;&#47;www.patientsafetytech.com/patient-safety`, '_blank').focus();" :cursor="otherPrizes[4].image" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div :cursor="otherPrizes[4].image">
+              <p :cursor="otherPrizes[4].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[4].name}}</p>
+              <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-md font-text navy">
+                Envision the best technology-enabled patient safety solution that has the potential to avert patient harm and save lives and the top team will win $1000. Your hack must align with one of the following five leading patient safety challenges anywhere across the continuum of care:
+              </p>
+              <ul class="list-desc ml-4 mt-1 mb-2 text-l md:text-md font-md font-text navy">
+                <li>- Medication Errors</li>
+                <li>- Procedural / Surgical Errors</li>
+                <li>- Errors during routine patient care</li>
+                <li>- Infections</li>
+                <li>- Diagnostic safety</li>
+              </ul>
+              <a href="https:&#47;&#47;www.patientsafetytech.com/patient-safety" target: :cursor="otherPrizes[6].image" class="pt-1 text-l md:text-md font-md font-text navy">Click this card to learn more.</a>
+            </div>
+            <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[4].prize}}</p> 
+          </div>
+
+          <!-- USAA -->
+          <div :cursor="otherPrizes[14].image" class="portfolio-item prize cursor-pointer flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div :cursor="otherPrizes[14].image">
+              <p :cursor="otherPrizes[14].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[14].name}}</p>
+              <p :cursor="otherPrizes[14].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[14].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[4].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[14].prize}}</p> 
+          </div>
+
+          <!-- Mongo -->
+          <div :cursor="otherPrizes[9].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[9].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[9].name}}</p>
+              <p :cursor="otherPrizes[9].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[9].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[9].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[9].prize}}</p> 
+          </div>
+
+          <!-- Domain.com -->
+          <div :cursor="otherPrizes[10].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[10].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[10].name}}</p>
+              <p :cursor="otherPrizes[10].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[10].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[10].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[10].prize}}</p> 
+          </div>
+
+          <!-- MATLAB -->
+          <div :cursor="otherPrizes[11].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[11].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[11].name}}</p>
+              <p :cursor="otherPrizes[11].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[11].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[11].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[11].prize}}</p> 
+          </div>
+
+          <!-- MATLAB -->
+          <div :cursor="otherPrizes[12].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[12].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[12].name}}</p>
+              <p :cursor="otherPrizes[12].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[12].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[12].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[12].prize}}</p> 
+          </div>
+
+          <!-- MATLAB -->
+          <div :cursor="otherPrizes[13].image" class="portfolio-item prize flex flex-col justify-between lg:mr-8 w-full py-4 px-4 border-4 border-navy bg-offwhite rounded-md col-span-3">
+            <div>
+              <p :cursor="otherPrizes[13].image" class="text-xl md:text-xl font-bold font-poppins navy">{{otherPrizes[13].name}}</p>
+              <p :cursor="otherPrizes[13].image" class="mt-3 text-l md:text-md font-md font-text navy">{{otherPrizes[13].description}}</p>
+            </div>
+            <p :cursor="otherPrizes[13].image" class="mt-3 text-l md:text-md font-bold font-text pink">{{otherPrizes[13].prize}}</p> 
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SCHEDULE -->
+      <div id="schedule" style="padding-top:5em;" class="md:mx-8 rounded-lg px-8 lg:px-28 border-4 border-[#9F2D58] border-dashed mt-16 md:mt-24 py-16">
+        <p class="pb-2 pink text-4xl font-semibold font-poppins">Schedule</p>
+        <p class="pb-4 pink text-lg font-semibold font-poppins opacity-80">*All events are shown in your local timezone.</p>
+        <div class="flex flex-col md:flex-row gap-16">
+          <div class="md:w-1/2">
+            <p class="inline-block mt-4 mb-8 text-2xl font-semibold pink font-poppins border-b-4 border-[#9F2D58]">
+              Saturday
+            </p>
+            <div v-for="(event, i) in eventsSaturday" class="group">
+              <div class="flex gap-8 justify-between py-3 px-2">
+                <p class="font-text font-semibold w-[75px] flex-shrink-0 navy ">{{event.time}}</p>
+                <div>
+                  <p class="font-text font-semibold text-right navy">{{event.event}}</p>
+                  <p v-if="event.description != ''" class="font-text text-sm font-semibold md:text-right navy">{{event.description}}</p>
+                </div>
+              </div>
+              <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <p class="inline-block mt-4 mb-8 text-2xl font-semibold pink font-poppins border-b-4 border-[#9F2D58]">
+              Sunday
+            </p>
+            <div v-for="(event, i) in eventsSunday" class="group">
+              <div class="flex gap-8 justify-between py-3 px-2">
+                <p class="font-text font-semibold w-1\/5 flex-shrink-0 navy">{{event.time}}</p>
+                <div>
+                  <p class="font-text font-semibold text-right navy">{{event.event}}</p>
+                  <p v-if="event.description != ''" class="font-text text-sm font-semibold md:text-right navy">{{event.description}}</p>
+                </div>
+              </div>
+              <div class="h-[2px] w-full rounded-full bg-gray-400 group-hover:bg-gray-700 transition-all"></div>
+            </div>
+            <div class="absolute hidden md:flex justify-center -bottom-16 left-0 right-0">
+              <img class="h-[300px]" src="../static/th-2023/assets/stack.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sponsors" class="px-8 lg:px-28 pt-24 flex items-end">
+        <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Sponsors </p>
+        <img class="sm:max-h-28 max-h-14" src="../static/th-2023/assets/sponsors_img.png">
+      </div>
+
+      <!-- Begin Sponsors -->
+      <div  class="items-center grid grid-cols-6">
+        <div class="col-span-6 px-12 md:px-28 pt-12" v-for="item in sponsorsLG" :key="item.id">
+          <center>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:block hidden lg:max-w-4xl w-max h-auto"></a>
+            <a v-bind:href="item[2]" target="_blank" rel="noopener noreferrer"><img :src="item[1]" class="sm:hidden w-max h-auto"></a>
+          </center>
+        </div>
+        <div class="sm:col-span-3 col-span-6 py-12 sm:px-12 px-20" v-for="item in sponsorsMD" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-36 max-h-24 max-w-xs"></a>
+          </center>
+        </div> 
+        <div class="py-12 sm:px-12 px-20 sm:col-span-2 col-span-6" v-for="item in sponsorsSM" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="sm:max-h-32 max-h-24 lg:max-w-xs max-w-1/2"></a>
+          </center>
+        </div>
+      </div> 
+      <!-- End Sponsors  -->
+      
+      <!-- Start Partners -->
+      <div class="px-8 lg:px-28">
+        <p class="sm:pr-36 pr-12 align-baseline text-left font-bold text-3xl font-poppins text-[#9F2D58]">Partners </p>
+      </div>
+      
+      <div class="items-center grid grid-cols-6">
+        <div class="sm:col-span-2 col-span-6 p-12" v-for="item in partners1" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 lg:max-w-xs max-w-1/2"></a>
+          </center>     
+        </div>
+        <div class="sm:col-span-3 col-span-6 p-12" v-for="item in partners2" :key="item.id">
+          <center>
+            <a v-bind:href="item[1]" target="_blank" rel="noopener noreferrer"><img :src="item[0]" class="max-h-32 lg:max-w-xs max-w-1/2"></a>
+          </center>     
+        </div>
+      </div>
+      <!-- End Partners -->
+
+      <!-- Begin Happy Hacking Div  -->
+      <div id="construction" style="padding-top:6em;">
+        <div cursor="cursorleft.svg" class="flex justify-center mt-32 mb-16 pt-8 pb-16 mx-8 md:mx-16 rounded-lg bg-[#f9fba5] border-4 border-[#FED522] bg-opacity-10 portfolio-item construction border-dashed md:cursor-none">
+          <div cursor="cursorleft.svg" class="cursor"></div>
+          <div cursor="cursorleft.svg" class="hidden lg:flex cursor-follower"></div>
+          <div cursor="cursorleft.svg" class="flex flex-col justify-center px-8 select-none">
+            <div cursor="cursorleft.svg" class="flex justify-center">
+              <img cursor="cursorleft.svg" class="flex justify-center" src="../static/th-2023/assets/happyhacking.svg" class="w-1/2 h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Happy Hacking Div  -->
+
+      <div id="footer" class="my-24" style="padding-top:6em;"> 
+        <!-- <div class="flex justify-center items-center pb-8">   
+          <img src="../static/th-2023/assets/happy_hacking.svg" class="sm:w-1/2 w-3/4 h-auto">
+        </div>  -->
+          <div class="w-screen h-2 bg-[#d490aa]"></div> 
+      </div>
+      
+      <!-- Begin Mailchimp Signup Form  -->
+      <!-- Ref: https://briancaffey.github.io/2020/10/10/how-to-add-email-signup-form-to-nuxt-site-with-mailchimp.html/ -->
+
+        <div class="lg:flex lg:justify-between items-center px-8 lg:px-16">
+          <div class="lg:text-start text-center">  
+            <p class="mb-0 font-poppins navy text-2xl font-bold">Sign up to our newsletter</p>
+            <p class="font-poppins navy">Stay connected! Sign up for our mailing list for events, updates, and more.</p>
+          </div>
+          <!-- TODO:: Add input validation -->
+          <form
+            action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
+            method="post" 
+            id="mc-embedded-subscribe-form" 
+            name="mc-embedded-subscribe-form" 
+            target="_blank" 
+            novalidate
+            > 
+              <div class="mc-field-group lg:flex-none flex justify-center gap-4 py-4">
+                <label for="mce-EMAIL" style="display:none">Email Address </label>
+                <input
+                  type="text"
+                  value=""
+                  name="EMAIL"
+                  class="2xl:w-96 w-72 px-4 py-2 rounded-md border-[#192F6D]" 
+                  id="mce-EMAIL"
+                  placeholder="Enter your email address"
+                />
+                <button class="clear">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="px-4 py-2 rounded-md bg-[#192F6D] hover:bg-white border border-[#192F6D] text-white hover:text-[#192F6D] font-poppins font-semibold"
+                  />
+                </button>
+              </div>
+              <!-- Response divs  -->
+              <!-- <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div> -->
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_43a795784ca963e25903a0da6_9937fe4fc5"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+          </form>
+        </div>
+        <!-- End Mailchimp sign up -->
+        
+        <div class="lg:flex justify-between px-8 lg:px-16 my-8 lg:my-16">
+          <div class="lg:w-1/5">
+            <p class="font-poppins font-bold navy text-3xl mb-8">TAMUhack 2023</p>
+            <p class="font-poppins font-medium navy text-xl mb-8">All the resources you'll need for your hackathon journey.</p>
+            <div id="3d-friend" class="mb-8 hidden xl:block absolute right-5 bottom-5"></div>
+          </div>
+          <div class="flex flex-wrap justify-start lg:justify-center flex-grow gap-12">
+            <div>
+              <p class="font-poppins text-base navy mb-2">Hacker Resources</p>
+              <div v-for="resource in resources" class="mb-2">
+                <a :href="resource.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{resource.title}}</a>
+              </div>
+            </div>
+            <div>
+              <p class="font-poppins text-base navy mb-2">Socials</p>
+              <div v-for="social in socials" class="mb-2">
+                <a :href="social.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{social.title}}</a>
+              </div>
+            </div>
+            <div>
+              <p class="font-poppins text-base navy mb-2">Other Hackathons</p>
+              <div v-for="hack in otherHackathons" class="mb-2">
+                <a :href="hack.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{hack.title}}</a>
+              </div>
+            </div>
+            <div>
+              <p class="font-poppins text-base navy mb-2">Workshops</p>
+              <div v-for="workshop in workshopLinks" class="mb-2">
+                <a :href="workshop.link" target="_blank" rel="noreferrer noopener" class="font-poppins font-medium text-lg navy">{{workshop.title}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-0">
+        <div class="h-[3px] mx-4 bg-[#1a2542] rounded-xl bg-opacity-5"></div>
+        <p class="py-3 pl-8 navy text-sm">
+        Interested in sponsoring? Reach out to us at <a class="underline"
+                                                        href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- <div style="height: 314px; background: url('./../../static/th-2021/img/bottom.png')">
+      <div class="text-center sm:pl-16 sm:text-left" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+        <p style="padding-top: 200px;" class="sponsor-offset">
+          Interested in sponsoring? Reach out to us at <a class="underline " href="mailto:sponsor@tamuhack.com">sponsor@tamuhack.com</a>.
+        </p>
+      </div>
+    </div> -->
+
+    <script src="https://unpkg.com/vue@2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- 3D-Friend :3 -->
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+            "three": "./../static/th-2023/3d-friend/three_js/three.module.js",
+            "orbit_controls": "./../static/th-2023/3d-friend/three_js/OrbitControls.js",
+            "gltf_loader": "./../static/th-2023/3d-friend/three_js/GLTFLoader.js",
+            "outline_effect": "./../static/th-2023/3d-friend/three_js/OutlineEffect.js"
+        }
+    }
+    </script>
+    <script type="module">
+      // https://github.com/NitroGuy10/Web-Friend
+
+      import * as THREE from 'three';
+      import { OrbitControls } from 'orbit_controls';
+      import { GLTFLoader } from 'gltf_loader';
+      import { OutlineEffect } from 'outline_effect';
+
+
+      // Setup
+      const SCENE_WIDTH = 150;
+      const SCENE_HEIGHT = 150;
+      const FOV = 50;
+      const CAMERA_DISTANCE = 8;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(FOV, SCENE_WIDTH / SCENE_HEIGHT, 0.1, 1000);
+      camera.position.z = CAMERA_DISTANCE;
+
+      const renderer = new THREE.WebGLRenderer({
+          antialias: true
+      });
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.setClearColor(0xffffff, 1);
+      renderer.setSize(SCENE_WIDTH, SCENE_HEIGHT);
+      renderer.domElement.classList.add("cursor-grab", "active:cursor-grabbing");  // "border-4", "border-dashed", "border-[#1D336F]"
+      document.getElementById("3d-friend").appendChild(renderer.domElement);
+
+      const outline_brightness_scalar = 0.3;
+      const effect = new OutlineEffect(renderer, {
+          defaultAlpha: 1.0,
+          defaultThickness: 0.05,
+          defaultColor: [ 20/255 * outline_brightness_scalar, 51/255 * outline_brightness_scalar, 180/255 * outline_brightness_scalar],
+      });
+
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableZoom = false;
+      controls.enablePan = false;
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.01;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 2.0;
+      controls.minPolarAngle = Math.PI / 4;
+      controls.maxPolarAngle = 3 * Math.PI / 4;
+
+
+      // Add friend
+      const loader = new GLTFLoader();
+      let gltfScene;
+      let gltfSceneInitialScale;
+
+      loader.load('/static/th-2023/3d-friend/models/friend_smol_faces_rounded.glb', function ( gltf ) {
+          gltfScene = gltf.scene
+          gltfSceneInitialScale = {
+            x: gltfScene.scale.x,
+            y: gltfScene.scale.y,
+            z: gltfScene.scale.z
+          }
+          scene.add(gltfScene);
+
+          const sceneScalar = 1.15;
+          gltfScene.scale.set(sceneScalar * gltfSceneInitialScale.x, sceneScalar * gltfSceneInitialScale.y, sceneScalar * gltfSceneInitialScale.z);
+
+          // resizeWindow();
+      }, undefined, function (error) {
+          console.error(error);
+      });
+
+
+      // Add lighting
+      const light = new THREE.AmbientLight(0xffffff, 1);
+      scene.add(light);
+
+
+      // Animate
+      function animate()
+      {
+        requestAnimationFrame(animate);
+
+        if (window.innerWidth >= 1024)  // Don't render on mobile
+        {
+          controls.update();
+          renderer.render(scene, camera);
+          effect.render(scene, camera);
+        }
+      }
+      animate();
+
+      /*
+      window.addEventListener('resize', resizeWindow, false);
+      function resizeWindow ()
+      {
+        const maxWidth = 500;
+        const windowWidth = Math.min(maxWidth, window.innerWidth - 200);
+        camera.aspect = 1;
+        camera.updateProjectionMatrix();
+        // const sceneScalar = windowWidth * 0.0026;
+        const sceneScalar = 434 * 0.0026;
+        gltfScene.scale.set(sceneScalar * gltfSceneInitialScale.x, sceneScalar * gltfSceneInitialScale.y, sceneScalar * gltfSceneInitialScale.z);
+        renderer.setSize(windowWidth, windowWidth);
+      }
+      */
+
+    </script>
+
+    <!-- Create a vue.js object -->
+    <script>
+      let v = new Vue({
+        el: '#app',
+        data: function () {
+          return {
+            // Needed for window.open, as seen in the navbar segment
+            navOpacity: 0,
+            window: {
+              width: 0,
+              height: 0
+            },
+            // Store an array. Useful for looping
+            //links: ["Info", "Schedule", "Prizes", "FAQ", "Sponsors"],
+            links: ["Schedule", "Prizes", "FAQ"],
+            faqs: [
+              {
+                title: "How much experience do I need?",
+                desc: "Absolutely zero! We want you here because you have a passion for creating, not because you’re the most experienced hacker on the block. We’ll have lots of resources including workshops and a bunch of mentors to help beginners get started. There'll also be plenty of people to learn from and help out!"
+              },
+              {
+                title: "How much does it cost?",
+                desc: "Nothing. Nada. Zilch. It’s completely free for all accepted hackers. To make it even better, we’ll be giving out a ton of swag to every hacker, and prizes to our winners."
+              },
+              {
+                title: "What should I bring?",
+                desc: "Please bring a valid student ID in addition to anything that would help you with creating your hack or making you comfortable. A laptop, charger, mouse, keyboard, hardware, light jacket, and any hygienic products should be helpful. Don't bring anything you wouldn't bring on an airplane."
+              },
+              {
+                title: "How do teams work?",
+                desc: "Teams are limited to 1-4 hackers. If you have a team in mind, make sure all members submit an application before the deadline. If you don't have a team and would like to be a part of one, no worries! We'll have a dedicated time for team formation after the opening ceremony. Teams are only finalized when the final Devpost submission is due."
+              },
+              {
+                title: "What classifies a project as a 'beginner hack'?",
+                desc: "A beginner hack is a project where 50% or more of the team members have never participated in a hackathon before. If you're not sure if your project qualifies, just ask us!"
+              },
+              {
+                title: "What do I need to submit?",
+                desc: "All teams are REQUIRED to complete a Devpost submission for their project by 11:59 AM on 01/29/23 to be considered for judging. Submitting a video demo on Devpost is MANDATORY!"
+              },
+              {
+                title: "Will there be workshops or talks?",
+                desc: "Of course! We will have workshops running throughout the whole event. We will release the complete schedule on the website closer to the event."
+              },
+            ],
+            eventsSaturday: [
+              {
+                time: "09:00 AM",
+                event: "Doors Open, Check-In Starts",
+                type: "general"
+              },
+              {
+                time: "10:00 AM",
+                event: "Career Fair",
+                type: "general"
+              },
+              {
+                time: "11:00 AM",
+                event: "Opening Ceremony",
+                type: "general"
+              },
+              {
+                time: "11:30 AM",
+                event: "Team Formation",
+                type: "general"
+              },
+              {
+                time: "12:00 PM",
+                event: "Hacking starts + Lunch",
+                type: "food"
+              },
+              {
+                time: "12:30 PM",
+                event: "Intro to Web Dev",
+                type: "workshop"
+              },
+              {
+                time: "01:15 PM",
+                event: "Intro to Git",
+                type: "workshop"
+              },
+              {
+                time: "02:45 PM",
+                event: "American Airlines Workshop",
+                type: "workshop"
+              },
+              {
+                time: "4:00 PM",
+                event: "MLH Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "4:45 PM",
+                event: "PRHI Workshop",
+                type: "workshop"
+              },
+              {
+                time: "5:30 PM",
+                event: "Goldman Sachs Workshop",
+                type: "workshop"
+              },
+              {
+                time: "6:15 PM",
+                event: "CBRE Workshop",
+                type: "workshop"
+              },
+              {
+                time: "7:00 PM",
+                event: "American Airlines Mini-event",
+                type: "workshop"
+              },
+              {
+                time: "7:30 PM",
+                event: "Dinner",
+                type: "workshop"
+              },
+              {
+                time: "8:30 PM",
+                event: "MLH Workshop",
+                type: "workshop"
+              },
+              {
+                time: "10:00 PM",
+                event: "Hacker Speed Dating",
+                type: "workshop"
+              },
+              {
+                time: "10:45 PM",
+                event: "Frozen T-shirt Contest",
+                type: "workshop"
+              },
+              {
+                time: "11:20 PM",
+                event: "Vibez with Li",
+                type: "workshop"
+              },
+            ],
+            eventsSunday: [
+              {
+                time: "12:00 AM",
+                event: "Talent Show",
+                type: "event"
+              },
+              {
+                time: "01:00 AM",
+                event: "Lo-fi and Chill",
+                type: "event"
+              },
+              {
+                time: "07:00 AM",
+                event: "Breakfast",
+                type: "food"
+              },
+              {
+                time: "09:00 AM",
+                event: "Morning Yoga with Keegan",
+                type: "event"
+              },
+              {
+                time: "10:00 AM",
+                event: "Devpost Presentation + Office Hours",
+                type: "general"
+              },
+              {
+                time: "12:00 PM",
+                event: "Hacking Ends",
+                type: "general"
+              },
+              {
+                time: "01:00 PM",
+                event: "Lunch",
+                type: "food"
+              },
+              {
+                time: "02:00 PM",
+                event: "Judging",
+                type: "general"
+              },
+              {
+                time: "04:30 PM",
+                event: "Closing Ceremony",
+                type: "general"
+              }
+            ],
+            prizes: [
+              {
+                name: "Grand Prize",
+                description: "1st place overall prize.",
+                prize: "Prize: iPad (2021)",
+                image: "ipad.png",
+              },
+              {
+                name: "Second Place",
+                description: "2nd place overall prize.",
+                prize: 'Prize: 31" 4K Monitor',
+                image: "monitor.png",
+              },
+              {
+                name: "Third Place",
+                description: "3rd place overall prize.",
+                prize: "Prize: Beats Solo 3",
+                image: "headphones.png",
+              },
+
+            ],
+            otherPrizes: [
+              {
+                name: "Best UI/UX Hack",
+                description: "In the world of hacking and engineering, a product must not only work well, but also provide the best user experience possible. Best hack that demonstrates clear design and usability intentions.",
+                prize: "Prize: Fujifilm Instax Mini 7+",
+                image: "camera.png",
+              },
+              {
+                name: "Best Beginner Hack",
+                description: "Congratulations for competing in your first hackathon! Best hack created by first-time hackers at TAMUhack (team must have at least 2 first-timers to qualify).",
+                prize: 'Prize: Echo Dot (5th Gen) + Philips Hue Smart Lightbulb',
+                image: "echo.png",
+              },
+              {
+                name: "AA Challenge: Best Airlines Hack",
+                description: "Create a solution for the airline industry, be it passenger experience, employee experience, or operational efficiencies.",
+                prize: "Prize: AAdvantage 25k, 50k, 75k miles",
+                image: "aaprize.png",
+              },
+              {
+                name: "GM Challenge",
+                description: "Design an app or system that helps GM accomplish its goal of Zero Crashes, Zero Emissions, and Zero Congestion",
+                prize: "Prize: 250$ Amazon Gift Cards",
+                image: "amazongift.png",
+              },
+              {
+                name: "PRHI Challenge",
+                description: "Envision the best technology-enabled patient safety solution that has the potential to avert patient harm and save lives and the top team will win $1000. Your hack must align with one of the following five leading patient safety challenges anywhere across the continuum of care: medication errors, procedural/surgical errors, errors during routine patient care, infections, and diagnostic safety.",
+                prize: "Prize: 250$ Amazon Gift Cards",
+                image: "amazongift2.png",
+              },
+              {
+                name: "CBRE Challenge",
+                description: "CBRE is the #1 commercial real estate firm in the world. We lease, sell, manage, and maintain our clients commercial property for them, so they can focus on what they do best. Managing the day-to-day operations of corporate offices is an example of a service we specialize in. Your challenge is to develop a web or mobile app that will increase employee engagement & satisfaction in the workplace, as many return to the workplace for the first time in years.",
+                prize: "Prize: $150, $75, $50 Amazon Gift Cards for 1st, 2nd, 3rd place",
+                image: "amazongift2.png",
+              }, 
+              {
+                name: "Goldman Sachs Challenge",
+                description: "Build a risk analysis tool that someone would use when considering how to manage and invest their money.",
+                prize: "Prize: 1. Apple TVs, 2. JBL Speakers, 3. Grubhub Giftcards",
+                image: "goldmanprize.png",
+              },
+              {
+                name: "Hardware Challenge: Best Hardware Hack",
+                description: "Best hack that involves hardware usage/integration.",
+                prize: "Prize: TBD",
+                image: ""
+              },
+              {
+                name: "PIMCO Challenge",
+                description: "Create a financial literacy tool for either children, adolescents or college students",
+                prize: "Prize: $80 Amazon Gift Cards",
+                image: "amazongift.png"
+              },
+              {
+                name: "Best Use of MongoDB Atlas",
+                description: "MongoDB Atlas takes the leading modern database and makes it accessible in the cloud! Get started with a $50 credit for students or sign up for the Atlas free forever tier (no credit card required). Along with a suite of services and functionalities, you'll have everything you need to manage all of your data! Build a hack using MongoDB Atlas for a chance to win a M5GO IoT Starter Kit for you and each member of your team.",
+                prize: "Prize: M5G0 IoT Starter Kit", 
+                image: ""
+              },
+              {
+                name: "Best Domain Name from Domain.com",
+                description: "Register a .tech domain name using Domain.com during the weekend. Each team may submit one entry per person on the team. Each winning team member will receive a Domain.com Branded Backpack",
+                prize: "Prize: Domain.com Branded Backpack",
+                image: ""
+              },
+              {
+                name: "Best Use of MATLAB",
+                description: "MATLAB and Simulink are computation tools used at more than 5,000 institutions worldwide. Use their software in your next hack to win some exclusive MathWorks swag including a MathWorks branded cinch bag, pair of socks, baseball cap, stylus pen & deck of cards! You can also claim a free MATLAB software license to get started.",
+                prize: "Prize: MathWorks Swag Bag",
+                image: ""
+              },
+              {
+                name: "Best Use of Velo by Wix",
+                description: "We know how difficult it can be to create a phenomenal website in a short period of time, especially when it comes to hackathons. Velo by Wix cuts down your development time without sacrificing on functionality! With a built-in database and fully customizable JavaScript frontend and backend, you can develop a full-stack application directly in your browser. With Velo, all the tools you need are conveniently located in one platform! Build your hackathon project with Velo by Wix for a chance to win Wacom Drawing Tablets for you and each of your teammates.",
+                prize: "Prize: Wacom Drawing Tablet",
+                image: ""
+              },
+
+              {
+                name: "Best Use of Microsoft Cloud for Your Community",
+                description: "Bring your idea to life using the Microsoft Cloud - automatically build and deploy a full stack web app from a code repository, create and train a Machine Learning model, develop business applications with little to no code using Power Platform, and more! View our recommended popular solutions in the Education Hub at https://aka.ms/startedu. Build your hackathon project with the Microsoft Cloud that tackles a social impact issue of your choice, and have a chance to win a LinkedIn Premium 12-Month subscription and an XBox Ultimate 3-Month Game Pass subscription.",
+                prize: "Prize: LinkedIn Premium 12-Month subscription and Xbox Ultimate 3-Month Game Pass",
+                image: ""
+              },
+              {
+                name: "USAA Challenge",
+                description: "Build a solution using open source technology, preferably use object oriented language, cloud technology, and include a data source. Stretch Goals: Build an information aggregator, adding maintainability and reliability.",
+                prize: "Prize: Smart Light Bar, Anker Portable Charger, Handheld Fidget Cube for 1st, 2nd, 3rd place",
+                image: ""
+              },
+            ],
+            resources: [
+              {
+                title: "HelpR",
+                link: "https://tamuhack.com/help"
+              },
+              {
+                title: "Devpost",
+                link: "https://tamuhack-2023.devpost.com/"
+              },
+              {
+                title: "Spotify Queue",
+                link: "https://spotted-user.onrender.com"
+              },
+              {
+                title: "Hacker Guide",
+                link: "https://mountain-burglar-040.notion.site/Hacker-Starter-Guide-8f63850820444aa8a0f1ee28f971437d"
+              },
+              {
+                title: "Code of Conduct",
+                link: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              },
+            ],
+            socials: [
+              {
+                title: "Instagram",
+                link: "https://www.instagram.com/tamuhack/?hl=en"
+              },
+              {
+                title: "TikTok",
+                link: "https://www.tiktok.com/@tamuhack?"
+              },
+              {
+                title: "LinkedIn",
+                link: "https://www.linkedin.com/company/tamuhack"
+              },
+              {
+                title: "Discord",
+                link: "https://discord.gg/jSTPpy4F"
+              },
+            ],
+            otherHackathons: [
+              {
+                title: "TAMU Datathon",
+                link: "https://tamudatathon.com/"
+              },
+              {
+                title: "HackTX",
+                link: "https://hacktx.com/"
+              },
+              {
+                title: "HackUNT",
+                link: "https://unthackathon.com/"
+              },
+              {
+                title: "HackUTD",
+                link: "https://hackutd.co/"
+              },
+              {
+                title: "RowdyHacks",
+                link: "https://www.rowdyhacks.org/"
+              },
+            ],
+            workshopLinks: [
+              {
+                title: "Web Dev",
+                link: "https://tamuhack.com/web-workshop"
+              },
+              {
+                title: "Intro to Git",
+                link: "https://tamuhack.com/git"
+              },
+            ],
+            sponsorsLG: [
+              [
+                '../static/th-2023/assets/aa.png',
+                '../static/th-2023/assets/aa_sm.png',
+                'https://jobs.aa.com/'
+              ],
+            ],
+            sponsorsMD: [
+              [
+                '../static/th-2023/assets/Chevron.png',
+                'https://careers.chevron.com/'
+              ],
+              [
+                '../static/th-2023/assets/Goldman_Sachs.png',  
+                'https://www.goldmansachs.com/careers/'
+              ],
+            ],
+            sponsorsSM: [
+              [
+                '../static/th-2023/assets/bp.png',  
+                'https://www.bp.com/en/global/corporate/careers.html'
+              ],
+              [ 
+                '../static/th-2023/assets/pimco.png',  
+                'https://www.pimco.com/en-us/our-firm/careers'
+              ],
+              [
+                '../static/th-2023/assets/gm.png',  
+                'https://search-careers.gm.com/'
+              ],
+              [
+                '../static/th-2023/assets/ea.png',  
+                'https://www.ea.com/careers'
+              ],
+              [
+                '../static/th-2023/assets/CBRE.png',  
+                'https://www.cbre.com/careers'
+              ],
+              [
+                '../static/th-2023/assets/PRHI.png',  
+                'https://www.prhi.org/'
+              ],
+              [
+                '../static/th-2023/assets/USAA.png',  
+                'https://www.usaajobs.com/'
+              ],
+              [
+                '../static/th-2023/assets/WA.png',  
+                'https://www.wolfram.com/company/careers/opportunities/'
+              ],
+              [
+                '../static/th-2023/assets/echoAR.png',
+                'https://www.echo3d.com/about/careers'
+              ]
+            ],
+        partners1: [
+          [
+            '../static/th-2023/assets/tamu_csce.png',   
+            'https://engineering.tamu.edu/cse/index.html'
+          ],
+          [
+            '../static/th-2023/assets/SEC.png',   
+            'https://sec.tamu.edu/'
+          ],
+          [
+            '../static/th-2023/assets/tamu.png',           
+            'https://tamu.edu/' 
+          ], 
+        ],
+        partners2:[
+          
+          [
+            'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Guayak%C3%AD_corporate_logo.svg/440px-Guayak%C3%AD_corporate_logo.svg.png',
+            'https://guayaki.com/'
+          ],
+          [
+            'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/440px-RedBullEnergyDrink.svg.png',
+            'https://redbull.com/'       
+          ],
+          
+        ]
+    }
+},
+  created() {
+    window.addEventListener('resize', this.handleResize);
+    window.addEventListener("scroll", this.handleScroll);
+    this.handleResize();
+
+    axios({
+      method: 'get',
+      url: 'https://o5fot0gpog.execute-api.us-east-1.amazonaws.com/Prod/getSchedule',
+    })
+    .then(function (response) {
+      let sat = [];
+      let sun = [];
+      let events = response.data.Items;
+      //for each event, if the event.date is before 1/29/2023, push it to the sat array, else push it to the sun array
+      events.forEach(event => {
+        let newEvent = {}
+        newEvent.event = event.time;
+        newEvent.time = moment(event.date).format('LT');
+        newEvent.date = moment(event.date).format();
+        newEvent.description = event.description;
+        
+        if(newEvent.event.includes("Morning Yoga")) {
+          let index = Math.floor(Math.random() * team.length);  
+          newEvent.event = "Morning Yoga with " + team[index];
+        }
+        if(newEvent.date < "2023-01-29T00:00:00-06:00") {
+          sat.push(newEvent);
+        } else {
+          sun.push(newEvent);
+        }
+      });
+
+      //sort the sat and sun arrays by date
+      sat.sort((a, b) => (moment(a.date).format() > moment(b.date).format()) ? 1 : -1);
+      sun.sort((a, b) => (moment(a.date).format() > moment(b.date).format()) ? 1 : -1);
+
+      v.eventsSaturday = sat;
+      v.eventsSunday = sun;
+
+    });
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleResize() {
+      this.window.width = window.innerWidth;
+      this.window.height = window.innerHeight;
+    },
+    handleScroll(event) {
+      // Any code to be executed when the window is scrolled
+      if(window.scrollY > 100) {
+        return (this.navOpacity = 0.25);
+      } else {
+        return (this.navOpacity = window.scrollY * 0.0025); 
+      }
+    },
+  },
+})
+  var img=new Image();
+  img.src="../static/th-2023/assets/landingtwo.apng";
+
+
+  //I'm so sorry for whoever has to read this.
+  const lastPoint = {x: null, y: null}
+  var cursor = $(".cursor"),
+  follower = $(".cursor-follower");
+
+  var posX = 0,
+      posY = 0,
+      mouseX = 0,
+      mouseY = 0;
+
+      TweenMax.to({}, 0.016, {
+          repeat: -1,
+          onRepeat: function() {
+              posX += (mouseX - posX - 50) / 9;
+              posY += (mouseY - posY - 50) / 9;
+
+              TweenMax.set(follower, {
+                  css: {
+                      left: posX ,
+                      top: posY 
+                  }
+              });
+
+              TweenMax.set(cursor, {
+                  css: {
+                      left: mouseX,
+                      top: mouseY
+                  }
+              });
+          }
+      });
+
+
+      $(".portfolio-item").on("mousemove", function(e) {
+          mouseX = e.pageX;
+          mouseY = e.pageY;
+
+          if(e.target.id == "construction" || e.target.getAttribute("cursor") == "cursorleft.svg") {
+            const leftOrRight = (
+              e.clientX > lastPoint.x ? 'right'
+              : e.clientX < lastPoint.x ? 'left'
+              : 'none'
+            )
+
+            if(leftOrRight == "right") {
+              follower.addClass("right");
+              follower.removeClass("left");
+              follower.removeClass("still");
+            }
+
+            else if(leftOrRight == "left") {
+              follower.addClass("left");
+              follower.removeClass("right");
+              follower.removeClass("still");
+            } 
+
+            lastPoint.x = e.clientX
+            lastPoint.y = e.clientY
+          }
+
+      });
+
+      $(".portfolio-item").on("mouseenter", function(e) {
+          let target = e.target;
+          follower.css("background-image", "url(../static/th-2023/assets/" + target.getAttribute("cursor") + ")");
+          cursor.addClass("active");
+          follower.addClass("active");
+      });
+
+      $(".portfolio-item").on("mousedown", function() {
+          follower.addClass("clicked");
+      });
+
+      $(".portfolio-item").on("mouseup", function() {
+          follower.removeClass("clicked");
+      });
+
+      $(".portfolio-item").on("mouseleave", function() {
+          cursor.removeClass("active");
+          follower.removeClass("active");
+          follower.removeClass("right");
+          follower.removeClass("left");
+      });
+
+      $(document).ready(function(){
+        $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingone.apng");
+        setTimeout(function(){
+          $("div#logo img#overlayEffect").attr("src", "../static/th-2023/assets/landingtwo.apng");
+      }, 5000);
+    });
+
+    const team = [
+      "Ekdev",
+      "Irene",
+      "Vivian",
+      "Adil",
+      "Kirthi",
+      "Jaden",
+      "Malavi",
+      "Jiyoon",
+      "Naveen",
+      "Naveen",
+      "Ayo",
+      "Ashrita",
+      "Arya",
+      "Vanessa",
+      "Anish",
+      "Anjali",
+      "Gabe",
+      "Harshita",
+      "Josh",
+      "Keegan",
+      "Lizzy",
+      "Mateo",
+      "Nafi",
+      "Li",
+    ]
+
+    </script>
+  </body>
+</html>
