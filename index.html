@@ -263,11 +263,18 @@
                   <p class="timeline-description">
                     {{ hackathon.description }}
                   </p>
-                  <p v-if="hackathon.link!=false">
-                    <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
-                      Visit Event Page
-                    </a>
-                  </p>
+                  <div class="button-container">
+                    <p v-if="hackathon.link!=false">
+                      <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
+                        Visit Event Page
+                      </a>
+                    </p>
+                    <p v-if="hackathon.photos">
+                      <a class="btn btn-primary tamu-hollow-button" :href="hackathon.photos" role="button" target="_blank">
+                        See Photos
+                      </a>
+                    </p>
+                  </div>
                 </div>
                 <div class="row">
                   <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
@@ -1813,6 +1820,7 @@
             {
               name: "TAMUhack 2023",
               link: "/th/2023",
+              photos: "https://photos.app.goo.gl/hHmLXAvGgRBJ6hh58",
               logo: "th23",
               description: "The best hackathon comes in all shapes and sizes!",
               directors: [
@@ -2025,6 +2033,7 @@
             {
               name: "HowdyHack 2023",
               link: "/hh",
+              photos: "https://drive.google.com/drive/folders/14Hfw89hkB6EeMF919Ttsmuz4ueLtzBzO",
               logo: "hh23",
               description: "Retro vibes, modern hacks at HowdyHack '23!",
               directors: [
