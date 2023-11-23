@@ -743,13 +743,31 @@ input.form-control {
     padding: 22px 18px;
 }
 
+.button-container {
+    display: flex;
+    gap: 16px;
+}
+
 .tamu-button {
     background-color: #FF7C93 !important;
-    border-radius: 4px!important;
+    border-radius: 4px !important;
+    border: 2px solid #FF7C93 !important;
 }
 
 .tamu-button:hover {
     background-color: #D47082 !important;
+    border: 2px solid #D47082 !important;
+}
+
+.tamu-hollow-button {
+    background-color: white !important;
+    border: 2px solid #FF7C93 !important;
+    color: #D47082;
+}
+
+.tamu-hollow-button:hover {
+    background-color: #D47082 !important;
+    border: 2px solid #D47082 !important;
 }
 
 .hh-button {
