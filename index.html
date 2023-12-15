@@ -38,8 +38,8 @@
     <!--BEGIN Navbar-->
 
     <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
-    <a v-if="bannerShown" href="/teams" class="toast">
-      Apply to be a TAMUhack organizer!
+    <a v-if="bannerShown" href="https://register.tamuhack.com" class="toast">
+      Register for TAMUhack X!
     </a>
 
     <div class="nav-container container">
@@ -75,7 +75,7 @@
         <img alt="" src="./static/assets/tamuhacfull_k.svg" id="good-morning-trigger"
           style="cursor: pointer; z-index: 10; flex: 0 0 100%;" />
           <!--Date for TAMUhack :3-->
-          <!--<h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January 28-29, 2023</h5>-->
+          <h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January 27-28, 2024</h5>
       </div>
       <div class="backdrop-container">
         <img alt="" src="./static/assets/th20-hub-pink-buildings.svg" class="backdrop" />
@@ -453,7 +453,7 @@
       el: "#app",
       data: function () {
         return {
-          bannerShown: false,
+          bannerShown: true,
           party: false,
           hackathons: [
             {
