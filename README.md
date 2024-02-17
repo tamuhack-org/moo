@@ -1,6 +1,6 @@
 # Moo - TAMUhack Static Site
 
-You can visit the site at [https://tamuhack.com/](https://tamuhack.com/).
+You can visit the site at [https://tamuhack.com/](https://tamuhack.com/)
 
 ## Sitemap
 - https://tamuhack.com/
