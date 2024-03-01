@@ -96,6 +96,13 @@
     padding: 15px;
 }
 
+.th24::after {
+    background-image: url("../th-2024/assets/th24.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
+
 /* END HACKATHON LOGOS */
 
 .no-list-style {
