@@ -1,0 +1,141 @@
+html {
+    background-color: #FAFAFA;
+}
+
+.bg-offwhite {
+    background-color: #FAFAFA;
+}
+
+.bg-sky {
+    background-color: #EEF6FC;
+}
+
+.raleway-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.futura-font {
+    font-family: 'Futura';
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(./../static/fonts/Futura/Futura-Bold/futura-bold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(./../static/fonts/Futura/Futura-Light/futura-light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url(./../static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
+    font-weight: regular;
+}
+
+.opensans-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navy {
+    color: #345562;
+}
+
+.navy-button {
+    background-color: #345562;
+}
+
+.navy-border {
+    border-color: #345562;
+}
+
+.kinda-black {
+    color: #232323;
+}
+
+.baby-blue {
+    background-color: #EEF6FC;
+    ;
+}
+
+.baby-pink {
+    background-color: #FFA4C6;
+    color: #B4B4B4;
+}
+
+
+.baby-pink-text {
+    color: #F3859B;
+}
+
+.gray-text {
+    color: #989494;
+}
+
+.baby-blue-text {
+    color: #7FC0FA;
+}
+
+.baby-pink-txt {
+    color: #FFA4C6;
+}
+
+.th-pink-txt {
+    color: #f87090;
+}
+
+.centerr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.th-pink {
+    background-color: #f87090;
+}
+
+.th-blue-txt {
+    color: #3e688c;
+}
+
+.custom-button {
+    font-family: "Avenir Next";
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.custom-button-grayed {
+    font-family: "Avenir Next";
+    color: #B4B4B4;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 5px #B4B4B4;
+}
+
+.custom-button-grayed:hover {
+    font-family: "Avenir Next";
+    color: #B4B4B4;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 5px #375764;
+}
+
+.mailing-signup {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
