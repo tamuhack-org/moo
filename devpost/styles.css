@@ -141,5 +141,38 @@ html {
 }
 
 .body-container {
-    padding-inline: clamp(2.5rem, -2.5rem + 10.4167vw, 10rem);
+    padding-inline: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack>* {
+    margin-block: 0;
+}
+
+.stack>*+* {
+    --space: 1rem;
+    margin-top: var(--space, 1rem);
+}
+
+.stack-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack-lg>* {
+    margin-block: 0;
+}
+
+.stack-lg>*+* {
+    --space: 3rem;
+    margin-top: var(--space, 1rem);
 }
