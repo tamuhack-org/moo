@@ -139,3 +139,7 @@ html {
     margin-right: auto;
     text-align: center;
 }
+
+.body-container {
+    padding-inline: clamp(2.5rem, -2.5rem + 10.4167vw, 10rem);
+}
