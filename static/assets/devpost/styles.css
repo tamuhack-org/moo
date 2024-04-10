@@ -82,3 +82,18 @@ body {
     --space: 3rem;
     margin-top: var(--space, 1rem);
 }
+
+.aside-link {
+    color: var(--gray);
+    border-left: 2px solid var(--gray);
+}
+
+.aside-link>a:hover {
+    color: var(--kinda-black);
+}
+
+.link-active {
+    color: var(--kinda-black);
+    background-color: var(--baby-blue);
+    border-color: var(--th-pink);
+}
