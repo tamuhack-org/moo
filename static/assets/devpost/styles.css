@@ -1,0 +1,99 @@
+html {
+    background-color: #FAFAFA;
+    scroll-behavior: smooth;
+}
+
+body {
+    --offwhite: #FAFAFA;
+    --sky: #EEF6FC;
+    --navy: #345562;
+    --kinda-black: #232323;
+    --baby-blue: #EEF6FC;
+    --baby-pink: #FFA4C6;
+    --gray: #989494;
+    --th-pink: #f87090;
+    --th-blue: #3e688c;
+}
+
+.raleway-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.futura-font {
+    font-family: 'Futura';
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(./../static/fonts/Futura/Futura-Bold/futura-bold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(./../static/fonts/Futura/Futura-Light/futura-light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url(./../static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
+    font-weight: regular;
+}
+
+.opensans-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.body-container {
+    padding-inline: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack>* {
+    margin-block: 0;
+}
+
+.stack>*+* {
+    --space: 1rem;
+    margin-top: var(--space, 1rem);
+}
+
+.stack-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack-lg>* {
+    margin-block: 0;
+}
+
+.stack-lg>*+* {
+    --space: 3rem;
+    margin-top: var(--space, 1rem);
+}
+
+.aside-link {
+    color: var(--gray);
+    border-left: 2px solid var(--gray);
+}
+
+.aside-link>a:hover {
+    color: var(--kinda-black);
+}
+
+.link-active {
+    color: var(--kinda-black);
+    background-color: var(--baby-blue);
+    border-color: var(--th-pink);
+}
