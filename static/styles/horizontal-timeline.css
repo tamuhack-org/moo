@@ -103,6 +103,14 @@
     padding: 15px;
 }
 
+.hh24::after {
+    background-image: url("../hh-2024/assets/hh24-logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
+
+
 /* END HACKATHON LOGOS */
 
 .no-list-style {
