@@ -43,11 +43,12 @@
     </a>
 
     <div class="nav-container container">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" :style="bannerShown ? 'top: 41px;' : ''" id="top-nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" :style="bannerShown ? 'top: 41px;' : ''"
+        id="top-nav-bar">
         <a class="navbar-brand" href="#">
           <img src="./static/assets/th_logo.svg" class="th-logo" alt="" />
         </a>
-      
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
           <span class="navbar-toggler-icon"></span>
@@ -74,8 +75,9 @@
       <div class="tamuhack-title">
         <img alt="" src="./static/assets/tamuhacfull_k.svg" id="good-morning-trigger"
           style="cursor: pointer; z-index: 10; flex: 0 0 100%;" />
-          <!--Date for TAMUhack :3-->
-          <h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January 27-28, 2024</h5>
+        <!--Date for TAMUhack :3-->
+        <h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January
+          27-28, 2024</h5>
       </div>
       <div class="backdrop-container">
         <img alt="" src="./static/assets/th20-hub-pink-buildings.svg" class="backdrop" />
@@ -86,12 +88,13 @@
         type="image/svg+xml" style="visibility: hidden;"></object>
       <div id="side-to-side">
         <object id="cloud-left" data="./static/assets/cloud.svg" type="image/svg+xml"></object>
-        <object id="cloud-right" data="./static/assets/cloud2.svg" type="image/svg+xml" :style="bannerShown ? 'margin-top: 35px;' : ''"></object>
+        <object id="cloud-right" data="./static/assets/cloud2.svg" type="image/svg+xml"
+          :style="bannerShown ? 'margin-top: 35px;' : ''"></object>
         <object id="blimp-right" data="./static/assets/blimp.svg" type="image/svg+xml"></object>
       </div>
     </header>
     <!--END Header-->
-    
+
     <!--BEGIN Main-->
     <!--BEGIN What We Do Section-->
     <section id="what-we-do-container">
@@ -101,7 +104,8 @@
           <div class="col-md-7 text-center py-5">
             <h1>We organize hackathons</h1>
             <p class="emphasize center">
-              Hackathons are <span>24-hour events</span> where students come together to build an awesome project, meet new people, and win prizes. 
+              Hackathons are <span>24-hour events</span> where students come together to build an awesome project, meet
+              new people, and win prizes.
             </p>
             <br />
           </div>
@@ -139,7 +143,8 @@
               One of the largest annual hackathons in <a href="https://anikaitsharma.com"
                 style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">Texas</a>,
               hosted at Texas <a href="https://abhishekmore.com"
-                style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">A&M</a> U<a href="https://nitroguy.xyz"
+                style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">A&M</a>
+              U<a href="https://nitroguy.xyz"
                 style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">ni</a>versity
             </p><br>
             <p>
@@ -151,13 +156,12 @@
           <!--BEGIN Column-->
           <div class="col-lg-4">
             <img alt="Workshops icon" src="./static/assets/codeslash.svg" style="margin-top: 10px;" />
-            <h1 style="margin-top: 10px;" >Docs</h1>
+            <h1 style="margin-top: 10px;">Docs</h1>
             <p class="custom-p-text">
               Learn how we use software to build our hackathon experience.
             </p><br>
             <p>
-              <a class="btn btn-primary ws-button" href="https://dev.tamuhack.org"
-                role="button">Visit our Docs</a>
+              <a class="btn btn-primary ws-button" href="https://dev.tamuhack.org" role="button">Visit our Docs</a>
             </p>
           </div>
           <!--End Column-->
@@ -179,7 +183,7 @@
           </p>
 
           <!-- Begin Mailchimp Signup Form -->
-          <div align = "left" id="mc_embed_signup">
+          <div align="left" id="mc_embed_signup">
             <form
               action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
@@ -272,7 +276,8 @@
                       </a>
                     </p>
                     <p v-if="hackathon.photos">
-                      <a class="btn btn-primary tamu-hollow-button" :href="hackathon.photos" role="button" target="_blank">
+                      <a class="btn btn-primary tamu-hollow-button" :href="hackathon.photos" role="button"
+                        target="_blank">
                         See Photos
                       </a>
                     </p>
@@ -280,12 +285,14 @@
                 </div>
                 <div class="row">
                   <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
-                    <picture v-if="typeof director.img !== 'undefined' && (!(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') || !party)">
+                    <picture
+                      v-if="typeof director.img !== 'undefined' && (!(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') || !party)">
                       <source type="image/webp" :srcset="director.webp" class="timeline-director-img">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture v-if="(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') && party">
+                    <picture
+                      v-if="(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') && party">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
@@ -298,8 +305,8 @@
                       <a v-if="typeof director.linkedin !== 'undefined'" :href="director.linkedin" target="_blank"><img
                           src="./static/assets/horizontal-timeline/linkedin.svg" alt="LinkedIn"
                           class="timeline-director-socials"></a>
-                      <a v-if="typeof director.portfolio !== 'undefined'" :href="director.portfolio" target="_blank"><img
-                          src="./static/assets/horizontal-timeline/portfolio.svg" alt="Portfolio"
+                      <a v-if="typeof director.portfolio !== 'undefined'" :href="director.portfolio"
+                        target="_blank"><img src="./static/assets/horizontal-timeline/portfolio.svg" alt="Portfolio"
                           class="timeline-director-socials"></a>
                     </div>
                   </div>
@@ -449,7 +456,7 @@
   <script src="./static/scripts/main.js"></script>
   <!-- horizontal-timeline scripts -->
   <script>
-    
+
 
     new Vue({
       el: "#app",
@@ -1689,7 +1696,7 @@
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/jiyoon-kim1"
                 },
-                
+
                 {
                   webp: "./static/th-2022/headshots/webp/naveen.webp",
                   img: "./static/th-2022/headshots/jpg/naveen.jpg",
@@ -1902,7 +1909,7 @@
                   position: "Logistics",
                   linkedin: "https://www.linkedin.com/in/jiyoon-kim1"
                 },
-                
+
                 {
                   webp: "./static/th-2022/headshots/webp/naveen.webp",
                   img: "./static/th-2022/headshots/jpg/naveen.jpg",
@@ -2452,6 +2459,38 @@
                 },
               ]
             },
+            {
+              name: "HowdyHack 2024",
+              link: "/hh/2024",
+              photos: "https://drive.google.com/drive/folders/1qZe9PVmUoicQn38-flRHY7MtzUbzL6wI",
+              logo: 'hh24',
+              description: "Saddling up to enter a frontier of creativity at HowdyHack 2024!",
+              directors:
+                [{ webp: './static/hh-2024/headshots/webp/li.webp', img: './static/hh-2024/headshots/jpg/li.jpg', name: 'Li Shen', position: 'President', linkedin: 'https://www.linkedin.com/in/lishen123/', portfolio: 'https://lishen.app/' },
+                { webp: './static/th-2024/headshots/webp1/anish.webp', img: './static/th-2024/headshots/jpg/anish.jpg', name: 'Anish Karthik', position: 'President', github: 'https://github.com/anishfish2', linkedin: 'https://www.linkedin.com/in/anishkarthik' },
+                { webp: './static/hh-2024/headshots/webp/gabrielle.webp', img: './static/hh-2024/headshots/jpg/gabrielle.jpg', name: 'Gabrielle Anne Irava', position: 'Secretary', linkedin: 'https://www.linkedin.com/in/gairava/' },
+                { webp: './static/hh-2024/headshots/webp/naveen.webp', img: './static/hh-2024/headshots/jpg/naveen.jpg', name: 'Naveen Iyer', position: 'Tech Lead', github: 'https://github.com/NitroGuy10', linkedin: 'https://www.linkedin.com/in/naveen-iyer-66412b225/', portfolio: 'https://nitroguy.xyz/' },
+                { webp: './static/hh-2024/headshots/webp/nafi.webp', img: './static/hh-2024/headshots/jpg/nafi.jpg', name: 'Nafi Islam', position: 'Logistics Lead', linkedin: 'https://www.linkedin.com/in/nafiislam' },
+                { webp: './static/hh-2024/headshots/webp/joshua.webp', img: './static/hh-2024/headshots/jpg/joshua.jpg', name: 'Joshua John', position: 'Logistics Lead', linkedin: 'https://www.linkedin.com/in/joshua-john-1055b8240' },
+                { webp: './static/hh-2024/headshots/webp/lizzy.webp', img: './static/hh-2024/headshots/jpg/lizzy.jpg', name: 'Lizzy Yoon', position: 'Creative Lead', linkedin: 'https://www.linkedin.com/in/lizzy-yoon/' },
+                { webp: './static/hh-2024/headshots/webp/ashrita.webp', img: './static/hh-2024/headshots/jpg/ashrita.jpg', name: 'Ashrita Vadlapatla', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/ashrita-vadlapatla/' },
+                { webp: './static/hh-2024/headshots/webp/adnan.webp', img: './static/hh-2024/headshots/jpg/adnan.jpg', name: 'Adnan Yusuf', position: 'Creative', github: 'https://github.com/adnanysf', linkedin: 'https://www.linkedin.com/in/adnyusuf/', portfolio: 'https://www.adnan-yusuf.com/' },
+                { webp: './static/hh-2024/headshots/webp/austin.webp', img: './static/hh-2024/headshots/jpg/austin.jpg', name: 'Austin Abraham', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/abaustinva' },
+                { webp: './static/hh-2024/headshots/webp/rita.webp', img: './static/hh-2024/headshots/jpg/rita.jpg', name: 'Rita Hernandez Guerrero', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/rita-hernandez-guerrero-1a59831ba' },
+                { webp: './static/hh-2024/headshots/webp/adam.webp', img: './static/hh-2024/headshots/jpg/adam.jpg', name: 'Adam Teo', position: 'Tech', github: 'https://github.com/ysadamt', linkedin: 'https://www.linkedin.com/in/ysadamt/', portfolio: 'http://ysadamt.com/' },
+                { webp: './static/hh-2024/headshots/webp/harshitha.webp', img: './static/hh-2024/headshots/jpg/harshitha.jpg', name: 'Harshitha Marepally', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/harshithamarepally/' },
+                { webp: './static/hh-2024/headshots/webp/nicolas.webp', img: './static/hh-2024/headshots/jpg/nicolas.jpg', name: 'Nicolas Romero', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/nicolas-romero-313151256/' },
+                { webp: './static/hh-2024/headshots/webp/sandeep.webp', img: './static/hh-2024/headshots/jpg/sandeep.jpg', name: 'Sandeep Kandrigi', position: 'Tech', github: 'https://github.com/skandrigi', linkedin: 'https://www.linkedin.com/in/skandrigi/', portfolio: 'https://www.sandeepkandrigi.com/' },
+                { webp: './static/hh-2024/headshots/webp/annie.webp', img: './static/hh-2024/headshots/jpg/annie.jpg', name: 'Annie Li', position: 'Creative', linkedin: 'https://www.linkedin.com/in/liannie3/' },
+                { webp: './static/hh-2024/headshots/webp/nmesoma.webp', img: './static/hh-2024/headshots/jpg/nmesoma.jpg', name: 'Nmesoma Duru', position: 'Creative', linkedin: 'https://www.linkedin.com/in/nmesoma-duru-283b15257/' },
+                { webp: './static/hh-2024/headshots/webp/eric.webp', img: './static/hh-2024/headshots/jpg/eric.jpg', name: 'Eric Li', position: 'Tech', github: 'https://github.com/ericli18', linkedin: 'https://www.linkedin.com/in/ericli18/', portfolio: 'https://ericwli.xyz/' },
+                { webp: './static/hh-2024/headshots/webp/aj.webp', img: './static/hh-2024/headshots/jpg/aj.jpg', name: 'A.J Bamgbelu', position: 'Tech', linkedin: 'https://www.linkedin.com/in/ajbamgbelu/' },
+                { webp: './static/hh-2024/headshots/webp/ashlee.webp', img: './static/hh-2024/headshots/jpg/ashlee.jpg', name: 'Ashlee Ajala', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/ashleeajala/' },
+                { webp: './static/hh-2024/headshots/webp/claire.webp', img: './static/hh-2024/headshots/jpg/claire.jpg', name: 'Claire Wang', position: 'Creative', linkedin: 'https://www.linkedin.com/in/chaire/' },
+                { webp: './static/hh-2024/headshots/webp/keshav.webp', img: './static/hh-2024/headshots/jpg/keshav.jpg', name: 'Keshav Darshan', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/keshav-dharshan-35a47524b/' },
+                { webp: './static/hh-2024/headshots/webp/monish.webp', img: './static/hh-2024/headshots/jpg/monish.jpg', name: 'Monish Kanneboina', position: 'Logisitics', linkedin: 'https://www.linkedin.com/in/monish-kanneboina/' },
+                { webp: './static/hh-2024/headshots/webp/nikita.webp', img: './static/hh-2024/headshots/jpg/nikita.jpg', name: 'Nikita Kelwada', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/nikita-kelwada/' }]
+            }
           ],
         }
       },
