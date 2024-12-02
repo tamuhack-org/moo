@@ -38,8 +38,9 @@
     <!--BEGIN Navbar-->
 
     <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
-    <a v-if="bannerShown" href="https://forms.gle/X2qs1bHHMkaeTkEn9" class="toast">
-      Apply to be a TAMUhack organizer!
+    <a v-if="bannerShown" href="https://th25.tamuhack.org/" class="toast">
+      Apply for TAMUhack 2025!
+      <!--Alternatively say: "Register for TAMUhack 2025"-->
     </a>
 
     <div class="nav-container container">
@@ -148,7 +149,7 @@
                 style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">ni</a>versity
             </p><br>
             <p>
-              <a class="btn btn-primary tamu-button" href="https://x.tamuhack.org" role="button">Visit TAMUhack X</a>
+              <a class="btn btn-primary tamu-button" href="https://th25.tamuhack.org/" role="button">Visit TAMUhack 2025</a>
             </p>
           </div>
           <!--End Column-->
@@ -478,7 +479,7 @@
       el: "#app",
       data: function () {
         return {
-          bannerShown: false,
+          bannerShown: true,
           party: false,
           hackathons: [
             {
