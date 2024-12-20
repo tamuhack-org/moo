@@ -38,8 +38,9 @@
     <!--BEGIN Navbar-->
 
     <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
-    <a v-if="bannerShown" href="https://forms.gle/X2qs1bHHMkaeTkEn9" class="toast">
-      Apply to be a TAMUhack organizer!
+    <a v-if="bannerShown" href="https://th25.tamuhack.org/" class="toast">
+      Apply for TAMUhack 2025!
+      <!--Alternatively say: "Register for TAMUhack 2025"-->
     </a>
 
     <div class="nav-container container">
@@ -136,7 +137,7 @@
 
           <!--BEGIN Column-->
           <div class="col-lg-4" id="mid-col">
-            <img alt="TAMUhack logo" src="./static/th-2024/assets/th24.jpeg" style="width: 100px; height: 100px;" />
+            <img alt="TAMUhack logo" src="./static/th-2025/LogoWithBorder.png" style="width: 100px; height: 100px;" />
             <!-- <img alt="TAMUhack logo" src="./static/assets/tbbb.svg" /> -->
             <h1>TAMUhack</h1>
             <p class="custom-p-text">
@@ -148,7 +149,7 @@
                 style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">ni</a>versity
             </p><br>
             <p>
-              <a class="btn btn-primary tamu-button" href="https://x.tamuhack.org" role="button">Visit TAMUhack X</a>
+              <a class="btn btn-primary tamu-button" href="https://th25.tamuhack.org/" role="button">Visit TAMUhack 2025</a>
             </p>
           </div>
           <!--End Column-->
@@ -286,7 +287,7 @@
                 <div class="row">
                   <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
                     <picture
-                      v-if="typeof director.img !== 'undefined' && (!(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') || !party)">
+                      v-if="typeof director.img !== 'undefined' && (!(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023' || hackathon.name === 'HowdyHack 2024') || !party)">
                       <source type="image/webp" :srcset="director.webp" class="timeline-director-img">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
@@ -295,6 +296,11 @@
                       v-if="(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') && party">
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
+                    </picture>
+                    <picture
+                      v-if="(hackathon.name === 'HowdyHack 2024') && party">
+                      <source type="image/png" :srcset="director.party" class="timeline-director-img">
+                      <img :src="director.party" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
                     <p class="timeline-director-name">{{ director.name }}</p>
                     <p class="timeline-director-position">{{ director.position }}</p>
@@ -364,13 +370,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" target="_blank" href="https://www.instagram.com/tamuhack/">
                     <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <!--<li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
+                    <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -382,10 +388,15 @@
                   <a class="nav-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
                     <i class="fab fa-reddit"></i>
                   </a>
-                </li>
+                </li>-->
                 <li class="nav-item">
                   <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
                     <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="/discord">
+                    <i class="fa-brands fa-discord"></i>
                   </a>
                 </li>
               </ul>
@@ -399,20 +410,26 @@
       <div class="custom-nav d-lg-none d-xl-none small-links-container">
         <img alt="" src="./static/assets/tamuhack_official_logo.svg" />
         <div class="nice-text small-links-wrapper">
-          <a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
-            <i class="fab fa-facebook-f"></i>
+          <a class="nav-link small-link" target="_blank" style="cursor: pointer;" v-on:click="toggleParty">
+            <i class="fa-solid fa-cake-candles"></i>
           </a>
-          <a class="nav-link small-link" target="_blank" href="https://www.instagram.com/tamuhack/">
-            <i class="fab fa-instagram"></i>
+          <!--<a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
+            <i class="fab fa-facebook-f"></i>
           </a>
           <a class="nav-link small-link" target="_blank" href="https://twitter.com/tamuhack">
             <i class="fab fa-twitter"></i>
           </a>
           <a class="nav-link small-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
             <i class="fab fa-reddit"></i>
+          </a>-->
+          <a class="nav-link small-link" target="_blank" href="https://www.instagram.com/tamuhack/">
+            <i class="fab fa-instagram"></i>
           </a>
           <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
             <i class="fab fa-github"></i>
+          </a>
+          <a class="nav-link small-link" target="_blank" href="/discord">
+            <i class="fa-brands fa-discord"></i>
           </a>
         </div>
         <br />
@@ -462,7 +479,7 @@
       el: "#app",
       data: function () {
         return {
-          bannerShown: false,
+          bannerShown: true,
           party: false,
           hackathons: [
             {
