@@ -149,7 +149,8 @@
                 style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">ni</a>versity
             </p><br>
             <p>
-              <a class="btn btn-primary tamu-button" href="https://th25.tamuhack.org/" role="button">Visit TAMUhack 2025</a>
+              <a class="btn btn-primary tamu-button" href="https://th25.tamuhack.org/" role="button">Visit TAMUhack
+                2025</a>
             </p>
           </div>
           <!--End Column-->
@@ -297,8 +298,7 @@
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture
-                      v-if="(hackathon.name === 'HowdyHack 2024') && party">
+                    <picture v-if="(hackathon.name === 'HowdyHack 2024') && party">
                       <source type="image/png" :srcset="director.party" class="timeline-director-img">
                       <img :src="director.party" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
@@ -2483,30 +2483,30 @@
               logo: 'hh24',
               description: "Saddling up to enter a frontier of creativity at HowdyHack 2024!",
               directors:
-                [{ webp: './static/hh-2024/headshots/webp/li.webp', img: './static/hh-2024/headshots/jpg/li.jpg', name: 'Li Shen', position: 'President', linkedin: 'https://www.linkedin.com/in/lishen123/', portfolio: 'https://lishen.app/' },
-                { webp: './static/th-2024/headshots/webp1/anish.webp', img: './static/th-2024/headshots/jpg/anish.jpg', name: 'Anish Karthik', position: 'President', github: 'https://github.com/anishfish2', linkedin: 'https://www.linkedin.com/in/anishkarthik' },
-                { webp: './static/hh-2024/headshots/webp/gabrielle.webp', img: './static/hh-2024/headshots/jpg/gabrielle.jpg', name: 'Gabrielle Anne Irava', position: 'Secretary & Treasurer', linkedin: 'https://www.linkedin.com/in/gairava/' },
-                { webp: './static/hh-2024/headshots/webp/naveen.webp', img: './static/hh-2024/headshots/jpg/naveen.jpg', name: 'Naveen Iyer', position: 'Tech Lead', github: 'https://github.com/NitroGuy10', linkedin: 'https://www.linkedin.com/in/naveen-iyer-66412b225/', portfolio: 'https://nitroguy.xyz/' },
-                { webp: './static/hh-2024/headshots/webp/nafi.webp', img: './static/hh-2024/headshots/jpg/nafi.jpg', name: 'Nafi Islam', position: 'Logistics Lead', github: 'https://github.com/nafi-islam', linkedin: 'https://www.linkedin.com/in/nafiislam', portfolio: 'https://www.nafiislam.com/' },
-                { webp: './static/hh-2024/headshots/webp/joshua.webp', img: './static/hh-2024/headshots/jpg/joshua.jpg', name: 'Joshua John', position: 'Logistics Lead', linkedin: 'https://www.linkedin.com/in/joshua-john-1055b8240' },
-                { webp: './static/hh-2024/headshots/webp/lizzy.webp', img: './static/hh-2024/headshots/jpg/lizzy.jpg', name: 'Lizzy Yoon', position: 'Creative Lead', linkedin: 'https://www.linkedin.com/in/lizzy-yoon/' },
-                { webp: './static/hh-2024/headshots/webp/ashrita.webp', img: './static/hh-2024/headshots/jpg/ashrita.jpg', name: 'Ashrita Vadlapatla', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/ashrita-vadlapatla/' },
-                { webp: './static/hh-2024/headshots/webp/adnan.webp', img: './static/hh-2024/headshots/jpg/adnan.jpg', name: 'Adnan Yusuf', position: 'Creative', github: 'https://github.com/adnanysf', linkedin: 'https://www.linkedin.com/in/adnyusuf/', portfolio: 'https://www.adnan-yusuf.com/' },
-                { webp: './static/hh-2024/headshots/webp/austin.webp', img: './static/hh-2024/headshots/jpg/austin.jpg', name: 'Austin Abraham', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/abaustinva' },
-                { webp: './static/hh-2024/headshots/webp/rita.webp', img: './static/hh-2024/headshots/jpg/rita.jpg', name: 'Rita Hernandez Guerrero', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/rita-hernandez-guerrero-1a59831ba' },
-                { webp: './static/hh-2024/headshots/webp/adam.webp', img: './static/hh-2024/headshots/jpg/adam.jpg', name: 'Adam Teo', position: 'Tech', github: 'https://github.com/ysadamt', linkedin: 'https://www.linkedin.com/in/ysadamt/', portfolio: 'http://ysadamt.com/' },
-                { webp: './static/hh-2024/headshots/webp/harshitha.webp', img: './static/hh-2024/headshots/jpg/harshitha.jpg', name: 'Harshitha Marepally', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/harshithamarepally/' },
-                { webp: './static/hh-2024/headshots/webp/nicolas.webp', img: './static/hh-2024/headshots/jpg/nicolas.jpg', name: 'Nicolas Romero', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/nicolas-romero-313151256/' },
-                { webp: './static/hh-2024/headshots/webp/sandeep.webp', img: './static/hh-2024/headshots/jpg/sandeep.jpg', name: 'Sandeep Kandrigi', position: 'Tech', github: 'https://github.com/skandrigi', linkedin: 'https://www.linkedin.com/in/skandrigi/', portfolio: 'https://www.sandeepkandrigi.com/' },
-                { webp: './static/hh-2024/headshots/webp/annie.webp', img: './static/hh-2024/headshots/jpg/annie.jpg', name: 'Annie Li', position: 'Creative', linkedin: 'https://www.linkedin.com/in/liannie3/' },
-                { webp: './static/hh-2024/headshots/webp/nmesoma.webp', img: './static/hh-2024/headshots/jpg/nmesoma.jpg', name: 'Nmesoma Duru', position: 'Creative', linkedin: 'https://www.linkedin.com/in/nmesoma-duru-283b15257/' },
-                { webp: './static/hh-2024/headshots/webp/eric.webp', img: './static/hh-2024/headshots/jpg/eric.jpg', name: 'Eric Li', position: 'Tech', github: 'https://github.com/ericli18', linkedin: 'https://www.linkedin.com/in/ericli18/', portfolio: 'https://ericwli.xyz/' },
-                { webp: './static/hh-2024/headshots/webp/aj.webp', img: './static/hh-2024/headshots/jpg/aj.jpg', name: 'A.J Bamgbelu', position: 'Tech', linkedin: 'https://www.linkedin.com/in/ajbamgbelu/' },
-                { webp: './static/hh-2024/headshots/webp/ashlee.webp', img: './static/hh-2024/headshots/jpg/ashlee.jpg', name: 'Ashlee Ajala', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/ashleeajala/' },
-                { webp: './static/hh-2024/headshots/webp/claire.webp', img: './static/hh-2024/headshots/jpg/claire.jpg', name: 'Claire Wang', position: 'Creative', linkedin: 'https://www.linkedin.com/in/chaire/' },
-                { webp: './static/hh-2024/headshots/webp/keshav.webp', img: './static/hh-2024/headshots/jpg/keshav.jpg', name: 'Keshav Dharshan', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/keshav-dharshan-35a47524b/' },
-                { webp: './static/hh-2024/headshots/webp/monish.webp', img: './static/hh-2024/headshots/jpg/monish.jpg', name: 'Monish Kanneboina', position: 'Logisitics', linkedin: 'https://www.linkedin.com/in/monish-kanneboina/' },
-                { webp: './static/hh-2024/headshots/webp/nikita.webp', img: './static/hh-2024/headshots/jpg/nikita.jpg', name: 'Nikita Kelwada', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/nikita-kelwada/' }]
+                [{ webp: './static/hh-2024/headshots/webp/li.webp', img: './static/hh-2024/headshots/jpg/li.jpg', party: './static/hh-2024/headshots/party/li.png', name: 'Li Shen', position: 'President', linkedin: 'https://www.linkedin.com/in/lishen123/', portfolio: 'https://lishen.app/' },
+                { webp: './static/th-2024/headshots/webp1/anish.webp', img: './static/th-2024/headshots/jpg/anish.jpg', party: './static/hh-2024/headshots/party/anish.png', name: 'Anish Karthik', position: 'President', github: 'https://github.com/anishfish2', linkedin: 'https://www.linkedin.com/in/anishkarthik' },
+                { webp: './static/hh-2024/headshots/webp/gabrielle.webp', img: './static/hh-2024/headshots/jpg/gabrielle.jpg', party: './static/hh-2024/headshots/party/gabrielle.png', name: 'Gabrielle Anne Irava', position: 'Secretary & Treasurer', linkedin: 'https://www.linkedin.com/in/gairava/' },
+                { webp: './static/hh-2024/headshots/webp/naveen.webp', img: './static/hh-2024/headshots/jpg/naveen.jpg', party: './static/hh-2024/headshots/party/naveen.png', name: 'Naveen Iyer', position: 'Tech Lead', github: 'https://github.com/NitroGuy10', linkedin: 'https://www.linkedin.com/in/naveen-iyer-66412b225/', portfolio: 'https://nitroguy.xyz/' },
+                { webp: './static/hh-2024/headshots/webp/nafi.webp', img: './static/hh-2024/headshots/jpg/nafi.jpg', party: './static/hh-2024/headshots/party/nafi.png', name: 'Nafi Islam', position: 'Logistics Lead', github: 'https://github.com/nafi-islam', linkedin: 'https://www.linkedin.com/in/nafiislam', portfolio: 'https://www.nafiislam.com' },
+                { webp: './static/hh-2024/headshots/webp/joshua.webp', img: './static/hh-2024/headshots/jpg/joshua.jpg', party: './static/hh-2024/headshots/party/joshua.png', name: 'Joshua John', position: 'Logistics Lead', linkedin: 'https://www.linkedin.com/in/joshua-john-1055b8240' },
+                { webp: './static/hh-2024/headshots/webp/lizzy.webp', img: './static/hh-2024/headshots/jpg/lizzy.jpg', party: './static/hh-2024/headshots/party/lizzy.png', name: 'Lizzy Yoon', position: 'Creative Lead', linkedin: 'https://www.linkedin.com/in/lizzy-yoon/' },
+                { webp: './static/hh-2024/headshots/webp/ashrita.webp', img: './static/hh-2024/headshots/jpg/ashrita.jpg', party: './static/hh-2024/headshots/party/ashrita.png', name: 'Ashrita Vadlapatla', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/ashrita-vadlapatla/' },
+                { webp: './static/hh-2024/headshots/webp/adnan.webp', img: './static/hh-2024/headshots/jpg/adnan.jpg', party: './static/hh-2024/headshots/party/adnan.png', name: 'Adnan Yusuf', position: 'Creative', github: 'https://github.com/adnanysf', linkedin: 'https://www.linkedin.com/in/adnyusuf/', portfolio: 'https://www.adnan-yusuf.com/' },
+                { webp: './static/hh-2024/headshots/webp/austin.webp', img: './static/hh-2024/headshots/jpg/austin.jpg', party: './static/hh-2024/headshots/party/austin.png', name: 'Austin Abraham', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/abaustinva' },
+                { webp: './static/hh-2024/headshots/webp/rita.webp', img: './static/hh-2024/headshots/jpg/rita.jpg', party: './static/hh-2024/headshots/party/rita.png', name: 'Rita Hernandez Guerrero', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/rita-hernandez-guerrero-1a59831ba' },
+                { webp: './static/hh-2024/headshots/webp/adam.webp', img: './static/hh-2024/headshots/jpg/adam.jpg', party: './static/hh-2024/headshots/party/adam.png', name: 'Adam Teo', position: 'Tech', github: 'https://github.com/ysadamt', linkedin: 'https://www.linkedin.com/in/ysadamt/', portfolio: 'http://ysadamt.com/' },
+                { webp: './static/hh-2024/headshots/webp/harshitha.webp', img: './static/hh-2024/headshots/jpg/harshitha.jpg', party: './static/hh-2024/headshots/party/harshitha.png', name: 'Harshitha Marepally', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/harshithamarepally/' },
+                { webp: './static/hh-2024/headshots/webp/nicolas.webp', img: './static/hh-2024/headshots/jpg/nicolas.jpg', party: './static/hh-2024/headshots/party/nicolas.png', name: 'Nicolas Romero', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/nicolas-romero-313151256/' },
+                { webp: './static/hh-2024/headshots/webp/sandeep.webp', img: './static/hh-2024/headshots/jpg/sandeep.jpg', party: './static/hh-2024/headshots/party/sandeep.png', name: 'Sandeep Kandrigi', position: 'Tech', github: 'https://github.com/skandrigi', linkedin: 'https://www.linkedin.com/in/skandrigi/', portfolio: 'https://www.sandeepkandrigi.com/' },
+                { webp: './static/hh-2024/headshots/webp/annie.webp', img: './static/hh-2024/headshots/jpg/annie.jpg', party: './static/hh-2024/headshots/party/annie.png', name: 'Annie Li', position: 'Creative', linkedin: 'https://www.linkedin.com/in/liannie3/' },
+                { webp: './static/hh-2024/headshots/webp/nmesoma.webp', img: './static/hh-2024/headshots/jpg/nmesoma.jpg', party: './static/hh-2024/headshots/party/nmesoma.png', name: 'Nmesoma Duru', position: 'Creative', linkedin: 'https://www.linkedin.com/in/nmesoma-duru-283b15257/' },
+                { webp: './static/hh-2024/headshots/webp/eric.webp', img: './static/hh-2024/headshots/jpg/eric.jpg', party: './static/hh-2024/headshots/party/eric.png', name: 'Eric Li', position: 'Tech', github: 'https://github.com/ericli18', linkedin: 'https://www.linkedin.com/in/ericli18/', portfolio: 'https://ericwli.xyz/' },
+                { webp: './static/hh-2024/headshots/webp/aj.webp', img: './static/hh-2024/headshots/jpg/aj.jpg', party: './static/hh-2024/headshots/party/aj.png', name: 'A.J Bamgbelu', position: 'Tech', linkedin: 'https://www.linkedin.com/in/ajbamgbelu/' },
+                { webp: './static/hh-2024/headshots/webp/ashlee.webp', img: './static/hh-2024/headshots/jpg/ashlee.jpg', party: './static/hh-2024/headshots/party/ashlee.png', name: 'Ashlee Ajala', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/ashleeajala/' },
+                { webp: './static/hh-2024/headshots/webp/claire.webp', img: './static/hh-2024/headshots/jpg/claire.jpg', party: './static/hh-2024/headshots/party/claire.png', name: 'Claire Wang', position: 'Creative', linkedin: 'https://www.linkedin.com/in/chaire/' },
+                { webp: './static/hh-2024/headshots/webp/keshav.webp', img: './static/hh-2024/headshots/jpg/keshav.jpg', party: './static/hh-2024/headshots/party/keshav.png', name: 'Keshav Dharshan', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/keshav-dharshan-35a47524b/' },
+                { webp: './static/hh-2024/headshots/webp/monish.webp', img: './static/hh-2024/headshots/jpg/monish.jpg', party: './static/hh-2024/headshots/party/monish.png', name: 'Monish Kanneboina', position: 'Logisitics', linkedin: 'https://www.linkedin.com/in/monish-kanneboina/' },
+                { webp: './static/hh-2024/headshots/webp/nikita.webp', img: './static/hh-2024/headshots/jpg/nikita.jpg', party: './static/hh-2024/headshots/party/nikita.png', name: 'Nikita Kelwada', position: 'Logistics', linkedin: 'https://www.linkedin.com/in/nikita-kelwada/' }]
             }
           ],
         }
