@@ -2,8 +2,8 @@ const th25info = {
     name: "TAMUhack 2025",
     link: "/th/2025",
     photos:
-        "https://drive.google.com/drive/folders/1qZe9PVmUoicQn38-flRHY7MtzUbzL6wI",
-    logo: "th25",
+        "https://drive.google.com/drive/folders/1Sf_Zdt9knGTZcke8JuIMM2hu83t-OiE6",
+    logo: "th24",
     description:
         "Saddling up to enter a frontier of creativity at HowdyHack 2024!",
     directors: [
