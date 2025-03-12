@@ -1,6 +1,6 @@
 const th25info = {
     name: "TAMUhack 2025",
-    link: "/th/2024",
+    link: "/th/2025",
     photos:
         "https://drive.google.com/drive/folders/1qZe9PVmUoicQn38-flRHY7MtzUbzL6wI",
     logo: "th25",
