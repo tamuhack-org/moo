@@ -3,7 +3,7 @@ const th25info = {
     link: "/th/2025",
     photos:
         "https://drive.google.com/drive/folders/1Sf_Zdt9knGTZcke8JuIMM2hu83t-OiE6",
-    logo: "th24",
+    logo: "th25",
     description:
         "Saddling up to enter a frontier of creativity at HowdyHack 2024!",
     directors: [

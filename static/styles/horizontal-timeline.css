@@ -110,6 +110,13 @@
     padding: 15px;
 }
 
+.th25::after {
+    background-image: url("../th-2025/assets/th25.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
+
 
 /* END HACKATHON LOGOS */
 
