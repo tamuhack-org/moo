@@ -1,4 +1,4 @@
-const hh24info = {
+const th25info = {
     name: "TAMUhack 2025",
     link: "/th/2024",
     photos:
