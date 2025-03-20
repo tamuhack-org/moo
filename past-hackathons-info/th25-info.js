@@ -5,7 +5,7 @@ const th25info = {
         "https://drive.google.com/drive/folders/1Sf_Zdt9knGTZcke8JuIMM2hu83t-OiE6",
     logo: "th25",
     description:
-        "Saddling up to enter a frontier of creativity at HowdyHack 2024!",
+        "Our first ever week-long hardware + 24 hour software hackathon!",
     directors: [
         {
             webp: "./static/th-2025/headshots/webp/li.webp",
