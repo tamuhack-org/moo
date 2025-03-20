@@ -17,8 +17,8 @@ const hh24info = {
             portfolio: "https://lishen.app/",
         },
         {
-            webp: "./static/th-2024/headshots/webp1/anish.webp",
-            img: "./static/th-2024/headshots/jpg/anish.jpg",
+            webp: "./static/hh-2024/headshots/webp/anish.webp",
+            img: "./static/hh-2024/headshots/jpg/anish.jpg",
             party: "./static/hh-2024/headshots/party/anish.png",
             name: "Anish Karthik",
             position: "President",
