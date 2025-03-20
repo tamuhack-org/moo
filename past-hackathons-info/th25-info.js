@@ -189,5 +189,20 @@ const th25info = {
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/nikita-kelwada/",
         },
+        {
+            webp: "./static/th-2025/headshots/webp/blessing.webp",
+            img: "./static/th-2025/headshots/jpg/blessing.jpg",
+            name: "Blessing Onuoha",
+            position: "Creative",
+            linkedin: "https://www.linkedin.com/in/blxessing/",
+        },
+        {
+            webp: "./static/th-2025/headshots/webp/justin.webp",
+            img: "./static/th-2025/headshots/jpg/justin.jpg",
+            name: "Justin Le",
+            position: "Tech",
+            github: "https://github.com/Ju5t1nL3",
+            linkedin: "https://www.linkedin.com/in/justindtle/",
+        },
     ],
 };
