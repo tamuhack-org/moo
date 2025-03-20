@@ -202,7 +202,7 @@ const hh24info = {
             img: "./static/hh-2024/headshots/jpg/monish.jpg",
             party: "./static/hh-2024/headshots/party/monish.png",
             name: "Monish Kanneboina",
-            position: "Logisitics",
+            position: "Logistics",
             linkedin: "https://www.linkedin.com/in/monish-kanneboina/",
         },
         {

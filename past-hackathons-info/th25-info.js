@@ -179,7 +179,7 @@ const th25info = {
             webp: "./static/th-2025/headshots/webp/monish.webp",
             img: "./static/th-2025/headshots/jpg/monish.jpg",
             name: "Monish Kanneboina",
-            position: "Logisitics",
+            position: "Logistics",
             linkedin: "https://www.linkedin.com/in/monish-kanneboina/",
         },
         {
