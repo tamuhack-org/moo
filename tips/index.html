@@ -471,6 +471,12 @@
             methods: {
                 toggle(index, indexMain) {
                     const key = 'question' + index + '_' + indexMain;
+                    const element = document.getElementById(key);
+
+                    if (element.classList.contains('collapsing')){
+                        return;
+                    }
+
                     this.$set(this.isClicked, key, !this.isClicked[key]);
                 }
             },
