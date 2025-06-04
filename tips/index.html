@@ -195,11 +195,14 @@
                             {{item.desc}}
                         </p>
         
-                        <div class="card mb-4 faq-card" v-for="(text, key, index) in item.items">
+                        <div class="card mb-4 faq-card" v-for="(text, key, index) in item.items" @click="toggle(index, indexMain)">
                             <div class="card-body" data-toggle="collapse" :data-target="'#question' + index + '_' + indexMain" aria-expanded="false">
                                 <h4 class="card-title" style="text-align: left;">{{key}}</h4>
                                 <div class="title-underline blue mb-purple"></div>
-                                <div class="plusminus"></div>
+                                <div 
+                                    class="plusminus"
+                                    :class="{ 'plusminus-clicked' : isClicked['question' + index + '_' + indexMain]}"
+                                ></div>
                                 <div class="faq-ans collapse" :id="'question' + index + '_' + indexMain" style="text-align: left;">
                                     <p class="card-text" style="margin-top: 20px; color: #111!important; font-size: 18px!important;">{{text}}</p>
                                 </div>
@@ -400,6 +403,7 @@
             data: function () {
                 return {
                     window,
+                    isClicked: {},
                     "info": {
                         "General & Logistics": {
                             desc: "Information to make sure your online hackathon experience goes as smoothly as possible.",
@@ -462,6 +466,18 @@
                             link_desc: ["VIDEO", "VIDEO", "VIDEO", "VIDEO"]
                         }
                     }
+                }
+            },
+            methods: {
+                toggle(index, indexMain) {
+                    const key = 'question' + index + '_' + indexMain;
+                    const element = document.getElementById(key);
+
+                    if (element.classList.contains('collapsing')){
+                        return;
+                    }
+
+                    this.$set(this.isClicked, key, !this.isClicked[key]);
                 }
             },
         })
