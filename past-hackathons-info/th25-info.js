@@ -5,7 +5,7 @@ const th25info = {
         "https://drive.google.com/drive/folders/1Sf_Zdt9knGTZcke8JuIMM2hu83t-OiE6",
     logo: "th25",
     description:
-        "Our first ever week-long hardware and 24 hour software hackathon!",
+        "Next stop: TAMUhack '25, with our first week-long hardware hackathon!",
     directors: [
         {
             webp: "./static/th-2025/headshots/webp/li.webp",
