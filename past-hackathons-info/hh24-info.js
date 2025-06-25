@@ -5,7 +5,7 @@ const hh24info = {
         "https://drive.google.com/drive/folders/1qZe9PVmUoicQn38-flRHY7MtzUbzL6wI",
     logo: "hh24",
     description:
-        "Saddling up to enter a frontier of creativity at HowdyHack 2024!",
+        "Saddling up for a frontier of creativity at HowdyHack '24!",
     directors: [
         {
             webp: "./static/hh-2024/headshots/webp/li.webp",
