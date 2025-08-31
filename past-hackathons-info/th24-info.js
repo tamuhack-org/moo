@@ -196,14 +196,15 @@ const th24info = {
             position: "Tech",
             github: "https://github.com/skandrigi",
             linkedin: "https://www.linkedin.com/in/skandrigi/",
-            portfolio: "https://www.sandeepkandrigi.com/"
+            portfolio: "https://www.sandeepkandrigi.dev/"
         },
         {
             webp: "./static/th-2024/headshots/webp1/annie.webp",
             img: "./static/th-2024/headshots/jpg/annie.jpg",
             name: "Annie Li",
             position: "Creative",
-            linkedin: "https://www.linkedin.com/in/liannie3/"
+            linkedin: "https://www.linkedin.com/in/liannie3/",
+            portfolio: "https://liannie.app/",
         },
         {
             webp: "./static/th-2024/headshots/webp1/nmesoma.webp",

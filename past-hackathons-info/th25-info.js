@@ -122,7 +122,7 @@ const th25info = {
             position: "Tech",
             github: "https://github.com/skandrigi",
             linkedin: "https://www.linkedin.com/in/skandrigi/",
-            portfolio: "https://www.sandeepkandrigi.com/",
+            portfolio: "https://www.sandeepkandrigi.dev/",
         },
         {
             webp: "./static/th-2025/headshots/webp/annie.webp",
@@ -130,6 +130,7 @@ const th25info = {
             name: "Annie Li",
             position: "Creative",
             linkedin: "https://www.linkedin.com/in/liannie3/",
+            portfolio: "https://liannie.app/",
         },
         {
             webp: "./static/th-2025/headshots/webp/nmesoma.webp",

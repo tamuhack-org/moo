@@ -137,7 +137,7 @@ const hh24info = {
             position: "Tech",
             github: "https://github.com/skandrigi",
             linkedin: "https://www.linkedin.com/in/skandrigi/",
-            portfolio: "https://www.sandeepkandrigi.com/",
+            portfolio: "https://www.sandeepkandrigi.dev/",
         },
         {
             webp: "./static/hh-2024/headshots/webp/annie.webp",
@@ -146,6 +146,7 @@ const hh24info = {
             name: "Annie Li",
             position: "Creative",
             linkedin: "https://www.linkedin.com/in/liannie3/",
+            portfolio: "https://liannie.app/",
         },
         {
             webp: "./static/hh-2024/headshots/webp/nmesoma.webp",
