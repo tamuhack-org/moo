@@ -60,8 +60,8 @@
     <!--BEGIN Navbar-->
 
     <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
-    <a v-if="bannerShown" href="https://forms.gle/CT6fNdbqLBb1n5o1A" class="toast">
-      Apply to be a TAMUhack organizer!
+    <a v-if="bannerShown" href="https://hh25.tamuhack.org" class="toast">
+      Apply for HowdyHack 2025!
     </a>
 
     <div class="nav-container container">
@@ -144,14 +144,14 @@
 
           <!--BEGIN Column-->
           <div class="col-lg-4">
-            <img alt="HowdyHack Logo" src="/static/hh-2024/assets/hh24-logo.png" style="width: 100px; height: 100px;" />
+            <img alt="HowdyHack Logo" src="/static/hh-2025/assets/hh25-logo.png" style="width: 100px; height: 100px;" />
             <h1>HowdyHack</h1>
             <p class="custom-p-text">
               Our themed hackathon in the fall semester, created for Aggies by Aggies
             </p>
             <br />
             <p>
-              <a class="btn btn-primary hh-button" href="/hh/" role="button">Visit HowdyHack 2024</a>
+              <a class="btn btn-primary hh-button" href="/hh/" role="button">Visit HowdyHack 2025</a>
             </p>
           </div>
           <!--End Column-->
@@ -501,7 +501,7 @@
       el: "#app",
       data: function () {
         return {
-          bannerShown: false,
+          bannerShown: true,
           party: false,
           hackathons: [
             th14info,
