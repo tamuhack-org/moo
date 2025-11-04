@@ -197,6 +197,8 @@ const hh24info = {
             name: "Keshav Dharshan",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/keshav-dharshan-35a47524b/",
+            github: "https://github.com/kdharshan0",
+            portfolio: "https://keshavdharshan.com/",
         },
         {
             webp: "./static/hh-2024/headshots/webp/monish.webp",
