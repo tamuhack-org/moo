@@ -26,7 +26,7 @@ const hh23info = {
             img: "./static/hh-2023/headshots/jpg/li.jpg",
             name: "Li Shen",
             position: "Creative Lead",
-            linkedin: "https://www.linkedin.com/in/lishen123/",
+            linkedin: "https://www.linkedin.com/in/lililogan/",
             portfolio: "https://lishen.app/"
         },
         {

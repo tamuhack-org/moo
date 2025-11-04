@@ -12,7 +12,7 @@ const th25info = {
             img: "./static/th-2025/headshots/jpg/li.jpg",
             name: "Li Shen",
             position: "President",
-            linkedin: "https://www.linkedin.com/in/lishen123/",
+            linkedin: "https://www.linkedin.com/in/lililogan/",
             portfolio: "https://lishen.app/",
         },
         {

@@ -206,7 +206,7 @@ hh22info = {
             gif: "./static/th-2023/headshots/gif/li.gif",
             name: "Li Shen",
             position: "Creative",
-            linkedin: "https://www.linkedin.com/in/lishen123/"
+            linkedin: "https://www.linkedin.com/in/lililogan/"
         }
     ]
 }

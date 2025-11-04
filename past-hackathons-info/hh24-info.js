@@ -13,7 +13,7 @@ const hh24info = {
             party: "./static/hh-2024/headshots/party/li.png",
             name: "Li Shen",
             position: "President",
-            linkedin: "https://www.linkedin.com/in/lishen123/",
+            linkedin: "https://www.linkedin.com/in/lililogan/",
             portfolio: "https://lishen.app/",
         },
         {
