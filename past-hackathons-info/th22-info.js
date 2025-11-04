@@ -33,7 +33,7 @@ const th22info = {
             name: "Vivian Yu",
             position: "Design Lead",
             github: "https://github.com/vivians-y",
-            linkedin: "https://www.linkedin.com/in/vivian-yu-aa1443194"
+            linkedin: "https://www.linkedin.com/in/vivianyus/"
         },
         {
             webp: "./static/th-2022/headshots/webp/nathan_reddy.webp",

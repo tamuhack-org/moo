@@ -168,7 +168,7 @@ const th20info = {
             name: "Vivian Yu",
             position: "Design",
             github: "https://www.github.com/vivians-y",
-            linkedin: "https://www.linkedin.com/in/vivian-yu-aa1443194",
+            linkedin: "https://www.linkedin.com/in/vivianyus/",
         },
         {
             webp: "./static/assets/headshots/compressed/cameronB.webp",
