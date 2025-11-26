@@ -117,6 +117,13 @@
     padding: 15px;
 }
 
+.hh25::after {
+    background-image: url("../hh-2025/assets/hh25-logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 15px;
+}
+
 
 /* END HACKATHON LOGOS */
 
