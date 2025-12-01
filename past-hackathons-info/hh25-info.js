@@ -10,7 +10,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/adam.webp",
             img: "./static/hh-2025/headshots/jpg/adam.jpg",
-            party: "./static/hh-2025/headshots/party/adam.png",
+            party: "./static/hh-2025/headshots/party/adam.webp",
             name: "Adam Teo",
             position: "President",
             github: "https://github.com/ysadamt",
@@ -20,7 +20,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/rita.webp",
             img: "./static/hh-2025/headshots/jpg/rita.jpg",
-            party: "./static/hh-2025/headshots/party/rita.png",
+            party: "./static/hh-2025/headshots/party/rita.webp",
             name: "Rita Hernandez Guerrero",
             position: "Vice President",
             linkedin: "https://www.linkedin.com/in/rita-hernandez-guerrero-1a59831ba",
@@ -28,7 +28,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/monish.webp",
             img: "./static/hh-2025/headshots/jpg/monish.jpg",
-            party: "./static/hh-2025/headshots/party/monish.png",
+            party: "./static/hh-2025/headshots/party/monish.webp",
             name: "Monish Kanneboina",
             position: "Treasurer",
             linkedin: "https://www.linkedin.com/in/monish-kanneboina/",
@@ -36,7 +36,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/annie.webp",
             img: "./static/hh-2025/headshots/jpg/annie.jpg",
-            party: "./static/hh-2025/headshots/party/annie.png",
+            party: "./static/hh-2025/headshots/party/annie.webp",
             name: "Annie Li",
             position: "Creative Lead",
             linkedin: "https://www.linkedin.com/in/liannie3/",
@@ -45,7 +45,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/eric.webp",
             img: "./static/hh-2025/headshots/jpg/eric.jpg",
-            party: "./static/hh-2025/headshots/party/eric.png",
+            party: "./static/hh-2025/headshots/party/eric.webp",
             name: "Eric Li",
             position: "Tech Lead",
             github: "https://github.com/ericli18",
@@ -55,7 +55,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/nicolas.webp",
             img: "./static/hh-2025/headshots/jpg/nicolas.jpg",
-            party: "./static/hh-2025/headshots/party/nicolas.png",
+            party: "./static/hh-2025/headshots/party/nicolas.webp",
             name: "Nicolas Romero",
             position: "Logistics Lead",
             linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/",
@@ -63,7 +63,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/nikita.webp",
             img: "./static/hh-2025/headshots/jpg/nikita.jpg",
-            party: "./static/hh-2025/headshots/party/nikita.png",
+            party: "./static/hh-2025/headshots/party/nikita.webp",
             name: "Nikita Kelwada",
             position: "Logistics Lead",
             linkedin: "https://www.linkedin.com/in/nikita-kelwada/",
@@ -71,7 +71,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/nafi.webp",
             img: "./static/hh-2025/headshots/jpg/nafi.jpg",
-            party: "./static/hh-2025/headshots/party/nafi.png",
+            party: "./static/hh-2025/headshots/party/nafi.webp",
             name: "Nafi Islam",
             position: "Logistics",
             github: "https://github.com/nafi-islam",
@@ -81,7 +81,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/harshitha.webp",
             img: "./static/hh-2025/headshots/jpg/harshitha.jpg",
-            party: "./static/hh-2025/headshots/party/harshitha.png",
+            party: "./static/hh-2025/headshots/party/harshitha.webp",
             name: "Harshitha Marepally",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/harshithamarepally/",
@@ -89,14 +89,14 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/katherine.webp",
             img: "./static/hh-2025/headshots/jpg/katherine.jpg",
-            party: "./static/hh-2025/headshots/party/katherine.png",
+            party: "./static/hh-2025/headshots/party/katherine.webp",
             name: "Katherine Nguyen",
             position: "Creative",
         },
         {
             webp: "./static/hh-2025/headshots/webp/sandeep.webp",
             img: "./static/hh-2025/headshots/jpg/sandeep.jpg",
-            party: "./static/hh-2025/headshots/party/sandeep.png",
+            party: "./static/hh-2025/headshots/party/sandeep.webp",
             name: "Sandeep Kandrigi",
             position: "Tech",
             github: "https://github.com/skandrigi",
@@ -106,7 +106,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/nmesoma.webp",
             img: "./static/hh-2025/headshots/jpg/nmesoma.jpg",
-            party: "./static/hh-2025/headshots/party/nmesoma.png",
+            party: "./static/hh-2025/headshots/party/nmesoma.webp",
             name: "Nmesoma Duru",
             position: "Creative",
             linkedin: "https://www.linkedin.com/in/nmesoma-duru-283b15257/",
@@ -114,7 +114,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/aj.webp",
             img: "./static/hh-2025/headshots/jpg/aj.jpg",
-            party: "./static/hh-2025/headshots/party/aj.png",
+            party: "./static/hh-2025/headshots/party/aj.webp",
             name: "A.J Bamgbelu",
             position: "Tech",
             linkedin: "https://www.linkedin.com/in/ajbamgbelu/",
@@ -122,7 +122,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/ashlee.webp",
             img: "./static/hh-2025/headshots/jpg/ashlee.jpg",
-            party: "./static/hh-2025/headshots/party/ashlee.png",
+            party: "./static/hh-2025/headshots/party/ashlee.webp",
             name: "Ashlee Ajala",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/ashleeajala/",
@@ -130,7 +130,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/claire.webp",
             img: "./static/hh-2025/headshots/jpg/claire.jpg",
-            party: "./static/hh-2025/headshots/party/claire.png",
+            party: "./static/hh-2025/headshots/party/claire.webp",
             name: "Claire Wang",
             position: "Creative",
             linkedin: "https://www.linkedin.com/in/chaire/",
@@ -138,7 +138,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/keshav.webp",
             img: "./static/hh-2025/headshots/jpg/keshav.jpg",
-            party: "./static/hh-2025/headshots/party/keshav.png",
+            party: "./static/hh-2025/headshots/party/keshav.webp",
             name: "Keshav Dharshan",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/keshav-dharshan-35a47524b/",
@@ -148,7 +148,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/blessing.webp",
             img: "./static/hh-2025/headshots/jpg/blessing.jpg",
-            party: "./static/hh-2025/headshots/party/blessing.png",
+            party: "./static/hh-2025/headshots/party/blessing.webp",
             name: "Blessing Onuoha",
             position: "Creative",
             linkedin: "https://www.linkedin.com/in/blxessing/",
@@ -156,7 +156,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/justin.webp",
             img: "./static/hh-2025/headshots/jpg/justin.jpg",
-            party: "./static/hh-2025/headshots/party/justin.png",
+            party: "./static/hh-2025/headshots/party/justin.webp",
             name: "Justin Le",
             position: "Tech",
             github: "https://github.com/Ju5t1nL3",
@@ -165,7 +165,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/abhi.webp",
             img: "./static/hh-2025/headshots/jpg/abhi.jpg",
-            party: "./static/hh-2025/headshots/party/abhi.png",
+            party: "./static/hh-2025/headshots/party/abhi.webp",
             name: "Abhitej Devireddy",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/abhitej-devireddy-648864275/",
@@ -173,7 +173,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/ananya.webp",
             img: "./static/hh-2025/headshots/jpg/ananya.jpg",
-            party: "./static/hh-2025/headshots/party/ananya.png",
+            party: "./static/hh-2025/headshots/party/ananya.webp",
             name: "Ananya Pal",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/ananya-pal-ap810/",
@@ -181,7 +181,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/bella.webp",
             img: "./static/hh-2025/headshots/jpg/bella.jpg",
-            party: "./static/hh-2025/headshots/party/bella.png",
+            party: "./static/hh-2025/headshots/party/bella.webp",
             name: "Bella Roy",
             position: "Creative",
             linkedin: "https://www.linkedin.com/in/isabella-roy-5a3720337/",
@@ -189,7 +189,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/ben.webp",
             img: "./static/hh-2025/headshots/jpg/ben.jpg",
-            party: "./static/hh-2025/headshots/party/ben.png",
+            party: "./static/hh-2025/headshots/party/ben.webp",
             name: "Ben Hardy",
             position: "Tech",
 			github: "https://github.com/benjaminhardy28",
@@ -199,7 +199,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/jashith.webp",
             img: "./static/hh-2025/headshots/jpg/jashith.jpg",
-            party: "./static/hh-2025/headshots/party/jashith.png",
+            party: "./static/hh-2025/headshots/party/jashith.webp",
             name: "Jashith Raghavendra",
 			github: "https://github.com/jashith1/",
             position: "Tech",
@@ -208,14 +208,14 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/katelyn.webp",
             img: "./static/hh-2025/headshots/jpg/katelyn.jpg",
-            party: "./static/hh-2025/headshots/party/katelyn.png",
+            party: "./static/hh-2025/headshots/party/katelyn.webp",
             name: "Katelyn Ta",
             position: "Creative",
         },
         {
             webp: "./static/hh-2025/headshots/webp/shaan.webp",
             img: "./static/hh-2025/headshots/jpg/shaan.jpg",
-            party: "./static/hh-2025/headshots/party/shaan.png",
+            party: "./static/hh-2025/headshots/party/shaan.webp",
             name: "Shaan Charolia",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/shaancharolia/",
@@ -223,7 +223,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/veronica.webp",
             img: "./static/hh-2025/headshots/jpg/veronica.jpg",
-            party: "./static/hh-2025/headshots/party/veronica.png",
+            party: "./static/hh-2025/headshots/party/veronica.webp",
             name: "Veronica Sibal",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/veronicasibal/",
@@ -231,7 +231,7 @@ const hh25info = {
         {
             webp: "./static/hh-2025/headshots/webp/william.webp",
             img: "./static/hh-2025/headshots/jpg/william.jpg",
-            party: "./static/hh-2025/headshots/party/william.png",
+            party: "./static/hh-2025/headshots/party/william.webp",
             name: "William Lam",
             position: "Logistics",
             linkedin: "https://www.linkedin.com/in/swwilliamlam/",
