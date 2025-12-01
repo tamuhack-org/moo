@@ -58,7 +58,9 @@ const hh25info = {
             party: "./static/hh-2025/headshots/party/nicolas.webp",
             name: "Nicolas Romero",
             position: "Logistics Lead",
+            github: "https://github.com/nicolas-m-romero",
             linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/",
+            portfolio: "https://nico-romero.com/"
         },
         {
             webp: "./static/hh-2025/headshots/webp/nikita.webp",

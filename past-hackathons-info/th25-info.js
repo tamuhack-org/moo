@@ -127,7 +127,9 @@ const th25info = {
             party: "./static/th-2025/headshots/party/nicolas.png",
             name: "Nicolas Romero",
             position: "Logistics",
+            github: "https://github.com/nicolas-m-romero",
             linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/",
+            portfolio: "https://nico-romero.com/"
         },
         {
             webp: "./static/th-2025/headshots/webp/sandeep.webp",

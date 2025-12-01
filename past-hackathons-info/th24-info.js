@@ -187,7 +187,9 @@ const th24info = {
             img: "./static/th-2024/headshots/jpg/nicolas.jpg",
             name: "Nicolas Romero",
             position: "Logistics",
-            linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/"
+            github: "https://github.com/nicolas-m-romero",
+            linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/",
+            portfolio: "https://nico-romero.com/"
         },
         {
             webp: "./static/th-2024/headshots/webp1/sandeep.webp",

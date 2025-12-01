@@ -198,7 +198,9 @@ const hh23info = {
             img: "./static/hh-2023/headshots/jpg/nicolas.jpg",
             name: "Nicolas Romero",
             position: "Logistics",
-            linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/"
+            github: "https://github.com/nicolas-m-romero",
+            linkedin: "https://www.linkedin.com/in/nicolas-romero-313151256/",
+            portfolio: "https://nico-romero.com/"
         },
     ]
 }
