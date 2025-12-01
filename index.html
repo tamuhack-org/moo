@@ -62,7 +62,7 @@
 
     <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
     <a v-if="bannerShown" href="https://th26.tamuhack.org" class="toast">
-      Apply for TAMUhack 2026!
+      Apply to TAMUhack 2026!
     </a>
 
     <div class="nav-container container">
@@ -145,7 +145,8 @@
 
           <!--BEGIN Column-->
           <div class="col-lg-4">
-            <img alt="HowdyHack Logo" src="./static/hh-2025/assets/hh25-logo.png" style="width: 100px; height: 100px;" />
+            <img alt="HowdyHack Logo" src="./static/hh-2025/assets/hh25-logo.png"
+              style="width: 100px; height: 100px;" />
             <h1>HowdyHack</h1>
             <p class="custom-p-text">
               Our themed hackathon in the fall semester, created for Aggies by Aggies
@@ -322,7 +323,8 @@
                       <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
                       <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture v-if="(hackathon.name === 'HowdyHack 2024' || hackathon.name === 'TAMUhack 2025') && party">
+                    <picture
+                      v-if="(hackathon.name === 'HowdyHack 2024' || hackathon.name === 'TAMUhack 2025') && party">
                       <source type="image/png" :srcset="director.party" class="timeline-director-img">
                       <img :src="director.party" alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
