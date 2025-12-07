@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./../static/hh-2020/app.css">
+    <link rel="stylesheet" href="/static/hh-2020/app.css">
     <meta name="description" content="HowdyHack is Texas A&M’s 24-hour, beginner friendly, Aggie-only hackathon. Hackers at HowdyHack will brainstorm, build, and break, before they’ll submit their product to a panel of judges for evaluation and hopefully win some cool prizes.">
     <meta name="keywords" content="HowdyHack, Hackathon, Texas A&M, Beginner, TAMUhack, 2020, Texas">
     <title>HowdyHack 2020</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link href="./../static/hh-2020/img/hh20favicon.png" rel="icon" type="image/x-icon" />
+    <link href="/static/hh-2020/img/hh20favicon.png" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="flex justify-center pt-6 container px-4">
-                    <img src="./../static/hh-2020/img/test.svg" class="w-4/5 md:w:2/5 lg:w-1/2">
+                    <img src="/static/hh-2020/img/test.svg" class="w-4/5 md:w:2/5 lg:w-1/2">
                 </div>
                 <div class="flex justify-center" style="margin-top: 10vh;">
                     <button class="text-gray-500 font-semibold py-5 px-24 border text-xl border-gray-500
@@ -126,7 +126,7 @@
                             <div class=" w-full lg:max-w-full lg:flex border-gray-800 border-2">
                                 <div class="hidden lg:block h-48 lg:h-auto lg:w-32 flex-none bg-cover rounded-t border-gray-800 border-r-2
                                     lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-                                    <img src="./../static/hh-2020/img/fingerprint.png" alt="" class="p-2" >
+                                    <img src="/static/hh-2020/img/fingerprint.png" alt="" class="p-2" >
                                 </div>
                                 <div class="w-full">
                                     <div class="border-gray-800 border-b-2">
@@ -145,7 +145,7 @@
                                     <div class="border-gray-800 border-2">
                                         <div class="relative" v-if="track.title == 'Best Hack for Spies'">
                                             <div class="absolute top-20 right-0">
-                                                <img src="./../static/hh-2020/img/conf.png" class="">
+                                                <img src="/static/hh-2020/img/conf.png" class="">
                                             </div>
                                         </div>
                                         <div class="w-full">
@@ -164,7 +164,7 @@
                                     <div class="border-gray-800 border-2">
                                         <div class="relative" v-if="track.title == 'Best Hack for Spies'">
                                             <div class="absolute top-20 right-0">
-                                                <img src="./../static/hh-2020/img/conf.png" class="">
+                                                <img src="/static/hh-2020/img/conf.png" class="">
                                             </div>
                                         </div>
                                         <div class="w-full">
@@ -202,10 +202,10 @@
                 <span v-for="sponsor in sponsors">
                     <div :class="'w-full ' + 'inline-block ' + sponsor.width">
                         <div class="m-4">
-                            <div style="background-image: url('./../static/hh-2020/img/grain.png'); background-color: #d7d5d1; box-shadow: 0 0 15px black" 
+                            <div style="background-image: url('/static/hh-2020/img/grain.png'); background-color: #d7d5d1; box-shadow: 0 0 15px black" 
                                 class="w-full text-gray-800 font-semibold pt-20 pb-4 px-10 text-xl border-gray-300 sponsor-hover">
                                 <div class="flex justify-center">
-                                    <img src="./../static/hh-2020/img/msft.png">
+                                    <img src="/static/hh-2020/img/msft.png">
                                 </div>
                                 <div class="flex justify-center">
                                     <p class="text-gray-700 text-base py-6 px-8 primary-font"> {{sponsor.message}}</p>
