@@ -1,4 +1,4 @@
-const hh23info = {
+export const hh23info = {
     name: "HowdyHack 2023",
     link: "/hh/2023",
     photos: "https://drive.google.com/drive/folders/14Hfw89hkB6EeMF919Ttsmuz4ueLtzBzO",

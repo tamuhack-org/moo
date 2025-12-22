@@ -1,4 +1,4 @@
-hh22info = {
+export const hh22info = {
     name: "HowdyHack 2022",
     link: "/hh/2022",
     logo: "hh22",

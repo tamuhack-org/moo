@@ -1,4 +1,4 @@
-const th23info = {
+export const th23info = {
     name: "TAMUhack 2023",
     link: "/th/2023",
     photos: "https://photos.app.goo.gl/hHmLXAvGgRBJ6hh58",

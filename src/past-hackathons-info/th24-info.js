@@ -1,4 +1,4 @@
-const th24info = {
+export const th24info = {
     name: "TAMUhack X",
     link: "/th/2024",
     photos: "https://drive.google.com/drive/folders/1RS90k95E83rbYl6LPg_t_KzBjfQnABMh",
