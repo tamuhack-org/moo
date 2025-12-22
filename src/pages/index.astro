@@ -19,7 +19,31 @@ import { th24info } from '../past-hackathons-info/th24-info.js'
 import { hh24info } from '../past-hackathons-info/hh24-info.js'
 import { th25info } from '../past-hackathons-info/th25-info.js'
 import { hh25info } from '../past-hackathons-info/hh25-info.js'
+
+const hackathons = [
+	th14info,
+	th15info,
+	th16info,
+	th18info,
+	hh18info,
+	th19info,
+	hh19info,
+	th20info,
+	hh20info,
+	th21info,
+	hh21info,
+	th22info,
+	hh22info,
+	th23info,
+	hh23info,
+	th24info,
+	hh24info,
+	th25info,
+	hh25info,
+];
 // End All Hackathons Info
+
+const bannerShown = true;
 ---
 
 <!DOCTYPE html>
@@ -46,13 +70,10 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
   <link rel="stylesheet" href="/static/styles/app.css" />
   <link rel="stylesheet" href="/static/styles/horizontal-timeline.css">
 
-  <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
-
-
   <!-- Timeline Scripts -->
-  <script src="/static/scripts/horizontal-timeline/util.js"></script>
-  <script src="/static/scripts/horizontal-timeline/swipe-content.js"></script>
-  <script src="/static/scripts/horizontal-timeline/horizontal-timeline.js"></script>
+  <script is:inline src="/static/scripts/horizontal-timeline/util.js"></script>
+  <script  is:inline src="/static/scripts/horizontal-timeline/swipe-content.js"></script>
+  <script is:inline src="/static/scripts/horizontal-timeline/horizontal-timeline.js"></script>
   <!-- End Timeline Scripts -->
 
   <title>TAMUhack</title>
@@ -60,16 +81,18 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
 <!--END Metadata-->
 
 <body>
-  <div id="app" v-cloak>
+  <div id="app">
     <!--BEGIN Navbar-->
 
-    <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
-    <a v-if="bannerShown" href="https://th26.tamuhack.org" class="toast">
-      Apply to TAMUhack 2026!
-    </a>
+	{bannerShown && (
+	  <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
+	  <a href="https://th26.tamuhack.org" class="toast">
+	  Apply to TAMUhack 2026!
+	  </a>
+	)}
 
     <div class="nav-container container">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" :style="bannerShown ? 'top: 41px;' : ''"
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style={bannerShown ? 'top: 41px;' : ''}
         id="top-nav-bar">
         <a class="navbar-brand" href="#">
           <img src="/static/assets/th_logo.svg" class="th-logo" alt="" />
@@ -115,7 +138,7 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
       <div id="side-to-side">
         <object id="cloud-left" data="/static/assets/cloud.svg" type="image/svg+xml"></object>
         <object id="cloud-right" data="/static/assets/cloud2.svg" type="image/svg+xml"
-          :style="bannerShown ? 'margin-top: 35px;' : ''"></object>
+          style={ bannerShown ? 'margin-top: 35px;' : '' }></object>
         <object id="blimp-right" data="/static/assets/blimp.svg" type="image/svg+xml"></object>
       </div>
     </header>
@@ -213,7 +236,7 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
           </p>
 
           <!-- Begin Mailchimp Signup Form -->
-          <div align="left" id="mc_embed_signup">
+          <div class="text-left" id="mc_embed_signup">
             <form
               action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
@@ -265,10 +288,11 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
           <div class="cd-h-timeline__line">
             <!-- timeline events on the timeline at the top-->
             <ol class="no-list-style">
-              <li v-for="(hackathon, idx) in hackathons">
-                <a href="#0" class="cd-h-timeline__date"
-                  :class="[hackathon.logo, (idx == hackathons.length - 1) ? 'cd-h-timeline__date--selected' : '']"></a>
-              </li>
+			  {hackathons.map((hackathon, idx) => (
+                <li>
+			      <a href="#0" class={`cd-h-timeline__date ${hackathon.logo} ${idx === hackathons.length - 1 ? 'cd-h-timeline__date--selected' : ''}`}></a>
+                </li>
+			  ))}
             </ol>
           </div>
           <!-- .cd-h-timeline__line -->
@@ -289,70 +313,85 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
       <!-- timeline events body info -->
       <div class="cd-h-timeline__events">
         <ol class="no-list-style">
-          <template v-for="(hackathon, idx) in hackathons">
-            <li class="cd-h-timeline__event"
-              :class="[idx == hackathons.length - 1 ? 'cd-h-timeline__event--selected' : '']">
+		  {hackathons.map((hackathon, idx) => (
+		  <li class={` cd-h-timeline__event ${idx === hackathons.length - 1 ? 'cd-h-timeline__event--selected' : ''}`}>
               <div class="cd-h-timeline__event-content container-fluid">
                 <div class="timeline-event-description">
-                  <!-- <p v-if=hackathon.link==false></p> -->
-                  <p class="timeline-header">{{ hackathon.name }}</p>
+                  <p class="timeline-header">{  hackathon.name  }</p>
                   <p class="timeline-description">
-                    {{ hackathon.description }}
+                    { hackathon.description }
                   </p>
                   <div class="button-container">
-                    <p v-if="hackathon.link!=false">
-                      <a class="btn btn-primary tamu-button" :href="hackathon.link" role="button" target="_blank">
-                        Visit Event Page
-                      </a>
-                    </p>
-                    <p v-if="hackathon.photos">
-                      <a class="btn btn-primary tamu-hollow-button" :href="hackathon.photos" role="button"
-                        target="_blank">
-                        See Photos
-                      </a>
-                    </p>
+					{hackathon.link && (
+					  <p>
+					    <a class="btn btn-primary tamu-button" href={ hackathon.link } role="button" target="_blank">
+						  Visit Event Page
+					    </a>
+                      </p>
+					)}
+					{hackathon.photos && (
+					  <p>
+					    <a class="btn btn-primary tamu-hollow-button" href={ hackathon.photos } role="button"
+						  target="_blank">
+						  See Photos
+					    </a>
+					  </p>
+					)}
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2 col-4 padding-0" v-for="director in hackathon.directors">
-                    <picture
-                      v-if="typeof director.img !== 'undefined' && (!(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023' || hackathon.name === 'HowdyHack 2024' || hackathon.name === 'TAMUhack 2025' || hackathon.name === 'HowdyHack 2025') || !party)">
-                      <source type="image/webp" :srcset="director.webp" class="timeline-director-img">
-                      <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
-                      <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
+				{hackathon.directors && hackathon.directors.map((director) => {
+				  const eventName = hackathon.name;
+				  const isGifParty = ['HowdyHack 2022', 'TAMUhack 2023'].includes(eventName);
+				  const isPngParty = ['HowdyHack 2024', 'TAMUhack 2025'].includes(eventName);
+				  const isWebpParty = ['HowdyHack 2025'].includes(eventName)
+				  const hasPartyMode = isGifParty || isPngParty || isWebpParty;
+
+				return (
+                  <div class="col-md-2 col-4 padding-0">
+					<!-- Normal State -->
+                    <picture class={`director-media normal-state ${hasPartyMode ? 'has-party-alt' : ''}`}>
+                      <source type="image/webp" srcset={ director.webp } class="timeline-director-img">
+                      <source type="image/gif" srcset={ director.gif } class="timeline-director-img">
+                      <img src={ director.gif } alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture
-                      v-if="(hackathon.name === 'HowdyHack 2022' || hackathon.name ===  'TAMUhack 2023') && party">
-                      <source type="image/gif" :srcset="director.gif" class="timeline-director-img">
-                      <img :src="director.gif" alt="TAMUhack Director" class="timeline-director-img">
+					<!-- Party State for GIFS -->
+					{ isGifParty && (
+					<picture class="director-media party-state" style="display: none;">
+                      <source type="image/gif" srcset={ director.gif } class="timeline-director-img">
+                      <img src={ director.gif } alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture
-                      v-if="(hackathon.name === 'HowdyHack 2024' || hackathon.name === 'TAMUhack 2025') && party">
-                      <source type="image/png" :srcset="director.party" class="timeline-director-img">
-                      <img :src="director.party" alt="TAMUhack Director" class="timeline-director-img">
+					)}
+					<!-- Party State for PNGS -->
+					{ isPngParty && (
+                    <picture class="director-media party-state" style="display: none;">
+                      <source type="image/png" srcset={ director.party } class="timeline-director-img">
+                      <img src={ director.party } alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <picture v-if="(hackathon.name === 'HowdyHack 2025') && party">
-                      <source type="image/webp" :srcset="director.party" class="timeline-director-img">
-                      <img :src="director.party" alt="TAMUhack Director" class="timeline-director-img">
+					)}
+					<!-- Party State for WebP -->
+					{ isWebpParty && (
+                    <picture class="director-media party-state" style="display: none;">
+                      <source type="image/webp" srcset={ director.party } class="timeline-director-img">
+                      <img src={ director.party } alt="TAMUhack Director" class="timeline-director-img">
                     </picture>
-                    <p class="timeline-director-name">{{ director.name }}</p>
-                    <p class="timeline-director-position">{{ director.position }}</p>
+					)}
+                    <p class="timeline-director-name">{ director.name }</p>
+                    <p class="timeline-director-position">{ director.position }</p>
                     <div class="row justify-content-center">
-                      <a v-if="typeof director.github !== 'undefined'" :href="director.github" target="_blank"><img
-                          src="/static/assets/horizontal-timeline/github.svg" alt="Github"
-                          class="timeline-director-socials"></a>
-                      <a v-if="typeof director.linkedin !== 'undefined'" :href="director.linkedin" target="_blank"><img
-                          src="/static/assets/horizontal-timeline/linkedin.svg" alt="LinkedIn"
-                          class="timeline-director-socials"></a>
-                      <a v-if="typeof director.portfolio !== 'undefined'" :href="director.portfolio"
-                        target="_blank"><img src="/static/assets/horizontal-timeline/portfolio.svg" alt="Portfolio"
-                          class="timeline-director-socials"></a>
+						{director.github && <a href={ director.github } target="_blank">
+						<img src="/static/assets/horizontal-timeline/github.svg" alt="Github" class="timeline-director-socials"></a>}
+						{director.linkedin && <a href={ director.linkedin } target="_blank">
+						<img src="/static/assets/horizontal-timeline/linkedin.svg" alt="LinkedIn" class="timeline-director-socials"></a>}
+						{director.portfolio && <a href={ director.portfolio } target="_blank">
+							<img src="/static/assets/horizontal-timeline/portfolio.svg" alt="Portfolio" class="timeline-director-socials"></a>}
                     </div>
                   </div>
+				)})}
                 </div>
               </div>
             </li>
-          </template>
+		  ))}
         </ol>
       </div>
       <!-- .cd-h-timeline__events -->
@@ -398,7 +437,7 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
             <div>
               <ul class="navbar-nav main-nav-ui mr-auto links-container">
                 <li class="nav-item">
-                  <a class="nav-link" style="cursor: pointer;" v-on:click="toggleParty">
+                  <a class="nav-link party-trigger-btn" style="cursor: pointer;">
                     <i class="fa-solid fa-cake-candles"></i>
                   </a>
                 </li>
@@ -443,7 +482,7 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
       <div class="custom-nav d-lg-none d-xl-none small-links-container">
         <img alt="" src="/static/assets/tamuhack_official_logo.svg" />
         <div class="nice-text small-links-wrapper">
-          <a class="nav-link small-link" target="_blank" style="cursor: pointer;" v-on:click="toggleParty">
+          <a class="nav-link small-link party-trigger-btn" style="cursor: pointer;">
             <i class="fa-solid fa-cake-candles"></i>
           </a>
           <!--<a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
@@ -503,55 +542,34 @@ import { hh25info } from '../past-hackathons-info/hh25-info.js'
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
     async></script>
-  <script src="/static/scripts/main.js"></script>
+  <script is:inline src="/static/scripts/main.js"></script>
   <!-- horizontal-timeline scripts -->
-  <script>
+<script is:inline>
+    if (typeof swipeContentTimeline === 'function') swipeContentTimeline();
+    if (typeof initalizeHoriTimeline === 'function') initalizeHoriTimeline();
+  // Party Mode Logic
+  const partyBtns = document.querySelectorAll('.party-trigger-btn'); 
+  let isParty = false;
 
+  partyBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      isParty = !isParty;
+      
+      const normalImages = document.querySelectorAll('.director-media.normal-state.has-party-alt');
+      const partyImages = document.querySelectorAll('.director-media.party-state');
 
-    new Vue({
-      el: "#app",
-      data: function () {
-        return {
-          bannerShown: true,
-          party: false,
-          hackathons: [
-            th14info,
-            th15info,
-            th16info,
-            th18info,
-            hh18info,
-            th19info,
-            hh19info,
-            th20info,
-            hh20info,
-            th21info,
-            hh21info,
-            th22info,
-            hh22info,
-            th23info,
-            hh23info,
-            th24info,
-            hh24info,
-            th25info,
-            hh25info,
-          ],
-        }
-      },
-      mounted: function () {
-        this.$nextTick(function () {
-          // Code that will run only after the entire view has been rendered
-          // Need to run timeline scripts once timeline has been rendered
-          swipeContentTimeline();
-          initalizeHoriTimeline();
-        })
-      },
-      methods: {
-        toggleParty() {
-          this.party = !this.party
-        }
+      if (isParty) {
+        normalImages.forEach(el => el.style.display = 'none');
+        partyImages.forEach(el => el.style.display = 'block');
+      } else {
+        normalImages.forEach(el => el.style.display = 'block');
+        partyImages.forEach(el => el.style.display = 'none');
       }
-    })
-  </script>
+    });
+  });
+</script>
 
   <!--END Scripts-->
 
