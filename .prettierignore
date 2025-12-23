@@ -6,3 +6,18 @@ package-lock.json
 
 # compiled static js files are here (e.g., hh2018, rattle) so we do not want to format those
 public/
+
+# unfortunately, some of the old websites need the poorly formatted code for the css to look correct (cough* cough* hh2021). So, we will ignore all legacy websites
+src/pages/th/2016
+src/pages/th/2018
+src/pages/th/2019
+src/pages/th/2020
+src/pages/th/2021
+src/pages/th/2022
+src/pages/th/2023
+
+src/pages/hh/2018
+src/pages/hh/2019
+src/pages/hh/2020
+src/pages/hh/2021
+src/pages/hh/2022
