@@ -1,5 +1,9 @@
 # build output
 dist/
+
+# hh2018 needs the dist folder, so don't ignore that folder
+!public/static/assets/hh-2018/bower_components/scrollreveal/dist/
+
 # generated types
 .astro/
 
