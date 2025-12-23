@@ -1,451 +1,806 @@
 ---
 // All Hackathons Info
-import { th14info } from '../past-hackathons-info/th14-info.js'
-import { th15info } from '../past-hackathons-info/th15-info.js'
-import { th16info } from '../past-hackathons-info/th16-info.js'
-import { th18info } from '../past-hackathons-info/th18-info.js'
-import { hh18info } from '../past-hackathons-info/hh18-info.js'
-import { th19info } from '../past-hackathons-info/th19-info.js'
-import { hh19info } from '../past-hackathons-info/hh19-info.js'
-import { th20info } from '../past-hackathons-info/th20-info.js'
-import { hh20info } from '../past-hackathons-info/hh20-info.js'
-import { th21info } from '../past-hackathons-info/th21-info.js'
-import { hh21info } from '../past-hackathons-info/hh21-info.js'
-import { th22info } from '../past-hackathons-info/th22-info.js'
-import { hh22info } from '../past-hackathons-info/hh22-info.js'
-import { th23info } from '../past-hackathons-info/th23-info.js'
-import { hh23info } from '../past-hackathons-info/hh23-info.js'
-import { th24info } from '../past-hackathons-info/th24-info.js'
-import { hh24info } from '../past-hackathons-info/hh24-info.js'
-import { th25info } from '../past-hackathons-info/th25-info.js'
-import { hh25info } from '../past-hackathons-info/hh25-info.js'
+import { th14info } from '../past-hackathons-info/th14-info.js';
+import { th15info } from '../past-hackathons-info/th15-info.js';
+import { th16info } from '../past-hackathons-info/th16-info.js';
+import { th18info } from '../past-hackathons-info/th18-info.js';
+import { hh18info } from '../past-hackathons-info/hh18-info.js';
+import { th19info } from '../past-hackathons-info/th19-info.js';
+import { hh19info } from '../past-hackathons-info/hh19-info.js';
+import { th20info } from '../past-hackathons-info/th20-info.js';
+import { hh20info } from '../past-hackathons-info/hh20-info.js';
+import { th21info } from '../past-hackathons-info/th21-info.js';
+import { hh21info } from '../past-hackathons-info/hh21-info.js';
+import { th22info } from '../past-hackathons-info/th22-info.js';
+import { hh22info } from '../past-hackathons-info/hh22-info.js';
+import { th23info } from '../past-hackathons-info/th23-info.js';
+import { hh23info } from '../past-hackathons-info/hh23-info.js';
+import { th24info } from '../past-hackathons-info/th24-info.js';
+import { hh24info } from '../past-hackathons-info/hh24-info.js';
+import { th25info } from '../past-hackathons-info/th25-info.js';
+import { hh25info } from '../past-hackathons-info/hh25-info.js';
 
 const hackathons = [
-	th14info,
-	th15info,
-	th16info,
-	th18info,
-	hh18info,
-	th19info,
-	hh19info,
-	th20info,
-	hh20info,
-	th21info,
-	hh21info,
-	th22info,
-	hh22info,
-	th23info,
-	hh23info,
-	th24info,
-	hh24info,
-	th25info,
-	hh25info,
+    th14info,
+    th15info,
+    th16info,
+    th18info,
+    hh18info,
+    th19info,
+    hh19info,
+    th20info,
+    hh20info,
+    th21info,
+    hh21info,
+    th22info,
+    hh22info,
+    th23info,
+    hh23info,
+    th24info,
+    hh24info,
+    th25info,
+    hh25info,
 ];
 // End All Hackathons Info
 
 const bannerShown = true;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!--BEGIN Metadata-->
+    <!--BEGIN Metadata-->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta property="og:title" content="TAMUhack" />
-  <meta property="og:image" content="https://tamuhack.com/static/assets/th20-hub-pink-buildings.jpg" />
-  <meta property="og:url" content="https://tamuhack.com" />
-  <meta property="og:description" content="At TAMUhack, teams spend the weekend working on 
-          innovative software and hardware solutions to real-world problems in a community full of mentorship." />
-  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet" />
-  <link rel="icon" href="/static/assets/th-favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/640b86bfda.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/static/styles/app.css" />
-  <link rel="stylesheet" href="/static/styles/horizontal-timeline.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="TAMUhack" />
+        <meta
+            property="og:image"
+            content="https://tamuhack.com/static/assets/th20-hub-pink-buildings.jpg"
+        />
+        <meta property="og:url" content="https://tamuhack.com" />
+        <meta
+            property="og:description"
+            content="At TAMUhack, teams spend the weekend working on 
+          innovative software and hardware solutions to real-world problems in a community full of mentorship."
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            href="/static/assets/th-favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://kit.fontawesome.com/640b86bfda.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/static/styles/app.css" />
+        <link rel="stylesheet" href="/static/styles/horizontal-timeline.css" />
 
-  <!-- Timeline Scripts -->
-  <script is:inline src="/static/scripts/horizontal-timeline/util.js"></script>
-  <script  is:inline src="/static/scripts/horizontal-timeline/swipe-content.js"></script>
-  <script is:inline src="/static/scripts/horizontal-timeline/horizontal-timeline.js"></script>
-  <!-- End Timeline Scripts -->
+        <!-- Timeline Scripts -->
+        <script is:inline src="/static/scripts/horizontal-timeline/util.js"
+        ></script>
+        <script
+            is:inline
+            src="/static/scripts/horizontal-timeline/swipe-content.js"></script>
+        <script
+            is:inline
+            src="/static/scripts/horizontal-timeline/horizontal-timeline.js"
+        ></script>
+        <!-- End Timeline Scripts -->
 
-  <title>TAMUhack</title>
-</head>
-<!--END Metadata-->
+        <title>TAMUhack</title>
+    </head>
+    <!--END Metadata-->
 
-<body>
-  <div id="app">
-    <!--BEGIN Navbar-->
+    <body>
+        <div id="app">
+            <!--BEGIN Navbar-->
 
-	{bannerShown && (
-	  <!--To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page-->
-	  <a href="https://th26.tamuhack.org" class="toast">
-	  Apply to TAMUhack 2026!
-	  </a>
-	)}
+            {
+                bannerShown && (
+                    // To enable/disable the banner, change the bannerShown property in the Vue config at the bottom of this page
+                    <a href="https://th26.tamuhack.org" class="toast">
+                        Apply to TAMUhack 2026!
+                    </a>
+                )
+            }
 
-    <div class="nav-container container">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style={bannerShown ? 'top: 41px;' : ''}
-        id="top-nav-bar">
-        <a class="navbar-brand" href="#">
-          <img src="/static/assets/th_logo.svg" class="th-logo" alt="" />
-        </a>
+            <div class="nav-container container">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light fixed-top"
+                    style={bannerShown ? 'top: 41px;' : ''}
+                    id="top-nav-bar"
+                >
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="/static/assets/th_logo.svg"
+                            class="th-logo"
+                            alt=""
+                        />
+                    </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto"></ul>
-          <ul class="navbar-nav main-nav-ui">
-            <li class="nav-item">
-              <a class="nav-link" href="#what-we-do">what we do</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#our-community">our community</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#past-iterations">past iterations</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <!--END Navbar-->
-    <!--BEGIN Header-->
-    <header>
-      <div class="tamuhack-title">
-        <img alt="" src="/static/assets/tamuhacfull_k.svg" id="good-morning-trigger"
-          style="cursor: pointer; z-index: 10; flex: 0 0 100%;" />
-        <!--Date for TAMUhack :3-->
-        <h5 class="text-center hover:text-extrabold pt-4" style="color:rgb(88, 88, 88); font-weight: 500;">January
-          24-25, 2026</h5>
-      </div>
-      <div class="backdrop-container">
-        <img alt="" src="/static/assets/th20-hub-pink-buildings.svg" class="backdrop" />
-      </div>
-      <object id="plane" data="/static/assets/plane.svg" type="image/svg+xml"></object>
-      <object id="sun" class="spinning-element" data="/static/assets/sun.svg" type="image/svg+xml"></object>
-      <object id="good-morning" class="spinning-element" data="/static/assets/hh-assets/goodmorning.svg"
-        type="image/svg+xml" style="visibility: hidden;"></object>
-      <div id="side-to-side">
-        <object id="cloud-left" data="/static/assets/cloud.svg" type="image/svg+xml"></object>
-        <object id="cloud-right" data="/static/assets/cloud2.svg" type="image/svg+xml"
-          style={ bannerShown ? 'margin-top: 35px;' : '' }></object>
-        <object id="blimp-right" data="/static/assets/blimp.svg" type="image/svg+xml"></object>
-      </div>
-    </header>
-    <!--END Header-->
-
-    <!--BEGIN Main-->
-    <!--BEGIN What We Do Section-->
-    <section id="what-we-do-container">
-      <span id="what-we-do" class="goto"> &nbsp; </span>
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-7 text-center py-5">
-            <h1>We organize hackathons</h1>
-            <p class="emphasize center">
-              Hackathons are <span>24-hour events</span> where students come together to build an awesome project, meet
-              new people, and win prizes.
-            </p>
-            <br />
-          </div>
-        </div>
-        <br />
-      </div>
-    </section>
-    <!--END What We Do Section-->
-
-    <!--BEGIN Overview Section-->
-    <section id="events-overview">
-      <div class="container">
-        <div class="row justify-content-center" id="three-cols">
-
-          <!--BEGIN Column-->
-          <div class="col-lg-4">
-            <img alt="HowdyHack Logo" src="/static/hh-2025/assets/hh25-logo.png"
-              style="width: 100px; height: 100px;" />
-            <h1>HowdyHack</h1>
-            <p class="custom-p-text">
-              Our themed hackathon in the fall semester, created for Aggies by Aggies
-            </p>
-            <br />
-            <p>
-              <a class="btn btn-primary hh-button" href="/hh/" role="button">Visit HowdyHack 2025</a>
-            </p>
-          </div>
-          <!--End Column-->
-
-          <!--BEGIN Column-->
-          <div class="col-lg-4" id="mid-col">
-            <img alt="TAMUhack logo" src="/static/th-2026/assets/th26-logo.png" style="width: 100px; height: 100px;" />
-            <!-- <img alt="TAMUhack logo" src="/static/assets/tbbb.svg" /> -->
-            <h1>TAMUhack</h1>
-            <p class="custom-p-text">
-              One of the largest annual hackathons in <a href="https://anikaitsharma.com"
-                style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">Texas</a>,
-              hosted at Texas <a href="https://abhishekmore.com"
-                style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">A&M</a>
-              U<a href="https://nitroguy.xyz"
-                style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">ni</a>ve<a
-                href="https://justindtle.com"
-                style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;">rs</a>ity
-            </p><br>
-            <p>
-              <a class="btn btn-primary tamu-button" href="/th/" role="button">Visit TAMUhack
-                2026</a>
-            </p>
-          </div>
-          <!--End Column-->
-
-          <!--BEGIN Column-->
-          <div class="col-lg-4">
-            <img alt="Workshops icon" src="/static/assets/codeslash.svg" style="margin-top: 10px;" />
-            <h1 style="margin-top: 10px;">Docs</h1>
-            <p class="custom-p-text">
-              Learn how we use software to build our hackathon experience.
-            </p><br>
-            <p>
-              <a class="btn btn-primary ws-button" href="https://dev.tamuhack.org" role="button">Visit our Docs</a>
-            </p>
-          </div>
-          <!--End Column-->
-
-        </div>
-      </div>
-    </section>
-
-    <!--END Main Section-->
-
-    <!--BEGIN Our Community Section-->
-    <section id="our-community-container">
-      <div class="container">
-        <span id="our-community" class="goto"> &nbsp; </span>
-        <div class="content-container">
-          <h1> Join our Community </h1>
-          <p class="custom-p-text">
-            Stay connected! Sign up for our mailing list for events, updates, and more.
-          </p>
-
-          <!-- Begin Mailchimp Signup Form -->
-          <div class="text-left" id="mc_embed_signup">
-            <form
-              action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-              target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group input-group mb-3">
-                  <label for="mce-EMAIL" style="display: none">Email Address </label>
-                  <input type="email" value="" name="EMAIL" placeholder="Enter your email here..."
-                    class="required email form-control"
-                    style="border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;" id="mce-EMAIL">
-                  <div class="clear input-group-append"><input type="submit" value="Subscribe" name="subscribe"
-                      id="mc-embedded-subscribe" class="btn btn-outline-secondary signup-button"></div>
-                </div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                    name="b_ba74e26a78411ab40af6384c5_2f4969eb6d" tabindex="-1" value=""></div>
-              </div>
-            </form>
-            <!--End mc_embed_signup-->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--END Our Community Section-->
-
-    <!-- BEGIN Horizontal Timeline Section -->
-    <section class="cd-h-timeline js-cd-h-timeline">
-      <section id="what-we-do-container">
-        <span id="past-iterations" class="goto"> &nbsp; </span>
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class="col-md-7 text-center">
-              <h1>Past Iterations</h1>
-              <p class="emphasize center">
-                Click on a year below to see TAMUhack's history.
-              </p>
-              <br />
-            </div>
-          </div>
-          <br />
-        </div>
-      </section>
-      <div class="cd-h-timeline__container container">
-        <div class="cd-h-timeline__dates">
-          <div class="cd-h-timeline__line">
-            <!-- timeline events on the timeline at the top-->
-            <ol class="no-list-style">
-			  {hackathons.map((hackathon, idx) => (
-                <li>
-			      <a href="#0" class={`cd-h-timeline__date ${hackathon.logo} ${idx === hackathons.length - 1 ? 'cd-h-timeline__date--selected' : ''}`}></a>
-                </li>
-			  ))}
-            </ol>
-          </div>
-          <!-- .cd-h-timeline__line -->
-        </div>
-        <!-- .cd-h-timeline__dates -->
-
-        <!-- navigation boxes -->
-        <ul class="no-list-style">
-          <li><a href="#0"
-              class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a>
-          </li>
-          <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a>
-          </li>
-        </ul>
-      </div>
-      <!-- .cd-h-timeline__container -->
-
-      <!-- timeline events body info -->
-      <div class="cd-h-timeline__events">
-        <ol class="no-list-style">
-		  {hackathons.map((hackathon, idx) => (
-		  <li class={` cd-h-timeline__event ${idx === hackathons.length - 1 ? 'cd-h-timeline__event--selected' : ''}`}>
-              <div class="cd-h-timeline__event-content container-fluid">
-                <div class="timeline-event-description">
-                  <p class="timeline-header">{  hackathon.name  }</p>
-                  <p class="timeline-description">
-                    { hackathon.description }
-                  </p>
-                  <div class="button-container">
-					{hackathon.link && (
-					  <p>
-					    <a class="btn btn-primary tamu-button" href={ hackathon.link } role="button" target="_blank">
-						  Visit Event Page
-					    </a>
-                      </p>
-					)}
-					{hackathon.photos && (
-					  <p>
-					    <a class="btn btn-primary tamu-hollow-button" href={ hackathon.photos } role="button"
-						  target="_blank">
-						  See Photos
-					    </a>
-					  </p>
-					)}
-                  </div>
-                </div>
-                <div class="row">
-				{hackathon.directors && hackathon.directors.map((director) => {
-				  const eventName = hackathon.name;
-				  const isGifParty = ['HowdyHack 2022', 'TAMUhack 2023'].includes(eventName);
-				  const isPngParty = ['HowdyHack 2024', 'TAMUhack 2025'].includes(eventName);
-				  const isWebpParty = ['HowdyHack 2025'].includes(eventName)
-				  const hasPartyMode = isGifParty || isPngParty || isWebpParty;
-
-				return (
-                  <div class="col-md-2 col-4 padding-0">
-					<!-- Normal State -->
-                    <picture class={`director-media normal-state ${hasPartyMode ? 'has-party-alt' : ''}`}>
-                      <source type="image/webp" srcset={ director.webp } class="timeline-director-img">
-                      <source type="image/gif" srcset={ director.gif } class="timeline-director-img">
-                      <img src={ director.gif } alt="TAMUhack Director" class="timeline-director-img">
-                    </picture>
-					<!-- Party State for GIFS -->
-					{ isGifParty && (
-					<picture class="director-media party-state" style="display: none;">
-                      <source type="image/gif" srcset={ director.gif } class="timeline-director-img">
-                      <img src={ director.gif } alt="TAMUhack Director" class="timeline-director-img">
-                    </picture>
-					)}
-					<!-- Party State for PNGS -->
-					{ isPngParty && (
-                    <picture class="director-media party-state" style="display: none;">
-                      <source type="image/png" srcset={ director.party } class="timeline-director-img">
-                      <img src={ director.party } alt="TAMUhack Director" class="timeline-director-img">
-                    </picture>
-					)}
-					<!-- Party State for WebP -->
-					{ isWebpParty && (
-                    <picture class="director-media party-state" style="display: none;">
-                      <source type="image/webp" srcset={ director.party } class="timeline-director-img">
-                      <img src={ director.party } alt="TAMUhack Director" class="timeline-director-img">
-                    </picture>
-					)}
-                    <p class="timeline-director-name">{ director.name }</p>
-                    <p class="timeline-director-position">{ director.position }</p>
-                    <div class="row justify-content-center">
-						{director.github && <a href={ director.github } target="_blank">
-						<img src="/static/assets/horizontal-timeline/github.svg" alt="Github" class="timeline-director-socials"></a>}
-						{director.linkedin && <a href={ director.linkedin } target="_blank">
-						<img src="/static/assets/horizontal-timeline/linkedin.svg" alt="LinkedIn" class="timeline-director-socials"></a>}
-						{director.portfolio && <a href={ director.portfolio } target="_blank">
-							<img src="/static/assets/horizontal-timeline/portfolio.svg" alt="Portfolio" class="timeline-director-socials"></a>}
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarText"
+                        aria-controls="navbarText"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        id="hamburger"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="navbar-nav main-nav-ui">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#what-we-do"
+                                    >what we do</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#our-community"
+                                    >our community</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#past-iterations"
+                                    >past iterations</a
+                                >
+                            </li>
+                        </ul>
                     </div>
-                  </div>
-				)})}
+                </nav>
+            </div>
+            <!--END Navbar-->
+            <!--BEGIN Header-->
+            <header>
+                <div class="tamuhack-title">
+                    <img
+                        alt=""
+                        src="/static/assets/tamuhacfull_k.svg"
+                        id="good-morning-trigger"
+                        style="cursor: pointer; z-index: 10; flex: 0 0 100%;"
+                    />
+                    <!--Date for TAMUhack :3-->
+                    <h5
+                        class="hover:text-extrabold pt-4 text-center"
+                        style="color:rgb(88, 88, 88); font-weight: 500;"
+                    >
+                        January 24-25, 2026
+                    </h5>
                 </div>
-              </div>
-            </li>
-		  ))}
-        </ol>
-      </div>
-      <!-- .cd-h-timeline__events -->
-    </section>
-    <!-- END Horizontal Timeline Section -->
+                <div class="backdrop-container">
+                    <img
+                        alt=""
+                        src="/static/assets/th20-hub-pink-buildings.svg"
+                        class="backdrop"
+                    />
+                </div>
+                <object
+                    id="plane"
+                    data="/static/assets/plane.svg"
+                    type="image/svg+xml"></object>
+                <object
+                    id="sun"
+                    class="spinning-element"
+                    data="/static/assets/sun.svg"
+                    type="image/svg+xml"></object>
+                <object
+                    id="good-morning"
+                    class="spinning-element"
+                    data="/static/assets/hh-assets/goodmorning.svg"
+                    type="image/svg+xml"
+                    style="visibility: hidden;"></object>
+                <div id="side-to-side">
+                    <object
+                        id="cloud-left"
+                        data="/static/assets/cloud.svg"
+                        type="image/svg+xml"></object>
+                    <object
+                        id="cloud-right"
+                        data="/static/assets/cloud2.svg"
+                        type="image/svg+xml"
+                        style={bannerShown ? 'margin-top: 35px;' : ''}></object>
+                    <object
+                        id="blimp-right"
+                        data="/static/assets/blimp.svg"
+                        type="image/svg+xml"></object>
+                </div>
+            </header>
+            <!--END Header-->
 
-    <br />
-    <br />
+            <!--BEGIN Main-->
+            <!--BEGIN What We Do Section-->
+            <section id="what-we-do-container">
+                <span id="what-we-do" class="goto"> &nbsp; </span>
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-7 py-5 text-center">
+                            <h1>We organize hackathons</h1>
+                            <p class="emphasize center">
+                                Hackathons are <span>24-hour events</span> where students
+                                come together to build an awesome project, meet new
+                                people, and win prizes.
+                            </p>
+                            <br />
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </section>
+            <!--END What We Do Section-->
 
-    <!--BEGIN Footer-->
-    <footer class="container">
-      <nav class="navbar navbar-expand-lg navbar-light" id="bottom-nav-bar">
-        <div class="collapse navbar-collapse" id="navbarText">
-          <!--BEGIN left container-->
-          <div style="display: flex; flex-direction: column; flex: 0; align-items: flex-start; justify-content: start;">
-            <!--BEGIN top left container-->
-            <div href="#">
-              <img src="/static/assets/tamuhack_official_logo.svg" style="margin-bottom: 9px" />
-            </div>
-            <!--END top left container-->
+            <!--BEGIN Overview Section-->
+            <section id="events-overview">
+                <div class="container">
+                    <div class="row justify-content-center" id="three-cols">
+                        <!--BEGIN Column-->
+                        <div class="col-lg-4">
+                            <img
+                                alt="HowdyHack Logo"
+                                src="/static/hh-2025/assets/hh25-logo.png"
+                                style="width: 100px; height: 100px;"
+                            />
+                            <h1>HowdyHack</h1>
+                            <p class="custom-p-text">
+                                Our themed hackathon in the fall semester,
+                                created for Aggies by Aggies
+                            </p>
+                            <br />
+                            <p>
+                                <a
+                                    class="btn btn-primary hh-button"
+                                    href="/hh/"
+                                    role="button">Visit HowdyHack 2025</a
+                                >
+                            </p>
+                        </div>
+                        <!--End Column-->
 
-            <!--BEGIN bottom left container-->
-            <div style="vertical-align: center;">
-              <a href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss" style="font-size: 12px;">Powered by <img
-                  src="static/assets/vercel.svg" /></a>
-            </div>
-            <!--END bottom left container-->
-          </div>
-          <!--END left container-->
+                        <!--BEGIN Column-->
+                        <div class="col-lg-4" id="mid-col">
+                            <img
+                                alt="TAMUhack logo"
+                                src="/static/th-2026/assets/th26-logo.png"
+                                style="width: 100px; height: 100px;"
+                            />
+                            <!-- <img alt="TAMUhack logo" src="/static/assets/tbbb.svg" /> -->
+                            <h1>TAMUhack</h1>
+                            <p class="custom-p-text">
+                                One of the largest annual hackathons in <a
+                                    href="https://anikaitsharma.com"
+                                    style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;"
+                                    >Texas</a
+                                >, hosted at Texas <a
+                                    href="https://abhishekmore.com"
+                                    style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;"
+                                    >A&M</a
+                                >
+                                U<a
+                                    href="https://nitroguy.xyz"
+                                    style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;"
+                                    >ni</a
+                                >ve<a
+                                    href="https://justindtle.com"
+                                    style="text-decoration: none;color: black;font-size: inherit;border-radius: 4px;padding: 0;font-weight: inherit;background: none;"
+                                    >rs</a
+                                >ity
+                            </p><br />
+                            <p>
+                                <a
+                                    class="btn btn-primary tamu-button"
+                                    href="/th/"
+                                    role="button">Visit TAMUhack 2026</a
+                                >
+                            </p>
+                        </div>
+                        <!--End Column-->
 
-          <!--BEGIN right container-->
-          <div style="display: flex; flex-direction: column; flex: 1; align-items: flex-end; justify-content: end;">
-            <div>
-              <ul class="navbar-nav main-nav-ui mr-auto main-container">
-                <li class="nav-item">
-                  <a class="nav-link" href="mailto:sponsor@tamuhack.com">sponsor</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mailto:hello@tamuhack.com">email</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="navbar-nav main-nav-ui mr-auto links-container">
-                <li class="nav-item">
-                  <a class="nav-link party-trigger-btn" style="cursor: pointer;">
-                    <i class="fa-solid fa-cake-candles"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" target="_blank" href="https://www.instagram.com/tamuhack/">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <!--<li class="nav-item">
+                        <!--BEGIN Column-->
+                        <div class="col-lg-4">
+                            <img
+                                alt="Workshops icon"
+                                src="/static/assets/codeslash.svg"
+                                style="margin-top: 10px;"
+                            />
+                            <h1 style="margin-top: 10px;">Docs</h1>
+                            <p class="custom-p-text">
+                                Learn how we use software to build our hackathon
+                                experience.
+                            </p><br />
+                            <p>
+                                <a
+                                    class="btn btn-primary ws-button"
+                                    href="https://dev.tamuhack.org"
+                                    role="button">Visit our Docs</a
+                                >
+                            </p>
+                        </div>
+                        <!--End Column-->
+                    </div>
+                </div>
+            </section>
+
+            <!--END Main Section-->
+
+            <!--BEGIN Our Community Section-->
+            <section id="our-community-container">
+                <div class="container">
+                    <span id="our-community" class="goto"> &nbsp; </span>
+                    <div class="content-container">
+                        <h1>Join our Community</h1>
+                        <p class="custom-p-text">
+                            Stay connected! Sign up for our mailing list for
+                            events, updates, and more.
+                        </p>
+
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div class="text-left" id="mc_embed_signup">
+                            <form
+                                action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&id=2f4969eb6d"
+                                method="post"
+                                id="mc-embedded-subscribe-form"
+                                name="mc-embedded-subscribe-form"
+                                class="validate"
+                                target="_blank"
+                                novalidate
+                            >
+                                <div id="mc_embed_signup_scroll">
+                                    <div
+                                        class="mc-field-group input-group mb-3"
+                                    >
+                                        <label
+                                            for="mce-EMAIL"
+                                            style="display: none"
+                                            >Email Address
+                                        </label>
+                                        <input
+                                            type="email"
+                                            value=""
+                                            name="EMAIL"
+                                            placeholder="Enter your email here..."
+                                            class="required email form-control"
+                                            style="border-top-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem;"
+                                            id="mce-EMAIL"
+                                        />
+                                        <div class="clear input-group-append">
+                                            <input
+                                                type="submit"
+                                                value="Subscribe"
+                                                name="subscribe"
+                                                id="mc-embedded-subscribe"
+                                                class="btn btn-outline-secondary signup-button"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div
+                                            class="response"
+                                            id="mce-error-response"
+                                            style="display:none"
+                                        >
+                                        </div>
+                                        <div
+                                            class="response"
+                                            id="mce-success-response"
+                                            style="display:none"
+                                        >
+                                        </div>
+                                    </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div
+                                        style="position: absolute; left: -5000px;"
+                                        aria-hidden="true"
+                                    >
+                                        <input
+                                            type="text"
+                                            name="b_ba74e26a78411ab40af6384c5_2f4969eb6d"
+                                            tabindex="-1"
+                                            value=""
+                                        />
+                                    </div>
+                                </div>
+                            </form>
+                            <!--End mc_embed_signup-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END Our Community Section-->
+
+            <!-- BEGIN Horizontal Timeline Section -->
+            <section class="cd-h-timeline js-cd-h-timeline">
+                <section id="what-we-do-container">
+                    <span id="past-iterations" class="goto"> &nbsp; </span>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-7 text-center">
+                                <h1>Past Iterations</h1>
+                                <p class="emphasize center">
+                                    Click on a year below to see TAMUhack's
+                                    history.
+                                </p>
+                                <br />
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </section>
+                <div class="cd-h-timeline__container container">
+                    <div class="cd-h-timeline__dates">
+                        <div class="cd-h-timeline__line">
+                            <!-- timeline events on the timeline at the top-->
+                            <ol class="no-list-style">
+                                {
+                                    hackathons.map((hackathon, idx) => (
+                                        <li>
+                                            <a
+                                                href="#0"
+                                                class={`cd-h-timeline__date ${hackathon.logo} ${idx === hackathons.length - 1 ? 'cd-h-timeline__date--selected' : ''}`}
+                                            />
+                                        </li>
+                                    ))
+                                }
+                            </ol>
+                        </div>
+                        <!-- .cd-h-timeline__line -->
+                    </div>
+                    <!-- .cd-h-timeline__dates -->
+
+                    <!-- navigation boxes -->
+                    <ul class="no-list-style">
+                        <li>
+                            <a
+                                href="#0"
+                                class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive"
+                                >Prev</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#0"
+                                class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next"
+                                >Next</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!-- .cd-h-timeline__container -->
+
+                <!-- timeline events body info -->
+                <div class="cd-h-timeline__events">
+                    <ol class="no-list-style">
+                        {
+                            hackathons.map((hackathon, idx) => (
+                                <li
+                                    class={`cd-h-timeline__event ${idx === hackathons.length - 1 ? 'cd-h-timeline__event--selected' : ''}`}
+                                >
+                                    <div class="cd-h-timeline__event-content container-fluid">
+                                        <div class="timeline-event-description">
+                                            <p class="timeline-header">
+                                                {hackathon.name}
+                                            </p>
+                                            <p class="timeline-description">
+                                                {hackathon.description}
+                                            </p>
+                                            <div class="button-container">
+                                                {hackathon.link && (
+                                                    <p>
+                                                        <a
+                                                            class="btn btn-primary tamu-button"
+                                                            href={
+                                                                hackathon.link
+                                                            }
+                                                            role="button"
+                                                            target="_blank"
+                                                        >
+                                                            Visit Event Page
+                                                        </a>
+                                                    </p>
+                                                )}
+                                                {hackathon.photos && (
+                                                    <p>
+                                                        <a
+                                                            class="btn btn-primary tamu-hollow-button"
+                                                            href={
+                                                                hackathon.photos
+                                                            }
+                                                            role="button"
+                                                            target="_blank"
+                                                        >
+                                                            See Photos
+                                                        </a>
+                                                    </p>
+                                                )}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            {hackathon.directors &&
+                                                hackathon.directors.map(
+                                                    (director) => {
+                                                        const eventName =
+                                                            hackathon.name;
+                                                        const isGifParty = [
+                                                            'HowdyHack 2022',
+                                                            'TAMUhack 2023',
+                                                        ].includes(eventName);
+                                                        const isPngParty = [
+                                                            'HowdyHack 2024',
+                                                            'TAMUhack 2025',
+                                                        ].includes(eventName);
+                                                        const isWebpParty = [
+                                                            'HowdyHack 2025',
+                                                        ].includes(eventName);
+                                                        const hasPartyMode =
+                                                            isGifParty ||
+                                                            isPngParty ||
+                                                            isWebpParty;
+
+                                                        return (
+                                                            <div class="col-md-2 col-4 padding-0">
+                                                                {/* Normal State */}
+                                                                <picture
+                                                                    class={`director-media normal-state ${hasPartyMode ? 'has-party-alt' : ''}`}
+                                                                >
+                                                                    <source
+                                                                        type="image/webp"
+                                                                        srcset={
+                                                                            director.webp
+                                                                        }
+                                                                        class="timeline-director-img"
+                                                                    />
+                                                                    <source
+                                                                        type="image/gif"
+                                                                        srcset={
+                                                                            director.gif
+                                                                        }
+                                                                        class="timeline-director-img"
+                                                                    />
+                                                                    <img
+                                                                        src={
+                                                                            director.gif
+                                                                        }
+                                                                        alt="TAMUhack Director"
+                                                                        class="timeline-director-img"
+                                                                    />
+                                                                </picture>
+                                                                {/* Party State for GIFS */}
+                                                                {isGifParty && (
+                                                                    <picture
+                                                                        class="director-media party-state"
+                                                                        style="display: none;"
+                                                                    >
+                                                                        <source
+                                                                            type="image/gif"
+                                                                            srcset={
+                                                                                director.gif
+                                                                            }
+                                                                            class="timeline-director-img"
+                                                                        />
+                                                                        <img
+                                                                            src={
+                                                                                director.gif
+                                                                            }
+                                                                            alt="TAMUhack Director"
+                                                                            class="timeline-director-img"
+                                                                        />
+                                                                    </picture>
+                                                                )}
+                                                                {/* Party State for PNGS */}
+                                                                {isPngParty && (
+                                                                    <picture
+                                                                        class="director-media party-state"
+                                                                        style="display: none;"
+                                                                    >
+                                                                        <source
+                                                                            type="image/png"
+                                                                            srcset={
+                                                                                director.party
+                                                                            }
+                                                                            class="timeline-director-img"
+                                                                        />
+                                                                        <img
+                                                                            src={
+                                                                                director.party
+                                                                            }
+                                                                            alt="TAMUhack Director"
+                                                                            class="timeline-director-img"
+                                                                        />
+                                                                    </picture>
+                                                                )}
+                                                                {/* Party State for WEBP */}
+                                                                {isWebpParty && (
+                                                                    <picture
+                                                                        class="director-media party-state"
+                                                                        style="display: none;"
+                                                                    >
+                                                                        <source
+                                                                            type="image/webp"
+                                                                            srcset={
+                                                                                director.party
+                                                                            }
+                                                                            class="timeline-director-img"
+                                                                        />
+                                                                        <img
+                                                                            src={
+                                                                                director.party
+                                                                            }
+                                                                            alt="TAMUhack Director"
+                                                                            class="timeline-director-img"
+                                                                        />
+                                                                    </picture>
+                                                                )}
+                                                                <p class="timeline-director-name">
+                                                                    {
+                                                                        director.name
+                                                                    }
+                                                                </p>
+                                                                <p class="timeline-director-position">
+                                                                    {
+                                                                        director.position
+                                                                    }
+                                                                </p>
+                                                                <div class="row justify-content-center">
+                                                                    {director.github && (
+                                                                        <a
+                                                                            href={
+                                                                                director.github
+                                                                            }
+                                                                            target="_blank"
+                                                                        >
+                                                                            <img
+                                                                                src="/static/assets/horizontal-timeline/github.svg"
+                                                                                alt="Github"
+                                                                                class="timeline-director-socials"
+                                                                            />
+                                                                        </a>
+                                                                    )}
+                                                                    {director.linkedin && (
+                                                                        <a
+                                                                            href={
+                                                                                director.linkedin
+                                                                            }
+                                                                            target="_blank"
+                                                                        >
+                                                                            <img
+                                                                                src="/static/assets/horizontal-timeline/linkedin.svg"
+                                                                                alt="LinkedIn"
+                                                                                class="timeline-director-socials"
+                                                                            />
+                                                                        </a>
+                                                                    )}
+                                                                    {director.portfolio && (
+                                                                        <a
+                                                                            href={
+                                                                                director.portfolio
+                                                                            }
+                                                                            target="_blank"
+                                                                        >
+                                                                            <img
+                                                                                src="/static/assets/horizontal-timeline/portfolio.svg"
+                                                                                alt="Portfolio"
+                                                                                class="timeline-director-socials"
+                                                                            />
+                                                                        </a>
+                                                                    )}
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                    },
+                                                )}
+                                        </div>
+                                    </div>
+                                </li>
+                            ))
+                        }
+                    </ol>
+                </div>
+                <!-- .cd-h-timeline__events -->
+            </section>
+            <!-- END Horizontal Timeline Section -->
+
+            <br />
+            <br />
+
+            <!--BEGIN Footer-->
+            <footer class="container">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light"
+                    id="bottom-nav-bar"
+                >
+                    <div class="navbar-collapse collapse" id="navbarText">
+                        <!--BEGIN left container-->
+                        <div
+                            style="display: flex; flex-direction: column; flex: 0; align-items: flex-start; justify-content: start;"
+                        >
+                            <!--BEGIN top left container-->
+                            <div href="#">
+                                <img
+                                    src="/static/assets/tamuhack_official_logo.svg"
+                                    style="margin-bottom: 9px"
+                                />
+                            </div>
+                            <!--END top left container-->
+
+                            <!--BEGIN bottom left container-->
+                            <div style="vertical-align: center;">
+                                <a
+                                    href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss"
+                                    style="font-size: 12px;"
+                                    >Powered by <img
+                                        src="static/assets/vercel.svg"
+                                    /></a
+                                >
+                            </div>
+                            <!--END bottom left container-->
+                        </div>
+                        <!--END left container-->
+
+                        <!--BEGIN right container-->
+                        <div
+                            style="display: flex; flex-direction: column; flex: 1; align-items: flex-end; justify-content: end;"
+                        >
+                            <div>
+                                <ul
+                                    class="navbar-nav main-nav-ui main-container mr-auto"
+                                >
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="mailto:sponsor@tamuhack.com"
+                                            >sponsor</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="mailto:hello@tamuhack.com"
+                                            >email</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul
+                                    class="navbar-nav main-nav-ui links-container mr-auto"
+                                >
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link party-trigger-btn"
+                                            style="cursor: pointer;"
+                                        >
+                                            <i class="fa-solid fa-cake-candles"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            target="_blank"
+                                            href="https://www.instagram.com/tamuhack/"
+                                        >
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <!--<li class="nav-item">
                   <a class="nav-link" target="_blank" href="https://www.facebook.com/tamuhack/">
                     <i class="fab fa-facebook-f"></i>
                   </a>
@@ -460,31 +815,47 @@ const bannerShown = true;
                     <i class="fab fa-reddit"></i>
                   </a>
                 </li>-->
-                <li class="nav-item">
-                  <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" target="_blank" href="/discord">
-                    <i class="fa-brands fa-discord"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--END right container-->
-        </div>
-      </nav>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link small-link"
+                                            target="_blank"
+                                            href="https://github.com/tamuhack-org/"
+                                        >
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            target="_blank"
+                                            href="/discord"
+                                        >
+                                            <i class="fa-brands fa-discord"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--END right container-->
+                    </div>
+                </nav>
 
-      <!--BEGIN Smaller Links Container-->
-      <div class="custom-nav d-lg-none d-xl-none small-links-container">
-        <img alt="" src="/static/assets/tamuhack_official_logo.svg" />
-        <div class="nice-text small-links-wrapper">
-          <a class="nav-link small-link party-trigger-btn" style="cursor: pointer;">
-            <i class="fa-solid fa-cake-candles"></i>
-          </a>
-          <!--<a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
+                <!--BEGIN Smaller Links Container-->
+                <div
+                    class="custom-nav d-lg-none d-xl-none small-links-container"
+                >
+                    <img
+                        alt=""
+                        src="/static/assets/tamuhack_official_logo.svg"
+                    />
+                    <div class="nice-text small-links-wrapper">
+                        <a
+                            class="nav-link small-link party-trigger-btn"
+                            style="cursor: pointer;"
+                        >
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </a>
+                        <!--<a class="nav-link small-link" target="_blank" href="https://www.facebook.com/tamuhack/">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a class="nav-link small-link" target="_blank" href="https://twitter.com/tamuhack">
@@ -493,85 +864,129 @@ const bannerShown = true;
           <a class="nav-link small-link" target="_blank" href="https://www.reddit.com/r/TAMUHack">
             <i class="fab fa-reddit"></i>
           </a>-->
-          <a class="nav-link small-link" target="_blank" href="https://www.instagram.com/tamuhack/">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a class="nav-link small-link" target="_blank" href="https://github.com/tamuhack-org/">
-            <i class="fab fa-github"></i>
-          </a>
-          <a class="nav-link small-link" target="_blank" href="/discord">
-            <i class="fa-brands fa-discord"></i>
-          </a>
+                        <a
+                            class="nav-link small-link"
+                            target="_blank"
+                            href="https://www.instagram.com/tamuhack/"
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a
+                            class="nav-link small-link"
+                            target="_blank"
+                            href="https://github.com/tamuhack-org/"
+                        >
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                            class="nav-link small-link"
+                            target="_blank"
+                            href="/discord"
+                        >
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </div>
+                    <br />
+                </div>
+                <!--END Smaller Links Container-->
+
+                <!--BEGIN Small Nav Container-->
+                <div class="small-nav-container">
+                    <nav
+                        class="nav nav-pills nav-justified d-lg-none d-xl-none"
+                    >
+                        <a
+                            class="nav-item nav-link"
+                            href="mailto:sponsor@tamuhack.com"
+                        >
+                            <span>SPONSOR</span>
+                        </a>
+                        <a
+                            class="nav-item nav-link"
+                            href="mailto:hello@tamuhack.com"
+                        >
+                            <span>EMAIL</span>
+                        </a>
+                    </nav>
+                </div>
+                <!--END Small Nav Container-->
+
+                <!--BEGIN small vercel container-->
+                <div class="small-nav-container">
+                    <nav
+                        class="nav nav-pills nav-justified d-lg-none d-xl-none"
+                        style="justify-content: center;"
+                    >
+                        <a
+                            href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss"
+                            style="font-size: 12px; color: #999999 !important;"
+                            >Powered by <img
+                                src="static/assets/vercel.svg"
+                            /></a
+                        >
+                    </nav>
+                </div>
+                <!--END small vercel container-->
+            </footer>
         </div>
-        <br />
-      </div>
-      <!--END Smaller Links Container-->
+        <!--BEGIN Scripts-->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+            async></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+            async></script>
+        <script is:inline src="/static/scripts/main.js"></script>
+        <!-- horizontal-timeline scripts -->
+        <script is:inline>
+            if (typeof swipeContentTimeline === 'function')
+                swipeContentTimeline();
+            if (typeof initalizeHoriTimeline === 'function')
+                initalizeHoriTimeline();
+            // Party Mode Logic
+            const partyBtns = document.querySelectorAll('.party-trigger-btn');
+            let isParty = false;
 
-      <!--BEGIN Small Nav Container-->
-      <div class="small-nav-container">
-        <nav class="nav nav-pills nav-justified d-lg-none d-xl-none">
-          <a class="nav-item nav-link" href="mailto:sponsor@tamuhack.com">
-            <span>SPONSOR</span>
-          </a>
-          <a class="nav-item nav-link" href="mailto:hello@tamuhack.com">
-            <span>EMAIL</span>
-          </a>
-        </nav>
-      </div>
-      <!--END Small Nav Container-->
+            partyBtns.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
 
-      <!--BEGIN small vercel container-->
-      <div class="small-nav-container">
-        <nav class="nav nav-pills nav-justified d-lg-none d-xl-none" style="justify-content: center;">
-          <a href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss"
-            style="font-size: 12px; color: #999999 !important;">Powered by <img src="static/assets/vercel.svg" /></a>
-        </nav>
-      </div>
-      <!--END small vercel container-->
+                    isParty = !isParty;
 
-    </footer>
-  </div>
-  <!--BEGIN Scripts-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"
-    async></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
-    async></script>
-  <script is:inline src="/static/scripts/main.js"></script>
-  <!-- horizontal-timeline scripts -->
-<script is:inline>
-    if (typeof swipeContentTimeline === 'function') swipeContentTimeline();
-    if (typeof initalizeHoriTimeline === 'function') initalizeHoriTimeline();
-  // Party Mode Logic
-  const partyBtns = document.querySelectorAll('.party-trigger-btn'); 
-  let isParty = false;
+                    const normalImages = document.querySelectorAll(
+                        '.director-media.normal-state.has-party-alt',
+                    );
+                    const partyImages = document.querySelectorAll(
+                        '.director-media.party-state',
+                    );
 
-  partyBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      
-      isParty = !isParty;
-      
-      const normalImages = document.querySelectorAll('.director-media.normal-state.has-party-alt');
-      const partyImages = document.querySelectorAll('.director-media.party-state');
+                    if (isParty) {
+                        normalImages.forEach(
+                            (el) => (el.style.display = 'none'),
+                        );
+                        partyImages.forEach(
+                            (el) => (el.style.display = 'block'),
+                        );
+                    } else {
+                        normalImages.forEach(
+                            (el) => (el.style.display = 'block'),
+                        );
+                        partyImages.forEach(
+                            (el) => (el.style.display = 'none'),
+                        );
+                    }
+                });
+            });
+        </script>
 
-      if (isParty) {
-        normalImages.forEach(el => el.style.display = 'none');
-        partyImages.forEach(el => el.style.display = 'block');
-      } else {
-        normalImages.forEach(el => el.style.display = 'block');
-        partyImages.forEach(el => el.style.display = 'none');
-      }
-    });
-  });
-</script>
-
-  <!--END Scripts-->
-
-</body>
-
+        <!--END Scripts-->
+    </body>
 </html>
