@@ -1,0 +1,8 @@
+# Ignore build outputs
+dist/
+.astro/
+node_modules/
+package-lock.json
+
+# compiled static js files are here (e.g., hh2018, rattle) so we do not want to format those
+public/
