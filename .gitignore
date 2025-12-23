@@ -1,2 +1,30 @@
+# build output
+dist/
+
+# hh2018 needs the dist folder, so don't ignore that folder
+!public/static/assets/hh-2018/bower_components/scrollreveal/dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
 */.DS_Store
+
+# jetbrains setting folder
+.idea/
+
 .vscode
