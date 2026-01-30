@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meet the Teams at TAMUhack</title>
+        <link href="/static/th-2021/tailwind.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+
+        <!-- for the footer -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link href="/static/styles/app.css" rel="stylesheet" />
+
+        <link
+            href="/static/th-2022/favicon.png"
+            rel="icon"
+            type="image/x-icon"
+        />
+        <style>
+            html {
+                background-color: #fafafa;
+            }
+
+            .bg-offwhite {
+                background-color: #fafafa;
+            }
+
+            .bg-sky {
+                background-color: #eef6fc;
+            }
+
+            .raleway-font {
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .futura-font {
+                font-family: 'Futura';
+            }
+
+            @font-face {
+                font-family: 'Futura';
+                src: url(/static/fonts/Futura/Futura-Bold/futura-bold.ttf);
+                font-weight: 900;
+            }
+
+            @font-face {
+                font-family: 'Futura';
+                src: url(/static/fonts/Futura/Futura-Light/futura-light.ttf);
+                font-weight: light;
+            }
+
+            @font-face {
+                font-family: 'Avenir Next';
+                src: url(/static/fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold-01.ttf);
+                font-weight: regular;
+            }
+
+            .opensans-font {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .navy {
+                color: #345562;
+            }
+
+            .navy-button {
+                background-color: #345562;
+            }
+
+            .navy-border {
+                border-color: #345562;
+            }
+
+            .kinda-black {
+                color: #232323;
+            }
+
+            .baby-blue {
+                background-color: #eef6fc;
+            }
+
+            .baby-pink {
+                background-color: #ffa4c6;
+                color: #b4b4b4;
+            }
+
+            .baby-pink-text {
+                color: #f3859b;
+            }
+            .gray-text {
+                color: #989494;
+            }
+
+            .baby-blue-text {
+                color: #7fc0fa;
+            }
+
+            .baby-pink-txt {
+                color: #ffa4c6;
+            }
+
+            .th-pink-txt {
+                color: #f87090;
+            }
+
+            .centerr {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .th-pink {
+                background-color: #f87090;
+            }
+
+            .th-blue-txt {
+                color: #3e688c;
+            }
+
+            .custom-button {
+                font-family: 'Avenir Next';
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+                border-radius: 5px;
+            }
+
+            .custom-button-grayed {
+                font-family: 'Avenir Next';
+                color: #b4b4b4;
+                font-size: 18px;
+                font-weight: 700;
+                border-radius: 5px;
+                box-shadow: 0px 0px 0px 5px #b4b4b4;
+            }
+
+            .custom-button-grayed:hover {
+                font-family: 'Avenir Next';
+                color: #b4b4b4;
+                font-size: 18px;
+                font-weight: 700;
+                border-radius: 5px;
+            }
+
+            .custom-button:hover {
+                color: white;
+                border-radius: 5px;
+                box-shadow: 0px 0px 0px 5px #375764;
+            }
+
+            .mailing-signup {
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            @media only screen and (min-width: 901px) {
+                .faq-cont {
+                    padding: 150px;
+                    padding-top: 0px;
+                    padding-bottom: 75px;
+                }
+            }
+
+            @media only screen and (max-width: 900px) {
+                .faq-cont {
+                    padding: 50px;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                .faq-cont {
+                    padding: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+
+            @media only screen and (max-width: 780px) {
+                .schedule {
+                    position: relative;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    margin-top: 3rem;
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                    border: 4px solid #345562;
+                    border-radius: 2rem;
+                }
+            }
+
+            @media only screen and (min-width: 781px) {
+                .schedule {
+                    position: relative;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    margin-top: 3rem;
+                    margin-left: 4rem;
+                    margin-right: 4rem;
+                    border: 4px solid #345562;
+                    border-radius: 2rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .cloudy-bg {
+                    background-image: url('/static/th-2022/clouds.png');
+                    min-width: 500px;
+                    background-repeat: repeat-x;
+                    background-size: 100% 100%;
+                    z-index: 0;
+                }
+            }
+
+            @media (max-width: 640px) {
+                .custom-button {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .custom-button-grayed {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .no-pic {
+                    display: none;
+                }
+
+                .cloudy-bg {
+                    background-image: url('/static/th-2022/clouds.png');
+                    min-width: 100px;
+                    background-size: 100% 15%;
+                    background-repeat: repeat-x;
+                }
+
+                .title-txt {
+                    margin-left: auto;
+                    margin-right: auto;
+                    content: center;
+                }
+
+                .par-txt {
+                    margin-left: auto;
+                    margin-right: auto;
+                    content: center;
+                }
+
+                .custom-grid {
+                    grid: grid-cols-1;
+                }
+
+                .custom-margin {
+                    margin-top: 5;
+                }
+            }
+        </style>
+    </head>
+
+    <body class="bg-white">
+        <!-- NAVBAR -->
+        <div
+            class="bg-sky fixed z-50 w-screen items-center justify-between px-8 py-4 md:flex md:px-16"
+        >
+            <div>
+                <a
+                    href="https://tamuhack.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class=""
+                >
+                    <img
+                        class="hidden w-10 md:flex"
+                        src="/static/assets/th_logo.svg"
+                /></a>
+                <a
+                    href="https://tamuhack.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class=""
+                >
+                    <img class="w-8 md:hidden" src="/static/assets/th_logo.svg"
+                /></a>
+            </div>
+        </div>
+
+        <!-- LANDING -->
+        <div id="landing" class="h-full">
+            <div class="bg-sky flex justify-center pt-32 sm:pt-0 md:pt-10">
+                <p
+                    class="raleway-font kinda-black bg-sky flex justify-center pt-20 text-3xl font-bold sm:text-4xl md:text-3xl lg:text-3xl"
+                >
+                    Meet the teams at
+                </p>
+            </div>
+            <div class="bg-sky flex justify-center py-20 pt-2">
+                <img
+                    class="bg-sky max-h-52 w-4/5 p-4 sm:max-h-screen md:w-3/5 lg:w-1/3"
+                    src="/static/assets/tamuhacfull_k.svg"
+                />
+            </div>
+            <div class="cloudy-bg bg-sky md:py-20"></div>
+            <div class="bg-white">
+                <div class="flex w-full justify-between">
+                    <div class="flex justify-between px-10 md:px-40">
+                        <p
+                            class="lg:px-50 font-regular opensans-font kinda-black pt-20 text-center text-xl md:px-10 xl:px-80"
+                        >
+                            Putting up hackathons is a lot of work, and the
+                            contributions of different teams is what makes it
+                            possible. Learn about what each team does throughout
+                            the year and leading up to the hackathons here!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center pt-10">
+                <a
+                    href="https://forms.gle/CT6fNdbqLBb1n5o1A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="th-pink w-4/5 min-w-min rounded-lg px-6 py-4 pt-4 text-center font-bold text-white sm:mr-5 sm:w-60"
+                    >APPLY NOW</a
+                >
+            </div>
+        </div>
+
+        <!-- TEAMS -->
+        <div id="Teams 1" class="h-full md:mt-4" style="padding-top: 6em">
+            <div
+                class="z-40 mx-5 place-content-center items-stretch md:px-12 lg:grid lg:grid-cols-2 lg:justify-center lg:justify-items-center lg:gap-7 lg:px-32"
+            >
+                <div
+                    class="mt-8 rounded-lg border-4 border-zinc-600 bg-white px-10 py-10 opacity-100 md:flex-auto lg:mx-5 lg:max-w-4xl lg:justify-self-stretch"
+                >
+                    <img
+                        class="mx-auto w-20"
+                        src="/static/th-2022/teams_dev.png"
+                    />
+                    <p
+                        class="raleway-font th-pink-txt py-4 text-center text-xl font-extrabold md:text-2xl"
+                    >
+                        Development
+                    </p>
+                    <ul
+                        class="text-l md:text-md font-md opensans-font black mt-3 list-disc"
+                    >
+                        <li>
+                            Implement web page for TAMUhack and HowdyHack with
+                            the design team
+                        </li>
+                        <li>
+                            Develop and deploy cool internal projects (ex.
+                            Discord sign in bot, QR app, registration system,
+                            team matching)
+                        </li>
+                        <li>
+                            Maintain existing software (ex. judging system,
+                            mentor help platform)
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="mt-8 rounded-lg border-4 border-zinc-600 bg-white px-10 py-10 opacity-100 md:flex-auto lg:mx-5 lg:max-w-4xl lg:justify-self-stretch"
+                >
+                    <img
+                        class="mx-auto w-20"
+                        src="/static/th-2022/teams_des.png"
+                    />
+                    <p
+                        class="raleway-font th-pink-txt py-4 text-center text-xl font-extrabold md:text-2xl"
+                    >
+                        Design
+                    </p>
+                    <ul
+                        class="text-l md:text-md font-md opensans-font black mt-3 list-disc"
+                    >
+                        <li>Prototype TAMUhack and HowdyHack websites</li>
+                        <li>
+                            Design marketing materials for the hackathons,
+                            workshops, and various events
+                        </li>
+                        <li>
+                            Create graphics for merchandise (ex. T-shirts,
+                            stickers, etc.)
+                        </li>
+                        <li>Building digital documents</li>
+                        <li>
+                            Maintain engagement with community through
+                            promotional media
+                        </li>
+                        <li>Marketing/photography/film</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="Teams 2" class="h-full md:mt-4" style="padding-top: 1em">
+            <div
+                class="z-40 mx-5 place-content-center items-stretch md:px-12 lg:grid lg:grid-cols-1 lg:justify-center lg:justify-items-center lg:gap-7 lg:px-32"
+            >
+                <div
+                    class="mx-auto mt-8 rounded-lg border-4 border-zinc-600 bg-white px-10 py-10 opacity-100 md:flex-auto lg:mx-5 lg:max-w-xl lg:justify-self-stretch"
+                >
+                    <img
+                        class="mx-auto w-20"
+                        src="/static/th-2022/teams_log.png"
+                    />
+                    <p
+                        class="raleway-font th-pink-txt py-4 text-center text-xl font-extrabold md:text-2xl"
+                    >
+                        Logistics
+                    </p>
+                    <ul
+                        class="text-l md:text-md font-md opensans-font black list-disc"
+                    >
+                        <li>
+                            Reaching out to and maintaining professional ties
+                            with potential TAMUhack sponsors
+                        </li>
+                        <li>
+                            Hacker communication before, during, and after the
+                            event (ex. emails, Discord announcements, surveys)
+                        </li>
+                        <li>
+                            Communicating with food vendors to order and deliver
+                            meals for the hackathons
+                        </li>
+                        <li>
+                            Promoting TAMUhack among other student organizations
+                        </li>
+                        <li>Hosting workshops throughout the year</li>
+                        <li>Marketing for TAMUhack events and hackathons</li>
+                        <li>
+                            Facilitate the judging, mentorship, and volunteer
+                            processes
+                        </li>
+                        <li>Designing the hacker experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br /><br /><br />
+
+        <div class="mailing-signup">
+            <p class="custom-p-text">
+                Sign up for our mailing list for events, updates, and more.
+            </p>
+
+            <!-- Begin Mailchimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form
+                    action="https://tamuhack.us9.list-manage.com/subscribe/post?u=ba74e26a78411ab40af6384c5&amp;id=2f4969eb6d"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate"
+                    target="_blank"
+                    novalidate
+                >
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group input-group mb-3">
+                            <label for="mce-EMAIL" style="display: none"
+                                >Email Address
+                            </label>
+                            <input
+                                type="email"
+                                value=""
+                                name="EMAIL"
+                                placeholder="Enter your email here..."
+                                class="required email form-control"
+                                style="
+                                    border-top-left-radius: 0.25rem;
+                                    border-bottom-left-radius: 0.25rem;
+                                "
+                                id="mce-EMAIL"
+                            />
+                            <div class="clear input-group-append">
+                                <input
+                                    type="submit"
+                                    value="Subscribe"
+                                    name="subscribe"
+                                    id="mc-embedded-subscribe"
+                                    class="btn btn-outline-secondary signup-button"
+                                />
+                            </div>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div
+                                class="response"
+                                id="mce-error-response"
+                                style="display: none"
+                            ></div>
+                            <div
+                                class="response"
+                                id="mce-success-response"
+                                style="display: none"
+                            ></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div
+                            style="position: absolute; left: -5000px"
+                            aria-hidden="true"
+                        >
+                            <input
+                                type="text"
+                                name="b_ba74e26a78411ab40af6384c5_2f4969eb6d"
+                                tabindex="-1"
+                                value=""
+                            />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+        </div>
+
+        <br /><br />
+
+        <!--BEGIN Footer-->
+        <footer class="container">
+            <nav
+                class="navbar navbar-expand-lg navbar-light"
+                id="bottom-nav-bar"
+            >
+                <div class="navbar-collapse collapse" id="navbarText">
+                    <!--BEGIN left container-->
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: flex-start;
+                            justify-content: start;
+                        "
+                    >
+                        <!--BEGIN top left container-->
+                        <div href="#">
+                            <img
+                                src="/static/assets/tamuhack_official_logo.svg"
+                                style="margin-bottom: 9px"
+                            />
+                        </div>
+                        <!--END top left container-->
+
+                        <!--BEGIN bottom left container-->
+                        <div style="vertical-align: center">
+                            <a
+                                href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss"
+                                style="font-size: 12px"
+                                >Powered by
+                                <img
+                                    src="/static/assets/vercel.svg"
+                                    style="display: inline"
+                            /></a>
+                        </div>
+                        <!--END bottom left container-->
+                    </div>
+                    <!--END left container-->
+
+                    <!--BEGIN right container-->
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: flex-end;
+                            justify-content: end;
+                        "
+                    >
+                        <div>
+                            <ul
+                                class="navbar-nav main-nav-ui main-container mr-auto"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="mailto:sponsor@tamuhack.com"
+                                        >sponsor</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="mailto:hello@tamuhack.com"
+                                        >email</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul
+                                class="navbar-nav main-nav-ui links-container mr-auto"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        target="_blank"
+                                        href="https://www.facebook.com/tamuhack/"
+                                    >
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        target="_blank"
+                                        href="https://www.instagram.com/tamuhack/"
+                                    >
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        target="_blank"
+                                        href="https://twitter.com/tamuhack"
+                                    >
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        target="_blank"
+                                        href="https://www.reddit.com/r/TAMUHack"
+                                    >
+                                        <i class="fab fa-reddit"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link small-link"
+                                        target="_blank"
+                                        href="https://github.com/tamuhack-org/"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--END right container-->
+                </div>
+            </nav>
+
+            <!--BEGIN Smaller Links Container-->
+            <div class="custom-nav d-lg-none d-xl-none small-links-container">
+                <img alt="" src="/static/assets/tamuhack_official_logo.svg" />
+                <div class="nice-text small-links-wrapper">
+                    <a
+                        class="nav-link small-link"
+                        target="_blank"
+                        href="https://www.facebook.com/tamuhack/"
+                    >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                        class="nav-link small-link"
+                        target="_blank"
+                        href="https://www.instagram.com/tamuhack/"
+                    >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                        class="nav-link small-link"
+                        target="_blank"
+                        href="https://twitter.com/tamuhack"
+                    >
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                        class="nav-link small-link"
+                        target="_blank"
+                        href="https://www.reddit.com/r/TAMUHack"
+                    >
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                    <a
+                        class="nav-link small-link"
+                        target="_blank"
+                        href="https://github.com/tamuhack-org/"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <br />
+            </div>
+            <!--END Smaller Links Container-->
+
+            <!--BEGIN Small Nav Container-->
+            <div class="small-nav-container">
+                <nav class="nav nav-pills nav-justified d-lg-none d-xl-none">
+                    <a
+                        class="nav-item nav-link"
+                        href="mailto:sponsor@tamuhack.com"
+                    >
+                        <span>SPONSOR</span>
+                    </a>
+                    <a
+                        class="nav-item nav-link"
+                        href="mailto:hello@tamuhack.com"
+                    >
+                        <span>EMAIL</span>
+                    </a>
+                </nav>
+            </div>
+            <!--END Small Nav Container-->
+
+            <!--BEGIN small vercel container-->
+            <div class="small-nav-container">
+                <nav
+                    class="nav nav-pills nav-justified d-lg-none d-xl-none"
+                    style="justify-content: center"
+                >
+                    <a
+                        href="https://vercel.com?utm_source=tamuhack&utm_campaign=oss"
+                        style="font-size: 12px; color: #999999 !important"
+                        >Powered by <img src="/static/assets/vercel.svg"
+                    /></a>
+                </nav>
+            </div>
+            <!--END small vercel container-->
+        </footer>
+    </body>
+</html>
