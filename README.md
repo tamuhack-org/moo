@@ -60,7 +60,7 @@ You can visit the site at [https://tamuhack.org/](https://tamuhack.org/)
 - https://tamuhack.org/th/2018
 - https://tamuhack.org/th/2016
 - https://tamuhack.org/hh
-- https://tamuachk.org/hh/2025
+- https://tamuhack.org/hh/2025
 - https://tamuhack.org/hh/2024
 - https://tamuhack.org/hh/2023
 - https://tamuhack.org/hh/2022
