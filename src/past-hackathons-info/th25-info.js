@@ -174,7 +174,9 @@ export const th25info = {
             party: './static/th-2025/headshots/party/aj.png',
             name: 'A.J Bamgbelu',
             position: 'Tech',
+            github: 'https://github.com/8SK3PS8',
             linkedin: 'https://www.linkedin.com/in/ajbamgbelu/',
+            portfolio: 'https://adeobam.com/',
         },
         {
             webp: './static/th-2025/headshots/webp/ashlee.webp',

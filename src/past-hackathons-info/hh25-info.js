@@ -118,7 +118,9 @@ export const hh25info = {
             party: './static/hh-2025/headshots/party/aj.webp',
             name: 'A.J Bamgbelu',
             position: 'Tech',
+            github: 'https://github.com/8SK3PS8',
             linkedin: 'https://www.linkedin.com/in/ajbamgbelu/',
+            portfolio: 'https://adeobam.com/',
         },
         {
             webp: './static/hh-2025/headshots/webp/ashlee.webp',
