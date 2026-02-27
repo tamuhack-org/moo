@@ -236,6 +236,7 @@ export const th25info = {
             position: 'Tech',
             github: 'https://github.com/Ju5t1nL3',
             linkedin: 'https://www.linkedin.com/in/justindtle/',
+            portfolio: 'https://justindtle.com'
         },
     ],
 };
