@@ -22,6 +22,7 @@ export const hh24info = {
             position: 'President',
             github: 'https://github.com/anishfish2',
             linkedin: 'https://www.linkedin.com/in/anishkarthik',
+            portfolio: 'https://anish.fish'
         },
         {
             webp: './static/hh-2024/headshots/webp/gabrielle.webp',

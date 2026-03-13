@@ -44,6 +44,7 @@ export const th24info = {
             position: 'Logistics Lead',
             github: 'https://github.com/anishfish2',
             linkedin: 'https://www.linkedin.com/in/anishkarthik',
+            portfolio: 'https://anish.fish'
         },
         {
             webp: './static/th-2024/headshots/webp1/kirthivel.webp',

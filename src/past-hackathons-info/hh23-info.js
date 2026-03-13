@@ -44,6 +44,7 @@ export const hh23info = {
             position: 'Logistics Lead',
             github: 'https://github.com/anishfish2',
             linkedin: 'https://www.linkedin.com/in/anishkarthik',
+            portfolio: 'https://anish.fish'
         },
         {
             webp: './static/hh-2023/headshots/webp/kirthivel.webp',

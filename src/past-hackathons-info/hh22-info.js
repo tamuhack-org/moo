@@ -134,6 +134,7 @@ export const hh22info = {
             position: 'Logistics',
             github: 'https://github.com/anishfish2',
             linkedin: 'https://www.linkedin.com/in/anishkarthik',
+            portfolio: 'https://anish.fish'
         },
         {
             webp: './static/hh-2022/headshots/webp/anjali.webp',
