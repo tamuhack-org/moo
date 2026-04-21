@@ -30,7 +30,8 @@ You can visit the site at [https://tamuhack.org/](https://tamuhack.org/)
 
 - Our amazing [team](https://tamuhack.org#past-iterations)
 - Some truly innovative sponsors
-- [![Astro](./static/assets/astro-streamline-logos.svg)](https://docs.astro.build/en/getting-started/)
+
+[![Astro](./public/static/assets/astro-logo-light-gradient.svg)](https://astro.build/)
 ## Contributing
 
 Branch naming convention:
