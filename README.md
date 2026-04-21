@@ -6,6 +6,7 @@ You can visit the site at [https://tamuhack.org/](https://tamuhack.org/)
 
 - https://tamuhack.org/
 - https://tamuhack.org/th
+- https://tamuhack.org/th/2026
 - https://tamuhack.org/th/2025
 - https://tamuhack.org/th/2024
 - https://tamuhack.org/th/2023
@@ -29,8 +30,7 @@ You can visit the site at [https://tamuhack.org/](https://tamuhack.org/)
 
 - Our amazing [team](https://tamuhack.org#past-iterations)
 - Some truly innovative sponsors
-- [![Vercel](./static/assets/powered-by-vercel.svg)](https://vercel.com?utm_source=tamuhack&utm_campaign=oss)
-
+- [![Astro](./static/assets/astro-streamline-logos.svg)](https://docs.astro.build/en/getting-started/)
 ## Contributing
 
 Branch naming convention:
