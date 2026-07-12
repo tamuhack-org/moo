@@ -8,7 +8,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/adam.webp',
             img: './static/th-2026/headshots/jpg/adam.jpg',
-            party: './static/th-2026/headshots/party/adam.webp',
+            party: './static/th-2026/headshots/party/adam.png',
             name: 'Adam Teo',
             position: 'President',
             github: 'https://github.com/ysadamt',
@@ -18,7 +18,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/rita.webp',
             img: './static/th-2026/headshots/jpg/rita.jpg',
-            party: './static/th-2026/headshots/party/rita.webp',
+            party: './static/th-2026/headshots/party/rita.png',
             name: 'Rita Hernandez Guerrero',
             position: 'Vice President',
             linkedin:
@@ -27,7 +27,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/monish.webp',
             img: './static/th-2026/headshots/jpg/monish.jpg',
-            party: './static/th-2026/headshots/party/monish.webp',
+            party: './static/th-2026/headshots/party/monish.png',
             name: 'Monish Kanneboina',
             position: 'Treasurer',
             linkedin: 'https://www.linkedin.com/in/monish-kanneboina/',
@@ -35,7 +35,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/annie.webp',
             img: './static/th-2026/headshots/jpg/annie.jpg',
-            party: './static/th-2026/headshots/party/annie.webp',
+            party: './static/th-2026/headshots/party/annie.png',
             name: 'Annie Li',
             position: 'Creative Lead',
             linkedin: 'https://www.linkedin.com/in/liannie3/',
@@ -44,7 +44,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/eric.webp',
             img: './static/th-2026/headshots/jpg/eric.jpg',
-            party: './static/th-2026/headshots/party/eric.webp',
+            party: './static/th-2026/headshots/party/eric.png',
             name: 'Eric Li',
             position: 'Tech Lead',
             github: 'https://github.com/ericli18',
@@ -54,7 +54,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/nicolas.webp',
             img: './static/th-2026/headshots/jpg/nicolas.jpg',
-            party: './static/th-2026/headshots/party/nicolas.webp',
+            party: './static/th-2026/headshots/party/nicolas.png',
             name: 'Nicolas Romero',
             position: 'Logistics Lead',
             github: 'https://github.com/nicolas-m-romero',
@@ -64,7 +64,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/nikita.webp',
             img: './static/th-2026/headshots/jpg/nikita.jpg',
-            party: './static/th-2026/headshots/party/nikita.webp',
+            party: './static/th-2026/headshots/party/nikita.png',
             name: 'Nikita Kelwada',
             position: 'Logistics Lead',
             linkedin: 'https://www.linkedin.com/in/nikita-kelwada/',
@@ -72,7 +72,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/harshitha.webp',
             img: './static/th-2026/headshots/jpg/harshitha.jpg',
-            party: './static/th-2026/headshots/party/harshitha.webp',
+            party: './static/th-2026/headshots/party/harshitha.png',
             name: 'Harshitha Marepally',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/harshithamarepally/',
@@ -80,14 +80,14 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/katherine.webp',
             img: './static/th-2026/headshots/jpg/katherine.jpg',
-            party: './static/th-2026/headshots/party/katherine.webp',
+            party: './static/th-2026/headshots/party/katherine.png',
             name: 'Katherine Nguyen',
             position: 'Creative',
         },
         {
             webp: './static/th-2026/headshots/webp/sandeep.webp',
             img: './static/th-2026/headshots/jpg/sandeep.jpg',
-            party: './static/th-2026/headshots/party/sandeep.webp',
+            party: './static/th-2026/headshots/party/sandeep.png',
             name: 'Sandeep Kandrigi',
             position: 'Tech',
             github: 'https://github.com/skandrigi',
@@ -97,7 +97,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/nmesoma.webp',
             img: './static/th-2026/headshots/jpg/nmesoma.jpg',
-            party: './static/th-2026/headshots/party/nmesoma.webp',
+            party: './static/th-2026/headshots/party/nmesoma.png',
             name: 'Nmesoma Duru',
             position: 'Creative',
             linkedin: 'https://www.linkedin.com/in/nmesoma-duru-283b15257/',
@@ -105,7 +105,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/aj.webp',
             img: './static/th-2026/headshots/jpg/aj.jpg',
-            party: './static/th-2026/headshots/party/aj.webp',
+            party: './static/th-2026/headshots/party/aj.png',
             name: 'A.J Bamgbelu',
             position: 'Tech',
             github: 'https://github.com/8SK3PS8',
@@ -115,7 +115,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/ashlee.webp',
             img: './static/th-2026/headshots/jpg/ashlee.jpg',
-            party: './static/th-2026/headshots/party/ashlee.webp',
+            party: './static/th-2026/headshots/party/ashlee.png',
             name: 'Ashlee Ajala',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/ashleeajala/',
@@ -123,7 +123,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/claire.webp',
             img: './static/th-2026/headshots/jpg/claire.jpg',
-            party: './static/th-2026/headshots/party/claire.webp',
+            party: './static/th-2026/headshots/party/claire.png',
             name: 'Claire Wang',
             position: 'Creative',
             linkedin: 'https://www.linkedin.com/in/chaire/',
@@ -131,7 +131,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/keshav.webp',
             img: './static/th-2026/headshots/jpg/keshav.jpg',
-            party: './static/th-2026/headshots/party/keshav.webp',
+            party: './static/th-2026/headshots/party/keshav.png',
             name: 'Keshav Dharshan',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/keshav-dharshan-35a47524b/',
@@ -141,7 +141,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/blessing.webp',
             img: './static/th-2026/headshots/jpg/blessing.jpg',
-            party: './static/th-2026/headshots/party/blessing.webp',
+            party: './static/th-2026/headshots/party/blessing.png',
             name: 'Blessing Onuoha',
             position: 'Creative',
             linkedin: 'https://www.linkedin.com/in/blxessing/',
@@ -149,7 +149,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/justin.webp',
             img: './static/th-2026/headshots/jpg/justin.jpg',
-            party: './static/th-2026/headshots/party/justin.webp',
+            party: './static/th-2026/headshots/party/justin.png',
             name: 'Justin Le',
             position: 'Tech',
             github: 'https://github.com/Ju5t1nL3',
@@ -159,7 +159,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/abhi.webp',
             img: './static/th-2026/headshots/jpg/abhi.jpg',
-            party: './static/th-2026/headshots/party/abhi.webp',
+            party: './static/th-2026/headshots/party/abhi.png',
             name: 'Abhitej Devireddy',
             position: 'Logistics',
             linkedin:
@@ -168,7 +168,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/ananya.webp',
             img: './static/th-2026/headshots/jpg/ananya.jpg',
-            party: './static/th-2026/headshots/party/ananya.webp',
+            party: './static/th-2026/headshots/party/ananya.png',
             name: 'Ananya Pal',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/ananya-pal-ap810/',
@@ -176,7 +176,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/bella.webp',
             img: './static/th-2026/headshots/jpg/bella.jpg',
-            party: './static/th-2026/headshots/party/bella.webp',
+            party: './static/th-2026/headshots/party/bella.png',
             name: 'Bella Roy',
             position: 'Creative',
             linkedin: 'https://www.linkedin.com/in/isabella-roy-5a3720337/',
@@ -184,7 +184,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/ben.webp',
             img: './static/th-2026/headshots/jpg/ben.jpg',
-            party: './static/th-2026/headshots/party/ben.webp',
+            party: './static/th-2026/headshots/party/ben.png',
             name: 'Ben Hardy',
             position: 'Tech',
             github: 'https://github.com/benjaminhardy28',
@@ -194,7 +194,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/jashith.webp',
             img: './static/th-2026/headshots/jpg/jashith.jpg',
-            party: './static/th-2026/headshots/party/jashith.webp',
+            party: './static/th-2026/headshots/party/jashith.png',
             name: 'Jashith Raghavendra',
             github: 'https://github.com/jashith1/',
             position: 'Tech',
@@ -203,14 +203,14 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/katelyn.webp',
             img: './static/th-2026/headshots/jpg/katelyn.jpg',
-            party: './static/th-2026/headshots/party/katelyn.webp',
+            party: './static/th-2026/headshots/party/katelyn.png',
             name: 'Katelyn Ta',
             position: 'Creative',
         },
         {
             webp: './static/th-2026/headshots/webp/shaan.webp',
             img: './static/th-2026/headshots/jpg/shaan.jpg',
-            party: './static/th-2026/headshots/party/shaan.webp',
+            party: './static/th-2026/headshots/party/shaan.png',
             name: 'Shaan Charolia',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/shaancharolia/',
@@ -218,7 +218,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/veronica.webp',
             img: './static/th-2026/headshots/jpg/veronica.jpg',
-            party: './static/th-2026/headshots/party/veronica.webp',
+            party: './static/th-2026/headshots/party/veronica.png',
             name: 'Veronica Sibal',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/veronicasibal/',
@@ -226,7 +226,7 @@ export const th26info = {
         {
             webp: './static/th-2026/headshots/webp/william.webp',
             img: './static/th-2026/headshots/jpg/william.jpg',
-            party: './static/th-2026/headshots/party/william.webp',
+            party: './static/th-2026/headshots/party/william.png',
             name: 'William Lam',
             position: 'Logistics',
             linkedin: 'https://www.linkedin.com/in/swwilliamlam/',
