@@ -3,7 +3,7 @@ export const th26info = {
     link: '/th/2026',
     photos: 'https://tx.ag/th26photos',
     logo: 'th26',
-    description: "Byte into Innovation, at TAMUhack 26!",
+    description: "Bite into innovation at TAMUhack '26!",
     directors: [
         {
             webp: './static/th-2026/headshots/webp/adam.webp',
