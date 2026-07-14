@@ -83,6 +83,10 @@ body {
     margin-top: var(--space, 1rem);
 }
 
+section[id] {
+    scroll-margin-top: 2rem;
+}
+
 .aside-link {
     color: var(--gray);
     border-left: 2px solid var(--gray);
