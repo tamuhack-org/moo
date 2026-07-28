@@ -336,6 +336,7 @@ header {
 
 .navbar-toggler {
     border-color: transparent!important;
+    margin-top: -8px;
 }
 
 #top-nav-bar {
@@ -348,7 +349,7 @@ header {
 }
 
 #top-nav-bar .navbar-brand {
-    margin-top: -16px;
+    margin-top: -12px;
     margin-left: 20px;
 
 }
@@ -686,7 +687,6 @@ header {
 
 .small-links-container {
     position: relative;
-    width: 90vw;
 }
 
 .small-links-container>img {
@@ -697,7 +697,6 @@ header {
 
 .small-links-container .small-links-wrapper {
     display: inline-block;
-    width: 250px;
     position: absolute;
     right: 0px;
     top: 50%;
