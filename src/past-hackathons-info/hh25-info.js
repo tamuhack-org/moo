@@ -239,7 +239,9 @@ export const hh25info = {
             party: './static/hh-2025/headshots/party/william.webp',
             name: 'William Lam',
             position: 'Logistics',
+            github: 'https://github.com/winterberrylavender',
             linkedin: 'https://www.linkedin.com/in/swwilliamlam/',
+            portfolio: 'https://www.williammlam.com/',
         },
     ],
 };

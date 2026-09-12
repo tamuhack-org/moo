@@ -154,7 +154,7 @@ export const th26info = {
             position: 'Tech',
             github: 'https://github.com/Ju5t1nL3',
             linkedin: 'https://www.linkedin.com/in/justindtle/',
-            portfolio: 'https://justindtle.com'
+            portfolio: 'https://justindtle.com',
         },
         {
             webp: './static/th-2026/headshots/webp/abhi.webp',
@@ -229,7 +229,9 @@ export const th26info = {
             party: './static/th-2026/headshots/party/william.png',
             name: 'William Lam',
             position: 'Logistics',
+            github: 'https://github.com/winterberrylavender',
             linkedin: 'https://www.linkedin.com/in/swwilliamlam/',
+            portfolio: 'https://www.williammlam.com/',
         },
     ],
 };
